@@ -1,9 +1,21 @@
 {
-  "note": "SHA256 of committed Git blob bytes; checkout line endings may differ",
+  "note": "SHA256 of published UTF-8 Git blob bytes; checkout line endings may differ",
   "files": [
     {
       "File": "README.md",
-      "SHA256": "16456c20cc9d9def6f574e12f22cc2ac0217b8c5aacf25a36272d81f8ba3ea06"
+      "SHA256": "f7d01138bbf8dddad0c1f2f4dbaeddb322366eb8f6b942e3ee4db2d4219d24c7"
+    },
+    {
+      "File": "revision_control_20261112/29条意见_本机状态与剩余验收.md",
+      "SHA256": "787a676ed8096b23157e9fd1ed604df536b241db3f2f69b76c4ff060b6bc3b1e"
+    },
+    {
+      "File": "revision_control_20261112/理论衔接与检测定义_待审补充.md",
+      "SHA256": "0cdafbf101ab8bea58bca9d71fd373e21e195a4bb725003a4e90080ac659cfb0"
+    },
+    {
+      "File": "revision_control_20261112/第一篇论文_修订总控_V0.2_本机核对版.md",
+      "SHA256": "4cc5fe003ad2e3356fe6b4bbe63bb5d8a8520e86f6c145540c011b5321219af9"
     },
     {
       "File": "充分必要条件与旧水印盲区_精确核验_20261104.md",
