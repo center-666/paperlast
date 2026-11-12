@@ -1,0 +1,30 @@
+﻿[
+    {
+        "Hash":  "16535267F9F295E70FC363C3D8E15E1B068AFFAFAE461FB0A9D63C13C60830C3",
+        "File":  "README.md"
+    },
+    {
+        "Hash":  "70C94392F1A48FBE6C42B13050CF62CAAC7C241B7B6F8AA1F1DA7AAFA8B5FD6E",
+        "File":  "充分必要条件与旧水印盲区_精确核验_20261104.md"
+    },
+    {
+        "Hash":  "0623E618F1AD0CBC0D01845A74B6AC6737BEFE69DEF96DF086DD971A21165F25",
+        "File":  "公开序列与秘密随机化_证据损害比及强基线核验_20261105.md"
+    },
+    {
+        "Hash":  "D0DB4315D97FF40EFA800431632AF10E60CC66A1B2045EEF33418AD0DFB7CECA",
+        "File":  "损害约束攻击P3与相关水印_理论及最小核验_20261105.md"
+    },
+    {
+        "Hash":  "103A87C335C75382BD16192D214F2A428377C76EC7ABC1EB656DE6E4A4C064A7",
+        "File":  "本机近邻定理续核_参数知识与危险前报警.md"
+    },
+    {
+        "Hash":  "7F410A04FD2C29F7F1F1605A797E9C55ED3D076D18CC75E81CA021365700C540",
+        "File":  "正交时序混合_可实现性与理论边界审查_20261105.md"
+    },
+    {
+        "Hash":  "7E711CCEC927DD5DD14295A6B8E93670E5CB8CD1CD972A8FBA902DAB10F6C80D",
+        "File":  "水印研究收束_参数知情边界与简单强基线_20261105.md"
+    }
+]
