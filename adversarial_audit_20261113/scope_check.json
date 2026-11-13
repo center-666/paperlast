@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-13",
+  "prior_first_paper_files_unchanged": 227,
+  "archive_sources_and_members_unchanged": 14,
+  "stage_tex_unchanged": 7,
+  "stage_pdf_unchanged": true,
+  "library_unchanged": true,
+  "independent_implementation": "SymPy powers/closed convolution; raw inputs, not old word classes",
+  "original_scripts_run": 0,
+  "independent_safe_count": 960,
+  "independent_danger_count": 64,
+  "exact_violating_witnesses": 6,
+  "original_DARE_architecture_certified": false,
+  "declared_stacked_KF_DARE_roundoff_certified": true,
+  "DARE_roundoff_to_safety_independent_bridge_certified": true,
+  "public_alternation_global_pathwise_minimax_certified": true,
+  "unknown_onset_GLRT_performance_verified": false,
+  "physical_trajectories": 0,
+  "noise_samples": 0,
+  "independent_external_peer_review": false,
+  "mathematical_axis": "附加条件下通过",
+  "publication_axis": "应停止独立方法主张",
+  "artifacts": [
+    {
+      "file": "bridge_margin_check.json",
+      "sha256": "7231627f4544b95fa954661e76c70150817843e4a36ef4709634c74086274982"
+    },
+    {
+      "file": "bridge_margin_check.py",
+      "sha256": "1cb0a3a3ec012e45ac91b499b8ec77deb127ddd0b8383f045b6230146fae8c80"
+    },
+    {
+      "file": "certify_counterexamples.py",
+      "sha256": "109a25f07a430b1860c3a1e5984f523cfd86cf2445e1cb0ba6c796503af3067b"
+    },
+    {
+      "file": "counterexample_search.json",
+      "sha256": "a90cd258e49a4b7ef897a0f629c78511bc387973b53d1d78fa628ce02c3cc29b"
+    },
+    {
+      "file": "counterexamples_exact.json",
+      "sha256": "44b1689d174d00dbc8972d2bbebecd18d0abc91cfd821326847d92ee2d68d4f1"
+    },
+    {
+      "file": "detection_privacy_boundary.json",
+      "sha256": "5f1075001b282ee1b3b5ebe4ff8ba13a5a4febc67f2b081ca7c0fb41c8aa7292"
+    },
+    {
+      "file": "detection_privacy_boundary.py",
+      "sha256": "5ba8175520ccdffe7c0ff6aa0fcd4e2dd96de4d1158e492d4e5aabbef3dff306"
+    },
+    {
+      "file": "find_counterexamples.py",
+      "sha256": "cfca3502ea6286f4f020406ca0aae0188b4e2f3782f41f41906b1e7c3079f878"
+    },
+    {
+      "file": "gallo_page6_audit.png",
+      "sha256": "9b5ff63a626952522a07ee71c39fe7d173844269fab0fd2da7a029ed24e964de"
+    },
+    {
+      "file": "gallo_page6_audit.txt",
+      "sha256": "1bf5c2fa44dce44b1af6af145190c4637df775bb66f3a515173001bb2337f9dc"
+    },
+    {
+      "file": "independent_cert.json",
+      "sha256": "8c0371a8e301370bab0daaff7dcaa3cb13d7080c1a0505fac632a2340f819ed8"
+    },
+    {
+      "file": "independent_cert.py",
+      "sha256": "e1865cf1c7333de52fd7e7aff033fa1c6fbc96536245f967784cb3ba2e0938e0"
+    },
+    {
+      "file": "inputs_sha256.json",
+      "sha256": "c40b2bfabe33b02849bcb68eb0e88fe52bf4a279fd9edd89632b6d7b6c339698"
+    },
+    {
+      "file": "package_review.py",
+      "sha256": "61d26ddd0d8a9fc9768d784d18a6dc2517a09e876995cd5cab0c7c672aa4e448"
+    },
+    {
+      "file": "physical_origin_audit.json",
+      "sha256": "820c23d62b1a285dae702b06488d152857c8bf97b38f86a00d8dc5cb932f65a0"
+    },
+    {
+      "file": "physical_origin_audit.py",
+      "sha256": "002c7cea5ec477087ccee033cc4b8d39b7a09ddf0a837e93f6cf8425b8d60b53"
+    },
+    {
+      "file": "public_period_audit.json",
+      "sha256": "1fdd61748face802d4be0a4a877d71ff1dc0c21f0c6d63297c3008638ec1c9a0"
+    },
+    {
+      "file": "public_period_audit.py",
+      "sha256": "f93a34a5d8e094459eaf0fa098a45357c0033853cd4752b60cbb609301fbbb17"
+    },
+    {
+      "file": "README.md",
+      "sha256": "8a31681ed81eeb53ab1638b3b757c954e85aafe377e0f959ba1b8ed87c30f246"
+    },
+    {
+      "file": "repository_read_manifest.json",
+      "sha256": "1218700142bd23da4054d891f05e213784e7368e8ce64b2a55f8ee6c3b626e31"
+    },
+    {
+      "file": "verify_audit_delivery.py",
+      "sha256": "da30087383e5b82ef7030ddd0341ced15ca46508848c1fbd1a3df1befca750b3"
+    },
+    {
+      "file": "反例与失效条件报告.md",
+      "sha256": "98127c12a8a6bf93427f9378549b4d4fd09a35c34d87880a0e91c773fffb6c36"
+    },
+    {
+      "file": "基线必要性与检测文献审查.md",
+      "sha256": "287d10fd71957628d450450196ca15ead91a6a07355a11ee881ab3ac6e459f90"
+    },
+    {
+      "file": "定理证据表.md",
+      "sha256": "0e1401bb4e116310053e9bd45a935b7fb842b4758de11c8cd9c6bce8df50a035"
+    },
+    {
+      "file": "投稿独立性评估.md",
+      "sha256": "63cb51561e9dad1bfdd2084c4233c0ed57ca6d03c8d42c74ddf5e91cbd6b25a9"
+    },
+    {
+      "file": "物理来源审查.md",
+      "sha256": "ae16c2c42ea0cd9149d8b80cc5a483a3b383cba064ed93f9f2b76c26c1390e90"
+    },
+    {
+      "file": "独立审证总报告.md",
+      "sha256": "59bdec89f65e2c71ef2a43a2d29dd63eed7090d56f53b62045fde1331c503b69"
+    },
+    {
+      "file": "独立证书重建_安全词尾部与图.md",
+      "sha256": "f03fb9fe9ced08e0d55bf3a6691a670cdff2e614818aa0280deba9fd8628a6e2"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "original_local_raw_sha256": "72acd9093eb4b87ec2f02d89a2296cabe2b8384f674c8f4369542aded7d9824e",
+  "public_Git_raw_sha256": "73534cf3a96585d4b41fac11c5515f6b59a2317acdd53282c25b1e001a558313",
+  "normalized_text_identical": true,
+  "note": "Text transport normalizes UTF-8/LF; mathematical values unchanged. Local provenance hashes retain original bytes."
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-13",
+  "input_matrix_error_upper": "1e-12",
+  "fresh_closed_convolution_margin": "1/4000",
+  "prefix_B_error_upper": "9796914647833243787677842887/291038304567337036132812500000000000000",
+  "remaining_Q_margin_lower": "21175817978802650188134393235772334619830770764875769244855742882543505231/84703294725430033906832250067964196205139160156250000000000000000000000000000",
+  "perturbed_F10_upper": ".999",
+  "perturbed_remainder_Fpower_upper": "1.016",
+  "all_tail_damage_upper": "1422722961/15625000000",
+  "all_tail_damage_upper_float": 0.091054269504,
+  "certified_for_exact_declared_stacked_KF": true,
+  "engineering_parameters_certified": false
+}

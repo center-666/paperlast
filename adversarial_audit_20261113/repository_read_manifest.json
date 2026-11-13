@@ -1,0 +1,254 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 4010,
+    "sha256": "bfe437b2f3743b4177af7d9ad6726deabb7f10c1255cef01abb9da4b595ea9b1",
+    "characters_read": 1636
+  },
+  {
+    "path": "SHA256.json",
+    "bytes": 6970,
+    "sha256": "3feb9df168c52ea5adf7a9bfccf6a9a945530e84ab359bd4c183b6e77f82cd81",
+    "characters_read": 6480
+  },
+  {
+    "path": "充分必要条件与旧水印盲区_精确核验_20261104.md",
+    "bytes": 19025,
+    "sha256": "70c94392f1a48fbe6c42b13050cf62caac7c241b7b6f8aa1f1da7aafa8b5fd6e",
+    "characters_read": 10650
+  },
+  {
+    "path": "公开序列与秘密随机化_证据损害比及强基线核验_20261105.md",
+    "bytes": 16473,
+    "sha256": "0623e618f1ad0cbc0d01845a74b6ac6737befe69def96df086dd971a21165f25",
+    "characters_read": 7781
+  },
+  {
+    "path": "损害约束攻击P3与相关水印_理论及最小核验_20261105.md",
+    "bytes": 16457,
+    "sha256": "d0db4315d97ff40efa800431632af10e60cc66a1b2045eef33418ad0dfb7ceca",
+    "characters_read": 8504
+  },
+  {
+    "path": "本机近邻定理续核_参数知识与危险前报警.md",
+    "bytes": 13059,
+    "sha256": "103a87c335c75382bd16192d214f2a428377c76ec7abc1eb656de6e4a4c064a7",
+    "characters_read": 5708
+  },
+  {
+    "path": "正交时序混合_可实现性与理论边界审查_20261105.md",
+    "bytes": 17009,
+    "sha256": "7f410a04fd2c29f7f1f1605a797e9c55ed3d076d18cc75e81ca021365700c540",
+    "characters_read": 7787
+  },
+  {
+    "path": "水印研究收束_参数知情边界与简单强基线_20261105.md",
+    "bytes": 21972,
+    "sha256": "7e711ccec927dd5dd14295a6b8e93670e5cb8cd1cd972a8fba902dab10f6c80d",
+    "characters_read": 10380
+  },
+  {
+    "path": "checks/水印收束_理论与映射核验_20261105.json",
+    "bytes": 22957,
+    "sha256": "73534cf3a96585d4b41fac11c5515f6b59a2317acdd53282c25b1e001a558313",
+    "characters_read": 22957
+  },
+  {
+    "path": "glrt_screening_20261112/alarm_time_bounds.json",
+    "bytes": 9384,
+    "sha256": "a9c2fa3c7994a02fa92127844f63026d2ba802d21f30a73ac98802b6e63c8851",
+    "characters_read": 9384
+  },
+  {
+    "path": "glrt_screening_20261112/exact_sign_danger_cap.json",
+    "bytes": 5526,
+    "sha256": "b3ccbf65adae020d5288d585278ccbb548ba828704227d9555aa891327e4dd2f",
+    "characters_read": 5504
+  },
+  {
+    "path": "glrt_screening_20261112/exact_sign_danger_cap.py",
+    "bytes": 7001,
+    "sha256": "eac56b659610ee641539ba5efa50704ea7d76cfcd411717a1ed4c19e68b22267",
+    "characters_read": 6979
+  },
+  {
+    "path": "glrt_screening_20261112/minimal_results.json",
+    "bytes": 17086,
+    "sha256": "e775d814a56ab93d709824ed5e30661e5cf06ece49deb5ab90a17555c7ba5271",
+    "characters_read": 17086
+  },
+  {
+    "path": "glrt_screening_20261112/minimal_screen.py",
+    "bytes": 10314,
+    "sha256": "9852223616a2843872d6387b61bce447d0cdf1387d33e185297a249a0182edc1",
+    "characters_read": 10292
+  },
+  {
+    "path": "glrt_screening_20261112/README.md",
+    "bytes": 1115,
+    "sha256": "0c2987c9a1be0931d1239e69d1ee33b576741d214cc8cc8e4041222097da0d42",
+    "characters_read": 535
+  },
+  {
+    "path": "glrt_screening_20261112/文献定位与排重.md",
+    "bytes": 6981,
+    "sha256": "6545a9f5dab9b93c08545326501e4127688528ee383bca0424d9015e7326aaed",
+    "characters_read": 3558
+  },
+  {
+    "path": "glrt_screening_20261112/秘密水印条件轨迹匹配检测_理论与最小安全筛选.md",
+    "bytes": 16139,
+    "sha256": "3ed70507041656db8a5b48a1887f2e46a21d337993882c31f4c492486402cfd2",
+    "characters_read": 7466
+  },
+  {
+    "path": "revision_control_20261112/29条意见_本机状态与剩余验收.md",
+    "bytes": 6815,
+    "sha256": "787a676ed8096b23157e9fd1ed604df536b241db3f2f69b76c4ff060b6bc3b1e",
+    "characters_read": 2818
+  },
+  {
+    "path": "revision_control_20261112/理论衔接与检测定义_待审补充.md",
+    "bytes": 11346,
+    "sha256": "0cdafbf101ab8bea58bca9d71fd373e21e195a4bb725003a4e90080ac659cfb0",
+    "characters_read": 5799
+  },
+  {
+    "path": "revision_control_20261112/第一篇论文_修订总控_V0.2_本机核对版.md",
+    "bytes": 8629,
+    "sha256": "4cc5fe003ad2e3356fe6b4bbe63bb5d8a8520e86f6c145540c011b5321219af9",
+    "characters_read": 3503
+  },
+  {
+    "path": "safe_sign_process_20261113/Codex研究决策报告.md",
+    "bytes": 2889,
+    "sha256": "e7dc9913b23ff8e52186af926a52ccedf31938de28d004e1b4c8e0f42b7e7f48",
+    "characters_read": 1095
+  },
+  {
+    "path": "safe_sign_process_20261113/compare_detection.py",
+    "bytes": 7208,
+    "sha256": "6573e57f413bd4da20184753fd47533afe4bac4b5d22f586deeae93097fcebed",
+    "characters_read": 7208
+  },
+  {
+    "path": "safe_sign_process_20261113/detection_results.json",
+    "bytes": 168661,
+    "sha256": "8bd3dacb1a12d310ea0260809dbd93448d8bdabf8723829c4318d00a3f059fdb",
+    "characters_read": 168661
+  },
+  {
+    "path": "safe_sign_process_20261113/graph_process.py",
+    "bytes": 14483,
+    "sha256": "7275cf152d254954b65cd90f30915d938ef1f1b5a19416f1bcc768090c1f0177",
+    "characters_read": 14483
+  },
+  {
+    "path": "safe_sign_process_20261113/graph_results.json",
+    "bytes": 892914,
+    "sha256": "79963c20fd20d2b081e46d3e0e8bc6200a4a3f0555f9833ab6082a18ff5b365e",
+    "characters_read": 892914
+  },
+  {
+    "path": "safe_sign_process_20261113/graph_summary.json",
+    "bytes": 9000,
+    "sha256": "cd7bc0dd1533594e8b387419137ccf9a5018f5f59c3540d9ab7fdbfe1369dc4e",
+    "characters_read": 9000
+  },
+  {
+    "path": "safe_sign_process_20261113/permission_counterexamples.json",
+    "bytes": 3383,
+    "sha256": "09a753758c73c734f4e6a68fab11ee23d707139a052834945bb52d98e081e9dd",
+    "characters_read": 3383
+  },
+  {
+    "path": "safe_sign_process_20261113/permission_counterexamples.py",
+    "bytes": 2103,
+    "sha256": "b9b868fe5bef0a845be1945cf87d9e437de0a9d72278f2a4f875d47d7fd9862d",
+    "characters_read": 2081
+  },
+  {
+    "path": "safe_sign_process_20261113/README.md",
+    "bytes": 1447,
+    "sha256": "ef8bb50925af7b5045913dce1f166abaf8207b2aff09e078b2f79d8fafa08c0d",
+    "characters_read": 784
+  },
+  {
+    "path": "safe_sign_process_20261113/recheck_safe_words.py",
+    "bytes": 4454,
+    "sha256": "bd6134b712e5b1762262f4eef7c7803202d9bc872f775e2abc85a038024e5c35",
+    "characters_read": 4432
+  },
+  {
+    "path": "safe_sign_process_20261113/safe_words.json",
+    "bytes": 591190,
+    "sha256": "c0abd407d6f5c18cc6e0ac4dca7a5f2ba2acd63ccb274ecb60e5beeaf87ce3b2",
+    "characters_read": 591190
+  },
+  {
+    "path": "safe_sign_process_20261113/scope_check.json",
+    "bytes": 4062,
+    "sha256": "09b1941b1dc76c25880a307e1935cbbb4c9863735da490bc9a9c518a52d627c7",
+    "characters_read": 3934
+  },
+  {
+    "path": "safe_sign_process_20261113/tail_robustness.py",
+    "bytes": 11172,
+    "sha256": "ac75f6a2a3f904d26ed5461dfc7e8a87dc14ae7afb4e8ca818487509b1b3aa09",
+    "characters_read": 11150
+  },
+  {
+    "path": "safe_sign_process_20261113/tail_robustness_results.json",
+    "bytes": 84492,
+    "sha256": "eaa59fbed4574d15de449fc544a6cf0cc9607b5d19d3019c009a7b220462c17f",
+    "characters_read": 84492
+  },
+  {
+    "path": "safe_sign_process_20261113/unknown_onset_checks.json",
+    "bytes": 5055,
+    "sha256": "d93eede129eedd484655aa2f0259c5449e794d18bc12d85e106cdfc0db91234b",
+    "characters_read": 5055
+  },
+  {
+    "path": "safe_sign_process_20261113/unknown_onset_checks.py",
+    "bytes": 2271,
+    "sha256": "e80d81f22da521931aa9e3bc082e38e49e96410d89294c045eafe262c494b723",
+    "characters_read": 2249
+  },
+  {
+    "path": "safe_sign_process_20261113/verify_delivery.py",
+    "bytes": 5019,
+    "sha256": "030c407b93e0a781f41a5ee72ac3c5e94b07d3aeef7c72a49a78703bbe439bcc",
+    "characters_read": 4897
+  },
+  {
+    "path": "safe_sign_process_20261113/主研究报告_风险约束秘密符号过程.md",
+    "bytes": 16445,
+    "sha256": "6fd2192a5b1b271ffb459b967395d0539a7a9c3614d7c0fd89bec36040f419cc",
+    "characters_read": 7553
+  },
+  {
+    "path": "safe_sign_process_20261113/图过程与可预测性_核查说明.md",
+    "bytes": 7841,
+    "sha256": "7bfb720a42b04bcb042ca7e38570d01631d7a9c14815007bf22fae3491092e89",
+    "characters_read": 3513
+  },
+  {
+    "path": "safe_sign_process_20261113/定理证据表.md",
+    "bytes": 3243,
+    "sha256": "0b66464c26bb80da3fb5097aa91758ccd00107423784825e21505500c3d27ea6",
+    "characters_read": 1620
+  },
+  {
+    "path": "safe_sign_process_20261113/尾部与鲁棒性_证明及结构敏感性.md",
+    "bytes": 7247,
+    "sha256": "bca6d4e5487e68ced7924aa102963a880e9cfab009537ceee5bce0dceef91749",
+    "characters_read": 3942
+  },
+  {
+    "path": "safe_sign_process_20261113/文献与权限边界.md",
+    "bytes": 14368,
+    "sha256": "702a4d41a4f54212016baeba5de92b514a0d33fb49aa314ac4ff7891cd0765ad",
+    "characters_read": 6334
+  }
+]
