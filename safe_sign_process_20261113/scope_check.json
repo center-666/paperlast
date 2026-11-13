@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-13",
+  "unchanged_old_first_paper_files": 202,
+  "original_archive_sources_and_members": 14,
+  "stage_tex_unchanged": 7,
+  "stage_pdf_unchanged": true,
+  "library_unchanged": true,
+  "library_records": 174,
+  "repository_text_files_fetched_and_blob_verified": 20,
+  "safe_words": 960,
+  "boundary_words": 0,
+  "danger_words": 64,
+  "cyclic_states": 470,
+  "cyclic_edges": 912,
+  "all_time_tail_certified_in_frozen_model": true,
+  "matrix_perturbation_domain_certified": true,
+  "physical_trajectories": 0,
+  "noise_samples": 0,
+  "novelty_established": false,
+  "unknown_onset_damage_guarantee": true,
+  "unknown_onset_GLRT_power_validated": false,
+  "independent_peer_review": false,
+  "decision": "有条件继续",
+  "artifacts": [
+    {
+      "file": "Codex研究决策报告.md",
+      "sha256": "e7dc9913b23ff8e52186af926a52ccedf31938de28d004e1b4c8e0f42b7e7f48"
+    },
+    {
+      "file": "compare_detection.py",
+      "sha256": "6573e57f413bd4da20184753fd47533afe4bac4b5d22f586deeae93097fcebed"
+    },
+    {
+      "file": "detection_results.json",
+      "sha256": "8bd3dacb1a12d310ea0260809dbd93448d8bdabf8723829c4318d00a3f059fdb"
+    },
+    {
+      "file": "graph_process.py",
+      "sha256": "7275cf152d254954b65cd90f30915d938ef1f1b5a19416f1bcc768090c1f0177"
+    },
+    {
+      "file": "graph_results.json",
+      "sha256": "79963c20fd20d2b081e46d3e0e8bc6200a4a3f0555f9833ab6082a18ff5b365e"
+    },
+    {
+      "file": "graph_summary.json",
+      "sha256": "cd7bc0dd1533594e8b387419137ccf9a5018f5f59c3540d9ab7fdbfe1369dc4e"
+    },
+    {
+      "file": "inputs_sha256.json",
+      "sha256": "173950f564d50265cc5602a386defdc3731736ecd2d38501dad5d55b97d1d2ee"
+    },
+    {
+      "file": "permission_counterexamples.json",
+      "sha256": "09a753758c73c734f4e6a68fab11ee23d707139a052834945bb52d98e081e9dd"
+    },
+    {
+      "file": "permission_counterexamples.py",
+      "sha256": "b9b868fe5bef0a845be1945cf87d9e437de0a9d72278f2a4f875d47d7fd9862d"
+    },
+    {
+      "file": "README.md",
+      "sha256": "ef8bb50925af7b5045913dce1f166abaf8207b2aff09e078b2f79d8fafa08c0d"
+    },
+    {
+      "file": "recheck_safe_words.py",
+      "sha256": "bd6134b712e5b1762262f4eef7c7803202d9bc872f775e2abc85a038024e5c35"
+    },
+    {
+      "file": "repository_text_snapshot.json",
+      "sha256": "c03cd93990dfb968359de3bed40edaf1bbbfe6a9b7f2060ee2ec9e67e329d6cb"
+    },
+    {
+      "file": "safe_words.json",
+      "sha256": "c0abd407d6f5c18cc6e0ac4dca7a5f2ba2acd63ccb274ecb60e5beeaf87ce3b2"
+    },
+    {
+      "file": "tail_robustness.py",
+      "sha256": "ac75f6a2a3f904d26ed5461dfc7e8a87dc14ae7afb4e8ca818487509b1b3aa09"
+    },
+    {
+      "file": "tail_robustness_results.json",
+      "sha256": "eaa59fbed4574d15de449fc544a6cf0cc9607b5d19d3019c009a7b220462c17f"
+    },
+    {
+      "file": "unknown_onset_checks.json",
+      "sha256": "d93eede129eedd484655aa2f0259c5449e794d18bc12d85e106cdfc0db91234b"
+    },
+    {
+      "file": "unknown_onset_checks.py",
+      "sha256": "e80d81f22da521931aa9e3bc082e38e49e96410d89294c045eafe262c494b723"
+    },
+    {
+      "file": "verify_delivery.py",
+      "sha256": "030c407b93e0a781f41a5ee72ac3c5e94b07d3aeef7c72a49a78703bbe439bcc"
+    },
+    {
+      "file": "主研究报告_风险约束秘密符号过程.md",
+      "sha256": "6fd2192a5b1b271ffb459b967395d0539a7a9c3614d7c0fd89bec36040f419cc"
+    },
+    {
+      "file": "图过程与可预测性_核查说明.md",
+      "sha256": "7bfb720a42b04bcb042ca7e38570d01631d7a9c14815007bf22fae3491092e89"
+    },
+    {
+      "file": "定理证据表.md",
+      "sha256": "0b66464c26bb80da3fb5097aa91758ccd00107423784825e21505500c3d27ea6"
+    },
+    {
+      "file": "尾部与鲁棒性_证明及结构敏感性.md",
+      "sha256": "bca6d4e5487e68ced7924aa102963a880e9cfab009537ceee5bce0dceef91749"
+    },
+    {
+      "file": "文献与权限边界.md",
+      "sha256": "702a4d41a4f54212016baeba5de92b514a0d33fb49aa314ac4ff7891cd0765ad"
+    }
+  ]
+}

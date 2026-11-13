@@ -1,17 +1,9 @@
 {
-  "note": "SHA256 of published UTF-8 Git blobs; checkout line endings may differ",
+  "note": "SHA256 of Git text blob bytes; checkout line endings may differ",
   "files": [
-    {
-      "File": "README.md",
-      "SHA256": "139f93c55332610b1f14cef65363e1b3cfb1d7d1b75e9997f4ab641654495dbc"
-    },
     {
       "File": "checks/水印收束_理论与映射核验_20261105.json",
       "SHA256": "73534cf3a96585d4b41fac11c5515f6b59a2317acdd53282c25b1e001a558313"
-    },
-    {
-      "File": "glrt_screening_20261112/README.md",
-      "SHA256": "0c2987c9a1be0931d1239e69d1ee33b576741d214cc8cc8e4041222097da0d42"
     },
     {
       "File": "glrt_screening_20261112/alarm_time_bounds.json",
@@ -34,12 +26,20 @@
       "SHA256": "9852223616a2843872d6387b61bce447d0cdf1387d33e185297a249a0182edc1"
     },
     {
+      "File": "glrt_screening_20261112/README.md",
+      "SHA256": "0c2987c9a1be0931d1239e69d1ee33b576741d214cc8cc8e4041222097da0d42"
+    },
+    {
       "File": "glrt_screening_20261112/文献定位与排重.md",
       "SHA256": "6545a9f5dab9b93c08545326501e4127688528ee383bca0424d9015e7326aaed"
     },
     {
       "File": "glrt_screening_20261112/秘密水印条件轨迹匹配检测_理论与最小安全筛选.md",
       "SHA256": "3ed70507041656db8a5b48a1887f2e46a21d337993882c31f4c492486402cfd2"
+    },
+    {
+      "File": "README.md",
+      "SHA256": "bfe437b2f3743b4177af7d9ad6726deabb7f10c1255cef01abb9da4b595ea9b1"
     },
     {
       "File": "revision_control_20261112/29条意见_本机状态与剩余验收.md",
@@ -52,6 +52,94 @@
     {
       "File": "revision_control_20261112/第一篇论文_修订总控_V0.2_本机核对版.md",
       "SHA256": "4cc5fe003ad2e3356fe6b4bbe63bb5d8a8520e86f6c145540c011b5321219af9"
+    },
+    {
+      "File": "safe_sign_process_20261113/Codex研究决策报告.md",
+      "SHA256": "e7dc9913b23ff8e52186af926a52ccedf31938de28d004e1b4c8e0f42b7e7f48"
+    },
+    {
+      "File": "safe_sign_process_20261113/compare_detection.py",
+      "SHA256": "6573e57f413bd4da20184753fd47533afe4bac4b5d22f586deeae93097fcebed"
+    },
+    {
+      "File": "safe_sign_process_20261113/detection_results.json",
+      "SHA256": "8bd3dacb1a12d310ea0260809dbd93448d8bdabf8723829c4318d00a3f059fdb"
+    },
+    {
+      "File": "safe_sign_process_20261113/graph_process.py",
+      "SHA256": "7275cf152d254954b65cd90f30915d938ef1f1b5a19416f1bcc768090c1f0177"
+    },
+    {
+      "File": "safe_sign_process_20261113/graph_results.json",
+      "SHA256": "79963c20fd20d2b081e46d3e0e8bc6200a4a3f0555f9833ab6082a18ff5b365e"
+    },
+    {
+      "File": "safe_sign_process_20261113/graph_summary.json",
+      "SHA256": "cd7bc0dd1533594e8b387419137ccf9a5018f5f59c3540d9ab7fdbfe1369dc4e"
+    },
+    {
+      "File": "safe_sign_process_20261113/permission_counterexamples.json",
+      "SHA256": "09a753758c73c734f4e6a68fab11ee23d707139a052834945bb52d98e081e9dd"
+    },
+    {
+      "File": "safe_sign_process_20261113/permission_counterexamples.py",
+      "SHA256": "b9b868fe5bef0a845be1945cf87d9e437de0a9d72278f2a4f875d47d7fd9862d"
+    },
+    {
+      "File": "safe_sign_process_20261113/README.md",
+      "SHA256": "ef8bb50925af7b5045913dce1f166abaf8207b2aff09e078b2f79d8fafa08c0d"
+    },
+    {
+      "File": "safe_sign_process_20261113/recheck_safe_words.py",
+      "SHA256": "bd6134b712e5b1762262f4eef7c7803202d9bc872f775e2abc85a038024e5c35"
+    },
+    {
+      "File": "safe_sign_process_20261113/safe_words.json",
+      "SHA256": "c0abd407d6f5c18cc6e0ac4dca7a5f2ba2acd63ccb274ecb60e5beeaf87ce3b2"
+    },
+    {
+      "File": "safe_sign_process_20261113/scope_check.json",
+      "SHA256": "09b1941b1dc76c25880a307e1935cbbb4c9863735da490bc9a9c518a52d627c7"
+    },
+    {
+      "File": "safe_sign_process_20261113/tail_robustness.py",
+      "SHA256": "ac75f6a2a3f904d26ed5461dfc7e8a87dc14ae7afb4e8ca818487509b1b3aa09"
+    },
+    {
+      "File": "safe_sign_process_20261113/tail_robustness_results.json",
+      "SHA256": "eaa59fbed4574d15de449fc544a6cf0cc9607b5d19d3019c009a7b220462c17f"
+    },
+    {
+      "File": "safe_sign_process_20261113/unknown_onset_checks.json",
+      "SHA256": "d93eede129eedd484655aa2f0259c5449e794d18bc12d85e106cdfc0db91234b"
+    },
+    {
+      "File": "safe_sign_process_20261113/unknown_onset_checks.py",
+      "SHA256": "e80d81f22da521931aa9e3bc082e38e49e96410d89294c045eafe262c494b723"
+    },
+    {
+      "File": "safe_sign_process_20261113/verify_delivery.py",
+      "SHA256": "030c407b93e0a781f41a5ee72ac3c5e94b07d3aeef7c72a49a78703bbe439bcc"
+    },
+    {
+      "File": "safe_sign_process_20261113/主研究报告_风险约束秘密符号过程.md",
+      "SHA256": "6fd2192a5b1b271ffb459b967395d0539a7a9c3614d7c0fd89bec36040f419cc"
+    },
+    {
+      "File": "safe_sign_process_20261113/图过程与可预测性_核查说明.md",
+      "SHA256": "7bfb720a42b04bcb042ca7e38570d01631d7a9c14815007bf22fae3491092e89"
+    },
+    {
+      "File": "safe_sign_process_20261113/定理证据表.md",
+      "SHA256": "0b66464c26bb80da3fb5097aa91758ccd00107423784825e21505500c3d27ea6"
+    },
+    {
+      "File": "safe_sign_process_20261113/尾部与鲁棒性_证明及结构敏感性.md",
+      "SHA256": "bca6d4e5487e68ced7924aa102963a880e9cfab009537ceee5bce0dceef91749"
+    },
+    {
+      "File": "safe_sign_process_20261113/文献与权限边界.md",
+      "SHA256": "702a4d41a4f54212016baeba5de92b514a0d33fb49aa314ac4ff7891cd0765ad"
     },
     {
       "File": "充分必要条件与旧水印盲区_精确核验_20261104.md",
