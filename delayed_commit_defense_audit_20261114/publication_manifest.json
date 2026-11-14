@@ -1,0 +1,166 @@
+{
+  "baseline": "917a46804c1eabe08d94ec54579acae6f68ccfbb",
+  "new_directory": "delayed_commit_defense_audit_20261114",
+  "decision": "gate1 C; no later-stage algorithm/reports",
+  "files": [
+    {
+      "file": "README.md",
+      "source_sha256": "a417d5df295d9ad6b45da48cf243f88f236be136e09fa3f29e991dab15afe819",
+      "public_sha256": "a417d5df295d9ad6b45da48cf243f88f236be136e09fa3f29e991dab15afe819",
+      "bytes": 2244
+    },
+    {
+      "file": "01_直接近邻与创新性排重.md",
+      "source_sha256": "e9fe3177588f6b8af79d582836999e8007adcb4279476411874ab15c983e8ff4",
+      "public_sha256": "e9fe3177588f6b8af79d582836999e8007adcb4279476411874ab15c983e8ff4",
+      "bytes": 9894
+    },
+    {
+      "file": "候选与标准缓存_固定滞后方法的逐式等价性审查.md",
+      "source_sha256": "4dbb84644fde5f0b5cebe72010f8cdab5a77f5d5044f2e2d27e709b6965ad991",
+      "public_sha256": "4dbb84644fde5f0b5cebe72010f8cdab5a77f5d5044f2e2d27e709b6965ad991",
+      "bytes": 14127
+    },
+    {
+      "file": "06_立项决策.md",
+      "source_sha256": "6c3ec570d0cec238fb0028dce362221cf98a8f7b7ae79bd23498974cb4447a40",
+      "public_sha256": "6c3ec570d0cec238fb0028dce362221cf98a8f7b7ae79bd23498974cb4447a40",
+      "bytes": 5459
+    },
+    {
+      "file": "evidence_table.md",
+      "source_sha256": "634ef8be1f3dd9e3038a0e9d8b8baba5b8b2f6872373eb0aa75a4f375204a923",
+      "public_sha256": "634ef8be1f3dd9e3038a0e9d8b8baba5b8b2f6872373eb0aa75a4f375204a923",
+      "bytes": 3187
+    },
+    {
+      "file": "完成审查_第一关停止规则.md",
+      "source_sha256": "7f1a755353f063e25658e2bd35237ab31a860414a884c2b28bda5191bf5a5a8e",
+      "public_sha256": "7f1a755353f063e25658e2bd35237ab31a860414a884c2b28bda5191bf5a5a8e",
+      "bytes": 2615
+    },
+    {
+      "file": "literature_1.md",
+      "source_sha256": "77e80e09a556aed50730c2aac86bf47d01ec989818bea65c6592f66e0a81b102",
+      "public_sha256": "77e80e09a556aed50730c2aac86bf47d01ec989818bea65c6592f66e0a81b102",
+      "bytes": 7890
+    },
+    {
+      "file": "literature_2.md",
+      "source_sha256": "e8694f12cdd5eeff65bcda9318454dd864c2e3db3c92aa6f50848874be1dbfc0",
+      "public_sha256": "e8694f12cdd5eeff65bcda9318454dd864c2e3db3c92aa6f50848874be1dbfc0",
+      "bytes": 9263
+    },
+    {
+      "file": "literature_1_sources.json",
+      "source_sha256": "2a7258e754a446bc7aebffdb492f0eb0c7cc8de4522806914239070fcb665f92",
+      "public_sha256": "5c42b00ddb6018d96e2537ec74f1a7518455dcb6d921b766d5d62f9b761d63dd",
+      "bytes": 4728
+    },
+    {
+      "file": "literature_2_sources.json",
+      "source_sha256": "99098330f4b494ebe538d75fdeb057921da6c502f68fcf43b1925543649c6514",
+      "public_sha256": "e1c1f16d08fe2a9be9bfe27eeef64fc7703d30d32685706e3ed47803c4e57206",
+      "bytes": 4623
+    },
+    {
+      "file": "classical_sources.json",
+      "source_sha256": "f4c13b833f648ed9185e7db1305a0d0cb43b88cbeabd85102bd281ee739a0e24",
+      "public_sha256": "c157d0e49a9ad687800d3af69305c52155378fc581f4beec48a7a3c2b56debe2",
+      "bytes": 521
+    },
+    {
+      "file": "classical_alternate_sources.json",
+      "source_sha256": "7c0ba31ea75f25a2ca4654bb235a553956744960f2712a2a739ae656c03347b5",
+      "public_sha256": "37725d811f8256e914778b7661fba4ccb9bc8dc230c84e0e2a2f3ceeee5595b9",
+      "bytes": 561
+    },
+    {
+      "file": "library_update.json",
+      "source_sha256": "9d81235d6606bbbfb2d35c6b2a9d903585394b55460667d3126528918bfcf12e",
+      "public_sha256": "0546fa73053543633ecb2c121899bc12efaea58f0a7a0a1e9db520acd96a80b1",
+      "bytes": 2249
+    },
+    {
+      "file": "initial_freeze.json",
+      "source_sha256": "16c260f68c92b8f896507e39a9420bd044d0e4af7f1c7701fc38f6f092f7430f",
+      "public_sha256": "be0e1336076b962126704b79a834bb0e081749ee6ce893201000b941052f9f9c",
+      "bytes": 94785
+    },
+    {
+      "file": "check_equivalence.py",
+      "source_sha256": "e5293b32f4e4d95108fd1f880836bdffd8e471dd1880dd25398eec489c13cfe3",
+      "public_sha256": "e5293b32f4e4d95108fd1f880836bdffd8e471dd1880dd25398eec489c13cfe3",
+      "bytes": 2916
+    },
+    {
+      "file": "equivalence_checks.json",
+      "source_sha256": "0057a5d6fc4d99a0477fed844d6e7e3f4b86e814babc6952988a3afb76ff8b1c",
+      "public_sha256": "e90cb3ae5857c74bc31e1df268d901a37cb70c5081761b78c6992ba5c1de38f5",
+      "bytes": 1233
+    },
+    {
+      "file": "verify_gate1.py",
+      "source_sha256": "bf10891ef73c6fc01debd52e6f0902977a6ac1a25f83374453c5076051da8cdc",
+      "public_sha256": "bf10891ef73c6fc01debd52e6f0902977a6ac1a25f83374453c5076051da8cdc",
+      "bytes": 5447
+    },
+    {
+      "file": "verification.json",
+      "source_sha256": "20ee109694377ed4f2c39fd1afc478f69a4d073972d11eef4c14e38370dbbdb1",
+      "public_sha256": "047375c4fffb2105ab39db9b437a2b10508c96fc102f0d9bd28e57ba8d99afe9",
+      "bytes": 4759
+    },
+    {
+      "file": "fetch_classics.py",
+      "source_sha256": "3dac9162d8f1dcf34319cd1a5b34858bbe967f5ae59bdab48dc9e2b13026cd56",
+      "public_sha256": "3dac9162d8f1dcf34319cd1a5b34858bbe967f5ae59bdab48dc9e2b13026cd56",
+      "bytes": 1200
+    },
+    {
+      "file": "fetch_classical_alternates.py",
+      "source_sha256": "574c0d6078d1215bc2195671c73cfb1eda7d3106cc2c4caff6493b396ba51748",
+      "public_sha256": "574c0d6078d1215bc2195671c73cfb1eda7d3106cc2c4caff6493b396ba51748",
+      "bytes": 1070
+    },
+    {
+      "file": "fetch_literature_1.py",
+      "source_sha256": "087868364cc7a011122456dbd81dd5f809f88527d4a0e03f019b9b3cc5eb86d5",
+      "public_sha256": "087868364cc7a011122456dbd81dd5f809f88527d4a0e03f019b9b3cc5eb86d5",
+      "bytes": 1693
+    },
+    {
+      "file": "finalize_literature_1.py",
+      "source_sha256": "1f17d133c8a7ec9dda6bbb202b1a5c88d4415e46918cd17a082aaab1ae201f2c",
+      "public_sha256": "1f17d133c8a7ec9dda6bbb202b1a5c88d4415e46918cd17a082aaab1ae201f2c",
+      "bytes": 3573
+    },
+    {
+      "file": "fetch_literature_2.py",
+      "source_sha256": "926200439f686b6abf6879a765255cba8c2a6503459d7152bd1f42a1fc602398",
+      "public_sha256": "926200439f686b6abf6879a765255cba8c2a6503459d7152bd1f42a1fc602398",
+      "bytes": 1712
+    },
+    {
+      "file": "fetch_literature_2_followup.py",
+      "source_sha256": "046728c8662796ac65a27ceacbf04a723eb497d83dafe0bf5feaac79018b467b",
+      "public_sha256": "046728c8662796ac65a27ceacbf04a723eb497d83dafe0bf5feaac79018b467b",
+      "bytes": 1278
+    },
+    {
+      "file": "register_literature.py",
+      "source_sha256": "32823e0e2b7f49787ee958eb91e8d3f0c14eea3b7debc0fe2b61d29fae30644b",
+      "public_sha256": "32823e0e2b7f49787ee958eb91e8d3f0c14eea3b7debc0fe2b61d29fae30644b",
+      "bytes": 9550
+    }
+  ],
+  "excluded": [
+    "third-party PDFs/text/page images",
+    "raw HTML/JS and unfiltered fetch body",
+    "library_before.json",
+    "publication helpers/receipts"
+  ],
+  "previous_repository_blobs_unchanged": true,
+  "prior_blobs": 242,
+  "canonical_library_updated_locally": true
+}

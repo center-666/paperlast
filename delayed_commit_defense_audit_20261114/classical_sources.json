@@ -1,0 +1,16 @@
+[
+  {
+    "name": "checkpoint2018",
+    "url": "https://www.seas.upenn.edu/~weimerj/pdf/2018-ICCPS-CPScheckpointing.pdf",
+    "final_url": "https://www.engineering.upenn.edu/~weimerj/pdf/2018-ICCPS-CPScheckpointing.pdf",
+    "status": 404,
+    "bytes": 88721,
+    "is_pdf": false
+  },
+  {
+    "name": "moore1973",
+    "url": "https://users.cecs.anu.edu.au/~john/papers/JOUR/033.PDF",
+    "error": "HTTPSConnectionPool(host='users.cecs.anu.edu.au', port=443): Read timed out. (read timeout=35)",
+    "is_pdf": false
+  }
+]

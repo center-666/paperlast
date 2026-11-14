@@ -1,0 +1,17 @@
+[
+  {
+    "name": "checkpoint2018_hnu",
+    "url": "https://esnl.hnu.edu.cn/ecps2018/2019.3.19.1.pdf",
+    "final_url": "https://esnl.hnu.edu.cn/ecps2018/2019.3.19.1.pdf",
+    "status": 200,
+    "bytes": 710604,
+    "is_pdf": true,
+    "sha256": "c696c529ff6a605cc42b8af7c259304deb18ff60f7dd3f25dc1ac73a6beb571c"
+  },
+  {
+    "name": "moore1973_direct",
+    "url": "https://users.cecs.anu.edu.au/~john/papers/JOUR/033.PDF",
+    "error": "HTTPSConnectionPool(host='users.cecs.anu.edu.au', port=443): Read timed out. (read timeout=20)",
+    "is_pdf": false
+  }
+]

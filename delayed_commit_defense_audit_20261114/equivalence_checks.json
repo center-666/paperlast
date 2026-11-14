@@ -1,0 +1,28 @@
+{
+  "baseline": "917a46804c1eabe08d94ec54579acae6f68ccfbb",
+  "model_sha256": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+  "scope": "exact first-gate semantic identities; valid for arbitrary matrices and labels, stable or unstable",
+  "identities": {
+    "noncommutative_affine_composition": true,
+    "dirty_checkpoint_not_removed_by_replay": true,
+    "original_common_G_affine_form": true,
+    "dropping_entire_innovation_changes_state_coefficient": true,
+    "future_acceptance_cross_moment": "-phi(1)/(2 Phi(1)-1), nonzero"
+  },
+  "retained_problem": {
+    "main_attack": "a_t=H_j A^t xi, t=0,...,L-1",
+    "L": 10,
+    "E": 10,
+    "D": 0.1,
+    "estimator": "original common-G neighbor-sum; no new gains"
+  },
+  "not_a_candidate_algorithm_test": true,
+  "no_physical_samples": true,
+  "no_false_alarm_or_risk_experiment": true,
+  "delay_scan_performed": false,
+  "gate2_entered": false,
+  "gate3_entered": false,
+  "gate4_entered": false,
+  "theoretical_result": "same checkpoint/update/labels/commit schedule implies same output path; all-accept no-smoothing implies historical baseline value",
+  "limitation": "does not prove all different policies equal or all delayed-security theorems are old"
+}

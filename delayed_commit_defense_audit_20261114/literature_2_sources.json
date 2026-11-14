@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-14",
+  "scope": "Gate1 only, four specified neighbors and existing version",
+  "library_file": "E:\\硕士毕业论文\\参考文献\\文献库.json",
+  "library_read_sha256": "514d9ec76f4883761998fdcfaa10d8f624ae9e747dc7443fd7e4533b5a25dd5b",
+  "library_modified": false,
+  "records_at_read": 176,
+  "existing_ids": [
+    "FPN10",
+    "SRA01",
+    "SRA02"
+  ],
+  "Chen": {
+    "id_at_start": null,
+    "title": "Fast Anomaly Detection and Joint State Estimation for Perturbed Nonlinear Systems With Prolonged Output Anomalies",
+    "author": "Guangdeng Chen; Xiao-Jie Peng; Yan Lei; Chao Huang; Hongyi Li",
+    "doi": "10.1109/JAS.2025.125900",
+    "year": 2026,
+    "journal": "IEEE/CAA Journal of Automatica Sinica",
+    "volume": "13",
+    "number": "6",
+    "page_range": "1301-1313",
+    "source_page": "https://www.ieee-jas.net/en/article/doi/10.1109/JAS.2025.125900",
+    "pdf_url": "https://www.ieee-jas.net/article/exportPdf?id=c9a9d9b1-cd64-4aa4-9ad4-90ae38070701&language=en",
+    "temporary_pdf": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\delayed_commit_defense_audit_20261114\\literature_work\\Chen_final.pdf",
+    "sha256": "f74eff431bcf55efda83f336500e8891ca6d177261bf9df41b131a98dddd8b14",
+    "bytes": 2891270,
+    "pages": 13,
+    "read_pdf_pages": [
+      2,
+      5,
+      6,
+      7
+    ],
+    "read_printed_pages": [
+      "1302",
+      "1305",
+      "1306",
+      "1307"
+    ],
+    "reference_pages": [
+      12,
+      13
+    ],
+    "visual_pages": [
+      6,
+      7
+    ],
+    "full_proof_audit": false,
+    "nearest_result": "Algorithm1 / Eq36-41 / Theorems2-3 / Assumptions1-3",
+    "model": "continuous nonlinear, bounded physical signals/noises, fixed-time observer and cascade predictor",
+    "caveats": [
+      "initial healthy mu window",
+      "given detection start/end lag bounds Ds/De",
+      "bounded anomaly duration/interarrival",
+      "Assumption2 limits stealth; first sentence versus Remark4 has semantic direction issue; do not silently repair",
+      "not original summed-neighbor common-G replay or delayed historical commit"
+    ]
+  },
+  "Bhattacharya": {
+    "id_at_start": null,
+    "title": "Adaptive Parameterisation for Efficient Detection of False Data Injections",
+    "author": "Akash Bhattacharya; Sunandan Adhikary; Ipsita Koley; Vivek Loya; Soumyajit Dey",
+    "year": 2026,
+    "journal": "ACM Transactions on Embedded Computing Systems",
+    "volume": "25",
+    "number": "1",
+    "article_number": "17",
+    "page_range": "17:1-17:30",
+    "doi": "10.1145/3777903",
+    "source_page": "https://doi.org/10.1145/3777903",
+    "pdf_obtained": false,
+    "original_html_body_continuously_obtained": false,
+    "direct_access_status": 403,
+    "actual_scope": "official search-visible body fragments only; no PDF page or complete theorem assumption audit",
+    "core_theorem_equivalence_status": "incomplete; no theorem number fabricated"
+  },
+  "Zhang": {
+    "existing_id": "FPN10",
+    "doi": "10.1016/j.jfranklin.2026.108914",
+    "pdf_obtained": false,
+    "source_page": "https://www.sciencedirect.com/science/article/pii/S0016003226005107",
+    "actual_scope": "official abstract/introduction/section previews only",
+    "core_theorem_equivalence_status": "incomplete; same module names do not prove equivalence"
+  },
+  "Gupta": {
+    "existing_id": "SRA01",
+    "doi": "10.1016/j.sigpro.2026.110516",
+    "pdf_obtained": false,
+    "source_page": "https://www.sciencedirect.com/science/article/pii/S0165168426000307",
+    "actual_scope": "official abstract/introduction preview, author journal list; no 2026 proof supplement",
+    "final_authors": 4,
+    "preprint_v3_authors": 3,
+    "final_paper_not_replaced_by_preprint": true,
+    "related_existing_preprint": {
+      "id": "SRA02",
+      "file": "E:\\硕士毕业论文\\参考文献\\03_节选与待核材料\\SRA02_Gupta2022_QuickestFDI_arxiv_v3.pdf",
+      "sha256": "6f2f84f43f40c7c4e95dbcd6dc9f008332271ca8dd51d53803e98ca2453c96c4",
+      "read_pdf_pages": [
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "references_read": true,
+      "nearest_results": "Theorem3; SectionIII; SectionV Eq28-33; threshold structure, FAR/ARL and WADD/CADD",
+      "not_full_read_or_general_rollback_theorem": true
+    }
+  },
+  "literature_fetch_logs": [
+    "literature_2_fetch.json",
+    "literature_2_followup.json"
+  ],
+  "gate1_does_not_support_novelty_clearance": true,
+  "no_algorithms": true,
+  "no_simulations": true,
+  "no_parallel_library": true,
+  "root_process_to_register_or_archive_verified_new_sources": true
+}

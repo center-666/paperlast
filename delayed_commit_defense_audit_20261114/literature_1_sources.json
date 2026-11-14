@@ -1,0 +1,125 @@
+[
+  {
+    "key": "Li2023",
+    "url": "https://people.kth.se/~kallej/papers/Secure_CDC2023_Li.pdf",
+    "status": 200,
+    "final_url": "https://people.kth.se/~kallej/papers/Secure_CDC2023_Li.pdf",
+    "bytes": 1098647,
+    "content_type": "application/pdf",
+    "is_pdf": true,
+    "file": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\delayed_commit_defense_audit_20261114\\literature_work\\Li2023_primary.pdf",
+    "sha256": "c2b1132b1a89283a25ddccf5a34dcd6acabaf21b20938da7b2a88f314a9410e3",
+    "pages": 8,
+    "title": "Secure State Estimation with Asynchronous Measurements against Malicious Measurement-Data and Time-Stamp Manipulation",
+    "authors": [
+      "Zishuo Li",
+      "Anh Tung Nguyen",
+      "Andre M. H. Teixeira",
+      "Yilin Mo",
+      "Karl H. Johansson"
+    ],
+    "doi": "10.1109/CDC49753.2023.10383571",
+    "year": 2023,
+    "venue": "CDC",
+    "printed_pages": "7073-7080",
+    "read_pdf_pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      8
+    ],
+    "visual_pdf_pages": [
+      3,
+      5
+    ],
+    "exact_read_scope": "targeted model, attack definition, buffering paragraph, assumptions1-5, equations12-17, Algorithm1, Theorems2-3 and printed references; not all referenced proof chains",
+    "core_theorems": [
+      "Theorem2 at PDF5-6/printed7077-7078",
+      "Theorem3 at PDF6/printed7078"
+    ],
+    "buffer_evidence": "PDF3/printed7075; length d, timestamp ordering and discard over-d late data, not attack-evidence commit",
+    "new_candidate_fully_covered": false,
+    "source_read_status": "primary fulltext acquired; specified pages actually read",
+    "unique_library_id_at_initial_lookup": null,
+    "initial_library_lookup": "doi/title case-insensitive search found no record; root handles any later registration"
+  },
+  {
+    "key": "Cheng2023",
+    "url": "https://doi.org/10.1109/TCYB.2021.3108884",
+    "status": 202,
+    "final_url": "https://ieeexplore.ieee.org/document/9541298/",
+    "bytes": 0,
+    "content_type": "text/html; charset=UTF-8",
+    "is_pdf": false,
+    "title": "Security Analysis for Dynamic State Estimation of Power Systems With Measurement Delays",
+    "authors": [
+      "Zhijian Cheng",
+      "Hongru Ren",
+      "Jiahu Qin",
+      "Renquan Lu"
+    ],
+    "doi": "10.1109/TCYB.2021.3108884",
+    "year": 2023,
+    "online_year": 2021,
+    "venue": "IEEE Transactions on Cybernetics",
+    "volume": 53,
+    "issue": 4,
+    "printed_pages": "2087-2096",
+    "read_pdf_pages": [],
+    "core_theorems": null,
+    "source_read_status": "core fulltext missing; publisher202 empty and JavaScript verification, indexed author abstract is a lead only",
+    "equivalence_or_novelty_clearance": false,
+    "unique_library_id_at_initial_lookup": null,
+    "initial_library_lookup": "doi/title case-insensitive search found no record; root handles any later registration"
+  },
+  {
+    "key": "Xu2023",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0005109823003333/pdfft?isDTMRedir=true&download=true",
+    "status": 403,
+    "final_url": "https://www.sciencedirect.com/science/article/pii/S0005109823003333/pdfft?isDTMRedir=true&download=true",
+    "bytes": 832980,
+    "content_type": "text/html; charset=UTF-8",
+    "is_pdf": false,
+    "title": "Integrity attacks on remote estimation with spatial-temporal information sources",
+    "authors": [
+      "Haoyuan Xu",
+      "Yake Yang",
+      "Jun Shang",
+      "Jun Fu",
+      "Yuzhe Li"
+    ],
+    "doi": "10.1016/j.automatica.2023.111172",
+    "year": 2023,
+    "venue": "Automatica",
+    "volume": 155,
+    "article_number": "111172",
+    "read_pdf_pages": [],
+    "core_theorems": null,
+    "source_read_status": "core fulltext missing; publisher abstract/snippets and author publication list used only for identification",
+    "equivalence_or_novelty_clearance": false,
+    "unique_library_id_at_initial_lookup": null,
+    "initial_library_lookup": "doi/title case-insensitive search found no record; root handles any later registration"
+  },
+  {
+    "key": "Xu_author",
+    "url": "https://yzli925.github.io/publications",
+    "status": 200,
+    "final_url": "https://yzli925.github.io/publications",
+    "bytes": 8874,
+    "content_type": "text/html; charset=utf-8",
+    "is_pdf": false
+  },
+  {
+    "key": "Li_reference10_Uribe2020",
+    "doi": "10.1109/TAC.2019.2937850",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8815824",
+    "status": 418,
+    "final_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8815824",
+    "bytes": 16794,
+    "is_pdf": false,
+    "content_type": "text/html",
+    "read_status": "only citation traced; no original PDF obtained; WSEAS2019 is not substituted"
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "before_records": 176,
+  "after_records": 183,
+  "before_local_pdf_records": 119,
+  "after_local_pdf_records": 122,
+  "independent_full_theses_unchanged": 46,
+  "new_ids": [
+    "DCA01",
+    "DCA02",
+    "DCA03",
+    "DCA04",
+    "DCA05",
+    "DCA06",
+    "DCA07"
+  ],
+  "existing_read_note_updates": [
+    "FPN10",
+    "SRA01",
+    "SRA02"
+  ],
+  "migrations": [
+    {
+      "id": "DCA01",
+      "temporary_source": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\delayed_commit_defense_audit_20261114\\literature_work\\Li2023_primary.pdf",
+      "canonical_file": "02_期刊与会议论文/DCA01_2023.pdf",
+      "sha256": "c2b1132b1a89283a25ddccf5a34dcd6acabaf21b20938da7b2a88f314a9410e3",
+      "bytes": 1098647
+    },
+    {
+      "id": "DCA02",
+      "temporary_source": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\delayed_commit_defense_audit_20261114\\literature_work\\Chen_final.pdf",
+      "canonical_file": "02_期刊与会议论文/DCA02_2026.pdf",
+      "sha256": "f74eff431bcf55efda83f336500e8891ca6d177261bf9df41b131a98dddd8b14",
+      "bytes": 2891270
+    },
+    {
+      "id": "DCA06",
+      "temporary_source": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\delayed_commit_defense_audit_20261114\\literature_work\\checkpoint2018_hnu.pdf",
+      "canonical_file": "02_期刊与会议论文/DCA06_2018.pdf",
+      "sha256": "c696c529ff6a605cc42b8af7c259304deb18ff60f7dd3f25dc1ac73a6beb571c",
+      "bytes": 710604
+    }
+  ],
+  "checks": [
+    {
+      "command": [
+        "export"
+      ],
+      "output": "{\"完整独立论文\": 46, \"有本地PDF\": 122, \"题录总数\": 183, \"校验错误\": [], \"完整hash校验\": false}\n已更新CSV、Markdown目录、HTML检索页和BibTeX引用库。\n"
+    },
+    {
+      "command": [
+        "check",
+        "--hash"
+      ],
+      "output": "{\"完整独立论文\": 46, \"有本地PDF\": 122, \"题录总数\": 183, \"校验错误\": [], \"完整hash校验\": true}\n"
+    }
+  ],
+  "canonical_library_sha256": "6780410e1f125a98007d4588f5149fdfe9fbb08184ac5cf7579ab67849aa9bf8",
+  "no_third_party_fulltext_uploaded": true,
+  "no_parallel_library": true
+}
