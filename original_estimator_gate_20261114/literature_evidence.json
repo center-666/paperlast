@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-14",
+  "library_sha256": "70e62fb35e99b5cc76bed3097da1953e930b13ba6bdb3373e878faa834399a3d",
+  "library_unchanged": true,
+  "kind": "targeted source reading, not full-paper proof audit",
+  "records": [
+    {
+      "id": "INTRO06",
+      "citation_key": "Paper_Zhou2023_DistributedWatermark",
+      "title": "Watermarking-Based Protection Strategy Against Stealthy Integrity Attack on Distributed State Estimation",
+      "doi": "10.1109/TAC.2022.3171422",
+      "file": "参考文献\\02_期刊与会议论文\\INTRO06_2023_Paper_Zhou2023_DistributedWatermark.pdf",
+      "sha256": "97d2a8e5acf8d7d6795be8249b2dbdc12240730bd22ec7a993f704d0173e597d",
+      "pdf_pages_text": [
+        2,
+        4,
+        5,
+        6
+      ],
+      "pdf_pages_visual": [
+        6
+      ],
+      "total_pdf_pages": 8,
+      "complete_fulltext_read": false,
+      "all_proofs_verified": false
+    },
+    {
+      "id": "INTRO05",
+      "citation_key": "Paper_Ferrari2021_SwitchingMW",
+      "title": "A Switching Multiplicative Watermarking Scheme for Detection of Stealthy Cyber-Attacks",
+      "doi": "10.1109/TAC.2020.3013850",
+      "file": "参考文献\\02_期刊与会议论文\\INTRO05_2021_Paper_Ferrari2021_SwitchingMW.pdf",
+      "sha256": "1837cd711ff5d2b1451c1420e4b57dff27c7b4aa50bcd312f3fd09f255ad8d65",
+      "pdf_pages_text": [
+        6,
+        7,
+        11,
+        12,
+        13,
+        14
+      ],
+      "pdf_pages_visual": [
+        6
+      ],
+      "total_pdf_pages": 18,
+      "complete_fulltext_read": false,
+      "all_proofs_verified": false
+    },
+    {
+      "id": "FPN16",
+      "citation_key": "Paper_Gallo2025_SwitchingWatermark",
+      "title": "Switching multiplicative watermark design against covert attacks",
+      "doi": "10.1016/j.automatica.2025.112301",
+      "file": "参考文献\\02_期刊与会议论文\\FPN16_2025_Paper_Gallo2025_SwitchingWatermark_arxivv1.pdf",
+      "sha256": "b95f9b41ba4ff0706610b798db88b3c0c1f9aa23c853ce514b54fc2493909a3c",
+      "pdf_pages_text": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "pdf_pages_visual": [
+        5
+      ],
+      "total_pdf_pages": 9,
+      "complete_fulltext_read": false,
+      "all_proofs_verified": false
+    },
+    {
+      "id": "FPN06",
+      "citation_key": "Paper_Huang2026_PartialChannelCoding",
+      "title": "Secure distributed consensus estimation under false data injection attacks: A defense strategy based on partial channel coding",
+      "doi": "10.1016/j.automatica.2025.112701",
+      "file": "参考文献\\02_期刊与会议论文\\FPN06_2026_Paper_Huang2026_PartialChannelCoding.pdf",
+      "sha256": "ea19df8af9c0ac6a0df8f98df9413d4af31d843aa403b1ac0ca8d7e989dc6183",
+      "pdf_pages_text": [
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        12,
+        13
+      ],
+      "pdf_pages_visual": [
+        9
+      ],
+      "total_pdf_pages": 14,
+      "complete_fulltext_read": false,
+      "all_proofs_verified": false
+    }
+  ],
+  "missing_core_fulltext": [
+    {
+      "id": "FPN12",
+      "citation_key": "Paper_He2022_SecureDistributedFilters",
+      "title": "How to Secure Distributed Filters Under Sensor Attacks",
+      "doi": "10.1109/TAC.2021.3092603",
+      "read_scope": "2026-11-02作者公开期刊PDF第1页/印刷2843的题录、DOI及摘要文字；另核arXiv摘要。未读核心证明。"
+    },
+    {
+      "id": "FPN17",
+      "citation_key": "Paper_Lei2026_AdaptiveGainModulation",
+      "title": "Distributed Secure State Estimation Against Sparse Sensor Attacks: An Adaptive Gain Modulation Approach",
+      "doi": "10.1109/TICPS.2026.3701323",
+      "read_scope": "2026-11-03协作核IEEE索引摘要及CityU作者机构摘要；主过程复核CityU题录/摘要。无PDF阅读页码、未读核心定理。"
+    },
+    {
+      "id": "FPN19",
+      "citation_key": "Paper_Zhou2026_SelectiveProtection",
+      "title": "Stealthy integrity attacks and optimal selective protection for distributed state estimation",
+      "doi": "10.1007/s11432-025-4567-3",
+      "read_scope": "2026-11-03协作及主过程核出版社HTML题录/摘要；无PDF阅读页码，未核核心定理。"
+    },
+    {
+      "id": "FPN26",
+      "citation_key": "Paper_Khazraei2022_IntermittentAuthentication",
+      "title": "Attack-resilient state estimation with intermittent data authentication",
+      "doi": "10.1016/j.automatica.2021.110035",
+      "read_scope": "2026-11-03主过程核Duke机构题录、作者稿PDF/印刷1—3页摘要/模型相关部分及9—10页Theorem4、Theorem5与相邻认证条件片段；未通读或逐行审证，页码指作者稿而非期刊排版。"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-14",
+  "baseline_commit": "fbabe2a0dca8200f5c2bff947f40c24728d19b8b",
+  "old_repository_files_unchanged": 70,
+  "third_party_fulltexts_uploaded": false,
+  "files": [
+    {
+      "file": "aggregate_gap_certificate.json",
+      "sha256": "b5c694ef8b800a0dc4b2f14a512d9ba6a98d931a3e89c78bf33dcd7465039bbb",
+      "bytes": 9278
+    },
+    {
+      "file": "certify_aggregate_gap.py",
+      "sha256": "86da9d1f8b9014ea236606ff47fdca2ac966595127c8bd2b7d3378b01fe19309",
+      "bytes": 3670
+    },
+    {
+      "file": "check_first_packet_limit.py",
+      "sha256": "d50a49e4d766271ac4dc8cbfdbdad778bae5fe1b7f5e9657af388e085be3ef8b",
+      "bytes": 2848
+    },
+    {
+      "file": "first_packet_limit.json",
+      "sha256": "cac9134c28a30679b4ad7089530059e41c175f0c92f0f10cd6f8885fd02d84c6",
+      "bytes": 2699
+    },
+    {
+      "file": "five_node_aggregate_model.json",
+      "sha256": "dbe91a198a0a17efe5fe3c81a553234af327b94c1b966b6356920e32ec85c11e",
+      "bytes": 43739
+    },
+    {
+      "file": "input_snapshot.json",
+      "sha256": "48e4f90f7675e8da85529535cbaa4322509ed79eed00b574a488182e05e8e706",
+      "bytes": 55131
+    },
+    {
+      "file": "library_registration.json",
+      "sha256": "e7dcb5b220a225f1801f76d6eb2e6fad7de0ba8e825161f4644f7436ad69c04f",
+      "bytes": 818
+    },
+    {
+      "file": "literature_evidence.json",
+      "sha256": "4e8de95d2dbe68cc734f51f3c593cfcedb32b83c87165d7088ae0774f23ef701",
+      "bytes": 4673
+    },
+    {
+      "file": "literature_followup.json",
+      "sha256": "e9ec0427d750cf412c86f43003a2a7bc16fd15aac649f16f4c8e4850ef143919",
+      "bytes": 1910
+    },
+    {
+      "file": "README.md",
+      "sha256": "f1b653bc9707169cca794a2d59b6b187b6dbde3a70148189ee8ae24c7a28ad39",
+      "bytes": 2376
+    },
+    {
+      "file": "rebuild_original_aggregate.py",
+      "sha256": "17d05e091ef50b3aa3e5a3176f9a73f48eda50412673fc9f98dc541e55e72f77",
+      "bytes": 6044
+    },
+    {
+      "file": "review_notes.md",
+      "sha256": "c2a3327851ed53e4777599f6d794781b23a8294e222ae784539be1e847235cf2",
+      "bytes": 2965
+    },
+    {
+      "file": "scope_check.json",
+      "sha256": "abc227c903f72c3e8e3143881c1bb23f18aad7c8ae932fcac60f20392dca8daf",
+      "bytes": 6829
+    },
+    {
+      "file": "variable_attack_envelopes.json",
+      "sha256": "e49b9307d51293ae6e42fec8a412a5bce9397205c83767d4b0ca01b103267d96",
+      "bytes": 638920
+    },
+    {
+      "file": "variable_attack_envelopes.py",
+      "sha256": "7884c30701cdc615b8250da3c56bece9f0ab583302ea86a31cfb9da8789d4625",
+      "bytes": 7024
+    },
+    {
+      "file": "verify_delivery.py",
+      "sha256": "bcf60699e402be20b7cd97d3c7fdf4265726c751bd5f79d05317f01f4ec2bcfb",
+      "bytes": 4052
+    },
+    {
+      "file": "报告一_原稿估计器与后续KF的严格对照.md",
+      "sha256": "8d8b09d7e07310e1ad45ce418e01959ee97aaf8259d39f4e33e890b5f176476f",
+      "bytes": 12700
+    },
+    {
+      "file": "报告三_有限验证预算的可行性与验收门槛.md",
+      "sha256": "533021be32f262bab2527c8a7c744b185a3823e5275ebfc2afde8145f53f7a01",
+      "bytes": 9161
+    },
+    {
+      "file": "报告二_变持续与分段FDI的检测损害边界.md",
+      "sha256": "da2d176cdd695f0132d2ffd1142f6b9719694de7d3d49134141d64e77facf501",
+      "bytes": 16209
+    },
+    {
+      "file": "报告四_文献独立性与立项决定.md",
+      "sha256": "ea831e1d50bd9d713e7aebb022408839df78887e7552f549e25ee7cb2c67a022",
+      "bytes": 9347
+    },
+    {
+      "file": "证据表.md",
+      "sha256": "b652f427fa2b841cf0f46e919db6fc4e25e2ab9c0a29277c49a8c7f0f18a6063",
+      "bytes": 2001
+    }
+  ]
+}

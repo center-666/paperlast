@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-14",
+  "initial_capture": "literature_evidence.json before follow-up/registration",
+  "registration": "library_registration.json",
+  "unique_catalog": "参考文献/文献库.json",
+  "current_library_sha256": "514d9ec76f4883761998fdcfaa10d8f624ae9e747dc7443fd7e4533b5a25dd5b",
+  "He2022": {
+    "id": "FPN12",
+    "pdf_file": "02_期刊与会议论文/FPN12_2022_Paper_He2022_SecureDistributedFilters.pdf",
+    "sha256": "d6549df8aa9dca62e8f080100c19fcbf7381b60b2b96db268777dd331901a80a",
+    "source": "https://people.kth.se/~kallej/papers/secure_tac22he.pdf",
+    "read_PDF_pages": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "printed_pages": "2845—2849",
+    "visual_page": 4,
+    "all_proofs_verified": false,
+    "fulltext_obtained": true
+  },
+  "new_metadata": [
+    {
+      "id": "FPN31",
+      "title": "Double-Layer Detection-Based Distributed Secure State Estimation Under False Data Injection Attacks",
+      "author": "Minggao Zhu; Dajun Du; Xue Li; Minrui Fei; Lei Wu",
+      "doi": "10.1109/tpwrs.2025.3586788",
+      "source_page": "https://ieeexplore.ieee.org/document/11072370/",
+      "reading_status": "IEEE原始题录/摘要已核；未取得全文，未读定理"
+    },
+    {
+      "id": "FPN32",
+      "title": "Secure State Estimation Against Sparse Sensor Attacks: A Distributed Adaptive Saturation Method",
+      "author": "Qingjie Wang; Jianan Zhang; Yining Qian; An-Yang Lu",
+      "doi": "10.1109/tase.2025.3649048",
+      "source_page": "https://ieeexplore.ieee.org/document/11316654/",
+      "reading_status": "IEEE原始题录/摘要已核；未取得全文，未读定理"
+    }
+  ],
+  "still_missing_core_fulltexts": [
+    "FPN17",
+    "FPN19",
+    "FPN31",
+    "FPN32"
+  ],
+  "FPN26": "Only prior designated author manuscript fragments; no new full-proof audit",
+  "source_PDFs_uploaded": false,
+  "independent_external_review": false
+}

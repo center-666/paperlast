@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-14",
+  "E": 10.0,
+  "D": 0.1,
+  "alpha_event": 0.05,
+  "instance_sha256": "dbe91a198a0a17efe5fe3c81a553234af327b94c1b966b6356920e32ec85c11e",
+  "input_hash_format": "UTF-8/LF normalized model text",
+  "allowed_class": "single autonomous segment L=1 with total coded injection energy <=E",
+  "schemes": "no watermark or scalar block +/-1 encoding, before any new integrity resource",
+  "timing": "receiver alarms before including packet; on no alarm uses original full G",
+  "bias_reference": "same-noise attack-free fixed-gain ungated shadow estimator; not independently alarm-gated healthy closed loop",
+  "oracle": "receiver additionally knows physical x up to current time; attacked sensor current v~N(0,.5I) remains unknown",
+  "test": "any randomized decision measurable from original receiver transcript, ideal secret and this oracle, H0 event probability <=.05",
+  "bound": "power <= Phi(Phi^-1(alpha)+||a||/sqrt(.5)); all earlier alarm events may be included",
+  "limits": [
+    "not a computed exact worst event risk",
+    "not applicable unchanged to Gaussian matrix watermark",
+    "not a bound for packet verification or a changed fusion rule",
+    "no global clean copy of attacked current sensor packet supplied",
+    "floating displayed constants; analytic NP statement does not require DARE interval certificate"
+  ],
+  "rows": [
+    {
+      "model": "unstable",
+      "first_packet_attack": [
+        -1.1808830714437966,
+        -0.01011113157539057
+      ],
+      "autonomous_initial_state": [
+        -1.1808830714437966,
+        -0.01011113157539057
+      ],
+      "actual_total_energy": 1.3945870634042694,
+      "first_posterior_bias": [
+        -0.3193784095151743,
+        -0.002726084290252498
+      ],
+      "squared_bias": 0.10200999999999995,
+      "oracle_mean_shift_SNR": 1.6700820718780676,
+      "oracle_max_detection_power_at_alpha": 0.5100636257985871,
+      "dangerous_before_alarm_probability_lower": 0.4899363742014129,
+      "attained_actual_detector_risk": false
+    },
+    {
+      "model": "stable",
+      "first_packet_attack": [
+        -1.1885643914234267,
+        -0.00966733049418035
+      ],
+      "autonomous_initial_state": [
+        -1.1885643914234267,
+        -0.00966733049418035
+      ],
+      "actual_total_energy": 1.4127787698386245,
+      "first_posterior_bias": [
+        -0.3193795418948921,
+        -0.0025900229745735113
+      ],
+      "squared_bias": 0.10200999999999995,
+      "oracle_mean_shift_SNR": 1.6809394812655358,
+      "oracle_max_detection_power_at_alpha": 0.5143930491977413,
+      "dangerous_before_alarm_probability_lower": 0.4856069508022587,
+      "attained_actual_detector_risk": false
+    }
+  ]
+}

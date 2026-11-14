@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-14",
+  "old_record_count": 174,
+  "new_record_count": 176,
+  "new_ids": [
+    "FPN31",
+    "FPN32"
+  ],
+  "existing_read_records_appended": [
+    "FPN06",
+    "FPN12",
+    "FPN16",
+    "INTRO05",
+    "INTRO06"
+  ],
+  "old_other_records_unchanged": 169,
+  "new_pdf": {
+    "id": "FPN12",
+    "file": "参考文献\\02_期刊与会议论文\\FPN12_2022_Paper_He2022_SecureDistributedFilters.pdf",
+    "sha256": "d6549df8aa9dca62e8f080100c19fcbf7381b60b2b96db268777dd331901a80a"
+  },
+  "old_library_sha256": "70e62fb35e99b5cc76bed3097da1953e930b13ba6bdb3373e878faa834399a3d",
+  "new_library_sha256": "514d9ec76f4883761998fdcfaa10d8f624ae9e747dc7443fd7e4533b5a25dd5b",
+  "no_formal_manuscript_changed": true,
+  "source": "IEEE Xplore/Crossref and original KTH author PDF; single maintained library"
+}

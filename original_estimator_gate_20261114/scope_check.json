@@ -1,0 +1,192 @@
+{
+  "date": "2026-11-14",
+  "baseline_commit": "fbabe2a0dca8200f5c2bff947f40c24728d19b8b",
+  "previous_frozen_files": 302,
+  "previous_files_unchanged_except_registered_library": 301,
+  "old_original_and_archive_members_unchanged": 14,
+  "stage_tex_unchanged": 7,
+  "stage_pdf_unchanged": true,
+  "formal_manuscript_changed": false,
+  "library_update": "one FPN12 full PDF under existing ID, 2 new metadata-only records, 5 read-scope appends",
+  "library_counts": {
+    "records": 176,
+    "local_PDF": 119,
+    "complete_theses": 46
+  },
+  "original_estimator_structure_recovered": true,
+  "original_50_node_execution_reproduced": false,
+  "newly_declared_5_node_aggregate_instance": true,
+  "declared_target_DARE_certified": true,
+  "arbitrary_unknown_onset_closed_loop_risk_solved": false,
+  "physical_noise_samples": 0,
+  "new_defense_algorithm": false,
+  "large_scale_experiments": false,
+  "task4_5_development_started": false,
+  "decision": "B: conditional problem retention, not method approval",
+  "files": [
+    {
+      "file": "aggregate_gap_certificate.json",
+      "sha256": "9835675960128343063f5f0ef710d942feb148ef2d0ed91ae3f3716b5fb145e8"
+    },
+    {
+      "file": "certify_aggregate_gap.py",
+      "sha256": "86da9d1f8b9014ea236606ff47fdca2ac966595127c8bd2b7d3378b01fe19309"
+    },
+    {
+      "file": "check_first_packet_limit.py",
+      "sha256": "d50a49e4d766271ac4dc8cbfdbdad778bae5fe1b7f5e9657af388e085be3ef8b"
+    },
+    {
+      "file": "final_scope.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "finish_literature_evidence.py",
+      "sha256": "8620a929761343dcef579fa24aded508e1b9db25e05f753d1212f5952ca75aa4"
+    },
+    {
+      "file": "first_packet_limit.json",
+      "sha256": "518ea0c8d6f360d3db4b7b2a6008791379d63dc1db8b45847b404794a434f83a"
+    },
+    {
+      "file": "five_node_aggregate_model.json",
+      "sha256": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1"
+    },
+    {
+      "file": "input_snapshot.json",
+      "sha256": "2cde6e6e976cae6e6101b496446dc29dc186aa1a311cd5d0028a6a7dd16c3745"
+    },
+    {
+      "file": "library_registration.json",
+      "sha256": "996e94812f38b9f81d1c7c955ecc81af4ba14875bd3bd8f740f64c6bb509bbbf"
+    },
+    {
+      "file": "literature_evidence.json",
+      "sha256": "4b60c3bcabc5e1ee67d1c8ad9e336cb32ef1721273ad9de28ad9513fe57e7f11"
+    },
+    {
+      "file": "literature_followup.json",
+      "sha256": "c8f070851faed59699b9f9cfba26418a0d2031a12b78155f7b380fb0216634a2"
+    },
+    {
+      "file": "literature_gate.py",
+      "sha256": "9e6ec07bca7c2d6221fbc9025712a7e06fac52524214c4848d3eeac39a2e96f8"
+    },
+    {
+      "file": "literature_work\\FPN06.txt",
+      "sha256": "d9f10fc298914c68536bd72e104ae4717d52f56d78498cc97a9a228b87a4b4d2"
+    },
+    {
+      "file": "literature_work\\FPN06_p9.png",
+      "sha256": "d7c39424e628c8777f339861237cefaf57978ac4ba30153c903130978f9d4b9f"
+    },
+    {
+      "file": "literature_work\\FPN16.txt",
+      "sha256": "fbc69298d9e434e2d7726d508a78080d7de5280ebe4787e068bbc41b65083c7e"
+    },
+    {
+      "file": "literature_work\\FPN16_p5.png",
+      "sha256": "6411b7234b8ce4417bda6fbe48f436b826183b0428045328c85d40a49b35655d"
+    },
+    {
+      "file": "literature_work\\He2022.txt",
+      "sha256": "3a9245b3c92766d4230639f4dfa89195052925c7252474fb684991320598e059"
+    },
+    {
+      "file": "literature_work\\He2022_kth_source.pdf",
+      "sha256": "d6549df8aa9dca62e8f080100c19fcbf7381b60b2b96db268777dd331901a80a"
+    },
+    {
+      "file": "literature_work\\He2022_p4.png",
+      "sha256": "483c7cbc03765fdec1c208b0eed1ea5f5ba339cb8b985ced5d1f61e7eba1a444"
+    },
+    {
+      "file": "literature_work\\He2022_target.txt",
+      "sha256": "33f11c1647485341bc15862dc53ddfb6e7c8aba391b1d9bcc8e96ccbb8dc03b6"
+    },
+    {
+      "file": "literature_work\\INTRO05.txt",
+      "sha256": "2d7ef2f6abc14f7b747daeff47869fc863bb28f4024a755958d9ee0f9da32643"
+    },
+    {
+      "file": "literature_work\\INTRO05_p6.png",
+      "sha256": "88ada072c32a3d495deb0fac5a9f375ff545fea3cc223bf17fac1b776a55a011"
+    },
+    {
+      "file": "literature_work\\INTRO06.txt",
+      "sha256": "8f1ebe6036c3b37648cc5540a2e7bf8eee753613bc84b1f771506d93c5567d38"
+    },
+    {
+      "file": "literature_work\\INTRO06_p6.png",
+      "sha256": "c70f8f60f76e0c9af4281a6f4f07f1641f6d966f7f6c4fcd85638b238563f3c3"
+    },
+    {
+      "file": "literature_work\\new_primary_metadata.json",
+      "sha256": "2e6cc2d6658e1d74df729d14fc5eee606fcc0c7dd67346e2e1fc31f294264579"
+    },
+    {
+      "file": "package_review.py",
+      "sha256": "61086bd01c98aaf32173a15f9617094ccc777ee42fb732ac110582127db6f295"
+    },
+    {
+      "file": "protect_inputs.py",
+      "sha256": "30f946c78949683988c03ad38450f3dde7d054080d4d8f5d358ec304a836963c"
+    },
+    {
+      "file": "README.md",
+      "sha256": "f1b653bc9707169cca794a2d59b6b187b6dbde3a70148189ee8ae24c7a28ad39"
+    },
+    {
+      "file": "rebuild_original_aggregate.py",
+      "sha256": "17d05e091ef50b3aa3e5a3176f9a73f48eda50412673fc9f98dc541e55e72f77"
+    },
+    {
+      "file": "register_literature.py",
+      "sha256": "23a812be95a4ea4c3a702ba7c7a04f113814d1c252791ab177b1f7dcbec06c2b"
+    },
+    {
+      "file": "rerun_first_packet.log",
+      "sha256": "29c4ffe01056177a9fbe6f2402266b4ee16bd6c79ab0e43ccf371dafaf13e302"
+    },
+    {
+      "file": "rerun_matrix.log",
+      "sha256": "e305ed0c6d2ffa6371f4d75069082cad95b5cbccfc83c25f14bcbd43e31c5150"
+    },
+    {
+      "file": "review_notes.md",
+      "sha256": "c2a3327851ed53e4777599f6d794781b23a8294e222ae784539be1e847235cf2"
+    },
+    {
+      "file": "variable_attack_envelopes.json",
+      "sha256": "58cf5cd7db1d49c64c9af2b7e3e6e0939b84e7fc67a81ef64695e98ff640a408"
+    },
+    {
+      "file": "variable_attack_envelopes.py",
+      "sha256": "7884c30701cdc615b8250da3c56bece9f0ab583302ea86a31cfb9da8789d4625"
+    },
+    {
+      "file": "verify_delivery.py",
+      "sha256": "bcf60699e402be20b7cd97d3c7fdf4265726c751bd5f79d05317f01f4ec2bcfb"
+    },
+    {
+      "file": "报告一_原稿估计器与后续KF的严格对照.md",
+      "sha256": "8d8b09d7e07310e1ad45ce418e01959ee97aaf8259d39f4e33e890b5f176476f"
+    },
+    {
+      "file": "报告三_有限验证预算的可行性与验收门槛.md",
+      "sha256": "533021be32f262bab2527c8a7c744b185a3823e5275ebfc2afde8145f53f7a01"
+    },
+    {
+      "file": "报告二_变持续与分段FDI的检测损害边界.md",
+      "sha256": "da2d176cdd695f0132d2ffd1142f6b9719694de7d3d49134141d64e77facf501"
+    },
+    {
+      "file": "报告四_文献独立性与立项决定.md",
+      "sha256": "ea831e1d50bd9d713e7aebb022408839df78887e7552f549e25ee7cb2c67a022"
+    },
+    {
+      "file": "证据表.md",
+      "sha256": "b652f427fa2b841cf0f46e919db6fc4e25e2ab9c0a29277c49a8c7f0f18a6063"
+    }
+  ]
+}
