@@ -1,0 +1,123 @@
+{
+  "baseline": "c1dbba3ab48ff355d780a2e83ec0971c2d345439",
+  "new_directory": "central_theory_final_audit_20261114",
+  "files": [
+    {
+      "file": "audit_original_sources.py",
+      "source_sha256": "84af82aa5a379f098336ebec0fcf972702d93f85d08245a8c38596113039d346",
+      "public_sha256": "84af82aa5a379f098336ebec0fcf972702d93f85d08245a8c38596113039d346",
+      "bytes": 7965
+    },
+    {
+      "file": "candidate_A_checks.json",
+      "source_sha256": "47e487ca8c38df9080a5052f51c7a429d21603cc9a050666c1d73b6470b006e0",
+      "public_sha256": "c8d898890d6708b85d1dbc5fc6d609abb52ae2b13dea4f08fb7f6aa83b2078c6",
+      "bytes": 3340
+    },
+    {
+      "file": "candidate_BC_evidence.json",
+      "source_sha256": "8aa2bd99fca231a9e64ef5b55f90485f929b7c9d3d291cf029987c2af4f01314",
+      "public_sha256": "7eae165d4bef250586f6a869bd9ab881bb11959f18a29d663ac550d5b8dece98",
+      "bytes": 4118
+    },
+    {
+      "file": "check_candidate_A.py",
+      "source_sha256": "c306586d81fdf6cb9860ed343d8ef45f1c3bff8559a1deef95f402cca554efe7",
+      "public_sha256": "c306586d81fdf6cb9860ed343d8ef45f1c3bff8559a1deef95f402cca554efe7",
+      "bytes": 2325
+    },
+    {
+      "file": "check_candidate_BC.py",
+      "source_sha256": "427759c25a55f82bc5b40dca1945d48fb841bd12e2e220a242224e90fe464145",
+      "public_sha256": "427759c25a55f82bc5b40dca1945d48fb841bd12e2e220a242224e90fe464145",
+      "bytes": 4934
+    },
+    {
+      "file": "fetch_A_primary.py",
+      "source_sha256": "734c3600c3f2d74f3e04245d99f40e761e8411a2e6e1a41836fd8290e1e51374",
+      "public_sha256": "734c3600c3f2d74f3e04245d99f40e761e8411a2e6e1a41836fd8290e1e51374",
+      "bytes": 1516
+    },
+    {
+      "file": "fetch_final_comparison.py",
+      "source_sha256": "0d75c172614b8893a841ef59be30b7b55e2b1f820001d56d67a264ebaa8f680a",
+      "public_sha256": "0d75c172614b8893a841ef59be30b7b55e2b1f820001d56d67a264ebaa8f680a",
+      "bytes": 1615
+    },
+    {
+      "file": "final_version_source.json",
+      "source_sha256": "54051cefbe03133c8c0accfbd04d2939aed482d3fcbc1c8dc3b093c7ffeaa621",
+      "public_sha256": "fc95eda8f62d9a43f127562df1472c12ed5443a6032d63a6945657c286218978",
+      "bytes": 595
+    },
+    {
+      "file": "frozen_inputs.json",
+      "source_sha256": "a3c3183776147eef0414daad9283074f1bc447afe3d2239eb2b2dc5be3f70b38",
+      "public_sha256": "aa863da3cb93a22757f61e5884e9858966721c80f8a9da127a560485355a9572",
+      "bytes": 94219
+    },
+    {
+      "file": "primary_fetch_A.json",
+      "source_sha256": "491556d4f67c7ee2e123c3860621c7cb7eaba91d5c9f3b1895f3cb6582632e4c",
+      "public_sha256": "d1e1d22b522ba6b8bd1a63f8b5fc39b6259769faa33dec2b96ab257fb471557b",
+      "bytes": 1267
+    },
+    {
+      "file": "README.md",
+      "source_sha256": "53f53d22f38420ae47bf2b777fda4e0bec37a1a7c71e3d11d4969811bc084484",
+      "public_sha256": "53f53d22f38420ae47bf2b777fda4e0bec37a1a7c71e3d11d4969811bc084484",
+      "bytes": 2903
+    },
+    {
+      "file": "reproduction_evidence.json",
+      "source_sha256": "0cf2922a1c50d837d141a11b4b3fe1cfb5979be499dff7685f86d1a3c8d39461",
+      "public_sha256": "4cf8e4855aaf52f47027a7c886b308b33b92eb97f82267ced54a44c3801b690a",
+      "bytes": 41215
+    },
+    {
+      "file": "verification.json",
+      "source_sha256": "79ba449e36e51f4c272a661382d3cbbdfe6bc46746f201977810e0e773bf6511",
+      "public_sha256": "e6aa6b68b5bc1e0b0314180a8f2b974342215b11ca73d25c2dac2368b008788d",
+      "bytes": 1380
+    },
+    {
+      "file": "verify_audit.py",
+      "source_sha256": "488c669132386ca8837559ad4333233d521a08f8da8f8b1e58a8e9e402005c69",
+      "public_sha256": "488c669132386ca8837559ad4333233d521a08f8da8f8b1e58a8e9e402005c69",
+      "bytes": 3980
+    },
+    {
+      "file": "中心定理_近邻归约与论文依赖表.md",
+      "source_sha256": "9da3e0f8ee799a504f07e11a5a581bd60dd64f01e28d38c0c94b71bc7437d72b",
+      "public_sha256": "9da3e0f8ee799a504f07e11a5a581bd60dd64f01e28d38c0c94b71bc7437d72b",
+      "bytes": 10587
+    },
+    {
+      "file": "候选A_逐式审查与未完成排重.md",
+      "source_sha256": "13fee15bb16af3def81cd852f9405403390a1d0dab9a7bf6ad5348318c91eed3",
+      "public_sha256": "13fee15bb16af3def81cd852f9405403390a1d0dab9a7bf6ad5348318c91eed3",
+      "bytes": 7584
+    },
+    {
+      "file": "候选BC_最强定理与独立性审查.md",
+      "source_sha256": "f973045a741b813f8e7f5d5c1fcfeb69f6edf550e078fd98cd47fde34abc7911",
+      "public_sha256": "f973045a741b813f8e7f5d5c1fcfeb69f6edf550e078fd98cd47fde34abc7911",
+      "bytes": 22893
+    },
+    {
+      "file": "原50节点复现证据缺项清单.md",
+      "source_sha256": "2b7cc7b7297fdeb00393ddfdf610ab680ce4ecdf47664051499b882f2402553f",
+      "public_sha256": "2b7cc7b7297fdeb00393ddfdf610ab680ce4ecdf47664051499b882f2402553f",
+      "bytes": 7395
+    },
+    {
+      "file": "独立投稿可行性_最终决定C.md",
+      "source_sha256": "ec8f27e7b80fbad8a3c9e1be0e711d9ad09d906274be423f187776ba58090c64",
+      "public_sha256": "ec8f27e7b80fbad8a3c9e1be0e711d9ad09d906274be423f187776ba58090c64",
+      "bytes": 6752
+    }
+  ],
+  "excluded": "temporary third-party PDF/text/page images, tmp, publication helpers and receipt",
+  "previous_repository_blobs_unchanged": true,
+  "prior_blobs": 222
+}

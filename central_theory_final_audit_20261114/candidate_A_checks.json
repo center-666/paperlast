@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-14",
+  "source_sha256": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+  "attack": "existing a_t=A^t xi for 0<=t<10, otherwise0; source H0=I2",
+  "scope": "same complete five-packet parity basis; four healthy packets before onset",
+  "no_new_attack_algorithm": true,
+  "no_simulation": true,
+  "models": {
+    "unstable": {
+      "A": [
+        [
+          "27/25",
+          "1/20"
+        ],
+        [
+          "1/100",
+          "21/20"
+        ]
+      ],
+      "parity_rank": 8,
+      "observability_rank": 2,
+      "ZO_exact_zero": true,
+      "internal_packet_ends": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "internal_detection_rank": 0,
+      "start_packet0_rank": 2,
+      "first_stop_packet10_rank": 2,
+      "monitored_packet_ends": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "whole_event_detection_rank": 2,
+      "internal_stealth_initial_space_dimension": 2,
+      "whole_event_stealth_initial_space_dimension": 0,
+      "nonzero_onset_all_event_strictly_stealthy_attack_exists": false,
+      "frozen_G_det": "106351462686746253967946721540621357/1562500000000000000000000000000000000",
+      "per_window_ranks": [
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "first_stop_boundary_last_block": [
+        "-109885454894728828747/50000000000000000000",
+        "-17761082262224456163/20000000000000000000",
+        "-17761082262224456163/100000000000000000000",
+        "-33297532600556857801/20000000000000000000"
+      ],
+      "exact_DARE_rank_bridge_is_existing_source": true
+    },
+    "stable": {
+      "A": [
+        [
+          "4/5",
+          "1/20"
+        ],
+        [
+          "1/100",
+          "9/10"
+        ]
+      ],
+      "parity_rank": 8,
+      "observability_rank": 2,
+      "ZO_exact_zero": true,
+      "internal_packet_ends": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "internal_detection_rank": 0,
+      "start_packet0_rank": 2,
+      "first_stop_packet10_rank": 2,
+      "monitored_packet_ends": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "whole_event_detection_rank": 2,
+      "internal_stealth_initial_space_dimension": 2,
+      "whole_event_stealth_initial_space_dimension": 0,
+      "nonzero_onset_all_event_strictly_stealthy_attack_exists": false,
+      "frozen_G_det": "337224088802897813171510050288381850711/5000000000000000000000000000000000000000",
+      "per_window_ranks": [
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "first_stop_boundary_last_block": [
+        "-3607907960926201/32000000000000000",
+        "-77842736918897/640000000000000",
+        "-77842736918897/3200000000000000",
+        "-11392181652815901/32000000000000000"
+      ],
+      "exact_DARE_rank_bridge_is_existing_source": true
+    }
+  }
+}

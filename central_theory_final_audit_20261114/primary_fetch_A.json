@@ -1,0 +1,40 @@
+[
+  {
+    "id": "FPN07",
+    "requested_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8814300",
+    "final_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8814300",
+    "status": 418,
+    "bytes": 16794,
+    "content_type": "text/html",
+    "is_pdf": false,
+    "redirects": [],
+    "result": "No core PDF obtained; HTML/access error is not full-text review."
+  },
+  {
+    "id": "FPN08",
+    "requested_url": "https://doi.org/10.1109/TCYB.2024.3413969",
+    "final_url": "https://ieeexplore.ieee.org/document/10592082/",
+    "status": 202,
+    "bytes": 0,
+    "content_type": "text/html; charset=UTF-8",
+    "is_pdf": false,
+    "redirects": [
+      {
+        "status": 302,
+        "url": "https://doi.org/10.1109/TCYB.2024.3413969"
+      }
+    ],
+    "result": "No core PDF obtained; HTML/access error is not full-text review."
+  },
+  {
+    "id": "FPN11",
+    "requested_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9691881",
+    "final_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9691881",
+    "status": 418,
+    "bytes": 16794,
+    "content_type": "text/html",
+    "is_pdf": false,
+    "redirects": [],
+    "result": "No core PDF obtained; HTML/access error is not full-text review."
+  }
+]

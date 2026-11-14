@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-14",
+  "baseline": "c1dbba3ab48ff355d780a2e83ec0971c2d345439",
+  "checks": [
+    {
+      "group": "prior_task_files_and_current_library",
+      "count": 489,
+      "passed": true
+    },
+    {
+      "group": "original_and_formal_chapter_legacy_hashes",
+      "count": 17,
+      "passed": true
+    },
+    {
+      "group": "original_sources_and_archive_members",
+      "count": 14,
+      "passed": true
+    },
+    {
+      "group": "stage_TeX_PDF_frozen_artifacts",
+      "count": 8,
+      "passed": true
+    },
+    {
+      "group": "direct_static_audit_inputs",
+      "count": 20,
+      "passed": true
+    },
+    {
+      "group": "candidate_evidence_and_scope_assertions",
+      "passed": true
+    },
+    {
+      "group": "fulltext_source_and_recorded_missing_sources",
+      "passed": true,
+      "actual_download": "FPN16",
+      "missing": [
+        "FPN07",
+        "FPN08",
+        "FPN11"
+      ]
+    },
+    {
+      "group": "new_python_AST_and_markdown_local_links",
+      "passed": true
+    }
+  ],
+  "old_files_unchanged": true,
+  "formal_paper_unchanged": true,
+  "unique_library_unchanged": true,
+  "no_new_network_simulations": true,
+  "no_old_verification_entrypoints_executed": true,
+  "external_independent_peer_review": false,
+  "primary_A_fulltext_comparison_complete": false,
+  "independent_center_established": false,
+  "paper_decision": "C"
+}

@@ -1,0 +1,13 @@
+{
+  "existing_library_id": "FPN16",
+  "url": "https://pure.tudelft.nl/ws/portalfiles/portal/242463520/1-s2.0-S0005109825001931-main.pdf",
+  "http_status": 200,
+  "new_record_created": false,
+  "library_modified": false,
+  "purpose": "read final publisher version of already indexed paper, not new publication",
+  "temporary_work_copy": true,
+  "not_uploaded": true,
+  "sha256": "ec73c9cd6150ff7fc77e51e356098b58fb2487dbc13f7b3e96c1926ecf758879",
+  "pages": 8,
+  "read_scope": "targeted PDF4-6/printed3-5 and reference portions PDF7-8/printed6-7; text plus PDF4-5 images; not full paper audit"
+}

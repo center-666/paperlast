@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-14",
+  "baseline": "c1dbba3",
+  "input_sha256": {
+    "original_estimator_gate_20261114/five_node_aggregate_model.json": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+    "original_estimator_gate_20261114/aggregate_gap_certificate.json": "9835675960128343063f5f0ef710d942feb148ef2d0ed91ae3f3716b5fb145e8",
+    "innovation_positioning_final_20261114/resource_boundary_math.json": "62f174b97a24a493638ffd1db102ba0ed5a118dc89b4e13f55bbf91732159182",
+    "watermark_boundary_final_20261114/unitary_early_boundary.json": "effb26403d1445401f1cf0ee90b9116f839d20970496a7defdd4626ba616b103"
+  },
+  "prior_physical_DARE_error_bridge_rederived_this_turn": false,
+  "C3": {
+    "quantifiers": "inf policy sup original xi; same xi witness for all policy orientations",
+    "xi": [
+      "-189/100",
+      "21/50"
+    ],
+    "energy_exact": "255167343258867116471427220756030581/25600000000000000000000000000000000",
+    "energy_decimal": "9.96747434604949673716512581078",
+    "norm_squared_exact": "7497/2000",
+    "frozen_G_principal_minors": [
+      "94543596111296912134874187803566204889/10000000000000000000000000000000000000000",
+      "58624164675162618992788514818715897055911850432061438236382919501491205521/25000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "previous_operator_error_upper": "100000000011/100000000000000000000000",
+    "conditional_exact_G_sigma_min_lower": "1/4",
+    "nu_exact": "3/4-exp(1/2)*E1(1/2)/8",
+    "nu_diagnostic": "0.6346361709395336913958938280213869059272044090584102973100279538918211",
+    "kappa_diagnostic": "1.255271271382028043921103648082587419936034275769341671102617351589495",
+    "first_bias_squared_strict_lower_diagnostic": "0.3691583630557383460330926230142982449206469328617975216064064622522879",
+    "oracle_shift_squared_exact": "7.497/nu",
+    "first_size_exact": "1/300",
+    "lower_risk_exact": "Phi(Phi^(-1)(1-1/300)-sqrt(7.497/nu))",
+    "lower_risk_diagnostic": "0.2345443917187467664151904349932066574329843647683484049639287127947639",
+    "probability_interval_certified": false,
+    "experiment_reduction": "whiten and rotate oracle source innovation to N(0,I) versus N(d e1,I)",
+    "original_Gaussian_in_policy_class": false,
+    "all_finite_kappa_covered": false,
+    "independent_publication_center_established": false
+  },
+  "B_singular_record_example": {
+    "L": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "1"
+      ]
+    ],
+    "support_rank": 2,
+    "exact_joint_KL": "5/2",
+    "incorrect_sum_marginal_KL": "19/4",
+    "original_physical_model_experiment": false
+  },
+  "theorem_evidence": [
+    {
+      "id": "A",
+      "type": "self-contained linear algebra proof plus independent exact finite check",
+      "direct_primary_theorem_comparison_complete": false,
+      "missing": [
+        "FPN07",
+        "FPN08",
+        "FPN11"
+      ]
+    },
+    {
+      "id": "B",
+      "type": "conditional Gaussian/relative entropy identities under stated assumptions",
+      "joint_risk_representation": true,
+      "new_solved_global_risk_theorem": false
+    },
+    {
+      "id": "C1",
+      "type": "norm/positive trace equality proof; existing rational nu certificate retained"
+    },
+    {
+      "id": "C2",
+      "type": "Gaussian moment and change-of-variables consequence"
+    },
+    {
+      "id": "C3",
+      "type": "valid conditional class-uniform combination, standard oracle ROC reduction",
+      "value": "nontrivial analysis insight; no established independent paper center"
+    }
+  ],
+  "sources": {
+    "FPN16_final": "final_version_source.json",
+    "standard_NP_ROC": "https://spseducation.tue.nl/disciplines/statistical/statisticalsignalprocessing_detection_hypothesis/",
+    "no_claim_of_full_field_novelty_clearance": true
+  },
+  "no_new_attack_algorithm": true,
+  "no_new_watermark_or_detector": true,
+  "no_physical_samples": true,
+  "no_parameter_search": true,
+  "old_files_written": false,
+  "paper_decision": "C: current independent publication center not established"
+}
