@@ -1,0 +1,242 @@
+{
+  "date": "2026-11-14",
+  "baseline_commit": "eebb740a89762fafffbef56b11f056591f54fdad",
+  "old_protected_files_unchanged": 329,
+  "original_and_archive_files_unchanged": 14,
+  "stage_tex_unchanged": 7,
+  "stage_pdf_unchanged": true,
+  "original_manuscript_changed": false,
+  "reference_library_unchanged": true,
+  "watermarked_aggregate_estimator_preserved": true,
+  "original_50_node_reproduction": false,
+  "E": 10,
+  "D": 0.1,
+  "eta_budgets": [
+    0.01,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "candidate_distribution_changed": false,
+  "MAC_or_scheduling_or_RL_added": false,
+  "normal_linear_moments": "deterministic quadrature and linear covariance equations",
+  "ordinary_clip_Monte_Carlo": true,
+  "independent_initial_noise_paths": 2560,
+  "independent_confirmatory_noise_paths": 2048,
+  "physical_noise_scalar_variates": 14155776,
+  "first_packet_grid_samples_fresh": true,
+  "full_variable_duration_risk_solved": false,
+  "normal_clip_MSE_exact_budget_certified": false,
+  "large_50_node_experiment": false,
+  "decision": "C: stop this rho candidate; innovation not validated",
+  "files": [
+    {
+      "file": "assemble_screen_tables.py",
+      "sha256": "9f19a82c485b108f7a982cb3d11ea0f1918351c8bc26c2f1360fe118b8160fc5"
+    },
+    {
+      "file": "candidate_first_mc.json",
+      "sha256": "3629a985d3dcaf9b3102ec842667eb9b909a82ec8ae4b8c40f30aece047dde8a"
+    },
+    {
+      "file": "check_candidate_first_mc.py",
+      "sha256": "ecc9cedbfdcdaa62d7da18dd2b62ab50caad433c1343b2fbd48d13f249be0153"
+    },
+    {
+      "file": "check_clip_risk_net.py",
+      "sha256": "f66b325c57d584ccc8274cebe1e8f3a1e6608f85a0402c85715ed865daef7638"
+    },
+    {
+      "file": "clip_baseline.py",
+      "sha256": "2bae729c2d0a281250562a8243dbc80f30f56fa25eea6d2945f3a6fc70dd3655"
+    },
+    {
+      "file": "clip_baseline_config.json",
+      "sha256": "907373999223795fd92919ed7b6555656130c05756a4bbe09277acf114603a3d"
+    },
+    {
+      "file": "clip_baseline_results.json",
+      "sha256": "0b27250e7e85faecdd65f553e249625d13160734ad2c5c316425ef864b588863"
+    },
+    {
+      "file": "clip_baseline_run.log",
+      "sha256": "980cb1313b4fbbf2233f01c49eea5b8fba30a0076f5dfb0a07621856db874f27"
+    },
+    {
+      "file": "clip_risk_net.json",
+      "sha256": "24213fe211a94956a590b07b4b9f9cf35e6ed99634a614328d33547cac5af1b3"
+    },
+    {
+      "file": "clip_risk_net_config.json",
+      "sha256": "3c57ae8340594a4b1a52e835b99870621b486b14c1cea56e64dc827087812706"
+    },
+    {
+      "file": "clip_risk_net_run.log",
+      "sha256": "f2b3f9449a72e44cba2f37ca213c29694f21006b73d3d4247cab6444e8a0f425"
+    },
+    {
+      "file": "evidence_table.md",
+      "sha256": "8661fb72624e69f6e47f2c0d143e1b3bec4db563dccbba3c4e4ca711c3f569ab"
+    },
+    {
+      "file": "final_scope.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "freeze_scope.py",
+      "sha256": "5066fbaaa896a2a6ab8f5ed5a556cdc907cf3d7267a03910d93db9365a4a0363"
+    },
+    {
+      "file": "frozen_scope.json",
+      "sha256": "c1f7b3e6ddbe4b5e9b13154513ec2311ff411b0d0165c727c04c53927a6e94f6"
+    },
+    {
+      "file": "package_review.py",
+      "sha256": "37089f9bd2082f60efbcc42d4f05903798910ae30fd04ae630ecb6f80548a47b"
+    },
+    {
+      "file": "preservation_recovery.json",
+      "sha256": "9e57d0a951c96caf2fccc24d16d351915f1357a0ca9573dee3b4d99c38f6742f"
+    },
+    {
+      "file": "previous_gate_recheck.log",
+      "sha256": "dacddb22805ea3d6f1682eee7ec52fcd7d4aca8c49b93c4546724a8dc7fa9396"
+    },
+    {
+      "file": "raw_watermark_resources.json",
+      "sha256": "1a49900d081067ae1b4ca02e6e7372a327487bbd3fc68fce9b97b043d0fd5be4"
+    },
+    {
+      "file": "raw_watermark_resources.py",
+      "sha256": "6bb8dab13cb148d1f5135c260baca612298eb8d86e0e169253e2af4dce61169b"
+    },
+    {
+      "file": "README.md",
+      "sha256": "89637578eb0f2990201b8901c47599c2d3d29d39c0822ae8bd36ae2c6614c163"
+    },
+    {
+      "file": "reviewer_evidence.py",
+      "sha256": "af87c059d521aed2a4bc8d969ecd63f1da802f511f346a05e3cf19418413aa73"
+    },
+    {
+      "file": "reviewer_mapping.json",
+      "sha256": "9c7176a0e950967b440c9639f1a9e92244985974580503438d89b743a5af3399"
+    },
+    {
+      "file": "rho_expected_damage.json",
+      "sha256": "b39400a7d3eae0fa5e9cf030b409ac8acc683df4c0c76f02eb727a66d910fdd6"
+    },
+    {
+      "file": "rho_expected_damage.log",
+      "sha256": "83b64dca972c23b96c8287048cc09e3ce6aa82b67e88b0284cffab9f0d6fe08f"
+    },
+    {
+      "file": "rho_expected_damage.py",
+      "sha256": "7d69fbbc0c24decb9b36f02ce37e1980fe90d97fd1066aac1dbd31330c713c38"
+    },
+    {
+      "file": "rho_first_packet.log",
+      "sha256": "5fed1b1f51ddf8c536dc115f1b3424bb6e7a56d353a4fd9c9981eba4b1d7ebd8"
+    },
+    {
+      "file": "rho_first_packet.py",
+      "sha256": "932e93ae2ba9e73dacad9dadbb855c8db5b1df3628b34afa9b8cec10da8fc4da"
+    },
+    {
+      "file": "rho_first_packet_adaptive.log",
+      "sha256": "b9b11bc2f114c65efb07b049d7b44a4e4a1c082b495b0c63cfdcbcf968baff7b"
+    },
+    {
+      "file": "rho_first_packet_adaptive_check.json",
+      "sha256": "669590d2f6372ee9a10482150bd8a737a12571979dcb4cea0806fbd961bbcf55"
+    },
+    {
+      "file": "rho_first_packet_high_order.json",
+      "sha256": "0b14af1e8dedad6b65df8561ac5beed950e13564faa7b97fc202d4263be051a2"
+    },
+    {
+      "file": "rho_first_packet_screen.json",
+      "sha256": "4d7678321e7839f3b282d0b862e49192b5133126e71f896d5242e93e2a9d77a9"
+    },
+    {
+      "file": "rho_first_packet_split_angle.json",
+      "sha256": "4d73dc0130202ee5a5e9104471c72644539fd95d9976645d9841bade2089f8f6"
+    },
+    {
+      "file": "rho_first_packet_split_angle.log",
+      "sha256": "43df8c2680afcc5afa2cff812eb068d1138fbe1e6e930332b8596d3e7ce15eeb"
+    },
+    {
+      "file": "rho_integral_crosscheck.py",
+      "sha256": "74fa0af260cbc2a16b0a375c89beb5ca6dc0d39631da27d4c3ffc8ab79581f9a"
+    },
+    {
+      "file": "rho_necessary_cap_point.json",
+      "sha256": "e1fb984ec2668ee8f34e02b336a3d450a90c9ac2b2395e0ef1c38b479844f372"
+    },
+    {
+      "file": "rho_normal.log",
+      "sha256": "67862e386c46fdbdcbfc27aa9d5064c7e45708c7651478434dc94ad953eddf14"
+    },
+    {
+      "file": "rho_normal_screen.json",
+      "sha256": "baf335ab43279d3dda545c1b21bd78e6d279dd9700a14b3bb3d0fb2acb54ba73"
+    },
+    {
+      "file": "rho_numeric.py",
+      "sha256": "e6719ad48f39a0103eeba784de3ca7a6a7f53ed9a974f03085d5136408e881b9"
+    },
+    {
+      "file": "rho_numeric_checks.json",
+      "sha256": "ab8955bff35f509b0db8e44cc338e8c83d55f6d179fde5aaf312dc2feaf63c6c"
+    },
+    {
+      "file": "rho_numeric_checks.py",
+      "sha256": "d5175b209bccf1c1f9a33d2c0e0fcec603348a3142015aa798ef10cdae81c329"
+    },
+    {
+      "file": "rho_safe_derived_point.json",
+      "sha256": "7ac95308c110e90c17e5add72fc992d8185aa0269f881bd3148556b9487c95f8"
+    },
+    {
+      "file": "rho_theory_check.json",
+      "sha256": "1dc715a65775693aa70b958c0b23850a67d2efa434c14a223b1d5c531c662acb"
+    },
+    {
+      "file": "rho_theory_check.py",
+      "sha256": "9eba3587f575dd04cd93199940073427b09123f7fde21c5a459228037ea7a7b8"
+    },
+    {
+      "file": "verify_delivery.py",
+      "sha256": "87db737ba19041c467474107fd4cc5661f522c6344a4403ec81ac9921caff63b"
+    },
+    {
+      "file": "候选公式_误差递推与安全边界.md",
+      "sha256": "f1fc4db6d838c0304741925f3502f2d25f8a4815d00cd7bc5b890d8804a4aa4a"
+    },
+    {
+      "file": "审稿意见_防御设计对应表.md",
+      "sha256": "4b992a177885395ad8be610f9f84521418890f460a2c0fe45a9b18fdac5b0eeb"
+    },
+    {
+      "file": "最小对照结果与停止决定.md",
+      "sha256": "948843cee18855a017f76ad90da6ecd969dcc4e2d71b9a615ec2a5c8dda6c25f"
+    },
+    {
+      "file": "最小数值筛选_正常精度与首包风险.md",
+      "sha256": "0186637ee613a3cde1ab7254935812df67f9dfa05542a4118c3a593fa3c1fe2a"
+    },
+    {
+      "file": "研究决定_C_当前候选停止.md",
+      "sha256": "e4b50080563aff6b792e91f9cb57f013846c5d18707badf213b43b2af17f32c6"
+    },
+    {
+      "file": "补充审证_首包覆盖与适用范围.md",
+      "sha256": "f075d9b6bb33a33c2a1c19da1f4ce58f10f47684291016984bc46d182be8ae8c"
+    },
+    {
+      "file": "近邻独立性_水印条件增益封顶.md",
+      "sha256": "6a9a9fd24471015fbe4bdc00eda750d18c6788b4d5629d26918a606cb681c647"
+    }
+  ]
+}

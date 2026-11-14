@@ -1,0 +1,299 @@
+{
+  "date": "2026-11-14",
+  "config": {
+    "date": "2026-11-14",
+    "purpose": "Additional ordinary fixed-threshold update clipping baseline, not a new defense candidate",
+    "budgets_eta": [
+      0.01,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "training_paths": 512,
+    "validation_paths": 2048,
+    "burn_steps": 128,
+    "evaluation_steps": 256,
+    "training_seed": 2026111401,
+    "validation_seed": 2026111402,
+    "watermark_seed": 2026111403,
+    "bisection_steps": 14,
+    "attack_angles": 32,
+    "attack_radii": 33,
+    "E": 10,
+    "D": 0.1,
+    "alpha_current": 0.0033333333333333335,
+    "normal_loss_measure": "paired stationary target posterior MSE increase relative to unchanged original fixed-gain estimator",
+    "risk_scope": "predeclared finite L1 attack grid, same noise and watermark samples; not full attack-family worst risk",
+    "uncertainty": "independent path standard errors for MSE; finite-grid Hoeffding bound for empirical risk, not global certificate"
+  },
+  "noise_samples_generated": 7864320,
+  "physical_estimator_trajectories_generated": true,
+  "Monte_Carlo": true,
+  "full_network_50_node_simulation": false,
+  "rows": [
+    {
+      "model": "unstable",
+      "eta": 0.01,
+      "threshold_update_norm": 0.72314453125,
+      "actual_MSE_mean": 0.22985670640398187,
+      "paired_relative_MSE_increase": 0.008908882916609843,
+      "paired_relative_MSE_standard_error": 0.000253393780505556,
+      "healthy_reference_empirical_trace": 0.22782729889943265,
+      "analytic_reference_trace": 0.22779595641172257,
+      "empirical_single_test_false_alarm": 0.00390625,
+      "risks": {
+        "none": {
+          "finite_attack_grid_empirical_max": 0.88916015625,
+          "attacker": [
+            -1.2577674683878246,
+            2.3531174259830903
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        },
+        "Gaussian": {
+          "finite_attack_grid_empirical_max": 0.78466796875,
+          "attacker": [
+            -1.1801439108360985,
+            0.11623402994165974
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        }
+      },
+      "exact_same_normal_performance_for_none_Gaussian_sign": true,
+      "note": "Clipping rule is fixed threshold of target update G*innovation, not fixed rho; budget and risks are Monte Carlo diagnostics, not certificates"
+    },
+    {
+      "model": "unstable",
+      "eta": 0.05,
+      "threshold_update_norm": 0.5283203125,
+      "actual_MSE_mean": 0.23860753644706023,
+      "paired_relative_MSE_increase": 0.047324095288781794,
+      "paired_relative_MSE_standard_error": 0.0005591066119431235,
+      "healthy_reference_empirical_trace": 0.22782729889943265,
+      "analytic_reference_trace": 0.22779595641172257,
+      "empirical_single_test_false_alarm": 0.00390625,
+      "risks": {
+        "none": {
+          "finite_attack_grid_empirical_max": 0.75537109375,
+          "attacker": [
+            -2.629337780093203,
+            1.756867336532429
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        },
+        "Gaussian": {
+          "finite_attack_grid_empirical_max": 0.6279296875,
+          "attacker": [
+            -1.453835335144273,
+            0.28918582829374634
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        }
+      },
+      "exact_same_normal_performance_for_none_Gaussian_sign": true,
+      "note": "Clipping rule is fixed threshold of target update G*innovation, not fixed rho; budget and risks are Monte Carlo diagnostics, not certificates"
+    },
+    {
+      "model": "unstable",
+      "eta": 0.1,
+      "threshold_update_norm": 0.431640625,
+      "actual_MSE_mean": 0.24976179423041597,
+      "paired_relative_MSE_increase": 0.09629009959833748,
+      "paired_relative_MSE_standard_error": 0.0008009611980078564,
+      "healthy_reference_empirical_trace": 0.22782729889943265,
+      "analytic_reference_trace": 0.22779595641172257,
+      "empirical_single_test_false_alarm": 0.00390625,
+      "risks": {
+        "none": {
+          "finite_attack_grid_empirical_max": 0.66455078125,
+          "attacker": [
+            -3.1015153816411156,
+            0.6169297670266589
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        },
+        "Gaussian": {
+          "finite_attack_grid_empirical_max": 0.53125,
+          "attacker": [
+            -1.7702158662541478,
+            0.1743510449124896
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        }
+      },
+      "exact_same_normal_performance_for_none_Gaussian_sign": true,
+      "note": "Clipping rule is fixed threshold of target update G*innovation, not fixed rho; budget and risks are Monte Carlo diagnostics, not certificates"
+    },
+    {
+      "model": "unstable",
+      "eta": 0.2,
+      "threshold_update_norm": 0.324951171875,
+      "actual_MSE_mean": 0.27231139874360943,
+      "paired_relative_MSE_increase": 0.19528046302883173,
+      "paired_relative_MSE_standard_error": 0.0011559705876574339,
+      "healthy_reference_empirical_trace": 0.22782729889943265,
+      "analytic_reference_trace": 0.22779595641172257,
+      "empirical_single_test_false_alarm": 0.00390625,
+      "risks": {
+        "none": {
+          "finite_attack_grid_empirical_max": 0.5244140625,
+          "attacker": [
+            -3.1015153816411156,
+            0.6169297670266589
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        },
+        "Gaussian": {
+          "finite_attack_grid_empirical_max": 0.40283203125,
+          "attacker": [
+            -1.9669065180601644,
+            0.19372338323609958
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        }
+      },
+      "exact_same_normal_performance_for_none_Gaussian_sign": true,
+      "note": "Clipping rule is fixed threshold of target update G*innovation, not fixed rho; budget and risks are Monte Carlo diagnostics, not certificates"
+    },
+    {
+      "model": "stable",
+      "eta": 0.01,
+      "threshold_update_norm": 0.700439453125,
+      "actual_MSE_mean": 0.22879339499756934,
+      "paired_relative_MSE_increase": 0.009042633042540401,
+      "paired_relative_MSE_standard_error": 0.0002546058215654826,
+      "healthy_reference_empirical_trace": 0.22674323062386997,
+      "analytic_reference_trace": 0.2267220580614671,
+      "empirical_single_test_false_alarm": 0.00439453125,
+      "risks": {
+        "none": {
+          "finite_attack_grid_empirical_max": 0.880859375,
+          "attacker": [
+            -1.3043514486984848,
+            2.4402699232417233
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        },
+        "Gaussian": {
+          "finite_attack_grid_empirical_max": 0.7666015625,
+          "attacker": [
+            -1.1630682681154183,
+            0.23134866263499707
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        }
+      },
+      "exact_same_normal_performance_for_none_Gaussian_sign": true,
+      "note": "Clipping rule is fixed threshold of target update G*innovation, not fixed rho; budget and risks are Monte Carlo diagnostics, not certificates"
+    },
+    {
+      "model": "stable",
+      "eta": 0.05,
+      "threshold_update_norm": 0.509521484375,
+      "actual_MSE_mean": 0.2375044606857229,
+      "paired_relative_MSE_increase": 0.04746441591905214,
+      "paired_relative_MSE_standard_error": 0.0005528009079502239,
+      "healthy_reference_empirical_trace": 0.22674323062386997,
+      "analytic_reference_trace": 0.2267220580614671,
+      "empirical_single_test_false_alarm": 0.00439453125,
+      "risks": {
+        "none": {
+          "finite_attack_grid_empirical_max": 0.7451171875,
+          "attacker": [
+            -2.629337780093203,
+            1.756867336532429
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        },
+        "Gaussian": {
+          "finite_attack_grid_empirical_max": 0.609375,
+          "attacker": [
+            -1.453835335144273,
+            0.28918582829374634
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        }
+      },
+      "exact_same_normal_performance_for_none_Gaussian_sign": true,
+      "note": "Clipping rule is fixed threshold of target update G*innovation, not fixed rho; budget and risks are Monte Carlo diagnostics, not certificates"
+    },
+    {
+      "model": "stable",
+      "eta": 0.1,
+      "threshold_update_norm": 0.413330078125,
+      "actual_MSE_mean": 0.24867338335093941,
+      "paired_relative_MSE_increase": 0.09672703624242837,
+      "paired_relative_MSE_standard_error": 0.0007895600319894465,
+      "healthy_reference_empirical_trace": 0.22674323062386997,
+      "analytic_reference_trace": 0.2267220580614671,
+      "empirical_single_test_false_alarm": 0.00439453125,
+      "risks": {
+        "none": {
+          "finite_attack_grid_empirical_max": 0.642578125,
+          "attacker": [
+            -2.444473687745614,
+            2.0061277102715467
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        },
+        "Gaussian": {
+          "finite_attack_grid_empirical_max": 0.50341796875,
+          "attacker": [
+            -1.6718705403511396,
+            0.16466487575068464
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        }
+      },
+      "exact_same_normal_performance_for_none_Gaussian_sign": true,
+      "note": "Clipping rule is fixed threshold of target update G*innovation, not fixed rho; budget and risks are Monte Carlo diagnostics, not certificates"
+    },
+    {
+      "model": "stable",
+      "eta": 0.2,
+      "threshold_update_norm": 0.306884765625,
+      "actual_MSE_mean": 0.2711303718012249,
+      "paired_relative_MSE_increase": 0.19577777988113132,
+      "paired_relative_MSE_standard_error": 0.001127101016090955,
+      "healthy_reference_empirical_trace": 0.22674323062386997,
+      "analytic_reference_trace": 0.2267220580614671,
+      "empirical_single_test_false_alarm": 0.00439453125,
+      "risks": {
+        "none": {
+          "finite_attack_grid_empirical_max": 0.49853515625,
+          "attacker": [
+            -3.147050428896263,
+            0.3099574131777593
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        },
+        "Gaussian": {
+          "finite_attack_grid_empirical_max": 0.37109375,
+          "attacker": [
+            -2.132291824878267,
+            0.42413921483082795
+          ],
+          "simultaneous_95pct_Hoeffding_halfwidth": 0.05099384086578645,
+          "global_worst_risk_computed": false
+        }
+      },
+      "exact_same_normal_performance_for_none_Gaussian_sign": true,
+      "note": "Clipping rule is fixed threshold of target update G*innovation, not fixed rho; budget and risks are Monte Carlo diagnostics, not certificates"
+    }
+  ]
+}

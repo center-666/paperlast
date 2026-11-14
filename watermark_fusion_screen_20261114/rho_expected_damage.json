@@ -1,0 +1,1495 @@
+{
+  "date": "2026-11-14",
+  "kind": "P1/P3-phys expected terminal response, floating moment quadrature",
+  "L": 10,
+  "E": 10.0,
+  "D": 0.1,
+  "full_event_worst_danger_risk": false,
+  "models": {
+    "unstable": {
+      "baselines": {
+        "original_Gaussian": {
+          "S": [
+            [
+              2.3933944788911066,
+              1.0002171082206124
+            ],
+            [
+              1.0002171082206124,
+              1.5966593930053414
+            ]
+          ],
+          "W": [
+            [
+              22.374196152108674,
+              6.324494706098147
+            ],
+            [
+              6.324494706098147,
+              17.9555791854249
+            ]
+          ],
+          "P1_expected_terminal_damage": 1.1443133159480654,
+          "P1_initial_state": [
+            -0.5230403119550113,
+            -0.3157471173130641
+          ],
+          "P3_phys_threshold": 0.1,
+          "P3_phys_feasible": true,
+          "L": 10,
+          "objective": "expected terminal shadow displacement, no alarm gating",
+          "P3_phys_first_window": {
+            "feasible": true,
+            "Pd": 0.006353956747645068,
+            "initial_state": [
+              0.1480349088684517,
+              0.10317523975634439
+            ],
+            "energy": 0.8746498998559207,
+            "expected_terminal_damage": 0.1,
+            "global_certified": false,
+            "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+            "nodes": 4096,
+            "first_five_attacked_samples_only": true
+          }
+        },
+        "original_sign": {
+          "S": [
+            [
+              0.3058261608779541,
+              0.12779507117437902
+            ],
+            [
+              0.12779507117437905,
+              0.20092538599382287
+            ]
+          ],
+          "W": [
+            [
+              22.374196152108674,
+              6.324494706098147
+            ],
+            [
+              6.324494706098147,
+              17.9555791854249
+            ]
+          ],
+          "P1_expected_terminal_damage": 0.1459153067689775,
+          "P1_initial_state": [
+            -0.5285223846872773,
+            -0.3073053271136895
+          ],
+          "P3_phys_threshold": 0.1,
+          "P3_phys_feasible": true,
+          "L": 10,
+          "objective": "expected terminal shadow displacement, no alarm gating",
+          "P3_phys_first_window": {
+            "feasible": true,
+            "Pd": 0.011833511773502179,
+            "initial_state": [
+              0.41829709857138603,
+              0.28363715075645063
+            ],
+            "energy": 6.860129398167889,
+            "expected_terminal_damage": 0.1,
+            "global_certified": false,
+            "integration": "finite32sign average",
+            "nodes": 32,
+            "first_five_attacked_samples_only": true
+          }
+        }
+      },
+      "rows": [
+        {
+          "eta": 0.01,
+          "no_watermark_fixed_rho": {
+            "S": [
+              [
+                0.30295186223308834,
+                0.1257373307191559
+              ],
+              [
+                0.12573733071915588,
+                0.19341085937959782
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.1437688630918319,
+            "P1_initial_state": [
+              -0.5394115706256897,
+              -0.29006717941668964
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.003333333333333336,
+              "initial_state": [
+                -0.6625550788360112,
+                0.30841424494528397
+              ],
+              "energy": 8.945017898966665,
+              "expected_terminal_damage": 0.09999999999999999,
+              "global_certified": false,
+              "integration": "no watermark deterministic",
+              "nodes": 1,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "Gaussian_fixed_rho": {
+            "S": [
+              [
+                1.8569286479273568,
+                0.7750077217765132
+              ],
+              [
+                0.7750077217765133,
+                1.231448534157503
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.886765587397023,
+            "P1_initial_state": [
+              -0.5255139868552858,
+              -0.3119568881814467
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.007720982358514846,
+              "initial_state": [
+                0.1685771483569839,
+                0.11663617809502104
+              ],
+              "energy": 1.1288101620701207,
+              "expected_terminal_damage": 0.09999999999999998,
+              "global_certified": false,
+              "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+              "nodes": 4096,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "Gaussian_aware": {
+            "S": [
+              [
+                1.7680963787687953,
+                0.739365641766944
+              ],
+              [
+                0.739365641766944,
+                1.1886241648514497
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.8464257661412629,
+            "P1_initial_state": [
+              -0.5199941188590198,
+              -0.3203725931319472
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.008037434755535353,
+              "initial_state": [
+                0.17155107261496552,
+                0.12075538045210307
+              ],
+              "energy": 1.1823260945987297,
+              "expected_terminal_damage": 0.09999999999999998,
+              "global_certified": false,
+              "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+              "nodes": 4096,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "sign_aware": {
+            "S": [
+              [
+                0.2254088336077133,
+                0.09416032360065998
+              ],
+              [
+                0.09416032360065997,
+                0.14786895007243442
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.10751570499272886,
+            "P1_initial_state": [
+              -0.5291169745972105,
+              -0.30638043896727957
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.01678175888738443,
+              "initial_state": [
+                0.48761552559038523,
+                0.32999259420115906
+              ],
+              "energy": 9.31050555273511,
+              "expected_terminal_damage": 0.09999999999999998,
+              "global_certified": false,
+              "integration": "finite32sign average",
+              "nodes": 32,
+              "first_five_attacked_samples_only": true
+            }
+          }
+        },
+        {
+          "eta": 0.05,
+          "no_watermark_fixed_rho": {
+            "S": [
+              [
+                0.2425973401694334,
+                0.10057846267861587
+              ],
+              [
+                0.10057846267861587,
+                0.15403731747475408
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.11502284281961972,
+            "P1_initial_state": [
+              -0.5413034910125526,
+              -0.28700543126041567
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.0033333333333333366,
+              "initial_state": [
+                0.6378187624495144,
+                0.01007521502019827
+              ],
+              "energy": 9.185215911432094,
+              "expected_terminal_damage": 0.10000000000000002,
+              "global_certified": false,
+              "integration": "no watermark deterministic",
+              "nodes": 1,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "Gaussian_fixed_rho": {
+            "S": [
+              [
+                1.453725830587256,
+                0.6059995374032087
+              ],
+              [
+                0.6059995374032088,
+                0.958997562090119
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.6934933676958908,
+            "P1_initial_state": [
+              -0.5276707132490999,
+              -0.30862690639810664
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.009741849545899208,
+              "initial_state": [
+                0.19103328626648367,
+                0.13133133590802612
+              ],
+              "energy": 1.4435601128494855,
+              "expected_terminal_damage": 0.09999999999999998,
+              "global_certified": false,
+              "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+              "nodes": 4096,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "Gaussian_aware": {
+            "S": [
+              [
+                1.1727644115840716,
+                0.4899180370516564
+              ],
+              [
+                0.4899180370516564,
+                0.785541469265389
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.5609705423237109,
+            "P1_initial_state": [
+              -0.5216137403186204,
+              -0.31791900353680835
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.012319217319897494,
+              "initial_state": [
+                0.21102591096176235,
+                0.1479224838717901
+              ],
+              "energy": 1.7840976155022417,
+              "expected_terminal_damage": 0.09999999999999998,
+              "global_certified": false,
+              "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+              "nodes": 4096,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "sign_aware": {
+            "S": [
+              [
+                0.16900463772021876,
+                0.07057601559040481
+              ],
+              [
+                0.07057601559040481,
+                0.11070045960918386
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.08058904721316182,
+            "P1_initial_state": [
+              -0.5297068992625168,
+              -0.3054609828123443
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          }
+        },
+        {
+          "eta": 0.1,
+          "no_watermark_fixed_rho": {
+            "S": [
+              [
+                0.19866322490884178,
+                0.08229049376230536
+              ],
+              [
+                0.08229049376230536,
+                0.12558732339050094
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.09412436926061453,
+            "P1_initial_state": [
+              -0.5428059162848297,
+              -0.2845594090219821
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          },
+          "Gaussian_fixed_rho": {
+            "S": [
+              [
+                1.1708126765463023,
+                0.487579997609868
+              ],
+              [
+                0.4875799976098679,
+                0.7690734776788275
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.55806277484522,
+            "P1_initial_state": [
+              -0.5293937234267336,
+              -0.30594932526359503
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.012405349831273803,
+              "initial_state": [
+                0.2133051581533947,
+                0.1459226524632798
+              ],
+              "energy": 1.7940544067562523,
+              "expected_terminal_damage": 0.09999999999999998,
+              "global_certified": false,
+              "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+              "nodes": 4096,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "Gaussian_aware": {
+            "S": [
+              [
+                0.8537104600472442,
+                0.3562283184676322
+              ],
+              [
+                0.3562283184676322,
+                0.5686753041529561
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.40790708715275875,
+            "P1_initial_state": [
+              -0.5239432302854968,
+              -0.31436721618512886
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.018474341594589216,
+              "initial_state": [
+                0.24797904716763045,
+                0.1727796033297513
+              ],
+              "energy": 2.453849278750026,
+              "expected_terminal_damage": 0.09999999999999999,
+              "global_certified": false,
+              "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+              "nodes": 4096,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "sign_aware": {
+            "S": [
+              [
+                0.13161438068042766,
+                0.05494681153278206
+              ],
+              [
+                0.05494681153278206,
+                0.08609551654205581
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.06274421019020625,
+            "P1_initial_state": [
+              -0.530219507477824,
+              -0.3046605499572691
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          }
+        },
+        {
+          "eta": 0.2,
+          "no_watermark_fixed_rho": {
+            "S": [
+              [
+                0.14081023437418738,
+                0.05824728037698305
+              ],
+              [
+                0.05824728037698305,
+                0.08842849561461735
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.06664301958261475,
+            "P1_initial_state": [
+              -0.5450206466125668,
+              -0.2809297854212493
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          },
+          "Gaussian_fixed_rho": {
+            "S": [
+              [
+                0.8112820908730929,
+                0.3373403035277608
+              ],
+              [
+                0.3373403035277608,
+                0.5294877806089104
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.3862120570004391,
+            "P1_initial_state": [
+              -0.531946241428667,
+              -0.30195406038177697
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.019919391713845675,
+              "initial_state": [
+                0.25694313056117185,
+                0.17468405723114497
+              ],
+              "energy": 2.5927807915351315,
+              "expected_terminal_damage": 0.09999999999999998,
+              "global_certified": false,
+              "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+              "nodes": 4096,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "Gaussian_aware": {
+            "S": [
+              [
+                0.5247702798948196,
+                0.21856301940706746
+              ],
+              [
+                0.2185630194070675,
+                0.34623782381309026
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.2502819506950308,
+            "P1_initial_state": [
+              -0.5278222553076276,
+              -0.3083920261759927
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.0368348370010516,
+              "initial_state": [
+                0.31753399447202885,
+                0.21929224873368408
+              ],
+              "energy": 4.000193124656304,
+              "expected_terminal_damage": 0.1,
+              "global_certified": false,
+              "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+              "nodes": 4096,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "sign_aware": {
+            "S": [
+              [
+                0.08687822235752415,
+                0.03625433818547694
+              ],
+              [
+                0.03625433818547694,
+                0.05671066587607087
+              ]
+            ],
+            "W": [
+              [
+                22.374196152108674,
+                6.324494706098147
+              ],
+              [
+                6.324494706098147,
+                17.9555791854249
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.041400970504938434,
+            "P1_initial_state": [
+              -0.5310381254423506,
+              -0.303379414507641
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          }
+        }
+      ]
+    },
+    "stable": {
+      "baselines": {
+        "original_Gaussian": {
+          "S": [
+            [
+              0.011538684318085527,
+              0.01534611213060915
+            ],
+            [
+              0.01534611213060915,
+              0.08838724868120448
+            ]
+          ],
+          "W": [
+            [
+              2.7630028955972383,
+              0.4691886848189451
+            ],
+            [
+              0.4691886848189451,
+              4.776846137784364
+            ]
+          ],
+          "P1_expected_terminal_damage": 0.18727300749295123,
+          "P1_initial_state": [
+            0.23065003844734855,
+            1.413720280988238
+          ],
+          "P3_phys_threshold": 0.1,
+          "P3_phys_feasible": true,
+          "L": 10,
+          "objective": "expected terminal shadow displacement, no alarm gating",
+          "P3_phys_first_window": {
+            "feasible": true,
+            "Pd": 0.16651674212517895,
+            "initial_state": [
+              0.16261417387169486,
+              1.0341833766833208
+            ],
+            "energy": 5.3398780868636,
+            "expected_terminal_damage": 0.1,
+            "global_certified": false,
+            "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+            "nodes": 4096,
+            "first_five_attacked_samples_only": true
+          }
+        },
+        "original_sign": {
+          "S": [
+            [
+              0.00146189671323542,
+              0.0019409094215337426
+            ],
+            [
+              0.0019409094215337426,
+              0.011072571154697824
+            ]
+          ],
+          "W": [
+            [
+              2.7630028955972383,
+              0.4691886848189451
+            ],
+            [
+              0.4691886848189451,
+              4.776846137784364
+            ]
+          ],
+          "P1_expected_terminal_damage": 0.023473389130178775,
+          "P1_initial_state": [
+            0.23608383183017617,
+            1.4126843553999275
+          ],
+          "P3_phys_threshold": 0.1,
+          "P3_phys_feasible": false,
+          "L": 10,
+          "objective": "expected terminal shadow displacement, no alarm gating",
+          "P3_phys_first_window": {
+            "feasible": false,
+            "Pd": null,
+            "not_detection_100_percent": true
+          }
+        }
+      },
+      "rows": [
+        {
+          "eta": 0.01,
+          "no_watermark_fixed_rho": {
+            "S": [
+              [
+                0.001453792071374865,
+                0.001900549729225986
+              ],
+              [
+                0.001900549729225986,
+                0.010613710148472559
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.022531163174733474,
+            "P1_initial_state": [
+              0.24925056916494331,
+              1.410124905832663
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          },
+          "Gaussian_fixed_rho": {
+            "S": [
+              [
+                0.0088909010585881,
+                0.011788241490144426
+              ],
+              [
+                0.011788241490144426,
+                0.06761713354362811
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.1433008278225951,
+            "P1_initial_state": [
+              0.23312669111812853,
+              1.4132495915507624
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.22220608309510742,
+              "initial_state": [
+                0.18397606872000377,
+                1.1826248232459309
+              ],
+              "energy": 6.978591079681013,
+              "expected_terminal_damage": 0.09999999999999995,
+              "global_certified": false,
+              "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+              "nodes": 4096,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "Gaussian_aware": {
+            "S": [
+              [
+                0.008469099480818858,
+                0.011286545245208933
+              ],
+              [
+                0.011286545245208933,
+                0.06534190894183799
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.13840401137471633,
+            "P1_initial_state": [
+              0.22767563552931486,
+              1.414282311108537
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.23017772300452205,
+              "initial_state": [
+                0.18263955386363256,
+                1.2042046072272286
+              ],
+              "energy": 7.225494768619226,
+              "expected_terminal_damage": 0.10000000000000002,
+              "global_certified": false,
+              "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+              "nodes": 4096,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "sign_aware": {
+            "S": [
+              [
+                0.0010686784528425267,
+                0.001417749408357879
+              ],
+              [
+                0.001417749408357879,
+                0.008079076254757143
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.017128465240628863,
+            "P1_initial_state": [
+              0.23675509302786182,
+              1.4125555589239698
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          }
+        },
+        {
+          "eta": 0.05,
+          "no_watermark_fixed_rho": {
+            "S": [
+              [
+                0.0011552644596909078,
+                0.0015066051048789112
+              ],
+              [
+                0.0015066051048789114,
+                0.008383065583670574
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.017800184821925864,
+            "P1_initial_state": [
+              0.2515357951347588,
+              1.4096735716812765
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          },
+          "Gaussian_fixed_rho": {
+            "S": [
+              [
+                0.0069066696783305,
+                0.00913185123396007
+              ],
+              [
+                0.009131851233960068,
+                0.05218994427075729
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.11063039998345528,
+            "P1_initial_state": [
+              0.23533830248833956,
+              1.4128271894659663
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": true,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": true,
+              "Pd": 0.28533303393788323,
+              "initial_state": [
+                0.2070173520817849,
+                1.3464265709345626
+              ],
+              "energy": 9.039743959940935,
+              "expected_terminal_damage": 0.1,
+              "global_certified": false,
+              "integration": "fixed unscrambled Sobol Gaussian integral diagnostic, clipped endpoints",
+              "nodes": 4096,
+              "first_five_attacked_samples_only": true
+            }
+          },
+          "Gaussian_aware": {
+            "S": [
+              [
+                0.005560894361063288,
+                0.007393779366985329
+              ],
+              [
+                0.00739377936698533,
+                0.04268813596527507
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.0904344436904077,
+            "P1_initial_state": [
+              0.22932945558038903,
+              1.4139702511584964
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          },
+          "sign_aware": {
+            "S": [
+              [
+                0.0007941614405390644,
+                0.0010527730825118657
+              ],
+              [
+                0.0010527730825118657,
+                0.0059927089341307175
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.012706004880691794,
+            "P1_initial_state": [
+              0.23741681416201801,
+              1.4124284155149467
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          }
+        },
+        {
+          "eta": 0.1,
+          "no_watermark_fixed_rho": {
+            "S": [
+              [
+                0.0009373892415784233,
+                0.0012200370836683745
+              ],
+              [
+                0.001220037083668374,
+                0.006768501458986867
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.014374757729142637,
+            "P1_initial_state": [
+              0.25339832325952444,
+              1.4093041623429683
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          },
+          "Gaussian_fixed_rho": {
+            "S": [
+              [
+                0.005511078913625436,
+                0.007269844127435053
+              ],
+              [
+                0.007269844127435052,
+                0.04142536237632053
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.08782799207470907,
+            "P1_initial_state": [
+              0.2371516599621616,
+              1.4124793835176326
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          },
+          "Gaussian_aware": {
+            "S": [
+              [
+                0.004004416840468197,
+                0.005309829261145426
+              ],
+              [
+                0.005309829261145425,
+                0.030535813318441837
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.0647048799849085,
+            "P1_initial_state": [
+              0.23168403113666342,
+              1.4135240697469615
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          },
+          "sign_aware": {
+            "S": [
+              [
+                0.000612053339369044,
+                0.0008108353234771348
+              ],
+              [
+                0.0008108353234771347,
+                0.004611135981984945
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.009777306219687854,
+            "P1_initial_state": [
+              0.23799441913625594,
+              1.4123172902305523
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          }
+        },
+        {
+          "eta": 0.2,
+          "no_watermark_fixed_rho": {
+            "S": [
+              [
+                0.0006501863908611944,
+                0.0008436738047412817
+              ],
+              [
+                0.0008436738047412817,
+                0.004659692645425597
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.009899138170595878,
+            "P1_initial_state": [
+              0.2562264863461932,
+              1.4087405539024398
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          },
+          "Gaussian_fixed_rho": {
+            "S": [
+              [
+                0.0037361672661335252,
+                0.0049111161520351936
+              ],
+              [
+                0.0049111161520351936,
+                0.027859392211484216
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.059082617327248996,
+            "P1_initial_state": [
+              0.23991894914166215,
+              1.411946061516101
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          },
+          "Gaussian_aware": {
+            "S": [
+              [
+                0.0024007513992458044,
+                0.0031691880065844343
+              ],
+              [
+                0.0031691880065844343,
+                0.018103712403850336
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.03837689658868289,
+            "P1_initial_state": [
+              0.235709884946252,
+              1.4127560268716186
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          },
+          "sign_aware": {
+            "S": [
+              [
+                0.00039448788977950404,
+                0.000522064998894943
+              ],
+              [
+                0.000522064998894943,
+                0.002964389158001389
+              ]
+            ],
+            "W": [
+              [
+                2.7630028955972383,
+                0.4691886848189451
+              ],
+              [
+                0.4691886848189451,
+                4.776846137784364
+              ]
+            ],
+            "P1_expected_terminal_damage": 0.006286191902653386,
+            "P1_initial_state": [
+              0.2389251262428804,
+              1.4121379492918162
+            ],
+            "P3_phys_threshold": 0.1,
+            "P3_phys_feasible": false,
+            "L": 10,
+            "objective": "expected terminal shadow displacement, no alarm gating",
+            "P3_phys_first_window": {
+              "feasible": false,
+              "Pd": null,
+              "not_detection_100_percent": true
+            }
+          }
+        }
+      ]
+    }
+  }
+}

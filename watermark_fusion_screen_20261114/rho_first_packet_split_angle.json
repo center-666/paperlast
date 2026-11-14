@@ -1,0 +1,114 @@
+[
+  {
+    "model": "unstable",
+    "eta": 0.01,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_split_angle_adaptive_radial": 0.8627737366055541,
+    "difference_from_uniform128": -0.0016976948261469005
+  },
+  {
+    "model": "unstable",
+    "eta": 0.01,
+    "scheme": "Gaussian_aware",
+    "risk_split_angle_adaptive_radial": 0.8847069430673443,
+    "difference_from_uniform128": 0.0009955573246187566
+  },
+  {
+    "model": "unstable",
+    "eta": 0.05,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_split_angle_adaptive_radial": 0.8208033003753203,
+    "difference_from_uniform128": -0.0004299678129748852
+  },
+  {
+    "model": "unstable",
+    "eta": 0.05,
+    "scheme": "Gaussian_aware",
+    "risk_split_angle_adaptive_radial": 0.8430372949872782,
+    "difference_from_uniform128": -9.28746744310871e-06
+  },
+  {
+    "model": "unstable",
+    "eta": 0.1,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_split_angle_adaptive_radial": 0.775620550331778,
+    "difference_from_uniform128": -0.0016078543908860654
+  },
+  {
+    "model": "unstable",
+    "eta": 0.1,
+    "scheme": "Gaussian_aware",
+    "risk_split_angle_adaptive_radial": 0.77822783867795,
+    "difference_from_uniform128": 1.4330933123085643e-05
+  },
+  {
+    "model": "unstable",
+    "eta": 0.2,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_split_angle_adaptive_radial": 0.6897608622685474,
+    "difference_from_uniform128": -3.371489198933375e-08
+  },
+  {
+    "model": "unstable",
+    "eta": 0.2,
+    "scheme": "Gaussian_aware",
+    "risk_split_angle_adaptive_radial": 0.6679184650298922,
+    "difference_from_uniform128": 1.5878206194308575e-07
+  },
+  {
+    "model": "stable",
+    "eta": 0.01,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_split_angle_adaptive_radial": 0.8440618002009794,
+    "difference_from_uniform128": -3.3999018300701067e-07
+  },
+  {
+    "model": "stable",
+    "eta": 0.01,
+    "scheme": "Gaussian_aware",
+    "risk_split_angle_adaptive_radial": 0.864361902058217,
+    "difference_from_uniform128": -2.1473886791856245e-05
+  },
+  {
+    "model": "stable",
+    "eta": 0.05,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_split_angle_adaptive_radial": 0.7989155187984484,
+    "difference_from_uniform128": -0.00017522438631700776
+  },
+  {
+    "model": "stable",
+    "eta": 0.05,
+    "scheme": "Gaussian_aware",
+    "risk_split_angle_adaptive_radial": 0.8268536037924269,
+    "difference_from_uniform128": -4.027296067521391e-06
+  },
+  {
+    "model": "stable",
+    "eta": 0.1,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_split_angle_adaptive_radial": 0.7472607333815792,
+    "difference_from_uniform128": -0.0003621157110766937
+  },
+  {
+    "model": "stable",
+    "eta": 0.1,
+    "scheme": "Gaussian_aware",
+    "risk_split_angle_adaptive_radial": 0.7566553742495566,
+    "difference_from_uniform128": 6.962219689210514e-06
+  },
+  {
+    "model": "stable",
+    "eta": 0.2,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_split_angle_adaptive_radial": 0.6499037504762396,
+    "difference_from_uniform128": 2.121371178720466e-08
+  },
+  {
+    "model": "stable",
+    "eta": 0.2,
+    "scheme": "Gaussian_aware",
+    "risk_split_angle_adaptive_radial": 0.6365229140411106,
+    "difference_from_uniform128": 9.181605642893942e-06
+  }
+]

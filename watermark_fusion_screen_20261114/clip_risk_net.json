@@ -1,0 +1,60 @@
+{
+  "config": {
+    "purpose": "Targeted continuum first-packet verification after finite-grid clipping screen; not candidate tuning",
+    "eta": 0.2,
+    "models": [
+      "unstable",
+      "stable"
+    ],
+    "angles_projective": 128,
+    "radial_intervals": 128,
+    "net_validation_paths": 2048,
+    "net_validation_seed": 2026111412,
+    "net_initial_seed": 2026111413,
+    "net_watermark_seed": 2026111414,
+    "candidate_independent_watermark_samples": 131072,
+    "candidate_seed": 2026111407,
+    "failure_probability_total": 0.01,
+    "scope": "L1 event, same original Gaussian encoding and same detector; frozen numerical F/G model",
+    "normal_MSE": "separate independent validation estimates, not exact constraints",
+    "limits": "Does not bound full variable-duration attack-family risk or nonlinear full-event clipping risk"
+  },
+  "rows": [
+    {
+      "model": "unstable",
+      "eta": 0.2,
+      "cover_radius": 0.05115938901281532,
+      "grid_points": 16512,
+      "expanded_event_max_sample_mean": 0.4580078125,
+      "Hoeffding_halfwidth": 0.06191781034671806,
+      "continuous_L1_risk_upper_qualified": 0.5199256228467181,
+      "grid_witness": [
+        1.6071714044821275,
+        1.017730067688602
+      ],
+      "qualifier": "model frozen; initialized finite-burn normal clipping trajectory, symmetric Gaussian law; not full variable-duration risk",
+      "normal_MSE_relative_increase_estimate": 0.19853532997089618,
+      "normal_MSE_relative_standard_error": 0.0011959199914438538,
+      "fresh_seeds_after_initial_grid_screen": true
+    },
+    {
+      "model": "stable",
+      "eta": 0.2,
+      "cover_radius": 0.05115938901281532,
+      "grid_points": 16512,
+      "expanded_event_max_sample_mean": 0.4248046875,
+      "Hoeffding_halfwidth": 0.06191781034671806,
+      "continuous_L1_risk_upper_qualified": 0.48672249784671806,
+      "grid_witness": [
+        1.5687449506553934,
+        0.8385116455918828
+      ],
+      "qualifier": "model frozen; initialized finite-burn normal clipping trajectory, symmetric Gaussian law; not full variable-duration risk",
+      "normal_MSE_relative_increase_estimate": 0.19898483941035103,
+      "normal_MSE_relative_standard_error": 0.0011579676286810415,
+      "fresh_seeds_after_initial_grid_screen": true
+    }
+  ],
+  "normal_precision_certified": false,
+  "global_variable_duration_risk_computed": false
+}

@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-14",
+  "incident": "An earlier gate verifier was mistakenly invoked and rewrote its own scope_check.json",
+  "affected_file": "../original_estimator_gate_20261114/scope_check.json",
+  "recovery": "Restored from eebb740 Git blob with original CRLF representation, accepting only bytes that matched this round's pre-task frozen SHA256",
+  "final_frozen_hash_match": true,
+  "original_manuscript_or_TeX_or_PDF_changed": false,
+  "final_all_329_protected_hashes_match": true,
+  "prevention": "Only this round's verifier is used for final preservation checks"
+}

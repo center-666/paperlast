@@ -1,0 +1,22 @@
+{
+  "unstable": {
+    "gamma_derived": 0.09,
+    "candidate_trace": 0.39191844404059406,
+    "candidate_relative_loss": 0.7204802500191598,
+    "sign_fixed_rho": 0.3327698353119549,
+    "sign_fixed_trace": 0.32381818283311803,
+    "sign_fixed_relative_loss": 0.4215273525217591,
+    "reference_trace": 0.22779595641172257,
+    "note": "single theoretical sufficient-cap point, outside frozen normal budgets"
+  },
+  "stable": {
+    "gamma_derived": 0.09,
+    "candidate_trace": 0.3761255070518421,
+    "candidate_relative_loss": 0.6589718277428034,
+    "sign_fixed_rho": 0.3349332130253144,
+    "sign_fixed_trace": 0.314824443396191,
+    "sign_fixed_relative_loss": 0.3885920324119423,
+    "reference_trace": 0.2267220580614671,
+    "note": "single theoretical sufficient-cap point, outside frozen normal budgets"
+  }
+}

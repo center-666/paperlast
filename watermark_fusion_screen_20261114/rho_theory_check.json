@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-14",
+  "source_sha256": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+  "exact_identity": "two rational rho values verify the quadratic expansion; general proof in report",
+  "rows": [
+    {
+      "model": "unstable",
+      "frozen_endpoint_norm_bound": "419/1000",
+      "exact_DARE_uniform_F_rho_norm_bound": "21/50",
+      "exact_covariance_variance_identity": true,
+      "endpoint_positive_minors": [
+        [
+          "2234473729030372758370144774694005783383/250000000000000000000000000000000000000000",
+          "12270486456395112866500540529675480280085574175950582725352678969868243892169/39062500000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        [
+          "253256410264734265461699397239511371/1562500000000000000000000000000000000",
+          "656093837634856251896128139358848397177260577111339140049521112064409/24414062500000000000000000000000000000000000000000000000000000000000000"
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "frozen_endpoint_norm_bound": "419/1000",
+      "exact_DARE_uniform_F_rho_norm_bound": "21/50",
+      "exact_covariance_variance_identity": true,
+      "endpoint_positive_minors": [
+        [
+          "2054419891046777561044906487720934595783911/25000000000000000000000000000000000000000000",
+          "631979122769756989875950149335583403619409777038438171396055709058290505109841014641/100000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        [
+          "4183795553615426291997807958511824539/25000000000000000000000000000000000000",
+          "43931635452646145088714674719088214774618423934008259984306365781905809/1562500000000000000000000000000000000000000000000000000000000000000000000"
+        ]
+      ]
+    }
+  ],
+  "uniform_energy_gain": {
+    "gamma": "9/100",
+    "E": 10,
+    "c": "21/50",
+    "all_time_squared_bias_upper": "405/4118",
+    "strictly_below_D": true,
+    "scope": "any finite coded-energy attack, zero entering shadow bias, same watermark-only rho in healthy/attack paths; fixed original K/G"
+  },
+  "scalar_cancellation": [
+    {
+      "M": "1",
+      "rho": "2/5",
+      "effective_injection_gain": "1/10"
+    },
+    {
+      "M": "3",
+      "rho": "2/15",
+      "effective_injection_gain": "1/10"
+    },
+    {
+      "M": "10",
+      "rho": "1/25",
+      "effective_injection_gain": "1/10"
+    }
+  ],
+  "physical_samples": 0,
+  "new_algorithm": false
+}

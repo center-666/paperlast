@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-14",
+  "fresh_watermark_draws": 131072,
+  "physical_noise_draws": 0,
+  "conditional_physical_miss": "exact noncentral chi-square CDF for current window",
+  "rows": [
+    {
+      "model": "unstable",
+      "eta": 0.2,
+      "attack": [
+        1.6139487290886882,
+        0.0013746361171568674
+      ],
+      "energy": 2.6048323897514467,
+      "gamma": 0.36991229702749,
+      "witness_risk_mean": 0.6651640687686589,
+      "one_sided_Hoeffding_halfwidth": 0.00478075552867347,
+      "L1_worst_risk_lower_qualified": 0.6603833132399853,
+      "scope": "specified preselected first-packet autonomous attack; frozen model and gamma; same detector/encoding",
+      "normal_precision_certified": false,
+      "full_variable_duration_worst_risk_computed": false
+    },
+    {
+      "model": "stable",
+      "eta": 0.2,
+      "attack": [
+        1.6685801366394217,
+        0.0009985280956597222
+      ],
+      "energy": 2.784160669445989,
+      "gamma": 0.3535008362615802,
+      "witness_risk_mean": 0.6336769686911101,
+      "one_sided_Hoeffding_halfwidth": 0.00478075552867347,
+      "L1_worst_risk_lower_qualified": 0.6288962131624366,
+      "scope": "specified preselected first-packet autonomous attack; frozen model and gamma; same detector/encoding",
+      "normal_precision_certified": false,
+      "full_variable_duration_worst_risk_computed": false
+    }
+  ]
+}

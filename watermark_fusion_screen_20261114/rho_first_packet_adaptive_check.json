@@ -1,0 +1,114 @@
+[
+  {
+    "model": "unstable",
+    "eta": 0.01,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_adaptive_radial": 0.8644714316272339,
+    "difference_from_fixed_rule_128": 1.9553292318619242e-10
+  },
+  {
+    "model": "unstable",
+    "eta": 0.01,
+    "scheme": "Gaussian_aware",
+    "risk_adaptive_radial": 0.8837113857427161,
+    "difference_from_fixed_rule_128": -9.43689570931383e-15
+  },
+  {
+    "model": "unstable",
+    "eta": 0.05,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_adaptive_radial": 0.821233268940216,
+    "difference_from_fixed_rule_128": 7.519207478878798e-10
+  },
+  {
+    "model": "unstable",
+    "eta": 0.05,
+    "scheme": "Gaussian_aware",
+    "risk_adaptive_radial": 0.8430465824542067,
+    "difference_from_fixed_rule_128": -5.145883719137601e-13
+  },
+  {
+    "model": "unstable",
+    "eta": 0.1,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_adaptive_radial": 0.7772283992876117,
+    "difference_from_fixed_rule_128": -5.435052408131469e-09
+  },
+  {
+    "model": "unstable",
+    "eta": 0.1,
+    "scheme": "Gaussian_aware",
+    "risk_adaptive_radial": 0.7782135077306311,
+    "difference_from_fixed_rule_128": -1.4195755682067102e-11
+  },
+  {
+    "model": "unstable",
+    "eta": 0.2,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_adaptive_radial": 0.6897608622682049,
+    "difference_from_fixed_rule_128": -3.371523449313685e-08
+  },
+  {
+    "model": "unstable",
+    "eta": 0.2,
+    "scheme": "Gaussian_aware",
+    "risk_adaptive_radial": 0.6679183064851469,
+    "difference_from_fixed_rule_128": 2.373167218294725e-10
+  },
+  {
+    "model": "stable",
+    "eta": 0.01,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_adaptive_radial": 0.8440621396513017,
+    "difference_from_fixed_rule_128": -5.398607116902099e-10
+  },
+  {
+    "model": "stable",
+    "eta": 0.01,
+    "scheme": "Gaussian_aware",
+    "risk_adaptive_radial": 0.8643833759450197,
+    "difference_from_fixed_rule_128": 1.0880185641326534e-14
+  },
+  {
+    "model": "stable",
+    "eta": 0.05,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_adaptive_radial": 0.7990907444388453,
+    "difference_from_fixed_rule_128": 1.2540799509963563e-09
+  },
+  {
+    "model": "stable",
+    "eta": 0.05,
+    "scheme": "Gaussian_aware",
+    "risk_adaptive_radial": 0.8268576310880741,
+    "difference_from_fixed_rule_128": -4.2033043712308427e-13
+  },
+  {
+    "model": "stable",
+    "eta": 0.1,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_adaptive_radial": 0.7476228535490946,
+    "difference_from_fixed_rule_128": 4.456438773559057e-09
+  },
+  {
+    "model": "stable",
+    "eta": 0.1,
+    "scheme": "Gaussian_aware",
+    "risk_adaptive_radial": 0.7566484120617628,
+    "difference_from_fixed_rule_128": 3.18953752298512e-11
+  },
+  {
+    "model": "stable",
+    "eta": 0.2,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_adaptive_radial": 0.6499037504764729,
+    "difference_from_fixed_rule_128": 2.1213945045062133e-08
+  },
+  {
+    "model": "stable",
+    "eta": 0.2,
+    "scheme": "Gaussian_aware",
+    "risk_adaptive_radial": 0.6365137307497165,
+    "difference_from_fixed_rule_128": -1.685751205293684e-09
+  }
+]

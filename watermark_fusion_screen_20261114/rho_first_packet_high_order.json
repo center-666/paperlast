@@ -1,0 +1,114 @@
+[
+  {
+    "model": "unstable",
+    "eta": 0.01,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_256": 0.8644714316273485,
+    "difference_from_128": 1.9564749820233374e-10
+  },
+  {
+    "model": "unstable",
+    "eta": 0.01,
+    "scheme": "Gaussian_aware",
+    "risk_256": 0.8846839585573928,
+    "difference_from_128": 0.0009725728146672274
+  },
+  {
+    "model": "unstable",
+    "eta": 0.05,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_256": 0.8212048562064426,
+    "difference_from_128": -2.8411981852660695e-05
+  },
+  {
+    "model": "unstable",
+    "eta": 0.05,
+    "scheme": "Gaussian_aware",
+    "risk_256": 0.8430366760412644,
+    "difference_from_128": -9.906413456883811e-06
+  },
+  {
+    "model": "unstable",
+    "eta": 0.1,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_256": 0.7736596246648931,
+    "difference_from_128": -0.0035687800577709483
+  },
+  {
+    "model": "unstable",
+    "eta": 0.1,
+    "scheme": "Gaussian_aware",
+    "risk_256": 0.7782277122493485,
+    "difference_from_128": 1.4204504521608818e-05
+  },
+  {
+    "model": "unstable",
+    "eta": 0.2,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_256": 0.6897608624370865,
+    "difference_from_128": -3.354635291774599e-08
+  },
+  {
+    "model": "unstable",
+    "eta": 0.2,
+    "scheme": "Gaussian_aware",
+    "risk_256": 0.6679183034278587,
+    "difference_from_128": -2.8199714785515084e-09
+  },
+  {
+    "model": "stable",
+    "eta": 0.01,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_256": 0.8438343154748955,
+    "difference_from_128": -0.00022782471626692224
+  },
+  {
+    "model": "stable",
+    "eta": 0.01,
+    "scheme": "Gaussian_aware",
+    "risk_256": 0.8641190823333345,
+    "difference_from_128": -0.00026429361167434884
+  },
+  {
+    "model": "stable",
+    "eta": 0.05,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_256": 0.7990907444353657,
+    "difference_from_128": 1.2506002899925761e-09
+  },
+  {
+    "model": "stable",
+    "eta": 0.05,
+    "scheme": "Gaussian_aware",
+    "risk_256": 0.8268540584531251,
+    "difference_from_128": -3.572635369319954e-06
+  },
+  {
+    "model": "stable",
+    "eta": 0.1,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_256": 0.746826665471431,
+    "difference_from_128": -0.0007961836212249107
+  },
+  {
+    "model": "stable",
+    "eta": 0.1,
+    "scheme": "Gaussian_aware",
+    "risk_256": 0.7566559098888199,
+    "difference_from_128": 7.497858952487668e-06
+  },
+  {
+    "model": "stable",
+    "eta": 0.2,
+    "scheme": "Gaussian_fixed_rho",
+    "risk_256": 0.6499037500518201,
+    "difference_from_128": 2.0789292287659578e-08
+  },
+  {
+    "model": "stable",
+    "eta": 0.2,
+    "scheme": "Gaussian_aware",
+    "risk_256": 0.6365230421521476,
+    "difference_from_128": 9.309716679894997e-06
+  }
+]

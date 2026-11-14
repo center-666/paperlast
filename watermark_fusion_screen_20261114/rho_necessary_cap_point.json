@@ -1,0 +1,14 @@
+{
+  "unstable": {
+    "necessary_cap_for_zero_first_packet_risk": 0.1,
+    "normal_trace_at_boundary": 0.3846515887281897,
+    "relative_loss": 0.6885795287470486,
+    "note": "necessary first-packet cap, not sufficient full-event cap; numerical normal-cost diagnostic"
+  },
+  "stable": {
+    "necessary_cap_for_zero_first_packet_risk": 0.1,
+    "normal_trace_at_boundary": 0.36968130261021537,
+    "relative_loss": 0.6305484599561559,
+    "note": "necessary first-packet cap, not sufficient full-event cap; numerical normal-cost diagnostic"
+  }
+}

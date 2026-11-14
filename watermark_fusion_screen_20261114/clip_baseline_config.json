@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-14",
+  "purpose": "Additional ordinary fixed-threshold update clipping baseline, not a new defense candidate",
+  "budgets_eta": [0.01, 0.05, 0.10, 0.20],
+  "training_paths": 512,
+  "validation_paths": 2048,
+  "burn_steps": 128,
+  "evaluation_steps": 256,
+  "training_seed": 2026111401,
+  "validation_seed": 2026111402,
+  "watermark_seed": 2026111403,
+  "bisection_steps": 14,
+  "attack_angles": 32,
+  "attack_radii": 33,
+  "E": 10,
+  "D": 0.1,
+  "alpha_current": 0.0033333333333333335,
+  "normal_loss_measure": "paired stationary target posterior MSE increase relative to unchanged original fixed-gain estimator",
+  "risk_scope": "predeclared finite L1 attack grid, same noise and watermark samples; not full attack-family worst risk",
+  "uncertainty": "independent path standard errors for MSE; finite-grid Hoeffding bound for empirical risk, not global certificate"
+}

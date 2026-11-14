@@ -1,0 +1,277 @@
+{
+  "date": "2026-11-14",
+  "kind": "stationary moment solver and deterministic first-packet diagnostic",
+  "model_sha256": "dbe91a198a0a17efe5fe3c81a553234af327b94c1b966b6356920e32ec85c11e",
+  "E": 10.0,
+  "D": 0.1,
+  "normal_budgets": [
+    0.01,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "detector_tau": 23.024185469976807,
+  "detector_df": 8,
+  "alpha_test": 0.0033333333333333335,
+  "total_false_alarm_union_bound": 0.05,
+  "physical_noise_samples": 0,
+  "full_event_worst_risk_certified": false,
+  "models": {
+    "unstable": {
+      "reference_trace": 0.22779595641172262,
+      "no_neighbor_rho0_trace": 0.46985653513688774,
+      "no_neighbor_relative_loss": 1.0626201735015015,
+      "F0_norm": 0.4106869436595392,
+      "F1_norm": 0.1164817627832547,
+      "original_sign_first_packet": {
+        "risk": 0.9934425892323109,
+        "direction_angle": 0.09631494357048664,
+        "radius": 1.16983677228676,
+        "method": "direction grid + local refine; analytic radial boundary",
+        "global_certified": false
+      },
+      "rows": [
+        {
+          "eta": 0.01,
+          "fixed_rho": 0.8541533617977073,
+          "gamma": 1.2686176195773637,
+          "aware_Erho": 0.9642515283920897,
+          "aware_Erho2": 0.9413471759438374,
+          "fixed_trace": 0.23007391597583976,
+          "aware_trace": 0.23007391597582894,
+          "target_trace": 0.2300739159758398,
+          "fixed_sign_first_packet": {
+            "risk": 0.9918940156152072,
+            "direction_angle": 0.0963152613549062,
+            "radius": 1.3695863400717503,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "quadrature_64_to_128_gamma_difference": 1.5765166949677223e-14,
+          "high_order": {
+            "eta": 0.01,
+            "fixed_rho": 0.8541533617977073,
+            "gamma": 1.2686176195773795,
+            "aware_Erho": 0.9642515283920905,
+            "aware_Erho2": 0.9413471759438388,
+            "fixed_trace": 0.23007391597583976,
+            "aware_trace": 0.23007391597582894,
+            "target_trace": 0.2300739159758398
+          }
+        },
+        {
+          "eta": 0.05,
+          "fixed_rho": 0.7356521135723587,
+          "gamma": 0.7495530033265068,
+          "aware_Erho": 0.8682044330835812,
+          "aware_Erho2": 0.7965108123793208,
+          "fixed_trace": 0.23918575423230867,
+          "aware_trace": 0.23918575423230867,
+          "target_trace": 0.2391857542323087,
+          "fixed_sign_first_packet": {
+            "risk": 0.9895884697672366,
+            "direction_angle": 0.09631494352736172,
+            "radius": 1.5902037807047007,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "quadrature_64_to_128_gamma_difference": 3.086420008457935e-14,
+          "high_order": {
+            "eta": 0.05,
+            "fixed_rho": 0.7356521135723587,
+            "gamma": 0.7495530033265376,
+            "aware_Erho": 0.8682044330835903,
+            "aware_Erho2": 0.7965108123793381,
+            "fixed_trace": 0.23918575423230867,
+            "aware_trace": 0.2391857542323086,
+            "target_trace": 0.2391857542323087
+          }
+        },
+        {
+          "eta": 0.1,
+          "fixed_rho": 0.6460869334541587,
+          "gamma": 0.5498761140123791,
+          "aware_Erho": 0.7734265957872739,
+          "aware_Erho2": 0.6631511665075751,
+          "fixed_trace": 0.25057555205289445,
+          "aware_trace": 0.25057555205289483,
+          "target_trace": 0.25057555205289483,
+          "fixed_sign_first_packet": {
+            "risk": 0.9864781230961461,
+            "direction_angle": 0.09631518096568052,
+            "radius": 1.810649178877312,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "quadrature_64_to_128_gamma_difference": 9.867662242868391e-13,
+          "high_order": {
+            "eta": 0.1,
+            "fixed_rho": 0.6460869334541587,
+            "gamma": 0.5498761140133659,
+            "aware_Erho": 0.7734265957877835,
+            "aware_Erho2": 0.6631511665085583,
+            "fixed_trace": 0.25057555205289445,
+            "aware_trace": 0.2505755520528947,
+            "target_trace": 0.25057555205289483
+          }
+        },
+        {
+          "eta": 0.2,
+          "fixed_rho": 0.5208281810161979,
+          "gamma": 0.36991229810162934,
+          "aware_Erho": 0.617588497909469,
+          "aware_Erho2": 0.4586319909335818,
+          "fixed_trace": 0.27335514769406705,
+          "aware_trace": 0.27335514769402386,
+          "target_trace": 0.27335514769406705,
+          "fixed_sign_first_packet": {
+            "risk": 0.9769985946409272,
+            "direction_angle": 0.09631525996887574,
+            "radius": 2.2461088306377857,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "quadrature_64_to_128_gamma_difference": -1.074139333034907e-09,
+          "high_order": {
+            "eta": 0.2,
+            "fixed_rho": 0.5208281810161979,
+            "gamma": 0.36991229702749,
+            "aware_Erho": 0.6175884955903459,
+            "aware_Erho2": 0.45863198644280656,
+            "fixed_trace": 0.27335514769406705,
+            "aware_trace": 0.2733551476940239,
+            "target_trace": 0.27335514769406705
+          }
+        }
+      ]
+    },
+    "stable": {
+      "reference_trace": 0.22672205806146717,
+      "no_neighbor_rho0_trace": 0.44426552129142316,
+      "no_neighbor_relative_loss": 0.9595160924790884,
+      "F0_norm": 0.32075104830516543,
+      "F1_norm": 0.09217808566638801,
+      "original_sign_first_packet": {
+        "risk": 0.9929107440485434,
+        "direction_angle": 0.1312562909322234,
+        "radius": 1.177968644368808,
+        "method": "direction grid + local refine; analytic radial boundary",
+        "global_certified": false
+      },
+      "rows": [
+        {
+          "eta": 0.01,
+          "fixed_rho": 0.850377140387753,
+          "gamma": 1.2458069579923894,
+          "aware_Erho": 0.962757849896884,
+          "aware_Erho2": 0.9389855393723298,
+          "fixed_trace": 0.22898927864208182,
+          "aware_trace": 0.22898927864207974,
+          "target_trace": 0.2289892786420818,
+          "fixed_sign_first_packet": {
+            "risk": 0.9909906604340404,
+            "direction_angle": 0.1312562897275399,
+            "radius": 1.3852308445280919,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "quadrature_64_to_128_gamma_difference": 1.7763568394002505e-15,
+          "high_order": {
+            "eta": 0.01,
+            "fixed_rho": 0.850377140387753,
+            "gamma": 1.2458069579923912,
+            "aware_Erho": 0.9627578498968836,
+            "aware_Erho2": 0.9389855393723292,
+            "fixed_trace": 0.22898927864208182,
+            "aware_trace": 0.22898927864207974,
+            "target_trace": 0.2289892786420818
+          }
+        },
+        {
+          "eta": 0.05,
+          "fixed_rho": 0.7289225016970317,
+          "gamma": 0.7308243134905786,
+          "aware_Erho": 0.8627655542391827,
+          "aware_Erho2": 0.7886369271985108,
+          "fixed_trace": 0.23805816096454047,
+          "aware_trace": 0.2380581609645404,
+          "target_trace": 0.23805816096454047,
+          "fixed_sign_first_packet": {
+            "risk": 0.9880374552060731,
+            "direction_angle": 0.13125635799250213,
+            "radius": 1.6160409959308255,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "quadrature_64_to_128_gamma_difference": 4.007905118896815e-14,
+          "high_order": {
+            "eta": 0.05,
+            "fixed_rho": 0.7289225016970317,
+            "gamma": 0.7308243134906187,
+            "aware_Erho": 0.8627655542391957,
+            "aware_Erho2": 0.7886369271985354,
+            "fixed_trace": 0.23805816096454047,
+            "aware_trace": 0.23805816096454036,
+            "target_trace": 0.23805816096454047
+          }
+        },
+        {
+          "eta": 0.1,
+          "fixed_rho": 0.6366658468294091,
+          "gamma": 0.5324914324214797,
+          "aware_Erho": 0.7637591828059702,
+          "aware_Erho2": 0.6499633754975616,
+          "fixed_trace": 0.24939426386761387,
+          "aware_trace": 0.24939426386761382,
+          "target_trace": 0.24939426386761385,
+          "fixed_sign_first_packet": {
+            "risk": 0.9838792099569804,
+            "direction_angle": 0.1312562897184897,
+            "radius": 1.8502149129136105,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "quadrature_64_to_128_gamma_difference": 1.3254952690999744e-12,
+          "high_order": {
+            "eta": 0.1,
+            "fixed_rho": 0.6366658468294091,
+            "gamma": 0.5324914324228052,
+            "aware_Erho": 0.763759182806661,
+            "aware_Erho2": 0.6499633754988907,
+            "fixed_trace": 0.24939426386761387,
+            "aware_trace": 0.2493942638676138,
+            "target_trace": 0.24939426386761385
+          }
+        },
+        {
+          "eta": 0.2,
+          "fixed_rho": 0.5068834941718121,
+          "gamma": 0.3535008384954971,
+          "aware_Erho": 0.5999743973256313,
+          "aware_Erho2": 0.43652305024927146,
+          "fixed_trace": 0.2720664696737605,
+          "aware_trace": 0.2720664696736334,
+          "target_trace": 0.2720664696737605,
+          "fixed_sign_first_packet": {
+            "risk": 0.9702573661266171,
+            "direction_angle": 0.13125629013434012,
+            "radius": 2.323943584469711,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "quadrature_64_to_128_gamma_difference": -2.2339169403196024e-09,
+          "high_order": {
+            "eta": 0.2,
+            "fixed_rho": 0.5068834941718121,
+            "gamma": 0.3535008362615802,
+            "aware_Erho": 0.599974391980052,
+            "aware_Erho2": 0.4365230399365071,
+            "fixed_trace": 0.2720664696737605,
+            "aware_trace": 0.2720664696736334,
+            "target_trace": 0.2720664696737605
+          }
+        }
+      ]
+    }
+  }
+}

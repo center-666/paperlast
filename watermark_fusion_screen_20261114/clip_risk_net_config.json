@@ -1,0 +1,17 @@
+{
+  "purpose": "Targeted continuum first-packet verification after finite-grid clipping screen; not candidate tuning",
+  "eta": 0.2,
+  "models": ["unstable", "stable"],
+  "angles_projective": 128,
+  "radial_intervals": 128,
+  "net_validation_paths": 2048,
+  "net_validation_seed": 2026111412,
+  "net_initial_seed": 2026111413,
+  "net_watermark_seed": 2026111414,
+  "candidate_independent_watermark_samples": 131072,
+  "candidate_seed": 2026111407,
+  "failure_probability_total": 0.01,
+  "scope": "L1 event, same original Gaussian encoding and same detector; frozen numerical F/G model",
+  "normal_MSE": "separate independent validation estimates, not exact constraints",
+  "limits": "Does not bound full variable-duration attack-family risk or nonlinear full-event clipping risk"
+}

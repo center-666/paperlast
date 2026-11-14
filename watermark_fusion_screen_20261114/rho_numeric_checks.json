@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-14",
+  "method": "direct deterministic finite distribution, no physical/noise samples",
+  "rows": [
+    {
+      "model": "unstable",
+      "finite_nodes": 32,
+      "two_step_pairs": 1024,
+      "aware_B2_second_moment_error": 2.498001805406602e-16,
+      "constant_no_water_convolution_error": 2.7755575615628914e-17,
+      "fixed_Gaussian_fourth_moment_error": 2.220446049250313e-16,
+      "stationary_covariance_residual": 6.938893903907228e-17
+    },
+    {
+      "model": "stable",
+      "finite_nodes": 32,
+      "two_step_pairs": 1024,
+      "aware_B2_second_moment_error": 2.7755575615628914e-17,
+      "constant_no_water_convolution_error": 1.734723475976807e-18,
+      "fixed_Gaussian_fourth_moment_error": 2.7755575615628914e-17,
+      "stationary_covariance_residual": 1.1102230246251565e-16
+    }
+  ]
+}

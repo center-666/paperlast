@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-14",
+  "m": 2,
+  "lambda_": 1,
+  "q": 1,
+  "original_Gaussian_normal_packet_energy_ratio": 0.6346361709395337,
+  "scalar_integral_error_estimate": 2.8499369383111054e-10,
+  "normalized_decode_multiplier": "sqrt(nu)*M",
+  "normalization_scale": 0.7966405531602906,
+  "normalized_Gaussian_packet_energy_ratio": 1,
+  "sign_packet_energy_ratio": 1,
+  "original_encoder_peak_operator_norm": 1,
+  "normalized_encoder_peak_operator_norm": 1.255271271382028,
+  "sign_encoder_peak_operator_norm": 1,
+  "normalization_changed_task_D": false,
+  "same_packet_count": true,
+  "extra_encode_wait": 0,
+  "Gnorm_expected_damage_minus_sign_PSD_analytic": true,
+  "proof": "nu>1/2; covariance term nu(Ct^T Ct+||Ct||F^2 I)-Ct^T Ct is PSD, as ||Ct||F^2 I>=Ct^T Ct; add 4nu B0^T B0",
+  "schemes_not_equal_in_peak_cost_or_secret_generation": true,
+  "rows": [
+    {
+      "model": "unstable",
+      "P1_expected_terminal_damage_L10": {
+        "none": 0.18022253426442864,
+        "sign": 0.1459153067689775,
+        "Gaussian": 1.1443133159480654,
+        "normalized_Gaussian": 0.726222621188401
+      },
+      "P3_phys_feasible": {
+        "none": true,
+        "sign": true,
+        "Gaussian": true,
+        "normalized_Gaussian": true
+      },
+      "normalized_P3_saved_direction_check": {
+        "transformed_saved_direction": [
+          0.185823968264224,
+          0.129512914384092
+        ],
+        "energy": 1.3781910642771331,
+        "expected_terminal_damage": 0.09999999999999998,
+        "same_conditional_ncp_pathwise_as_original_saved_direction": true,
+        "saved_direction_Pd": 0.006353956747645068,
+        "global_P3_optimum_certified": false
+      },
+      "first_packet_fixed_attack_power": [
+        {
+          "order": 80,
+          "Gaussian": 0.4861113795794865,
+          "normalized_Gaussian": 0.3642167419275821,
+          "sign": 0.06840019159932058
+        },
+        {
+          "order": 128,
+          "Gaussian": 0.4861414374502935,
+          "normalized_Gaussian": 0.3642161686598639,
+          "sign": 0.06840019159932058
+        }
+      ],
+      "normalization_damage_difference_min_eigenvalue_diagnostic": 0.46760293006975373
+    },
+    {
+      "model": "stable",
+      "P1_expected_terminal_damage_L10": {
+        "none": 0.028593056878099245,
+        "sign": 0.023473389130178775,
+        "Gaussian": 0.18727300749295123,
+        "normalized_Gaussian": 0.11885022439565718
+      },
+      "P3_phys_feasible": {
+        "none": false,
+        "sign": false,
+        "Gaussian": true,
+        "normalized_Gaussian": true
+      },
+      "normalized_P3_saved_direction_check": {
+        "transformed_saved_direction": [
+          0.20412490078066056,
+          1.2981806820914308
+        ],
+        "energy": 8.414077752546454,
+        "expected_terminal_damage": 0.09999999999999998,
+        "same_conditional_ncp_pathwise_as_original_saved_direction": true,
+        "saved_direction_Pd": 0.16651674212517895,
+        "global_P3_optimum_certified": false
+      },
+      "first_packet_fixed_attack_power": [
+        {
+          "order": 80,
+          "Gaussian": 0.5176877900248464,
+          "normalized_Gaussian": 0.3906385361470794,
+          "sign": 0.08362204748009365
+        },
+        {
+          "order": 128,
+          "Gaussian": 0.51773707959481,
+          "normalized_Gaussian": 0.3906179365896477,
+          "sign": 0.08362204748009365
+        }
+      ],
+      "normalization_damage_difference_min_eigenvalue_diagnostic": 0.00436516850507418
+    }
+  ]
+}

@@ -1,0 +1,455 @@
+{
+  "date": "2026-11-14",
+  "kind": "finite first-packet diagnostic, not full-event worst risk",
+  "primary_attack": "L=1 autonomous input a=Hj xi, actual energy <=10, no current secret knowledge",
+  "reference": "same-noise same-secret ungated nominal shadow; current detector before fusion",
+  "detector": "ordinary df8, alpha=.05/15, total 15-test FA <=.05 by union bound",
+  "larger_event_worst_risk_known": false,
+  "physical_noise_samples": 0,
+  "models": {
+    "unstable": {
+      "original_Gaussian": {
+        "risk": 0.901353730962573,
+        "direction_angle": 0.0016566803060596219,
+        "energy": 1.3671170482765884,
+        "quadrature_64_to_128_difference": -1.1215715134405002e-08,
+        "attack": [
+          1.1692362020159737,
+          0.0019370523611500826
+        ],
+        "local_search_success": true,
+        "global_worst_certified": false,
+        "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+        "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+        "search": "13 directions x 21 energies, two local refinements; no global claim"
+      },
+      "original_iid_sign": {
+        "risk": 0.9934425892323109,
+        "direction_angle": 0.09631494357048664,
+        "radius": 1.16983677228676,
+        "method": "direction grid + local refine; analytic radial boundary",
+        "global_certified": false
+      },
+      "rows": [
+        {
+          "eta": 0.01,
+          "fixed_rho": 0.8541533617977073,
+          "gamma": 1.2686176195773795,
+          "no_watermark_fixed_rho": {
+            "risk": 0.9918940156152072,
+            "direction_angle": 0.0963152613549062,
+            "radius": 1.3695863400717503,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "Gaussian_fixed_rho": {
+            "risk": 0.864471431431701,
+            "direction_angle": 0.0765482988519974,
+            "energy": 1.8749964743724323,
+            "quadrature_64_to_128_difference": 0.013956205383913511,
+            "attack": [
+              1.365295246092568,
+              0.10471564051977264
+            ],
+            "local_search_success": false,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "Gaussian_aware": {
+            "risk": 0.8837113857427256,
+            "direction_angle": 0.2445681628672831,
+            "energy": 1.3772084242173728,
+            "quadrature_64_to_128_difference": -0.0021641410817273554,
+            "attack": [
+              1.138622853977164,
+              0.28415914663841185
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "iid_sign_aware": {
+            "risk": 0.9918940156152072,
+            "direction_angle": 0.0963152613549062,
+            "radius": 1.3695863400717503,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          }
+        },
+        {
+          "eta": 0.05,
+          "fixed_rho": 0.7356521135723587,
+          "gamma": 0.7495530033265376,
+          "no_watermark_fixed_rho": {
+            "risk": 0.9895884697672366,
+            "direction_angle": 0.09631494352736172,
+            "radius": 1.5902037807047007,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "Gaussian_fixed_rho": {
+            "risk": 0.8212332681882952,
+            "direction_angle": 0.0006698007583618165,
+            "energy": 2.5261620569229133,
+            "quadrature_64_to_128_difference": -1.2523998971336603e-05,
+            "attack": [
+              1.5893901105780417,
+              0.0010645748605991063
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "Gaussian_aware": {
+            "risk": 0.8430465824547213,
+            "direction_angle": 0.0006592407226562501,
+            "energy": 1.3671234741210934,
+            "quadrature_64_to_128_difference": 8.809954685473631e-05,
+            "attack": [
+              1.1692403003538665,
+              0.0007708109322284786
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "iid_sign_aware": {
+            "risk": 0.9895884697672366,
+            "direction_angle": 0.09631494352736172,
+            "radius": 1.5902037807047007,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          }
+        },
+        {
+          "eta": 0.1,
+          "fixed_rho": 0.6460869334541587,
+          "gamma": 0.5498761140133659,
+          "no_watermark_fixed_rho": {
+            "risk": 0.9864781230961461,
+            "direction_angle": 0.09631518096568052,
+            "radius": 1.810649178877312,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "Gaussian_fixed_rho": {
+            "risk": 0.7772284047226641,
+            "direction_angle": 0.07001691423796146,
+            "energy": 3.276730734964471,
+            "quadrature_64_to_128_difference": 4.5651178615102594e-08,
+            "attack": [
+              1.805738969818544,
+              0.12663928238557837
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "Gaussian_aware": {
+            "risk": 0.7782135077448269,
+            "direction_angle": 0.00033258056640625,
+            "energy": 1.6807450561523436,
+            "quadrature_64_to_128_difference": 0.0001025825179459261,
+            "attack": [
+              1.2964354477741729,
+              0.0004311692514270612
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "iid_sign_aware": {
+            "risk": 0.9864781230961461,
+            "direction_angle": 0.09631518096568052,
+            "radius": 1.810649178877312,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          }
+        },
+        {
+          "eta": 0.2,
+          "fixed_rho": 0.5208281810161979,
+          "gamma": 0.36991229702749,
+          "no_watermark_fixed_rho": {
+            "risk": 0.9769985946409272,
+            "direction_angle": 0.09631525996887574,
+            "radius": 2.2461088306377857,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "Gaussian_fixed_rho": {
+            "risk": 0.6897608959834394,
+            "direction_angle": 0.0005091973362759748,
+            "energy": 5.039893852949353,
+            "quadrature_64_to_128_difference": 2.7404700080335687e-06,
+            "attack": [
+              2.2449705000725673,
+              0.0011431330974530137
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "Gaussian_aware": {
+            "risk": 0.6679183062478302,
+            "direction_angle": 0.000851722090039402,
+            "energy": 2.604832389751447,
+            "quadrature_64_to_128_difference": 4.538134290377194e-05,
+            "attack": [
+              1.6139487290886882,
+              0.0013746361171568674
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "iid_sign_aware": {
+            "risk": 0.9769985946409272,
+            "direction_angle": 0.09631525996887574,
+            "radius": 2.2461088306377857,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          }
+        }
+      ]
+    },
+    "stable": {
+      "original_Gaussian": {
+        "risk": 0.8887036750504832,
+        "direction_angle": 0.08340861313990192,
+        "energy": 1.3859409392157698,
+        "quadrature_64_to_128_difference": 1.747068034685384e-08,
+        "attack": [
+          1.173167205319636,
+          0.0980798020913803
+        ],
+        "local_search_success": false,
+        "global_worst_certified": false,
+        "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+        "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+        "search": "13 directions x 21 energies, two local refinements; no global claim"
+      },
+      "original_iid_sign": {
+        "risk": 0.9929107440485434,
+        "direction_angle": 0.1312562909322234,
+        "radius": 1.177968644368808,
+        "method": "direction grid + local refine; analytic radial boundary",
+        "global_certified": false
+      },
+      "rows": [
+        {
+          "eta": 0.01,
+          "fixed_rho": 0.850377140387753,
+          "gamma": 1.2458069579923912,
+          "no_watermark_fixed_rho": {
+            "risk": 0.9909906604340404,
+            "direction_angle": 0.1312562897275399,
+            "radius": 1.3852308445280919,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "Gaussian_fixed_rho": {
+            "risk": 0.8440621401911624,
+            "direction_angle": 0.4581811148868389,
+            "energy": 1.9651201783418646,
+            "quadrature_64_to_128_difference": -0.0010148567991112856,
+            "attack": [
+              1.257240864926546,
+              0.6200528895994393
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "Gaussian_aware": {
+            "risk": 0.8643833759450088,
+            "direction_angle": 0.5390453014567466,
+            "energy": 1.4317432739388907,
+            "quadrature_64_to_128_difference": 0.001887070075294317,
+            "attack": [
+              1.0268822532832724,
+              0.6142117809280114
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "iid_sign_aware": {
+            "risk": 0.9909906604340404,
+            "direction_angle": 0.1312562897275399,
+            "radius": 1.3852308445280919,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          }
+        },
+        {
+          "eta": 0.05,
+          "fixed_rho": 0.7289225016970317,
+          "gamma": 0.7308243134906187,
+          "no_watermark_fixed_rho": {
+            "risk": 0.9880374552060731,
+            "direction_angle": 0.13125635799250213,
+            "radius": 1.6160409959308255,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "Gaussian_fixed_rho": {
+            "risk": 0.7990907431847654,
+            "direction_angle": 0.033513626764297644,
+            "energy": 2.606788906909828,
+            "quadrature_64_to_128_difference": 4.5180603425176713e-07,
+            "attack": [
+              1.6136487082327238,
+              0.05409947623304889
+            ],
+            "local_search_success": false,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "Gaussian_aware": {
+            "risk": 0.8268576310884944,
+            "direction_angle": 0.0007551269531250001,
+            "energy": 1.3850866699218751,
+            "quadrature_64_to_128_difference": -8.73085491170933e-06,
+            "attack": [
+              1.1768967159961208,
+              0.0008887066002114286
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "iid_sign_aware": {
+            "risk": 0.9880374552060731,
+            "direction_angle": 0.13125635799250213,
+            "radius": 1.6160409959308255,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          }
+        },
+        {
+          "eta": 0.1,
+          "fixed_rho": 0.6366658468294091,
+          "gamma": 0.5324914324228052,
+          "no_watermark_fixed_rho": {
+            "risk": 0.9838792099569804,
+            "direction_angle": 0.1312562897184897,
+            "radius": 1.8502149129136105,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "Gaussian_fixed_rho": {
+            "risk": 0.7476228490926559,
+            "direction_angle": 0.2593739027039083,
+            "energy": 3.4449760608563667,
+            "quadrature_64_to_128_difference": -0.0012157610438982003,
+            "attack": [
+              1.7939806921185737,
+              0.4760350167394516
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "Gaussian_aware": {
+            "risk": 0.7566484120298674,
+            "direction_angle": 0.0004200744628906251,
+            "energy": 1.753755844116211,
+            "quadrature_64_to_128_difference": 0.00012530323002879484,
+            "attack": [
+              1.3242943534743299,
+              0.0005563022719669904
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "iid_sign_aware": {
+            "risk": 0.9838792099569804,
+            "direction_angle": 0.1312562897184897,
+            "radius": 1.8502149129136105,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          }
+        },
+        {
+          "eta": 0.2,
+          "fixed_rho": 0.5068834941718121,
+          "gamma": 0.3535008362615802,
+          "no_watermark_fixed_rho": {
+            "risk": 0.9702573661266171,
+            "direction_angle": 0.13125629013434012,
+            "radius": 2.323943584469711,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          },
+          "Gaussian_fixed_rho": {
+            "risk": 0.6499037292625278,
+            "direction_angle": 0.00028367738425731664,
+            "energy": 5.390406245961783,
+            "quadrature_64_to_128_difference": 1.9742932511057631e-07,
+            "attack": [
+              2.321724749443912,
+              0.0006586208215547563
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "Gaussian_aware": {
+            "risk": 0.6365137324354677,
+            "direction_angle": 0.0005984297394752505,
+            "energy": 2.7841606694459893,
+            "quadrature_64_to_128_difference": 8.839768531265779e-05,
+            "attack": [
+              1.6685801366394217,
+              0.0009985280956597222
+            ],
+            "local_search_success": true,
+            "global_worst_certified": false,
+            "criterion": "first posterior bias >=D and current ordinary parity does not alarm",
+            "quadrature_method": "radial danger intervals split by quadratic/quartic roots; Gaussian CDF weighted by radial/angle quadrature",
+            "search": "13 directions x 21 energies, two local refinements; no global claim"
+          },
+          "iid_sign_aware": {
+            "risk": 0.9702573661266171,
+            "direction_angle": 0.13125629013434012,
+            "radius": 2.323943584469711,
+            "method": "direction grid + local refine; analytic radial boundary",
+            "global_certified": false
+          }
+        }
+      ]
+    }
+  }
+}
