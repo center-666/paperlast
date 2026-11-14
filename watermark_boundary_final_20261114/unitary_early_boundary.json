@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-14",
+  "scheme_class": "any exogenous orthogonal decoder M_t, independent of physical noises, causal/correlated/public/secret allowed",
+  "input_sha256": {
+    "five_node_aggregate_model.json": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+    "aggregate_gap_certificate.json": "9835675960128343063f5f0ef710d942feb148ef2d0ed91ae3f3716b5fb145e8"
+  },
+  "assumptions": [
+    "b0=0; four healthy packets before attack0",
+    "monitor starts at attack0; no conditioning on an earlier no-alarm record",
+    "parameter sequence independent of all physical noises, no measurement-adaptive encoding",
+    "15 fixed ordinary df8 parity tests, each alpha=1/300"
+  ],
+  "estimator": "unchanged original-compatible aggregate target1 exact stabilizing DARE",
+  "model": "stable A_s; fixed L10 autonomous a_t=A_s^t xi, energy<=10",
+  "xi": [
+    "-189/100",
+    "21/50"
+  ],
+  "actual_energy": "255167343258867116471427220756030581/25600000000000000000000000000000000",
+  "actual_energy_float": 9.967474346049496,
+  "xi_norm_squared": "7497/2000",
+  "strict_uniform_first_bias_squared_lower": "7497/32000",
+  "exact_DARE_G_sigma_min_lower": "1/4",
+  "frozen_G_sigma_certificate": [
+    "94543596111296912134874187803566204889/10000000000000000000000000000000000000000",
+    "58624164675162618992788514818715897055911850432061438236382919501491205521/25000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  ],
+  "current_detector_precision_upper": "3/5",
+  "precision_certificate": [
+    "726762063368797860313488160643/33999710544740296101920332674405",
+    "48348420070240769407270460643/56666184241233826836533887790675"
+  ],
+  "current_ncp_upper": "22491/10000",
+  "detector_threshold_strict_lower": 23,
+  "risk_lower_rational": "49/50",
+  "exact_rational_CDF_lower": "65318542854789715900859541394860613335194054852919874513286990831899277809095690415989180137334582170221968158063625788816397078959151565751721881436860173759135374394569384935862161238599441289639017438546280070970212645185061222230302807393433294931656946118043660575537704074985766233529393672238577459000948782827537774908261678862905645433191179284335605101061506288215613306603524303817277440000000000000000000/66589457879871448076132285811964510278730070903133649698819925517293244661896491255798364989963676723610376524195537164675126924918671962108144724357012930166739992072691340651101301038613471807532474297180551023211218323218005169273569630220346397066114416794596548800625338881206958321118934416948371235024811062300092648858311177540419717177785207192592646322518974228766822295893836539730363031441972004800545127",
+  "conditional_miss_lower_float": 0.9809141707179163,
+  "numerical_CDF_at_actual_threshold_and_9over4": 0.981048771559858,
+  "proof": "uniform first danger; Lambda0<9/4; tau>23; monotonic noncentral CDF and finite positive Poisson-mixture lower bound; no window independence needed",
+  "first_alarm_timing": "monitor starts at attack0; detect current packet before fusion; shadow bias until first alarm",
+  "full_event_risk_lower": true,
+  "new_defense_mechanism": false,
+  "new_attack_algorithm": false,
+  "limits": [
+    "specific compatible five-node stable model, D=.1/E10, ordinary parity/15-test budget",
+    "not all invertible nonunitary encoders, not arbitrary detector no-go, not original 50-node certification",
+    "not a claim of independent publication novelty"
+  ]
+}

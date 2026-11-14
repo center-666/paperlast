@@ -1,0 +1,2438 @@
+{
+  "date": "2026-11-14",
+  "baseline_commit": "2d4db76",
+  "model_sha256": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+  "estimator_unchanged": true,
+  "normal_fusion_unchanged": true,
+  "normal_MSE_same_as_original": true,
+  "L": 10,
+  "E": 10.0,
+  "D": 0.1,
+  "s": 4,
+  "first_full_window": "attacked packets t=0..4; score at t=4",
+  "alpha_test": 0.0033333333333333335,
+  "total_event_FA_union_bound": 0.05,
+  "finite_test_count": 15,
+  "threshold": 23.024185469976807,
+  "statistic_df": 8,
+  "physical_noise_samples": 0,
+  "actual_Pd": "mean of conditional ncx2 survival functions, not survival at E Lambda",
+  "QMC_is_not_integral_error_certificate": true,
+  "normalization_nu": 0.6346361709395337,
+  "models": {
+    "unstable": {
+      "A": [
+        [
+          1.08,
+          0.05
+        ],
+        [
+          0.01,
+          1.05
+        ]
+      ],
+      "F": [
+        [
+          0.11608937711784252,
+          0.004741198836942388
+        ],
+        [
+          0.0003923658514851016,
+          0.09867123909434965
+        ]
+      ],
+      "G": [
+        [
+          0.2704558329696528,
+          0.0001676160643028838
+        ],
+        [
+          0.0001536480589443104,
+          0.2516675685121494
+        ]
+      ],
+      "schemes": {
+        "Gaussian": {
+          "W": [
+            [
+              22.374196152108674,
+              6.324494706098147
+            ],
+            [
+              6.324494706098147,
+              17.9555791854249
+            ]
+          ],
+          "S": [
+            [
+              2.3933944788911097,
+              1.0002171082206148
+            ],
+            [
+              1.0002171082206148,
+              1.596659393005343
+            ]
+          ],
+          "S0": [
+            [
+              0.37937158345113736,
+              0.15764529928532858
+            ],
+            [
+              0.15764529928532858,
+              0.2437019772151611
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              15.263114565957364,
+              1.8599575951695475
+            ],
+            [
+              1.8599575951695475,
+              13.65382551942299
+            ]
+          ],
+          "min_expected_ncp_E10": 6.132562804166994,
+          "min_expected_ncp_direction": [
+            -0.4849871700313936,
+            -0.3704831737556893
+          ],
+          "P1_expected_terminal_damage": 1.144313315948067,
+          "P1_initial_state": [
+            -0.5230403119550111,
+            -0.31574711731306426
+          ],
+          "P3_phys_feasible": true,
+          "probes": [
+            {
+              "nodes": 1024,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol Gaussian integral diagnostic",
+                "nodes": 1024,
+                "seed": 20261114,
+                "endpoint_clip": "[1e-12,1-1e-12]",
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.12942882641136833,
+                "initial_state": [
+                  0.49010237535067086,
+                  0.36348722133097183
+                ],
+                "energy": 9.999999999999993,
+                "expected_damage": null,
+                "angle": 0.6320729365389551,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.060428952356001354,
+                "initial_state": [
+                  0.3751559420335261,
+                  0.25745741517158605
+                ],
+                "energy": 5.560885935562291,
+                "expected_damage": 0.09999999999999999,
+                "angle": 0.606095834201187,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.00682773323899635,
+                "initial_state": [
+                  0.16082681748735433,
+                  0.08366648608208357
+                ],
+                "energy": 0.8746074819201175,
+                "expected_damage": 0.1,
+                "angle": 0.5195896200216398,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.6517878183933092
+            },
+            {
+              "nodes": 4096,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol Gaussian integral diagnostic",
+                "nodes": 4096,
+                "seed": 20261114,
+                "endpoint_clip": "[1e-12,1-1e-12]",
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.13185409730310316,
+                "initial_state": [
+                  0.4875104670815477,
+                  0.36704518555679544
+                ],
+                "energy": 9.999999999999996,
+                "expected_damage": null,
+                "angle": 0.6371813988520149,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.061562447380546136,
+                "initial_state": [
+                  0.3784953740328986,
+                  0.25242503459000853
+                ],
+                "energy": 5.557906125794789,
+                "expected_damage": 0.09999999999999998,
+                "angle": 0.5966954393942214,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.006610567861114502,
+                "initial_state": [
+                  0.14911445328328315,
+                  0.10159090835217846
+                ],
+                "energy": 0.8744227150593753,
+                "expected_damage": 0.09999999999999998,
+                "angle": 0.603696409975763,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.08706305247160007
+            },
+            {
+              "nodes": 8192,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol Gaussian integral diagnostic",
+                "nodes": 8192,
+                "seed": 20261114,
+                "endpoint_clip": "[1e-12,1-1e-12]",
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.13132569524582227,
+                "initial_state": [
+                  0.48781595589299404,
+                  0.3666272381570199
+                ],
+                "energy": 9.999999999999996,
+                "expected_damage": null,
+                "angle": 0.6365806063186481,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.061319682302441995,
+                "initial_state": [
+                  0.37865298934113856,
+                  0.2521864739870873
+                ],
+                "energy": 5.557775370000092,
+                "expected_damage": 0.09999999999999999,
+                "angle": 0.5962502912054581,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.006600203301461485,
+                "initial_state": [
+                  0.1466361448020465,
+                  0.10521210080371307
+                ],
+                "energy": 0.8750016569718495,
+                "expected_damage": 0.1,
+                "angle": 0.6209127866681318,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.06508892122615362
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "normalized_Gaussian": {
+          "W": [
+            [
+              22.374196152108674,
+              6.324494706098147
+            ],
+            [
+              6.324494706098147,
+              17.9555791854249
+            ]
+          ],
+          "S": [
+            [
+              1.5189347076312745,
+              0.6347739556693442
+            ],
+            [
+              0.6347739556693442,
+              1.013297803471551
+            ]
+          ],
+          "S0": [
+            [
+              0.37937158345113736,
+              0.15764529928532858
+            ],
+            [
+              0.15764529928532858,
+              0.2437019772151611
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              9.686524584750606,
+              1.180396366308305
+            ],
+            [
+              1.180396366308305,
+              8.665211546323096
+            ]
+          ],
+          "min_expected_ncp_E10": 3.89194617608275,
+          "min_expected_ncp_direction": [
+            -0.4849871700313936,
+            -0.37048317375568923
+          ],
+          "P1_expected_terminal_damage": 0.7262226211884021,
+          "P1_initial_state": [
+            -0.5230403119550111,
+            -0.3157471173130642
+          ],
+          "P3_phys_feasible": true,
+          "probes": [
+            {
+              "nodes": 1024,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol Gaussian integral diagnostic",
+                "nodes": 1024,
+                "seed": 20261114,
+                "endpoint_clip": "[1e-12,1-1e-12]",
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.07207475403152197,
+                "initial_state": [
+                  0.4811245076092445,
+                  0.3756975732313182
+                ],
+                "energy": 9.999999999999995,
+                "expected_damage": null,
+                "angle": 0.6496624607610225,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.0327101954105368,
+                "initial_state": [
+                  0.3676027276093219,
+                  0.2686872743774826
+                ],
+                "energy": 5.569071981379484,
+                "expected_damage": 0.1,
+                "angle": 0.6271422621656905,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.00682773323899635,
+                "initial_state": [
+                  0.20188128435857633,
+                  0.10502413524404466
+                ],
+                "energy": 1.3781242262895792,
+                "expected_damage": 0.1,
+                "angle": 0.5195896159096287,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.4136481253301465
+            },
+            {
+              "nodes": 4096,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol Gaussian integral diagnostic",
+                "nodes": 4096,
+                "seed": 20261114,
+                "endpoint_clip": "[1e-12,1-1e-12]",
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.0736786658038936,
+                "initial_state": [
+                  0.4848426739304897,
+                  0.3706792867355916
+                ],
+                "energy": 9.999999999999993,
+                "expected_damage": null,
+                "angle": 0.6424134340968362,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.032482627353572394,
+                "initial_state": [
+                  0.37330746010109433,
+                  0.26022505024030346
+                ],
+                "energy": 5.562705675869779,
+                "expected_damage": 0.09999999999999998,
+                "angle": 0.6112739278586035,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.006610567861114503,
+                "initial_state": [
+                  0.18717908768345257,
+                  0.12752415114867072
+                ],
+                "energy": 1.377833088241601,
+                "expected_damage": 0.09999999999999998,
+                "angle": 0.6036964192747515,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.05525336225088462
+            },
+            {
+              "nodes": 8192,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol Gaussian integral diagnostic",
+                "nodes": 8192,
+                "seed": 20261114,
+                "endpoint_clip": "[1e-12,1-1e-12]",
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.07336307938982903,
+                "initial_state": [
+                  0.4849271379917229,
+                  0.3705646604174383
+                ],
+                "energy": 9.999999999999993,
+                "expected_damage": null,
+                "angle": 0.6422481832975241,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.03242508449210653,
+                "initial_state": [
+                  0.37616034266313175,
+                  0.2559482374177105
+                ],
+                "energy": 5.559947826264194,
+                "expected_damage": 0.09999999999999998,
+                "angle": 0.6032746955892343,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.006600203301461484,
+                "initial_state": [
+                  0.184068136936073,
+                  0.13206973186132134
+                ],
+                "energy": 1.3787453310892803,
+                "expected_damage": 0.09999999999999998,
+                "angle": 0.620912803068579,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.041307783737553505
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "whole_sign": {
+          "W": [
+            [
+              22.374196152108674,
+              6.324494706098147
+            ],
+            [
+              6.324494706098147,
+              17.9555791854249
+            ]
+          ],
+          "S": [
+            [
+              0.30582616087795406,
+              0.12779507117437902
+            ],
+            [
+              0.12779507117437905,
+              0.20092538599382287
+            ]
+          ],
+          "S0": [
+            [
+              0.37937158345113736,
+              0.15764529928532858
+            ],
+            [
+              0.15764529928532858,
+              0.2437019772151611
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              5.106380734539922,
+              0.6600050982882981
+            ],
+            [
+              0.660005098288298,
+              4.53659444649473
+            ]
+          ],
+          "min_expected_ncp_E10": 2.060940238491533,
+          "min_expected_ncp_direction": [
+            -0.48368502115835516,
+            -0.372247514614733
+          ],
+          "P1_expected_terminal_damage": 0.14591530676897746,
+          "P1_initial_state": [
+            -0.5285223846872771,
+            -0.30730532711368974
+          ],
+          "P3_phys_feasible": true,
+          "probes": [
+            {
+              "nodes": 32,
+              "integration": {
+                "method": "complete 32-word finite average",
+                "nodes": 32
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.018360729991272036,
+                "initial_state": [
+                  0.48343646209463326,
+                  0.3725835433548649
+                ],
+                "energy": 9.999999999999993,
+                "expected_damage": null,
+                "angle": 0.6451608433986348,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.009651663794328455,
+                "initial_state": [
+                  0.3799328065755692,
+                  0.25024588701787304
+                ],
+                "energy": 5.5567469362638935,
+                "expected_damage": 0.1,
+                "angle": 0.5926308164068352,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.011833511773502177,
+                "initial_state": [
+                  0.4182971025691156,
+                  0.2836371448139945
+                ],
+                "energy": 6.860129395370578,
+                "expected_damage": 0.09999999999999998,
+                "angle": 0.6021372024396892,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 8.881784197001252e-16
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "coordinate_sign": {
+          "W": [
+            [
+              22.374196152108674,
+              6.324494706098147
+            ],
+            [
+              6.324494706098147,
+              17.9555791854249
+            ]
+          ],
+          "S": [
+            [
+              0.30575554103360414,
+              0.12739582233709693
+            ],
+            [
+              0.12739582233709695,
+              0.20064840625394553
+            ]
+          ],
+          "S0": [
+            [
+              0.37937158345113736,
+              0.15764529928532858
+            ],
+            [
+              0.15764529928532858,
+              0.2437019772151611
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              5.105530422249403,
+              0.6006207869480811
+            ],
+            [
+              0.6006207869480811,
+              4.5324187987037
+            ]
+          ],
+          "min_expected_ncp_E10": 2.0386934532955476,
+          "min_expected_ncp_direction": [
+            -0.4790598854635003,
+            -0.37846103200740683
+          ],
+          "P1_expected_terminal_damage": 0.14574005793757738,
+          "P1_initial_state": [
+            -0.5296038316527614,
+            -0.3056217553023332
+          ],
+          "P3_phys_feasible": true,
+          "probes": [
+            {
+              "nodes": 1024,
+              "integration": {
+                "method": "complete 1024-word finite average",
+                "nodes": 1024
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.01750758360723885,
+                "initial_state": [
+                  0.45986852936503503,
+                  0.4033931189945991
+                ],
+                "energy": 9.999999999999993,
+                "expected_damage": null,
+                "angle": 0.690205749288085,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.00942114070899669,
+                "initial_state": [
+                  0.36985865751006397,
+                  0.26535506707174905
+                ],
+                "energy": 5.566420256738205,
+                "expected_damage": 0.1,
+                "angle": 0.620887257365008,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.011490585397109739,
+                "initial_state": [
+                  0.40683292679142313,
+                  0.3010605043935552
+                ],
+                "energy": 6.879933506881629,
+                "expected_damage": 0.09999999999999998,
+                "angle": 0.6313205929536665,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 5.329070518200751e-15
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "Haar_SO2": {
+          "W": [
+            [
+              22.374196152108674,
+              6.324494706098147
+            ],
+            [
+              6.324494706098147,
+              17.9555791854249
+            ]
+          ],
+          "S": [
+            [
+              0.285040992104303,
+              0.12092041995246071
+            ],
+            [
+              0.1209204199524607,
+              0.21046304907543784
+            ]
+          ],
+          "S0": [
+            [
+              0.37937158345113736,
+              0.15764529928532858
+            ],
+            [
+              0.15764529928532858,
+              0.2437019772151611
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              5.078366915708722,
+              0.5999762484406248
+            ],
+            [
+              0.5999762484406248,
+              4.558615536464129
+            ]
+          ],
+          "min_expected_ncp_E10": 2.0358065910369296,
+          "min_expected_ncp_direction": [
+            -0.485593528901934,
+            -0.36965931382815265
+          ],
+          "P1_expected_terminal_damage": 0.139417693570474,
+          "P1_initial_state": [
+            -0.4720581633858222,
+            -0.3877127070046711
+          ],
+          "P3_phys_feasible": true,
+          "probes": [
+            {
+              "nodes": 1024,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol angle integral diagnostic, iid SO(2)",
+                "nodes": 1024,
+                "seed": 20261115,
+                "not_O2_Haar": true,
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.017400823346629825,
+                "initial_state": [
+                  0.48541265141578743,
+                  0.36990522399796955
+                ],
+                "energy": 9.999999999999993,
+                "expected_damage": null,
+                "angle": 0.6412977911990229,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.009364182896266632,
+                "initial_state": [
+                  0.3798276967606974,
+                  0.25040550074990814
+                ],
+                "energy": 5.556829160557216,
+                "expected_damage": 0.09999999999999998,
+                "angle": 0.5929284106055668,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.011914004527035144,
+                "initial_state": [
+                  0.4065669617023078,
+                  0.31943500455797985
+                ],
+                "energy": 7.173291019863948,
+                "expected_damage": 0.09999999999999999,
+                "angle": 0.6517773818117973,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.002560493546036824
+            },
+            {
+              "nodes": 4096,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol angle integral diagnostic, iid SO(2)",
+                "nodes": 4096,
+                "seed": 20261115,
+                "not_O2_Haar": true,
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.017408881685210112,
+                "initial_state": [
+                  0.48545920247038077,
+                  0.36984194833121453
+                ],
+                "energy": 9.999999999999995,
+                "expected_damage": null,
+                "angle": 0.6412066224501891,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.0093672640790495,
+                "initial_state": [
+                  0.3798405938736261,
+                  0.2503859182095253
+                ],
+                "energy": 5.5568190499079035,
+                "expected_damage": 0.1,
+                "angle": 0.592891898600022,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.01191863692161587,
+                "initial_state": [
+                  0.40658811098801995,
+                  0.31940692737786336
+                ],
+                "energy": 7.173294791753619,
+                "expected_damage": 0.09999999999999998,
+                "angle": 0.6517292023661871,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.0004594165667866079
+            },
+            {
+              "nodes": 8192,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol angle integral diagnostic, iid SO(2)",
+                "nodes": 8192,
+                "seed": 20261115,
+                "not_O2_Haar": true,
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.01741054498571833,
+                "initial_state": [
+                  0.48545999447940336,
+                  0.369840871699406
+                ],
+                "energy": 9.999999999999991,
+                "expected_damage": null,
+                "angle": 0.6412050712575259,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.009367925373257917,
+                "initial_state": [
+                  0.37984101166167145,
+                  0.25038528384363756
+                ],
+                "energy": 5.556818722485447,
+                "expected_damage": 0.1,
+                "angle": 0.5928907158180895,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.011919607453411089,
+                "initial_state": [
+                  0.40658859023174343,
+                  0.3194062911328416
+                ],
+                "energy": 7.17329487736292,
+                "expected_damage": 0.09999999999999999,
+                "angle": 0.6517281106020952,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 6.02700597607253e-06
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "identity": {
+          "W": [
+            [
+              22.374196152108674,
+              6.324494706098147
+            ],
+            [
+              6.324494706098147,
+              17.9555791854249
+            ]
+          ],
+          "S": [
+            [
+              0.37937158345113736,
+              0.15764529928532858
+            ],
+            [
+              0.15764529928532858,
+              0.2437019772151611
+            ]
+          ],
+          "S0": [
+            [
+              0.37937158345113736,
+              0.15764529928532858
+            ],
+            [
+              0.15764529928532858,
+              0.2437019772151611
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              3.8518397964987027e-35,
+              7.218329555169321e-37
+            ],
+            [
+              7.218329555169325e-37,
+              4.293679603495422e-34
+            ]
+          ],
+          "min_expected_ncp_E10": 1.7101318920004157e-35,
+          "min_expected_ncp_direction": [
+            -0.663636016564302,
+            -0.016802892140850602
+          ],
+          "P1_expected_terminal_damage": 0.18022253426442864,
+          "P1_initial_state": [
+            -0.5372209387742106,
+            -0.2935871029516655
+          ],
+          "P3_phys_feasible": true,
+          "probes": [
+            {
+              "nodes": 1,
+              "integration": {
+                "method": "deterministic fixed word",
+                "nodes": 1
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.0033333333333333366,
+                "initial_state": [
+                  0.6300618078976926,
+                  0.11200866959937
+                ],
+                "energy": 9.999999999999991,
+                "expected_damage": null,
+                "angle": 0.2945243112740431,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.0033333333333333366,
+                "initial_state": [
+                  0.548349135139203,
+                  -0.09379367728969693
+                ],
+                "energy": 6.235025852170221,
+                "expected_damage": 0.10000000000000002,
+                "angle": 0.0,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.0033333333333333366,
+                "initial_state": [
+                  0.548349135139203,
+                  -0.09379367728969693
+                ],
+                "energy": 6.235025852170221,
+                "expected_damage": 0.10000000000000002,
+                "angle": 0.0,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 2.77692614534854e-32
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "public_scalar_alternation": {
+          "W": [
+            [
+              22.374196152108674,
+              6.324494706098147
+            ],
+            [
+              6.324494706098147,
+              17.9555791854249
+            ]
+          ],
+          "S": [
+            [
+              0.2465355458555827,
+              0.10358521159390408
+            ],
+            [
+              0.10358521159390408,
+              0.16565696378745426
+            ]
+          ],
+          "S0": [
+            [
+              0.37937158345113736,
+              0.15764529928532858
+            ],
+            [
+              0.15764529928532858,
+              0.2437019772151611
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              8.40458266490211,
+              1.07196044487352
+            ],
+            [
+              1.07196044487352,
+              7.478386180777487
+            ]
+          ],
+          "min_expected_ncp_E10": 3.388542409822237,
+          "min_expected_ncp_direction": [
+            -0.4839727038930761,
+            -0.37185829259276865
+          ],
+          "P1_expected_terminal_damage": 0.11817758038171969,
+          "P1_initial_state": [
+            -0.5190933525665992,
+            -0.3217316124882675
+          ],
+          "P3_phys_feasible": true,
+          "probes": [
+            {
+              "nodes": 1,
+              "integration": {
+                "method": "deterministic fixed word",
+                "nodes": 1
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.033820187766212734,
+                "initial_state": [
+                  0.4839727036620991,
+                  0.3718582929054001
+                ],
+                "energy": 9.999999999999995,
+                "expected_damage": null,
+                "angle": 0.6441139945524772,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.015274668022178835,
+                "initial_state": [
+                  0.3798847977018642,
+                  0.25031879578257105
+                ],
+                "energy": 5.5567844423435275,
+                "expected_damage": 0.1,
+                "angle": 0.5927667498256856,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.02639475568880693,
+                "initial_state": [
+                  0.46030533038461074,
+                  0.3214125933616619
+                ],
+                "energy": 8.466978845622634,
+                "expected_damage": 0.09999999999999999,
+                "angle": 0.6118357959411209,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 2.6645352591003757e-15
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "public_coordinate_alternation": {
+          "W": [
+            [
+              22.374196152108674,
+              6.324494706098147
+            ],
+            [
+              6.324494706098147,
+              17.9555791854249
+            ]
+          ],
+          "S": [
+            [
+              0.37868063771874977,
+              0.15099933737522483
+            ],
+            [
+              0.15099933737522483,
+              0.18266073900240132
+            ]
+          ],
+          "S0": [
+            [
+              0.37937158345113736,
+              0.15764529928532858
+            ],
+            [
+              0.15764529928532858,
+              0.2437019772151611
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              0.003984041115863926,
+              0.1510027580245503
+            ],
+            [
+              0.1510027580245503,
+              7.363113383624475
+            ]
+          ],
+          "min_expected_ncp_E10": 0.00040107335792988414,
+          "min_expected_ncp_direction": [
+            -0.6723271530306862,
+            0.01376627267872005
+          ],
+          "P1_expected_terminal_damage": 0.1748174188910591,
+          "P1_initial_state": [
+            -0.5978671155235779,
+            -0.18421624716666915
+          ],
+          "P3_phys_feasible": true,
+          "probes": [
+            {
+              "nodes": 1,
+              "integration": {
+                "method": "deterministic fixed word",
+                "nodes": 1
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.0033348023206903987,
+                "initial_state": [
+                  0.6723271526014488,
+                  -0.013766271075815397
+                ],
+                "energy": 9.999999999999996,
+                "expected_damage": null,
+                "angle": 0.13411110040143628,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.0033342045032245904,
+                "initial_state": [
+                  0.5177643032445144,
+                  -0.010592779897396544
+                ],
+                "energy": 5.930712237187091,
+                "expected_damage": 0.09999999999999998,
+                "angle": 0.1341255981172343,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.0033342055427620122,
+                "initial_state": [
+                  0.5180734532394337,
+                  -0.01059997672946041
+                ],
+                "energy": 5.937791263572444,
+                "expected_damage": 0.09999999999999998,
+                "angle": 0.1341241510247599,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 2.7755575615628914e-17
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "public_R90_supplement": {
+          "W": [
+            [
+              22.374196152108674,
+              6.324494706098147
+            ],
+            [
+              6.324494706098147,
+              17.9555791854249
+            ]
+          ],
+          "S": [
+            [
+              0.31700350117825243,
+              0.1350505281661374
+            ],
+            [
+              0.1350505281661374,
+              0.2711649308932521
+            ]
+          ],
+          "S0": [
+            [
+              0.37937158345113736,
+              0.15764529928532858
+            ],
+            [
+              0.15764529928532858,
+              0.2437019772151611
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              0.01860630544264776,
+              0.0017795674868383011
+            ],
+            [
+              0.0017795674868383011,
+              0.01701878851412477
+            ]
+          ],
+          "min_expected_ncp_E10": 0.007351767185741624,
+          "min_expected_ncp_direction": [
+            -0.48779394833521034,
+            -0.3666573597629134
+          ],
+          "P1_expected_terminal_damage": 0.16297435762045703,
+          "P1_initial_state": [
+            -0.3512168395305224,
+            -0.5232260508960803
+          ],
+          "P3_phys_feasible": true,
+          "probes": [
+            {
+              "nodes": 1,
+              "integration": {
+                "method": "deterministic fixed word",
+                "nodes": 1
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.003360321192001266,
+                "initial_state": [
+                  0.487793957461356,
+                  0.36665734727241667
+                ],
+                "energy": 9.999999999999993,
+                "expected_damage": null,
+                "angle": 0.6366238813180889,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": true,
+                "Pd": 0.0033483313370051924,
+                "initial_state": [
+                  0.37935170442154603,
+                  0.25112778671719643
+                ],
+                "energy": 5.557206539057663,
+                "expected_damage": 0.09999999999999999,
+                "angle": 0.5942753305059854,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.0033500715660882054,
+                "initial_state": [
+                  0.3505611267319486,
+                  0.3309707533683042
+                ],
+                "energy": 6.184123059612935,
+                "expected_damage": 0.1,
+                "angle": 0.7163029942678887,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 3.469446951953614e-18
+            }
+          ],
+          "finite_event_risk_computed": false
+        }
+      }
+    },
+    "stable": {
+      "A": [
+        [
+          0.8,
+          0.05
+        ],
+        [
+          0.01,
+          0.9
+        ]
+      ],
+      "F": [
+        [
+          0.09060252112577427,
+          0.005176588517070652
+        ],
+        [
+          0.0006008502613592062,
+          0.0867511654379503
+        ]
+      ],
+      "G": [
+        [
+          0.2687091190734196,
+          0.00015012556660960234
+        ],
+        [
+          0.00013761510272546917,
+          0.2509957185401543
+        ]
+      ],
+      "schemes": {
+        "Gaussian": {
+          "W": [
+            [
+              2.7630028955972383,
+              0.46918868481894505
+            ],
+            [
+              0.46918868481894505,
+              4.776846137784364
+            ]
+          ],
+          "S": [
+            [
+              0.01153868431808552,
+              0.01534611213060914
+            ],
+            [
+              0.01534611213060914,
+              0.08838724868120446
+            ]
+          ],
+          "S0": [
+            [
+              0.0018327350068182361,
+              0.002402539056664076
+            ],
+            [
+              0.002402539056664076,
+              0.01347293665950046
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              4.536243997230818,
+              0.5904797530194889
+            ],
+            [
+              0.5904797530194887,
+              6.799396765466309
+            ]
+          ],
+          "min_expected_ncp_E10": 14.213990867868063,
+          "min_expected_ncp_direction": [
+            -0.17860564495034434,
+            -1.4230430088326087
+          ],
+          "P1_expected_terminal_damage": 0.18727300749295114,
+          "P1_initial_state": [
+            0.23065003844734844,
+            1.4137202809882383
+          ],
+          "P3_phys_feasible": true,
+          "probes": [
+            {
+              "nodes": 1024,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol Gaussian integral diagnostic",
+                "nodes": 1024,
+                "seed": 20261114,
+                "endpoint_clip": "[1e-12,1-1e-12]",
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.310736048208313,
+                "initial_state": [
+                  0.25486429349373535,
+                  1.409012420643821
+                ],
+                "energy": 10.0,
+                "expected_damage": null,
+                "angle": 1.3816220187782686,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.16509712833363516,
+                "initial_state": [
+                  0.14938162670556504,
+                  1.0366759193593804
+                ],
+                "energy": 5.340635516694481,
+                "expected_damage": 0.09999999999999998,
+                "angle": 1.408112451764169,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.22263752494504274
+            },
+            {
+              "nodes": 4096,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol Gaussian integral diagnostic",
+                "nodes": 4096,
+                "seed": 20261114,
+                "endpoint_clip": "[1e-12,1-1e-12]",
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.31036636380557364,
+                "initial_state": [
+                  0.3005498703134279,
+                  1.3994842831042407
+                ],
+                "energy": 9.999999999999998,
+                "expected_damage": null,
+                "angle": 1.357554747724875,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.1675981436414402,
+                "initial_state": [
+                  0.16521779912691795,
+                  1.0336909934659595
+                ],
+                "energy": 5.339823093343292,
+                "expected_damage": 0.1,
+                "angle": 1.3967364426576798,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.019770249248740712
+            },
+            {
+              "nodes": 8192,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol Gaussian integral diagnostic",
+                "nodes": 8192,
+                "seed": 20261114,
+                "endpoint_clip": "[1e-12,1-1e-12]",
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.3115975857125356,
+                "initial_state": [
+                  0.2346357826891908,
+                  1.4129615788949579
+                ],
+                "energy": 9.999999999999996,
+                "expected_damage": null,
+                "angle": 1.3922528572616018,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.16784945503338225,
+                "initial_state": [
+                  0.1638549048157196,
+                  1.033948816599173
+                ],
+                "energy": 5.339848022750115,
+                "expected_damage": 0.1,
+                "angle": 1.397715641282223,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.020061327300104792
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "normalized_Gaussian": {
+          "W": [
+            [
+              2.7630028955972383,
+              0.46918868481894505
+            ],
+            [
+              0.46918868481894505,
+              4.776846137784364
+            ]
+          ],
+          "S": [
+            [
+              0.007322866433309839,
+              0.009739197841378515
+            ],
+            [
+              0.009739197841378515,
+              0.05609374506291995
+            ]
+          ],
+          "S0": [
+            [
+              0.0018327350068182361,
+              0.002402539056664076
+            ],
+            [
+              0.002402539056664076,
+              0.01347293665950046
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              2.878864520850011,
+              0.37473980947360996
+            ],
+            [
+              0.3747398094736099,
+              4.315143127934189
+            ]
+          ],
+          "min_expected_ncp_E10": 9.020712738153291,
+          "min_expected_ncp_direction": [
+            -0.17860564495034434,
+            -1.4230430088326091
+          ],
+          "P1_expected_terminal_damage": 0.11885022439565714,
+          "P1_initial_state": [
+            0.23065003844734852,
+            1.413720280988238
+          ],
+          "P3_phys_feasible": true,
+          "probes": [
+            {
+              "nodes": 1024,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol Gaussian integral diagnostic",
+                "nodes": 1024,
+                "seed": 20261114,
+                "endpoint_clip": "[1e-12,1-1e-12]",
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.19932272726662406,
+                "initial_state": [
+                  0.17423451904940607,
+                  1.4237767800357153
+                ],
+                "energy": 9.999999999999996,
+                "expected_damage": null,
+                "angle": 1.42391810694372,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.16509712833363518,
+                "initial_state": [
+                  0.18751444622748914,
+                  1.3013095027312862
+                ],
+                "energy": 8.415271241251181,
+                "expected_damage": 0.09999999999999999,
+                "angle": 1.4081124622050452,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.1412938263385657
+            },
+            {
+              "nodes": 4096,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol Gaussian integral diagnostic",
+                "nodes": 4096,
+                "seed": 20261114,
+                "endpoint_clip": "[1e-12,1-1e-12]",
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.20177250086651036,
+                "initial_state": [
+                  0.2570087637112107,
+                  1.4085840880804819
+                ],
+                "energy": 9.999999999999998,
+                "expected_damage": null,
+                "angle": 1.3804941523483423,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.16759814364144016,
+                "initial_state": [
+                  0.20739315676534864,
+                  1.2975626075840978
+                ],
+                "energy": 8.413991098928474,
+                "expected_damage": 0.09999999999999996,
+                "angle": 1.3967364426574727,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.012546915281740567
+            },
+            {
+              "nodes": 8192,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol Gaussian integral diagnostic",
+                "nodes": 8192,
+                "seed": 20261114,
+                "endpoint_clip": "[1e-12,1-1e-12]",
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.20229002901557847,
+                "initial_state": [
+                  0.21278955376095915,
+                  1.417041777612952
+                ],
+                "energy": 9.999999999999998,
+                "expected_damage": null,
+                "angle": 1.4037182826540597,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": true,
+                "Pd": 0.16784945503338222,
+                "initial_state": [
+                  0.20568234448961448,
+                  1.2978862474854083
+                ],
+                "energy": 8.414030380617536,
+                "expected_damage": 0.09999999999999999,
+                "angle": 1.3977156471205865,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "mean_ncp_matrix_error": 0.012731643941702675
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "whole_sign": {
+          "W": [
+            [
+              2.7630028955972383,
+              0.46918868481894505
+            ],
+            [
+              0.46918868481894505,
+              4.776846137784364
+            ]
+          ],
+          "S": [
+            [
+              0.0014618967132354202,
+              0.0019409094215337426
+            ],
+            [
+              0.0019409094215337426,
+              0.011072571154697826
+            ]
+          ],
+          "S0": [
+            [
+              0.0018327350068182361,
+              0.002402539056664076
+            ],
+            [
+              0.002402539056664076,
+              0.01347293665950046
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              1.4720810785305927,
+              0.21928860866162686
+            ],
+            [
+              0.2192886086616269,
+              2.3131969415778015
+            ]
+          ],
+          "min_expected_ncp_E10": 4.841553825204692,
+          "min_expected_ncp_direction": [
+            -0.0842011607205965,
+            -1.4372049919388683
+          ],
+          "P1_expected_terminal_damage": 0.023473389130178778,
+          "P1_initial_state": [
+            0.23608383183017612,
+            1.4126843553999275
+          ],
+          "P3_phys_feasible": false,
+          "probes": [
+            {
+              "nodes": 32,
+              "integration": {
+                "method": "complete 32-word finite average",
+                "nodes": 32
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.07044212790460538,
+                "initial_state": [
+                  0.11943481084452484,
+                  1.432332018064417
+                ],
+                "energy": 9.999999999999998,
+                "expected_damage": null,
+                "angle": 1.452566971232015,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "mean_ncp_matrix_error": 8.881784197001252e-16
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "coordinate_sign": {
+          "W": [
+            [
+              2.7630028955972383,
+              0.46918868481894505
+            ],
+            [
+              0.46918868481894505,
+              4.776846137784364
+            ]
+          ],
+          "S": [
+            [
+              0.0014610328387788896,
+              0.0019336762098367609
+            ],
+            [
+              0.001933676209836761,
+              0.011060858462221287
+            ]
+          ],
+          "S0": [
+            [
+              0.0018327350068182361,
+              0.002402539056664076
+            ],
+            [
+              0.002402539056664076,
+              0.01347293665950046
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              1.4717228904278763,
+              0.1842306376364996
+            ],
+            [
+              0.1842306376364996,
+              2.311118920493208
+            ]
+          ],
+          "min_expected_ncp_E10": 4.8126828935351,
+          "min_expected_ncp_direction": [
+            -0.40266616011898837,
+            -1.3750913280599528
+          ],
+          "P1_expected_terminal_damage": 0.02344515047523487,
+          "P1_initial_state": [
+            0.2347878812305107,
+            1.4129324998408603
+          ],
+          "P3_phys_feasible": false,
+          "probes": [
+            {
+              "nodes": 1024,
+              "integration": {
+                "method": "complete 1024-word finite average",
+                "nodes": 1024
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.0668392782370036,
+                "initial_state": [
+                  0.8544219242356742,
+                  1.211534777566422
+                ],
+                "energy": 9.999999999999996,
+                "expected_damage": null,
+                "angle": 1.053285832473066,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "mean_ncp_matrix_error": 1.3322676295501878e-15
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "Haar_SO2": {
+          "W": [
+            [
+              2.7630028955972383,
+              0.46918868481894505
+            ],
+            [
+              0.46918868481894505,
+              4.776846137784364
+            ]
+          ],
+          "S": [
+            [
+              0.0013729237887885777,
+              0.0018975232412095468
+            ],
+            [
+              0.001897523241209547,
+              0.011711465444252394
+            ]
+          ],
+          "S0": [
+            [
+              0.0018327350068182361,
+              0.002402539056664076
+            ],
+            [
+              0.002402539056664076,
+              0.01347293665950046
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              1.532081459350112,
+              0.18559557217893097
+            ],
+            [
+              0.18559557217893097,
+              2.243099911944254
+            ]
+          ],
+          "min_expected_ncp_E10": 4.685441714313557,
+          "min_expected_ncp_direction": [
+            -0.20451499359034514,
+            -1.418537262308219
+          ],
+          "P1_expected_terminal_damage": 0.024725692486354447,
+          "P1_initial_state": [
+            0.19192871016325383,
+            1.4207595302592433
+          ],
+          "P3_phys_feasible": false,
+          "probes": [
+            {
+              "nodes": 1024,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol angle integral diagnostic, iid SO(2)",
+                "nodes": 1024,
+                "seed": 20261115,
+                "not_O2_Haar": true,
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.06211843961779784,
+                "initial_state": [
+                  0.20958076083249508,
+                  1.4176249645020547
+                ],
+                "energy": 9.999999999999998,
+                "expected_damage": null,
+                "angle": 1.4054010626709883,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "mean_ncp_matrix_error": 0.0017334854661412713
+            },
+            {
+              "nodes": 4096,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol angle integral diagnostic, iid SO(2)",
+                "nodes": 4096,
+                "seed": 20261115,
+                "not_O2_Haar": true,
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.06213969007503378,
+                "initial_state": [
+                  0.21032817563300413,
+                  1.4174894927214243
+                ],
+                "energy": 9.999999999999998,
+                "expected_damage": null,
+                "angle": 1.405009125596151,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "mean_ncp_matrix_error": 0.00016398562962915975
+            },
+            {
+              "nodes": 8192,
+              "integration": {
+                "method": "fixed-seed scrambled Sobol angle integral diagnostic, iid SO(2)",
+                "nodes": 8192,
+                "seed": 20261115,
+                "not_O2_Haar": true,
+                "integral_error_certified": false
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.06214702912388153,
+                "initial_state": [
+                  0.21034169221151758,
+                  1.4174870407315818
+                ],
+                "energy": 9.999999999999996,
+                "expected_damage": null,
+                "angle": 1.4050020374776353,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "mean_ncp_matrix_error": 7.749518779992526e-06
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "identity": {
+          "W": [
+            [
+              2.7630028955972383,
+              0.46918868481894505
+            ],
+            [
+              0.46918868481894505,
+              4.776846137784364
+            ]
+          ],
+          "S": [
+            [
+              0.0018327350068182361,
+              0.002402539056664076
+            ],
+            [
+              0.002402539056664076,
+              0.01347293665950046
+            ]
+          ],
+          "S0": [
+            [
+              0.0018327350068182361,
+              0.002402539056664076
+            ],
+            [
+              0.002402539056664076,
+              0.01347293665950046
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              6.717708972871408e-36,
+              -2.1496668713188505e-34
+            ],
+            [
+              -2.1496668713188505e-34,
+              6.878933988220322e-33
+            ]
+          ],
+          "min_expected_ncp_E10": 1.0022867662845734e-50,
+          "min_expected_ncp_direction": [
+            -1.8908382621517164,
+            -0.059088695692241115
+          ],
+          "P1_expected_terminal_damage": 0.028593056878099245,
+          "P1_initial_state": [
+            0.24666694985296025,
+            1.410632636570524
+          ],
+          "P3_phys_feasible": false,
+          "probes": [
+            {
+              "nodes": 1,
+              "integration": {
+                "method": "deterministic fixed word",
+                "nodes": 1
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.0033333333333333366,
+                "initial_state": [
+                  1.785176457654375,
+                  0.35460973342403274
+                ],
+                "energy": 10.000000000000002,
+                "expected_damage": null,
+                "angle": 0.3190680038802134,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "mean_ncp_matrix_error": 2.1496668713188505e-34
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "public_scalar_alternation": {
+          "W": [
+            [
+              2.7630028955972383,
+              0.46918868481894505
+            ],
+            [
+              0.46918868481894505,
+              4.776846137784364
+            ]
+          ],
+          "S": [
+            [
+              0.0011660801880531775,
+              0.001567853802303411
+            ],
+            [
+              0.001567853802303411,
+              0.009099687924568894
+            ]
+          ],
+          "S0": [
+            [
+              0.0018327350068182361,
+              0.002402539056664076
+            ],
+            [
+              0.002402539056664076,
+              0.01347293665950046
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              2.5200778201014193,
+              0.35565737014578397
+            ],
+            [
+              0.3556573701457839,
+              3.8796544517220295
+            ]
+          ],
+          "min_expected_ncp_E10": 8.11700374803386,
+          "min_expected_ncp_direction": [
+            -0.1299161625971307,
+            -1.4307877407198395
+          ],
+          "P1_expected_terminal_damage": 0.019271297048445206,
+          "P1_initial_state": [
+            0.22576197574941645,
+            1.4146420296415294
+          ],
+          "P3_phys_feasible": false,
+          "probes": [
+            {
+              "nodes": 1,
+              "integration": {
+                "method": "deterministic fixed word",
+                "nodes": 1
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.15633174012455286,
+                "initial_state": [
+                  0.1299162098582107,
+                  1.4307877336585924
+                ],
+                "energy": 9.999999999999996,
+                "expected_damage": null,
+                "angle": 1.4470920597456225,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "mean_ncp_matrix_error": 8.881784197001252e-16
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "public_coordinate_alternation": {
+          "W": [
+            [
+              2.7630028955972383,
+              0.46918868481894505
+            ],
+            [
+              0.46918868481894505,
+              4.776846137784364
+            ]
+          ],
+          "S": [
+            [
+              0.0018146222548447988,
+              0.0021358816847866315
+            ],
+            [
+              0.0021358816847866315,
+              0.009597019325394187
+            ]
+          ],
+          "S0": [
+            [
+              0.0018327350068182361,
+              0.002402539056664076
+            ],
+            [
+              0.002402539056664076,
+              0.01347293665950046
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              0.0016758628308020755,
+              0.07034418585275537
+            ],
+            [
+              0.07034418585275538,
+              3.8362506118504123
+            ]
+          ],
+          "min_expected_ncp_E10": 0.0014048968378514996,
+          "min_expected_ncp_direction": [
+            -1.9078227745155287,
+            0.034956512557318624
+          ],
+          "P1_expected_terminal_damage": 0.020806313099640397,
+          "P1_initial_state": [
+            0.4051446556052991,
+            1.3744453379311643
+          ],
+          "P3_phys_feasible": false,
+          "probes": [
+            {
+              "nodes": 1,
+              "integration": {
+                "method": "deterministic fixed word",
+                "nodes": 1
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.003338480646748158,
+                "initial_state": [
+                  1.907822775281223,
+                  -0.03495651808320884
+                ],
+                "energy": 10.000000000000007,
+                "expected_damage": null,
+                "angle": 0.049614445478030525,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "mean_ncp_matrix_error": 4.440892098500626e-16
+            }
+          ],
+          "finite_event_risk_computed": false
+        },
+        "public_R90_supplement": {
+          "W": [
+            [
+              2.7630028955972383,
+              0.46918868481894505
+            ],
+            [
+              0.46918868481894505,
+              4.776846137784364
+            ]
+          ],
+          "S": [
+            [
+              0.001587216717231655,
+              0.002222105059478739
+            ],
+            [
+              0.002222105059478739,
+              0.015028916827093189
+            ]
+          ],
+          "S0": [
+            [
+              0.0018327350068182361,
+              0.002402539056664076
+            ],
+            [
+              0.002402539056664076,
+              0.01347293665950046
+            ]
+          ],
+          "expected_ncp_matrix": [
+            [
+              0.025532483656856442,
+              0.0022971938608200696
+            ],
+            [
+              0.002297193860820067,
+              0.034050920994686866
+            ]
+          ],
+          "min_expected_ncp_E10": 0.07090953128865063,
+          "min_expected_ncp_direction": [
+            -0.2446202433841712,
+            -1.4110329437058942
+          ],
+          "P1_expected_terminal_damage": 0.031621670899006485,
+          "P1_initial_state": [
+            0.14749703961805172,
+            1.4280997824923447
+          ],
+          "P3_phys_feasible": false,
+          "probes": [
+            {
+              "nodes": 1,
+              "integration": {
+                "method": "deterministic fixed word",
+                "nodes": 1
+              },
+              "E10_min_power": {
+                "feasible": true,
+                "Pd": 0.003599055355150834,
+                "initial_state": [
+                  0.24462032069355663,
+                  1.411032928617138
+                ],
+                "energy": 10.0,
+                "expected_damage": null,
+                "angle": 1.3870074258067115,
+                "angular_grid": 129,
+                "local_refinements": 4,
+                "global_optimum_certified": false
+              },
+              "P3_pot": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "P3_phys": {
+                "feasible": false,
+                "actual_P3_damage_unreachable": true,
+                "Pd": null
+              },
+              "mean_ncp_matrix_error": 1.3877787807814457e-17
+            }
+          ],
+          "finite_event_risk_computed": false
+        }
+      }
+    }
+  }
+}

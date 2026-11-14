@@ -1,0 +1,202 @@
+{
+  "date": "2026-11-14",
+  "baseline_commit": "2d4db76b2b6d19ede2ac22264663472b37228813",
+  "normalization": "UTF-8 without BOM, LF line endings; source/input certificates retain original local-byte hashes",
+  "only_new_owned_work": true,
+  "third_party_extractions_excluded": true,
+  "old_repository_files_modified": 0,
+  "files": [
+    {
+      "file": "baseline_comparison.json",
+      "source_sha256": "2ed22e635b197e285e458359dcb29f2d4c014e4fab5f0dd176caac918732123c",
+      "public_sha256": "9d9046854a3d07e7b9b6fea37f7317cba37124c42c3e92fe0605518ee335f376",
+      "public_bytes": 75728
+    },
+    {
+      "file": "certify_unitary_early_boundary.py",
+      "source_sha256": "49a45558a58c8424bece1421cf746ca551547261a0f99bd93053e4655d28753c",
+      "public_sha256": "49a45558a58c8424bece1421cf746ca551547261a0f99bd93053e4655d28753c",
+      "public_bytes": 4768
+    },
+    {
+      "file": "check_power_comparison.py",
+      "source_sha256": "62bf6256a99821b918a86faf9db55045e96020e423438035fb888e28c7fa7d74",
+      "public_sha256": "62bf6256a99821b918a86faf9db55045e96020e423438035fb888e28c7fa7d74",
+      "public_bytes": 4649
+    },
+    {
+      "file": "check_probability_nonimplication.py",
+      "source_sha256": "529b28f322efdaaef9c2c752cd1acb0cddfc7121ee8277993be61ce3a9ee99d9",
+      "public_sha256": "529b28f322efdaaef9c2c752cd1acb0cddfc7121ee8277993be61ce3a9ee99d9",
+      "public_bytes": 1526
+    },
+    {
+      "file": "crosscheck_moment_implementations.py",
+      "source_sha256": "d797bfd76746bd079514ee39bf71d5dfb1347a3a70ec8f6d9b0fb77fcdacc7ba",
+      "public_sha256": "d797bfd76746bd079514ee39bf71d5dfb1347a3a70ec8f6d9b0fb77fcdacc7ba",
+      "public_bytes": 1450
+    },
+    {
+      "file": "delivery_verification.json",
+      "source_sha256": "9bdebbbd1783483927e0a19e2c103a183539a5e350ec3f40982cf9c19c99946e",
+      "public_sha256": "998ec0a11a0702208d0a060469eccbe8e9af47dcfaa9aa37118d84da260b1e2f",
+      "public_bytes": 2087
+    },
+    {
+      "file": "event_risk_config.json",
+      "source_sha256": "94121329f5f84f3d09bab57e4ff8e2b109c591dc8f7d206eafeb0cf66c7a0059",
+      "public_sha256": "94121329f5f84f3d09bab57e4ff8e2b109c591dc8f7d206eafeb0cf66c7a0059",
+      "public_bytes": 937
+    },
+    {
+      "file": "event_risk_p1p3.json",
+      "source_sha256": "0cf3720fbf9bffc3d8cb59e7e9587a0e429dd230e0c3cd46e150964889e8c5b3",
+      "public_sha256": "541af15765048c1cf0733485ae11c113817d836f87465edef83ef2a81cc98a86",
+      "public_bytes": 55710
+    },
+    {
+      "file": "event_risk_p1p3.py",
+      "source_sha256": "9ec8b6f07e546dbc33e3a5cebddc3c9d6d4300b6c9a0e9b2b9cbbd9e5a88cf97",
+      "public_sha256": "9ec8b6f07e546dbc33e3a5cebddc3c9d6d4300b6c9a0e9b2b9cbbd9e5a88cf97",
+      "public_bytes": 2200
+    },
+    {
+      "file": "event_risk_screen.json",
+      "source_sha256": "a7340e690d61a4299ddb0b5c8c7d4481f42c56942cfef75e5a80c79172318616",
+      "public_sha256": "36ecc38d3fea13e7dd80e9273daa27d5103e953d24b3798c26c5b6ec0b268677",
+      "public_bytes": 232466
+    },
+    {
+      "file": "event_risk_screen.py",
+      "source_sha256": "f00d5a2616f737fadcf7f8a79b6227fcde9bdef067eddd8ec363494e5752cb3c",
+      "public_sha256": "f00d5a2616f737fadcf7f8a79b6227fcde9bdef067eddd8ec363494e5752cb3c",
+      "public_bytes": 6812
+    },
+    {
+      "file": "event_risk_selection_locked.json",
+      "source_sha256": "a7ccfa2802bedf3314ed357a80f8b910843141cd04c1e7811831e0214370a87e",
+      "public_sha256": "fbd0aa36f88ced13c39d90c91719aa296e97df006dcd087f210af905ac18f884",
+      "public_bytes": 7868
+    },
+    {
+      "file": "frozen_scope.json",
+      "source_sha256": "d9f43d331976c8b3f0521b74de5da92386eb5309b9afb1996b4c054701a1c8f7",
+      "public_sha256": "63ef88c5d3e7f49b0893bbebcbfecc446c03833f3572c7037023c99f63859b56",
+      "public_bytes": 73143
+    },
+    {
+      "file": "moment_implementation_crosscheck.json",
+      "source_sha256": "68e9b445c8c707372d75b25c7b3627e8e440a10ac9463fefb720e645f17a65d2",
+      "public_sha256": "e1b91172187ce6c70e43134e3c216b888eecd6eece45a16fc746bc1528e7eb12",
+      "public_bytes": 4777
+    },
+    {
+      "file": "power_comparison.py",
+      "source_sha256": "c653beeb37f375c0a09f0450bcbf02dc27978c1f0c1691ac3fcc6058abf143ed",
+      "public_sha256": "c653beeb37f375c0a09f0450bcbf02dc27978c1f0c1691ac3fcc6058abf143ed",
+      "public_bytes": 9993
+    },
+    {
+      "file": "power_comparison_checks.json",
+      "source_sha256": "f7f9b6743e91f121fc22202c54ca5dca547035412e57781eea4f319c7c3838ea",
+      "public_sha256": "7399ccce9a61a29853c7d1577f4096bafa8ee9463e6cdf9d2a8dfef2dad2946f",
+      "public_bytes": 8918
+    },
+    {
+      "file": "probability_nonimplication.json",
+      "source_sha256": "5a7f4bbdd6bf3966e71a32d6b9bebb48c8a6d275148d3170c363a50bebf915f6",
+      "public_sha256": "d24f69d5e51405f89339b0ae8d0302cda4f0759051ffa86f6a7bad6e9a8cf632",
+      "public_bytes": 692
+    },
+    {
+      "file": "README.md",
+      "source_sha256": "8bf46ffda2231f58a70416ea38db19baa18d541bf032e020dd8e0cb5653dbd0c",
+      "public_sha256": "8bf46ffda2231f58a70416ea38db19baa18d541bf032e020dd8e0cb5653dbd0c",
+      "public_bytes": 2946
+    },
+    {
+      "file": "theorem_novelty_evidence.json",
+      "source_sha256": "150913a9211f7157e8823e476a0183eb63f09691182f62b00998049954d978a9",
+      "public_sha256": "f797bcac8d9c9da7a76486716151b750f722bfe2d82644c603103402c8495527",
+      "public_bytes": 12289
+    },
+    {
+      "file": "theorem_novelty_evidence.py",
+      "source_sha256": "a05e25b1578c8e11788493b574f3f9dd7874cb5dd2007d30bdf583a91fed7adb",
+      "public_sha256": "a05e25b1578c8e11788493b574f3f9dd7874cb5dd2007d30bdf583a91fed7adb",
+      "public_bytes": 2986
+    },
+    {
+      "file": "unitary_early_boundary.json",
+      "source_sha256": "effb26403d1445401f1cf0ee90b9116f839d20970496a7defdd4626ba616b103",
+      "public_sha256": "356374a584e17ada08967f95a1561099b96488ef9145a1f7888ba43c38707573",
+      "public_bytes": 3447
+    },
+    {
+      "file": "unitary_early_boundary_只读数学复核.md",
+      "source_sha256": "e03b82092506bcc963e34efa3509d5263353888252738802f7a25a1d0f02e908",
+      "public_sha256": "e03b82092506bcc963e34efa3509d5263353888252738802f7a25a1d0f02e908",
+      "public_bytes": 3643
+    },
+    {
+      "file": "verify_delivery.py",
+      "source_sha256": "ba7ff0dd6df5b9edd0d58fdea411e0437ee8102cb20a27a169b1138ec144afd8",
+      "public_sha256": "ba7ff0dd6df5b9edd0d58fdea411e0437ee8102cb20a27a169b1138ec144afd8",
+      "public_bytes": 3815
+    },
+    {
+      "file": "watermark_moment_boundary.json",
+      "source_sha256": "4b56aa57e98159210b1f19226f752cfc2ee6c035bcd626c4ad005eb2790fc624",
+      "public_sha256": "2b4c0b248bbc55c24d7c3b9d6579b2dc4c7cd36e15c51f167bff1da8af0137f3",
+      "public_bytes": 58660
+    },
+    {
+      "file": "watermark_moment_boundary.py",
+      "source_sha256": "fe15074f664956fb20d83286c5a825b0ed31040a5b400cf1342084928cc06a19",
+      "public_sha256": "fe15074f664956fb20d83286c5a825b0ed31040a5b400cf1342084928cc06a19",
+      "public_bytes": 8656
+    },
+    {
+      "file": "write_power_report.py",
+      "source_sha256": "43cb3148d36f33487a4b09e9077ef2cef0995a37750a74e965abfd666ec20701",
+      "public_sha256": "43cb3148d36f33487a4b09e9077ef2cef0995a37750a74e965abfd666ec20701",
+      "public_bytes": 8658
+    },
+    {
+      "file": "定理与证据分级表.md",
+      "source_sha256": "c8f099cd112e93169d3c7a904a067854dad756f6f630e68dc56bdf3ae5bb3a90",
+      "public_sha256": "c8f099cd112e93169d3c7a904a067854dad756f6f630e68dc56bdf3ae5bb3a90",
+      "public_bytes": 3424
+    },
+    {
+      "file": "数学边界_单拍可逆水印与简单强基线.md",
+      "source_sha256": "2d847a030aa67520ff1210b322680b411921e47ce17d2dcd65c992e6a6ad4d64",
+      "public_sha256": "2d847a030aa67520ff1210b322680b411921e47ce17d2dcd65c992e6a6ad4d64",
+      "public_bytes": 11657
+    },
+    {
+      "file": "最终决定_C与统一研究报告.md",
+      "source_sha256": "e514a3fe19e230003a6e93d52576934c01c0e13e847b97d84c086a0a35f86fb6",
+      "public_sha256": "e514a3fe19e230003a6e93d52576934c01c0e13e847b97d84c086a0a35f86fb6",
+      "public_bytes": 12871
+    },
+    {
+      "file": "有限事件风险与正交编码早期边界.md",
+      "source_sha256": "fb2e3c98d8161f5bd312f2672fae39e72821b58713650c212dfc8111a90570cd",
+      "public_sha256": "fb2e3c98d8161f5bd312f2672fae39e72821b58713650c212dfc8111a90570cd",
+      "public_bytes": 6618
+    },
+    {
+      "file": "统一功效与P1P3比较.md",
+      "source_sha256": "9e9164fcda75af1e2fbc99e9f03ac464960abc132fe0bd50fffaaacb0b10c632",
+      "public_sha256": "84cbb0424d06aed207c6367af96061803f7a3c920041636d0a65bb0368364633",
+      "public_bytes": 8920
+    },
+    {
+      "file": "近邻定理对照与论文定位_C.md",
+      "source_sha256": "5bee5b906341a1afc31e536514b82c4e3b06c69a57f5db5b603c8aab37aa66cf",
+      "public_sha256": "5bee5b906341a1afc31e536514b82c4e3b06c69a57f5db5b603c8aab37aa66cf",
+      "public_bytes": 14725
+    }
+  ]
+}

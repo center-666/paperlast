@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-14",
+  "reference_library_sha256": "514d9ec76f4883761998fdcfaa10d8f624ae9e747dc7443fd7e4533b5a25dd5b",
+  "library_mutated": false,
+  "new_references_registered": false,
+  "literature_scope": "Miao newly targeted pages; four other sources reuse existing designated-page evidence, no all-paper peer audit",
+  "evidence": [
+    {
+      "id": "FPN04",
+      "citation_key": "Paper_Miao2017_CodingSchemes",
+      "title": "Coding Schemes for Securing Cyber-Physical Systems Against Stealthy Data Injection Attacks",
+      "doi": "10.1109/TCNS.2016.2573039",
+      "file": "参考文献\\02_期刊与会议论文\\FPN04_2017_Paper_Miao2017_CodingSchemes.pdf",
+      "sha256": "fc8fbb032cf13c5fc41c670c3bb999eaeb3798038356a10be3cfdabde0af3cb4",
+      "this_round_new_read": true,
+      "this_round_new_pdf_pages": [
+        5,
+        6,
+        7
+      ],
+      "this_round_new_printed_pages": "110—112",
+      "this_round_new_visual_pages": [
+        6
+      ],
+      "prior_read_scope_reused": "PDF1、3—4/印刷106、108—109；核读摘要、攻击定义/命题1摘段及III-B式(8)—(10)，PDF4渲染核对。\n2026-11-05水印收束本机核读：PDF7/印刷112；Lemma3、SectionV—V-A。旋转编码、参数辨识和及时刷新、秘密矩阵及同步生成已有；攻击者可窃听但不能直接取得编码矩阵的权限边界。\n2026-11-12本机定理续核：PDF8—9/印刷113—114；SectionV-A/B、式21—30、Definition2、Algorithms2—3；视觉核PDF9。已将有限估计损害与残差偏移约束联合，并定义首次残差偏移越界时间；该对象不同于包含正常噪声及总虚警校准的危险先于报警概率。矩阵辨识与刷新算法是既有近邻；不把新风险记号本身当创新。PDF9不等号按视觉核对，文本抽取漏斜线。",
+      "complete_all_proofs_verified": false
+    },
+    {
+      "id": "INTRO06",
+      "citation_key": "Paper_Zhou2023_DistributedWatermark",
+      "title": "Watermarking-Based Protection Strategy Against Stealthy Integrity Attack on Distributed State Estimation",
+      "doi": "10.1109/TAC.2022.3171422",
+      "file": "参考文献\\02_期刊与会议论文\\INTRO06_2023_Paper_Zhou2023_DistributedWatermark.pdf",
+      "sha256": "97d2a8e5acf8d7d6795be8249b2dbdc12240730bd22ec7a993f704d0173e597d",
+      "this_round_new_read": false,
+      "this_round_new_pdf_pages": [],
+      "this_round_new_printed_pages": "",
+      "this_round_new_visual_pages": [],
+      "prior_read_scope_reused": "\n本轮第1章补读：[{\"pdf_pages\": \"1–4\", \"printed_pages\": \"628–631\", \"location\": \"摘要、Section II、Section III及Algorithm 1、Section IV-A\", \"supports\": \"节点交换估计值；接收端以本地量测生成残差；利用量测矩阵零空间隐藏估计偏移；生成伪随机矩阵并作变换/逆变换。\"}, {\"pdf_pages\": \"5–6\", \"printed_pages\": \"632–633\", \"location\": \"公式(25)、Remark 4、Theorems 2–3、Section IV-B\", \"supports\": \"λI+ββᵀ及秘密种子同步；不知道水印仍沿用原攻击与统计参数已泄露重新设计的两种场景；固定旧攻击在水印方差增大时KL增强；参数极限不是时间极限。\"}]\n本轮第二章核读本地原文提取PDF第2—3页，印刷页629—630；并对照此前已核PDF第4—6页，印刷页631—633。既往核读范围不表述为本轮新增通读范围。\n2026-10-30第一篇查新：PDF3—6/印刷630—633；定理1、算法1、式(21)—(38)，PDF6渲染核对。\n2026-11-03主动可信验证：复核PDF2、4/印刷629、631的模型和编码接口，视觉核PDF2；未新增通读。\n2026-11-05水印收束本机核读：PDF6/印刷633；Information Leakage、Theorem3及证明、Corollary1。公开lambda/协方差与本拍秘密实现知情不同；参数趋于无穷的论述不能直接充当本轮攻击随公开设计缩放后的实际损害或首达风险保证。；2026-11-14：PDF2、4—6/印刷629、631—633；协作定向核读，主过程视觉核PDF6/633。",
+      "complete_all_proofs_verified": false
+    },
+    {
+      "id": "INTRO05",
+      "citation_key": "Paper_Ferrari2021_SwitchingMW",
+      "title": "A Switching Multiplicative Watermarking Scheme for Detection of Stealthy Cyber-Attacks",
+      "doi": "10.1109/TAC.2020.3013850",
+      "file": "参考文献\\02_期刊与会议论文\\INTRO05_2021_Paper_Ferrari2021_SwitchingMW.pdf",
+      "sha256": "1837cd711ff5d2b1451c1420e4b57dff27c7b4aa50bcd312f3fd09f255ad8d65",
+      "this_round_new_read": false,
+      "this_round_new_pdf_pages": [],
+      "this_round_new_printed_pages": "",
+      "this_round_new_visual_pages": [],
+      "prior_read_scope_reused": "\n本轮第1章补读：[{\"pdf_pages\": \"3–7\", \"printed_pages\": \"2558–2562\", \"location\": \"摘要、引言、Section II、Assumptions 1–3、Lemma 1、Theorem 1\", \"supports\": \"带状态的水印生成与移除滤波器；受攻击量测信道；稳定性、可逆性、秘密初值/切换映射以及匹配同步条件；无攻击时性能保持；无额外通信的隐式同步思路。\"}, {\"pdf_pages\": \"11–12\", \"printed_pages\": \"2566–2567\", \"location\": \"Remark 4、Section V、Theorem 4及Corollary 1\", \"supports\": \"理想数字信道假设；匹配与失配情形分开；失配稳定性结果要求切换后不再切换，以小增益条件给充分保证，不能概括为任意切换全过程稳定。\"}, {\"pdf_pages\": \"13–14\", \"printed_pages\": \"2568–2569\", \"location\": \"Theorem 5、Corollaries 2–3、Remark 5\", \"supports\": \"按双方是否切换分场景给检测充分条件；攻击效应须克服不确定性；同步破坏与参数/状态失配可帮助检测，小攻击并非全部必检。\"}]\n2026-10-30第一篇查新：PDF4/印刷2559的贡献与模块化机制段，文字核读。\n2026-11-05公开/秘密序列轮：PDF6—7/印刷2561—2562；PDF11—14/2566—2569；附录PDF17—18/2572—2573。PDF13视觉核对。 互逆、秘密状态与Theorem1；Theorems3—4及Theorem3附录证明；有界噪声阈值、Lemma7、Theorem5与Corollaries2—3及证明。动态互逆滤波与切换已有；检测为附条件的确定性充分条件，非本题Gaussian最坏功效。\n2026-11-05水印收束本机核读：PDF6/印刷2561；Assumptions2—3、Lemma1。互逆滤波依赖参数/状态匹配；初态、参数、切换/跳变/触发函数的保密权限，不能移为当前参数完全知情下的保证。；2026-11-14：PDF6—7、11—14/印刷2561—2562、2566—2569；协作定向核读及PDF6视觉。",
+      "complete_all_proofs_verified": false
+    },
+    {
+      "id": "FPN16",
+      "citation_key": "Paper_Gallo2025_SwitchingWatermark",
+      "title": "Switching multiplicative watermark design against covert attacks",
+      "doi": "10.1016/j.automatica.2025.112301",
+      "file": "参考文献\\02_期刊与会议论文\\FPN16_2025_Paper_Gallo2025_SwitchingWatermark_arxivv1.pdf",
+      "sha256": "b95f9b41ba4ff0706610b798db88b3c0c1f9aa23c853ce514b54fc2493909a3c",
+      "this_round_new_read": false,
+      "this_round_new_pdf_pages": [],
+      "this_round_new_printed_pages": "",
+      "this_round_new_visual_pages": [],
+      "prior_read_scope_reused": "2026-11-03协作核机构题录/摘要及搜索返回机构PDF第1—2页/印刷1—2页的模型前段；未下载、未核优化定理或全部证明。\n2026-11-05公开/秘密序列轮：本地arXiv2502.18948v1的PDF/稿内3—6页；5—6页视觉核对。未取得出版社最终版。 Assumptions2.1—2.5、Definitions2.2—2.4及Problem1；Lemma3.1与式10—12；Theorem3.2及证明；Algorithm1；Theorem3.3及证明与Corollary3.3.1。能量受限隐蔽攻击的最坏损害优化已经存在。Lemma3.1依赖Anand—Teixeira引用证明，本轮未读该被引原文；未复现其动态算法。\n2026-11-05水印收束本机核读：PDF4/印刷作者稿4；Assumptions2.4—2.5、Definition2.4、Problem1。攻击者知道上次切换参数；残差与注入能量约束下的最坏性能损失优化，区别于当前Gaussian有限报警时域首达风险。实际使用作者arXiv v1，不冒充出版社版。\n2026-11-12本机定理续核：PDF5/印刷作者稿5；式10—12、Lemma3.1、Theorem3.2及证明、Section3.3。固定参数闭环Schur稳定下有限能量使最坏影响有限，非任意切换稳定性证明；离散对角网格并非连续全局最优。零初态的残差输出能量约束与本研究实际Gaussian未报警事件不同。等价性依赖Anand—Teixeira证明，未新增该证明链审证。；2026-11-14：arXiv v1 PDF3—6；协作定向核读及PDF5视觉。",
+      "complete_all_proofs_verified": false
+    },
+    {
+      "id": "FPN06",
+      "citation_key": "Paper_Huang2026_PartialChannelCoding",
+      "title": "Secure distributed consensus estimation under false data injection attacks: A defense strategy based on partial channel coding",
+      "doi": "10.1016/j.automatica.2025.112701",
+      "file": "参考文献\\02_期刊与会议论文\\FPN06_2026_Paper_Huang2026_PartialChannelCoding.pdf",
+      "sha256": "ea19df8af9c0ac6a0df8f98df9413d4af31d843aa403b1ac0ca8d7e989dc6183",
+      "this_round_new_read": false,
+      "this_round_new_pdf_pages": [],
+      "this_round_new_printed_pages": "",
+      "this_round_new_visual_pages": [],
+      "prior_read_scope_reused": "PDF/印刷1、9；核读摘要及定理4、Remark4、定理5，PDF9渲染核对。未完整审证附录。\n2026-11-05水印收束本机核读：PDF9/印刷9；Theorems4—5、Remark4、编码矩阵辨识段；视觉核对9页。原文已讨论已知当前编码矩阵后重新设计攻击，以及部分通道输入输出同时暴露、幅值信息泄露和秘密种子。该篇为Jiahao Huang等Automatica112701，不是Aokang Huang等C&S104925。\n2026-11-12本机定理续核：PDF4、12—13/印刷4、12—13；攻击模型/Definition1；Theorem5的AppendixD完整证明；视觉核PDF12—13，定理声明沿用前轮PDF9。Theorem5针对原估计/编码数据对约束下的重新攻击，不能保证严格统计隐蔽，不提供本研究有限时域检出率。矩阵不等不自动推出所有奇偶攻击方向可见；本轮常数倍/相对符号例针对自己的奇偶模型，不当作原文模型及观测一致性条件下的反例。；2026-11-14：PDF2—4、7—9、12—13/文章内同页；协作定向核读，主过程视觉核PDF9。",
+      "complete_all_proofs_verified": false
+    }
+  ],
+  "public_rotation_checks": [
+    {
+      "model": "unstable",
+      "public_fixed_rotation": [
+        [
+          "0",
+          "-1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "commutator": [
+        [
+          "-3/50",
+          "3/100"
+        ],
+        [
+          "3/100",
+          "3/50"
+        ]
+      ],
+      "det_commutator": "-9/2000",
+      "complete_internal_window_no_nonzero_autonomous_blind_direction": true,
+      "scope": "H0=I; autonomous sequence chosen in encoded coordinates; nontrivial window has at least one adjacent difference",
+      "no_detection_power_or_danger_guarantee_claimed": true
+    },
+    {
+      "model": "stable",
+      "public_fixed_rotation": [
+        [
+          "0",
+          "-1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "commutator": [
+        [
+          "-3/50",
+          "-1/10"
+        ],
+        [
+          "-1/10",
+          "3/50"
+        ]
+      ],
+      "det_commutator": "-17/1250",
+      "complete_internal_window_no_nonzero_autonomous_blind_direction": true,
+      "scope": "H0=I; autonomous sequence chosen in encoded coordinates; nontrivial window has at least one adjacent difference",
+      "no_detection_power_or_danger_guarantee_claimed": true
+    }
+  ],
+  "ncp_inference_counterexample": {
+    "df": 8,
+    "alpha": 0.0033333333333333335,
+    "threshold": 23.024185469976807,
+    "X": "constant 20",
+    "Y": "0 with probability .89, 200 with probability .11",
+    "EX": 20,
+    "EY": 22,
+    "powerX": 0.6678314955519036,
+    "powerY": 0.11296666666666667,
+    "scope": "abstract NCP law only; not a resource-matched comparison of actual watermark schemes"
+  },
+  "original_manuscript_or_gain_or_attack_changed": false
+}

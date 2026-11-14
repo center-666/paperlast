@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-14",
+  "scope": "fixed L10 original autonomous attack, no new attack algorithm",
+  "training_paths": 512,
+  "validation_paths": 4096,
+  "training_noise_seed": 2026111421,
+  "validation_noise_seed": 2026111422,
+  "training_watermark_seed": 2026111423,
+  "validation_watermark_seed": 2026111424,
+  "attack_direction_count": 16,
+  "energy_fractions": [0.1, 0.25, 0.5, 0.75, 1.0],
+  "selected_training_attacks_per_scheme": 2,
+  "monitor_times": 15,
+  "parity_order": 4,
+  "E": 10,
+  "D": 0.1,
+  "total_false_alarm_budget": 0.05,
+  "selection": "select two attacks per scheme on independent training samples, lock before validation",
+  "metrics": "validated finite-attack-corpus event probability and lower bound on full attack-family supremum; no global upper bound or optimality claim",
+  "extra_public_baseline": "fixed R90 classical orthogonal matrix, no parameter search",
+  "no_physical_network_simulation": true
+}

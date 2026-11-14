@@ -1,0 +1,1919 @@
+{
+  "date": "2026-11-14",
+  "scope": "fixed saved P1/P3 attacks; finite known-start event, no global worst-risk certificate",
+  "initial_states_source": "baseline_comparison.json, deterministic direction/threshold responses",
+  "model_count": 2,
+  "validation_paths": 4096,
+  "models": {
+    "unstable": [
+      {
+        "scheme": "Gaussian",
+        "cases": {
+          "P1": {
+            "risk": 0.951416015625,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.620849609375,
+            "expected_terminal_damage": 1.1215987317797103,
+            "mean_peak_damage": 2.5087398858095584,
+            "first_danger_probabilities": [
+              0.375,
+              0.28857421875,
+              0.18017578125,
+              0.092041015625,
+              0.044189453125,
+              0.01416015625,
+              0.005859375,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              -0.5230403119550111,
+              -0.31574711731306426
+            ],
+            "energy": 10.000000000000004,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.95654296875,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.6162109375,
+            "expected_terminal_damage": 1.1183906784693498,
+            "mean_peak_damage": 2.4977718335432186,
+            "first_danger_probabilities": [
+              0.379638671875,
+              0.287109375,
+              0.17822265625,
+              0.0908203125,
+              0.042724609375,
+              0.01513671875,
+              0.00634765625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.48781595589299404,
+              0.3666272381570199
+            ],
+            "energy": 9.999999999999996,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "risk": 0.968505859375,
+            "danger_probability": 0.999755859375,
+            "finite_horizon_detection_probability": 0.405517578125,
+            "expected_terminal_damage": 0.6228921693122438,
+            "mean_peak_damage": 1.3918374336474626,
+            "first_danger_probabilities": [
+              0.245361328125,
+              0.22265625,
+              0.1953125,
+              0.131103515625,
+              0.093017578125,
+              0.061767578125,
+              0.029052734375,
+              0.012451171875,
+              0.00634765625,
+              0.002685546875,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.37865298934113856,
+              0.2521864739870873
+            ],
+            "energy": 5.557775370000092,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_phys": {
+            "risk": 0.66845703125,
+            "danger_probability": 0.68310546875,
+            "finite_horizon_detection_probability": 0.070556640625,
+            "expected_terminal_damage": 0.09795485213428337,
+            "mean_peak_damage": 0.21878478680917718,
+            "first_danger_probabilities": [
+              0.020751953125,
+              0.0322265625,
+              0.049560546875,
+              0.055419921875,
+              0.071044921875,
+              0.080078125,
+              0.0927734375,
+              0.0966796875,
+              0.089111328125,
+              0.095458984375,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.1466361448020465,
+              0.10521210080371307
+            ],
+            "energy": 0.8750016569718495,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          }
+        }
+      },
+      {
+        "scheme": "normalized_Gaussian",
+        "cases": {
+          "P1": {
+            "risk": 0.964111328125,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.45751953125,
+            "expected_terminal_damage": 0.7118071244673124,
+            "mean_peak_damage": 1.5921370750134614,
+            "first_danger_probabilities": [
+              0.271484375,
+              0.2431640625,
+              0.1923828125,
+              0.127685546875,
+              0.08203125,
+              0.04931640625,
+              0.020751953125,
+              0.008056640625,
+              0.00390625,
+              0.001220703125,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              -0.5230403119550111,
+              -0.3157471173130642
+            ],
+            "energy": 10.000000000000002,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.96826171875,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.44873046875,
+            "expected_terminal_damage": 0.7094867566508325,
+            "mean_peak_damage": 1.5845438718308213,
+            "first_danger_probabilities": [
+              0.270263671875,
+              0.237548828125,
+              0.1953125,
+              0.126953125,
+              0.08642578125,
+              0.04736328125,
+              0.023193359375,
+              0.00830078125,
+              0.003662109375,
+              0.0009765625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.4849271379917229,
+              0.3705646604174383
+            ],
+            "energy": 9.999999999999993,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "risk": 0.96630859375,
+            "danger_probability": 0.9912109375,
+            "finite_horizon_detection_probability": 0.26953125,
+            "expected_terminal_damage": 0.39535562575570693,
+            "mean_peak_damage": 0.8832668516612684,
+            "first_danger_probabilities": [
+              0.16357421875,
+              0.16748046875,
+              0.17041015625,
+              0.135009765625,
+              0.12744140625,
+              0.0927734375,
+              0.06396484375,
+              0.038330078125,
+              0.020751953125,
+              0.011474609375,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.37616034266313175,
+              0.2559482374177105
+            ],
+            "energy": 5.559947826264194,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_phys": {
+            "risk": 0.66845703125,
+            "danger_probability": 0.68310546875,
+            "finite_horizon_detection_probability": 0.070556640625,
+            "expected_terminal_damage": 0.09795485211721813,
+            "mean_peak_damage": 0.21878478673960794,
+            "first_danger_probabilities": [
+              0.020751953125,
+              0.0322265625,
+              0.049560546875,
+              0.055419921875,
+              0.071044921875,
+              0.080078125,
+              0.0927734375,
+              0.0966796875,
+              0.089111328125,
+              0.095458984375,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.184068136936073,
+              0.13206973186132134
+            ],
+            "energy": 1.3787453310892803,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          }
+        }
+      },
+      {
+        "scheme": "whole_sign",
+        "cases": {
+          "P1": {
+            "risk": 0.89990234375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.187255859375,
+            "expected_terminal_damage": 0.1463675261751256,
+            "mean_peak_damage": 0.15478241875369997,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.2421875,
+              0.384033203125,
+              0.18603515625,
+              0.187744140625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              -0.5285223846872771,
+              -0.30730532711368974
+            ],
+            "energy": 10.0,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.895751953125,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.198974609375,
+            "expected_terminal_damage": 0.14585131034466597,
+            "mean_peak_damage": 0.15396175736746037,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.2421875,
+              0.384033203125,
+              0.18603515625,
+              0.187744140625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.48343646209463326,
+              0.3725835433548649
+            ],
+            "energy": 9.999999999999993,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "risk": 0.002685546875,
+            "danger_probability": 0.002685546875,
+            "finite_horizon_detection_probability": 0.101318359375,
+            "expected_terminal_damage": 0.08127921876721628,
+            "mean_peak_damage": 0.08587909078084442,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.002685546875,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.3799328065755692,
+              0.25024588701787304
+            ],
+            "energy": 5.5567469362638935,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_phys": {
+            "risk": 0.57958984375,
+            "danger_probability": 0.6298828125,
+            "finite_horizon_detection_probability": 0.126220703125,
+            "expected_terminal_damage": 0.10030871030748498,
+            "mean_peak_damage": 0.1059667267945204,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.25146484375,
+              0.37841796875,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.4182971025691156,
+              0.2836371448139945
+            ],
+            "energy": 6.860129395370577,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          }
+        }
+      },
+      {
+        "scheme": "coordinate_sign",
+        "cases": {
+          "P1": {
+            "risk": 0.896484375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.187255859375,
+            "expected_terminal_damage": 0.1463573468701131,
+            "mean_peak_damage": 0.15260730717498222,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.1220703125,
+              0.431884765625,
+              0.343017578125,
+              0.10302734375,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              -0.5296038316527614,
+              -0.3056217553023332
+            ],
+            "energy": 10.000000000000002,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.903564453125,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.1806640625,
+            "expected_terminal_damage": 0.1451167993173728,
+            "mean_peak_damage": 0.14990542510627405,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.02685546875,
+              0.47900390625,
+              0.379150390625,
+              0.114990234375,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.45986852936503503,
+              0.4033931189945991
+            ],
+            "energy": 9.999999999999991,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "risk": 0.000244140625,
+            "danger_probability": 0.000244140625,
+            "finite_horizon_detection_probability": 0.0908203125,
+            "expected_terminal_damage": 0.08128371500687187,
+            "mean_peak_damage": 0.08436426760203442,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.000244140625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.36985865751006397,
+              0.26535506707174905
+            ],
+            "energy": 5.566420256738205,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_phys": {
+            "risk": 0.527099609375,
+            "danger_probability": 0.566162109375,
+            "finite_horizon_detection_probability": 0.113525390625,
+            "expected_terminal_damage": 0.10039539826142382,
+            "mean_peak_damage": 0.10412715743799984,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.122802734375,
+              0.443359375,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.40683292679142313,
+              0.3010605043935552
+            ],
+            "energy": 6.879933506881629,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          }
+        }
+      },
+      {
+        "scheme": "Haar_SO2",
+        "cases": {
+          "P1": {
+            "risk": 0.8935546875,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.189453125,
+            "expected_terminal_damage": 0.13924062557258426,
+            "mean_peak_damage": 0.14257672883635292,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0390625,
+              0.3994140625,
+              0.42919921875,
+              0.13232421875,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              -0.4720581633858222,
+              -0.3877127070046711
+            ],
+            "energy": 10.000000000000002,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.896728515625,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.18701171875,
+            "expected_terminal_damage": 0.13920658802690417,
+            "mean_peak_damage": 0.14255095046309416,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.039306640625,
+              0.399658203125,
+              0.4296875,
+              0.13134765625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.48545999447940336,
+              0.369840871699406
+            ],
+            "energy": 9.999999999999991,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "risk": 0.009765625,
+            "danger_probability": 0.010009765625,
+            "finite_horizon_detection_probability": 0.096435546875,
+            "expected_terminal_damage": 0.07722064846229512,
+            "mean_peak_damage": 0.07909133993020082,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.010009765625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.37984101166167145,
+              0.25038528384363756
+            ],
+            "energy": 5.556818722485447,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_phys": {
+            "risk": 0.50244140625,
+            "danger_probability": 0.54638671875,
+            "finite_horizon_detection_probability": 0.128662109375,
+            "expected_terminal_damage": 0.09987267034075846,
+            "mean_peak_damage": 0.10226909316940269,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.10693359375,
+              0.439453125,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.40658859023174343,
+              0.3194062911328416
+            ],
+            "energy": 7.17329487736292,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          }
+        }
+      },
+      {
+        "scheme": "identity",
+        "cases": {
+          "P1": {
+            "risk": 0.985595703125,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.043701171875,
+            "expected_terminal_damage": 0.18022253426442866,
+            "mean_peak_damage": 0.18022253426442866,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              -0.5372209387742106,
+              -0.2935871029516655
+            ],
+            "energy": 10.0,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.98779296875,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.04296875,
+            "expected_terminal_damage": 0.1759104079576185,
+            "mean_peak_damage": 0.1759104079576185,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.6300618078976926,
+              0.11200866959937
+            ],
+            "energy": 9.999999999999991,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "risk": 0.982177734375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.034423828125,
+            "expected_terminal_damage": 0.10000000000000007,
+            "mean_peak_damage": 0.10000000000000007,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.548349135139203,
+              -0.09379367728969693
+            ],
+            "energy": 6.235025852170221,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_phys": {
+            "risk": 0.982177734375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.034423828125,
+            "expected_terminal_damage": 0.10000000000000007,
+            "mean_peak_damage": 0.10000000000000007,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.548349135139203,
+              -0.09379367728969693
+            ],
+            "energy": 6.235025852170221,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          }
+        }
+      },
+      {
+        "scheme": "public_scalar_alternation",
+        "cases": {
+          "P1": {
+            "risk": 0.726318359375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.321044921875,
+            "expected_terminal_damage": 0.11817758038171976,
+            "mean_peak_damage": 0.11817758038171976,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              -0.5190933525665992,
+              -0.3217316124882675
+            ],
+            "energy": 10.0,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.708251953125,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.337646484375,
+            "expected_terminal_damage": 0.11793703667593336,
+            "mean_peak_damage": 0.11793703667593336,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.4839727036620991,
+              0.3718582929054001
+            ],
+            "energy": 9.999999999999993,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "risk": 0.0,
+            "danger_probability": 0.0,
+            "finite_horizon_detection_probability": 0.162109375,
+            "expected_terminal_damage": 0.0656584465148319,
+            "mean_peak_damage": 0.0656584465148319,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.3798847977018642,
+              0.25031879578257105
+            ],
+            "energy": 5.5567844423435275,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_phys": {
+            "risk": 0.772216796875,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.267333984375,
+            "expected_terminal_damage": 0.10000000000000002,
+            "mean_peak_damage": 0.10000000000000002,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.46030533038461074,
+              0.3214125933616619
+            ],
+            "energy": 8.466978845622634,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          }
+        }
+      },
+      {
+        "scheme": "public_coordinate_alternation",
+        "cases": {
+          "P1": {
+            "risk": 0.981201171875,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.05224609375,
+            "expected_terminal_damage": 0.1748174188910592,
+            "mean_peak_damage": 0.1748174188910592,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              -0.5978671155235779,
+              -0.18421624716666915
+            ],
+            "energy": 10.000000000000002,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.988037109375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.04150390625,
+            "expected_terminal_damage": 0.16841214701195803,
+            "mean_peak_damage": 0.16841214701195803,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.6723271526014488,
+              -0.013766271075815397
+            ],
+            "energy": 9.999999999999996,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "risk": 0.0,
+            "danger_probability": 0.0,
+            "finite_horizon_detection_probability": 0.0341796875,
+            "expected_terminal_damage": 0.09988082249956991,
+            "mean_peak_damage": 0.09988082249956991,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.5177643032445144,
+              -0.010592779897396544
+            ],
+            "energy": 5.930712237187091,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_phys": {
+            "risk": 0.0,
+            "danger_probability": 0.0,
+            "finite_horizon_detection_probability": 0.0341796875,
+            "expected_terminal_damage": 0.10000000000000002,
+            "mean_peak_damage": 0.10000000000000002,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.5180734532394337,
+              -0.01059997672946041
+            ],
+            "energy": 5.937791263572444,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          }
+        }
+      },
+      {
+        "scheme": "public_R90_supplement",
+        "cases": {
+          "P1": {
+            "risk": 0.98583984375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.04052734375,
+            "expected_terminal_damage": 0.16297435762045698,
+            "mean_peak_damage": 0.16297435762045698,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              -0.3512168395305224,
+              -0.5232260508960803
+            ],
+            "energy": 10.0,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.986083984375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.0439453125,
+            "expected_terminal_damage": 0.16019196057020207,
+            "mean_peak_damage": 0.16019196057020207,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.487793957461356,
+              0.36665734727241667
+            ],
+            "energy": 9.999999999999993,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "risk": 0.0,
+            "danger_probability": 0.0,
+            "finite_horizon_detection_probability": 0.03564453125,
+            "expected_terminal_damage": 0.08845169165248491,
+            "mean_peak_damage": 0.08845169165248491,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.37935170442154603,
+              0.25112778671719643
+            ],
+            "energy": 5.557206539057662,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_phys": {
+            "risk": 0.981689453125,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.036865234375,
+            "expected_terminal_damage": 0.10000000000000002,
+            "mean_peak_damage": 0.10000000000000002,
+            "first_danger_probabilities": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.3505611267319486,
+              0.3309707533683042
+            ],
+            "energy": 6.184123059612935,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          }
+        }
+      }
+    ],
+    "stable": [
+      {
+        "scheme": "Gaussian",
+        "cases": {
+          "P1": {
+            "risk": 0.839599609375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.585205078125,
+            "expected_terminal_damage": 0.18301989583671222,
+            "mean_peak_damage": 2.2682615374648076,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.23065003844734844,
+              1.4137202809882383
+            ],
+            "energy": 10.000000000000004,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.840087890625,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.585205078125,
+            "expected_terminal_damage": 0.1830177906626376,
+            "mean_peak_damage": 2.268482170762175,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.2346357826891908,
+              1.4129615788949579
+            ],
+            "energy": 9.999999999999996,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          },
+          "P3_phys": {
+            "risk": 0.890625,
+            "danger_probability": 0.99755859375,
+            "finite_horizon_detection_probability": 0.37353515625,
+            "expected_terminal_damage": 0.09773016826432282,
+            "mean_peak_damage": 1.211038932144549,
+            "first_danger_probabilities": [
+              0.6982421875,
+              0.205322265625,
+              0.059326171875,
+              0.019775390625,
+              0.00830078125,
+              0.003662109375,
+              0.001220703125,
+              0.000732421875,
+              0.000732421875,
+              0.000244140625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.1638549048157196,
+              1.033948816599173
+            ],
+            "energy": 5.339848022750115,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          }
+        }
+      },
+      {
+        "scheme": "normalized_Gaussian",
+        "cases": {
+          "P1": {
+            "risk": 0.88037109375,
+            "danger_probability": 0.999267578125,
+            "finite_horizon_detection_probability": 0.43212890625,
+            "expected_terminal_damage": 0.11615104589956332,
+            "mean_peak_damage": 1.439520816826085,
+            "first_danger_probabilities": [
+              0.7890625,
+              0.163818359375,
+              0.032958984375,
+              0.008056640625,
+              0.0029296875,
+              0.001708984375,
+              0.000244140625,
+              0.000244140625,
+              0.0,
+              0.000244140625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.23065003844734852,
+              1.413720280988238
+            ],
+            "energy": 10.000000000000002,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.881103515625,
+            "danger_probability": 0.999267578125,
+            "finite_horizon_detection_probability": 0.431884765625,
+            "expected_terminal_damage": 0.11614672930039063,
+            "mean_peak_damage": 1.438943211152398,
+            "first_danger_probabilities": [
+              0.78955078125,
+              0.163818359375,
+              0.032958984375,
+              0.00732421875,
+              0.00341796875,
+              0.001708984375,
+              0.000244140625,
+              0.0,
+              0.0,
+              0.000244140625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.21278955376095915,
+              1.417041777612952
+            ],
+            "energy": 9.999999999999998,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          },
+          "P3_phys": {
+            "risk": 0.890625,
+            "danger_probability": 0.99755859375,
+            "finite_horizon_detection_probability": 0.37353515625,
+            "expected_terminal_damage": 0.09773016826648276,
+            "mean_peak_damage": 1.2110389318803136,
+            "first_danger_probabilities": [
+              0.6982421875,
+              0.205322265625,
+              0.059326171875,
+              0.019775390625,
+              0.00830078125,
+              0.003662109375,
+              0.001220703125,
+              0.000732421875,
+              0.000732421875,
+              0.000244140625,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.20568234448961448,
+              1.2978862474854083
+            ],
+            "energy": 8.414030380617536,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          }
+        }
+      },
+      {
+        "scheme": "whole_sign",
+        "cases": {
+          "P1": {
+            "risk": 0.99267578125,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.178466796875,
+            "expected_terminal_damage": 0.023541355237911166,
+            "mean_peak_damage": 0.12979972077671215,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.23608383183017612,
+              1.4126843553999275
+            ],
+            "energy": 10.000000000000002,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.992431640625,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.180419921875,
+            "expected_terminal_damage": 0.023468698421005355,
+            "mean_peak_damage": 0.13030250906368554,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.11943481084452484,
+              1.432332018064417
+            ],
+            "energy": 9.999999999999998,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          },
+          "P3_phys": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          }
+        }
+      },
+      {
+        "scheme": "coordinate_sign",
+        "cases": {
+          "P1": {
+            "risk": 0.9912109375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.16845703125,
+            "expected_terminal_damage": 0.023445162070680647,
+            "mean_peak_damage": 0.12974828354063453,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.2347878812305107,
+              1.4129324998408603
+            ],
+            "energy": 10.0,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.9912109375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.159912109375,
+            "expected_terminal_damage": 0.021319636783366583,
+            "mean_peak_damage": 0.1451778146563143,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.8544219242356742,
+              1.211534777566422
+            ],
+            "energy": 9.999999999999996,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          },
+          "P3_phys": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          }
+        }
+      },
+      {
+        "scheme": "Haar_SO2",
+        "cases": {
+          "P1": {
+            "risk": 0.992431640625,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.16845703125,
+            "expected_terminal_damage": 0.02466875708143547,
+            "mean_peak_damage": 0.13908391468522568,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.19192871016325383,
+              1.4207595302592433
+            ],
+            "energy": 10.000000000000004,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.992431640625,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.167724609375,
+            "expected_terminal_damage": 0.024667020769253464,
+            "mean_peak_damage": 0.13896507625119306,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.21034169221151758,
+              1.4174870407315818
+            ],
+            "energy": 9.999999999999996,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          },
+          "P3_phys": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          }
+        }
+      },
+      {
+        "scheme": "identity",
+        "cases": {
+          "P1": {
+            "risk": 0.99267578125,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.041748046875,
+            "expected_terminal_damage": 0.028593056878099255,
+            "mean_peak_damage": 0.12980584738840723,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.24666694985296025,
+              1.410632636570524
+            ],
+            "energy": 10.000000000000005,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.986328125,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.05126953125,
+            "expected_terminal_damage": 0.010576667583915593,
+            "mean_peak_damage": 0.23812241172796209,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              1.785176457654375,
+              0.35460973342403274
+            ],
+            "energy": 10.000000000000002,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          },
+          "P3_phys": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          }
+        }
+      },
+      {
+        "scheme": "public_scalar_alternation",
+        "cases": {
+          "P1": {
+            "risk": 0.99267578125,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.301513671875,
+            "expected_terminal_damage": 0.01927129704844521,
+            "mean_peak_damage": 0.12980209394424275,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.22576197574941645,
+              1.4146420296415294
+            ],
+            "energy": 10.000000000000005,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.991943359375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.302001953125,
+            "expected_terminal_damage": 0.019231012926306225,
+            "mean_peak_damage": 0.1302148898453039,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.1299162098582107,
+              1.4307877336585924
+            ],
+            "energy": 9.999999999999996,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          },
+          "P3_phys": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          }
+        }
+      },
+      {
+        "scheme": "public_coordinate_alternation",
+        "cases": {
+          "P1": {
+            "risk": 0.99267578125,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.257080078125,
+            "expected_terminal_damage": 0.020806313099640407,
+            "mean_peak_damage": 0.13094638829909647,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.4051446556052991,
+              1.3744453379311643
+            ],
+            "energy": 10.000000000000002,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.983642578125,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.05517578125,
+            "expected_terminal_damage": 0.0063316795022347475,
+            "mean_peak_damage": 0.26287644721515824,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              1.907822775281223,
+              -0.03495651808320884
+            ],
+            "energy": 10.000000000000007,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          },
+          "P3_phys": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          }
+        }
+      },
+      {
+        "scheme": "public_R90_supplement",
+        "cases": {
+          "P1": {
+            "risk": 0.991943359375,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.04443359375,
+            "expected_terminal_damage": 0.03162167089900648,
+            "mean_peak_damage": 0.14859808046298406,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.14749703961805172,
+              1.4280997824923447
+            ],
+            "energy": 10.000000000000002,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "E10_min_power": {
+            "risk": 0.9921875,
+            "danger_probability": 1.0,
+            "finite_horizon_detection_probability": 0.044189453125,
+            "expected_terminal_damage": 0.031551756441619554,
+            "mean_peak_damage": 0.14747848630262578,
+            "first_danger_probabilities": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "feasible": true,
+            "xi": [
+              0.24462032069355663,
+              1.411032928617138
+            ],
+            "energy": 10.0,
+            "fixed_attack_Hoeffding_halfwidth_99pct_simultaneous": 0.032927321988368584
+          },
+          "P3_pot": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          },
+          "P3_phys": {
+            "feasible": false,
+            "risk": null,
+            "not_detection_100_percent": true
+          }
+        }
+      }
+    ]
+  }
+}

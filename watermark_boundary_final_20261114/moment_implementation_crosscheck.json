@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-14",
+  "comparison": "independent SymPy closed form and independent DARE vs numerical branch",
+  "models": 2,
+  "scheme_models": 18,
+  "external_independent_review": false,
+  "rows": [
+    {
+      "model": "unstable",
+      "scheme": "whole_sign",
+      "absolute_differences": {
+        "expected_ncp_matrix": 1.7763568394002505e-15,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 1.4210854715202004e-14
+      }
+    },
+    {
+      "model": "unstable",
+      "scheme": "coordinate_sign",
+      "absolute_differences": {
+        "expected_ncp_matrix": 1.7763568394002505e-15,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 1.4210854715202004e-14
+      }
+    },
+    {
+      "model": "unstable",
+      "scheme": "Haar_SO2",
+      "absolute_differences": {
+        "expected_ncp_matrix": 1.7763568394002505e-15,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 1.4210854715202004e-14
+      }
+    },
+    {
+      "model": "unstable",
+      "scheme": "Gaussian",
+      "absolute_differences": {
+        "expected_ncp_matrix": 7.105427357601002e-15,
+        "expected_damage_matrix": 8.881784197001252e-16,
+        "energy_W": 1.4210854715202004e-14
+      }
+    },
+    {
+      "model": "unstable",
+      "scheme": "normalized_Gaussian",
+      "absolute_differences": {
+        "expected_ncp_matrix": 5.329070518200751e-15,
+        "expected_damage_matrix": 4.440892098500626e-16,
+        "energy_W": 1.4210854715202004e-14
+      }
+    },
+    {
+      "model": "unstable",
+      "scheme": "identity",
+      "absolute_differences": {
+        "expected_ncp_matrix": 4.293679603495422e-34,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 1.4210854715202004e-14
+      }
+    },
+    {
+      "model": "unstable",
+      "scheme": "public_scalar_alternation",
+      "absolute_differences": {
+        "expected_ncp_matrix": 3.552713678800501e-15,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 1.4210854715202004e-14
+      }
+    },
+    {
+      "model": "unstable",
+      "scheme": "public_coordinate_alternation",
+      "absolute_differences": {
+        "expected_ncp_matrix": 2.6645352591003757e-15,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 1.4210854715202004e-14
+      }
+    },
+    {
+      "model": "unstable",
+      "scheme": "public_R90",
+      "absolute_differences": {
+        "expected_ncp_matrix": 1.0408340855860843e-17,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 1.4210854715202004e-14
+      }
+    },
+    {
+      "model": "stable",
+      "scheme": "whole_sign",
+      "absolute_differences": {
+        "expected_ncp_matrix": 4.440892098500626e-16,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 8.881784197001252e-16
+      }
+    },
+    {
+      "model": "stable",
+      "scheme": "coordinate_sign",
+      "absolute_differences": {
+        "expected_ncp_matrix": 5.551115123125783e-17,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 8.881784197001252e-16
+      }
+    },
+    {
+      "model": "stable",
+      "scheme": "Haar_SO2",
+      "absolute_differences": {
+        "expected_ncp_matrix": 2.220446049250313e-16,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 8.881784197001252e-16
+      }
+    },
+    {
+      "model": "stable",
+      "scheme": "Gaussian",
+      "absolute_differences": {
+        "expected_ncp_matrix": 1.7763568394002505e-15,
+        "expected_damage_matrix": 1.3877787807814457e-17,
+        "energy_W": 8.881784197001252e-16
+      }
+    },
+    {
+      "model": "stable",
+      "scheme": "normalized_Gaussian",
+      "absolute_differences": {
+        "expected_ncp_matrix": 1.3322676295501878e-15,
+        "expected_damage_matrix": 2.6020852139652106e-18,
+        "energy_W": 8.881784197001252e-16
+      }
+    },
+    {
+      "model": "stable",
+      "scheme": "identity",
+      "absolute_differences": {
+        "expected_ncp_matrix": 6.878933988220322e-33,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 8.881784197001252e-16
+      }
+    },
+    {
+      "model": "stable",
+      "scheme": "public_scalar_alternation",
+      "absolute_differences": {
+        "expected_ncp_matrix": 4.440892098500626e-16,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 8.881784197001252e-16
+      }
+    },
+    {
+      "model": "stable",
+      "scheme": "public_coordinate_alternation",
+      "absolute_differences": {
+        "expected_ncp_matrix": 4.440892098500626e-16,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 8.881784197001252e-16
+      }
+    },
+    {
+      "model": "stable",
+      "scheme": "public_R90",
+      "absolute_differences": {
+        "expected_ncp_matrix": 6.245004513516506e-17,
+        "expected_damage_matrix": 0.0,
+        "energy_W": 8.881784197001252e-16
+      }
+    }
+  ]
+}

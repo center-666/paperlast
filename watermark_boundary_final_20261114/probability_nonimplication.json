@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-14",
+  "degrees_of_freedom": 8,
+  "alpha": "1/300",
+  "law_A": {
+    "Lambda": 10,
+    "mean": 10,
+    "power_rigorous_lower": "237056156499968000/10614387598485169191",
+    "power_display": 0.22972708245976783
+  },
+  "law_B": {
+    "Lambda_support": [
+      0,
+      2000
+    ],
+    "probabilities": [
+      "99/100",
+      "1/100"
+    ],
+    "mean": 20,
+    "power_rigorous_upper": "133/10000",
+    "power_display": 0.013300000000000003
+  },
+  "strict_reversal_certified": true,
+  "proof": "chi2 Poisson mixture; retain j5 only; 8/3<e<11/4; exact rational comparison",
+  "allowed_watermark_comparison": false,
+  "fair_resource_claim": false,
+  "new_algorithm": false
+}
