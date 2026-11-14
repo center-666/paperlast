@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-14",
+  "parent_commit": "b9d057e7057f3c4a07f60636b3fd5097ac3b7d8e",
+  "decision": "C",
+  "new_defense_algorithms": 0,
+  "only_new_owned_review_materials": true,
+  "third_party_fulltexts_uploaded": false,
+  "normalization": "UTF-8/LF; original/input/protection hashes retain local source bytes",
+  "files": [
+    {
+      "file": "build_reviewer_evidence.py",
+      "source_sha256": "c4012fbdeaaa942c7445ac5514014de5ddb4fb34551b1d7f32e956e2542a1b8c",
+      "public_sha256": "c4012fbdeaaa942c7445ac5514014de5ddb4fb34551b1d7f32e956e2542a1b8c",
+      "public_bytes": 39756
+    },
+    {
+      "file": "delivery_verification.json",
+      "source_sha256": "8d0496a6a7a5d26460483a1dd9919d1ea6a454e7559fdbef00a5c40e2448af68",
+      "public_sha256": "cffe152dc490a0470f218d04e43427c5505cdffe44a6e3a3080bb279d3dc8cc2",
+      "public_bytes": 1532
+    },
+    {
+      "file": "frozen_inputs.json",
+      "source_sha256": "ffc18a139caeec661bdf351f9af76ef5e3167763ccfd462609233fe68d23c8e6",
+      "public_sha256": "48f33ac280de06e5116e48e920bed8ae29484bc38ff0851e18781396b1cefe05",
+      "public_bytes": 90321
+    },
+    {
+      "file": "README.md",
+      "source_sha256": "98576b72fe82372ece5901c98c865eb43a44b1befe172147d4da94d165d2ab2f",
+      "public_sha256": "98576b72fe82372ece5901c98c865eb43a44b1befe172147d4da94d165d2ab2f",
+      "public_bytes": 2314
+    },
+    {
+      "file": "resource_boundary_math.json",
+      "source_sha256": "62f174b97a24a493638ffd1db102ba0ed5a118dc89b4e13f55bbf91732159182",
+      "public_sha256": "80d8b59668aa4b2d8504466081b477def36e2effc7584405882412207e86db76",
+      "public_bytes": 41638
+    },
+    {
+      "file": "resource_boundary_math.py",
+      "source_sha256": "b155568d474ae3ad8f2e1b82fcd3f91eb320e52a3b7cf6bc2e9b1af34f1d929b",
+      "public_sha256": "b155568d474ae3ad8f2e1b82fcd3f91eb320e52a3b7cf6bc2e9b1af34f1d929b",
+      "public_bytes": 9354
+    },
+    {
+      "file": "reviewer_evidence.json",
+      "source_sha256": "b97e39cdb574913f5fec8058762f29a2eae3eb07e7b4331f197686142cbe3509",
+      "public_sha256": "d5ab183543adaa170920c0baa796a3724704210e9db19ddd014d9d4ab1d7bfa5",
+      "public_bytes": 216477
+    },
+    {
+      "file": "scaled_orthogonal_reference.json",
+      "source_sha256": "53c263417bb705933878b77dfbee4ddba45ba70dba4bfd7f890aedee6f9f595b",
+      "public_sha256": "2241a2ef6b6606d764fd66c4414311346d557d268333255b1e145d744bd6e8c6",
+      "public_bytes": 140243
+    },
+    {
+      "file": "scaled_orthogonal_reference.py",
+      "source_sha256": "ccb48516db8be6f46e7997aee9d37fcdbe28c9d6c17cf9e9cd2a600a51a63e7d",
+      "public_sha256": "ccb48516db8be6f46e7997aee9d37fcdbe28c9d6c17cf9e9cd2a600a51a63e7d",
+      "public_bytes": 19052
+    },
+    {
+      "file": "verify_delivery.py",
+      "source_sha256": "221c1121750169b3183deeefb0435f4c08b72c33583e05a0d0834ad9e131b47c",
+      "public_sha256": "221c1121750169b3183deeefb0435f4c08b72c33583e05a0d0834ad9e131b47c",
+      "public_bytes": 4790
+    },
+    {
+      "file": "原Gaussian资源边界审查.md",
+      "source_sha256": "d35bc01f3ecc559eca2df8514a57ca703c34d183e14185efe8372aeffdd914b2",
+      "public_sha256": "d35bc01f3ecc559eca2df8514a57ca703c34d183e14185efe8372aeffdd914b2",
+      "public_bytes": 8651
+    },
+    {
+      "file": "数学补充_原Gaussian资源边界.md",
+      "source_sha256": "d7d99d9a0be5c0d1a160b6bad5d6a3eb344238a48c27a5a9576039847f0717e7",
+      "public_sha256": "d7d99d9a0be5c0d1a160b6bad5d6a3eb344238a48c27a5a9576039847f0717e7",
+      "public_bytes": 12077
+    },
+    {
+      "file": "最终研究决策_C与投稿定位.md",
+      "source_sha256": "6b162a2027fe4526ab2725e72c2c37bb5614a489498b9676358e2358cf7853d1",
+      "public_sha256": "6b162a2027fe4526ab2725e72c2c37bb5614a489498b9676358e2358cf7853d1",
+      "public_bytes": 7426
+    },
+    {
+      "file": "简单缩放正交强基线_解析核验.md",
+      "source_sha256": "446303d88bbd3160eb9a356ba7b15173a93d9bb69012e1c39425f28c5eeb7257",
+      "public_sha256": "431d59e9e6a2dd62ae2f54f0e28ff03b426558f3478a1deb1f972dff4247201d",
+      "public_bytes": 8064
+    },
+    {
+      "file": "论文级创新性评估_29条审稿对应.md",
+      "source_sha256": "6b65507e25936c3083c210e9022ef5379c6fd84afc8ac5c875da18bbd50589e8",
+      "public_sha256": "3dc7bb4fe9065b4479caa2420f240815372fcc74a51ed26008f3a46f3582eef4",
+      "public_bytes": 32924
+    }
+  ]
+}
