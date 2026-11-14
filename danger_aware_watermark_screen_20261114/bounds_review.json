@@ -1,0 +1,244 @@
+{
+  "date": "2026-11-14",
+  "scope": "first-stage resource/spatial mathematical gate, not watermark mechanism design",
+  "input_sha256": {
+    "研究规划\\第一篇小论文\\secure distributed safety.tex": "0d59143f19ee62cdbb95f8207e47ec9cc481bedcda10b3a24398cd5bfa36b609",
+    "研究规划\\第一篇小论文_重新投稿修订_20261102\\sections\\02_model_detector.tex": "1d7c357efe2fa592fe87a6db050cbab9b1fe15b35b9faafd0edfc8c826456bee",
+    "研究规划\\第一篇小论文_重新投稿修订_20261102\\sections\\04_watermark.tex": "686a8aa9ec53edd1a3b1af294e359f65696330c4eed36fdaaa0df883d970ac42",
+    "研究规划\\第一篇小论文_重新投稿修订_20261102\\original_estimator_gate_20261114\\five_node_aggregate_model.json": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+    "研究规划\\第一篇小论文_重新投稿修订_20261102\\original_estimator_gate_20261114\\报告一_原稿估计器与后续KF的严格对照.md": "8d8b09d7e07310e1ad45ce418e01959ee97aaf8259d39f4e33e890b5f176476f",
+    "研究规划\\第一篇小论文_重新投稿修订_20261102\\web_revision_control_20261112\\29条意见_本机状态与剩余验收.md": "938fad0280529eeb61d078a0159acdaeaf18863a67f373c2a5766dec36df9a14",
+    "参考文献\\文献库.json": "514d9ec76f4883761998fdcfaa10d8f624ae9e747dc7443fd7e4533b5a25dd5b",
+    "研究规划\\第一篇小论文_重新投稿修订_20261102\\watermark_boundary_final_20261114\\theorem_novelty_evidence.json": "150913a9211f7157e8823e476a0183eb63f09691182f62b00998049954d978a9"
+  },
+  "strict_results": [
+    "Independent/predictable M with positive conditional physical second moment: Penc>=tr(Sigma_y)/kappa^2.",
+    "Equality at that lower bound forces M=kappa*O almost surely when Sigma_y is positive definite.",
+    "kappa=1 and no increase over healthy encoded energy force orthogonality; anisotropic Sigma_y does not evade this.",
+    "Orthogonality does not exclude nonuniform distributions on O(2), deterministic rotations or directional orientation effects.",
+    "At same time, spatial consistency cancels true state exactly if H_j=C H_i and local measurements are trustworthy.",
+    "With fixed independent original attacks and independent sensor noises, spatial nominal covariance is R_j+C R_i C^T.",
+    "The instantaneous decoder/sign cannot be inferred to improve spatial test power solely by breaking a temporal parity kernel.",
+    "For known onset and independent-time spatial residuals, cumulative spatial noncentrality controls accumulated bias through a standard finite operator Gramian."
+  ],
+  "finite_exact_checks": {
+    "anisotropic_same_energy_kappa_gt_one": {
+      "Sigma": [
+        [
+          "4",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "M": [
+        [
+          "2",
+          "0"
+        ],
+        [
+          "0",
+          "1/2"
+        ]
+      ],
+      "kappa": 2,
+      "encoded_energy": "5",
+      "healthy_energy": "5",
+      "decoder_singular_values": [
+        "2",
+        "1/2"
+      ],
+      "scope": "counterexample to orthogonality without contraction; not a candidate algorithm"
+    },
+    "contraction_energy_slack": {
+      "M": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1/2"
+        ]
+      ],
+      "Sigma": [
+        [
+          "4",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "Penc": "8",
+      "Phealthy": "5"
+    },
+    "singular_Sigma_counterexample": {
+      "M": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1/2"
+        ]
+      ],
+      "Sigma": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "Penc": "1",
+      "Phealthy": "1"
+    },
+    "directionwise_mean_equality_counterexample": {
+      "M1": [
+        [
+          "sqrt(2)",
+          "0"
+        ],
+        [
+          "0",
+          "sqrt(2)"
+        ]
+      ],
+      "M2": [
+        [
+          "sqrt(6)/3",
+          "0"
+        ],
+        [
+          "0",
+          "sqrt(6)/3"
+        ]
+      ],
+      "probabilities": [
+        "1/2",
+        "1/2"
+      ],
+      "expected_inverse_gram": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "kappa": "sqrt(2)"
+    },
+    "current_data_dependent_exception": {
+      "decoder": "P_y+(1/2)(I-P_y), P_y=y y^T/(y^T y)",
+      "acts_as_identity_on_realized_y": true,
+      "determinant": "1/2",
+      "scope": "not allowed by original independent-secret model"
+    },
+    "spatial": {
+      "C": [
+        [
+          "10/11",
+          "0"
+        ],
+        [
+          "0",
+          "5/6"
+        ]
+      ],
+      "covariance": [
+        [
+          "221/242",
+          "0"
+        ],
+        [
+          "0",
+          "61/72"
+        ]
+      ],
+      "condition_exact": "7956/7381",
+      "condition_float": 1.0779027232082374,
+      "coordinate_signs_preserving_ncp": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "Au_det": "2267/2000",
+      "As_det": "1439/2000",
+      "meaning": "all prescribed nonzero autonomous directions are spatially nonblind; not a probability/delay guarantee"
+    }
+  },
+  "evidence_classes": {
+    "algebraic_propositions": "strict matrix proofs in bounds_review.md",
+    "rational_examples": "exact finite SymPy checks, no sampling",
+    "power_risk_claims": "not computed in this subtask; parent performs actual power comparison",
+    "literature": "prior designated-page evidence only; second-stage novelty audit not started",
+    "physical_covariance": "original R_j positive definite guarantees positivity; no missing initial state prior invented"
+  },
+  "prior_literature_evidence": [
+    {
+      "id": "INTRO06",
+      "citation_key": "Paper_Zhou2023_DistributedWatermark",
+      "doi": "10.1109/TAC.2022.3171422",
+      "read_scope_reused": "\n本轮第1章补读：[{\"pdf_pages\": \"1–4\", \"printed_pages\": \"628–631\", \"location\": \"摘要、Section II、Section III及Algorithm 1、Section IV-A\", \"supports\": \"节点交换估计值；接收端以本地量测生成残差；利用量测矩阵零空间隐藏估计偏移；生成伪随机矩阵并作变换/逆变换。\"}, {\"pdf_pages\": \"5–6\", \"printed_pages\": \"632–633\", \"location\": \"公式(25)、Remark 4、Theorems 2–3、Section IV-B\", \"supports\": \"λI+ββᵀ及秘密种子同步；不知道水印仍沿用原攻击与统计参数已泄露重新设计的两种场景；固定旧攻击在水印方差增大时KL增强；参数极限不是时间极限。\"}]\n本轮第二章核读本地原文提取PDF第2—3页，印刷页629—630；并对照此前已核PDF第4—6页，印刷页631—633。既往核读范围不表述为本轮新增通读范围。\n2026-10-30第一篇查新：PDF3—6/印刷630—633；定理1、算法1、式(21)—(38)，PDF6渲染核对。\n2026-11-03主动可信验证：复核PDF2、4/印刷629、631的模型和编码接口，视觉核PDF2；未新增通读。\n2026-11-05水印收束本机核读：PDF6/印刷633；Information Leakage、Theorem3及证明、Corollary1。公开lambda/协方差与本拍秘密实现知情不同；参数趋于无穷的论述不能直接充当本轮攻击随公开设计缩放后的实际损害或首达风险保证。；2026-11-14：PDF2、4—6/印刷629、631—633；协作定向核读，主过程视觉核PDF6/633。",
+      "new_full_text_read_this_subtask": false,
+      "theorem_equivalence_audit_this_subtask": false
+    },
+    {
+      "id": "INTRO05",
+      "citation_key": "Paper_Ferrari2021_SwitchingMW",
+      "doi": "10.1109/TAC.2020.3013850",
+      "read_scope_reused": "\n本轮第1章补读：[{\"pdf_pages\": \"3–7\", \"printed_pages\": \"2558–2562\", \"location\": \"摘要、引言、Section II、Assumptions 1–3、Lemma 1、Theorem 1\", \"supports\": \"带状态的水印生成与移除滤波器；受攻击量测信道；稳定性、可逆性、秘密初值/切换映射以及匹配同步条件；无攻击时性能保持；无额外通信的隐式同步思路。\"}, {\"pdf_pages\": \"11–12\", \"printed_pages\": \"2566–2567\", \"location\": \"Remark 4、Section V、Theorem 4及Corollary 1\", \"supports\": \"理想数字信道假设；匹配与失配情形分开；失配稳定性结果要求切换后不再切换，以小增益条件给充分保证，不能概括为任意切换全过程稳定。\"}, {\"pdf_pages\": \"13–14\", \"printed_pages\": \"2568–2569\", \"location\": \"Theorem 5、Corollaries 2–3、Remark 5\", \"supports\": \"按双方是否切换分场景给检测充分条件；攻击效应须克服不确定性；同步破坏与参数/状态失配可帮助检测，小攻击并非全部必检。\"}]\n2026-10-30第一篇查新：PDF4/印刷2559的贡献与模块化机制段，文字核读。\n2026-11-05公开/秘密序列轮：PDF6—7/印刷2561—2562；PDF11—14/2566—2569；附录PDF17—18/2572—2573。PDF13视觉核对。 互逆、秘密状态与Theorem1；Theorems3—4及Theorem3附录证明；有界噪声阈值、Lemma7、Theorem5与Corollaries2—3及证明。动态互逆滤波与切换已有；检测为附条件的确定性充分条件，非本题Gaussian最坏功效。\n2026-11-05水印收束本机核读：PDF6/印刷2561；Assumptions2—3、Lemma1。互逆滤波依赖参数/状态匹配；初态、参数、切换/跳变/触发函数的保密权限，不能移为当前参数完全知情下的保证。；2026-11-14：PDF6—7、11—14/印刷2561—2562、2566—2569；协作定向核读及PDF6视觉。",
+      "new_full_text_read_this_subtask": false,
+      "theorem_equivalence_audit_this_subtask": false
+    },
+    {
+      "id": "FPN04",
+      "citation_key": "Paper_Miao2017_CodingSchemes",
+      "doi": "10.1109/TCNS.2016.2573039",
+      "read_scope_reused": "PDF1、3—4/印刷106、108—109；核读摘要、攻击定义/命题1摘段及III-B式(8)—(10)，PDF4渲染核对。\n2026-11-05水印收束本机核读：PDF7/印刷112；Lemma3、SectionV—V-A。旋转编码、参数辨识和及时刷新、秘密矩阵及同步生成已有；攻击者可窃听但不能直接取得编码矩阵的权限边界。\n2026-11-12本机定理续核：PDF8—9/印刷113—114；SectionV-A/B、式21—30、Definition2、Algorithms2—3；视觉核PDF9。已将有限估计损害与残差偏移约束联合，并定义首次残差偏移越界时间；该对象不同于包含正常噪声及总虚警校准的危险先于报警概率。矩阵辨识与刷新算法是既有近邻；不把新风险记号本身当创新。PDF9不等号按视觉核对，文本抽取漏斜线。",
+      "new_full_text_read_this_subtask": false,
+      "theorem_equivalence_audit_this_subtask": false
+    },
+    {
+      "id": "FPN16",
+      "citation_key": "Paper_Gallo2025_SwitchingWatermark",
+      "doi": "10.1016/j.automatica.2025.112301",
+      "read_scope_reused": "2026-11-03协作核机构题录/摘要及搜索返回机构PDF第1—2页/印刷1—2页的模型前段；未下载、未核优化定理或全部证明。\n2026-11-05公开/秘密序列轮：本地arXiv2502.18948v1的PDF/稿内3—6页；5—6页视觉核对。未取得出版社最终版。 Assumptions2.1—2.5、Definitions2.2—2.4及Problem1；Lemma3.1与式10—12；Theorem3.2及证明；Algorithm1；Theorem3.3及证明与Corollary3.3.1。能量受限隐蔽攻击的最坏损害优化已经存在。Lemma3.1依赖Anand—Teixeira引用证明，本轮未读该被引原文；未复现其动态算法。\n2026-11-05水印收束本机核读：PDF4/印刷作者稿4；Assumptions2.4—2.5、Definition2.4、Problem1。攻击者知道上次切换参数；残差与注入能量约束下的最坏性能损失优化，区别于当前Gaussian有限报警时域首达风险。实际使用作者arXiv v1，不冒充出版社版。\n2026-11-12本机定理续核：PDF5/印刷作者稿5；式10—12、Lemma3.1、Theorem3.2及证明、Section3.3。固定参数闭环Schur稳定下有限能量使最坏影响有限，非任意切换稳定性证明；离散对角网格并非连续全局最优。零初态的残差输出能量约束与本研究实际Gaussian未报警事件不同。等价性依赖Anand—Teixeira证明，未新增该证明链审证。；2026-11-14：arXiv v1 PDF3—6；协作定向核读及PDF5视觉。",
+      "new_full_text_read_this_subtask": false,
+      "theorem_equivalence_audit_this_subtask": false
+    },
+    {
+      "id": "FPN06",
+      "citation_key": "Paper_Huang2026_PartialChannelCoding",
+      "doi": "10.1016/j.automatica.2025.112701",
+      "read_scope_reused": "PDF/印刷1、9；核读摘要及定理4、Remark4、定理5，PDF9渲染核对。未完整审证附录。\n2026-11-05水印收束本机核读：PDF9/印刷9；Theorems4—5、Remark4、编码矩阵辨识段；视觉核对9页。原文已讨论已知当前编码矩阵后重新设计攻击，以及部分通道输入输出同时暴露、幅值信息泄露和秘密种子。该篇为Jiahao Huang等Automatica112701，不是Aokang Huang等C&S104925。\n2026-11-12本机定理续核：PDF4、12—13/印刷4、12—13；攻击模型/Definition1；Theorem5的AppendixD完整证明；视觉核PDF12—13，定理声明沿用前轮PDF9。Theorem5针对原估计/编码数据对约束下的重新攻击，不能保证严格统计隐蔽，不提供本研究有限时域检出率。矩阵不等不自动推出所有奇偶攻击方向可见；本轮常数倍/相对符号例针对自己的奇偶模型，不当作原文模型及观测一致性条件下的反例。；2026-11-14：PDF2—4、7—9、12—13/文章内同页；协作定向核读，主过程视觉核PDF9。",
+      "new_full_text_read_this_subtask": false,
+      "theorem_equivalence_audit_this_subtask": false
+    }
+  ],
+  "protected_files_written": false,
+  "new_algorithm": false,
+  "new_library": false
+}

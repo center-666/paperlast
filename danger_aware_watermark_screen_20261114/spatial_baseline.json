@@ -1,0 +1,894 @@
+{
+  "date": "2026-11-14",
+  "source_sha256": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+  "E": 10.0,
+  "D": 0.1,
+  "L": 10,
+  "bias_states": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "per_test_alpha": 0.0033333333333333335,
+  "finite_tests": 15,
+  "total_FA_upper": 0.05,
+  "healthy_spatial_current_FA_exact": 0.04885001789563237,
+  "no_watermark_spatial_detector_uses_current_trusted_local": true,
+  "fixed_candidate_start": true,
+  "unknown_start_scan_solved": false,
+  "new_detector": false,
+  "models": {
+    "unstable": {
+      "V_spatial": [
+        [
+          0.9132231404958677,
+          0.0
+        ],
+        [
+          0.0,
+          0.8472222222222223
+        ]
+      ],
+      "V_spatial_eigenvalues": [
+        0.8472222222222223,
+        0.9132231404958677
+      ],
+      "spatial_G5": [
+        [
+          7.647232980402343,
+          0.9475500958609102
+        ],
+        [
+          0.9475500958609102,
+          7.368166229453996
+        ]
+      ],
+      "spatial_G_current": [
+        [
+          1.0950226244343892,
+          0.0
+        ],
+        [
+          0.0,
+          1.1803278688524588
+        ]
+      ],
+      "W": [
+        [
+          22.374196152108674,
+          6.324494706098147
+        ],
+        [
+          6.324494706098147,
+          17.955579185424895
+        ]
+      ],
+      "normal_MSE_unchanged": true,
+      "deterministic_comparisons": {
+        "current_spatial": {
+          "common_danger_min": {
+            "theta": 0.5590424691421454,
+            "xi": [
+              0.39166221196344425,
+              0.23216303134930746
+            ],
+            "encoded_energy": 5.550151725101922,
+            "ncp": 0.2315949775506692,
+            "no_watermark_peak": 0.1,
+            "no_watermark_terminal": 0.1,
+            "Pd": 0.005774402666437905,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "E10_min": {
+            "theta": 0.5690724813470145,
+            "xi": [
+              0.5209951417970817,
+              0.3188576526751694
+            ],
+            "encoded_energy": 10.0,
+            "ncp": 0.41723266659217256,
+            "no_watermark_peak": 0.1801294218342553,
+            "no_watermark_terminal": 0.1801294218342553,
+            "Pd": 0.008085043273675138,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "mean_NCP_is_not_used_as_power": true,
+          "closed_form_common_danger_check": {
+            "ncp": 0.23159497755066916,
+            "Pd": 0.005774402666437905,
+            "initial_state": [
+              -0.3916622121396937,
+              -0.23216303107346137
+            ],
+            "energy": 5.550151725042125,
+            "formula": "D lambda_min(C,Sstar); eigenvector energy feasible; global Rayleigh optimum in frozen numerical matrices",
+            "physical_interval_power_certificate": false
+          }
+        },
+        "five_packet_spatial_energy": {
+          "common_danger_min": {
+            "theta": 0.5503463274824534,
+            "xi": [
+              0.3946560289052375,
+              0.22745904843638295
+            ],
+            "encoded_energy": 5.549311165063602,
+            "ncp": 1.7424132828660621,
+            "no_watermark_peak": 0.1,
+            "no_watermark_terminal": 0.1,
+            "Pd": 0.012230043753356826,
+            "df": 10,
+            "alpha": 0.0033333333333333335
+          },
+          "E10_min": {
+            "theta": 0.5627130010064875,
+            "xi": [
+              0.5240006680710118,
+              0.3142792973581707
+            ],
+            "encoded_energy": 10.0,
+            "ncp": 3.139606610755515,
+            "no_watermark_peak": 0.18016026516308944,
+            "no_watermark_terminal": 0.18016026516308944,
+            "Pd": 0.025476449040021044,
+            "df": 10,
+            "alpha": 0.0033333333333333335
+          },
+          "mean_NCP_is_not_used_as_power": true,
+          "closed_form_common_danger_check": {
+            "ncp": 1.7424132828660621,
+            "Pd": 0.012230043753356826,
+            "initial_state": [
+              -0.39465603131474025,
+              -0.2274590446356055
+            ],
+            "energy": 5.549311164528968,
+            "formula": "D lambda_min(C,Sstar); eigenvector energy feasible; global Rayleigh optimum in frozen numerical matrices",
+            "physical_interval_power_certificate": false
+          }
+        },
+        "standard_five_packet_spatial_matching": {
+          "common_danger_min": {
+            "theta": 0.5503463029935574,
+            "xi": [
+              0.39465603731130156,
+              0.22745903517656046
+            ],
+            "encoded_energy": 5.549311163198405,
+            "ncp": 1.7424132828660621,
+            "no_watermark_peak": 0.09999999999999999,
+            "no_watermark_terminal": 0.09999999999999999,
+            "Pd": 0.03432568025123203,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "E10_min": {
+            "theta": 0.5627129926868163,
+            "xi": [
+              0.5240006719890996,
+              0.3142792913602685
+            ],
+            "encoded_energy": 10.0,
+            "ncp": 3.139606610755516,
+            "no_watermark_peak": 0.18016026519939815,
+            "no_watermark_terminal": 0.18016026519939815,
+            "Pd": 0.08088980515623298,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "mean_NCP_is_not_used_as_power": true,
+          "closed_form_common_danger_check": {
+            "ncp": 1.7424132828660621,
+            "Pd": 0.03432568025123203,
+            "initial_state": [
+              -0.39465603131474025,
+              -0.2274590446356055
+            ],
+            "energy": 5.549311164528968,
+            "formula": "D lambda_min(C,Sstar); eigenvector energy feasible; global Rayleigh optimum in frozen numerical matrices",
+            "physical_interval_power_certificate": false
+          }
+        }
+      },
+      "current_spatial_first_alarm_probes": {
+        "current_spatial_common_danger_min": {
+          "first_alarm_CDF": [
+            0.005774402666437917,
+            0.012074768061655083,
+            0.01903261016173008,
+            0.026815801212916046,
+            0.03564004429235512,
+            0.04578425454505686,
+            0.05761108879206589,
+            0.07159405362638394,
+            0.08835256988123674,
+            0.10869566915733508,
+            0.11166668359347731,
+            0.11462779464816564,
+            0.11757903533267167,
+            0.12052043854822936,
+            0.12345203708640184
+          ],
+          "first_alarm_PMF": [
+            0.005774402666437905,
+            0.0063003653952172405,
+            0.006957842100075088,
+            0.007783191051185954,
+            0.00882424307943913,
+            0.010144210252701779,
+            0.011826834247009069,
+            0.013982964834318006,
+            0.01675851625485282,
+            0.020343099276098283,
+            0.0029710144361422166,
+            0.002961111054688409,
+            0.002951240684506115,
+            0.0029414032155577613,
+            0.002931598538172569
+          ],
+          "no_alarm_probability": 0.8765479629135982,
+          "first_danger_update_index": 9,
+          "danger_before_alarm_probability": 0.8913043308426649,
+          "includes_same_packet_alarm_before_fusion": true,
+          "independent_current_spatial_tests": true,
+          "threshold_tie_note": "saved boundary xi uses >=D with 1e-11 display tolerance only; no certified event claim at a floating equality"
+        },
+        "current_spatial_E10_min": {
+          "first_alarm_CDF": [
+            0.008085043273675097,
+            0.017272743726786888,
+            0.027862246952353842,
+            0.040243608985160884,
+            0.05492745320607484,
+            0.0725832732260574,
+            0.09408692008756536,
+            0.12057512511163782,
+            0.15349857043373238,
+            0.1946518789440097,
+            0.19733637268086301,
+            0.2000119181052601,
+            0.20267854504490923,
+            0.20533628322809283,
+            0.20798516228399921
+          ],
+          "first_alarm_PMF": [
+            0.008085043273675138,
+            0.009187700453111795,
+            0.010589503225567011,
+            0.01238136203280707,
+            0.014683844220913915,
+            0.017655820019982643,
+            0.021503646861507953,
+            0.026488205024072394,
+            0.03292344532209452,
+            0.041153308510277306,
+            0.002684493736853301,
+            0.0026755454243971234,
+            0.0026666269396491333,
+            0.002657738183183636,
+            0.0026488790559063575
+          ],
+          "no_alarm_probability": 0.7920148377160008,
+          "first_danger_update_index": 6,
+          "danger_before_alarm_probability": 0.9059130799124346,
+          "includes_same_packet_alarm_before_fusion": true,
+          "independent_current_spatial_tests": true,
+          "threshold_tie_note": "saved boundary xi uses >=D with 1e-11 display tolerance only; no certified event claim at a floating equality"
+        },
+        "five_packet_spatial_energy_common_danger_min": {
+          "first_alarm_CDF": [
+            0.005774702247778096,
+            0.012075322150728152,
+            0.019033151044492658,
+            0.02681572080500516,
+            0.03563822189956378,
+            0.04577880500348008,
+            0.05759899547053082,
+            0.07157063796590224,
+            0.08831073610296958,
+            0.10862485635780561,
+            0.11159610683661292,
+            0.11455745314715748,
+            0.11750892830333359,
+            0.12045056520898911,
+            0.12338239665829243
+          ],
+          "first_alarm_PMF": [
+            0.005774702247778125,
+            0.006300619902950014,
+            0.006957828893764537,
+            0.007782569760512608,
+            0.008822501094558602,
+            0.01014058310391629,
+            0.0118201904670507,
+            0.013971642495371358,
+            0.01674009813706726,
+            0.020314120254835956,
+            0.002971250478807315,
+            0.002961346310544624,
+            0.0029514751561761417,
+            0.002941636905655555,
+            0.00293183144930337
+          ],
+          "no_alarm_probability": 0.8766176033417076,
+          "first_danger_update_index": 9,
+          "danger_before_alarm_probability": 0.8913751436421944,
+          "includes_same_packet_alarm_before_fusion": true,
+          "independent_current_spatial_tests": true,
+          "threshold_tie_note": "saved boundary xi uses >=D with 1e-11 display tolerance only; no certified event claim at a floating equality"
+        },
+        "five_packet_spatial_energy_E10_min": {
+          "first_alarm_CDF": [
+            0.008085279707303994,
+            0.017273337860126303,
+            0.027863044253035762,
+            0.04024399607008555,
+            0.05492607820920947,
+            0.07257762614860819,
+            0.0940727196489276,
+            0.12054545979222009,
+            0.15344277698078568,
+            0.19455425970653195,
+            0.19723907884084346,
+            0.1999149485780406,
+            0.2025818987494471,
+            0.20523995908694892,
+            0.20788915922332574
+          ],
+          "first_alarm_PMF": [
+            0.008085279707304003,
+            0.009188058152822354,
+            0.010589706392909494,
+            0.01238095181704981,
+            0.014682082139123937,
+            0.017651547939398732,
+            0.021495093500319494,
+            0.026472740143292543,
+            0.03289731718856562,
+            0.041111482725746336,
+            0.0026848191343115603,
+            0.0026758697371971887,
+            0.0026669501714065317,
+            0.002658060337501843,
+            0.002649200136376837
+          ],
+          "no_alarm_probability": 0.7921108407766743,
+          "first_danger_update_index": 6,
+          "danger_before_alarm_probability": 0.9059272803510724,
+          "includes_same_packet_alarm_before_fusion": true,
+          "independent_current_spatial_tests": true,
+          "threshold_tie_note": "saved boundary xi uses >=D with 1e-11 display tolerance only; no certified event claim at a floating equality"
+        },
+        "standard_five_packet_spatial_matching_common_danger_min": {
+          "first_alarm_CDF": [
+            0.005774702249465302,
+            0.01207532215400664,
+            0.019033151048635566,
+            0.026815720808320176,
+            0.035638221898903644,
+            0.045778804993526934,
+            0.057598995442753376,
+            0.0715706379070481,
+            0.08831073599291839,
+            0.10862485616659057,
+            0.11159610664603525,
+            0.11455745295721509,
+            0.11750892811402436,
+            0.12045056502031093,
+            0.12338239647024318
+          ],
+          "first_alarm_PMF": [
+            0.005774702249465281,
+            0.006300619904541301,
+            0.006957828894628917,
+            0.007782569759684611,
+            0.0088225010905834,
+            0.01014058309462334,
+            0.011820190449226447,
+            0.013971642464294666,
+            0.016740098085870257,
+            0.020314120173672182,
+            0.0029712504794446983,
+            0.0029613463111798828,
+            0.0029514751568092833,
+            0.002941636906286586,
+            0.002931831449932297
+          ],
+          "no_alarm_probability": 0.8766176035297568,
+          "first_danger_update_index": 9,
+          "danger_before_alarm_probability": 0.8913751438334094,
+          "includes_same_packet_alarm_before_fusion": true,
+          "independent_current_spatial_tests": true,
+          "threshold_tie_note": "saved boundary xi uses >=D with 1e-11 display tolerance only; no certified event claim at a floating equality"
+        },
+        "standard_five_packet_spatial_matching_E10_min": {
+          "first_alarm_CDF": [
+            0.00808527970792261,
+            0.017273337861513638,
+            0.027863044254969882,
+            0.040243996071727794,
+            0.054926078208730855,
+            0.07257762614262953,
+            0.0940727196317026,
+            0.12054545975449216,
+            0.15344277690829788,
+            0.1945542595783264,
+            0.19723907871306523,
+            0.19991494845068836,
+            0.2025818986225194,
+            0.20523995896044434,
+            0.20788915909724281
+          ],
+          "first_alarm_PMF": [
+            0.008085279707922614,
+            0.009188058153590983,
+            0.010589706393456242,
+            0.012380951816757921,
+            0.01468208213700309,
+            0.017651547933898705,
+            0.021495093489073074,
+            0.026472740122789537,
+            0.032897317153805734,
+            0.04111148267002848,
+            0.002684819134738912,
+            0.0026758697376231162,
+            0.002666950171831039,
+            0.0026580603379249353,
+            0.002649200136798519
+          ],
+          "no_alarm_probability": 0.7921108409027572,
+          "first_danger_update_index": 6,
+          "danger_before_alarm_probability": 0.9059272803682974,
+          "includes_same_packet_alarm_before_fusion": true,
+          "independent_current_spatial_tests": true,
+          "threshold_tie_note": "saved boundary xi uses >=D with 1e-11 display tolerance only; no certified event claim at a floating equality"
+        }
+      },
+      "instantaneous_ncp_per_current_packet_bias_lower_diagnostic": 14.970198051309735
+    },
+    "stable": {
+      "V_spatial": [
+        [
+          0.9132231404958677,
+          0.0
+        ],
+        [
+          0.0,
+          0.8472222222222223
+        ]
+      ],
+      "V_spatial_eigenvalues": [
+        0.8472222222222223,
+        0.9132231404958677
+      ],
+      "spatial_G5": [
+        [
+          2.720839432049546,
+          0.2847737033624
+        ],
+        [
+          0.2847737033624,
+          4.093071044735915
+        ]
+      ],
+      "spatial_G_current": [
+        [
+          1.0950226244343892,
+          0.0
+        ],
+        [
+          0.0,
+          1.1803278688524588
+        ]
+      ],
+      "W": [
+        [
+          2.7630028955972383,
+          0.4691886848189451
+        ],
+        [
+          0.4691886848189451,
+          4.776846137784364
+        ]
+      ],
+      "normal_MSE_unchanged": true,
+      "deterministic_comparisons": {
+        "current_spatial": {
+          "common_danger_min": {
+            "theta": 0.0801518019295702,
+            "xi": [
+              1.1768210669253065,
+              0.005941668342909188
+            ],
+            "encoded_energy": 3.833234363411042,
+            "ncp": 1.516547069167207,
+            "no_watermark_peak": 0.10000000000000002,
+            "no_watermark_terminal": 0.002572243144121354,
+            "Pd": 0.02861210345897506,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "E10_min": {
+            "theta": 1.323780859511553,
+            "xi": [
+              0.36436145380031015,
+              1.3847477810391162
+            ],
+            "encoded_energy": 10.0,
+            "ncp": 2.408684272530701,
+            "no_watermark_peak": 0.13046339705486804,
+            "no_watermark_terminal": 0.028502420506067973,
+            "Pd": 0.05416142469690307,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "mean_NCP_is_not_used_as_power": true,
+          "closed_form_common_danger_check": {
+            "ncp": 1.5165470691672072,
+            "Pd": 0.02861210345897507,
+            "initial_state": [
+              -1.1768210668971466,
+              -0.005941673517240294
+            ],
+            "energy": 3.833234369235505,
+            "formula": "D lambda_min(C,Sstar); eigenvector energy feasible; global Rayleigh optimum in frozen numerical matrices",
+            "physical_interval_power_certificate": false
+          }
+        },
+        "five_packet_spatial_energy": {
+          "common_danger_min": {
+            "theta": 3.0034551863130643,
+            "xi": [
+              -1.1640461492144556,
+              0.18666180790768197
+            ],
+            "encoded_energy": 3.706422895191108,
+            "ncp": 3.7056071998124955,
+            "no_watermark_peak": 0.09999999999999998,
+            "no_watermark_terminal": 0.001908733199216366,
+            "Pd": 0.03271041927814626,
+            "df": 10,
+            "alpha": 0.0033333333333333335
+          },
+          "E10_min": {
+            "theta": 1.2952238066757098,
+            "xi": [
+              0.41799513437180735,
+              1.371054504814178
+            ],
+            "encoded_energy": 10.0,
+            "ncp": 8.495905029040706,
+            "no_watermark_peak": 0.1311260927715219,
+            "no_watermark_terminal": 0.02840027504638663,
+            "Pd": 0.1430266403286337,
+            "df": 10,
+            "alpha": 0.0033333333333333335
+          },
+          "mean_NCP_is_not_used_as_power": true,
+          "closed_form_common_danger_check": {
+            "ncp": 3.7056071998124978,
+            "Pd": 0.03271041927814628,
+            "initial_state": [
+              -1.1640461511105753,
+              0.18666179425646073
+            ],
+            "energy": 3.706422897622901,
+            "formula": "D lambda_min(C,Sstar); eigenvector energy feasible; global Rayleigh optimum in frozen numerical matrices",
+            "physical_interval_power_certificate": false
+          }
+        },
+        "standard_five_packet_spatial_matching": {
+          "common_danger_min": {
+            "theta": 3.0034551863056698,
+            "xi": [
+              -1.1640461492135676,
+              0.1866618079140752
+            ],
+            "encoded_energy": 3.706422895189969,
+            "ncp": 3.7056071998124964,
+            "no_watermark_peak": 0.09999999999999999,
+            "no_watermark_terminal": 0.0019087331992097706,
+            "Pd": 0.10492568727026365,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "E10_min": {
+            "theta": 1.2952237874534303,
+            "xi": [
+              0.4179951703638022,
+              1.3710544952193948
+            ],
+            "encoded_energy": 10.0,
+            "ncp": 8.49590502904071,
+            "no_watermark_peak": 0.13112609329337643,
+            "no_watermark_terminal": 0.02840027496490456,
+            "Pd": 0.38181444994270064,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "mean_NCP_is_not_used_as_power": true,
+          "closed_form_common_danger_check": {
+            "ncp": 3.7056071998124978,
+            "Pd": 0.10492568727026366,
+            "initial_state": [
+              -1.1640461511105753,
+              0.18666179425646073
+            ],
+            "energy": 3.706422897622901,
+            "formula": "D lambda_min(C,Sstar); eigenvector energy feasible; global Rayleigh optimum in frozen numerical matrices",
+            "physical_interval_power_certificate": false
+          }
+        }
+      },
+      "current_spatial_first_alarm_probes": {
+        "current_spatial_common_danger_min": {
+          "first_alarm_CDF": [
+            0.028612103458975024,
+            0.04506838918299927,
+            0.055607100764166195,
+            0.06304452646134817,
+            0.0687565946725176,
+            0.07346285427029853,
+            0.0775612950213187,
+            0.08128193577858966,
+            0.08476218147128411,
+            0.08808612648427538,
+            0.09112583939599439,
+            0.09415541993134102,
+            0.09717490186490318,
+            0.10018431885868684,
+            0.10318370446249114
+          ],
+          "first_alarm_PMF": [
+            0.02861210345897506,
+            0.016456285724024227,
+            0.010538711581166938,
+            0.007437425697181962,
+            0.005712068211169403,
+            0.00470625959778094,
+            0.00409844075102012,
+            0.003720640757270962,
+            0.0034802456926944806,
+            0.003323945012991299,
+            0.003039712911719082,
+            0.0030295805353466854,
+            0.003019481933562197,
+            0.003009416993783656,
+            0.0029993856038043774
+          ],
+          "no_alarm_probability": 0.8968162955375089,
+          "first_danger_update_index": 0,
+          "danger_before_alarm_probability": 0.971387896541025,
+          "includes_same_packet_alarm_before_fusion": true,
+          "independent_current_spatial_tests": true,
+          "threshold_tie_note": "saved boundary xi uses >=D with 1e-11 display tolerance only; no certified event claim at a floating equality"
+        },
+        "current_spatial_E10_min": {
+          "first_alarm_CDF": [
+            0.054161424696903104,
+            0.09301484177152275,
+            0.12169903137042015,
+            0.14343103544413704,
+            0.16029404982604056,
+            0.17367545962128483,
+            0.1845216306098687,
+            0.19349173412017606,
+            0.2010535266671406,
+            0.20754455549156403,
+            0.21018607363992547,
+            0.2128187867277923,
+            0.21544272410536636,
+            0.21805791502501515,
+            0.22066438864159843
+          ],
+          "first_alarm_PMF": [
+            0.05416142469690307,
+            0.038853417074619596,
+            0.02868418959889745,
+            0.02173200407371684,
+            0.016863014381903556,
+            0.013381409795244248,
+            0.010846170988583901,
+            0.00897010351030735,
+            0.0075617925469644975,
+            0.006491028824423423,
+            0.0026415181483614536,
+            0.002632713087866915,
+            0.0026239373775740257,
+            0.002615190919648779,
+            0.002606473616583283
+          ],
+          "no_alarm_probability": 0.7793356113584016,
+          "first_danger_update_index": 0,
+          "danger_before_alarm_probability": 0.9458385753030969,
+          "includes_same_packet_alarm_before_fusion": true,
+          "independent_current_spatial_tests": true,
+          "threshold_tie_note": "saved boundary xi uses >=D with 1e-11 display tolerance only; no certified event claim at a floating equality"
+        },
+        "five_packet_spatial_energy_common_danger_min": {
+          "first_alarm_CDF": [
+            0.02881387027564697,
+            0.04504965250097548,
+            0.05529544468920333,
+            0.06246346265392844,
+            0.06795088859765297,
+            0.072476943025918,
+            0.07643369439656533,
+            0.08004443257945348,
+            0.08344039788322588,
+            0.08670041558355635,
+            0.0897447475316111,
+            0.09277893170650575,
+            0.0958030019341507,
+            0.09881699192770355,
+            0.10182093528794456
+          ],
+          "first_alarm_PMF": [
+            0.028813870275646934,
+            0.01623578222532855,
+            0.01024579218822793,
+            0.007168017964725071,
+            0.005487425943724555,
+            0.004526054428265022,
+            0.003956751370647311,
+            0.003610738182888126,
+            0.0033959653037723705,
+            0.003260017700330452,
+            0.0030443319480548126,
+            0.0030341841748946297,
+            0.0030240702276449812,
+            0.003013989993552831,
+            0.0030039433602409883
+          ],
+          "no_alarm_probability": 0.8981790647120554,
+          "first_danger_update_index": 0,
+          "danger_before_alarm_probability": 0.971186129724353,
+          "includes_same_packet_alarm_before_fusion": true,
+          "independent_current_spatial_tests": true,
+          "threshold_tie_note": "saved boundary xi uses >=D with 1e-11 display tolerance only; no certified event claim at a floating equality"
+        },
+        "five_packet_spatial_energy_E10_min": {
+          "first_alarm_CDF": [
+            0.05420796966202701,
+            0.09307836436563166,
+            0.12175383268610962,
+            0.1434610242544182,
+            0.16029133500590298,
+            0.17363770429211733,
+            0.18444980643025743,
+            0.1933885557363122,
+            0.20092246311077722,
+            0.2073892494654509,
+            0.21003128530056603,
+            0.21266451434956413,
+            0.21528896596839886,
+            0.21790466941517084,
+            0.22051165385045357
+          ],
+          "first_alarm_PMF": [
+            0.05420796966202707,
+            0.03887039470360461,
+            0.02867546832047806,
+            0.021707191568308578,
+            0.01683031075148471,
+            0.013346369286214377,
+            0.010812102138140144,
+            0.008938749306054743,
+            0.007533907374465002,
+            0.006466786354673643,
+            0.0026420358351151637,
+            0.0026332290489981132,
+            0.0026244516188347862,
+            0.002615703446772004,
+            0.002606984435282764
+          ],
+          "no_alarm_probability": 0.7794883461495464,
+          "first_danger_update_index": 0,
+          "danger_before_alarm_probability": 0.945792030337973,
+          "includes_same_packet_alarm_before_fusion": true,
+          "independent_current_spatial_tests": true,
+          "threshold_tie_note": "saved boundary xi uses >=D with 1e-11 display tolerance only; no certified event claim at a floating equality"
+        },
+        "standard_five_packet_spatial_matching_common_danger_min": {
+          "first_alarm_CDF": [
+            0.028813870275660403,
+            0.04504965250098958,
+            0.05529544468921499,
+            0.06246346265393721,
+            0.06795088859765941,
+            0.07247694302592267,
+            0.07643369439656877,
+            0.08004443257945615,
+            0.0834403978832281,
+            0.08670041558355834,
+            0.0897447475316131,
+            0.09277893170650764,
+            0.09580300193415259,
+            0.09881699192770543,
+            0.10182093528794633
+          ],
+          "first_alarm_PMF": [
+            0.02881387027566035,
+            0.016235782225329183,
+            0.01024579218822542,
+            0.007168017964722241,
+            0.005487425943722184,
+            0.004526054428263251,
+            0.003956751370646086,
+            0.003610738182887347,
+            0.00339596530377193,
+            0.003260017700330259,
+            0.0030443319480548056,
+            0.003034184174894623,
+            0.0030240702276449747,
+            0.003013989993552825,
+            0.0030039433602409822
+          ],
+          "no_alarm_probability": 0.8981790647120537,
+          "first_danger_update_index": 0,
+          "danger_before_alarm_probability": 0.9711861297243396,
+          "includes_same_packet_alarm_before_fusion": true,
+          "independent_current_spatial_tests": true,
+          "threshold_tie_note": "saved boundary xi uses >=D with 1e-11 display tolerance only; no certified event claim at a floating equality"
+        },
+        "standard_five_packet_spatial_matching_E10_min": {
+          "first_alarm_CDF": [
+            0.05420796972468367,
+            0.09307836444755113,
+            0.12175383276081164,
+            0.14346102430795749,
+            0.16029133503236992,
+            0.17363770429031056,
+            0.1844498064015062,
+            0.19338855568314783,
+            0.20092246303616568,
+            0.20738924937237402,
+            0.21003128520779946,
+            0.21266451425710675,
+            0.21528896587624968,
+            0.21790466932332886,
+            0.2205116537589178
+          ],
+          "first_alarm_PMF": [
+            0.054207969724683655,
+            0.038870394722867484,
+            0.028675468313260455,
+            0.021707191547145857,
+            0.016830310724412358,
+            0.01334636925794058,
+            0.010812102111195657,
+            0.008938749281641692,
+            0.0075339073530178964,
+            0.00646678633620837,
+            0.0026420358354254203,
+            0.0026332290493073355,
+            0.0026244516191429776,
+            0.002615703447079168,
+            0.002606984435588904
+          ],
+          "no_alarm_probability": 0.7794883462410822,
+          "first_danger_update_index": 0,
+          "danger_before_alarm_probability": 0.9457920302753163,
+          "includes_same_packet_alarm_before_fusion": true,
+          "independent_current_spatial_tests": true,
+          "threshold_tie_note": "saved boundary xi uses >=D with 1e-11 display tolerance only; no certified event claim at a floating equality"
+        }
+      },
+      "instantaneous_ncp_per_current_packet_bias_lower_diagnostic": 15.16547069167207
+    }
+  }
+}

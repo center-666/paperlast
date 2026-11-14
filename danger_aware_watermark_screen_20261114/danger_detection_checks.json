@@ -1,0 +1,113 @@
+{
+  "input_sha256": "8497a3d2b25152e3f36e356d95017f17ae43e4218f8d58c490b59a9e8c96fee3",
+  "method": "independent vec(B) second-moment recursion; 3-node Hermite exact through fourth degree; 4-angle rotation quadrature exact second moment",
+  "physical_noise_samples": 0,
+  "models": {
+    "unstable": {
+      "no_watermark_prefix_recursion_error": 2.710505431213761e-20,
+      "full_1024_sign_prefix_enumeration_error": 2.914335439641036e-15,
+      "dense_geometry_grid": 8193,
+      "dense_geometry_mismatches": 0,
+      "schemes": {
+        "Gaussian": {
+          "moment_max_abs_error": 4.440892098500626e-16,
+          "dangerous_direction_energy": 5.557775364806456,
+          "dangerous_direction_no_watermark_peak": 0.09999999999999999
+        },
+        "normalized_Gaussian": {
+          "moment_max_abs_error": 6.661338147750939e-16,
+          "dangerous_direction_energy": 5.559947829541835,
+          "dangerous_direction_no_watermark_peak": 0.10000000000000002
+        },
+        "whole_sign": {
+          "moment_max_abs_error": 1.6653345369377348e-16,
+          "dangerous_direction_energy": 5.556746933829276,
+          "dangerous_direction_no_watermark_peak": 0.09999999999999999
+        },
+        "coordinate_sign": {
+          "moment_max_abs_error": 1.1102230246251565e-16,
+          "dangerous_direction_energy": 5.566420256738685,
+          "dangerous_direction_no_watermark_peak": 0.1
+        },
+        "Haar_SO2": {
+          "moment_max_abs_error": 8.326672684688674e-17,
+          "dangerous_direction_energy": 5.556818725840447,
+          "dangerous_direction_no_watermark_peak": 0.10000000000000003
+        },
+        "identity": {
+          "moment_max_abs_error": 5.551115123125783e-17,
+          "dangerous_direction_energy": 6.235025852170221,
+          "dangerous_direction_no_watermark_peak": 0.10000000000000003
+        },
+        "public_scalar_alternation": {
+          "moment_max_abs_error": 5.551115123125783e-17,
+          "dangerous_direction_energy": 5.556784439978386,
+          "dangerous_direction_no_watermark_peak": 0.10000000000000002
+        },
+        "public_coordinate_alternation": {
+          "moment_max_abs_error": 5.551115123125783e-17,
+          "dangerous_direction_energy": 5.930712239983562,
+          "dangerous_direction_no_watermark_peak": 0.1
+        },
+        "public_R90_supplement": {
+          "moment_max_abs_error": 2.7755575615628914e-17,
+          "dangerous_direction_energy": 5.557206542006798,
+          "dangerous_direction_no_watermark_peak": 0.1
+        }
+      }
+    },
+    "stable": {
+      "no_watermark_prefix_recursion_error": 1.3877787807814457e-17,
+      "full_1024_sign_prefix_enumeration_error": 2.1371793224034263e-15,
+      "dense_geometry_grid": 8193,
+      "dense_geometry_mismatches": 0,
+      "schemes": {
+        "Gaussian": {
+          "moment_max_abs_error": 1.1102230246251565e-16,
+          "dangerous_direction_energy": 3.7036907643220323,
+          "dangerous_direction_no_watermark_peak": 0.10000000000000005
+        },
+        "normalized_Gaussian": {
+          "moment_max_abs_error": 1.1102230246251565e-16,
+          "dangerous_direction_energy": 3.703342139564049,
+          "dangerous_direction_no_watermark_peak": 0.10000000000000002
+        },
+        "whole_sign": {
+          "moment_max_abs_error": 1.3877787807814457e-17,
+          "dangerous_direction_energy": 3.703778889591243,
+          "dangerous_direction_no_watermark_peak": 0.09999999999999999
+        },
+        "coordinate_sign": {
+          "moment_max_abs_error": 1.3877787807814457e-17,
+          "dangerous_direction_energy": 3.7069514321880934,
+          "dangerous_direction_no_watermark_peak": 0.1
+        },
+        "Haar_SO2": {
+          "moment_max_abs_error": 6.938893903907228e-18,
+          "dangerous_direction_energy": 3.7034056876261636,
+          "dangerous_direction_no_watermark_peak": 0.1
+        },
+        "identity": {
+          "moment_max_abs_error": 1.3877787807814457e-17,
+          "dangerous_direction_energy": 3.7647408181026862,
+          "dangerous_direction_no_watermark_peak": 0.10000000000000002
+        },
+        "public_scalar_alternation": {
+          "moment_max_abs_error": 1.3877787807814457e-17,
+          "dangerous_direction_energy": 3.7037896838161117,
+          "dangerous_direction_no_watermark_peak": 0.1
+        },
+        "public_coordinate_alternation": {
+          "moment_max_abs_error": 1.3877787807814457e-17,
+          "dangerous_direction_energy": 3.8040503300657837,
+          "dangerous_direction_no_watermark_peak": 0.10000000000000003
+        },
+        "public_R90_supplement": {
+          "moment_max_abs_error": 1.3877787807814457e-17,
+          "dangerous_direction_energy": 3.7033906561422216,
+          "dangerous_direction_no_watermark_peak": 0.09999999999999999
+        }
+      }
+    }
+  }
+}

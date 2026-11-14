@@ -1,0 +1,509 @@
+{
+  "date": "2026-11-14",
+  "new_optimization": false,
+  "maximum_expected_bias_definition": "max_k sup_xi E||b_k||^2; not E max_k||b_k||^2",
+  "models": {
+    "unstable": {
+      "schemes": {
+        "Gaussian": {
+          "danger_min_Pd": 0.06131968230244199,
+          "danger_min_initial_state": [
+            0.37865299562318466,
+            0.25218646447693693
+          ],
+          "danger_min_encoded_energy": 5.557775364806456,
+          "danger_min_expected_peak": 0.6357284805286785,
+          "danger_min_peak_amplification": 6.357284805286786,
+          "worst_time_expected_bias_squared": 1.144313315948067,
+          "worst_time_bias_index": 10,
+          "full_energy_min_Pd": 0.13132569524582227
+        },
+        "normalized_Gaussian": {
+          "danger_min_Pd": 0.03242508449210654,
+          "danger_min_initial_state": [
+            0.3761603390854845,
+            0.255948242800091
+          ],
+          "danger_min_encoded_energy": 5.559947829541835,
+          "danger_min_expected_peak": 0.4035337311099765,
+          "danger_min_peak_amplification": 4.035337311099764,
+          "worst_time_expected_bias_squared": 0.7262226211884021,
+          "worst_time_bias_index": 10,
+          "full_energy_min_Pd": 0.07336307938982903
+        },
+        "whole_sign": {
+          "danger_min_Pd": 0.009651663794328455,
+          "danger_min_initial_state": [
+            0.37993280969543686,
+            0.2502458822795936
+          ],
+          "danger_min_encoded_energy": 5.556746933829276,
+          "danger_min_expected_peak": 0.08102888001806452,
+          "danger_min_peak_amplification": 0.8102888001806453,
+          "worst_time_expected_bias_squared": 0.14591530676897746,
+          "worst_time_bias_index": 10,
+          "full_energy_min_Pd": 0.018360729991272036
+        },
+        "coordinate_sign": {
+          "danger_min_Pd": 0.009421140708996693,
+          "danger_min_initial_state": [
+            0.36985865750964175,
+            0.26535506707237444
+          ],
+          "danger_min_encoded_energy": 5.566420256738685,
+          "danger_min_expected_peak": 0.08096051617116563,
+          "danger_min_peak_amplification": 0.8096051617116563,
+          "worst_time_expected_bias_squared": 0.14574005793757738,
+          "worst_time_bias_index": 10,
+          "full_energy_min_Pd": 0.01750758360723885
+        },
+        "Haar_SO2": {
+          "danger_min_Pd": 0.009367925373257917,
+          "danger_min_initial_state": [
+            0.37984100738068194,
+            0.2503852903438598
+          ],
+          "danger_min_encoded_energy": 5.556818725840447,
+          "danger_min_expected_peak": 0.07732066045755194,
+          "danger_min_peak_amplification": 0.7732066045755192,
+          "worst_time_expected_bias_squared": 0.139417693570474,
+          "worst_time_bias_index": 10,
+          "full_energy_min_Pd": 0.01741054498571833
+        },
+        "identity": {
+          "danger_min_Pd": 0.0033333333333333366,
+          "danger_min_initial_state": [
+            0.548349135139203,
+            -0.09379367728969693
+          ],
+          "danger_min_encoded_energy": 6.235025852170221,
+          "danger_min_expected_peak": 0.10000000000000003,
+          "danger_min_peak_amplification": 1.0,
+          "worst_time_expected_bias_squared": 0.18022253426442864,
+          "worst_time_bias_index": 10,
+          "full_energy_min_Pd": 0.0033333333333333366
+        },
+        "public_scalar_alternation": {
+          "danger_min_Pd": 0.015274668022178835,
+          "danger_min_initial_state": [
+            0.3798848007259378,
+            0.2503187911903339
+          ],
+          "danger_min_encoded_energy": 5.556784439978386,
+          "danger_min_expected_peak": 0.06565844649582993,
+          "danger_min_peak_amplification": 0.6565844649582991,
+          "worst_time_expected_bias_squared": 0.11817758038171969,
+          "worst_time_bias_index": 10,
+          "full_energy_min_Pd": 0.033820187766212734
+        },
+        "public_coordinate_alternation": {
+          "danger_min_Pd": 0.0033342045032245904,
+          "danger_min_initial_state": [
+            0.5177643036014125,
+            -0.010592780776777722
+          ],
+          "danger_min_encoded_energy": 5.930712239983562,
+          "danger_min_expected_peak": 0.09988082250427956,
+          "danger_min_peak_amplification": 0.9988082250427955,
+          "worst_time_expected_bias_squared": 0.1748174188910591,
+          "worst_time_bias_index": 10,
+          "full_energy_min_Pd": 0.0033348023206903987
+        },
+        "public_R90_supplement": {
+          "danger_min_Pd": 0.0033483313370051924,
+          "danger_min_initial_state": [
+            0.37935170074184715,
+            0.2511277922975446
+          ],
+          "danger_min_encoded_energy": 5.557206542006798,
+          "danger_min_expected_peak": 0.08845169184967233,
+          "danger_min_peak_amplification": 0.8845169184967233,
+          "worst_time_expected_bias_squared": 0.16297435762045703,
+          "worst_time_bias_index": 10,
+          "full_energy_min_Pd": 0.003360321192001266
+        }
+      },
+      "spatial": {
+        "current_spatial": {
+          "common_danger_min": {
+            "theta": 0.5590424691421454,
+            "xi": [
+              0.39166221196344425,
+              0.23216303134930746
+            ],
+            "encoded_energy": 5.550151725101922,
+            "ncp": 0.2315949775506692,
+            "no_watermark_peak": 0.1,
+            "no_watermark_terminal": 0.1,
+            "Pd": 0.005774402666437905,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "E10_min": {
+            "theta": 0.5690724813470145,
+            "xi": [
+              0.5209951417970817,
+              0.3188576526751694
+            ],
+            "encoded_energy": 10.0,
+            "ncp": 0.41723266659217256,
+            "no_watermark_peak": 0.1801294218342553,
+            "no_watermark_terminal": 0.1801294218342553,
+            "Pd": 0.008085043273675138,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "mean_NCP_is_not_used_as_power": true,
+          "closed_form_common_danger_check": {
+            "ncp": 0.23159497755066916,
+            "Pd": 0.005774402666437905,
+            "initial_state": [
+              -0.3916622121396937,
+              -0.23216303107346137
+            ],
+            "energy": 5.550151725042125,
+            "formula": "D lambda_min(C,Sstar); eigenvector energy feasible; global Rayleigh optimum in frozen numerical matrices",
+            "physical_interval_power_certificate": false
+          }
+        },
+        "five_packet_spatial_energy": {
+          "common_danger_min": {
+            "theta": 0.5503463274824534,
+            "xi": [
+              0.3946560289052375,
+              0.22745904843638295
+            ],
+            "encoded_energy": 5.549311165063602,
+            "ncp": 1.7424132828660621,
+            "no_watermark_peak": 0.1,
+            "no_watermark_terminal": 0.1,
+            "Pd": 0.012230043753356826,
+            "df": 10,
+            "alpha": 0.0033333333333333335
+          },
+          "E10_min": {
+            "theta": 0.5627130010064875,
+            "xi": [
+              0.5240006680710118,
+              0.3142792973581707
+            ],
+            "encoded_energy": 10.0,
+            "ncp": 3.139606610755515,
+            "no_watermark_peak": 0.18016026516308944,
+            "no_watermark_terminal": 0.18016026516308944,
+            "Pd": 0.025476449040021044,
+            "df": 10,
+            "alpha": 0.0033333333333333335
+          },
+          "mean_NCP_is_not_used_as_power": true,
+          "closed_form_common_danger_check": {
+            "ncp": 1.7424132828660621,
+            "Pd": 0.012230043753356826,
+            "initial_state": [
+              -0.39465603131474025,
+              -0.2274590446356055
+            ],
+            "energy": 5.549311164528968,
+            "formula": "D lambda_min(C,Sstar); eigenvector energy feasible; global Rayleigh optimum in frozen numerical matrices",
+            "physical_interval_power_certificate": false
+          }
+        },
+        "standard_five_packet_spatial_matching": {
+          "common_danger_min": {
+            "theta": 0.5503463029935574,
+            "xi": [
+              0.39465603731130156,
+              0.22745903517656046
+            ],
+            "encoded_energy": 5.549311163198405,
+            "ncp": 1.7424132828660621,
+            "no_watermark_peak": 0.09999999999999999,
+            "no_watermark_terminal": 0.09999999999999999,
+            "Pd": 0.03432568025123203,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "E10_min": {
+            "theta": 0.5627129926868163,
+            "xi": [
+              0.5240006719890996,
+              0.3142792913602685
+            ],
+            "encoded_energy": 10.0,
+            "ncp": 3.139606610755516,
+            "no_watermark_peak": 0.18016026519939815,
+            "no_watermark_terminal": 0.18016026519939815,
+            "Pd": 0.08088980515623298,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "mean_NCP_is_not_used_as_power": true,
+          "closed_form_common_danger_check": {
+            "ncp": 1.7424132828660621,
+            "Pd": 0.03432568025123203,
+            "initial_state": [
+              -0.39465603131474025,
+              -0.2274590446356055
+            ],
+            "energy": 5.549311164528968,
+            "formula": "D lambda_min(C,Sstar); eigenvector energy feasible; global Rayleigh optimum in frozen numerical matrices",
+            "physical_interval_power_certificate": false
+          }
+        }
+      },
+      "orthogonal_spatial_matching_ceiling_diagnostic": 0.03800685961325461,
+      "ceiling_scope": "any exogenous orthogonal M, ordinary known-start spatial rank2 test, fixed floating feasible witness; not a certified global optimum or all-detector bound"
+    },
+    "stable": {
+      "schemes": {
+        "Gaussian": {
+          "danger_min_Pd": 0.12987476225120465,
+          "danger_min_initial_state": [
+            -1.1568284413498484,
+            0.2327344584915462
+          ],
+          "danger_min_encoded_energy": 3.7036907643220323,
+          "danger_min_expected_peak": 0.6882596781583702,
+          "danger_min_peak_amplification": 6.882596781583699,
+          "worst_time_expected_bias_squared": 1.8583195234962058,
+          "worst_time_bias_index": 1,
+          "full_energy_min_Pd": 0.3115975857125356
+        },
+        "normalized_Gaussian": {
+          "danger_min_Pd": 0.07374128988886103,
+          "danger_min_initial_state": [
+            -1.158778533804753,
+            0.2212675325622354
+          ],
+          "danger_min_encoded_energy": 3.703342139564049,
+          "danger_min_expected_peak": 0.43673525044627326,
+          "danger_min_peak_amplification": 4.3673525044627315,
+          "worst_time_expected_bias_squared": 1.1793567867738108,
+          "worst_time_bias_index": 1,
+          "full_energy_min_Pd": 0.20229002901557847
+        },
+        "whole_sign": {
+          "danger_min_Pd": 0.017906007023227206,
+          "danger_min_initial_state": [
+            -1.1565871022507126,
+            0.2341129787997382
+          ],
+          "danger_min_encoded_energy": 3.703778889591243,
+          "danger_min_expected_peak": 0.09999999999999999,
+          "danger_min_peak_amplification": 1.0,
+          "worst_time_expected_bias_squared": 0.27002636257468193,
+          "worst_time_bias_index": 1,
+          "full_energy_min_Pd": 0.07044212790460538
+        },
+        "coordinate_sign": {
+          "danger_min_Pd": 0.017947131755566188,
+          "danger_min_initial_state": [
+            -1.1521063095657056,
+            0.2583197670485876
+          ],
+          "danger_min_encoded_energy": 3.7069514321880934,
+          "danger_min_expected_peak": 0.10004457089004395,
+          "danger_min_peak_amplification": 1.0004457089004395,
+          "worst_time_expected_bias_squared": 0.27013027473897694,
+          "worst_time_bias_index": 1,
+          "full_energy_min_Pd": 0.0668392782370036
+        },
+        "Haar_SO2": {
+          "danger_min_Pd": 0.01804106250254319,
+          "danger_min_initial_state": [
+            -1.1579678431054456,
+            0.226108008351591
+          ],
+          "danger_min_encoded_energy": 3.7034056876261636,
+          "danger_min_expected_peak": 0.09410259464595071,
+          "danger_min_peak_amplification": 0.941025946459507,
+          "worst_time_expected_bias_squared": 0.25423212223782327,
+          "worst_time_bias_index": 1,
+          "full_energy_min_Pd": 0.06214702912388153
+        },
+        "identity": {
+          "danger_min_Pd": 0.0033333333333333366,
+          "danger_min_initial_state": [
+            1.175302045006304,
+            -0.06580892031874472
+          ],
+          "danger_min_encoded_energy": 3.7647408181026862,
+          "danger_min_expected_peak": 0.10000000000000002,
+          "danger_min_peak_amplification": 1.0,
+          "worst_time_expected_bias_squared": 0.27002636257468193,
+          "worst_time_bias_index": 1,
+          "full_energy_min_Pd": 0.0033333333333333366
+        },
+        "public_scalar_alternation": {
+          "danger_min_Pd": 0.03386010711301741,
+          "danger_min_initial_state": [
+            -1.1565591947382965,
+            0.23427184048800104
+          ],
+          "danger_min_encoded_energy": 3.7037896838161117,
+          "danger_min_expected_peak": 0.1,
+          "danger_min_peak_amplification": 1.0,
+          "worst_time_expected_bias_squared": 0.27002636257468193,
+          "worst_time_bias_index": 1,
+          "full_energy_min_Pd": 0.15633174012455286
+        },
+        "public_coordinate_alternation": {
+          "danger_min_Pd": 0.0033352908470998307,
+          "danger_min_initial_state": [
+            1.1766900745412034,
+            -0.021578390604912064
+          ],
+          "danger_min_encoded_energy": 3.8040503300657837,
+          "danger_min_expected_peak": 0.10000000000000003,
+          "danger_min_peak_amplification": 1.0,
+          "worst_time_expected_bias_squared": 0.27002636257468193,
+          "worst_time_bias_index": 1,
+          "full_energy_min_Pd": 0.003338480646748158
+        },
+        "public_R90_supplement": {
+          "danger_min_Pd": 0.003462124911520863,
+          "danger_min_initial_state": [
+            -1.1595035220332859,
+            0.2168436863633694
+          ],
+          "danger_min_encoded_energy": 3.7033906561422216,
+          "danger_min_expected_peak": 0.08813153649374446,
+          "danger_min_peak_amplification": 0.8813153649374447,
+          "worst_time_expected_bias_squared": 0.23899964540635252,
+          "worst_time_bias_index": 1,
+          "full_energy_min_Pd": 0.003599055355150834
+        }
+      },
+      "spatial": {
+        "current_spatial": {
+          "common_danger_min": {
+            "theta": 0.0801518019295702,
+            "xi": [
+              1.1768210669253065,
+              0.005941668342909188
+            ],
+            "encoded_energy": 3.833234363411042,
+            "ncp": 1.516547069167207,
+            "no_watermark_peak": 0.10000000000000002,
+            "no_watermark_terminal": 0.002572243144121354,
+            "Pd": 0.02861210345897506,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "E10_min": {
+            "theta": 1.323780859511553,
+            "xi": [
+              0.36436145380031015,
+              1.3847477810391162
+            ],
+            "encoded_energy": 10.0,
+            "ncp": 2.408684272530701,
+            "no_watermark_peak": 0.13046339705486804,
+            "no_watermark_terminal": 0.028502420506067973,
+            "Pd": 0.05416142469690307,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "mean_NCP_is_not_used_as_power": true,
+          "closed_form_common_danger_check": {
+            "ncp": 1.5165470691672072,
+            "Pd": 0.02861210345897507,
+            "initial_state": [
+              -1.1768210668971466,
+              -0.005941673517240294
+            ],
+            "energy": 3.833234369235505,
+            "formula": "D lambda_min(C,Sstar); eigenvector energy feasible; global Rayleigh optimum in frozen numerical matrices",
+            "physical_interval_power_certificate": false
+          }
+        },
+        "five_packet_spatial_energy": {
+          "common_danger_min": {
+            "theta": 3.0034551863130643,
+            "xi": [
+              -1.1640461492144556,
+              0.18666180790768197
+            ],
+            "encoded_energy": 3.706422895191108,
+            "ncp": 3.7056071998124955,
+            "no_watermark_peak": 0.09999999999999998,
+            "no_watermark_terminal": 0.001908733199216366,
+            "Pd": 0.03271041927814626,
+            "df": 10,
+            "alpha": 0.0033333333333333335
+          },
+          "E10_min": {
+            "theta": 1.2952238066757098,
+            "xi": [
+              0.41799513437180735,
+              1.371054504814178
+            ],
+            "encoded_energy": 10.0,
+            "ncp": 8.495905029040706,
+            "no_watermark_peak": 0.1311260927715219,
+            "no_watermark_terminal": 0.02840027504638663,
+            "Pd": 0.1430266403286337,
+            "df": 10,
+            "alpha": 0.0033333333333333335
+          },
+          "mean_NCP_is_not_used_as_power": true,
+          "closed_form_common_danger_check": {
+            "ncp": 3.7056071998124978,
+            "Pd": 0.03271041927814628,
+            "initial_state": [
+              -1.1640461511105753,
+              0.18666179425646073
+            ],
+            "energy": 3.706422897622901,
+            "formula": "D lambda_min(C,Sstar); eigenvector energy feasible; global Rayleigh optimum in frozen numerical matrices",
+            "physical_interval_power_certificate": false
+          }
+        },
+        "standard_five_packet_spatial_matching": {
+          "common_danger_min": {
+            "theta": 3.0034551863056698,
+            "xi": [
+              -1.1640461492135676,
+              0.1866618079140752
+            ],
+            "encoded_energy": 3.706422895189969,
+            "ncp": 3.7056071998124964,
+            "no_watermark_peak": 0.09999999999999999,
+            "no_watermark_terminal": 0.0019087331992097706,
+            "Pd": 0.10492568727026365,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "E10_min": {
+            "theta": 1.2952237874534303,
+            "xi": [
+              0.4179951703638022,
+              1.3710544952193948
+            ],
+            "encoded_energy": 10.0,
+            "ncp": 8.49590502904071,
+            "no_watermark_peak": 0.13112609329337643,
+            "no_watermark_terminal": 0.02840027496490456,
+            "Pd": 0.38181444994270064,
+            "df": 2,
+            "alpha": 0.0033333333333333335
+          },
+          "mean_NCP_is_not_used_as_power": true,
+          "closed_form_common_danger_check": {
+            "ncp": 3.7056071998124978,
+            "Pd": 0.10492568727026366,
+            "initial_state": [
+              -1.1640461511105753,
+              0.18666179425646073
+            ],
+            "energy": 3.706422897622901,
+            "formula": "D lambda_min(C,Sstar); eigenvector energy feasible; global Rayleigh optimum in frozen numerical matrices",
+            "physical_interval_power_certificate": false
+          }
+        }
+      },
+      "orthogonal_spatial_matching_ceiling_diagnostic": 0.11822083904562891,
+      "ceiling_scope": "any exogenous orthogonal M, ordinary known-start spatial rank2 test, fixed floating feasible witness; not a certified global optimum or all-detector bound"
+    }
+  }
+}

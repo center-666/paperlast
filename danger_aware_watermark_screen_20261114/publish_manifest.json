@@ -1,0 +1,233 @@
+{
+  "date": "2026-11-14",
+  "parent_commit": "fc4f60f9904a83a67b3df0986caa64398b471585",
+  "decision": "C",
+  "only_new_owned_work": true,
+  "third_party_fulltexts_uploaded": false,
+  "normalization": "UTF-8/LF text; binary figures unchanged",
+  "source_hash_note": "frozen/input hashes retain local original bytes; do not mix with newline-normalized review copies",
+  "files": [
+    {
+      "file": "assemble_comparison.py",
+      "source_sha256": "e004920bdac4f2a928104607e817599d9d164647a2faf0146b37b8a1f88f669e",
+      "public_sha256": "e004920bdac4f2a928104607e817599d9d164647a2faf0146b37b8a1f88f669e",
+      "public_bytes": 2147
+    },
+    {
+      "file": "bounds_review.json",
+      "source_sha256": "6ebf7088bf505440896523eef5416f21f8d94b5fb1ab31ab80b04f91e8b661ef",
+      "public_sha256": "503e40a353803bca2b5197e832203cb35341a81009dd8e8f8b5ad5756fa8d78b",
+      "public_bytes": 14110
+    },
+    {
+      "file": "bounds_review.md",
+      "source_sha256": "8945602d77913f2de30d9b8d0fb971773c3926ad888e757fe28af066cffba3ea",
+      "public_sha256": "8945602d77913f2de30d9b8d0fb971773c3926ad888e757fe28af066cffba3ea",
+      "public_bytes": 16682
+    },
+    {
+      "file": "bounds_review.py",
+      "source_sha256": "767904d0993fbc250fa0fcff066274d733f8984b5848dbd04e47358e10d88e40",
+      "public_sha256": "767904d0993fbc250fa0fcff066274d733f8984b5848dbd04e47358e10d88e40",
+      "public_bytes": 7130
+    },
+    {
+      "file": "certify_first_packet_detection_bound.py",
+      "source_sha256": "222f1936c8283c908f6f7050c7125c630ff6d3d4f1e4d18a231fe5b9d4429603",
+      "public_sha256": "222f1936c8283c908f6f7050c7125c630ff6d3d4f1e4d18a231fe5b9d4429603",
+      "public_bytes": 4168
+    },
+    {
+      "file": "comparison_summary.json",
+      "source_sha256": "4efc150226218afebceb4586418d1b5eb1beae51730c4496d6366f18b0645641",
+      "public_sha256": "aa97612d4a7008fe53a1f18ca28d63e8eb0e5ee53c02d331fd14bc8fe825bae7",
+      "public_bytes": 19750
+    },
+    {
+      "file": "danger_detection_check.py",
+      "source_sha256": "cee7b8d35d4f0e3586ff45532467ea31e6a45dd05711a691dbba13109a8f3010",
+      "public_sha256": "cee7b8d35d4f0e3586ff45532467ea31e6a45dd05711a691dbba13109a8f3010",
+      "public_bytes": 5563
+    },
+    {
+      "file": "danger_detection_checks.json",
+      "source_sha256": "63975335225de03ed2d208fb993e600ac5b0375fd9aa1d398b85e8f9c7895723",
+      "public_sha256": "63e2d6833ca0992ef66e0ac6b3c60f3f3fbe3911a7a16aa30d09624e91c505c1",
+      "public_bytes": 4841
+    },
+    {
+      "file": "danger_detection_compare.py",
+      "source_sha256": "c7e8eddc5e3ce5869d845d304200fe292b72f2116ac44f6a7e8fb1f6e85c9b6c",
+      "public_sha256": "c7e8eddc5e3ce5869d845d304200fe292b72f2116ac44f6a7e8fb1f6e85c9b6c",
+      "public_bytes": 10541
+    },
+    {
+      "file": "danger_detection_comparison.json",
+      "source_sha256": "8497a3d2b25152e3f36e356d95017f17ae43e4218f8d58c490b59a9e8c96fee3",
+      "public_sha256": "5ba2b1d1d3deb06c9dcf543c4a24e923f5dcc8e1a0bac41079e30b08ade64ebb",
+      "public_bytes": 21065938
+    },
+    {
+      "file": "danger_detection_write_report.py",
+      "source_sha256": "153563a5e232aa90ed8f30ea4219c56afd14ba5a9ab4e2fdcb42afa02bfd7a27",
+      "public_sha256": "153563a5e232aa90ed8f30ea4219c56afd14ba5a9ab4e2fdcb42afa02bfd7a27",
+      "public_bytes": 9275
+    },
+    {
+      "file": "danger_detection_共同危险集合功效与损害.md",
+      "source_sha256": "f76bf30b1e8f23025a7a70e0b23c5000e668a270ea92534e172ba2e528143b88",
+      "public_sha256": "944e5cb3980822b6b65cff40aed59c36a936bb07d60407ada547c49cfb8cf03f",
+      "public_bytes": 8384
+    },
+    {
+      "file": "danger_geometry.json",
+      "source_sha256": "eb06e842a769013ea90cc0b7186b0fcadbf844f5f2714772f31ced1101c60c95",
+      "public_sha256": "c547e69060d3ff7627f276752da26048b6f2415d10044d9e0028912d036a3228",
+      "public_bytes": 662844
+    },
+    {
+      "file": "danger_geometry.py",
+      "source_sha256": "54e32847c1ddd0d90d2b5e7e26cea00387cd490cf9a58fdfcf2e03df8d659968",
+      "public_sha256": "54e32847c1ddd0d90d2b5e7e26cea00387cd490cf9a58fdfcf2e03df8d659968",
+      "public_bytes": 13101
+    },
+    {
+      "file": "danger_geometry_main.pdf",
+      "source_sha256": "c879af80b87608878e9129399cf1f091d1befa2b51d47bbf0b9c82517ffd490e",
+      "public_sha256": "c879af80b87608878e9129399cf1f091d1befa2b51d47bbf0b9c82517ffd490e",
+      "public_bytes": 82781
+    },
+    {
+      "file": "danger_geometry_main.png",
+      "source_sha256": "6710a6a14ea8ac8d9a31f78503e39715855b8eec5ef4b5273a052a4c20e55802",
+      "public_sha256": "6710a6a14ea8ac8d9a31f78503e39715855b8eec5ef4b5273a052a4c20e55802",
+      "public_bytes": 284280
+    },
+    {
+      "file": "delivery_verification.json",
+      "source_sha256": "54fbb2553f0c937465eddd8ce90cb91ad35fdcbc9f275af6af7c315387ef217d",
+      "public_sha256": "bdb3b77bd2673927894670d1bc82298c4fe048bf1a0febd8d15bb88389494c4f",
+      "public_bytes": 2504
+    },
+    {
+      "file": "detection_damage_figure_metadata.json",
+      "source_sha256": "ce9c3210e36bcfc162e478d7f9e4d48f224db1ef5182086ff674130977b429d0",
+      "public_sha256": "a5be6863fe623554039250fac8774b3ac9a5ad679803514ba5f62f75e8e535f9",
+      "public_bytes": 722
+    },
+    {
+      "file": "detection_damage_map.pdf",
+      "source_sha256": "52597f342d3ef9b6df6f38552e46bd1e676c9a6484fe76c91fde1062bd61e647",
+      "public_sha256": "52597f342d3ef9b6df6f38552e46bd1e676c9a6484fe76c91fde1062bd61e647",
+      "public_bytes": 892068
+    },
+    {
+      "file": "detection_damage_map.png",
+      "source_sha256": "c42ff5956e1e96bdf90a7be6f1977d0c6584606fa0cd7c1fc3d0692569481ced",
+      "public_sha256": "c42ff5956e1e96bdf90a7be6f1977d0c6584606fa0cd7c1fc3d0692569481ced",
+      "public_bytes": 509986
+    },
+    {
+      "file": "first_alarm_bounds.json",
+      "source_sha256": "e32d04a670701c9f15d73db029884058729824509164e4901986ae70cbb36b89",
+      "public_sha256": "353b900d8022c3c5a45d736b24fb8c1ab4a889d35981d70a52b8eb4e38a9700e",
+      "public_bytes": 666141
+    },
+    {
+      "file": "first_alarm_bounds.md",
+      "source_sha256": "05f1a34b84eb378d987be52eb08bfe4726e4b35d98df0764cb1b4f1b114dbe3f",
+      "public_sha256": "6850227bfa1d03165cc34526a3db7ec16131bd2e7573955af6b33afe868e7f72",
+      "public_bytes": 9003
+    },
+    {
+      "file": "first_alarm_bounds.py",
+      "source_sha256": "f63aa06ef195c9043a4c1c7f448d0ef241f79263e53dc68b460e2c894a89faca",
+      "public_sha256": "f63aa06ef195c9043a4c1c7f448d0ef241f79263e53dc68b460e2c894a89faca",
+      "public_bytes": 10127
+    },
+    {
+      "file": "first_alarm_bounds_write_report.py",
+      "source_sha256": "22acfcf05c26b003e82a1ba78990ba141248704f5a7f18170103bcb80cf78b7e",
+      "public_sha256": "22acfcf05c26b003e82a1ba78990ba141248704f5a7f18170103bcb80cf78b7e",
+      "public_bytes": 8812
+    },
+    {
+      "file": "first_packet_detection_bound.json",
+      "source_sha256": "a3a9ce591e3b0e2d9796f375f4671ab2ff35c9cd564c24b41071895e35b2eeeb",
+      "public_sha256": "fb4d8726fe67a6004ee665f757ac7378e48954d51b249d16252c92898d2f5dfd",
+      "public_bytes": 3095
+    },
+    {
+      "file": "frozen_inputs.json",
+      "source_sha256": "cacf8f1154fdc502ec76407c91f37e40eb0ac9e3d2ea75ad31fff5c6981c839b",
+      "public_sha256": "8653a7d4054e93b724fc9b7883046c4d25d5b87aeb9e2e5e6358588ffbdf6580",
+      "public_bytes": 81671
+    },
+    {
+      "file": "plot_detection_damage.py",
+      "source_sha256": "430a7987dadb454b1de8e884acf48b7632bd6417586194ecd421f368819acef5",
+      "public_sha256": "430a7987dadb454b1de8e884acf48b7632bd6417586194ecd421f368819acef5",
+      "public_bytes": 3975
+    },
+    {
+      "file": "README.md",
+      "source_sha256": "94ec9088fa60436fce9e60947bc1dc1cc55a5dcd0db7d2eba38d7e59f6f177eb",
+      "public_sha256": "94ec9088fa60436fce9e60947bc1dc1cc55a5dcd0db7d2eba38d7e59f6f177eb",
+      "public_bytes": 3020
+    },
+    {
+      "file": "spatial_baseline.json",
+      "source_sha256": "4d1956b5c84803b3889545c7ce537d1c43de6f36af8dda77ce7bc64d94511933",
+      "public_sha256": "9771d1bf4961da18060bfd8cbbec081b833eb5674893a46932d872ea961857a3",
+      "public_bytes": 30767
+    },
+    {
+      "file": "spatial_baseline.py",
+      "source_sha256": "95330b05bafb34fc49a51b2331a700012c7b9286f2a45570cd35cacde63ad478",
+      "public_sha256": "95330b05bafb34fc49a51b2331a700012c7b9286f2a45570cd35cacde63ad478",
+      "public_bytes": 6160
+    },
+    {
+      "file": "verify_delivery.py",
+      "source_sha256": "374121a4490417edcde2bafeca9a11c07540f49aad5eaa76a216d7e89a797a4d",
+      "public_sha256": "374121a4490417edcde2bafeca9a11c07540f49aad5eaa76a216d7e89a797a4d",
+      "public_bytes": 4992
+    },
+    {
+      "file": "报告1_危险FDI方向几何与能量约束.md",
+      "source_sha256": "04a6726975dc61c0187fb30f06bce856acde01d7d872caf5d663d5d304164d7f",
+      "public_sha256": "04a6726975dc61c0187fb30f06bce856acde01d7d872caf5d663d5d304164d7f",
+      "public_bytes": 10744
+    },
+    {
+      "file": "报告2_危险方向与检测弱方向的错配.md",
+      "source_sha256": "b38ef191d700ee21810fe2f2adaa2919891ab2faeb51152e8afa771b61c00b6e",
+      "public_sha256": "b38ef191d700ee21810fe2f2adaa2919891ab2faeb51152e8afa771b61c00b6e",
+      "public_bytes": 5046
+    },
+    {
+      "file": "报告3_水印与空间检测的统一强基线.md",
+      "source_sha256": "9a188eb7a3ae1b896f23729460dc239c2b5192e5ba41e68b8e32d59e0904d25a",
+      "public_sha256": "9a188eb7a3ae1b896f23729460dc239c2b5192e5ba41e68b8e32d59e0904d25a",
+      "public_bytes": 6569
+    },
+    {
+      "file": "报告4_有界水印的可行性与停止边界.md",
+      "source_sha256": "da9566984f7325e874dcf3413637f3293aece53962ba178ed7faddafe99f9f7b",
+      "public_sha256": "da9566984f7325e874dcf3413637f3293aece53962ba178ed7faddafe99f9f7b",
+      "public_bytes": 6173
+    },
+    {
+      "file": "报告5_审稿对应与本轮决定_C.md",
+      "source_sha256": "3ccaa2c817593b83e3f2150e8050ec9519e2483c877feae89b64e82e3e3a00b6",
+      "public_sha256": "3ccaa2c817593b83e3f2150e8050ec9519e2483c877feae89b64e82e3e3a00b6",
+      "public_bytes": 5500
+    },
+    {
+      "file": "证据分级与阶段验收.md",
+      "source_sha256": "2d2907c9379858c40e52aa889c0d935d59aae4691679b1ebf9a130c68f9d290c",
+      "public_sha256": "2d2907c9379858c40e52aa889c0d935d59aae4691679b1ebf9a130c68f9d290c",
+      "public_bytes": 3116
+    }
+  ]
+}

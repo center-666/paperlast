@@ -1,0 +1,20 @@
+{
+  "unstable": {
+    "heatmap_grid": 170,
+    "heatmap_watermark_paths": 32,
+    "physical_noise_samples": 0,
+    "all_heatmap_powers_are_actual_noncentral_mixtures": true,
+    "boundary_spatial_match_min_grid": 0.03432584083331211,
+    "boundary_spatial_energy_min_grid": 0.01223008825947309,
+    "no_event_probability_or_global_optimization_claim": true
+  },
+  "stable": {
+    "heatmap_grid": 170,
+    "heatmap_watermark_paths": 32,
+    "physical_noise_samples": 0,
+    "all_heatmap_powers_are_actual_noncentral_mixtures": true,
+    "boundary_spatial_match_min_grid": 0.10492629806150133,
+    "boundary_spatial_energy_min_grid": 0.032710607084180644,
+    "no_event_probability_or_global_optimization_claim": true
+  }
+}

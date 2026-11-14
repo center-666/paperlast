@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-14",
+  "passed": true,
+  "baseline_commit": "fc4f60f9904a83a67b3df0986caa64398b471585",
+  "protected_prior_files": 425,
+  "mismatches": [],
+  "legacy_original_and_formal_nonlibrary": 17,
+  "original_zip_and_sources": 14,
+  "old_stage_TeX_PDF": 8,
+  "python_AST_checked": [
+    "assemble_comparison.py",
+    "bounds_review.py",
+    "certify_first_packet_detection_bound.py",
+    "danger_detection_check.py",
+    "danger_detection_compare.py",
+    "danger_detection_write_report.py",
+    "danger_geometry.py",
+    "first_alarm_bounds.py",
+    "first_alarm_bounds_write_report.py",
+    "freeze_inputs.py",
+    "plot_detection_damage.py",
+    "prepare_publish.py",
+    "spatial_baseline.py",
+    "verify_delivery.py"
+  ],
+  "local_links_checked": 10,
+  "independent_geometry_moment_maxdiff": {
+    "unstable": 2.7755575615628914e-16,
+    "stable": 3.469446951953614e-17
+  },
+  "spatial_closed_form_crosscheck": true,
+  "first_alarm_bound_invariants": true,
+  "strict_oracle_bound": "risk>12/25 under declared assumptions",
+  "physical_noise_samples": 0,
+  "new_network_trajectories": 0,
+  "new_watermark_algorithms": 0,
+  "new_attack_mechanisms": 0,
+  "manuscript_changed": false,
+  "unique_library_changed": false,
+  "figure_visual_QA": {
+    "viewed": [
+      "danger_geometry_main.png",
+      "detection_damage_map.png"
+    ],
+    "figures_are_owned_scientific_plots": true,
+    "observed_clipping_or_missing_labels": false
+  },
+  "C_decision_scope": "current exogenous unit-resource dangerous-direction watermark route; not all kappa/detectors no-go",
+  "certificate_hashes": {
+    "frozen_inputs.json": "cacf8f1154fdc502ec76407c91f37e40eb0ac9e3d2ea75ad31fff5c6981c839b",
+    "danger_geometry.json": "eb06e842a769013ea90cc0b7186b0fcadbf844f5f2714772f31ced1101c60c95",
+    "danger_detection_comparison.json": "8497a3d2b25152e3f36e356d95017f17ae43e4218f8d58c490b59a9e8c96fee3",
+    "danger_detection_checks.json": "63975335225de03ed2d208fb993e600ac5b0375fd9aa1d398b85e8f9c7895723",
+    "spatial_baseline.json": "4d1956b5c84803b3889545c7ce537d1c43de6f36af8dda77ce7bc64d94511933",
+    "bounds_review.json": "6ebf7088bf505440896523eef5416f21f8d94b5fb1ab31ab80b04f91e8b661ef",
+    "first_packet_detection_bound.json": "a3a9ce591e3b0e2d9796f375f4671ab2ff35c9cd564c24b41071895e35b2eeeb",
+    "first_alarm_bounds.json": "e32d04a670701c9f15d73db029884058729824509164e4901986ae70cbb36b89",
+    "comparison_summary.json": "4efc150226218afebceb4586418d1b5eb1beae51730c4496d6366f18b0645641"
+  }
+}

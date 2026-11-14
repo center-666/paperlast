@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-14",
+  "type": "strict first-packet bound, not a new defense",
+  "input_sha256": {
+    "five_node_aggregate_model.json": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+    "aggregate_gap_certificate.json": "9835675960128343063f5f0ef710d942feb148ef2d0ed91ae3f3716b5fb145e8"
+  },
+  "model": "stable A_s, original-compatible common-G target1, b0=0",
+  "attack": "a_t=A_s^t xi, t0..9; fixed before secret realization",
+  "xi": [
+    "-189/100",
+    "21/50"
+  ],
+  "energy": "255167343258867116471427220756030581/25600000000000000000000000000000000",
+  "energy_float": 9.967474346049496,
+  "xi_norm_squared": "7497/2000",
+  "sigma_min_G_strict_lower": "1/4",
+  "gain_principal_minor_certificate": [
+    "94543596111296912134874187803566204889/10000000000000000000000000000000000000000",
+    "58624164675162618992788514818715897055911850432061438236382919501491205521/25000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  ],
+  "all_orthogonal_first_bias_squared_strict_lower": "7497/32000",
+  "source_current_noise_covariance": "(1/2)I_2",
+  "oracle_ncp": "7497/1000",
+  "first_packet_alpha": "1/300",
+  "oracle_power_numerical": 0.5099777513646236,
+  "oracle_miss_numerical": 0.49002224863537636,
+  "Mills_tail_lower_at_27over10": "203999904384914391128452381399445636719777296809697105606139577962367456977105291428889851000452883338035048925336038229745742008690613527560532787200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/60186326709259475070112926477256636747988171360949500557563330814744362241520050664076416961509128374251440992198924370944481362640537633514028902603028039660999639638455167454882978401325701954002255884654479500879003331562812668869752682502294210003254263111404210698191307153081748987816334430001953711285872479699091649135725007060044411111271870375923875852653935796756129",
+  "Mills_tail_lower_float": 0.003389472585199815,
+  "strict_risk_lower": "12/25",
+  "strict_risk_lower_float": 0.48,
+  "proof": "NP lemma for known Gaussian shift; constant signal norm under any observed exogenous orthogonal M; Mills bound plus Gaussian density bound; first danger occurs before any later evidence",
+  "constraints": [
+    "monitor starts at attack0; first test has unconditional nominal size <=1/300",
+    "orthogonal parameter sequence independent of all physical noises",
+    "oracle side information is hypothesis-independent and independent of attacked sender current noise; true current state and all past allowed",
+    "no clean current sender measurement, safe duplicate or updated-state descendant that reveals its current noise",
+    "no data-dependent attack start, no prior alarm conditioning",
+    "not a bound for arbitrary nonunitary encoders, other size allocations or all physical systems"
+  ],
+  "no_window_independence_needed": true,
+  "new_watermark_algorithm": false,
+  "new_attack_mechanism": false
+}
