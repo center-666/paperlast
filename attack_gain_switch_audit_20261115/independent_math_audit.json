@@ -1,0 +1,432 @@
+{
+  "date": "2026-11-15",
+  "mode_certificates": {
+    "unstable": [
+      {
+        "baseline": "B0",
+        "phi": 0,
+        "F_exact": "Matrix([[36277930349325823683/312500000000000000000, 1185299709235598247/250000000000000000000], [245228657178188131/625000000000000000000, 49335619547174791403/500000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "92391836941183555864450997421630355988883/390625000000000000000000000000000000000000",
+          "86703979012464639495579861693907237562773117743633164176446542398058130142784729/1525878906250000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B0",
+        "phi": 1,
+        "F_exact": "Matrix([[36277930349325823683/312500000000000000000, 1185299709235598247/250000000000000000000], [245228657178188131/625000000000000000000, 49335619547174791403/500000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "92391836941183555864450997421630355988883/390625000000000000000000000000000000000000",
+          "86703979012464639495579861693907237562773117743633164176446542398058130142784729/1525878906250000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B1",
+        "phi": 0,
+        "F_exact": "Matrix([[1020458382214276721559/2500000000000000000000, 9219993676471530489/500000000000000000000], [1921863400166531401/625000000000000000000, 181464934217526834163/500000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "521105593225758728210016683849806480244703/6250000000000000000000000000000000000000000",
+          "15248324733590368001249245450804756527546189930925857647177146118369495856126217121/1562500000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B1",
+        "phi": 1,
+        "F_exact": "Matrix([[36277930349325823683/312500000000000000000, 1185299709235598247/250000000000000000000], [245228657178188131/625000000000000000000, 49335619547174791403/500000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "92391836941183555864450997421630355988883/390625000000000000000000000000000000000000",
+          "86703979012464639495579861693907237562773117743633164176446542398058130142784729/1525878906250000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B2",
+        "phi": 0,
+        "F_exact": "Matrix([[184710123858299226957/1250000000000000000000, 1466765108548396347/250000000000000000000], [895407879364889677/2500000000000000000000, 239199330473572753651/2000000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "57041115152869464242728241042296897476651/250000000000000000000000000000000000000000",
+          "336054692295817162115539323697472255440528899178968730188133764275319609883786169561/6250000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B2",
+        "phi": 1,
+        "F_exact": "Matrix([[36277930349325823683/312500000000000000000, 1185299709235598247/250000000000000000000], [245228657178188131/625000000000000000000, 49335619547174791403/500000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "92391836941183555864450997421630355988883/390625000000000000000000000000000000000000",
+          "86703979012464639495579861693907237562773117743633164176446542398058130142784729/1525878906250000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B3",
+        "phi": 0,
+        "F_exact": "Matrix([[1020458382214276721559/2500000000000000000000, 9219993676471530489/500000000000000000000], [1921863400166531401/625000000000000000000, 181464934217526834163/500000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "521105593225758728210016683849806480244703/6250000000000000000000000000000000000000000",
+          "15248324733590368001249245450804756527546189930925857647177146118369495856126217121/1562500000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B3",
+        "phi": 1,
+        "F_exact": "Matrix([[36277930349325823683/312500000000000000000, 1185299709235598247/250000000000000000000], [245228657178188131/625000000000000000000, 49335619547174791403/500000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "92391836941183555864450997421630355988883/390625000000000000000000000000000000000000",
+          "86703979012464639495579861693907237562773117743633164176446542398058130142784729/1525878906250000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      }
+    ],
+    "stable": [
+      {
+        "baseline": "B0",
+        "phi": 0,
+        "F_exact": "Matrix([[2265063028144359077861/25000000000000000000000, 12941471292676643999/2500000000000000000000], [375531413349503573/625000000000000000000, 867511654379502576073/10000000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "151119263840385646754804341002350258113538279/625000000000000000000000000000000000000000000",
+          "3663830864528612242754163660337212925966815353326654844670710267934024007184024556170089/62500000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B0",
+        "phi": 1,
+        "F_exact": "Matrix([[2265063028144359077861/25000000000000000000000, 12941471292676643999/2500000000000000000000], [375531413349503573/625000000000000000000, 867511654379502576073/10000000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "151119263840385646754804341002350258113538279/625000000000000000000000000000000000000000000",
+          "3663830864528612242754163660337212925966815353326654844670710267934024007184024556170089/62500000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B1",
+        "phi": 0,
+        "F_exact": "Matrix([[3819641470502201739223/12500000000000000000000, 732310839089464051/39062500000000000000], [2013062205588202533/625000000000000000000, 1563270964396127005329/5000000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "24471218069042350865422608212401462856920671/156250000000000000000000000000000000000000000",
+          "92749721096969592345834266559682106117872439506575894364344561583124128012748457646769/3906250000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B1",
+        "phi": 1,
+        "F_exact": "Matrix([[2265063028144359077861/25000000000000000000000, 12941471292676643999/2500000000000000000000], [375531413349503573/625000000000000000000, 867511654379502576073/10000000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "151119263840385646754804341002350258113538279/625000000000000000000000000000000000000000000",
+          "3663830864528612242754163660337212925966815353326654844670710267934024007184024556170089/62500000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B2",
+        "phi": 0,
+        "F_exact": "Matrix([[1168123916728424249649/10000000000000000000000, 6543676667842304841/1000000000000000000000], [32477339834244661/50000000000000000000, 42266594808020089063/400000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "23635444324062937008849717569059011126536799/100000000000000000000000000000000000000000000",
+          "903020845313673421119171894849062813445237910173083242264899280103801697150880715249/16000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B2",
+        "phi": 1,
+        "F_exact": "Matrix([[2265063028144359077861/25000000000000000000000, 12941471292676643999/2500000000000000000000], [375531413349503573/625000000000000000000, 867511654379502576073/10000000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "151119263840385646754804341002350258113538279/625000000000000000000000000000000000000000000",
+          "3663830864528612242754163660337212925966815353326654844670710267934024007184024556170089/62500000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B3",
+        "phi": 0,
+        "F_exact": "Matrix([[3819641470502201739223/12500000000000000000000, 732310839089464051/39062500000000000000], [2013062205588202533/625000000000000000000, 1563270964396127005329/5000000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "24471218069042350865422608212401462856920671/156250000000000000000000000000000000000000000",
+          "92749721096969592345834266559682106117872439506575894364344561583124128012748457646769/3906250000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      },
+      {
+        "baseline": "B3",
+        "phi": 1,
+        "F_exact": "Matrix([[2265063028144359077861/25000000000000000000000, 12941471292676643999/2500000000000000000000], [375531413349503573/625000000000000000000, 867511654379502576073/10000000000000000000000]])",
+        "quarter_I_minus_FtF_exact_minors": [
+          "151119263840385646754804341002350258113538279/625000000000000000000000000000000000000000000",
+          "3663830864528612242754163660337212925966815353326654844670710267934024007184024556170089/62500000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "positive": true
+      }
+    ]
+  },
+  "common_quadratic_P": "I2",
+  "common_r": 0.5,
+  "independent_affine_recomputation_error": 2.842170943040401e-14,
+  "physical_state_measurement_identity_error": 1.251776460264864e-14,
+  "B2_rejection_information_form_identity_error": 1.6653345369377348e-16,
+  "primary_risk_difference_implies_clean_FA": true,
+  "all_four_independent_closed_loop_reexecution_error": 0.0,
+  "raw_spatial_nominal_finite_event_FA_exact_under_iid_noise": 0.048818199288886865,
+  "new_physical_paths": 0,
+  "new_parameters_or_seed_changes": false,
+  "extra_diagnostics": "readmission and continuing pollution already requested in registration; derived from saved arrays, no added runs",
+  "readmission_diagnostics": {
+    "unstable": {
+      "identity/ordinary": {
+        "B0": {
+          "readmit_during_attack_runs": 0,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 4.0,
+          "any_danger_in_event_count": 128,
+          "max_squared_bias_after_stop_mean": 0.002093914557713937
+        },
+        "B1": {
+          "readmit_during_attack_runs": 5,
+          "dangerous_readmit_during_attack_runs": 1,
+          "mean_dangerous_posterior_updates_in_event": 4.1484375,
+          "any_danger_in_event_count": 128,
+          "max_squared_bias_after_stop_mean": 0.03780021358276213
+        },
+        "B2": {
+          "readmit_during_attack_runs": 5,
+          "dangerous_readmit_during_attack_runs": 2,
+          "mean_dangerous_posterior_updates_in_event": 4.0234375,
+          "any_danger_in_event_count": 128,
+          "max_squared_bias_after_stop_mean": 0.013432443947418455
+        },
+        "B3": {
+          "readmit_during_attack_runs": 5,
+          "dangerous_readmit_during_attack_runs": 1,
+          "mean_dangerous_posterior_updates_in_event": 4.1484375,
+          "any_danger_in_event_count": 128,
+          "max_squared_bias_after_stop_mean": 0.03780021358276213
+        }
+      },
+      "identity/P1": {
+        "B0": {
+          "readmit_during_attack_runs": 0,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 4.0,
+          "any_danger_in_event_count": 128,
+          "max_squared_bias_after_stop_mean": 0.002414561432708981
+        },
+        "B1": {
+          "readmit_during_attack_runs": 5,
+          "dangerous_readmit_during_attack_runs": 4,
+          "mean_dangerous_posterior_updates_in_event": 4.0859375,
+          "any_danger_in_event_count": 127,
+          "max_squared_bias_after_stop_mean": 0.026042143917764507
+        },
+        "B2": {
+          "readmit_during_attack_runs": 5,
+          "dangerous_readmit_during_attack_runs": 3,
+          "mean_dangerous_posterior_updates_in_event": 3.96875,
+          "any_danger_in_event_count": 127,
+          "max_squared_bias_after_stop_mean": 0.014174323829250851
+        },
+        "B3": {
+          "readmit_during_attack_runs": 5,
+          "dangerous_readmit_during_attack_runs": 4,
+          "mean_dangerous_posterior_updates_in_event": 4.0859375,
+          "any_danger_in_event_count": 127,
+          "max_squared_bias_after_stop_mean": 0.026042143917764507
+        }
+      },
+      "original_Gaussian/ordinary": {
+        "B0": {
+          "readmit_during_attack_runs": 0,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 3.25,
+          "any_danger_in_event_count": 124,
+          "max_squared_bias_after_stop_mean": 0.0027248778788355865
+        },
+        "B1": {
+          "readmit_during_attack_runs": 15,
+          "dangerous_readmit_during_attack_runs": 2,
+          "mean_dangerous_posterior_updates_in_event": 4.0,
+          "any_danger_in_event_count": 126,
+          "max_squared_bias_after_stop_mean": 0.13857923062460584
+        },
+        "B2": {
+          "readmit_during_attack_runs": 15,
+          "dangerous_readmit_during_attack_runs": 2,
+          "mean_dangerous_posterior_updates_in_event": 3.296875,
+          "any_danger_in_event_count": 126,
+          "max_squared_bias_after_stop_mean": 0.048659826242929166
+        },
+        "B3": {
+          "readmit_during_attack_runs": 15,
+          "dangerous_readmit_during_attack_runs": 2,
+          "mean_dangerous_posterior_updates_in_event": 4.0,
+          "any_danger_in_event_count": 126,
+          "max_squared_bias_after_stop_mean": 0.13857923062460584
+        }
+      },
+      "original_Gaussian/P1": {
+        "B0": {
+          "readmit_during_attack_runs": 0,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 3.0625,
+          "any_danger_in_event_count": 125,
+          "max_squared_bias_after_stop_mean": 0.0035614292911760087
+        },
+        "B1": {
+          "readmit_during_attack_runs": 11,
+          "dangerous_readmit_during_attack_runs": 3,
+          "mean_dangerous_posterior_updates_in_event": 3.7890625,
+          "any_danger_in_event_count": 124,
+          "max_squared_bias_after_stop_mean": 0.13866754346415963
+        },
+        "B2": {
+          "readmit_during_attack_runs": 11,
+          "dangerous_readmit_during_attack_runs": 3,
+          "mean_dangerous_posterior_updates_in_event": 3.0390625,
+          "any_danger_in_event_count": 123,
+          "max_squared_bias_after_stop_mean": 0.05142582341173309
+        },
+        "B3": {
+          "readmit_during_attack_runs": 11,
+          "dangerous_readmit_during_attack_runs": 3,
+          "mean_dangerous_posterior_updates_in_event": 3.7890625,
+          "any_danger_in_event_count": 124,
+          "max_squared_bias_after_stop_mean": 0.13866754346415963
+        }
+      }
+    },
+    "stable": {
+      "identity/ordinary": {
+        "B0": {
+          "readmit_during_attack_runs": 0,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 3.0,
+          "any_danger_in_event_count": 128,
+          "max_squared_bias_after_stop_mean": 3.9209665567746326e-05
+        },
+        "B1": {
+          "readmit_during_attack_runs": 23,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 3.1796875,
+          "any_danger_in_event_count": 128,
+          "max_squared_bias_after_stop_mean": 0.0050306165178011335
+        },
+        "B2": {
+          "readmit_during_attack_runs": 23,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 3.0078125,
+          "any_danger_in_event_count": 127,
+          "max_squared_bias_after_stop_mean": 0.005310413260637664
+        },
+        "B3": {
+          "readmit_during_attack_runs": 23,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 3.1796875,
+          "any_danger_in_event_count": 128,
+          "max_squared_bias_after_stop_mean": 0.0050306165178011335
+        }
+      },
+      "identity/P1": {
+        "B0": {
+          "readmit_during_attack_runs": 0,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 3.0,
+          "any_danger_in_event_count": 128,
+          "max_squared_bias_after_stop_mean": 3.958893700178054e-05
+        },
+        "B1": {
+          "readmit_during_attack_runs": 22,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 3.2578125,
+          "any_danger_in_event_count": 128,
+          "max_squared_bias_after_stop_mean": 3.89792079832659e-05
+        },
+        "B2": {
+          "readmit_during_attack_runs": 22,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 2.953125,
+          "any_danger_in_event_count": 127,
+          "max_squared_bias_after_stop_mean": 3.8632980122418324e-05
+        },
+        "B3": {
+          "readmit_during_attack_runs": 22,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 3.2578125,
+          "any_danger_in_event_count": 128,
+          "max_squared_bias_after_stop_mean": 3.89792079832659e-05
+        }
+      },
+      "original_Gaussian/ordinary": {
+        "B0": {
+          "readmit_during_attack_runs": 0,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 2.5703125,
+          "any_danger_in_event_count": 122,
+          "max_squared_bias_after_stop_mean": 6.781388494140991e-05
+        },
+        "B1": {
+          "readmit_during_attack_runs": 52,
+          "dangerous_readmit_during_attack_runs": 4,
+          "mean_dangerous_posterior_updates_in_event": 3.1171875,
+          "any_danger_in_event_count": 122,
+          "max_squared_bias_after_stop_mean": 0.01321979030938308
+        },
+        "B2": {
+          "readmit_during_attack_runs": 52,
+          "dangerous_readmit_during_attack_runs": 4,
+          "mean_dangerous_posterior_updates_in_event": 2.5078125,
+          "any_danger_in_event_count": 117,
+          "max_squared_bias_after_stop_mean": 0.00899387172706686
+        },
+        "B3": {
+          "readmit_during_attack_runs": 52,
+          "dangerous_readmit_during_attack_runs": 4,
+          "mean_dangerous_posterior_updates_in_event": 3.1171875,
+          "any_danger_in_event_count": 122,
+          "max_squared_bias_after_stop_mean": 0.01321979030938308
+        }
+      },
+      "original_Gaussian/P1": {
+        "B0": {
+          "readmit_during_attack_runs": 0,
+          "dangerous_readmit_during_attack_runs": 0,
+          "mean_dangerous_posterior_updates_in_event": 2.6015625,
+          "any_danger_in_event_count": 123,
+          "max_squared_bias_after_stop_mean": 6.719668847464971e-05
+        },
+        "B1": {
+          "readmit_during_attack_runs": 49,
+          "dangerous_readmit_during_attack_runs": 3,
+          "mean_dangerous_posterior_updates_in_event": 2.9765625,
+          "any_danger_in_event_count": 123,
+          "max_squared_bias_after_stop_mean": 7.035247622728012e-05
+        },
+        "B2": {
+          "readmit_during_attack_runs": 49,
+          "dangerous_readmit_during_attack_runs": 3,
+          "mean_dangerous_posterior_updates_in_event": 2.34375,
+          "any_danger_in_event_count": 119,
+          "max_squared_bias_after_stop_mean": 6.635404380484806e-05
+        },
+        "B3": {
+          "readmit_during_attack_runs": 49,
+          "dangerous_readmit_during_attack_runs": 3,
+          "mean_dangerous_posterior_updates_in_event": 2.9765625,
+          "any_danger_in_event_count": 123,
+          "max_squared_bias_after_stop_mean": 7.035247622728012e-05
+        }
+      }
+    }
+  },
+  "input_hashes": {
+    "registration.json": "491dd33f1b0206049cba520f4948b38263a1c9114a24e617f03413900b1dc667",
+    "analytic_preflight.json": "54c196e378a9773d630a75f06cbe2b9895cc6bc7423ea75d9bd55a762d2279bf",
+    "screen_results.json": "c3052904e30fe68af819707661e7549fb171caf06f1ab6b8f0e1c1475d38acd0",
+    "screen_arrays.npz": "47b45c0367c78732fdb7aa81ba8f3cc481a1ac7c473848f233c7a47a7e1a6b3f"
+  }
+}

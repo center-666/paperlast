@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-15",
+  "sources": [
+    {
+      "id": "BKG03",
+      "citation_key": "Paper_Han2015_StochasticSchedule",
+      "title": "Stochastic Event-Triggered Sensor Schedule for Remote State Estimation",
+      "author": "Duo Han等",
+      "year": 2015,
+      "journal": "IEEE Transactions on Automatic Control",
+      "doi": "10.1109/TAC.2015.2406975",
+      "file": "02_期刊与会议论文/BKG03_2015_Han_Stochastic_Event_Triggered.pdf",
+      "sha256": "b17d2021d696d8cc20002aeff5a13612947d689d3a4c4d3098d7fa2253347e7f",
+      "pages": 15,
+      "read_scope": "PDF2—4/印刷2662—2664；文本核读",
+      "formula_theorem_scope": "Remark1、式8—17、Theorem1",
+      "claim": "硬事件选择不自动保持条件Gaussian；特定指数随机触发使条件Gaussian闭合，Theorem1的精确MMSE不可直接赋给本稿确定阈值门控。"
+    },
+    {
+      "id": "FPN02",
+      "citation_key": "Paper_Ding2024_PeriodicEncoding",
+      "title": "A Periodic Dynamic Encoding Mechanism for Stealthy Attack Detection in Distributed State Estimation",
+      "author": "Kun Ding; Wen Yang; Yun Liu; Yue Luo; Jialing Chen",
+      "year": 2024,
+      "journal": "International Journal of Robust and Nonlinear Control",
+      "doi": "10.1002/rnc.7688",
+      "file": "02_期刊与会议论文/FPN02_2024_Paper_Ding2024_PeriodicEncoding.pdf",
+      "sha256": "2e6fdc61646a2f5856e0a3865ad75b18538309e50683251054c3b73889208f45",
+      "pages": 13,
+      "read_scope": "PDF2—9，印刷2—9 of13；视觉PDF8",
+      "formula_theorem_scope": "式3、6—8、10、16、30—38；Theorems1—2；Algorithm2/PDF9；Remark4",
+      "claim": "式38已由报警指示量切换局部/分布式增益，Algorithm2明确检测后重算K；编码为准备期历史加性重用，攻击和估计共享不同于本稿；不把渐近检测移为有限概率。"
+    },
+    {
+      "id": "FUS11",
+      "citation_key": "Paper_FUS11_2022",
+      "title": "Event-Triggered Distributed State Estimation for Cyber-Physical Systems Under DoS Attacks",
+      "author": "Yan Liu; Guang-Hong Yang",
+      "year": 2022,
+      "journal": "IEEE Transactions on Cybernetics",
+      "doi": "10.1109/TCYB.2020.3015507",
+      "file": "02_期刊与会议论文/FUS11_2022_LiuYang2022.pdf",
+      "sha256": "db8dea2473f4ab58289cbe93e7fa2c873b880a5c7d64b0b54ca24143fc7c4530",
+      "pages": 12,
+      "read_scope": "PDF2—4/印刷3621—3623；文本核读",
+      "formula_theorem_scope": "Assumptions1—4、式3—9及预测器接口",
+      "claim": "DoS/事件传输、局部观测器及预测数据已存在；Assumption2通过ACK/测试信号知道通道是否DoS，不能当本稿FDI检测真标签；本轮未新审其全部主定理。"
+    },
+    {
+      "id": "FPN31",
+      "citation_key": "Paper_Zhu2026_DoubleLayerDetection",
+      "title": "Double-Layer Detection-Based Distributed Secure State Estimation Under False Data Injection Attacks",
+      "author": "Minggao Zhu; Dajun Du; Xue Li; Minrui Fei; Lei Wu",
+      "year": 2026,
+      "journal": "IEEE Transactions on Power Systems",
+      "doi": "10.1109/tpwrs.2025.3586788",
+      "file": "02_期刊与会议论文/FPN31_formal_received_20261115.pdf",
+      "sha256": "880a474d9686b2173e36dbf3d0527650f4030a2d4c45a46aff04048eff30e861",
+      "pages": 15,
+      "read_scope": "PDF5—11/印刷113—119；本轮视觉PDF10/118",
+      "formula_theorem_scope": "式14—20、27—29、37—47；Theorems1—2",
+      "claim": "双层检测/预测替换与重设计增益已有；Theorem2依赖收缩/有界性，保留非零最终界，不是原共G的危险前安全或回滚。"
+    },
+    {
+      "id": "JRA01",
+      "citation_key": "Paper_Han2025_TwoLayerFDI",
+      "title": "Consensus-based distributed estimator of cyber–physical systems against false data injection attacks: A two-layer estimation approach",
+      "author": "Zhichen Han; Shengbing Zhang; Zengwang Jin; Zhen Wang",
+      "year": 2025,
+      "journal": "Systems & Control Letters",
+      "doi": "10.1016/j.sysconle.2025.106115",
+      "file": "02_期刊与会议论文/JRA01_2025_Han_TwoLayer.pdf",
+      "sha256": "0fa5b079547661f2d55afb3c68b90f2e2c48b9401b9c3341477dc4df85ef93dc",
+      "pages": 7,
+      "read_scope": "PDF2—6；本轮视觉PDF3",
+      "formula_theorem_scope": "Theorems1—3；式3/6—8/11—13/19/21—24",
+      "claim": "检测后预测替换与按(1-theta)选择剩余信息的名义增益已存在；本稿单剩余邻居的B2拒包模式可由标准信息融合直接得到；不据检测未报警认攻击为0。"
+    }
+  ],
+  "official_DOI_web_open_attempts": "Ding/Han/Zhu DOI pages returned inaccessible in web tool; local formal PDFs used, not webpage snippets",
+  "other_basis": "Niu aggregate design and classical common quadratic contraction are explicit supplementary/standard tools; not claimed novel"
+}

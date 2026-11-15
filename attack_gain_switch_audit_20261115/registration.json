@@ -1,0 +1,76 @@
+{
+  "baseline": "0ea9c7db47f3e1642bbe5cba9ec6f914e4c6981a",
+  "T": 32,
+  "attack_start": 7,
+  "attack_length": 10,
+  "monitor_start": 7,
+  "monitor_end_inclusive": 31,
+  "monitor_scope": "one predeclared communication link 0->1; public commissioning time7; not unknown-onset/network-wide validation",
+  "energy_budget_coding_domain": 10.0,
+  "danger_threshold_posterior": 0.1,
+  "parity_order": 4,
+  "event_FA_budget_per_detector": 0.05,
+  "detectors": [
+    "single-source temporal parity",
+    "raw spatial y0_decoded-H0 inv(H1) y1"
+  ],
+  "alarm_used_for_gating": "raw spatial only; no OR combination",
+  "per_detector_tests": 25,
+  "threshold_rule": "Bonferroni alpha/25, nominal chi-square",
+  "rejection_hold_updates_including_alarm": 5,
+  "new_alarm_restarts_hold": true,
+  "raw_packets_still_monitored_while_rejected": true,
+  "samples_per_model": 128,
+  "unique_physical_paths_total": 256,
+  "physical_seed_base": 2026111500,
+  "watermark_seed_base": 2026112500,
+  "models": [
+    "unstable",
+    "stable"
+  ],
+  "encodings": [
+    "identity",
+    "original_Gaussian"
+  ],
+  "lambda": 0.5,
+  "q": 0.5,
+  "attack_profiles": [
+    "ordinary",
+    "P1"
+  ],
+  "ordinary_direction": [
+    -1.89,
+    0.42
+  ],
+  "P1_objective": "max over attack prefixes of unconditional expected posterior bias squared in all-accept original filter, under the SAME true E=10",
+  "B0": "frozen full common-G, all accept; alarm diagnostic recorded but does not gate",
+  "B1": "spatial gate, frozen original K/G, hold5 then readmit",
+  "B2": "same spatial gate; frozen original full-mode gain; rejection-mode nominal steady aggregate MMSE gain from remaining local+neighbor2; not conditional switching MMSE",
+  "B3": "standard neighbor prediction replacement with original K/G; prove identical to B1",
+  "primary_risk": "P(tau_D<tau_A): posterior difference vs own healthy CLOSED-LOOP shadow; tau_A first spatial alarm in monitored event; same-packet detection occurs before fusion",
+  "secondary_risk": "same event, difference vs unprotected all-accept healthy nominal; useful first-alarm equality diagnostic, not same as primary after false alarms",
+  "normal_metrics": [
+    "target mean total state MSE monitored7..31",
+    "network mean total state MSE",
+    "event FA",
+    "rejected fraction"
+  ],
+  "attack_metrics": [
+    "event Pd for each detector",
+    "first alarm delay incl onset windows",
+    "first-packet danger",
+    "primary and secondary danger-before-alarm",
+    "cumulative paired bias squared",
+    "stop residual",
+    "readmission transient"
+  ],
+  "paired_gain_comparison": "B2 on saved B1 alarm/gate history first; independently compute complete B2 history next and test equality because raw detector is estimator-independent",
+  "statistics": "finite 128-sample diagnostics; Wilson95 for proportions, paired sample SE for loss differences; no all-attack worst-risk certification",
+  "stop_conditions": [
+    "B3 algebraically equals B1: no new mechanism claim",
+    "modewise gain recomputation already standard: performance gain alone not originality",
+    "no detector/hold/gain/seed retuning after screen"
+  ],
+  "registered_utc": "2026-11-15T14:18:24.925033+00:00",
+  "sampling_has_started": false
+}

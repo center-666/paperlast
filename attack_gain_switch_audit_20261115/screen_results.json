@@ -1,0 +1,4823 @@
+{
+  "date": "2026-11-15",
+  "baseline": "0ea9c7db47f3e1642bbe5cba9ec6f914e4c6981a",
+  "registration_sha256": "491dd33f1b0206049cba520f4948b38263a1c9114a24e617f03413900b1dc667",
+  "analytic_preflight_sha256": "54c196e378a9773d630a75f06cbe2b9895cc6bc7423ea75d9bd55a762d2279bf",
+  "models": {
+    "unstable": {
+      "normal": {
+        "B0": {
+          "target_MSE": {
+            "mean": 0.21895607302709214,
+            "sample_SE": 0.0037202226354680974,
+            "n": 128
+          },
+          "network_MSE": {
+            "mean": 0.20410465058866278,
+            "sample_SE": 0.002485795817325844,
+            "n": 128
+          },
+          "reject_fraction_monitored": 0.0,
+          "spatial_event_FA": {
+            "count": 8,
+            "n": 128,
+            "estimate": 0.0625,
+            "Wilson95": [
+              0.03200692569506119,
+              0.11848791104425865
+            ]
+          },
+          "temporal_event_FA": {
+            "count": 3,
+            "n": 128,
+            "estimate": 0.0234375,
+            "Wilson95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          }
+        },
+        "B1": {
+          "target_MSE": {
+            "mean": 0.22255112325357868,
+            "sample_SE": 0.0039778613918928845,
+            "n": 128
+          },
+          "network_MSE": {
+            "mean": 0.20482366063396013,
+            "sample_SE": 0.002495229598106327,
+            "n": 128
+          },
+          "reject_fraction_monitored": 0.010624999999999996,
+          "spatial_event_FA": {
+            "count": 8,
+            "n": 128,
+            "estimate": 0.0625,
+            "Wilson95": [
+              0.03200692569506119,
+              0.11848791104425865
+            ]
+          },
+          "temporal_event_FA": {
+            "count": 3,
+            "n": 128,
+            "estimate": 0.0234375,
+            "Wilson95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          }
+        },
+        "B2": {
+          "target_MSE": {
+            "mean": 0.22005873485323701,
+            "sample_SE": 0.0037608290148961137,
+            "n": 128
+          },
+          "network_MSE": {
+            "mean": 0.2043251829538918,
+            "sample_SE": 0.0024879082736626815,
+            "n": 128
+          },
+          "reject_fraction_monitored": 0.010624999999999996,
+          "spatial_event_FA": {
+            "count": 8,
+            "n": 128,
+            "estimate": 0.0625,
+            "Wilson95": [
+              0.03200692569506119,
+              0.11848791104425865
+            ]
+          },
+          "temporal_event_FA": {
+            "count": 3,
+            "n": 128,
+            "estimate": 0.0234375,
+            "Wilson95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          }
+        },
+        "B3": {
+          "target_MSE": {
+            "mean": 0.22255112325357868,
+            "sample_SE": 0.0039778613918928845,
+            "n": 128
+          },
+          "network_MSE": {
+            "mean": 0.20482366063396013,
+            "sample_SE": 0.002495229598106327,
+            "n": 128
+          },
+          "reject_fraction_monitored": 0.010624999999999996,
+          "spatial_event_FA": {
+            "count": 8,
+            "n": 128,
+            "estimate": 0.0625,
+            "Wilson95": [
+              0.03200692569506119,
+              0.11848791104425865
+            ]
+          },
+          "temporal_event_FA": {
+            "count": 3,
+            "n": 128,
+            "estimate": 0.0234375,
+            "Wilson95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          }
+        }
+      },
+      "cases": {
+        "identity/ordinary": {
+          "attack": {
+            "xi": [
+              -0.6992835177631606,
+              0.15539633728070235
+            ],
+            "actual_energy": 10.0,
+            "source_direction": "existing first-packet witness (-1.89,.42), normalized to the SAME E=10",
+            "exact_energy_rational": "799999999999999967242795146669363599108170162388561918748915481493081/80000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "sample_coding_energy": 10.000000000000004,
+          "normal_encoded_to_raw_signal_energy_ratio": 1.0,
+          "baselines": {
+            "B0": {
+              "physical_target_MSE": {
+                "mean": 0.2539728979440299,
+                "sample_SE": 0.0047577960481921385,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21110801557205033,
+                "sample_SE": 0.0025854390715894177,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.9062288301620961,
+                "sample_SE": 1.559091474757039e-16,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 0.9062288301620961,
+                "sample_SE": 1.559091474757039e-16,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.15713525417118004,
+                "sample_SE": 6.589288714570502e-17,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 0,
+                "n": 128,
+                "estimate": 0.0,
+                "Wilson95": [
+                  0.0,
+                  0.029136956273508416
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 120,
+                "n": 128,
+                "estimate": 0.9375,
+                "Wilson95": [
+                  0.8815120889557413,
+                  0.9679930743049387
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 120,
+                "n": 128,
+                "estimate": 0.9375,
+                "Wilson95": [
+                  0.8815120889557413,
+                  0.9679930743049387
+                ]
+              },
+              "alarm_event": {
+                "count": 22,
+                "n": 128,
+                "estimate": 0.171875,
+                "Wilson95": [
+                  0.11633115948147267,
+                  0.24653996807301726
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 17,
+                "n": 128,
+                "estimate": 0.1328125,
+                "Wilson95": [
+                  0.08460228531840389,
+                  0.20242016694495388
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 1,
+                "n": 128,
+                "estimate": 0.0078125,
+                "Wilson95": [
+                  0.0013804318928742412,
+                  0.04292625943886061
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 3,
+                "n": 128,
+                "estimate": 0.0234375,
+                "Wilson95": [
+                  0.008002416396755481,
+                  0.06664374505143222
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 9.181818181818182,
+                "sample_SE": 1.485334314018175,
+                "n": 22
+              },
+              "unreported_infinite_delays_count": 106,
+              "reject_fraction_monitored": 0.0,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.15713525417118004,
+                  "sample_SE": 6.589288714570502e-17,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.002093914557713937,
+                  "sample_SE": 7.78140981965836e-18,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 2.7970281955913185e-05,
+                  "sample_SE": 1.0669770623016754e-18,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 6.735268253830545e-11,
+                  "sample_SE": 2.559105616394155e-21,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 3.1760733398539726e-29,
+                  "sample_SE": 4.737075548041051e-30,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 0,
+              "readmission_next3_physical_loss_pooled_mean": null,
+              "MSE_cross_term_identity_error": 3.3306690738754696e-16,
+              "MSE_increment_mean": 0.035016824916937785,
+              "policy_shadow_bias_mean": 0.03624915320648384,
+              "normal_error_cross_term_mean": -0.001232328289546057,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B1": {
+              "physical_target_MSE": {
+                "mean": 0.2614921105923349,
+                "sample_SE": 0.0053878738593493665,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21261185810171135,
+                "sample_SE": 0.0026740366216368994,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.0424266887749734,
+                "sample_SE": 0.04214503078833976,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.117967757092775,
+                "sample_SE": 0.05451377793746132,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.22057509642870973,
+                "sample_SE": 0.020040145463758256,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 2,
+                "n": 128,
+                "estimate": 0.015625,
+                "Wilson95": [
+                  0.004295449710144082,
+                  0.055180976679817195
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 120,
+                "n": 128,
+                "estimate": 0.9375,
+                "Wilson95": [
+                  0.8815120889557413,
+                  0.9679930743049387
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 120,
+                "n": 128,
+                "estimate": 0.9375,
+                "Wilson95": [
+                  0.8815120889557413,
+                  0.9679930743049387
+                ]
+              },
+              "alarm_event": {
+                "count": 22,
+                "n": 128,
+                "estimate": 0.171875,
+                "Wilson95": [
+                  0.11633115948147267,
+                  0.24653996807301726
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 17,
+                "n": 128,
+                "estimate": 0.1328125,
+                "Wilson95": [
+                  0.08460228531840389,
+                  0.20242016694495388
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 1,
+                "n": 128,
+                "estimate": 0.0078125,
+                "Wilson95": [
+                  0.0013804318928742412,
+                  0.04292625943886061
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 3,
+                "n": 128,
+                "estimate": 0.0234375,
+                "Wilson95": [
+                  0.008002416396755481,
+                  0.06664374505143222
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 9.181818181818182,
+                "sample_SE": 1.485334314018175,
+                "n": 22
+              },
+              "unreported_infinite_delays_count": 106,
+              "reject_fraction_monitored": 0.03500000000000003,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.1579374310184533,
+                  "sample_SE": 0.0038832646512260423,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.021675177144282638,
+                  "sample_SE": 0.009220910929509385,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.022170657081825182,
+                  "sample_SE": 0.01398989198091115,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 0.00011841087334766646,
+                  "sample_SE": 5.8599768276146564e-05,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 1.3966336261755908e-23,
+                  "sample_SE": 6.890034897213586e-24,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 20,
+              "readmission_next3_physical_loss_pooled_mean": 0.2758170077201131,
+              "MSE_cross_term_identity_error": 3.3306690738754696e-16,
+              "MSE_increment_mean": 0.038940987338756276,
+              "policy_shadow_bias_mean": 0.04169706755099893,
+              "normal_error_cross_term_mean": -0.0027560802122426555,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B2": {
+              "physical_target_MSE": {
+                "mean": 0.25620449650040716,
+                "sample_SE": 0.004885462343623849,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21155433528332582,
+                "sample_SE": 0.0026120242445985464,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.9380133705223452,
+                "sample_SE": 0.012043402406736483,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 0.9808270449568126,
+                "sample_SE": 0.01909152962689235,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.1727015736233518,
+                "sample_SE": 0.005019188299556266,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 2,
+                "n": 128,
+                "estimate": 0.015625,
+                "Wilson95": [
+                  0.004295449710144082,
+                  0.055180976679817195
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 120,
+                "n": 128,
+                "estimate": 0.9375,
+                "Wilson95": [
+                  0.8815120889557413,
+                  0.9679930743049387
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 120,
+                "n": 128,
+                "estimate": 0.9375,
+                "Wilson95": [
+                  0.8815120889557413,
+                  0.9679930743049387
+                ]
+              },
+              "alarm_event": {
+                "count": 22,
+                "n": 128,
+                "estimate": 0.171875,
+                "Wilson95": [
+                  0.11633115948147267,
+                  0.24653996807301726
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 17,
+                "n": 128,
+                "estimate": 0.1328125,
+                "Wilson95": [
+                  0.08460228531840389,
+                  0.20242016694495388
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 1,
+                "n": 128,
+                "estimate": 0.0078125,
+                "Wilson95": [
+                  0.0013804318928742412,
+                  0.04292625943886061
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 3,
+                "n": 128,
+                "estimate": 0.0234375,
+                "Wilson95": [
+                  0.008002416396755481,
+                  0.06664374505143222
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 9.181818181818182,
+                "sample_SE": 1.485334314018175,
+                "n": 22
+              },
+              "unreported_infinite_delays_count": 106,
+              "reject_fraction_monitored": 0.03500000000000003,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.1569360214705048,
+                  "sample_SE": 0.00346335357348049,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.007254358492485813,
+                  "sample_SE": 0.0023823547670516533,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.0063932498437212545,
+                  "sample_SE": 0.0024625383418446795,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 1.553811104746411e-05,
+                  "sample_SE": 7.030465347829891e-06,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 1.2272809057867366e-24,
+                  "sample_SE": 7.514703341832022e-25,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 20,
+              "readmission_next3_physical_loss_pooled_mean": 0.27800498684342556,
+              "MSE_cross_term_identity_error": 3.3306690738754696e-16,
+              "MSE_increment_mean": 0.03614576164717016,
+              "policy_shadow_bias_mean": 0.03752053482089381,
+              "normal_error_cross_term_mean": -0.0013747731737236493,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B3": {
+              "physical_target_MSE": {
+                "mean": 0.2614921105923349,
+                "sample_SE": 0.0053878738593493665,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21261185810171135,
+                "sample_SE": 0.0026740366216368994,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.0424266887749734,
+                "sample_SE": 0.04214503078833976,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.117967757092775,
+                "sample_SE": 0.05451377793746132,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.22057509642870973,
+                "sample_SE": 0.020040145463758256,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 2,
+                "n": 128,
+                "estimate": 0.015625,
+                "Wilson95": [
+                  0.004295449710144082,
+                  0.055180976679817195
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 120,
+                "n": 128,
+                "estimate": 0.9375,
+                "Wilson95": [
+                  0.8815120889557413,
+                  0.9679930743049387
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 120,
+                "n": 128,
+                "estimate": 0.9375,
+                "Wilson95": [
+                  0.8815120889557413,
+                  0.9679930743049387
+                ]
+              },
+              "alarm_event": {
+                "count": 22,
+                "n": 128,
+                "estimate": 0.171875,
+                "Wilson95": [
+                  0.11633115948147267,
+                  0.24653996807301726
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 17,
+                "n": 128,
+                "estimate": 0.1328125,
+                "Wilson95": [
+                  0.08460228531840389,
+                  0.20242016694495388
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 1,
+                "n": 128,
+                "estimate": 0.0078125,
+                "Wilson95": [
+                  0.0013804318928742412,
+                  0.04292625943886061
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 3,
+                "n": 128,
+                "estimate": 0.0234375,
+                "Wilson95": [
+                  0.008002416396755481,
+                  0.06664374505143222
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 9.181818181818182,
+                "sample_SE": 1.485334314018175,
+                "n": 22
+              },
+              "unreported_infinite_delays_count": 106,
+              "reject_fraction_monitored": 0.03500000000000003,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.1579374310184533,
+                  "sample_SE": 0.0038832646512260423,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.021675177144282638,
+                  "sample_SE": 0.009220910929509385,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.022170657081825182,
+                  "sample_SE": 0.01398989198091115,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 0.00011841087334766646,
+                  "sample_SE": 5.8599768276146564e-05,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 1.3966336261755908e-23,
+                  "sample_SE": 6.890034897213586e-24,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 20,
+              "readmission_next3_physical_loss_pooled_mean": 0.2758170077201131,
+              "MSE_cross_term_identity_error": 3.3306690738754696e-16,
+              "MSE_increment_mean": 0.038940987338756276,
+              "policy_shadow_bias_mean": 0.04169706755099893,
+              "normal_error_cross_term_mean": -0.0027560802122426555,
+              "not_a_global_closed_loop_P3_solution": true
+            }
+          },
+          "B2_minus_B1_paired": {
+            "mse": {
+              "mean": -0.005287614091927759,
+              "sample_SE": 0.001536870559671919,
+              "n": 128
+            },
+            "cumulative_bias": {
+              "mean": -0.10441331825262803,
+              "sample_SE": 0.033296412115995516,
+              "n": 128
+            },
+            "risk": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            },
+            "risk_fixed": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            }
+          },
+          "same_secondary_pre_alarm_risk_all_baselines": true,
+          "policy_shadow_risk_difference_count_B2_vs_B1": 0,
+          "healthy_shadow_FA_count_upper_for_difference": 8,
+          "spatial_threshold": 12.429216196844383,
+          "temporal_threshold": 24.352081352360617
+        },
+        "identity/P1": {
+          "attack": {
+            "xi": [
+              0.5372209387742106,
+              0.2935871029516655
+            ],
+            "actual_energy": 9.999999999999993,
+            "worst_prefix_post_index": 9,
+            "max_expected_bias_squared_all_accept": 0.18022253426442864,
+            "not_a_switched_closed_loop_worst_attack": true,
+            "exact_energy_rational": "199999999999999865377245343912021248559221715736566246323518624448269/20000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "sample_coding_energy": 10.0,
+          "normal_encoded_to_raw_signal_energy_ratio": 1.0,
+          "baselines": {
+            "B0": {
+              "physical_target_MSE": {
+                "mean": 0.256501940995856,
+                "sample_SE": 0.004304702139993349,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.2116138241824156,
+                "sample_SE": 0.0024763047132305926,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.8878051876717832,
+                "sample_SE": 1.1990092981583408e-16,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 0.8878051876717832,
+                "sample_SE": 1.1990092981583408e-16,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.18022253426442866,
+                "sample_SE": 7.200324247605821e-17,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 0,
+                "n": 128,
+                "estimate": 0.0,
+                "Wilson95": [
+                  0.0,
+                  0.029136956273508416
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 119,
+                "n": 128,
+                "estimate": 0.9296875,
+                "Wilson95": [
+                  0.8717651965063937,
+                  0.96257023169606
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 119,
+                "n": 128,
+                "estimate": 0.9296875,
+                "Wilson95": [
+                  0.8717651965063937,
+                  0.96257023169606
+                ]
+              },
+              "alarm_event": {
+                "count": 18,
+                "n": 128,
+                "estimate": 0.140625,
+                "Wilson95": [
+                  0.09083969494262253,
+                  0.21135249237896167
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 13,
+                "n": 128,
+                "estimate": 0.1015625,
+                "Wilson95": [
+                  0.060318648726840854,
+                  0.16602486330361116
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 2,
+                "n": 128,
+                "estimate": 0.015625,
+                "Wilson95": [
+                  0.004295449710144082,
+                  0.055180976679817195
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 4,
+                "n": 128,
+                "estimate": 0.03125,
+                "Wilson95": [
+                  0.01221826524505338,
+                  0.07759763126136077
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 9.277777777777779,
+                "sample_SE": 1.7392161775144037,
+                "n": 18
+              },
+              "unreported_infinite_delays_count": 110,
+              "reject_fraction_monitored": 0.0,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.18022253426442866,
+                  "sample_SE": 7.200324247605821e-17,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.002414561432708981,
+                  "sample_SE": 8.496347331167481e-18,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 3.2526990508865365e-05,
+                  "sample_SE": 1.1934652476961674e-18,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 8.07660028705933e-11,
+                  "sample_SE": 2.3628931962251985e-21,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 3.617640927853356e-29,
+                  "sample_SE": 4.504786308262792e-30,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 0,
+              "readmission_next3_physical_loss_pooled_mean": null,
+              "MSE_cross_term_identity_error": 5.537230272022718e-16,
+              "MSE_increment_mean": 0.03754586796876389,
+              "policy_shadow_bias_mean": 0.03551220750687133,
+              "normal_error_cross_term_mean": 0.002033660461892566,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B1": {
+              "physical_target_MSE": {
+                "mean": 0.2628607637895879,
+                "sample_SE": 0.004577194196481689,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21288558874116195,
+                "sample_SE": 0.0024787299558877577,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.9747354027644834,
+                "sample_SE": 0.03371221664075371,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.0799889257498032,
+                "sample_SE": 0.05411587026479781,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.21509732962409717,
+                "sample_SE": 0.013007379808031879,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 0,
+                "n": 128,
+                "estimate": 0.0,
+                "Wilson95": [
+                  0.0,
+                  0.029136956273508416
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 119,
+                "n": 128,
+                "estimate": 0.9296875,
+                "Wilson95": [
+                  0.8717651965063937,
+                  0.96257023169606
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 119,
+                "n": 128,
+                "estimate": 0.9296875,
+                "Wilson95": [
+                  0.8717651965063937,
+                  0.96257023169606
+                ]
+              },
+              "alarm_event": {
+                "count": 18,
+                "n": 128,
+                "estimate": 0.140625,
+                "Wilson95": [
+                  0.09083969494262253,
+                  0.21135249237896167
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 13,
+                "n": 128,
+                "estimate": 0.1015625,
+                "Wilson95": [
+                  0.060318648726840854,
+                  0.16602486330361116
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 2,
+                "n": 128,
+                "estimate": 0.015625,
+                "Wilson95": [
+                  0.004295449710144082,
+                  0.055180976679817195
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 4,
+                "n": 128,
+                "estimate": 0.03125,
+                "Wilson95": [
+                  0.01221826524505338,
+                  0.07759763126136077
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 9.277777777777779,
+                "sample_SE": 1.7392161775144037,
+                "n": 18
+              },
+              "unreported_infinite_delays_count": 110,
+              "reject_fraction_monitored": 0.030625000000000013,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.18086377492070987,
+                  "sample_SE": 0.0032654455552715753,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.016078729699731637,
+                  "sample_SE": 0.0059173332822117005,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.013487262400648643,
+                  "sample_SE": 0.006980155846958226,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 3.2999098160978823e-05,
+                  "sample_SE": 2.1070678221123153e-05,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 6.923488154055338e-19,
+                  "sample_SE": 6.923446918367749e-19,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 16,
+              "readmission_next3_physical_loss_pooled_mean": 0.2599228700988602,
+              "MSE_cross_term_identity_error": 5.537230272022718e-16,
+              "MSE_increment_mean": 0.0403096405360092,
+              "policy_shadow_bias_mean": 0.03898941611057934,
+              "normal_error_cross_term_mean": 0.0013202244254298624,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B2": {
+              "physical_target_MSE": {
+                "mean": 0.2578422473547709,
+                "sample_SE": 0.004425444102104608,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21188188545419856,
+                "sample_SE": 0.0024732195259385336,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.9026211483949345,
+                "sample_SE": 0.011227239420873978,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 0.9539814555604309,
+                "sample_SE": 0.021301149475983862,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.18916102774877572,
+                "sample_SE": 0.0038502596964918394,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 0,
+                "n": 128,
+                "estimate": 0.0,
+                "Wilson95": [
+                  0.0,
+                  0.029136956273508416
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 119,
+                "n": 128,
+                "estimate": 0.9296875,
+                "Wilson95": [
+                  0.8717651965063937,
+                  0.96257023169606
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 119,
+                "n": 128,
+                "estimate": 0.9296875,
+                "Wilson95": [
+                  0.8717651965063937,
+                  0.96257023169606
+                ]
+              },
+              "alarm_event": {
+                "count": 18,
+                "n": 128,
+                "estimate": 0.140625,
+                "Wilson95": [
+                  0.09083969494262253,
+                  0.21135249237896167
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 13,
+                "n": 128,
+                "estimate": 0.1015625,
+                "Wilson95": [
+                  0.060318648726840854,
+                  0.16602486330361116
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 2,
+                "n": 128,
+                "estimate": 0.015625,
+                "Wilson95": [
+                  0.004295449710144082,
+                  0.055180976679817195
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 4,
+                "n": 128,
+                "estimate": 0.03125,
+                "Wilson95": [
+                  0.01221826524505338,
+                  0.07759763126136077
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 9.277777777777779,
+                "sample_SE": 1.7392161775144037,
+                "n": 18
+              },
+              "unreported_infinite_delays_count": 110,
+              "reject_fraction_monitored": 0.030625000000000013,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.17426348707290276,
+                  "sample_SE": 0.0029430016894719914,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.00741903341531666,
+                  "sample_SE": 0.002474279843938867,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.009131509293105185,
+                  "sample_SE": 0.0046124903239019455,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 4.285657803077143e-05,
+                  "sample_SE": 3.023951326277033e-05,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 5.632637757795383e-23,
+                  "sample_SE": 5.315019638293082e-23,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 16,
+              "readmission_next3_physical_loss_pooled_mean": 0.25901469577965974,
+              "MSE_cross_term_identity_error": 5.537230272022718e-16,
+              "MSE_increment_mean": 0.03778351250153392,
+              "policy_shadow_bias_mean": 0.03610484593579738,
+              "normal_error_cross_term_mean": 0.0016786665657365363,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B3": {
+              "physical_target_MSE": {
+                "mean": 0.2628607637895879,
+                "sample_SE": 0.004577194196481689,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21288558874116195,
+                "sample_SE": 0.0024787299558877577,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.9747354027644834,
+                "sample_SE": 0.03371221664075371,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.0799889257498032,
+                "sample_SE": 0.05411587026479781,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.21509732962409717,
+                "sample_SE": 0.013007379808031879,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 0,
+                "n": 128,
+                "estimate": 0.0,
+                "Wilson95": [
+                  0.0,
+                  0.029136956273508416
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 119,
+                "n": 128,
+                "estimate": 0.9296875,
+                "Wilson95": [
+                  0.8717651965063937,
+                  0.96257023169606
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 119,
+                "n": 128,
+                "estimate": 0.9296875,
+                "Wilson95": [
+                  0.8717651965063937,
+                  0.96257023169606
+                ]
+              },
+              "alarm_event": {
+                "count": 18,
+                "n": 128,
+                "estimate": 0.140625,
+                "Wilson95": [
+                  0.09083969494262253,
+                  0.21135249237896167
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 13,
+                "n": 128,
+                "estimate": 0.1015625,
+                "Wilson95": [
+                  0.060318648726840854,
+                  0.16602486330361116
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 2,
+                "n": 128,
+                "estimate": 0.015625,
+                "Wilson95": [
+                  0.004295449710144082,
+                  0.055180976679817195
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 4,
+                "n": 128,
+                "estimate": 0.03125,
+                "Wilson95": [
+                  0.01221826524505338,
+                  0.07759763126136077
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 9.277777777777779,
+                "sample_SE": 1.7392161775144037,
+                "n": 18
+              },
+              "unreported_infinite_delays_count": 110,
+              "reject_fraction_monitored": 0.030625000000000013,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.18086377492070987,
+                  "sample_SE": 0.0032654455552715753,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.016078729699731637,
+                  "sample_SE": 0.0059173332822117005,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.013487262400648643,
+                  "sample_SE": 0.006980155846958226,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 3.2999098160978823e-05,
+                  "sample_SE": 2.1070678221123153e-05,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 6.923488154055338e-19,
+                  "sample_SE": 6.923446918367749e-19,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 16,
+              "readmission_next3_physical_loss_pooled_mean": 0.2599228700988602,
+              "MSE_cross_term_identity_error": 5.537230272022718e-16,
+              "MSE_increment_mean": 0.0403096405360092,
+              "policy_shadow_bias_mean": 0.03898941611057934,
+              "normal_error_cross_term_mean": 0.0013202244254298624,
+              "not_a_global_closed_loop_P3_solution": true
+            }
+          },
+          "B2_minus_B1_paired": {
+            "mse": {
+              "mean": -0.00501851643481693,
+              "sample_SE": 0.0017219198773251038,
+              "n": 128
+            },
+            "cumulative_bias": {
+              "mean": -0.07211425436954896,
+              "sample_SE": 0.02729925106982711,
+              "n": 128
+            },
+            "risk": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            },
+            "risk_fixed": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            }
+          },
+          "same_secondary_pre_alarm_risk_all_baselines": true,
+          "policy_shadow_risk_difference_count_B2_vs_B1": 0,
+          "healthy_shadow_FA_count_upper_for_difference": 8,
+          "spatial_threshold": 12.429216196844383,
+          "temporal_threshold": 24.352081352360617
+        },
+        "original_Gaussian/ordinary": {
+          "attack": {
+            "xi": [
+              -0.6992835177631606,
+              0.15539633728070235
+            ],
+            "actual_energy": 10.0,
+            "source_direction": "existing first-packet witness (-1.89,.42), normalized to the SAME E=10",
+            "exact_energy_rational": "799999999999999967242795146669363599108170162388561918748915481493081/80000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "sample_coding_energy": 10.000000000000004,
+          "normal_encoded_to_raw_signal_energy_ratio": 2.57114386706804,
+          "baselines": {
+            "B0": {
+              "physical_target_MSE": {
+                "mean": 0.2768519488590082,
+                "sample_SE": 0.005857957321176072,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21568382575504605,
+                "sample_SE": 0.0026774902523095992,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.4781707889903661,
+                "sample_SE": 0.08259390048708809,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.4781707889903661,
+                "sample_SE": 0.08259390048708809,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.6777932189677519,
+                "sample_SE": 0.06093411144541056,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 104,
+                "n": 128,
+                "estimate": 0.8125,
+                "Wilson95": [
+                  0.7361508192928257,
+                  0.8706385830362315
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 104,
+                "n": 128,
+                "estimate": 0.8125,
+                "Wilson95": [
+                  0.7361508192928257,
+                  0.8706385830362315
+                ]
+              },
+              "alarm_event": {
+                "count": 62,
+                "n": 128,
+                "estimate": 0.484375,
+                "Wilson95": [
+                  0.39952298025969557,
+                  0.5701375496238515
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 57,
+                "n": 128,
+                "estimate": 0.4453125,
+                "Wilson95": [
+                  0.36205524949299805,
+                  0.5317566050994169
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 12,
+                "n": 128,
+                "estimate": 0.09375,
+                "Wilson95": [
+                  0.054443804399147026,
+                  0.15672997257307855
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 18,
+                "n": 128,
+                "estimate": 0.140625,
+                "Wilson95": [
+                  0.09083969494262253,
+                  0.21135249237896167
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 6.580645161290323,
+                "sample_SE": 0.6379287888627138,
+                "n": 62
+              },
+              "unreported_infinite_delays_count": 66,
+              "reject_fraction_monitored": 0.0,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.20611226691045523,
+                  "sample_SE": 0.02622177763734743,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.0027248778788355865,
+                  "sample_SE": 0.0003508186611573222,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 3.6238616520817906e-05,
+                  "sample_SE": 4.717866058857412e-06,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 8.711291057364118e-11,
+                  "sample_SE": 1.1643520713284015e-11,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 4.3803663618759255e-29,
+                  "sample_SE": 8.57516237145511e-30,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 0,
+              "readmission_next3_physical_loss_pooled_mean": null,
+              "MSE_cross_term_identity_error": 6.661338147750939e-16,
+              "MSE_increment_mean": 0.05789587583191615,
+              "policy_shadow_bias_mean": 0.05912683155961465,
+              "normal_error_cross_term_mean": -0.0012309557276985019,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B1": {
+              "physical_target_MSE": {
+                "mean": 0.2788460145934446,
+                "sample_SE": 0.005928913868515198,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.2160826389019333,
+                "sample_SE": 0.002634875973262733,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.4890045381570112,
+                "sample_SE": 0.06703749391570848,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.5608768742111827,
+                "sample_SE": 0.0784462969976606,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.5118866320065989,
+                "sample_SE": 0.02557966844585495,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 24,
+                "n": 128,
+                "estimate": 0.1875,
+                "Wilson95": [
+                  0.12936141696376852,
+                  0.2638491807071743
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 105,
+                "n": 128,
+                "estimate": 0.8203125,
+                "Wilson95": [
+                  0.7447837371324442,
+                  0.8771754002548395
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 104,
+                "n": 128,
+                "estimate": 0.8125,
+                "Wilson95": [
+                  0.7361508192928257,
+                  0.8706385830362315
+                ]
+              },
+              "alarm_event": {
+                "count": 62,
+                "n": 128,
+                "estimate": 0.484375,
+                "Wilson95": [
+                  0.39952298025969557,
+                  0.5701375496238515
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 57,
+                "n": 128,
+                "estimate": 0.4453125,
+                "Wilson95": [
+                  0.36205524949299805,
+                  0.5317566050994169
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 12,
+                "n": 128,
+                "estimate": 0.09375,
+                "Wilson95": [
+                  0.054443804399147026,
+                  0.15672997257307855
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 18,
+                "n": 128,
+                "estimate": 0.140625,
+                "Wilson95": [
+                  0.09083969494262253,
+                  0.21135249237896167
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 6.580645161290323,
+                "sample_SE": 0.6379287888627138,
+                "n": 62
+              },
+              "unreported_infinite_delays_count": 66,
+              "reject_fraction_monitored": 0.10750000000000004,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.1920096305755225,
+                  "sample_SE": 0.016871511676929435,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.08302263068706159,
+                  "sample_SE": 0.01645467861245308,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.053287521048331885,
+                  "sample_SE": 0.015365771782904826,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 0.00044219080176890097,
+                  "sample_SE": 0.00013721688161634003,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 7.016667663659945e-19,
+                  "sample_SE": 7.01616116781797e-19,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 63,
+              "readmission_next3_physical_loss_pooled_mean": 0.20928237705579678,
+              "MSE_cross_term_identity_error": 6.661338147750939e-16,
+              "MSE_increment_mean": 0.05629489133986591,
+              "policy_shadow_bias_mean": 0.059560181526280453,
+              "normal_error_cross_term_mean": -0.0032652901864145367,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B2": {
+              "physical_target_MSE": {
+                "mean": 0.25818235750079555,
+                "sample_SE": 0.004985148711609682,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.2119499074834035,
+                "sample_SE": 0.002569353762681295,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.0950707099373764,
+                "sample_SE": 0.038776785819648336,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.1359118267434853,
+                "sample_SE": 0.0448608305849157,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.3649753474972032,
+                "sample_SE": 0.018184867930148254,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 23,
+                "n": 128,
+                "estimate": 0.1796875,
+                "Wilson95": [
+                  0.12282459974516051,
+                  0.25521626286755583
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 105,
+                "n": 128,
+                "estimate": 0.8203125,
+                "Wilson95": [
+                  0.7447837371324442,
+                  0.8771754002548395
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 104,
+                "n": 128,
+                "estimate": 0.8125,
+                "Wilson95": [
+                  0.7361508192928257,
+                  0.8706385830362315
+                ]
+              },
+              "alarm_event": {
+                "count": 62,
+                "n": 128,
+                "estimate": 0.484375,
+                "Wilson95": [
+                  0.39952298025969557,
+                  0.5701375496238515
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 57,
+                "n": 128,
+                "estimate": 0.4453125,
+                "Wilson95": [
+                  0.36205524949299805,
+                  0.5317566050994169
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 12,
+                "n": 128,
+                "estimate": 0.09375,
+                "Wilson95": [
+                  0.054443804399147026,
+                  0.15672997257307855
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 18,
+                "n": 128,
+                "estimate": 0.140625,
+                "Wilson95": [
+                  0.09083969494262253,
+                  0.21135249237896167
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 6.580645161290323,
+                "sample_SE": 0.6379287888627138,
+                "n": 62
+              },
+              "unreported_infinite_delays_count": 66,
+              "reject_fraction_monitored": 0.10750000000000004,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.14641314432940747,
+                  "sample_SE": 0.013257869359603713,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.031199914002336473,
+                  "sample_SE": 0.005588499114305636,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.021683406249188165,
+                  "sample_SE": 0.004651651300248139,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 0.00012105641354422661,
+                  "sample_SE": 3.983427714577127e-05,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 6.155666608020485e-23,
+                  "sample_SE": 5.316640067706885e-23,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 63,
+              "readmission_next3_physical_loss_pooled_mean": 0.21002525443376396,
+              "MSE_cross_term_identity_error": 6.661338147750939e-16,
+              "MSE_increment_mean": 0.03812362264755855,
+              "policy_shadow_bias_mean": 0.04380282839749507,
+              "normal_error_cross_term_mean": -0.005679205749936517,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B3": {
+              "physical_target_MSE": {
+                "mean": 0.2788460145934446,
+                "sample_SE": 0.005928913868515198,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.2160826389019333,
+                "sample_SE": 0.002634875973262733,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.4890045381570112,
+                "sample_SE": 0.06703749391570848,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.5608768742111827,
+                "sample_SE": 0.0784462969976606,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.5118866320065989,
+                "sample_SE": 0.02557966844585495,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 24,
+                "n": 128,
+                "estimate": 0.1875,
+                "Wilson95": [
+                  0.12936141696376852,
+                  0.2638491807071743
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 105,
+                "n": 128,
+                "estimate": 0.8203125,
+                "Wilson95": [
+                  0.7447837371324442,
+                  0.8771754002548395
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 104,
+                "n": 128,
+                "estimate": 0.8125,
+                "Wilson95": [
+                  0.7361508192928257,
+                  0.8706385830362315
+                ]
+              },
+              "alarm_event": {
+                "count": 62,
+                "n": 128,
+                "estimate": 0.484375,
+                "Wilson95": [
+                  0.39952298025969557,
+                  0.5701375496238515
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 57,
+                "n": 128,
+                "estimate": 0.4453125,
+                "Wilson95": [
+                  0.36205524949299805,
+                  0.5317566050994169
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 12,
+                "n": 128,
+                "estimate": 0.09375,
+                "Wilson95": [
+                  0.054443804399147026,
+                  0.15672997257307855
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 18,
+                "n": 128,
+                "estimate": 0.140625,
+                "Wilson95": [
+                  0.09083969494262253,
+                  0.21135249237896167
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 6.580645161290323,
+                "sample_SE": 0.6379287888627138,
+                "n": 62
+              },
+              "unreported_infinite_delays_count": 66,
+              "reject_fraction_monitored": 0.10750000000000004,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.1920096305755225,
+                  "sample_SE": 0.016871511676929435,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.08302263068706159,
+                  "sample_SE": 0.01645467861245308,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.053287521048331885,
+                  "sample_SE": 0.015365771782904826,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 0.00044219080176890097,
+                  "sample_SE": 0.00013721688161634003,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 7.016667663659945e-19,
+                  "sample_SE": 7.01616116781797e-19,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 63,
+              "readmission_next3_physical_loss_pooled_mean": 0.20928237705579678,
+              "MSE_cross_term_identity_error": 6.661338147750939e-16,
+              "MSE_increment_mean": 0.05629489133986591,
+              "policy_shadow_bias_mean": 0.059560181526280453,
+              "normal_error_cross_term_mean": -0.0032652901864145367,
+              "not_a_global_closed_loop_P3_solution": true
+            }
+          },
+          "B2_minus_B1_paired": {
+            "mse": {
+              "mean": -0.020663657092649022,
+              "sample_SE": 0.0030854446866556843,
+              "n": 128
+            },
+            "cumulative_bias": {
+              "mean": -0.39393382821963474,
+              "sample_SE": 0.053119213167111164,
+              "n": 128
+            },
+            "risk": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            },
+            "risk_fixed": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            }
+          },
+          "same_secondary_pre_alarm_risk_all_baselines": true,
+          "policy_shadow_risk_difference_count_B2_vs_B1": 0,
+          "healthy_shadow_FA_count_upper_for_difference": 8,
+          "spatial_threshold": 12.429216196844383,
+          "temporal_threshold": 24.352081352360617
+        },
+        "original_Gaussian/P1": {
+          "attack": {
+            "xi": [
+              0.5230403119550111,
+              0.31574711731306426
+            ],
+            "actual_energy": 9.999999999999996,
+            "worst_prefix_post_index": 9,
+            "max_expected_bias_squared_all_accept": 0.28607832898701674,
+            "not_a_switched_closed_loop_worst_attack": true,
+            "exact_energy_rational": "99999999999999964951632573405447333793031927076183967847032106824013/10000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "sample_coding_energy": 10.000000000000002,
+          "normal_encoded_to_raw_signal_energy_ratio": 2.57114386706804,
+          "baselines": {
+            "B0": {
+              "physical_target_MSE": {
+                "mean": 0.27712882061611,
+                "sample_SE": 0.0049376408887084255,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21573920010646638,
+                "sample_SE": 0.002500391787661436,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.3971536850267179,
+                "sample_SE": 0.08022701023977093,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.3971536850267179,
+                "sample_SE": 0.08022701023977093,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.6476074230347665,
+                "sample_SE": 0.058007658006751776,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 16,
+                "n": 128,
+                "estimate": 0.125,
+                "Wilson95": [
+                  0.07842644638761664,
+                  0.19342627081751468
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 105,
+                "n": 128,
+                "estimate": 0.8203125,
+                "Wilson95": [
+                  0.7447837371324442,
+                  0.8771754002548395
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 105,
+                "n": 128,
+                "estimate": 0.8203125,
+                "Wilson95": [
+                  0.7447837371324442,
+                  0.8771754002548395
+                ]
+              },
+              "alarm_event": {
+                "count": 60,
+                "n": 128,
+                "estimate": 0.46875,
+                "Wilson95": [
+                  0.3844747677270395,
+                  0.5548462920400548
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 56,
+                "n": 128,
+                "estimate": 0.4375,
+                "Wilson95": [
+                  0.35462313127053047,
+                  0.5240189882636581
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 21,
+                "n": 128,
+                "estimate": 0.1640625,
+                "Wilson95": [
+                  0.1098833164591933,
+                  0.23781807603707017
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 27,
+                "n": 128,
+                "estimate": 0.2109375,
+                "Wilson95": [
+                  0.14921308750498039,
+                  0.28950671534064165
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 6.416666666666667,
+                "sample_SE": 0.5696126479795104,
+                "n": 60
+              },
+              "unreported_infinite_delays_count": 68,
+              "reject_fraction_monitored": 0.0,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.27179802394118224,
+                  "sample_SE": 0.03850164011257524,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.0035614292911760087,
+                  "sample_SE": 0.0005111461730543811,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 4.7198815863934575e-05,
+                  "sample_SE": 6.8471002643740355e-06,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 1.1418428881955887e-10,
+                  "sample_SE": 1.688436484369093e-11,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 4.4281775727453386e-29,
+                  "sample_SE": 6.2888447510873515e-30,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 0,
+              "readmission_next3_physical_loss_pooled_mean": null,
+              "MSE_cross_term_identity_error": 5.551115123125783e-16,
+              "MSE_increment_mean": 0.05817274758901786,
+              "policy_shadow_bias_mean": 0.055886147401068724,
+              "normal_error_cross_term_mean": 0.0022866001879491443,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B1": {
+              "physical_target_MSE": {
+                "mean": 0.28211921591287187,
+                "sample_SE": 0.005624301757958187,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21673727916581875,
+                "sample_SE": 0.002571062850673093,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.3975836621736588,
+                "sample_SE": 0.07132842402351304,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.5033945169611562,
+                "sample_SE": 0.08398577896600382,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.46363944939776885,
+                "sample_SE": 0.025056041989896066,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 16,
+                "n": 128,
+                "estimate": 0.125,
+                "Wilson95": [
+                  0.07842644638761664,
+                  0.19342627081751468
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 105,
+                "n": 128,
+                "estimate": 0.8203125,
+                "Wilson95": [
+                  0.7447837371324442,
+                  0.8771754002548395
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 105,
+                "n": 128,
+                "estimate": 0.8203125,
+                "Wilson95": [
+                  0.7447837371324442,
+                  0.8771754002548395
+                ]
+              },
+              "alarm_event": {
+                "count": 60,
+                "n": 128,
+                "estimate": 0.46875,
+                "Wilson95": [
+                  0.3844747677270395,
+                  0.5548462920400548
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 56,
+                "n": 128,
+                "estimate": 0.4375,
+                "Wilson95": [
+                  0.35462313127053047,
+                  0.5240189882636581
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 21,
+                "n": 128,
+                "estimate": 0.1640625,
+                "Wilson95": [
+                  0.1098833164591933,
+                  0.23781807603707017
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 27,
+                "n": 128,
+                "estimate": 0.2109375,
+                "Wilson95": [
+                  0.14921308750498039,
+                  0.28950671534064165
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 6.416666666666667,
+                "sample_SE": 0.5696126479795104,
+                "n": 60
+              },
+              "unreported_infinite_delays_count": 68,
+              "reject_fraction_monitored": 0.11312500000000003,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.1825770458940142,
+                  "sample_SE": 0.015691169927613897,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.08523417562882535,
+                  "sample_SE": 0.015244167711762548,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.06707021979625083,
+                  "sample_SE": 0.013039576777398872,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 0.00026153405169753054,
+                  "sample_SE": 9.278451522945094e-05,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 6.9315012728581305e-19,
+                  "sample_SE": 6.923420084763211e-19,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 62,
+              "readmission_next3_physical_loss_pooled_mean": 0.21046517164756642,
+              "MSE_cross_term_identity_error": 5.551115123125783e-16,
+              "MSE_increment_mean": 0.05956809265929319,
+              "policy_shadow_bias_mean": 0.055903346486946344,
+              "normal_error_cross_term_mean": 0.003664746172346834,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B2": {
+              "physical_target_MSE": {
+                "mean": 0.26295157643821543,
+                "sample_SE": 0.004792924281611126,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.2129037512708875,
+                "sample_SE": 0.0025177689683260254,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.0056775141536636,
+                "sample_SE": 0.0375851578404183,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.0570042127056256,
+                "sample_SE": 0.04325110496069022,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.3299729249301792,
+                "sample_SE": 0.01646512215774443,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 15,
+                "n": 128,
+                "estimate": 0.1171875,
+                "Wilson95": [
+                  0.07231682349355734,
+                  0.18436615865334754
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 105,
+                "n": 128,
+                "estimate": 0.8203125,
+                "Wilson95": [
+                  0.7447837371324442,
+                  0.8771754002548395
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 105,
+                "n": 128,
+                "estimate": 0.8203125,
+                "Wilson95": [
+                  0.7447837371324442,
+                  0.8771754002548395
+                ]
+              },
+              "alarm_event": {
+                "count": 60,
+                "n": 128,
+                "estimate": 0.46875,
+                "Wilson95": [
+                  0.3844747677270395,
+                  0.5548462920400548
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 56,
+                "n": 128,
+                "estimate": 0.4375,
+                "Wilson95": [
+                  0.35462313127053047,
+                  0.5240189882636581
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 21,
+                "n": 128,
+                "estimate": 0.1640625,
+                "Wilson95": [
+                  0.1098833164591933,
+                  0.23781807603707017
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 27,
+                "n": 128,
+                "estimate": 0.2109375,
+                "Wilson95": [
+                  0.14921308750498039,
+                  0.28950671534064165
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 6.416666666666667,
+                "sample_SE": 0.5696126479795104,
+                "n": 60
+              },
+              "unreported_infinite_delays_count": 68,
+              "reject_fraction_monitored": 0.11312500000000003,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.138585538129452,
+                  "sample_SE": 0.012553427634050011,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.028438980491884074,
+                  "sample_SE": 0.00449323003879049,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.035712610690549165,
+                  "sample_SE": 0.0078711345320915,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 0.00011045433232003031,
+                  "sample_SE": 3.999282867314358e-05,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 6.125092278215761e-23,
+                  "sample_SE": 5.315110903545749e-23,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 62,
+              "readmission_next3_physical_loss_pooled_mean": 0.20619015662516835,
+              "MSE_cross_term_identity_error": 5.551115123125783e-16,
+              "MSE_increment_mean": 0.0428928415849785,
+              "policy_shadow_bias_mean": 0.04022710056614654,
+              "normal_error_cross_term_mean": 0.0026657410188319543,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B3": {
+              "physical_target_MSE": {
+                "mean": 0.28211921591287187,
+                "sample_SE": 0.005624301757958187,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21673727916581875,
+                "sample_SE": 0.002571062850673093,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.3975836621736588,
+                "sample_SE": 0.07132842402351304,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.5033945169611562,
+                "sample_SE": 0.08398577896600382,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.46363944939776885,
+                "sample_SE": 0.025056041989896066,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 16,
+                "n": 128,
+                "estimate": 0.125,
+                "Wilson95": [
+                  0.07842644638761664,
+                  0.19342627081751468
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 105,
+                "n": 128,
+                "estimate": 0.8203125,
+                "Wilson95": [
+                  0.7447837371324442,
+                  0.8771754002548395
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 105,
+                "n": 128,
+                "estimate": 0.8203125,
+                "Wilson95": [
+                  0.7447837371324442,
+                  0.8771754002548395
+                ]
+              },
+              "alarm_event": {
+                "count": 60,
+                "n": 128,
+                "estimate": 0.46875,
+                "Wilson95": [
+                  0.3844747677270395,
+                  0.5548462920400548
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 56,
+                "n": 128,
+                "estimate": 0.4375,
+                "Wilson95": [
+                  0.35462313127053047,
+                  0.5240189882636581
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 21,
+                "n": 128,
+                "estimate": 0.1640625,
+                "Wilson95": [
+                  0.1098833164591933,
+                  0.23781807603707017
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 27,
+                "n": 128,
+                "estimate": 0.2109375,
+                "Wilson95": [
+                  0.14921308750498039,
+                  0.28950671534064165
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 6.416666666666667,
+                "sample_SE": 0.5696126479795104,
+                "n": 60
+              },
+              "unreported_infinite_delays_count": 68,
+              "reject_fraction_monitored": 0.11312500000000003,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.1825770458940142,
+                  "sample_SE": 0.015691169927613897,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.08523417562882535,
+                  "sample_SE": 0.015244167711762548,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.06707021979625083,
+                  "sample_SE": 0.013039576777398872,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 0.00026153405169753054,
+                  "sample_SE": 9.278451522945094e-05,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 6.9315012728581305e-19,
+                  "sample_SE": 6.923420084763211e-19,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 62,
+              "readmission_next3_physical_loss_pooled_mean": 0.21046517164756642,
+              "MSE_cross_term_identity_error": 5.551115123125783e-16,
+              "MSE_increment_mean": 0.05956809265929319,
+              "policy_shadow_bias_mean": 0.055903346486946344,
+              "normal_error_cross_term_mean": 0.003664746172346834,
+              "not_a_global_closed_loop_P3_solution": true
+            }
+          },
+          "B2_minus_B1_paired": {
+            "mse": {
+              "mean": -0.019167639474656335,
+              "sample_SE": 0.003040751350254274,
+              "n": 128
+            },
+            "cumulative_bias": {
+              "mean": -0.39190614801999524,
+              "sample_SE": 0.052191968732534774,
+              "n": 128
+            },
+            "risk": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            },
+            "risk_fixed": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            }
+          },
+          "same_secondary_pre_alarm_risk_all_baselines": true,
+          "policy_shadow_risk_difference_count_B2_vs_B1": 0,
+          "healthy_shadow_FA_count_upper_for_difference": 8,
+          "spatial_threshold": 12.429216196844383,
+          "temporal_threshold": 24.352081352360617
+        }
+      }
+    },
+    "stable": {
+      "normal": {
+        "B0": {
+          "target_MSE": {
+            "mean": 0.22184883609045677,
+            "sample_SE": 0.004604635993663555,
+            "n": 128
+          },
+          "network_MSE": {
+            "mean": 0.20756994769105522,
+            "sample_SE": 0.0026802627044662424,
+            "n": 128
+          },
+          "reject_fraction_monitored": 0.0,
+          "spatial_event_FA": {
+            "count": 5,
+            "n": 128,
+            "estimate": 0.0390625,
+            "Wilson95": [
+              0.016798610797803704,
+              0.08818702076683686
+            ]
+          },
+          "temporal_event_FA": {
+            "count": 3,
+            "n": 128,
+            "estimate": 0.0234375,
+            "Wilson95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          }
+        },
+        "B1": {
+          "target_MSE": {
+            "mean": 0.2236918391474651,
+            "sample_SE": 0.004751458036048707,
+            "n": 128
+          },
+          "network_MSE": {
+            "mean": 0.2079385483024569,
+            "sample_SE": 0.002709232838584369,
+            "n": 128
+          },
+          "reject_fraction_monitored": 0.007499999999999951,
+          "spatial_event_FA": {
+            "count": 5,
+            "n": 128,
+            "estimate": 0.0390625,
+            "Wilson95": [
+              0.016798610797803704,
+              0.08818702076683686
+            ]
+          },
+          "temporal_event_FA": {
+            "count": 3,
+            "n": 128,
+            "estimate": 0.0234375,
+            "Wilson95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          }
+        },
+        "B2": {
+          "target_MSE": {
+            "mean": 0.2225099343223935,
+            "sample_SE": 0.004571694688950357,
+            "n": 128
+          },
+          "network_MSE": {
+            "mean": 0.20770216733744257,
+            "sample_SE": 0.002676693090914878,
+            "n": 128
+          },
+          "reject_fraction_monitored": 0.007499999999999951,
+          "spatial_event_FA": {
+            "count": 5,
+            "n": 128,
+            "estimate": 0.0390625,
+            "Wilson95": [
+              0.016798610797803704,
+              0.08818702076683686
+            ]
+          },
+          "temporal_event_FA": {
+            "count": 3,
+            "n": 128,
+            "estimate": 0.0234375,
+            "Wilson95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          }
+        },
+        "B3": {
+          "target_MSE": {
+            "mean": 0.2236918391474651,
+            "sample_SE": 0.004751458036048707,
+            "n": 128
+          },
+          "network_MSE": {
+            "mean": 0.2079385483024569,
+            "sample_SE": 0.002709232838584369,
+            "n": 128
+          },
+          "reject_fraction_monitored": 0.007499999999999951,
+          "spatial_event_FA": {
+            "count": 5,
+            "n": 128,
+            "estimate": 0.0390625,
+            "Wilson95": [
+              0.016798610797803704,
+              0.08818702076683686
+            ]
+          },
+          "temporal_event_FA": {
+            "count": 3,
+            "n": 128,
+            "estimate": 0.0234375,
+            "Wilson95": [
+              0.008002416396755481,
+              0.06664374505143222
+            ]
+          }
+        }
+      },
+      "cases": {
+        "identity/ordinary": {
+          "attack": {
+            "xi": [
+              -1.8930811926744247,
+              0.4206847094832055
+            ],
+            "actual_energy": 9.999999999999998,
+            "source_direction": "existing first-packet witness (-1.89,.42), normalized to the SAME E=10",
+            "exact_energy_rational": "1279999999999999862803386133476684622790002017054717419788986277/128000000000000000000000000000000000000000000000000000000000000"
+          },
+          "sample_coding_energy": 10.0,
+          "normal_encoded_to_raw_signal_energy_ratio": 1.0,
+          "baselines": {
+            "B0": {
+              "physical_target_MSE": {
+                "mean": 0.2531841075966815,
+                "sample_SE": 0.005372114585637988,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21383700199230013,
+                "sample_SE": 0.002692750818375168,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.8301113478522364,
+                "sample_SE": 3.588163527801127e-17,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 0.8301113478522364,
+                "sample_SE": 3.588163527801127e-17,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.26979372804592094,
+                "sample_SE": 1.5884092832644982e-17,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 128,
+                "n": 128,
+                "estimate": 1.0,
+                "Wilson95": [
+                  0.9708630437264916,
+                  1.0
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 112,
+                "n": 128,
+                "estimate": 0.875,
+                "Wilson95": [
+                  0.8065737291824854,
+                  0.9215735536123834
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 112,
+                "n": 128,
+                "estimate": 0.875,
+                "Wilson95": [
+                  0.8065737291824854,
+                  0.9215735536123834
+                ]
+              },
+              "alarm_event": {
+                "count": 30,
+                "n": 128,
+                "estimate": 0.234375,
+                "Wilson95": [
+                  0.16939357691207274,
+                  0.31483543110822865
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 28,
+                "n": 128,
+                "estimate": 0.21875,
+                "Wilson95": [
+                  0.15590524094938307,
+                  0.29798429695446543
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 10,
+                "n": 128,
+                "estimate": 0.078125,
+                "Wilson95": [
+                  0.04298737505098223,
+                  0.13784693180479052
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 10,
+                "n": 128,
+                "estimate": 0.078125,
+                "Wilson95": [
+                  0.04298737505098223,
+                  0.13784693180479052
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 2.7,
+                "sample_SE": 0.9603040706182481,
+                "n": 30
+              },
+              "unreported_infinite_delays_count": 98,
+              "reject_fraction_monitored": 0.0,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.005125739541287451,
+                  "sample_SE": 2.5009109405329848e-18,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 3.9209665567746326e-05,
+                  "sample_SE": 2.093505202223065e-19,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 3.0043149520545247e-07,
+                  "sample_SE": 1.5896640382785064e-20,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 1.3656213870973385e-13,
+                  "sample_SE": 8.89852781072097e-24,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 3.0887101483110295e-32,
+                  "sample_SE": 9.440141167913052e-33,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 0,
+              "readmission_next3_physical_loss_pooled_mean": null,
+              "MSE_cross_term_identity_error": 4.440892098500626e-16,
+              "MSE_increment_mean": 0.03133527150622469,
+              "policy_shadow_bias_mean": 0.03320445391408946,
+              "normal_error_cross_term_mean": -0.0018691824078647709,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B1": {
+              "physical_target_MSE": {
+                "mean": 0.25884447040075265,
+                "sample_SE": 0.005687878968611344,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21496907455311437,
+                "sample_SE": 0.0027308040609200827,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.9554599392613365,
+                "sample_SE": 0.034265841465846505,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 0.9876210304976736,
+                "sample_SE": 0.03865556684830996,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.3202185889646476,
+                "sample_SE": 0.012292585442823332,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 122,
+                "n": 128,
+                "estimate": 0.953125,
+                "Wilson95": [
+                  0.9015024775490568,
+                  0.9783421558280763
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 112,
+                "n": 128,
+                "estimate": 0.875,
+                "Wilson95": [
+                  0.8065737291824854,
+                  0.9215735536123834
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 112,
+                "n": 128,
+                "estimate": 0.875,
+                "Wilson95": [
+                  0.8065737291824854,
+                  0.9215735536123834
+                ]
+              },
+              "alarm_event": {
+                "count": 30,
+                "n": 128,
+                "estimate": 0.234375,
+                "Wilson95": [
+                  0.16939357691207274,
+                  0.31483543110822865
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 28,
+                "n": 128,
+                "estimate": 0.21875,
+                "Wilson95": [
+                  0.15590524094938307,
+                  0.29798429695446543
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 10,
+                "n": 128,
+                "estimate": 0.078125,
+                "Wilson95": [
+                  0.04298737505098223,
+                  0.13784693180479052
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 10,
+                "n": 128,
+                "estimate": 0.078125,
+                "Wilson95": [
+                  0.04298737505098223,
+                  0.13784693180479052
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 2.7,
+                "sample_SE": 0.9603040706182481,
+                "n": 30
+              },
+              "unreported_infinite_delays_count": 98,
+              "reject_fraction_monitored": 0.04874999999999996,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.00598409059120542,
+                  "sample_SE": 0.0005684390496146081,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.0026963428969594447,
+                  "sample_SE": 0.0018451112489089115,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.001718225891360588,
+                  "sample_SE": 0.00170008642967978,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 2.3880623582571998e-05,
+                  "sample_SE": 2.387968936043791e-05,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 1.2118103623365462e-26,
+                  "sample_SE": 1.2116238563835094e-26,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 29,
+              "readmission_next3_physical_loss_pooled_mean": 0.25287305310833946,
+              "MSE_cross_term_identity_error": 4.440892098500626e-16,
+              "MSE_increment_mean": 0.03515263125328751,
+              "policy_shadow_bias_mean": 0.03821839757045346,
+              "normal_error_cross_term_mean": -0.003065766317165959,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B2": {
+              "physical_target_MSE": {
+                "mean": 0.2513156966169188,
+                "sample_SE": 0.0052463124627280585,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.2134633197963476,
+                "sample_SE": 0.0027175694611765674,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.8223073672493938,
+                "sample_SE": 0.01687930028294529,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 0.8422225287248255,
+                "sample_SE": 0.020152260440580196,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.26493587727905443,
+                "sample_SE": 0.003420531589441886,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 124,
+                "n": 128,
+                "estimate": 0.96875,
+                "Wilson95": [
+                  0.9224023687386392,
+                  0.9877817347549466
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 112,
+                "n": 128,
+                "estimate": 0.875,
+                "Wilson95": [
+                  0.8065737291824854,
+                  0.9215735536123834
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 112,
+                "n": 128,
+                "estimate": 0.875,
+                "Wilson95": [
+                  0.8065737291824854,
+                  0.9215735536123834
+                ]
+              },
+              "alarm_event": {
+                "count": 30,
+                "n": 128,
+                "estimate": 0.234375,
+                "Wilson95": [
+                  0.16939357691207274,
+                  0.31483543110822865
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 28,
+                "n": 128,
+                "estimate": 0.21875,
+                "Wilson95": [
+                  0.15590524094938307,
+                  0.29798429695446543
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 10,
+                "n": 128,
+                "estimate": 0.078125,
+                "Wilson95": [
+                  0.04298737505098223,
+                  0.13784693180479052
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 10,
+                "n": 128,
+                "estimate": 0.078125,
+                "Wilson95": [
+                  0.04298737505098223,
+                  0.13784693180479052
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 2.7,
+                "sample_SE": 0.9603040706182481,
+                "n": 30
+              },
+              "unreported_infinite_delays_count": 98,
+              "reject_fraction_monitored": 0.04874999999999996,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.00803459020119518,
+                  "sample_SE": 0.001787539366669092,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.0012395038230411952,
+                  "sample_SE": 0.0008801977368114756,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.0028182570990331994,
+                  "sample_SE": 0.002588280225628342,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 1.3508971117957598e-05,
+                  "sample_SE": 1.3507375293403297e-05,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 6.766818800478707e-27,
+                  "sample_SE": 6.763832474710714e-27,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 29,
+              "readmission_next3_physical_loss_pooled_mean": 0.2500515626208039,
+              "MSE_cross_term_identity_error": 4.440892098500626e-16,
+              "MSE_increment_mean": 0.028805762294525365,
+              "policy_shadow_bias_mean": 0.03289229468997576,
+              "normal_error_cross_term_mean": -0.004086532395450396,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B3": {
+              "physical_target_MSE": {
+                "mean": 0.25884447040075265,
+                "sample_SE": 0.005687878968611344,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21496907455311437,
+                "sample_SE": 0.0027308040609200827,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.9554599392613365,
+                "sample_SE": 0.034265841465846505,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 0.9876210304976736,
+                "sample_SE": 0.03865556684830996,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.3202185889646476,
+                "sample_SE": 0.012292585442823332,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 122,
+                "n": 128,
+                "estimate": 0.953125,
+                "Wilson95": [
+                  0.9015024775490568,
+                  0.9783421558280763
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 112,
+                "n": 128,
+                "estimate": 0.875,
+                "Wilson95": [
+                  0.8065737291824854,
+                  0.9215735536123834
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 112,
+                "n": 128,
+                "estimate": 0.875,
+                "Wilson95": [
+                  0.8065737291824854,
+                  0.9215735536123834
+                ]
+              },
+              "alarm_event": {
+                "count": 30,
+                "n": 128,
+                "estimate": 0.234375,
+                "Wilson95": [
+                  0.16939357691207274,
+                  0.31483543110822865
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 28,
+                "n": 128,
+                "estimate": 0.21875,
+                "Wilson95": [
+                  0.15590524094938307,
+                  0.29798429695446543
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 10,
+                "n": 128,
+                "estimate": 0.078125,
+                "Wilson95": [
+                  0.04298737505098223,
+                  0.13784693180479052
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 10,
+                "n": 128,
+                "estimate": 0.078125,
+                "Wilson95": [
+                  0.04298737505098223,
+                  0.13784693180479052
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 2.7,
+                "sample_SE": 0.9603040706182481,
+                "n": 30
+              },
+              "unreported_infinite_delays_count": 98,
+              "reject_fraction_monitored": 0.04874999999999996,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.00598409059120542,
+                  "sample_SE": 0.0005684390496146081,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.0026963428969594447,
+                  "sample_SE": 0.0018451112489089115,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.001718225891360588,
+                  "sample_SE": 0.00170008642967978,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 2.3880623582571998e-05,
+                  "sample_SE": 2.387968936043791e-05,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 1.2118103623365462e-26,
+                  "sample_SE": 1.2116238563835094e-26,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 29,
+              "readmission_next3_physical_loss_pooled_mean": 0.25287305310833946,
+              "MSE_cross_term_identity_error": 4.440892098500626e-16,
+              "MSE_increment_mean": 0.03515263125328751,
+              "policy_shadow_bias_mean": 0.03821839757045346,
+              "normal_error_cross_term_mean": -0.003065766317165959,
+              "not_a_global_closed_loop_P3_solution": true
+            }
+          },
+          "B2_minus_B1_paired": {
+            "mse": {
+              "mean": -0.007528773783833795,
+              "sample_SE": 0.001947770353292304,
+              "n": 128
+            },
+            "cumulative_bias": {
+              "mean": -0.13315257201194283,
+              "sample_SE": 0.03275465752188722,
+              "n": 128
+            },
+            "risk": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            },
+            "risk_fixed": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            }
+          },
+          "same_secondary_pre_alarm_risk_all_baselines": true,
+          "policy_shadow_risk_difference_count_B2_vs_B1": 0,
+          "healthy_shadow_FA_count_upper_for_difference": 5,
+          "spatial_threshold": 12.429216196844383,
+          "temporal_threshold": 24.352081352360617
+        },
+        "identity/P1": {
+          "attack": {
+            "xi": [
+              1.9041881482569043,
+              -0.36342968174523993
+            ],
+            "actual_energy": 9.999999999999996,
+            "worst_prefix_post_index": 0,
+            "max_expected_bias_squared_all_accept": 0.27002636257468193,
+            "not_a_switched_closed_loop_worst_attack": true,
+            "exact_energy_rational": "2047999999999999232174570447398557837293471377764616350629298797/204800000000000000000000000000000000000000000000000000000000000"
+          },
+          "sample_coding_energy": 9.999999999999998,
+          "normal_encoded_to_raw_signal_energy_ratio": 1.0,
+          "baselines": {
+            "B0": {
+              "physical_target_MSE": {
+                "mean": 0.25695868914300535,
+                "sample_SE": 0.005288135829202869,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21459191830156493,
+                "sample_SE": 0.00277664391780425,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.8325779750254176,
+                "sample_SE": 3.326067284074816e-17,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 0.8325779750254176,
+                "sample_SE": 3.326067284074816e-17,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.27002636257468193,
+                "sample_SE": 1.3636656234295495e-17,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 128,
+                "n": 128,
+                "estimate": 1.0,
+                "Wilson95": [
+                  0.9708630437264916,
+                  1.0
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 117,
+                "n": 128,
+                "estimate": 0.9140625,
+                "Wilson95": [
+                  0.852659089457387,
+                  0.9513368686286138
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 117,
+                "n": 128,
+                "estimate": 0.9140625,
+                "Wilson95": [
+                  0.852659089457387,
+                  0.9513368686286138
+                ]
+              },
+              "alarm_event": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 25,
+                "n": 128,
+                "estimate": 0.1953125,
+                "Wilson95": [
+                  0.1359396128283779,
+                  0.2724407199007913
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 8,
+                "n": 128,
+                "estimate": 0.0625,
+                "Wilson95": [
+                  0.03200692569506119,
+                  0.11848791104425865
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 8,
+                "n": 128,
+                "estimate": 0.0625,
+                "Wilson95": [
+                  0.03200692569506119,
+                  0.11848791104425865
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 2.1538461538461537,
+                "sample_SE": 0.8605763859044308,
+                "n": 26
+              },
+              "unreported_infinite_delays_count": 102,
+              "reject_fraction_monitored": 0.0,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.005099595164048517,
+                  "sample_SE": 2.1149547703697368e-18,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 3.958893700178054e-05,
+                  "sample_SE": 1.8342290396565354e-19,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 3.079535693857048e-07,
+                  "sample_SE": 1.636431962272167e-20,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 1.4674543889318962e-13,
+                  "sample_SE": 1.17038040169534e-23,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 2.5387668712223305e-32,
+                  "sample_SE": 7.444623193194628e-33,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 0,
+              "readmission_next3_physical_loss_pooled_mean": null,
+              "MSE_cross_term_identity_error": 6.661338147750939e-16,
+              "MSE_increment_mean": 0.035109853052548545,
+              "policy_shadow_bias_mean": 0.03330311900101671,
+              "normal_error_cross_term_mean": 0.0018067340515318354,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B1": {
+              "physical_target_MSE": {
+                "mean": 0.2625615604245829,
+                "sample_SE": 0.0057892064066262655,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21571249255788044,
+                "sample_SE": 0.00282391609083602,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.9627080892201749,
+                "sample_SE": 0.03457224045496416,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.0116825652875332,
+                "sample_SE": 0.044813344293879925,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.32309461591644467,
+                "sample_SE": 0.01354037928651547,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 126,
+                "n": 128,
+                "estimate": 0.984375,
+                "Wilson95": [
+                  0.9448190233201829,
+                  0.9957045502898559
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 117,
+                "n": 128,
+                "estimate": 0.9140625,
+                "Wilson95": [
+                  0.852659089457387,
+                  0.9513368686286138
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 117,
+                "n": 128,
+                "estimate": 0.9140625,
+                "Wilson95": [
+                  0.852659089457387,
+                  0.9513368686286138
+                ]
+              },
+              "alarm_event": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 25,
+                "n": 128,
+                "estimate": 0.1953125,
+                "Wilson95": [
+                  0.1359396128283779,
+                  0.2724407199007913
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 8,
+                "n": 128,
+                "estimate": 0.0625,
+                "Wilson95": [
+                  0.03200692569506119,
+                  0.11848791104425865
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 8,
+                "n": 128,
+                "estimate": 0.0625,
+                "Wilson95": [
+                  0.03200692569506119,
+                  0.11848791104425865
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 2.1538461538461537,
+                "sample_SE": 0.8605763859044308,
+                "n": 26
+              },
+              "unreported_infinite_delays_count": 102,
+              "reject_fraction_monitored": 0.04437500000000005,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.004959923138361159,
+                  "sample_SE": 7.219974481046004e-05,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 3.89792079832659e-05,
+                  "sample_SE": 5.372181401768638e-07,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 3.4507472293398017e-07,
+                  "sample_SE": 4.3596498302167366e-08,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 2.9964498334396355e-12,
+                  "sample_SE": 2.8526146263060933e-12,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 3.165401280549637e-31,
+                  "sample_SE": 2.6703834219539866e-31,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 26,
+              "readmission_next3_physical_loss_pooled_mean": 0.26703874318693777,
+              "MSE_cross_term_identity_error": 6.661338147750939e-16,
+              "MSE_increment_mean": 0.03886972127711778,
+              "policy_shadow_bias_mean": 0.038508323568807,
+              "normal_error_cross_term_mean": 0.0003613977083107901,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B2": {
+              "physical_target_MSE": {
+                "mean": 0.2559697093042091,
+                "sample_SE": 0.005285225814688128,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.2143941223338057,
+                "sample_SE": 0.0027545672358602366,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.818768408857846,
+                "sample_SE": 0.009087494590574485,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 0.8480440335078947,
+                "sample_SE": 0.016801035930698264,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.2692633319832146,
+                "sample_SE": 0.0029201891142776773,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 125,
+                "n": 128,
+                "estimate": 0.9765625,
+                "Wilson95": [
+                  0.9333562549485678,
+                  0.9919975836032445
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 117,
+                "n": 128,
+                "estimate": 0.9140625,
+                "Wilson95": [
+                  0.852659089457387,
+                  0.9513368686286138
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 117,
+                "n": 128,
+                "estimate": 0.9140625,
+                "Wilson95": [
+                  0.852659089457387,
+                  0.9513368686286138
+                ]
+              },
+              "alarm_event": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 25,
+                "n": 128,
+                "estimate": 0.1953125,
+                "Wilson95": [
+                  0.1359396128283779,
+                  0.2724407199007913
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 8,
+                "n": 128,
+                "estimate": 0.0625,
+                "Wilson95": [
+                  0.03200692569506119,
+                  0.11848791104425865
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 8,
+                "n": 128,
+                "estimate": 0.0625,
+                "Wilson95": [
+                  0.03200692569506119,
+                  0.11848791104425865
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 2.1538461538461537,
+                "sample_SE": 0.8605763859044308,
+                "n": 26
+              },
+              "unreported_infinite_delays_count": 102,
+              "reject_fraction_monitored": 0.04437500000000005,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.004973679111038021,
+                  "sample_SE": 6.821167632543613e-05,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 3.8632980122418324e-05,
+                  "sample_SE": 5.260631221324121e-07,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 3.007124431723971e-07,
+                  "sample_SE": 4.056908881743683e-09,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 1.4363073781326978e-13,
+                  "sample_SE": 1.875960331666264e-15,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 3.3476574478649696e-32,
+                  "sample_SE": 9.863156467494438e-33,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 26,
+              "readmission_next3_physical_loss_pooled_mean": 0.26427878221289725,
+              "MSE_cross_term_identity_error": 6.661338147750939e-16,
+              "MSE_increment_mean": 0.03345977498181562,
+              "policy_shadow_bias_mean": 0.032750736354313845,
+              "normal_error_cross_term_mean": 0.0007090386275017746,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B3": {
+              "physical_target_MSE": {
+                "mean": 0.2625615604245829,
+                "sample_SE": 0.0057892064066262655,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21571249255788044,
+                "sample_SE": 0.00282391609083602,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.9627080892201749,
+                "sample_SE": 0.03457224045496416,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.0116825652875332,
+                "sample_SE": 0.044813344293879925,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.32309461591644467,
+                "sample_SE": 0.01354037928651547,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 126,
+                "n": 128,
+                "estimate": 0.984375,
+                "Wilson95": [
+                  0.9448190233201829,
+                  0.9957045502898559
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 117,
+                "n": 128,
+                "estimate": 0.9140625,
+                "Wilson95": [
+                  0.852659089457387,
+                  0.9513368686286138
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 117,
+                "n": 128,
+                "estimate": 0.9140625,
+                "Wilson95": [
+                  0.852659089457387,
+                  0.9513368686286138
+                ]
+              },
+              "alarm_event": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 25,
+                "n": 128,
+                "estimate": 0.1953125,
+                "Wilson95": [
+                  0.1359396128283779,
+                  0.2724407199007913
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 8,
+                "n": 128,
+                "estimate": 0.0625,
+                "Wilson95": [
+                  0.03200692569506119,
+                  0.11848791104425865
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 8,
+                "n": 128,
+                "estimate": 0.0625,
+                "Wilson95": [
+                  0.03200692569506119,
+                  0.11848791104425865
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 2.1538461538461537,
+                "sample_SE": 0.8605763859044308,
+                "n": 26
+              },
+              "unreported_infinite_delays_count": 102,
+              "reject_fraction_monitored": 0.04437500000000005,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.004959923138361159,
+                  "sample_SE": 7.219974481046004e-05,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 3.89792079832659e-05,
+                  "sample_SE": 5.372181401768638e-07,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 3.4507472293398017e-07,
+                  "sample_SE": 4.3596498302167366e-08,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 2.9964498334396355e-12,
+                  "sample_SE": 2.8526146263060933e-12,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 3.165401280549637e-31,
+                  "sample_SE": 2.6703834219539866e-31,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 26,
+              "readmission_next3_physical_loss_pooled_mean": 0.26703874318693777,
+              "MSE_cross_term_identity_error": 6.661338147750939e-16,
+              "MSE_increment_mean": 0.03886972127711778,
+              "policy_shadow_bias_mean": 0.038508323568807,
+              "normal_error_cross_term_mean": 0.0003613977083107901,
+              "not_a_global_closed_loop_P3_solution": true
+            }
+          },
+          "B2_minus_B1_paired": {
+            "mse": {
+              "mean": -0.006591851120373816,
+              "sample_SE": 0.0021202482375043815,
+              "n": 128
+            },
+            "cumulative_bias": {
+              "mean": -0.14393968036232885,
+              "sample_SE": 0.0360116346111696,
+              "n": 128
+            },
+            "risk": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            },
+            "risk_fixed": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            }
+          },
+          "same_secondary_pre_alarm_risk_all_baselines": true,
+          "policy_shadow_risk_difference_count_B2_vs_B1": 0,
+          "healthy_shadow_FA_count_upper_for_difference": 5,
+          "spatial_threshold": 12.429216196844383,
+          "temporal_threshold": 24.352081352360617
+        },
+        "original_Gaussian/ordinary": {
+          "attack": {
+            "xi": [
+              -1.8930811926744247,
+              0.4206847094832055
+            ],
+            "actual_energy": 9.999999999999998,
+            "source_direction": "existing first-packet witness (-1.89,.42), normalized to the SAME E=10",
+            "exact_energy_rational": "1279999999999999862803386133476684622790002017054717419788986277/128000000000000000000000000000000000000000000000000000000000000"
+          },
+          "sample_coding_energy": 10.0,
+          "normal_encoded_to_raw_signal_energy_ratio": 2.5793784292423387,
+          "baselines": {
+            "B0": {
+              "physical_target_MSE": {
+                "mean": 0.2735747330553151,
+                "sample_SE": 0.006862168013791538,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21791512708402688,
+                "sample_SE": 0.002942700848427211,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.3473551519957598,
+                "sample_SE": 0.09449244267714732,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.3473551519957598,
+                "sample_SE": 0.09449244267714732,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.7288636603004751,
+                "sample_SE": 0.07279158027697251,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 85,
+                "n": 128,
+                "estimate": 0.6640625,
+                "Wilson95": [
+                  0.5785182090110383,
+                  0.7400462272117168
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 90,
+                "n": 128,
+                "estimate": 0.703125,
+                "Wilson95": [
+                  0.6189947723495539,
+                  0.7754183391643332
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 90,
+                "n": 128,
+                "estimate": 0.703125,
+                "Wilson95": [
+                  0.6189947723495539,
+                  0.7754183391643332
+                ]
+              },
+              "alarm_event": {
+                "count": 60,
+                "n": 128,
+                "estimate": 0.46875,
+                "Wilson95": [
+                  0.3844747677270395,
+                  0.5548462920400548
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 58,
+                "n": 128,
+                "estimate": 0.453125,
+                "Wilson95": [
+                  0.36950795637281275,
+                  0.5394736332778287
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 2.0833333333333335,
+                "sample_SE": 0.4930543951075175,
+                "n": 60
+              },
+              "unreported_infinite_delays_count": 68,
+              "reject_fraction_monitored": 0.0,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.008859641688391762,
+                  "sample_SE": 0.0014102469078423883,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 6.781388494140991e-05,
+                  "sample_SE": 1.0693793913927452e-05,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 5.204631668161771e-07,
+                  "sample_SE": 8.15121258339783e-08,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 2.394071185006609e-13,
+                  "sample_SE": 3.7443424675018133e-14,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 1.7832907578810562e-32,
+                  "sample_SE": 3.9153612041028665e-33,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 0,
+              "readmission_next3_physical_loss_pooled_mean": null,
+              "MSE_cross_term_identity_error": 1.5543122344752192e-15,
+              "MSE_increment_mean": 0.05172589696485832,
+              "policy_shadow_bias_mean": 0.05389420607983039,
+              "normal_error_cross_term_mean": -0.0021683091149720672,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B1": {
+              "physical_target_MSE": {
+                "mean": 0.26411713130749864,
+                "sample_SE": 0.006281430315965955,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21602360673446358,
+                "sample_SE": 0.0028741699280717212,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.1273962093151324,
+                "sample_SE": 0.059556644623118105,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.1592976049487755,
+                "sample_SE": 0.062053628457508114,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.4227259490620341,
+                "sample_SE": 0.02264178853633885,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 74,
+                "n": 128,
+                "estimate": 0.578125,
+                "Wilson95": [
+                  0.4915184739711009,
+                  0.6601788766111634
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 90,
+                "n": 128,
+                "estimate": 0.703125,
+                "Wilson95": [
+                  0.6189947723495539,
+                  0.7754183391643332
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 90,
+                "n": 128,
+                "estimate": 0.703125,
+                "Wilson95": [
+                  0.6189947723495539,
+                  0.7754183391643332
+                ]
+              },
+              "alarm_event": {
+                "count": 60,
+                "n": 128,
+                "estimate": 0.46875,
+                "Wilson95": [
+                  0.3844747677270395,
+                  0.5548462920400548
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 58,
+                "n": 128,
+                "estimate": 0.453125,
+                "Wilson95": [
+                  0.36950795637281275,
+                  0.5394736332778287
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 2.0833333333333335,
+                "sample_SE": 0.4930543951075175,
+                "n": 60
+              },
+              "unreported_infinite_delays_count": 68,
+              "reject_fraction_monitored": 0.10343749999999996,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.013594501186615185,
+                  "sample_SE": 0.003117758953640417,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.0048924149478630705,
+                  "sample_SE": 0.002358876052793395,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.011072231498237004,
+                  "sample_SE": 0.009124186621473702,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 2.0652791645733826e-07,
+                  "sample_SE": 1.7503132490893286e-07,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 2.2409131386380947e-28,
+                  "sample_SE": 2.012122127976926e-28,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 61,
+              "readmission_next3_physical_loss_pooled_mean": 0.26328409055267415,
+              "MSE_cross_term_identity_error": 8.881784197001252e-16,
+              "MSE_increment_mean": 0.040425292160033564,
+              "policy_shadow_bias_mean": 0.0450958483726053,
+              "normal_error_cross_term_mean": -0.004670556212571744,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B2": {
+              "physical_target_MSE": {
+                "mean": 0.24981987021401542,
+                "sample_SE": 0.0056507225997472045,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21316415451576695,
+                "sample_SE": 0.0027574546677276487,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.8168433338900064,
+                "sample_SE": 0.036423718545265896,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 0.8359122944110347,
+                "sample_SE": 0.038282067754468616,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.30571093108095315,
+                "sample_SE": 0.016879997865927743,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 73,
+                "n": 128,
+                "estimate": 0.5703125,
+                "Wilson95": [
+                  0.48373932885040405,
+                  0.6527882866736338
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 90,
+                "n": 128,
+                "estimate": 0.703125,
+                "Wilson95": [
+                  0.6189947723495539,
+                  0.7754183391643332
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 90,
+                "n": 128,
+                "estimate": 0.703125,
+                "Wilson95": [
+                  0.6189947723495539,
+                  0.7754183391643332
+                ]
+              },
+              "alarm_event": {
+                "count": 60,
+                "n": 128,
+                "estimate": 0.46875,
+                "Wilson95": [
+                  0.3844747677270395,
+                  0.5548462920400548
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 58,
+                "n": 128,
+                "estimate": 0.453125,
+                "Wilson95": [
+                  0.36950795637281275,
+                  0.5394736332778287
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 2.0833333333333335,
+                "sample_SE": 0.4930543951075175,
+                "n": 60
+              },
+              "unreported_infinite_delays_count": 68,
+              "reject_fraction_monitored": 0.10343749999999996,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.011332092331308628,
+                  "sample_SE": 0.001992253173777166,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.0037686424228337567,
+                  "sample_SE": 0.0016667867386963332,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.006125326516000295,
+                  "sample_SE": 0.004335073136861965,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 7.13911276154904e-08,
+                  "sample_SE": 6.826594315351722e-08,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 3.5221743860694037e-29,
+                  "sample_SE": 3.019260887706728e-29,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 61,
+              "readmission_next3_physical_loss_pooled_mean": 0.2643543637977585,
+              "MSE_cross_term_identity_error": 8.881784197001252e-16,
+              "MSE_increment_mean": 0.027309935891621905,
+              "policy_shadow_bias_mean": 0.032673733355600254,
+              "normal_error_cross_term_mean": -0.005363797463978355,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B3": {
+              "physical_target_MSE": {
+                "mean": 0.26411713130749864,
+                "sample_SE": 0.006281430315965955,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21602360673446358,
+                "sample_SE": 0.0028741699280717212,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.1273962093151324,
+                "sample_SE": 0.059556644623118105,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.1592976049487755,
+                "sample_SE": 0.062053628457508114,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.4227259490620341,
+                "sample_SE": 0.02264178853633885,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 74,
+                "n": 128,
+                "estimate": 0.578125,
+                "Wilson95": [
+                  0.4915184739711009,
+                  0.6601788766111634
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 90,
+                "n": 128,
+                "estimate": 0.703125,
+                "Wilson95": [
+                  0.6189947723495539,
+                  0.7754183391643332
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 90,
+                "n": 128,
+                "estimate": 0.703125,
+                "Wilson95": [
+                  0.6189947723495539,
+                  0.7754183391643332
+                ]
+              },
+              "alarm_event": {
+                "count": 60,
+                "n": 128,
+                "estimate": 0.46875,
+                "Wilson95": [
+                  0.3844747677270395,
+                  0.5548462920400548
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 58,
+                "n": 128,
+                "estimate": 0.453125,
+                "Wilson95": [
+                  0.36950795637281275,
+                  0.5394736332778287
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 26,
+                "n": 128,
+                "estimate": 0.203125,
+                "Wilson95": [
+                  0.1425573819359227,
+                  0.2809926858514729
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 2.0833333333333335,
+                "sample_SE": 0.4930543951075175,
+                "n": 60
+              },
+              "unreported_infinite_delays_count": 68,
+              "reject_fraction_monitored": 0.10343749999999996,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.013594501186615185,
+                  "sample_SE": 0.003117758953640417,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 0.0048924149478630705,
+                  "sample_SE": 0.002358876052793395,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 0.011072231498237004,
+                  "sample_SE": 0.009124186621473702,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 2.0652791645733826e-07,
+                  "sample_SE": 1.7503132490893286e-07,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 2.2409131386380947e-28,
+                  "sample_SE": 2.012122127976926e-28,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 61,
+              "readmission_next3_physical_loss_pooled_mean": 0.26328409055267415,
+              "MSE_cross_term_identity_error": 8.881784197001252e-16,
+              "MSE_increment_mean": 0.040425292160033564,
+              "policy_shadow_bias_mean": 0.0450958483726053,
+              "normal_error_cross_term_mean": -0.004670556212571744,
+              "not_a_global_closed_loop_P3_solution": true
+            }
+          },
+          "B2_minus_B1_paired": {
+            "mse": {
+              "mean": -0.014297261093483291,
+              "sample_SE": 0.0023486206920721,
+              "n": 128
+            },
+            "cumulative_bias": {
+              "mean": -0.3105528754251261,
+              "sample_SE": 0.044908242019422756,
+              "n": 128
+            },
+            "risk": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            },
+            "risk_fixed": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            }
+          },
+          "same_secondary_pre_alarm_risk_all_baselines": true,
+          "policy_shadow_risk_difference_count_B2_vs_B1": 0,
+          "healthy_shadow_FA_count_upper_for_difference": 5,
+          "spatial_threshold": 12.429216196844383,
+          "temporal_threshold": 24.352081352360617
+        },
+        "original_Gaussian/P1": {
+          "attack": {
+            "xi": [
+              1.9017815856502032,
+              -0.37738855801897175
+            ],
+            "actual_energy": 9.999999999999998,
+            "worst_prefix_post_index": 0,
+            "max_expected_bias_squared_all_accept": 0.46457988087405144,
+            "not_a_switched_closed_loop_worst_attack": true,
+            "exact_energy_rational": "10239999999999997367278570853208483474588924041448933885598667701/1024000000000000000000000000000000000000000000000000000000000000"
+          },
+          "sample_coding_energy": 9.999999999999998,
+          "normal_encoded_to_raw_signal_energy_ratio": 2.5793784292423387,
+          "baselines": {
+            "B0": {
+              "physical_target_MSE": {
+                "mean": 0.2779288468070129,
+                "sample_SE": 0.006507070000025247,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21878594983436644,
+                "sample_SE": 0.002897221281923957,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.3492355202874418,
+                "sample_SE": 0.09538651746213625,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.3492355202874418,
+                "sample_SE": 0.09538651746213625,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.7283559355018658,
+                "sample_SE": 0.07356081968376041,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 86,
+                "n": 128,
+                "estimate": 0.671875,
+                "Wilson95": [
+                  0.5865640159976144,
+                  0.7471701552833669
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 94,
+                "n": 128,
+                "estimate": 0.734375,
+                "Wilson95": [
+                  0.6518470619103658,
+                  0.8032449898364271
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 94,
+                "n": 128,
+                "estimate": 0.734375,
+                "Wilson95": [
+                  0.6518470619103658,
+                  0.8032449898364271
+                ]
+              },
+              "alarm_event": {
+                "count": 55,
+                "n": 128,
+                "estimate": 0.4296875,
+                "Wilson95": [
+                  0.3472117133263662,
+                  0.516260671149596
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 53,
+                "n": 128,
+                "estimate": 0.4140625,
+                "Wilson95": [
+                  0.33245150577514415,
+                  0.5006814085843652
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 22,
+                "n": 128,
+                "estimate": 0.171875,
+                "Wilson95": [
+                  0.11633115948147267,
+                  0.24653996807301726
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 23,
+                "n": 128,
+                "estimate": 0.1796875,
+                "Wilson95": [
+                  0.12282459974516051,
+                  0.25521626286755583
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 1.9272727272727272,
+                "sample_SE": 0.5285483234978815,
+                "n": 55
+              },
+              "unreported_infinite_delays_count": 73,
+              "reject_fraction_monitored": 0.0,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.008709856337105259,
+                  "sample_SE": 0.0013621778718272708,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 6.719668847464971e-05,
+                  "sample_SE": 1.0424291117580931e-05,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 5.19928159716353e-07,
+                  "sample_SE": 8.025575981847678e-08,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 2.452559330859746e-13,
+                  "sample_SE": 3.811471639999755e-14,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 2.680804204620889e-32,
+                  "sample_SE": 7.441210691137692e-33,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 0,
+              "readmission_next3_physical_loss_pooled_mean": null,
+              "MSE_cross_term_identity_error": 6.661338147750939e-16,
+              "MSE_increment_mean": 0.056080010716556154,
+              "policy_shadow_bias_mean": 0.053969420811497665,
+              "normal_error_cross_term_mean": 0.0021105899050584834,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B1": {
+              "physical_target_MSE": {
+                "mean": 0.26576944014808385,
+                "sample_SE": 0.005756308506937951,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21635406850258065,
+                "sample_SE": 0.002801800168580942,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.0572292735999136,
+                "sample_SE": 0.05267857162658237,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.105956945575941,
+                "sample_SE": 0.055246879310021584,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.4135568427860674,
+                "sample_SE": 0.02225322473812299,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 79,
+                "n": 128,
+                "estimate": 0.6171875,
+                "Wilson95": [
+                  0.5307322844502991,
+                  0.6968137414230975
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 94,
+                "n": 128,
+                "estimate": 0.734375,
+                "Wilson95": [
+                  0.6518470619103658,
+                  0.8032449898364271
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 94,
+                "n": 128,
+                "estimate": 0.734375,
+                "Wilson95": [
+                  0.6518470619103658,
+                  0.8032449898364271
+                ]
+              },
+              "alarm_event": {
+                "count": 55,
+                "n": 128,
+                "estimate": 0.4296875,
+                "Wilson95": [
+                  0.3472117133263662,
+                  0.516260671149596
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 53,
+                "n": 128,
+                "estimate": 0.4140625,
+                "Wilson95": [
+                  0.33245150577514415,
+                  0.5006814085843652
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 22,
+                "n": 128,
+                "estimate": 0.171875,
+                "Wilson95": [
+                  0.11633115948147267,
+                  0.24653996807301726
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 23,
+                "n": 128,
+                "estimate": 0.1796875,
+                "Wilson95": [
+                  0.12282459974516051,
+                  0.25521626286755583
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 1.9272727272727272,
+                "sample_SE": 0.5285483234978815,
+                "n": 55
+              },
+              "unreported_infinite_delays_count": 73,
+              "reject_fraction_monitored": 0.09250000000000003,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.009102087568941576,
+                  "sample_SE": 0.0014789772736616947,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 7.035247622728012e-05,
+                  "sample_SE": 1.1322012886068886e-05,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 5.617677816984576e-07,
+                  "sample_SE": 8.84895425616695e-08,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 1.6055150545434803e-12,
+                  "sample_SE": 1.3491303275539663e-12,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 9.149521405331518e-32,
+                  "sample_SE": 5.346546397557952e-32,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 54,
+              "readmission_next3_physical_loss_pooled_mean": 0.23976800983317365,
+              "MSE_cross_term_identity_error": 5.551115123125783e-16,
+              "MSE_increment_mean": 0.042077601000618685,
+              "policy_shadow_bias_mean": 0.042289170943996555,
+              "normal_error_cross_term_mean": -0.0002115699433778679,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B2": {
+              "physical_target_MSE": {
+                "mean": 0.25219271247976616,
+                "sample_SE": 0.005078743071702976,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.2136387229689171,
+                "sample_SE": 0.002686889119440999,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 0.7846612281342822,
+                "sample_SE": 0.0340910597815735,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 0.8136811489858679,
+                "sample_SE": 0.03606146980742164,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.30830059309104124,
+                "sample_SE": 0.01803855724062931,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 71,
+                "n": 128,
+                "estimate": 0.5546875,
+                "Wilson95": [
+                  0.4682433949005831,
+                  0.637944750507002
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 94,
+                "n": 128,
+                "estimate": 0.734375,
+                "Wilson95": [
+                  0.6518470619103658,
+                  0.8032449898364271
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 94,
+                "n": 128,
+                "estimate": 0.734375,
+                "Wilson95": [
+                  0.6518470619103658,
+                  0.8032449898364271
+                ]
+              },
+              "alarm_event": {
+                "count": 55,
+                "n": 128,
+                "estimate": 0.4296875,
+                "Wilson95": [
+                  0.3472117133263662,
+                  0.516260671149596
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 53,
+                "n": 128,
+                "estimate": 0.4140625,
+                "Wilson95": [
+                  0.33245150577514415,
+                  0.5006814085843652
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 22,
+                "n": 128,
+                "estimate": 0.171875,
+                "Wilson95": [
+                  0.11633115948147267,
+                  0.24653996807301726
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 23,
+                "n": 128,
+                "estimate": 0.1796875,
+                "Wilson95": [
+                  0.12282459974516051,
+                  0.25521626286755583
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 1.9272727272727272,
+                "sample_SE": 0.5285483234978815,
+                "n": 55
+              },
+              "unreported_infinite_delays_count": 73,
+              "reject_fraction_monitored": 0.09250000000000003,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.008596898765549966,
+                  "sample_SE": 0.0013607270285788424,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 6.635404380484806e-05,
+                  "sample_SE": 1.0412768337580569e-05,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 5.137262272228781e-07,
+                  "sample_SE": 8.017106507791134e-08,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 2.430501685520981e-13,
+                  "sample_SE": 3.8109373186460825e-14,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 2.884832408104412e-32,
+                  "sample_SE": 7.559557450472895e-33,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 54,
+              "readmission_next3_physical_loss_pooled_mean": 0.23732076281542736,
+              "MSE_cross_term_identity_error": 5.551115123125783e-16,
+              "MSE_increment_mean": 0.029682778157372695,
+              "policy_shadow_bias_mean": 0.031386449125371294,
+              "normal_error_cross_term_mean": -0.0017036709679986016,
+              "not_a_global_closed_loop_P3_solution": true
+            },
+            "B3": {
+              "physical_target_MSE": {
+                "mean": 0.26576944014808385,
+                "sample_SE": 0.005756308506937951,
+                "n": 128
+              },
+              "physical_network_MSE": {
+                "mean": 0.21635406850258065,
+                "sample_SE": 0.002801800168580942,
+                "n": 128
+              },
+              "cumulative_policy_shadow_bias_squared": {
+                "mean": 1.0572292735999136,
+                "sample_SE": 0.05267857162658237,
+                "n": 128
+              },
+              "cumulative_fixed_nominal_difference_squared": {
+                "mean": 1.105956945575941,
+                "sample_SE": 0.055246879310021584,
+                "n": 128
+              },
+              "max_policy_shadow_bias_squared": {
+                "mean": 0.4135568427860674,
+                "sample_SE": 0.02225322473812299,
+                "n": 128
+              },
+              "first_packet_danger_policy_shadow": {
+                "count": 79,
+                "n": 128,
+                "estimate": 0.6171875,
+                "Wilson95": [
+                  0.5307322844502991,
+                  0.6968137414230975
+                ]
+              },
+              "risk_policy_shadow_danger_before_alarm": {
+                "count": 94,
+                "n": 128,
+                "estimate": 0.734375,
+                "Wilson95": [
+                  0.6518470619103658,
+                  0.8032449898364271
+                ]
+              },
+              "risk_fixed_nominal_danger_before_alarm": {
+                "count": 94,
+                "n": 128,
+                "estimate": 0.734375,
+                "Wilson95": [
+                  0.6518470619103658,
+                  0.8032449898364271
+                ]
+              },
+              "alarm_event": {
+                "count": 55,
+                "n": 128,
+                "estimate": 0.4296875,
+                "Wilson95": [
+                  0.3472117133263662,
+                  0.516260671149596
+                ]
+              },
+              "Pd_spatial_during_attack": {
+                "count": 53,
+                "n": 128,
+                "estimate": 0.4140625,
+                "Wilson95": [
+                  0.33245150577514415,
+                  0.5006814085843652
+                ]
+              },
+              "Pd_temporal_during_attack": {
+                "count": 22,
+                "n": 128,
+                "estimate": 0.171875,
+                "Wilson95": [
+                  0.11633115948147267,
+                  0.24653996807301726
+                ]
+              },
+              "Pd_temporal_whole_monitored_event": {
+                "count": 23,
+                "n": 128,
+                "estimate": 0.1796875,
+                "Wilson95": [
+                  0.12282459974516051,
+                  0.25521626286755583
+                ]
+              },
+              "spatial_delay_among_alarm_events_only": {
+                "mean": 1.9272727272727272,
+                "sample_SE": 0.5285483234978815,
+                "n": 55
+              },
+              "unreported_infinite_delays_count": 73,
+              "reject_fraction_monitored": 0.09250000000000003,
+              "stop_residual_policy_shadow": {
+                "-1": {
+                  "mean": 0.009102087568941576,
+                  "sample_SE": 0.0014789772736616947,
+                  "n": 128
+                },
+                "0": {
+                  "mean": 7.035247622728012e-05,
+                  "sample_SE": 1.1322012886068886e-05,
+                  "n": 128
+                },
+                "1": {
+                  "mean": 5.617677816984576e-07,
+                  "sample_SE": 8.84895425616695e-08,
+                  "n": 128
+                },
+                "4": {
+                  "mean": 1.6055150545434803e-12,
+                  "sample_SE": 1.3491303275539663e-12,
+                  "n": 128
+                },
+                "14": {
+                  "mean": 9.149521405331518e-32,
+                  "sample_SE": 5.346546397557952e-32,
+                  "n": 128
+                }
+              },
+              "readmission_event_count": 54,
+              "readmission_next3_physical_loss_pooled_mean": 0.23976800983317365,
+              "MSE_cross_term_identity_error": 5.551115123125783e-16,
+              "MSE_increment_mean": 0.042077601000618685,
+              "policy_shadow_bias_mean": 0.042289170943996555,
+              "normal_error_cross_term_mean": -0.0002115699433778679,
+              "not_a_global_closed_loop_P3_solution": true
+            }
+          },
+          "B2_minus_B1_paired": {
+            "mse": {
+              "mean": -0.013576727668317634,
+              "sample_SE": 0.002465196544948064,
+              "n": 128
+            },
+            "cumulative_bias": {
+              "mean": -0.27256804546563146,
+              "sample_SE": 0.04505877393918802,
+              "n": 128
+            },
+            "risk": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            },
+            "risk_fixed": {
+              "mean": 0.0,
+              "sample_SE": 0.0,
+              "n": 128
+            }
+          },
+          "same_secondary_pre_alarm_risk_all_baselines": true,
+          "policy_shadow_risk_difference_count_B2_vs_B1": 0,
+          "healthy_shadow_FA_count_upper_for_difference": 5,
+          "spatial_threshold": 12.429216196844383,
+          "temporal_threshold": 24.352081352360617
+        }
+      }
+    }
+  },
+  "identity_checks": {
+    "true_error_identity_max": 1.7541523789077473e-14,
+    "paired_full_identity_max": 2.211488353479935e-14,
+    "paired_without_cross_terms_error_max": 1.0840231604738897,
+    "B3_vs_B1_identity_max": 0.0,
+    "B2_shared_path_vs_independent_closed_max": 0.0,
+    "all_accept_reference_identity_max": 1.7763568394002505e-15,
+    "same_alarm_paths_across_schemes": true,
+    "after_stop_mode_synchronization": true,
+    "after_sync_tail_identity_max": 2.211488353479935e-14,
+    "MSE_cross_identity_max": 1.5543122344752192e-15
+  },
+  "unique_physical_paths": 256,
+  "samples_per_model": 128,
+  "T": 32,
+  "small_screen_not_original50_or_formal_performance_validation": true,
+  "no_parameter_retuning": true,
+  "defense_truth_or_attack_label_inputs": false,
+  "closed_loop_P3_optimized": false
+}
