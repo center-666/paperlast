@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-15",
+  "repository_baseline": "48044bd3daf89c16bbfd1d68a91f2f638e3f12c9",
+  "canonical_library": "参考文献\\文献库.json",
+  "library_sha256_at_source_report": "6780410e1f125a98007d4588f5149fdfe9fbb08184ac5cf7579ab67849aa9bf8",
+  "record_count": 183,
+  "library_modified_by_this_agent": false,
+  "new_canonical_records_required": 0,
+  "existing_records_requiring_fulltext_registration": [
+    "FPN18",
+    "FPN19"
+  ],
+  "scope": "theorem-level comparison limited to declared read pages; missing fulltext not treated as clearance",
+  "sources": [
+    {
+      "id": "FPN19",
+      "title": "Stealthy integrity attacks and optimal selective protection for distributed state estimation",
+      "doi": "10.1007/s11432-025-4567-3",
+      "primary_url": "https://scis.scichina.com/en/2026/142108.pdf",
+      "path": "研究规划\\第一篇小论文_重新投稿修订_20261102\\realtime_admission_feasibility_20261115\\literature_work\\FPN19_final.pdf",
+      "sha256": "1a6357421ee9eac8c727c75889bdc961d508d018f7aea4c50034fb69655b9884",
+      "read_pdf_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visual_pdf_pages_this_turn": [
+        4,
+        11,
+        12
+      ],
+      "state": "formal full text obtained this turn; selected theorem pages read"
+    },
+    {
+      "id": "FPN18",
+      "title": "Secure state and output estimation for accommodation of false data injection attacks in large-scale systems",
+      "doi": "10.1016/j.automatica.2025.112460",
+      "primary_url": "https://pure.tudelft.nl/ws/portalfiles/portal/249131961/1-s2.0-S0005109825003541-main.pdf",
+      "path": "研究规划\\第一篇小论文_重新投稿修订_20261102\\realtime_admission_feasibility_20261115\\literature_work\\FPN18_final.pdf",
+      "sha256": "77edb502051642497d1de078606e4ebccd9c8712b19055efa9528711e5c272b7",
+      "read_pdf_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "visual_pdf_pages_this_turn": [
+        7,
+        8
+      ],
+      "state": "formal full text obtained this turn; selected theorem pages read"
+    },
+    {
+      "id": "FPN12",
+      "title": "How to Secure Distributed Filters Under Sensor Attacks",
+      "doi": "10.1109/TAC.2021.3092603",
+      "primary_url": "https://doi.org/10.1109/TAC.2021.3092603",
+      "path": "参考文献\\02_期刊与会议论文\\FPN12_2022_Paper_He2022_SecureDistributedFilters.pdf",
+      "sha256": "d6549df8aa9dca62e8f080100c19fcbf7381b60b2b96db268777dd331901a80a",
+      "read_pdf_pages": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "visual_pdf_pages_this_turn": [
+        4
+      ],
+      "state": "existing local formal full text; selected theorem pages read"
+    },
+    {
+      "id": "FPN16",
+      "title": "Switching multiplicative watermark design against covert attacks",
+      "doi": "10.1016/j.automatica.2025.112301",
+      "primary_url": "https://doi.org/10.1016/j.automatica.2025.112301",
+      "path": "研究规划\\第一篇小论文_重新投稿修订_20261102\\central_theory_final_audit_20261114\\literature_work\\FPN16_publisher_final_work.pdf",
+      "sha256": "ec73c9cd6150ff7fc77e51e356098b58fb2487dbc13f7b3e96c1926ecf758879",
+      "read_pdf_pages": [
+        4,
+        5,
+        6
+      ],
+      "visual_pdf_pages_this_turn": [],
+      "state": "formal full text obtained prior turn; selected theorem pages reread this turn"
+    },
+    {
+      "id": "FPN31",
+      "title": "Double-Layer Detection-Based Distributed Secure State Estimation Under False Data Injection Attacks",
+      "doi": "10.1109/TPWRS.2025.3586788",
+      "primary_url": "https://researchwith.stevens.edu/en/publications/double-layer-detection-based-distributed-secure-state-estimation-/",
+      "read_pdf_pages": [],
+      "state": "official abstract only; IEEE 11072370 full text missing"
+    },
+    {
+      "id": "FPN10",
+      "title": "Distributed secure state estimation for cyber-physical systems: A residual-exchanging approach under FDI attacks",
+      "doi": "10.1016/j.jfranklin.2026.108914",
+      "primary_url": "https://www.sciencedirect.com/science/article/pii/S0016003226005107",
+      "read_pdf_pages": [],
+      "state": "publisher abstract and contribution preview only; theorem pages missing"
+    },
+    {
+      "id": "FPN32",
+      "title": "Secure State Estimation Against Sparse Sensor Attacks: A Distributed Adaptive Saturation Method",
+      "doi": "10.1109/TASE.2025.3649048",
+      "primary_url": "https://ieeexplore.ieee.org/document/11316654/",
+      "read_pdf_pages": [],
+      "state": "official metadata/abstract only; full text missing"
+    }
+  ]
+}

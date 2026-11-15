@@ -1,0 +1,35 @@
+[
+  {
+    "key": "FPN18_final",
+    "url": "https://pure.tudelft.nl/ws/portalfiles/portal/249131961/1-s2.0-S0005109825003541-main.pdf",
+    "status": 200,
+    "final_url": "https://pure.tudelft.nl/ws/portalfiles/portal/249131961/1-s2.0-S0005109825003541-main.pdf",
+    "bytes": 1937975,
+    "is_pdf": true,
+    "sha256": "77edb502051642497d1de078606e4ebccd9c8712b19055efa9528711e5c272b7"
+  },
+  {
+    "key": "FPN19_final",
+    "url": "https://link.springer.com/content/pdf/10.1007/s11432-025-4567-3.pdf",
+    "status": 200,
+    "final_url": "https://link.springer.com/article/10.1007/s11432-025-4567-3",
+    "bytes": 320321,
+    "is_pdf": false
+  },
+  {
+    "key": "FPN31_ieee",
+    "url": "https://doi.org/10.1109/TPWRS.2025.3586788",
+    "status": 202,
+    "final_url": "https://ieeexplore.ieee.org/document/11072370/",
+    "bytes": 0,
+    "is_pdf": false
+  },
+  {
+    "key": "FPN32_ieee",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11316654",
+    "status": 418,
+    "final_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11316654",
+    "bytes": 16794,
+    "is_pdf": false
+  }
+]

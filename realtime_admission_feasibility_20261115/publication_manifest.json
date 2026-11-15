@@ -1,0 +1,190 @@
+{
+  "baseline": "48044bd3daf89c16bbfd1d68a91f2f638e3f12c9",
+  "new_directory": "realtime_admission_feasibility_20261115",
+  "files": [
+    {
+      "file": "01_安全目标与真实权限.md",
+      "source_sha256": "8f4782d65ff1ec29d53f4aff8712e56ef1ae3ea15e0d4229cf3644bbe6d58dae",
+      "public_sha256": "8f4782d65ff1ec29d53f4aff8712e56ef1ae3ea15e0d4229cf3644bbe6d58dae",
+      "bytes": 4080
+    },
+    {
+      "file": "02_拒包闭环与稳定性.md",
+      "source_sha256": "b28b34b00d032b7916bd80f3182ca569b0c2b3e338bcb47089ccb0500e9eb0b3",
+      "public_sha256": "b28b34b00d032b7916bd80f3182ca569b0c2b3e338bcb47089ccb0500e9eb0b3",
+      "bytes": 1871
+    },
+    {
+      "file": "03_强基线与真实闭环比较.md",
+      "source_sha256": "f86e7d5e6986a6832a4bf5097ced14167bacaddf59957773c1648a98ed79b877",
+      "public_sha256": "f86e7d5e6986a6832a4bf5097ced14167bacaddf59957773c1648a98ed79b877",
+      "bytes": 5555
+    },
+    {
+      "file": "04_近邻理论覆盖矩阵.md",
+      "source_sha256": "e6c715cff107f4fda9094ad773f3ed399897e0600cdcdeb1987ff3ab7e0f2b2c",
+      "public_sha256": "e6c715cff107f4fda9094ad773f3ed399897e0600cdcdeb1987ff3ab7e0f2b2c",
+      "bytes": 2776
+    },
+    {
+      "file": "05_非平凡权衡_必要界与适用限制.md",
+      "source_sha256": "bf955c4fa3ec471f3714b970b49d49f8068210be34ded3cd9344fde51b71ec7c",
+      "public_sha256": "bf955c4fa3ec471f3714b970b49d49f8068210be34ded3cd9344fde51b71ec7c",
+      "bytes": 6725
+    },
+    {
+      "file": "06_立项决定_C.md",
+      "source_sha256": "00efdf751f2a8607ad73687374dd754c6cb0fa8954680a0ef9d1c71fc6ae82fe",
+      "public_sha256": "00efdf751f2a8607ad73687374dd754c6cb0fa8954680a0ef9d1c71fc6ae82fe",
+      "bytes": 3289
+    },
+    {
+      "file": "admission_limits.json",
+      "source_sha256": "5a246fba6fcea11682f0636137e716b4f316d64f7d0d4c57fd1361b71209d261",
+      "public_sha256": "cc464ba6c9964df49ea339a0102dc73489e1046a3d40165e52e082caa719f56c",
+      "bytes": 7713
+    },
+    {
+      "file": "admission_limits.py",
+      "source_sha256": "b62ddc6114b7be25cd96c8ff40a5b81c89fcefde596e32b0974320c8f4d236d9",
+      "public_sha256": "b62ddc6114b7be25cd96c8ff40a5b81c89fcefde596e32b0974320c8f4d236d9",
+      "bytes": 7890
+    },
+    {
+      "file": "evidence_table.md",
+      "source_sha256": "4ef64fa8017a21c8fd69e240d924cb66788cb767533029ec38fadd45ff798394",
+      "public_sha256": "4ef64fa8017a21c8fd69e240d924cb66788cb767533029ec38fadd45ff798394",
+      "bytes": 2292
+    },
+    {
+      "file": "fetch_literature_primary.py",
+      "source_sha256": "1fcfb85efff408bd84adb7bb4c862de1b5d8c05dd03afeebcb41e19a34ace081",
+      "public_sha256": "1fcfb85efff408bd84adb7bb4c862de1b5d8c05dd03afeebcb41e19a34ace081",
+      "bytes": 1418
+    },
+    {
+      "file": "fixed_gain_analysis.md",
+      "source_sha256": "18fe0b774a6f316ef5125248af621486296f7be73a8fe96a828795cb06c2f88f",
+      "public_sha256": "18fe0b774a6f316ef5125248af621486296f7be73a8fe96a828795cb06c2f88f",
+      "bytes": 9831
+    },
+    {
+      "file": "fixed_gain_delivery.json",
+      "source_sha256": "b78ed0dd5e66feb27fe2f05486d8496a0912e4d4350a45cbde8c2faa276914b2",
+      "public_sha256": "390f744d3bed61306baa96976534a0a290cbc39778341e1f6320595d25ccf101",
+      "bytes": 583
+    },
+    {
+      "file": "fixed_gain_exact_checks.json",
+      "source_sha256": "f4a5b8380dc6e6a0d8f1b879eeaf25bfdb87d88e35a3650bc3eab8da0709649e",
+      "public_sha256": "dd0e2b9b2ef0c39c457accdc39ac5b8e18c57261829c86687715dac9c3c4e479",
+      "bytes": 20004
+    },
+    {
+      "file": "fixed_gain_exact_checks.py",
+      "source_sha256": "b7bd11128cec93a7961e1ebdc4f964ee8792efa207197c92d31b88abad586374",
+      "public_sha256": "b7bd11128cec93a7961e1ebdc4f964ee8792efa207197c92d31b88abad586374",
+      "bytes": 6733
+    },
+    {
+      "file": "fixed_gain_numbers.json",
+      "source_sha256": "762ef89a13a630caa50509c1d73228a9c245744be194888c82a903c26a9634de",
+      "public_sha256": "71402cb174829b942ca7cf50aa3674113da3f38f34ed2c246c91eb012fbeff20",
+      "bytes": 86467
+    },
+    {
+      "file": "fixed_gain_numbers.py",
+      "source_sha256": "173144890182d2c939f2f28b672691a24055fda11104a96e25876bbe8bac2a5a",
+      "public_sha256": "173144890182d2c939f2f28b672691a24055fda11104a96e25876bbe8bac2a5a",
+      "bytes": 9372
+    },
+    {
+      "file": "FPN19_primary_fetch.json",
+      "source_sha256": "8044febafa091d7a4aeac83928b608b4379744a1142fea7a89c7699ef680f568",
+      "public_sha256": "c7200f3470f3315d70ff3e5cd57f7e09bfae809a49a5fe837533c585b187141d",
+      "bytes": 191
+    },
+    {
+      "file": "gate_normal_moments.json",
+      "source_sha256": "9fa5a0fddad82cb89aea9dda1c71727d8a55986c69ad8f25a3c49161544d3f33",
+      "public_sha256": "3b556ca6c648d44c8aadcaa7d2fa1cfb5c7cb0e09d8bdc5397be21f7930fdce1",
+      "bytes": 7306
+    },
+    {
+      "file": "gate_normal_moments.py",
+      "source_sha256": "3a1ad8c3de80ddd645d6aca57e8c4d85103e96277511fb82880ef877210054bf",
+      "public_sha256": "3a1ad8c3de80ddd645d6aca57e8c4d85103e96277511fb82880ef877210054bf",
+      "bytes": 5005
+    },
+    {
+      "file": "gating_theory.md",
+      "source_sha256": "19333bded674c9b55d281f70a5a909e8eb176612f5c2c6a47a895278cb4b6d7a",
+      "public_sha256": "19333bded674c9b55d281f70a5a909e8eb176612f5c2c6a47a895278cb4b6d7a",
+      "bytes": 9669
+    },
+    {
+      "file": "library_update.json",
+      "source_sha256": "2e3cbcc7e422ccaae89ca20a22bacf9e16f4fd8c601f96d0ab8eb673c5bd3bfc",
+      "public_sha256": "76a9a76800bff63bed94ea3ccb530b6b4d991db69e775c3c0f19050670250e04",
+      "bytes": 1673
+    },
+    {
+      "file": "literature_audit.md",
+      "source_sha256": "4fbf1f0014febfb7286ba23f4829cc01810438af67fa5b769cad9d918f10662c",
+      "public_sha256": "4fbf1f0014febfb7286ba23f4829cc01810438af67fa5b769cad9d918f10662c",
+      "bytes": 12252
+    },
+    {
+      "file": "literature_fetch_primary.json",
+      "source_sha256": "6595109d8bb8723b3bda371eaac243b3ae2961a4489ff9752191f31a30cd595e",
+      "public_sha256": "4bd54e375655ad28aa7ff390a032a3fc93ddf213bdc5f7fd0ab02177798d19b7",
+      "bytes": 1123
+    },
+    {
+      "file": "literature_sources.json",
+      "source_sha256": "f54d3a49dbe340e703c0c4096f8846856fc775b7f61fca83a99f54ef4440068b",
+      "public_sha256": "40beaa1a5a6b4fe1b26fe414d7b83738470d448c263c2a2d01a7d439f6ec2634",
+      "bytes": 4738
+    },
+    {
+      "file": "README.md",
+      "source_sha256": "3de14a12aab919f052d67474f8c6b12c26ad6185dabf3efa6da1f613fcb16b0c",
+      "public_sha256": "3de14a12aab919f052d67474f8c6b12c26ad6185dabf3efa6da1f613fcb16b0c",
+      "bytes": 2488
+    },
+    {
+      "file": "register_existing_fulltexts.py",
+      "source_sha256": "1bca0a6b2e3a3e542d7ea2714fa1362ef6e946807e5031bd2b9e14340cea961b",
+      "public_sha256": "1bca0a6b2e3a3e542d7ea2714fa1362ef6e946807e5031bd2b9e14340cea961b",
+      "bytes": 3371
+    },
+    {
+      "file": "scope_before_results.json",
+      "source_sha256": "f51e5d89bf9d1ede46ed209777ce93eccc7e58600cf2be437be6667f3c516466",
+      "public_sha256": "934ad4fb1e63c206456051736c4c3f9a28859f4ecd0ce25bdeb0ed9e8c8d9772",
+      "bytes": 103383
+    },
+    {
+      "file": "verification.json",
+      "source_sha256": "bfb9f3f8dd99804b5d0a6bcd19f2902e5d071841f04eb2078d8960821475e64b",
+      "public_sha256": "3a304c18d279e1c7dc5a7d11f841bcba0a3e0aaabf21b79e0bc83cbcb74b60ae",
+      "bytes": 4403
+    },
+    {
+      "file": "verify_delivery.py",
+      "source_sha256": "facd2d8242feeee85c3be026e62bbcacf3f89fedee4f93ab8a8b405a3fc75ea3",
+      "public_sha256": "facd2d8242feeee85c3be026e62bbcacf3f89fedee4f93ab8a8b405a3fc75ea3",
+      "bytes": 4834
+    },
+    {
+      "file": "完成审查.md",
+      "source_sha256": "ab00b7c8dde76c503199f172b1c252ca1441ba1d35a7cce7af1a0a92b4cee8ad",
+      "public_sha256": "ab00b7c8dde76c503199f172b1c252ca1441ba1d35a7cce7af1a0a92b4cee8ad",
+      "bytes": 1568
+    }
+  ],
+  "decision": "C no new admission defense project",
+  "old_blobs_unchanged": 269,
+  "third_party_fulltexts_uploaded": false,
+  "full_policy_frontier_claim": false
+}

@@ -1,0 +1,248 @@
+{
+  "date": "2026-11-15",
+  "model_sha256": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+  "policy": "existing spatial-consistency indicator gate; reject target whole innovation if normalized residual exceeds tau",
+  "source": 0,
+  "target": 1,
+  "alpha_single": 0.0033333333333333335,
+  "tests_fixed": 15,
+  "global_FA_union_upper": 0.05,
+  "residual_dimension": 2,
+  "threshold": 11.407564949312402,
+  "probability_accept_normal": 0.9966666666666667,
+  "truncated_chi4_mass": 0.9776540584178127,
+  "probability_minus_truncated_mass": 0.01901260824885398,
+  "normal_spatial_covariance": [
+    [
+      0.9132231404958677,
+      0.0
+    ],
+    [
+      0.0,
+      0.8472222222222223
+    ]
+  ],
+  "weighted_v0_second_moment": [
+    [
+      0.4931285242878326,
+      0.0
+    ],
+    [
+      0.0,
+      0.4927230554894092
+    ]
+  ],
+  "weighted_v1_v0_cross_moment": [
+    [
+      0.004731644586818864,
+      0.0
+    ],
+    [
+      0.0,
+      0.004675231536603437
+    ]
+  ],
+  "rows": [
+    {
+      "model": "unstable",
+      "F_accept": [
+        [
+          0.11608937711784252,
+          0.004741198836942388
+        ],
+        [
+          0.0003923658514851016,
+          0.09867123909434965
+        ]
+      ],
+      "F_reject": [
+        [
+          0.4081833528857107,
+          0.01843998735294306
+        ],
+        [
+          0.0030749814402664514,
+          0.3629298684350538
+        ]
+      ],
+      "eigenvalues_accept": [
+        0.11619553173173822,
+        0.09856508448045395
+      ],
+      "eigenvalues_reject": [
+        0.4094034570472844,
+        0.36170976427348006
+      ],
+      "accept_norm2": 0.11648176278325456,
+      "reject_norm2": 0.4106869436595392,
+      "mean_square_operator_spectral_radius": 0.014014425775575011,
+      "modewise_common_Euclidean_contraction": true,
+      "healthy_noise_covariance": [
+        [
+          0.10990916029618872,
+          0.00012580298284001502
+        ],
+        [
+          0.000125802982840015,
+          0.09513621257730642
+        ]
+      ],
+      "total_affine_covariance": [
+        [
+          0.12190250056621997,
+          1.4002565079683437e-05
+        ],
+        [
+          1.4002565079683423e-05,
+          0.10434068697885399
+        ]
+      ],
+      "normal_stationary_covariance": [
+        [
+          0.12363436337106547,
+          7.249609064679941e-05
+        ],
+        [
+          7.249609064679941e-05,
+          0.10540984804917433
+        ]
+      ],
+      "normal_stationary_MSE": 0.22904421142023978,
+      "base_all_accept_MSE": 0.22779595641172257,
+      "normal_relative_MSE_increase": 0.005479706611916768,
+      "covariance_equation_residual_max": 1.3877787807814457e-17,
+      "finite_15_MSE_from_all_accept_steady_initial": [
+        0.22902884373752685,
+        0.22904401730909846,
+        0.2290442089119702,
+        0.22904421138719788,
+        0.22904421141979764,
+        0.2290442114202338,
+        0.2290442114202397,
+        0.22904421142023978,
+        0.22904421142023978,
+        0.22904421142023978,
+        0.22904421142023978,
+        0.22904421142023978,
+        0.22904421142023978,
+        0.22904421142023978,
+        0.22904421142023978
+      ],
+      "finite_15_average_from_all_accept_steady_initial": 0.2290431737978654,
+      "finite_15_normal_relative_increase": 0.005475151560146996,
+      "clip_existing_uniform_safe_radius_strict_upper": 0.3445224363574668,
+      "clip_existing_first_packet_safe_radius_strict_upper": 0.5846170089916143,
+      "reject_normal_stationary_MSE": 0.46985653513688774,
+      "clip_normal_MSE_lower_for_all_c_up_to_uniform_safe_radius": 0.2780947914788133,
+      "clip_normal_relative_lower_for_certificate_radius_range": 0.22080653168478404,
+      "crop_bound_status": "sufficient existing norm bound; failing bound is not actual risk failure"
+    },
+    {
+      "model": "stable",
+      "F_accept": [
+        [
+          0.09060252112577437,
+          0.005176588517070658
+        ],
+        [
+          0.0006008502613592062,
+          0.0867511654379503
+        ]
+      ],
+      "F_reject": [
+        [
+          0.3055713176401762,
+          0.018747157480690287
+        ],
+        [
+          0.0032208995289411246,
+          0.31265419287922547
+        ]
+      ],
+      "eigenvalues_accept": [
+        0.09128808622765744,
+        0.08606560033606724
+      ],
+      "eigenvalues_reject": [
+        0.30057317148111273,
+        0.31765233903828893
+      ],
+      "accept_norm2": 0.09217808566638797,
+      "reject_norm2": 0.32075104830516543,
+      "mean_square_operator_spectral_radius": 0.008630199842775512,
+      "modewise_common_Euclidean_contraction": true,
+      "healthy_noise_covariance": [
+        [
+          0.1084940606931675,
+          0.00011216293442362638
+        ],
+        [
+          0.0001121629344236264,
+          0.0946289338305936
+        ]
+      ],
+      "total_affine_covariance": [
+        [
+          0.12176573396377445,
+          8.110457714585718e-06
+        ],
+        [
+          8.110457714585731e-06,
+          0.10429640016615556
+        ]
+      ],
+      "normal_stationary_covariance": [
+        [
+          0.12281173088602963,
+          6.480817129787692e-05
+        ],
+        [
+          6.480817129787692e-05,
+          0.10511917318494965
+        ]
+      ],
+      "normal_stationary_MSE": 0.22793090407097927,
+      "base_all_accept_MSE": 0.2267220580614671,
+      "normal_relative_MSE_increase": 0.0053318411973148905,
+      "covariance_equation_residual_max": 1.3877787807814457e-17,
+      "finite_15_MSE_from_all_accept_steady_initial": [
+        0.22792097816007095,
+        0.22793082212311294,
+        0.22793090339083721,
+        0.2279309040653057,
+        0.22793090407093172,
+        0.22793090407097888,
+        0.22793090407097927,
+        0.22793090407097927,
+        0.22793090407097927,
+        0.22793090407097927,
+        0.22793090407097927,
+        0.22793090407097927,
+        0.22793090407097927,
+        0.22793090407097927,
+        0.22793090407097927
+      ],
+      "finite_15_average_from_all_accept_steady_initial": 0.22793023683467,
+      "finite_15_normal_relative_increase": 0.005328898226900192,
+      "clip_existing_uniform_safe_radius_strict_upper": 0.39968208973203945,
+      "clip_existing_first_packet_safe_radius_strict_upper": 0.5884176762213159,
+      "reject_normal_stationary_MSE": 0.44426552129142316,
+      "clip_normal_MSE_lower_for_all_c_up_to_uniform_safe_radius": 0.25848945023699266,
+      "clip_normal_relative_lower_for_certificate_radius_range": 0.1401160189138413,
+      "crop_bound_status": "sufficient existing norm bound; failing bound is not actual risk failure"
+    }
+  ],
+  "no_physical_samples": true,
+  "no_new_policy": true,
+  "no_estimator_gain_change": true,
+  "normal_covariance_formula_analytic": true,
+  "finite_decimal_matrix_numbers_interval_certified": false,
+  "does_not_report_gate_actual_attack_risk": true,
+  "assumptions": [
+    "same-time decoded neighbor raw measurement and trusted local measurement",
+    "Gaussian independent sensor noises; healthy exact synchronous decoding",
+    "fresh sensor noises independent of previous estimate and process noise",
+    "only target 0->1 gate; other healthy neighbor2 accepted",
+    "no trusted source copy, true attack label or extra verification channel"
+  ]
+}

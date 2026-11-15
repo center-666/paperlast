@@ -1,0 +1,11 @@
+{
+  "files": {
+    "fixed_gain_numbers.py": "173144890182d2c939f2f28b672691a24055fda11104a96e25876bbe8bac2a5a",
+    "fixed_gain_numbers.json": "762ef89a13a630caa50509c1d73228a9c245744be194888c82a903c26a9634de",
+    "fixed_gain_exact_checks.py": "b7bd11128cec93a7961e1ebdc4f964ee8792efa207197c92d31b88abad586374",
+    "fixed_gain_exact_checks.json": "f4a5b8380dc6e6a0d8f1b879eeaf25bfdb87d88e35a3650bc3eab8da0709649e",
+    "fixed_gain_analysis.md": "18fe0b774a6f316ef5125248af621486296f7be73a8fe96a828795cb06c2f88f"
+  },
+  "no_old_files_written": true,
+  "no_physical_samples": true
+}

@@ -1,0 +1,44 @@
+{
+  "before_records": 183,
+  "after_records": 183,
+  "before_pdf": 122,
+  "after_pdf": 124,
+  "new_records": 0,
+  "existing_fulltexts_added": [
+    {
+      "id": "FPN18",
+      "temporary_source": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\realtime_admission_feasibility_20261115\\literature_work\\FPN18_final.pdf",
+      "canonical_file": "02_期刊与会议论文/FPN18_formal_2025.pdf",
+      "sha256": "77edb502051642497d1de078606e4ebccd9c8712b19055efa9528711e5c272b7",
+      "pages": 13
+    },
+    {
+      "id": "FPN19",
+      "temporary_source": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\realtime_admission_feasibility_20261115\\literature_work\\FPN19_final.pdf",
+      "canonical_file": "02_期刊与会议论文/FPN19_formal_2026.pdf",
+      "sha256": "1a6357421ee9eac8c727c75889bdc961d508d018f7aea4c50034fb69655b9884",
+      "pages": 15
+    }
+  ],
+  "existing_read_notes_updated": [
+    "FPN12",
+    "FPN16"
+  ],
+  "canonical_library_sha256": "f39c7dd6331ab7ea787961cfac4f82984c1441554017a45a83af49d5c31426cb",
+  "checks": [
+    {
+      "command": [
+        "export"
+      ],
+      "output": "{\"完整独立论文\": 46, \"有本地PDF\": 124, \"题录总数\": 183, \"校验错误\": [], \"完整hash校验\": false}\n已更新CSV、Markdown目录、HTML检索页和BibTeX引用库。\n"
+    },
+    {
+      "command": [
+        "check",
+        "--hash"
+      ],
+      "output": "{\"完整独立论文\": 46, \"有本地PDF\": 124, \"题录总数\": 183, \"校验错误\": [], \"完整hash校验\": true}\n"
+    }
+  ],
+  "third_party_fulltexts_not_for_publication": true
+}
