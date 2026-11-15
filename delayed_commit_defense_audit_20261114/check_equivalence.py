@@ -30,6 +30,14 @@ p,q=s.symbols('phi1 central_probability',positive=True)
 truncated_U_second=2*(1-2*p/q)
 cross=s.simplify((truncated_U_second-2)/4)
 assert cross==-p/q
+# A nonzero cross moment can have zero symmetric correction. Its joint
+# Gaussian covariance is strictly positive definite, so this is not a merely
+# formal matrix counterexample. No noise samples are generated.
+J=s.Matrix([[0,1],[-1,0]]);C=J/2
+assert C!=s.zeros(2) and C+C.T==s.zeros(2)
+assert C*C.T+s.Rational(3,4)*s.eye(2)==s.eye(2)
+joint=s.BlockMatrix([[s.eye(2),C],[C.T,s.eye(2)]]).as_explicit()
+assert all(joint[:i,:i].det()>0 for i in range(1,5))
 model=P/'original_estimator_gate_20261114/five_node_aggregate_model.json'
 d=json.loads(model.read_text(encoding='utf-8'))
 assert len(d['models'])==2
@@ -39,7 +47,10 @@ out=dict(baseline='917a46804c1eabe08d94ec54579acae6f68ccfbb',
  identities=dict(noncommutative_affine_composition=True,
  dirty_checkpoint_not_removed_by_replay=True,original_common_G_affine_form=True,
  dropping_entire_innovation_changes_state_coefficient=True,
- future_acceptance_cross_moment='-phi(1)/(2 Phi(1)-1), nonzero'),
+ future_acceptance_cross_moment='-phi(1)/(2 Phi(1)-1), nonzero',
+ zero_symmetric_cross_correction_requires_zero_C=False,
+ nonzero_C_example=[['0','1/2'],['-1/2','0']],
+ joint_covariance_leading_minors=[str(joint[:i,:i].det())for i in range(1,5)]),
  retained_problem=dict(main_attack='a_t=H_j A^t xi, t=0,...,L-1',L=10,E=10,D=.1,
  estimator='original common-G neighbor-sum; no new gains'),
  not_a_candidate_algorithm_test=True,no_physical_samples=True,no_false_alarm_or_risk_experiment=True,

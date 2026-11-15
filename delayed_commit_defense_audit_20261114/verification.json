@@ -20,7 +20,24 @@
     "dirty_checkpoint_not_removed_by_replay": true,
     "original_common_G_affine_form": true,
     "dropping_entire_innovation_changes_state_coefficient": true,
-    "future_acceptance_cross_moment": "-phi(1)/(2 Phi(1)-1), nonzero"
+    "future_acceptance_cross_moment": "-phi(1)/(2 Phi(1)-1), nonzero",
+    "zero_symmetric_cross_correction_requires_zero_C": false,
+    "nonzero_C_example": [
+      [
+        "0",
+        "1/2"
+      ],
+      [
+        "-1/2",
+        "0"
+      ]
+    ],
+    "joint_covariance_leading_minors": [
+      "1",
+      "1",
+      "3/4",
+      "9/16"
+    ]
   },
   "new_network_samples": 0,
   "new_algorithms": 0,
@@ -45,10 +62,10 @@
     "01_直接近邻与创新性排重.md": "e9fe3177588f6b8af79d582836999e8007adcb4279476411874ab15c983e8ff4",
     "06_立项决策.md": "6c3ec570d0cec238fb0028dce362221cf98a8f7b7ae79bd23498974cb4447a40",
     "build_literature_2_sources.py": "07cc4d46da0fad431641fd803a80b3c66dcf7ee99850305eb4b129a07c9cae81",
-    "check_equivalence.py": "e5293b32f4e4d95108fd1f880836bdffd8e471dd1880dd25398eec489c13cfe3",
+    "check_equivalence.py": "dc2f0436d75eae8302fc84a90646ab871ecefd6b949f115ee70eb8a281f152d8",
     "classical_alternate_sources.json": "7c0ba31ea75f25a2ca4654bb235a553956744960f2712a2a739ae656c03347b5",
     "classical_sources.json": "f4c13b833f648ed9185e7db1305a0d0cb43b88cbeabd85102bd281ee739a0e24",
-    "equivalence_checks.json": "0057a5d6fc4d99a0477fed844d6e7e3f4b86e814babc6952988a3afb76ff8b1c",
+    "equivalence_checks.json": "9edc4241ec18b5620053db6da864b5e08901021986dbc696f60252f4af31f394",
     "evidence_table.md": "634ef8be1f3dd9e3038a0e9d8b8baba5b8b2f6872373eb0aa75a4f375204a923",
     "fetch_classical_alternates.py": "574c0d6078d1215bc2195671c73cfb1eda7d3106cc2c4caff6493b396ba51748",
     "fetch_classics.py": "3dac9162d8f1dcf34319cd1a5b34858bbe967f5ae59bdab48dc9e2b13026cd56",
@@ -65,11 +82,13 @@
     "literature_2_fetch.json": "e00c820cb4b082a692b43ca92d6032001dd80d264b595f0bfc94bc516496de5e",
     "literature_2_followup.json": "4845e546e71e4653aee1e8ecdf15db4b7b01ee50142c96d6a95f6efd176eeef2",
     "literature_2_sources.json": "99098330f4b494ebe538d75fdeb057921da6c502f68fcf43b1925543649c6514",
+    "publish_completion_fix.py": "f9544519fe278e6a8003272299d73311b7bd4e7532963bce76bca0a84f764271",
     "publish_gate1.py": "dcde8d3d609002269b3ffc9902e40f430de555c5613bbe2a369045f4feffe2b6",
-    "README.md": "a417d5df295d9ad6b45da48cf243f88f236be136e09fa3f29e991dab15afe819",
+    "README.md": "7d17239dccc532bef3c70dce89e1397ab9a55e785af65dba0dd1088dd175af6b",
     "register_literature.py": "32823e0e2b7f49787ee958eb91e8d3f0c14eea3b7debc0fe2b61d29fae30644b",
     "verify_gate1.py": "bf10891ef73c6fc01debd52e6f0902977a6ac1a25f83374453c5076051da8cdc",
-    "候选与标准缓存_固定滞后方法的逐式等价性审查.md": "4dbb84644fde5f0b5cebe72010f8cdab5a77f5d5044f2e2d27e709b6965ad991",
+    "候选与标准缓存_固定滞后方法的逐式等价性审查.md": "2ae206bb7567baf327a7ad69b75df6b06300cba8299173f2392fd8a12d3f7e75",
+    "完成复核修正_20261115.md": "67200cd8d92a2c05835f73a5dbcae25107112cd380ae665d390dedc26d640655",
     "完成审查_第一关停止规则.md": "7f1a755353f063e25658e2bd35237ab31a860414a884c2b28bda5191bf5a5a8e"
   }
 }

@@ -7,7 +7,24 @@
     "dirty_checkpoint_not_removed_by_replay": true,
     "original_common_G_affine_form": true,
     "dropping_entire_innovation_changes_state_coefficient": true,
-    "future_acceptance_cross_moment": "-phi(1)/(2 Phi(1)-1), nonzero"
+    "future_acceptance_cross_moment": "-phi(1)/(2 Phi(1)-1), nonzero",
+    "zero_symmetric_cross_correction_requires_zero_C": false,
+    "nonzero_C_example": [
+      [
+        "0",
+        "1/2"
+      ],
+      [
+        "-1/2",
+        "0"
+      ]
+    ],
+    "joint_covariance_leading_minors": [
+      "1",
+      "1",
+      "3/4",
+      "9/16"
+    ]
   },
   "retained_problem": {
     "main_attack": "a_t=H_j A^t xi, t=0,...,L-1",

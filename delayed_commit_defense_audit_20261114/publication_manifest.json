@@ -5,9 +5,9 @@
   "files": [
     {
       "file": "README.md",
-      "source_sha256": "a417d5df295d9ad6b45da48cf243f88f236be136e09fa3f29e991dab15afe819",
-      "public_sha256": "a417d5df295d9ad6b45da48cf243f88f236be136e09fa3f29e991dab15afe819",
-      "bytes": 2244
+      "source_sha256": "7d17239dccc532bef3c70dce89e1397ab9a55e785af65dba0dd1088dd175af6b",
+      "public_sha256": "7d17239dccc532bef3c70dce89e1397ab9a55e785af65dba0dd1088dd175af6b",
+      "bytes": 2422
     },
     {
       "file": "01_直接近邻与创新性排重.md",
@@ -17,9 +17,9 @@
     },
     {
       "file": "候选与标准缓存_固定滞后方法的逐式等价性审查.md",
-      "source_sha256": "4dbb84644fde5f0b5cebe72010f8cdab5a77f5d5044f2e2d27e709b6965ad991",
-      "public_sha256": "4dbb84644fde5f0b5cebe72010f8cdab5a77f5d5044f2e2d27e709b6965ad991",
-      "bytes": 14127
+      "source_sha256": "2ae206bb7567baf327a7ad69b75df6b06300cba8299173f2392fd8a12d3f7e75",
+      "public_sha256": "2ae206bb7567baf327a7ad69b75df6b06300cba8299173f2392fd8a12d3f7e75",
+      "bytes": 14695
     },
     {
       "file": "06_立项决策.md",
@@ -89,15 +89,15 @@
     },
     {
       "file": "check_equivalence.py",
-      "source_sha256": "e5293b32f4e4d95108fd1f880836bdffd8e471dd1880dd25398eec489c13cfe3",
-      "public_sha256": "e5293b32f4e4d95108fd1f880836bdffd8e471dd1880dd25398eec489c13cfe3",
-      "bytes": 2916
+      "source_sha256": "dc2f0436d75eae8302fc84a90646ab871ecefd6b949f115ee70eb8a281f152d8",
+      "public_sha256": "dc2f0436d75eae8302fc84a90646ab871ecefd6b949f115ee70eb8a281f152d8",
+      "bytes": 3552
     },
     {
       "file": "equivalence_checks.json",
-      "source_sha256": "0057a5d6fc4d99a0477fed844d6e7e3f4b86e814babc6952988a3afb76ff8b1c",
-      "public_sha256": "e90cb3ae5857c74bc31e1df268d901a37cb70c5081761b78c6992ba5c1de38f5",
-      "bytes": 1233
+      "source_sha256": "9edc4241ec18b5620053db6da864b5e08901021986dbc696f60252f4af31f394",
+      "public_sha256": "d1d8bf7eef3879773e0961a6c175b512bd8d363095275a9c5fa10703aea554dc",
+      "bytes": 1513
     },
     {
       "file": "verify_gate1.py",
@@ -107,9 +107,9 @@
     },
     {
       "file": "verification.json",
-      "source_sha256": "20ee109694377ed4f2c39fd1afc478f69a4d073972d11eef4c14e38370dbbdb1",
-      "public_sha256": "047375c4fffb2105ab39db9b437a2b10508c96fc102f0d9bd28e57ba8d99afe9",
-      "bytes": 4759
+      "source_sha256": "1eea70aeca9c439f068702d48270c6f273ee1055c14e75038a169fdaf6952b7b",
+      "public_sha256": "0fe779243eec7bdefebd18b6b641aecd9ee89cc8280474f71f5a1b37ec0cd8fe",
+      "bytes": 5246
     },
     {
       "file": "fetch_classics.py",
@@ -152,6 +152,12 @@
       "source_sha256": "32823e0e2b7f49787ee958eb91e8d3f0c14eea3b7debc0fe2b61d29fae30644b",
       "public_sha256": "32823e0e2b7f49787ee958eb91e8d3f0c14eea3b7debc0fe2b61d29fae30644b",
       "bytes": 9550
+    },
+    {
+      "file": "完成复核修正_20261115.md",
+      "source_sha256": "67200cd8d92a2c05835f73a5dbcae25107112cd380ae665d390dedc26d640655",
+      "public_sha256": "67200cd8d92a2c05835f73a5dbcae25107112cd380ae665d390dedc26d640655",
+      "bytes": 1214
     }
   ],
   "excluded": [
@@ -162,5 +168,7 @@
   ],
   "previous_repository_blobs_unchanged": true,
   "prior_blobs": 242,
-  "canonical_library_updated_locally": true
+  "canonical_library_updated_locally": true,
+  "completion_correction_parent": "6f9e9e240a9b32bdebfdff0d43e763d1986206fa",
+  "completion_correction_date": "2026-11-15"
 }
