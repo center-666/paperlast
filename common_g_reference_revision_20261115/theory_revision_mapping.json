@@ -1,0 +1,273 @@
+{
+  "date": "2026-11-15",
+  "baseline": "72a972ccd4c3dc5fb024ef1b178769073b10c422",
+  "source_hashes": {
+    "研究规划\\第一篇小论文\\secure distributed safety.tex": "0d59143f19ee62cdbb95f8207e47ec9cc481bedcda10b3a24398cd5bfa36b609",
+    "研究规划\\第一篇小论文_重新投稿修订_20261102\\sections\\02_model_detector.tex": "1d7c357efe2fa592fe87a6db050cbab9b1fe15b35b9faafd0edfc8c826456bee",
+    "研究规划\\第一篇小论文_重新投稿修订_20261102\\sections\\03_attack.tex": "71aa152fc1058b291c88fa232c6b94e27462beba6f74aa17c567ffdd502b4d9c",
+    "研究规划\\第一篇小论文_重新投稿修订_20261102\\sections\\04_watermark.tex": "686a8aa9ec53edd1a3b1af294e359f65696330c4eed36fdaaa0df883d970ac42"
+  },
+  "review_tex_sha256": "c8132e1af025d9d45882bdedce24df3d949578d6ebdd7080487c1727136c40c9",
+  "rows": [
+    {
+      "reviewer": "R1.3",
+      "original_tags_and_lines": {
+        "39": 584,
+        "40": 609,
+        "41": 613,
+        "42": 618,
+        "45": 632,
+        "46": 636
+      },
+      "stage_file": "sections/04_watermark.tex",
+      "stage_labels_and_lines": {
+        "wm:structural": 144,
+        "wm:entropy": 115,
+        "wm:fixed": 151
+      },
+      "review_tex_labels_and_lines": {
+        "rev:c1": 276,
+        "rev:degenerate": 295,
+        "rev:entropy": 308
+      },
+      "before": "从D非零PSD及Z满行秩推出c1>0，并对随机水印边缘law套Gaussian KL等式。",
+      "after": "改为逐时间块iff条件；给A=0局部可观反例；只以最大熵作边缘KL下界。",
+      "adopted_assumptions": "λ>0,q>0；水印时域独立且与全部物理噪声独立；整窗攻击独立于joint(r,β)；固定攻击定理还要求Δ不依赖q、ZΔ=0、c1>0。",
+      "proof_or_counterexample": "逐块迹展开＋Gaussian第四矩＋最大熵；TP1/TP3/TP4。",
+      "status": "已有可采用证据；本轮形成独立审阅副本，未回写原稿，未宣称审稿意见已获接受"
+    },
+    {
+      "reviewer": "R2.1",
+      "original_tags_and_lines": {
+        "10": 219,
+        "11": 244,
+        "12": 272
+      },
+      "stage_file": "sections/02_model_detector.tex",
+      "stage_labels_and_lines": {
+        "eq:klbudget": 121,
+        "eq:score": 145,
+        "mod:nominal": 156
+      },
+      "review_tex_labels_and_lines": {
+        "rev:calibration": 156,
+        "rev:KLdefinition": 204
+      },
+      "before": "直接按真实KL与θ逐拍比较，未给可观测统计量。",
+      "after": "使用名义Θ的r^TΘ^-1r和χ²阈值；θ只定义攻击law预算。",
+      "adopted_assumptions": "预定完整窗口、准确名义协方差、Gaussian原噪声、理想同步；不读取受攻law或标签。",
+      "proof_or_counterexample": "白化残差证明单次χ²；有限监测族union bound不需重叠独立。",
+      "status": "已有可采用证据；本轮形成独立审阅副本，未回写原稿，未宣称审稿意见已获接受"
+    },
+    {
+      "reviewer": "R3.1",
+      "original_tags_and_lines": {
+        "1": 125,
+        "2": 126,
+        "3": 144,
+        "4": 151
+      },
+      "stage_file": "sections/02_model_detector.tex",
+      "stage_labels_and_lines": {
+        "mod:system": 9,
+        "mod:estimator": 39
+      },
+      "review_tex_labels_and_lines": {
+        "rev:model": 34,
+        "rev:aggregate": 65
+      },
+      "before": "共m与每个(A,H_i)可观的范围动机不清楚，易误写邻域可观与自由堆叠KF。",
+      "after": "保留共m及原本地可观，说明求和/共G接口；Niu聚合MMSE只是显式补充设计。",
+      "adopted_assumptions": "图原连通无向无自环；m相同才可原样求和；稳定性另检，不由连通性自动推出。",
+      "proof_or_counterexample": "等价聚合块公式直接展开；不把新增异构堆叠模型写成原稿推广。",
+      "status": "已有可采用证据；本轮形成独立审阅副本，未回写原稿，未宣称审稿意见已获接受"
+    },
+    {
+      "reviewer": "R3.2",
+      "original_tags_and_lines": {
+        "6": 169,
+        "7": 196,
+        "8": 201,
+        "11": 244
+      },
+      "stage_file": "sections/02_model_detector.tex",
+      "stage_labels_and_lines": {
+        "mod:noiseblocks": 81,
+        "mod:nominalresidual": 90,
+        "mod:nominal": 156
+      },
+      "review_tex_labels_and_lines": {
+        "rev:window": 135,
+        "rev:Theta": 149,
+        "rev:calibration": 156
+      },
+      "before": "在线KL/时窗机制及跨窗统计相关未分清。",
+      "after": "精确s个有效过程噪声块；保留零尾块也等价；预定单次/有限族误报与联合Σ分开。",
+      "adopted_assumptions": "名义残差不受估计器增益影响；缓冲原decoded数据不按报警删除；适应选窗/无限监测另校准。",
+      "proof_or_counterexample": "从共同primitive-noise线性映射构造Θ及跨窗联合协方差；不把重叠统计当独立。",
+      "status": "已有可采用证据；本轮形成独立审阅副本，未回写原稿，未宣称审稿意见已获接受"
+    },
+    {
+      "reviewer": "R3.3",
+      "original_tags_and_lines": {
+        "13": 295,
+        "14": 304,
+        "15": 308,
+        "16": 319,
+        "17": 324
+      },
+      "stage_file": "sections/03_attack.tex",
+      "stage_labels_and_lines": {
+        "att:window": 16,
+        "att:sequence": 53,
+        "att:completewindow": 61,
+        "att:harmful": 209
+      },
+      "review_tex_labels_and_lines": {
+        "rev:autonomous": 350,
+        "rev:finitesupport": 378,
+        "rev:harm": 399
+      },
+      "before": "单窗构造容易被解释为有限启动停止全过程隐蔽，非零注入与有害性未分。",
+      "after": "主族固定为有限自主a_t=HA^tξ；选定全部受影响窗构造R；分别给有效/有害kernel存在条件。",
+      "adopted_assumptions": "攻击前后为0，起止/监测窗集合显式，零初始偏移；固定增益全接纳；无水印精确隐蔽与水印随机残差分开。",
+      "proof_or_counterexample": "Rξ=0、kerR不包含kerT/kerB的标准线性判据；TP5显示起止非零。",
+      "status": "已有可采用证据；本轮形成独立审阅副本，未回写原稿，未宣称审稿意见已获接受"
+    },
+    {
+      "reviewer": "R3.4",
+      "original_tags_and_lines": {
+        "18": 366,
+        "19": 373,
+        "20": 394,
+        "21": 415,
+        "22": 421,
+        "23": 426,
+        "24": 430,
+        "25": 434,
+        "26": 439,
+        "27": 444,
+        "28": 449,
+        "29": 454
+      },
+      "stage_file": "sections/03_attack.tex",
+      "stage_labels_and_lines": {
+        "att:bounded": 252,
+        "att:randomwalk": 258,
+        "att:unstable": 277,
+        "att:jordanmodel": 328
+      },
+      "review_tex_labels_and_lines": {
+        "rev:bounded": 439,
+        "rev:convolution": 435,
+        "rev:stop": 490
+      },
+      "before": "只分Schur稳定与不稳定，单位圆/非平凡Jordan和有限停止未完整处理。",
+      "after": "补幂有界、A=I非零极限、Jordan激励例；不稳定结论限定严格分离实模态；有限停止按F^r衰减。",
+      "adopted_assumptions": "固定增益；Φ/F Schur；持续输入与有限输入分开，Jordan存在不等于所有ξ增长。",
+      "proof_or_counterexample": "稳定卷积与几何级数；Jordan两种ξ反例；TP6。",
+      "status": "已有可采用证据；本轮形成独立审阅副本，未回写原稿，未宣称审稿意见已获接受"
+    },
+    {
+      "reviewer": "R4.2",
+      "original_tags_and_lines": {
+        "10": 219,
+        "40": 609,
+        "48": 720,
+        "50": 832
+      },
+      "stage_file": "sections/02_model_detector.tex",
+      "stage_labels_and_lines": {
+        "eq:klbudget": 121,
+        "mod:deterministicKL": 131
+      },
+      "review_tex_labels_and_lines": {
+        "rev:KLdefinition": 204,
+        "rev:jointKL": 235,
+        "rev:entropybound": 315
+      },
+      "before": "定义先给Gaussian公式，虽已有历史补充一般释义，后续仍误用受攻Gaussian等式。",
+      "after": "一般measure KL先定义；deterministic shift给等式；秘密条件/边缘/联合law分别写。",
+      "adopted_assumptions": "P≪P0，否则∞；Gaussian闭式需真实Gaussian；固定Δ时条件给秘密后Gaussian，随机Δ未必。",
+      "proof_or_counterexample": "联合KL链式法则；最大熵只能给下界，不把joint与marginal KL混用。",
+      "status": "已有可采用证据；本轮形成独立审阅副本，未回写原稿，未宣称审稿意见已获接受"
+    },
+    {
+      "reviewer": "R4.4",
+      "original_tags_and_lines": {
+        "47": 707,
+        "48": 720,
+        "49": 789,
+        "50": 832,
+        "51": 895,
+        "52": 934,
+        "53": 966
+      },
+      "stage_file": "sections/04_watermark.tex",
+      "stage_labels_and_lines": {
+        "wm:energy": 231,
+        "wm:decodedenergy": 290,
+        "wm:scoremean": 273
+      },
+      "review_tex_labels_and_lines": {
+        "rev:budget": 500,
+        "rev:energybound": 512,
+        "rev:decodedenergy": 542
+      },
+      "before": "θ隐蔽约束与实用报警混淆；编码攻击能量下降易被等同实际MSE下降。",
+      "after": "保留现有整窗能量界并完整列joint独立/c_Z>0；实际decoded能量系数及P3重选量词另写。",
+      "adopted_assumptions": "每个q均满足整窗攻击与(r,β)joint独立且有限二阶矩；允许响应公开参数但不读当前payload/secret。",
+      "proof_or_counterexample": "迹下界≥q²c_Z E||Δ||²再反演f；TP3/TP7；q^-2=σβ^-4是一速率。",
+      "status": "已有可采用证据；本轮形成独立审阅副本，未回写原稿，未宣称审稿意见已获接受"
+    },
+    {
+      "reviewer": "R4.5",
+      "original_tags_and_lines": {
+        "18": 366,
+        "19": 373,
+        "30": 472,
+        "39": 584,
+        "42": 618,
+        "47": 707,
+        "53": 966
+      },
+      "stage_file": "sections/04_watermark.tex",
+      "stage_labels_and_lines": {
+        "wm:moments": 67,
+        "wm:entropy": 115,
+        "wm:energy": 231
+      },
+      "review_tex_labels_and_lines": {
+        "rev:Fphi": 78,
+        "rev:biasstep": 93,
+        "rev:biasrec": 95,
+        "rev:budget": 500
+      },
+      "before": "传感器q与水印方差q、预测Φ与后验F、重复矩/熵公式可能混用。",
+      "after": "本副本N传感器、q=σβ²；b+/-同物理时刻，F=JA、Φ=AJ；共享lemma一次证明后引用。",
+      "adopted_assumptions": "传输η=M a与原始量测域注入分名；同阈值不能跨预测/后验直接套用。",
+      "proof_or_counterexample": "两递推相减及AB/BA特征多项式相同但矩阵不同，TP2；全文最终符号审计仍需采用后做。",
+      "status": "已有可采用证据；本轮形成独立审阅副本，未回写原稿，未宣称审稿意见已获接受"
+    }
+  ],
+  "originality_unresolved": [
+    "R1.1",
+    "R1.2",
+    "R2.2",
+    "R3.5",
+    "R5.3"
+  ],
+  "compile_check": {
+    "engine": "pdfTeX/TeX Live 2025",
+    "draftmode": true,
+    "pdf_generated": false,
+    "fatal_error": false,
+    "undefined_references": false,
+    "overfull_boxes": 0,
+    "visual_QA": false
+  },
+  "old_sources_modified": false,
+  "new_defense_method": false,
+  "local_windows_review_tex_sha256": "c8132e1af025d9d45882bdedce24df3d949578d6ebdd7080487c1727136c40c9",
+  "distributed_line_endings": "LF; no mathematical or line-number changes"
+}

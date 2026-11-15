@@ -1,0 +1,607 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs,booktabs,longtable,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}[proposition]{Lemma}
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{example}[proposition]{Example}
+\DeclareMathOperator{\col}{col}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\rank}{rank}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\title{Review-only theory revision excerpts\\Common-gain measurement-sharing estimator}
+\author{}
+\date{15 November 2026; audit baseline 72a972c}
+\begin{document}
+\maketitle
+\noindent\textbf{Status and scope.}
+This is a stand-alone review copy, not a revised submission or a new
+defense method. It addresses the mathematical and implementation interfaces
+of R1.3, R2.1, R3.1--R3.4, R4.2, R4.4 and R4.5.
+The originality questions R1.1, R1.2, R2.2, R3.5 and R5.3 remain open.
+Both defense candidates and the current independent analytical-paper
+position retain recommendation C. No abstract or contribution statement
+of the protected paper is rewritten. All results below are corrections,
+standard consequences or restatements of already available material.
+
+\section{Fixed model, gain assumption and time indices}
+\label{rev:model}
+Let
+\[
+ x_{k+1}=Ax_k+w_k,\qquad y_{i,k}=H_ix_k+v_{i,k},
+\]
+where $x_k\in\R^n$, $y_{i,k}\in\R^m$, and all current and historical
+process/measurement noises are independent zero-mean Gaussian variables,
+with $Q\succ0$, $R_i\succ0$ and a Gaussian independent initial state.
+The trusted local measurement is not attacked. The graph is the original
+connected, undirected graph without self-loops. The common dimension $m$
+is retained so that the original neighbor sum is defined.
+Each $(A,H_i)$ is assumed observable as in the protected paper; the
+weaker aggregate or network-only observability assumption is not
+silently substituted. Local observability is a declared scope restriction,
+not a claim that it is necessary for every possible estimator.
+
+For prescribed gains, the original update is exactly
+\begin{align}
+ \widehat x_{i,k}^{-}&=A\widehat x_{i,k-1}^{+},\label{rev:prediction}\\
+ \widehat x_{i,k}^{+}&=\widehat x_{i,k}^{-}
+ +K_{i,k}(y_{i,k}-H_i\widehat x_{i,k}^{-})\notag\\
+ &\quad+G_{i,k}\sum_{j\in\mathcal N_i}
+       (\bar y_{ji,k}-H_j\widehat x_{i,k}^{-}).\label{rev:commonG}
+\end{align}
+The bar denotes the actual decoded neighbor packet. Equivalently, the
+measurement, observation matrix, gain and measurement covariance are
+\begin{align}
+ \widehat y_{i,k}&=\col\left(y_{i,k},\sum_j\bar y_{ji,k}\right),&
+ \widehat H_i&=\col\left(H_i,\sum_j H_j\right),\notag\\
+ \widehat K_{i,k}&=[K_{i,k}\ G_{i,k}],&
+ \widehat R_i&=\operatorname{diag}\left(R_i,\sum_jR_j\right).
+ \label{rev:aggregate}
+\end{align}
+This is not a filter that stacks every neighbor with an independent gain.
+An equivalent full stack is possible only with the constrained repeated
+gain $[K_{i,k}\ G_{i,k}\cdots G_{i,k}]$.
+
+The protected source supplies no complete Riccati/gain design.
+If the five-node reference uses the Niu aggregate-MMSE design, this is an
+explicit supplemental assumption. Its saved gain matrices do not identify
+the authors' historical 50-node run. In the fixed-gain results below,
+set $K_{i,k}=K_i$, $G_{i,k}=G_i$ and
+\begin{equation}
+ J_i=I-K_iH_i-G_i\sum_jH_j,\qquad
+ F_i=J_iA,\qquad \Phi_i=AJ_i.\label{rev:Fphi}
+\end{equation}
+Schur stability, when needed, is an additional checked condition, not a
+consequence of graph connectivity alone.
+
+\begin{proposition}[Posterior and prediction displacements]
+\label{rev:bias}
+Use the same physical state and noise realization for the nominal and
+attacked copies of \eqref{rev:commonG}. Assume that every link is accepted,
+the gains are fixed and the only altered link is $j\to i$.
+Define $b_k^+=\widehat x_{i,k}^{a,+}-\widehat x_{i,k}^{0,+}$ and
+$b_k^-=\widehat x_{i,k}^{a,-}-\widehat x_{i,k}^{0,-}$.
+If $\eta_k=\bar y_{ji,k}^{a}-\bar y_{ji,k}^{0}$, then
+\begin{align}
+ b_k^-&=A b_{k-1}^+, &
+ b_k^+&=J_i b_k^-+G_i\eta_k,\label{rev:biasstep}\\
+ b_k^+&=F_i b_{k-1}^++G_i\eta_k,&
+ b_{k+1}^-&=\Phi_i b_k^-+AG_i\eta_k.\label{rev:biasrec}
+\end{align}
+The matrices $F_i$ and $\Phi_i$ have the same characteristic polynomial,
+but in general they are different matrices with different induced norms.
+They describe different output times.
+\end{proposition}
+\begin{proof}
+Subtract the two prediction and update equations. All physical-noise terms
+cancel because the copies use the same raw realization. This gives
+\eqref{rev:biasstep}, and substitution gives \eqref{rev:biasrec}.
+The characteristic-polynomial identity follows from
+$\det(I-zJ_iA)=\det(I-zAJ_i)$ and polynomial continuation.
+No invertibility of $A$ is required.
+\end{proof}
+
+Consequently, a posterior danger threshold cannot be applied unchanged
+to $b_k^-$, or to $b_{k+1}^-$, by merely renaming $F_i$ as $\Phi_i$.
+For $e_k^0=x_k-\widehat x_{i,k}^{0,+}$, the exact MSE difference is
+\begin{equation}
+ \E\|e_k^a\|^2-\E\|e_k^0\|^2
+ =\E\|b_k^+\|^2-2\E[(e_k^0)^Tb_k^+].\label{rev:MSE}
+\end{equation}
+It equals $\|b_k^+\|^2$ for a deterministic displacement and an unbiased
+nominal filter. It equals $\E\|b_k^+\|^2$ for secret-dependent
+displacements only when the stated independence/unbiasedness eliminates
+the cross term. Data-dependent isolation does not satisfy this condition
+automatically.
+
+\section{Parity residual, exact nominal covariance and an online score}
+\label{rev:scoresection}
+Fix the transmitted source $j$ and order $s\ge1$. Let
+\[
+ \mathcal O_s=\col(H_j,H_jA,\ldots,H_jA^s),\qquad
+ \rank\mathcal O_s=n,\qquad d=(s+1)m-n>0.
+\]
+The rows of $Z=[Z_0\ \cdots\ Z_s]\in\R^{d\times(s+1)m}$
+form a full basis of the left null space of $\mathcal O_s$.
+The healthy window and residual are
+\begin{align}
+ Y_k^0&=\mathcal O_s x_{k-s}+\mathcal W_s W_k+V_k,&
+ r_k^0&=ZY_k^0,\label{rev:window}\\
+ W_k&=\col(w_{k-s},\ldots,w_{k-1}),&
+ V_k&=\col(v_{j,k-s},\ldots,v_{j,k}).\notag
+\end{align}
+Thus there are exactly $s$ relevant process-noise vectors and $s+1$
+measurement-noise vectors. With row $a=0,\ldots,s$ and column
+$b=0,\ldots,s-1$,
+\[
+ [\mathcal W_s]_{ab}=
+ \begin{cases}H_jA^{a-1-b},&b<a,\\0,&b\ge a.\end{cases}
+\]
+The nominal covariance is
+\begin{equation}
+ \Theta_s=Z[\mathcal W_s(I_s\otimes Q)\mathcal W_s^T
+           +I_{s+1}\otimes R_j]Z^T\succ0.\label{rev:Theta}
+\end{equation}
+The original extra last process-noise block has a zero coefficient,
+so retaining that block with its matching zero column is equivalent;
+it must not be mistaken for an additional effective noise sample.
+
+\begin{proposition}[Predetermined single-decision calibration]
+\label{rev:calibration}
+For a complete, predetermined window under the healthy Gaussian model,
+ideal synchronized decoding and exactly known \eqref{rev:Theta},
+\begin{equation}
+ T_{ji,k}=r_{ji,k}^T\Theta_s^{-1}r_{ji,k}\sim\chi_d^2.
+ \label{rev:score}
+\end{equation}
+The operational alarm $T_{ji,k}>\tau_{\alpha_k}$, where
+$\tau_{\alpha_k}=F_{\chi_d^2}^{-1}(1-\alpha_k)$, has nominal size
+$\alpha_k$. For a predetermined finite family of decisions $\mathcal I$,
+$\sum_{\ell\in\mathcal I}\alpha_\ell\le\alpha_{\rm event}$
+implies a whole-family false-alarm bound $\alpha_{\rm event}$.
+\end{proposition}
+\begin{proof}
+The state term is annihilated, and independent Gaussian noises give
+$r_k^0\sim\mathcal N(0,\Theta_s)$. Positive definiteness follows because
+$R_j\succ0$ and $Z$ has full row rank. Whitening gives $d$ independent
+standard Gaussian coordinates. The finite-family statement is the union
+bound and does not require independence of overlapping windows.
+\end{proof}
+
+The nominal covariance does not contain estimator gains. Overlapping
+windows and links nevertheless share noises and need not be independent.
+For a stacked record $R=\mathcal L\nu$ built from one primitive-noise
+vector with covariance $\Omega$, its covariance is exactly
+$\mathcal L\Omega\mathcal L^T$. Individual scores cannot be summed
+and assigned independent chi-square degrees of freedom without checking
+this joint covariance. Adaptive window selection, estimated covariance,
+model mismatch, missing packets and infinite monitoring need separate
+calibration. A finite-horizon $5\%$ budget is not an infinite-run guarantee.
+The detector uses decoded packets and the nominal covariance; it does not
+observe the attacked probability law or the attack labels.
+
+An alarm may drive the original binary gate, but this does not prove a
+stable or accurate gated filter. With the same fixed gate path in both
+copies, replace $J_i$ by
+$J_{i,\varphi}=I-K_iH_i-G_i\sum_j\varphi_{ji,k}H_j$.
+If the two gate paths differ, subtracting the actual updates also produces
+$G_i\sum_j(\varphi_{ji,k}^a-\varphi_{ji,k}^0)
+(y_{j,k}^0-H_j\widehat x_{i,k}^{0,-})$.
+Hence fixed-$F_i$ conclusions cannot certify the data-dependent closed loop.
+
+\section{KL definition and conditional versus marginal laws}
+\label{rev:KLsection}
+For probability measures $P$ and $P_0$,
+\begin{equation}
+ D(P\|P_0)=\int\log\!\left(\frac{dP}{dP_0}\right)dP
+ \quad(P\ll P_0),\qquad D(P\|P_0)=+\infty\quad\hbox{otherwise}.
+ \label{rev:KLdefinition}
+\end{equation}
+For $P_a=\mathcal N(\mu_a,\Sigma_a)$ and
+$P_b=\mathcal N(\mu_b,\Sigma_b)$ with positive definite covariances,
+the usual trace/log-determinant formula applies. That formula is a
+special case of \eqref{rev:KLdefinition}, not a definition for arbitrary
+random variables.
+
+For a fixed deterministic unencoded window injection $\Delta$,
+$r^a=r^0+Z\Delta$ gives exactly
+\begin{equation}
+ D(\mathcal L(r^a)\|\mathcal L(r^0))
+ =\tfrac12\Delta^TZ^T\Theta_s^{-1}Z\Delta.\label{rev:shiftKL}
+\end{equation}
+For synchronized multiplicative encoding,
+\begin{equation}
+ u_t=M_t^{-1}y_{j,t},\quad u_t^a=u_t+a_t,\quad
+ \bar y_{ji,t}^a=M_tu_t^a=y_{j,t}+M_ta_t.\label{rev:encoding}
+\end{equation}
+The code-domain injection is $a_t$; its decoded effect is $\eta_t=M_ta_t$.
+Write $\mathcal M=\operatorname{diag}(M_0,\ldots,M_s)$ and
+$U=Z\mathcal M\Delta$. For deterministic $\Delta$ independent of
+the secret and physical noises, $r^a=r^0+U$ is Gaussian conditioned
+on the entire secret realization, but its marginal law is generally
+a non-Gaussian mixture.
+
+Let $S$ denote the secret window and let the nominal joint law be
+$P_0\otimes P_S$. Then
+\begin{equation}
+ D(P_{r^a,S}\|P_0\otimes P_S)
+ =\E_S D(P_{r^a\mid S}\|P_0)
+ =D(P_{r^a}\|P_0)+I(r^a;S).\label{rev:jointKL}
+\end{equation}
+For fixed deterministic $\Delta$, the middle term is
+$\frac12\E[U^T\Theta_s^{-1}U]$. Thus conditional/joint and marginal
+KL are not interchangeable. For random attacks, even the conditional law
+need not be Gaussian. None of these distribution-level expressions is
+an observed per-packet KL statistic.
+
+\section{Correct strict-positivity and non-Gaussian bounds}
+\label{rev:positivity}
+Use the already adopted mechanism
+\[
+ M_t=\lambda I_m+\beta_t\beta_t^T,\qquad
+ \beta_t\overset{\rm iid}{\sim}\mathcal N(0,qI_m),\quad
+ \lambda>0,\quad q=\sigma_\beta^2>0.
+\]
+The whole watermark sequence is independent of the physical initial state
+and every physical process and measurement noise.
+The whole attack window $\Delta$ has finite second moment and is independent
+of the \emph{joint} element $(r^0,\beta_0,\ldots,\beta_s)$.
+Knowing neither the current secret nor its seed does not imply this
+assumption for a packet-dependent attacker. For fixed deterministic $a$,
+Gaussian fourth moments give
+\[
+ \E[\beta\beta^Ta]=qa,\qquad
+ \Cov(\beta\beta^Ta)=q^2(aa^T+\|a\|^2I_m).
+\]
+Consequently, with
+$D(\Delta)=\operatorname{diag}(\delta_\ell\delta_\ell^T+
+\|\delta_\ell\|^2I_m)_{\ell=0}^s$,
+\begin{align}
+ \mu_U&=(\lambda+q)Z\E\Delta,\label{rev:mu}\\
+ C_U&=q^2Z\E[D(\Delta)]Z^T
+       +(\lambda+q)^2Z\Cov(\Delta)Z^T.\label{rev:C}
+\end{align}
+Conditioning on the whole $\Delta$, using independent watermark blocks,
+and applying total covariance proves these formulas, including temporal
+attack correlation. Independence from the nominal residual gives
+$\E r^a=\mu_U$ and $\Cov(r^a)=\Theta_s+C_U$.
+
+\begin{lemma}[The required time-block condition]
+\label{rev:c1}
+For deterministic $\Delta=\col(\delta_0,\ldots,\delta_s)$, define
+\begin{align}
+ c_1(\Delta)&=\tr(\Theta_s^{-1}ZD(\Delta)Z^T)\notag\\
+ &=\sum_{\ell=0}^s\left[
+   \|\Theta_s^{-1/2}Z_\ell\delta_\ell\|^2
+   +\|\delta_\ell\|^2\|\Theta_s^{-1/2}Z_\ell\|_F^2\right].
+ \label{rev:c1formula}
+\end{align}
+Then $c_1(\Delta)>0$ if and only if there is an index $\ell$ with
+$\delta_\ell\ne0$ and $Z_\ell\ne0$. Full row rank of $Z$ and
+nonzero positive semidefinite $D$ alone do not prove strict positivity.
+\end{lemma}
+\begin{proof}
+Expand the block trace. Each displayed summand is nonnegative; its second
+term is strictly positive exactly when both indicated factors are nonzero.
+\end{proof}
+
+\begin{example}[A counterexample inside the original model class]
+\label{rev:degenerate}
+Let $n=m=1$, $A=0$, $H_j=1$, $s=1$ and $Q,R_j>0$.
+Then $(A,H_j)$ is locally observable,
+$\mathcal O_1=(1,0)^T$ has full column rank, and $Z=[0\ 1]$ has full
+row rank. For $\xi\ne0$ take $\Delta=\mathcal O_1\xi=(\xi,0)^T$.
+Although $D=\operatorname{diag}(2\xi^2,0)\ne0$, $ZDZ^T=0$ and
+$c_1=0$. The first time block $Z_0$ is zero. For every secret realization
+$Z\mathcal M\Delta=0$, so this complete window remains unchanged.
+This does not assert a blind direction in the three previously tested
+nondegenerate models, or stealthiness of every transition window.
+\end{example}
+
+\begin{proposition}[Correct marginal KL lower bound]
+\label{rev:entropy}
+Under the stated independence and moment assumptions let
+$P_*=\mathcal L(r^a)$, $P_0=\mathcal N(0,\Theta_s)$ and
+$B=\Theta_s^{-1/2}C_U\Theta_s^{-1/2}\succeq0$. Then
+\begin{align}
+ D(P_*\|P_0)&\ge\tfrac12\left[
+ \tr(B)-\log\det(I+B)+\mu_U^T\Theta_s^{-1}\mu_U\right],
+ \label{rev:entropybound}\\
+ D(P_*\|P_0)&\ge\frac d2 f\!\left(\frac{\tr B}{d}\right),
+ \qquad f(x)=x-\log(1+x).\label{rev:traceKL}
+\end{align}
+For a fixed deterministic $\Delta$ not depending on $q$, with
+$Z\Delta=0$ and $c_1(\Delta)>0$, the right side is
+$\frac d2 f(q^2c_1/d)$ and tends to infinity as $q\to\infty$.
+\end{proposition}
+\begin{proof}
+Gaussian convolution gives a density. The covariance is finite; its entropy
+is bounded above by the entropy of the matched Gaussian and bounded below
+by that of the independent Gaussian summand. Equivalently, subtracting
+the matched-Gaussian cross entropy yields
+$D(P_*\|P_0)\ge D(\mathcal N(\mu_U,\Theta_s+C_U)\|P_0)$.
+This is \eqref{rev:entropybound}, not a Gaussian equality for $P_*$.
+Apply convexity of $f$ to the $d$ nonnegative eigenvalues of $B$ and drop
+the nonnegative mean term. For a fixed stealthy deterministic attack,
+$\mu_U=0$ and $\tr B=q^2c_1$. The function $f$ is increasing and unbounded.
+\end{proof}
+
+KL growth is not an observed alarm. If needed, the stage proof of
+fixed-attack asymptotic score power can be reused: couple
+$\beta_\ell=\sqrt q\,z_\ell$ and write $r^a=r^0+qV(z)$.
+For $c_1>0$ at least one component of $V$ is a nonzero polynomial,
+so $\Pr(V=0)=0$. Then the score divided by $q^2$ converges almost surely
+to $V^T\Theta_s^{-1}V>0$, and bounded convergence gives power tending
+to one for a fixed threshold. This is pointwise in a fixed attack and
+specified window, not a finite-$q$ guarantee, a uniform P3 guarantee,
+or a bound on danger before the first alarm.
+
+\section{Finite support: interior and transition windows}
+\label{rev:support}
+Retain the original autonomous attack, with a finite onset and duration:
+\begin{equation}
+ a_{T_a+t}=H_jA^t\xi\quad(0\le t<L),\qquad
+ a_k=0\quad\hbox{otherwise}.\label{rev:autonomous}
+\end{equation}
+No future measurement or secret realization is used.
+The true code-domain energy is
+\begin{equation}
+ \sum_k\|a_k\|^2=\xi^TW_L\xi,\qquad
+ W_L=\sum_{t=0}^{L-1}(H_jA^t)^T(H_jA^t).\label{rev:energy}
+\end{equation}
+The formula changes with $L$ because the same physical sum contains
+a different number of injections; it does not change the energy definition.
+
+Define the complete finite-support injection matrix
+$T_L=\col(H_j,H_jA,\ldots,H_jA^{L-1})$. For any declared monitor end
+time $k$, let $E_k$ select from a length-$L$ supported sequence the
+positions $k-s,\ldots,k$, filling positions outside
+$[T_a,T_a+L-1]$ with zeros. Thus
+\begin{equation}
+ \Delta_k=E_kT_L\xi,\qquad
+ R_k=ZE_kT_L,\qquad
+ \mathscr R_{\mathcal H,L}=\col(R_k)_{k\in\mathcal H}.
+ \label{rev:finiteR}
+\end{equation}
+When healthy prehistory is retained and all affected windows are evaluated,
+the end-time set is $\mathcal H=\{T_a,\ldots,T_a+L-1+s\}$.
+Only available complete windows may be included if monitoring begins late;
+that different set must be declared.
+
+\begin{proposition}[Exact finite-support and useful-direction conditions]
+\label{rev:finitesupport}
+For deterministic unencoded \eqref{rev:autonomous}, exact residual
+preservation at every specified $k\in\mathcal H$ holds if and only if
+$\xi\in\ker\mathscr R_{\mathcal H,L}$.
+A nonzero effective injection with this property exists if and only if
+\begin{equation}
+ \ker\mathscr R_{\mathcal H,L}\not\subseteq\ker T_L.\label{rev:effective}
+\end{equation}
+Let $\mathscr B$ stack the original receiver's displacement maps at the
+declared damage times, with zero initial displacement and fixed gains.
+For a posterior evaluation at relative time $h\ge0$, its corresponding
+block is explicitly
+\[
+ B_h^+=\sum_{t=0}^{\min(h,L-1)}F_i^{h-t}G_iH_jA^t,
+ \qquad b_{T_a+h}^+=B_h^+\xi.
+\]
+For a prediction evaluation, use $B_h^-=AB_{h-1}^+$ for $h\ge1$
+and $B_0^-=0$; do not assign a posterior threshold to the prediction map.
+A harmful exactly residual-preserving attack exists if and only if
+\begin{equation}
+ \ker\mathscr R_{\mathcal H,L}\not\subseteq\ker\mathscr B.
+ \label{rev:harm}
+\end{equation}
+For any positive finite energy budget, a nonzero witness of the latter
+condition can be scaled to satisfy that budget. This last statement
+does not guarantee reaching a positive prescribed danger threshold.
+\end{proposition}
+\begin{proof}
+The deterministic shift at $k$ is $R_k\xi$ and the nominal covariance
+is unchanged. Equality of Gaussian means is equivalent to equality of
+the specified marginal laws, and stacking gives the first assertion.
+The next two assertions state precisely the existence of a vector in
+one kernel but not in the relevant ineffective kernel. In particular,
+$\ker T_L\subseteq\ker\mathscr B$ for zero initial displacement.
+Scaling a fixed nonzero witness scales its injection energy quadratically.
+\end{proof}
+
+For an interior window $T_a+s\le k<T_a+L$,
+$\Delta_k=\mathcal O_sA^{k-s-T_a}\xi$, so $R_k\xi=0$.
+This identity does not extend across onset or termination. For example,
+$A=H_j=1$, $s=1$, $Z=[-1\ 1]$, $T_a=0$, $L=2$ and $\xi=1$
+give shifts $1,0,-1$ at end times $0,1,2$, respectively.
+Both boundary samples matter. With watermarking, replace $R_k\xi$ by
+$Z\mathcal M_kE_kT_L\xi$; unencoded invisibility cannot be claimed for
+this random decoded perturbation.
+
+These are standard finite-dimensional kernel/linear-output conditions.
+They sharpen the assumptions and quantifiers for R3.3, but do not close
+R1.1. Finite-support Toeplitz and boundary analyses already appear in
+Martynova--Zhang (2019), Li et al. (2024), and Zhang et al. (2023).
+
+\section{Unit-circle modes and natural decay after termination}
+\label{rev:unitcircle}
+Use the prediction displacement $p_t=b_{T_a+t}^-$, $p_0=0$ and
+unencoded persistent autonomous input. Equations \eqref{rev:biasrec} give
+\begin{equation}
+ p_t=\sum_{u=0}^{t-1}\Phi_i^{t-1-u}AG_iH_jA^u\xi.
+ \label{rev:convolution}
+\end{equation}
+
+\begin{proposition}[The missing spectral boundary]
+\label{rev:bounded}
+Assume $\Phi_i$ is Schur. If $A$ is Schur, $p_t\to0$.
+If $A$ is power bounded, then $p_t$ is bounded. In particular, for $A=I$,
+\begin{equation}
+ p_t\longrightarrow(I-\Phi_i)^{-1}AG_iH_j\xi,\label{rev:Aidentity}
+\end{equation}
+which need not be zero. Spectrum in the closed unit disk with semisimple
+unit-circle eigenvalues is sufficient for power boundedness. Merely
+assuming $\rho(A)\le1$ is insufficient.
+\end{proposition}
+\begin{proof}
+Choose $C_\Phi<\infty$ and $r_\Phi<1$ with
+$\|\Phi_i^t\|\le C_\Phi r_\Phi^t$. If
+$\|A^t\|\le C_A r_A^t$ for $r_A<1$, the convolution is bounded
+by a constant times $t\max(r_\Phi,r_A)^{t-1}\to0$.
+If $\sup_t\|A^t\|\le B_A$, use the convergent geometric sum for
+$\Phi_i$ instead. For $A=I$, the geometric matrix sum yields
+\eqref{rev:Aidentity}. The spectral statement is the finite-dimensional
+Jordan characterization of power-bounded matrices.
+\end{proof}
+
+The stage example is retained without changing the physical model class:
+$H_i=H_j=I_2$, $K_i=0$, $G_i=I_2$ and
+\[
+ A=\begin{bmatrix}1&1\\0&1\end{bmatrix}.
+\]
+Then $J_i=0$, $F_i=\Phi_i=0$. For $\xi=(0,1)^T$,
+$b_{T_a+t}^+=(t,1)^T$ for $t\ge0$ and
+$p_t=(t,1)^T$ for $t\ge1$. A unit-circle Jordan chain gives polynomial
+growth despite having no eigenvalue outside the unit disk.
+Choosing $\xi=(1,0)^T$ gives bounded displacement in the same model;
+Jordan-chain presence alone does not imply growth for every attack.
+These statements concern the persistent input, not a finite attack.
+
+The existing real-unstable-mode statement also needs its full separation
+condition: if $Av=\lambda_u v$, $\lambda_u\in\R$, $|\lambda_u|>1$,
+$\xi=cv+\widetilde\xi$ with $c\ne0$ and
+$\|A^t\widetilde\xi\|\le C\rho^t$ for $\rho<|\lambda_u|$, and
+$AG_iH_jv\ne0$, then the persistent-input prediction bias satisfies
+\[
+ \frac{p_t}{\lambda_u^{t-1}}
+ \longrightarrow c(I-\lambda_u^{-1}\Phi_i)^{-1}AG_iH_jv\ne0.
+\]
+The mode contribution is a convergent geometric sum after normalization;
+the remainder is $o(|\lambda_u|^{t-1})$ by the strict separation bound.
+Tied leading modes, complex pairs and generalized eigenvectors do not
+satisfy this statement merely because $\rho(A)>1$.
+
+If the attack terminates with last injected packet at $T_b-1=T_a+L-1$,
+then for $r\ge0$
+\begin{equation}
+ b_{T_b-1+r}^+=F_i^r b_{T_b-1}^+.\label{rev:stop}
+\end{equation}
+Thus after any finite autonomous attack a Schur $F_i$ makes the residual
+displacement decay, even when $A$ is unstable or has a Jordan block.
+Non-normal $F_i$ can still have transient amplification; Schur stability
+alone is not a monotone Euclidean-norm bound. A quantitative bound requires
+a suitable norm certificate or $\|F_i^r\|\le Cr_0^r$ with a stated $C$.
+Stopping or natural decay does not undo a dangerous output already sent.
+
+\section{Law budget, energy and notation repairs}
+\label{rev:budget}
+The parameter $\theta$ is a distributional attack constraint,
+$D(P_*\|P_0)\le\theta$; it is not the operational score threshold.
+Assume the whole-window independence in Section~\ref{rev:positivity} and
+\begin{equation}
+ c_Z=\min_{0\le\ell\le s}
+        \tr(\Theta_s^{-1}Z_\ell Z_\ell^T)>0.\label{rev:cZ}
+\end{equation}
+This means that every time block is nonzero; full column rank of each
+block is not required.
+
+\begin{proposition}[The meaning of the existing energy theorem]
+\label{rev:energybound}
+Under these conditions, each $q>0$ and finite $\theta\ge0$ satisfy
+\begin{equation}
+ D(P_*\|P_0)\le\theta
+ \quad\Longrightarrow\quad
+ \E\|\Delta\|^2\le
+ \frac{d f^{-1}(2\theta/d)}{c_Zq^2}.
+ \label{rev:windowenergy}
+\end{equation}
+The bound controls the code-domain window injection. It is not a direct
+bound on decoded energy, posterior MSE, delay or danger risk.
+\end{proposition}
+\begin{proof}
+From \eqref{rev:C} and the definition of $D(\Delta)$,
+\[
+ \tr B\ge q^2\sum_\ell\E\|\delta_\ell\|^2
+                \tr(\Theta_s^{-1}Z_\ell Z_\ell^T)
+ \ge q^2c_Z\E\|\Delta\|^2.
+\]
+Equation \eqref{rev:traceKL} and the budget imply
+$f(\tr B/d)\le2\theta/d$. The continuous strictly increasing function
+$f$ has an inverse on $[0,\infty)$, proving \eqref{rev:windowenergy}.
+\end{proof}
+
+Families $\Delta(q)$ may respond to the public design, provided the
+whole-window independence holds separately for every $q$. This is not a
+theorem for payload-feedback attacks. Nor does fixed-$\Delta$ asymptotic
+power prove uniform P3 power. For fixed deterministic $a$,
+\begin{equation}
+ \E\|M_ta\|^2=
+ [\lambda^2+2\lambda q+(m+2)q^2]\|a\|^2.\label{rev:decodedenergy}
+\end{equation}
+Taking $a=b/q$ shows that vanishing code-domain energy alone does not
+force the decoded effect to vanish. It does not by itself establish
+feasibility of a prescribed KL budget. The two concepts must remain separate.
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Symbol in this review & Fixed meaning\\
+\midrule
+$N$ & number of sensors (not watermark variance)\\
+$q=\sigma_\beta^2$ & variance of one Gaussian watermark coordinate\\
+$s+1$, $d$ & parity window length and residual dimension\\
+$a_k$, $\eta_k=M_ka_k$ & code-domain injection and decoded perturbation\\
+$b_k^+$, $b_k^-$ & posterior and prediction displacements at time $k$\\
+$F_i=J_iA$, $\Phi_i=AJ_i$ & posterior and prediction transition matrices\\
+$\theta$, $\tau_{\alpha}$ & KL-law budget and operational score threshold\\
+\bottomrule
+\end{tabular}
+\end{center}
+The rate $q^{-2}=\sigma_\beta^{-4}$ is one rate, not two distinct claims.
+The original Gaussian moment identity, the maximum-entropy step and the
+strict-positivity lemma should each be stated once and reused, rather than
+duplicating formulas across Theorems 2 and 3.
+
+\section*{Reviewer correspondence and unresolved items}
+\begin{longtable}{p{.13\textwidth}p{.37\textwidth}p{.40\textwidth}}
+\toprule
+Review item & Replacement material & What is and is not resolved\\
+\midrule\endhead
+R1.3 & Section~\ref{rev:positivity}, Lemma~\ref{rev:c1},
+Example~\ref{rev:degenerate}, Proposition~\ref{rev:entropy}
+& Strict positivity and non-Gaussian KL repaired; no new watermark claimed.\\
+R2.1 & Sections~\ref{rev:scoresection} and \ref{rev:KLsection}
+& A computable score replaces the unobservable per-step KL; full
+gated performance remains unverified.\\
+R3.1 & Section~\ref{rev:model}
+& Retains common $m$ and local observability; does not claim a
+network-only-observable extension.\\
+R3.2 & Proposition~\ref{rev:calibration} and joint-noise covariance paragraph
+& Correct marginal and finite-family calibration; not adaptive or infinite-run calibration.\\
+R3.3 & Section~\ref{rev:support}, Proposition~\ref{rev:finitesupport}
+& Finite support, effective and harmful directions are separated;
+R1.1 originality remains open.\\
+R3.4 & Section~\ref{rev:unitcircle}
+& Unit-circle semisimple/Jordan and finite termination cases are separated.\\
+R4.2 & Definition~\eqref{rev:KLdefinition}, identity~\eqref{rev:jointKL}
+& General, Gaussian, conditional, marginal and joint KL are distinct.\\
+R4.4 & Section~\ref{rev:budget}
+& Law budget, encoded energy, decoded effect and operational alarm
+are distinct; no finite danger guarantee inferred.\\
+R4.5 & Notation table, shared lemmas, equations~\eqref{rev:biasstep}--\eqref{rev:biasrec}
+& Local symbols and time indices aligned; final complete-paper
+cross-reference/notation audit still required.\\
+\bottomrule
+\end{longtable}
+
+\noindent\textbf{Originality remains unresolved.}
+R1.1, R1.2, R2.2, R3.5 and R5.3 have no fabricated positive response here.
+Kernel conditions, Gaussian maximum entropy, moment identities, chi-square
+calibration, the union bound and linear convolution are standard tools.
+The independent original-estimator implementation is a reproducibility
+baseline, not a new defense or an acceptance of the paper for resubmission.
+
+\end{document}

@@ -1,0 +1,230 @@
+{
+  "date": "2026-11-15",
+  "status": "fixed-model algebra and indexing passed; not external peer review",
+  "input_hashes": {
+    "common_g_reference.py": "95b667539e8d1341ae142ca4a1f9586b10cd85e9f4e1e9c62154bac0f789e8f4",
+    "test_reference.py": "a7a0f55ea2e16915f0929538c5218e053cb5333240d772b6ca59770abc309992",
+    "inputs/five_node_aggregate_model.json": "dbe91a198a0a17efe5fe3c81a553234af327b94c1b966b6356920e32ec85c11e",
+    "test_results.npz": "8ecff83b1a05f659e14b34adbe600a2282eb403b2a57dcdce54985cd74033cd2"
+  },
+  "primary_tests_at_review": 227,
+  "models": [
+    {
+      "model": "unstable",
+      "difference_parity_nullspace_exact": true,
+      "difference_covariance_rational_entries": [
+        [
+          "41689/20000",
+          "633/20000",
+          "-27/50",
+          "-1/200",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "633/20000",
+          "20513/10000",
+          "-1/40",
+          "-21/40",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-27/50",
+          "-1/40",
+          "41689/20000",
+          "633/20000",
+          "-27/50",
+          "-1/200",
+          "0",
+          "0"
+        ],
+        [
+          "-1/200",
+          "-21/40",
+          "633/20000",
+          "20513/10000",
+          "-1/40",
+          "-21/40",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-27/50",
+          "-1/40",
+          "41689/20000",
+          "633/20000",
+          "-27/50",
+          "-1/200"
+        ],
+        [
+          "0",
+          "0",
+          "-1/200",
+          "-21/40",
+          "633/20000",
+          "20513/10000",
+          "-1/40",
+          "-21/40"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-27/50",
+          "-1/40",
+          "41689/20000",
+          "633/20000"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/200",
+          "-21/40",
+          "633/20000",
+          "20513/10000"
+        ]
+      ],
+      "SVD_vs_difference_basis_error": 3.3306690738754696e-16,
+      "independent_covariance_error": 2.6645352591003757e-15,
+      "raw_vs_compressed_information_loss_exact": [
+        [
+          "1/25",
+          "0"
+        ],
+        [
+          "0",
+          "4/25"
+        ]
+      ],
+      "legacy_gain_update_vs_Bayesian_precision_form_error": 1.6653345369377348e-16,
+      "saved_trajectory_vs_expanded_affine_update_errors": {
+        "identity__posterior_clean": 7.105427357601002e-15,
+        "identity__posterior_attacked": 7.105427357601002e-15,
+        "Gaussian__posterior_clean": 7.105427357601002e-15,
+        "Gaussian__posterior_attacked": 7.105427357601002e-15
+      }
+    },
+    {
+      "model": "stable",
+      "difference_parity_nullspace_exact": true,
+      "difference_covariance_rational_entries": [
+        [
+          "1457/800",
+          "53/2000",
+          "-2/5",
+          "-1/200",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "53/2000",
+          "38101/20000",
+          "-1/40",
+          "-9/20",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-2/5",
+          "-1/40",
+          "1457/800",
+          "53/2000",
+          "-2/5",
+          "-1/200",
+          "0",
+          "0"
+        ],
+        [
+          "-1/200",
+          "-9/20",
+          "53/2000",
+          "38101/20000",
+          "-1/40",
+          "-9/20",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-2/5",
+          "-1/40",
+          "1457/800",
+          "53/2000",
+          "-2/5",
+          "-1/200"
+        ],
+        [
+          "0",
+          "0",
+          "-1/200",
+          "-9/20",
+          "53/2000",
+          "38101/20000",
+          "-1/40",
+          "-9/20"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-2/5",
+          "-1/40",
+          "1457/800",
+          "53/2000"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/200",
+          "-9/20",
+          "53/2000",
+          "38101/20000"
+        ]
+      ],
+      "SVD_vs_difference_basis_error": 3.3306690738754696e-16,
+      "independent_covariance_error": 1.1102230246251565e-15,
+      "raw_vs_compressed_information_loss_exact": [
+        [
+          "1/25",
+          "0"
+        ],
+        [
+          "0",
+          "4/25"
+        ]
+      ],
+      "legacy_gain_update_vs_Bayesian_precision_form_error": 1.2212453270876722e-15,
+      "saved_trajectory_vs_expanded_affine_update_errors": {
+        "identity__posterior_clean": 8.881784197001252e-16,
+        "identity__posterior_attacked": 8.881784197001252e-16,
+        "Gaussian__posterior_clean": 8.881784197001252e-16,
+        "Gaussian__posterior_attacked": 8.881784197001252e-16
+      }
+    }
+  ],
+  "new_physical_samples": 0,
+  "MC": 0,
+  "limits": [
+    "Fixed common-G gains, no gating or loss; not original 50-node reproduction",
+    "No empirical FA/Pd or novelty claims",
+    "This review uses a different residual basis and expanded affine updates, not merely the primary test runner"
+  ]
+}

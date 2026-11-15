@@ -1,0 +1,132 @@
+{
+  "rows": [
+    {
+      "source": "原(3)预测/本地创新",
+      "formula": "prior=A post_prev; local=y_i-H_i prior",
+      "function": "common_step",
+      "line": 55,
+      "identity_test_suffix": "single_node_local_innovation",
+      "max_identity_error": 0.0,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "原(3)共G邻居和",
+      "formula": "post=prior+K local+G sum_j innovation_j",
+      "function": "common_step",
+      "line": 55,
+      "identity_test_suffix": "common_sum_equals_two_block",
+      "max_identity_error": 5.551115123125783e-17,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "原(4)等价聚合块",
+      "formula": "C=col(H_i,sum H_j), L=[K,G]；不是自由邻居增益",
+      "function": "common_block_step",
+      "line": 64,
+      "identity_test_suffix": "common_sum_equals_tied_raw_blocks",
+      "max_identity_error": 1.1102230246251565e-16,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "增益设计显式补充（Niu9—13）",
+      "formula": "聚合观测DARE与Joseph协方差；旧K/G保存值不被静默替换",
+      "function": "aggregate_design",
+      "line": 46,
+      "identity_test_suffix": "supplementary_Niu_saved_gain_agreement",
+      "max_identity_error": 0.0,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "原(13)—(16)有限自主主攻击",
+      "formula": "a[Ta+t]=H_j A^t xi，其他时刻0；实际总E",
+      "function": "finite_autonomous_attack",
+      "line": 73,
+      "identity_test_suffix": null,
+      "max_identity_error": null,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "原(30)—(35)发送/注入/解码",
+      "formula": "u=M^-1 y; received=M(u+a)=y+Ma",
+      "function": "transmit_decode",
+      "line": 97,
+      "identity_test_suffix": "coded_injection_decodes_to_Ma",
+      "max_identity_error": 1.5543122344752192e-15,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "原(6)—(8)名义奇偶",
+      "formula": "ZO=0；有效过程噪声块s个；Theta=Z(W Q W^T+R)Z^T",
+      "function": "parity_model",
+      "line": 162,
+      "identity_test_suffix": "nominal_Theta_matches_global_noise_expansion",
+      "max_identity_error": 1.3322676295501878e-15,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "修订在线评分（替原11）",
+      "formula": "score=r^T Theta^-1 r；28个预定测试分配总alpha=.05",
+      "function": "nominal_scores",
+      "line": 196,
+      "identity_test_suffix": null,
+      "max_identity_error": null,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "原(18)—(19)时序修正",
+      "formula": "b^-_k=A b+_(k-1), b+_k=J b^-_k+G eta_k",
+      "function": "bias_recursion",
+      "line": 127,
+      "identity_test_suffix": "paired_posterior_bias_recursion",
+      "max_identity_error": 2.6956529634039196e-15,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "预测偏移/后验偏移",
+      "formula": "下一拍预测=A本拍后验；不混用范数阈值",
+      "function": "bias_recursion",
+      "line": 127,
+      "identity_test_suffix": "prediction_equals_A_previous_posterior",
+      "max_identity_error": 4.458655666894625e-15,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "完整内部窗/起止窗",
+      "formula": "Z diag(M) T_window xi，起止用零填充，不套全O",
+      "function": "parity_series",
+      "line": 176,
+      "identity_test_suffix": "actual_residual_shift_equals_parity_of_Ma",
+      "max_identity_error": 1.9984014443252818e-15,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "跨窗联合协方差",
+      "formula": "共同x0/w/v primitive映射；重叠非独立",
+      "function": "global_parity_map",
+      "line": 179,
+      "identity_test_suffix": "global_primitive_map_matches_actual_nominal_residual",
+      "max_identity_error": 1.021405182655144e-14,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "有限停止自然衰减",
+      "formula": "最后注入Tb-1后 post_bias[k]=F^(k-Tb+1)b[Tb-1]",
+      "function": "bias_recursion",
+      "line": 127,
+      "identity_test_suffix": "stopped_attack_natural_F_tail",
+      "max_identity_error": 2.695652963151888e-15,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    },
+    {
+      "source": "历史complete_v2 606等（对照，不采用）",
+      "formula": "自由stack gain；邻居+self、pinv、P+jitter",
+      "function": "legacy_stacked_step",
+      "line": 137,
+      "identity_test_suffix": "matched_prior_equal_sum_witness",
+      "max_identity_error": 9.367506770274758e-17,
+      "scope": "fixed common-G, no gating, ideal synchronized complete packets"
+    }
+  ],
+  "code_sha256": "95b667539e8d1341ae142ca4a1f9586b10cd85e9f4e1e9c62154bac0f789e8f4",
+  "local_windows_code_sha256": "95b667539e8d1341ae142ca4a1f9586b10cd85e9f4e1e9c62154bac0f789e8f4"
+}

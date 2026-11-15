@@ -1,0 +1,2859 @@
+{
+  "date": "2026-11-15",
+  "baseline": "72a972ccd4c3dc5fb024ef1b178769073b10c422",
+  "scope": "mypaper and mirrored 仓库论文资料/mypaper named historical experiment sources; skills excluded; no second-paper data examined",
+  "simulations_imported_or_run": false,
+  "Monte_Carlo": 0,
+  "code_records": [
+    {
+      "file": "mypaper\\学报投稿\\实验重构\\run_journal_experiments.py",
+      "sha256": "dc36cc435f98a6d0a0329a3a0e48b2c0b953770685f1e4ba05b7f954381af12d",
+      "bytes": 91464,
+      "lines": 2205,
+      "params": {},
+      "anchors": [
+        {
+          "line": 66,
+          "text": "n_nodes: int = 5"
+        },
+        {
+          "line": 96,
+          "text": "a = np.array([[0.96, 0.14], [-0.04, 0.91]], dtype=float)"
+        },
+        {
+          "line": 120,
+          "text": "def neighbor_sets(n_nodes: int) -> list[list[int]]:"
+        },
+        {
+          "line": 909,
+          "text": "single = [int(np.linalg.matrix_rank(np.vstack([h @ block for block in blocks]))) for h in h_list]"
+        },
+        {
+          "line": 910,
+          "text": "global_h = np.vstack(h_list)"
+        },
+        {
+          "line": 911,
+          "text": "global_rank = int(np.linalg.matrix_rank(np.vstack([global_h @ block for block in blocks])))"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "mypaper\\学报投稿\\实验重构\\run_journal_experiments_第十七轮.py",
+      "sha256": "b8b64ee917fca0d40c3450860a1ec460df193688206eefe052ca4bf95909ea31",
+      "bytes": 106395,
+      "lines": 2560,
+      "params": {},
+      "anchors": [
+        {
+          "line": 67,
+          "text": "n_nodes: int = 5"
+        },
+        {
+          "line": 94,
+          "text": "variant: str = \"base\", n_nodes: int | None = None"
+        },
+        {
+          "line": 97,
+          "text": "a = np.array([[0.96, 0.14], [-0.04, 0.91]], dtype=float)"
+        },
+        {
+          "line": 125,
+          "text": "def neighbor_sets(n_nodes: int) -> list[list[int]]:"
+        },
+        {
+          "line": 991,
+          "text": "single = [int(np.linalg.matrix_rank(np.vstack([h @ block for block in blocks]))) for h in h_list]"
+        },
+        {
+          "line": 992,
+          "text": "global_h = np.vstack(h_list)"
+        },
+        {
+          "line": 993,
+          "text": "global_rank = int(np.linalg.matrix_rank(np.vstack([global_h @ block for block in blocks])))"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "mypaper\\学报投稿\\实验重构\\run_journal_experiments_第十六轮.py",
+      "sha256": "303daf2a49ce0cf8990b4e2b47090bf8b5b5caa4a385b5eb297edbd3648ffca3",
+      "bytes": 97167,
+      "lines": 2366,
+      "params": {},
+      "anchors": [
+        {
+          "line": 67,
+          "text": "n_nodes: int = 5"
+        },
+        {
+          "line": 95,
+          "text": "a = np.array([[0.96, 0.14], [-0.04, 0.91]], dtype=float)"
+        },
+        {
+          "line": 119,
+          "text": "def neighbor_sets(n_nodes: int) -> list[list[int]]:"
+        },
+        {
+          "line": 972,
+          "text": "single = [int(np.linalg.matrix_rank(np.vstack([h @ block for block in blocks]))) for h in h_list]"
+        },
+        {
+          "line": 973,
+          "text": "global_h = np.vstack(h_list)"
+        },
+        {
+          "line": 974,
+          "text": "global_rank = int(np.linalg.matrix_rank(np.vstack([global_h @ block for block in blocks])))"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\run_experiments.py",
+      "sha256": "0aaf11468740e01c64a341b3658555c3d10329986c1bf2608f8c7b124a3ea7f3",
+      "bytes": 29133,
+      "lines": 772,
+      "params": {
+        "n_nodes": {
+          "line": 31,
+          "expression": "5"
+        },
+        "dim": {
+          "line": 32,
+          "expression": "2"
+        },
+        "horizon": {
+          "line": 33,
+          "expression": "150"
+        },
+        "attack_start": {
+          "line": 34,
+          "expression": "50"
+        },
+        "mc_runs": {
+          "line": 35,
+          "expression": "100"
+        },
+        "seed": {
+          "line": 36,
+          "expression": "20260629"
+        },
+        "q_std": {
+          "line": 37,
+          "expression": "0.035"
+        },
+        "r_std": {
+          "line": 38,
+          "expression": "0.18"
+        },
+        "margin": {
+          "line": 39,
+          "expression": "0.03"
+        },
+        "attack_amp": {
+          "line": 40,
+          "expression": "2.2"
+        },
+        "n_attack_edges": {
+          "line": 41,
+          "expression": "1"
+        },
+        "slow_attack_amp": {
+          "line": 42,
+          "expression": "1.2"
+        },
+        "slow_rho": {
+          "line": 43,
+          "expression": "0.97"
+        },
+        "window": {
+          "line": 44,
+          "expression": "12"
+        },
+        "entropy_window": {
+          "line": 45,
+          "expression": "14"
+        },
+        "entropy_tol": {
+          "line": 46,
+          "expression": "0.95"
+        }
+      },
+      "anchors": [
+        {
+          "line": 31,
+          "text": "n_nodes: int = 5"
+        },
+        {
+          "line": 35,
+          "text": "mc_runs: int = 100"
+        },
+        {
+          "line": 51,
+          "text": "a = np.array([[0.96, 0.14], [-0.04, 0.91]], dtype=float)"
+        },
+        {
+          "line": 62,
+          "text": "def neighbors(n_nodes: int) -> list[list[int]]:"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\simulation_arbitrary_attack_solver.py",
+      "sha256": "1a6250a0d52e68c6dcae0085ba18ff1ab7c1a1f423ed7805beb539f0540e2cb3",
+      "bytes": 32970,
+      "lines": 840,
+      "params": {
+        "sensorNum": {
+          "line": 41,
+          "expression": "50"
+        },
+        "timeSize": {
+          "line": 42,
+          "expression": "150"
+        },
+        "MC_runs": {
+          "line": 43,
+          "expression": "500"
+        },
+        "dataDim": {
+          "line": 45,
+          "expression": "2"
+        },
+        "meaDim": {
+          "line": 46,
+          "expression": "2"
+        },
+        "s": {
+          "line": 48,
+          "expression": "4"
+        },
+        "KLD_window": {
+          "line": 49,
+          "expression": "4"
+        },
+        "KLD_threshold": {
+          "line": 50,
+          "expression": "42.0"
+        },
+        "attack_links": {
+          "line": 52,
+          "expression": "[(0, 1), (2, 3), (15, 16), (17, 31), (14, 49), (17, 34)]"
+        },
+        "attack_start": {
+          "line": 53,
+          "expression": "50"
+        },
+        "attack_duration": {
+          "line": 54,
+          "expression": "100"
+        },
+        "xi_magnitude_unstable": {
+          "line": 57,
+          "expression": "6.0"
+        },
+        "xi_magnitude_stable": {
+          "line": 58,
+          "expression": "10.0"
+        },
+        "watermark_lambda": {
+          "line": 60,
+          "expression": "0.5"
+        },
+        "watermark_vars_test": {
+          "line": 61,
+          "expression": "[0.5, 2.0, 5.0, 10.0, 50.0]"
+        },
+        "plot_start": {
+          "line": 63,
+          "expression": "20"
+        }
+      },
+      "anchors": [
+        {
+          "line": 41,
+          "text": "sensorNum = 50"
+        },
+        {
+          "line": 42,
+          "text": "timeSize = 150"
+        },
+        {
+          "line": 43,
+          "text": "MC_runs = 500  # 蒙特卡洛实验次数"
+        },
+        {
+          "line": 49,
+          "text": "KLD_window = 4"
+        },
+        {
+          "line": 50,
+          "text": "KLD_threshold = 42.0"
+        },
+        {
+          "line": 53,
+          "text": "attack_start = 50"
+        },
+        {
+          "line": 54,
+          "text": "attack_duration = 100"
+        },
+        {
+          "line": 60,
+          "text": "watermark_lambda = 0.5"
+        },
+        {
+          "line": 61,
+          "text": "watermark_vars_test = [0.5, 2.0, 5.0, 10.0, 50.0]"
+        },
+        {
+          "line": 127,
+          "text": "A_unstable = np.array([[1.08, 0.05], [0.01, 1.05]])"
+        },
+        {
+          "line": 128,
+          "text": "A_stable = np.array([[0.95, 0.02], [0.02, 0.97]])"
+        },
+        {
+          "line": 164,
+          "text": "H_xs = np.vstack([H_j @ np.linalg.matrix_power(A_sys, r) for r in range(Params.s + 1)])"
+        },
+        {
+          "line": 175,
+          "text": "Hw_s = np.vstack(Hw_rows)"
+        },
+        {
+          "line": 181,
+          "text": "Theta = Zs @ (Hw_s @ Q_s @ Hw_s.T + Hv_s @ R_s @ Hv_s.T) @ Zs.T"
+        },
+        {
+          "line": 215,
+          "text": "Theta_inv = pinv(Theta)"
+        },
+        {
+          "line": 219,
+          "text": "_, logdet_Theta = np.linalg.slogdet(Theta)"
+        },
+        {
+          "line": 270,
+          "text": "r_k = Zs @ np.vstack(Y_hist)"
+        },
+        {
+          "line": 293,
+          "text": "H_stack = np.vstack(H_ext)"
+        },
+        {
+          "line": 296,
+          "text": "K_gain = P_pred @ H_stack.T @ pinv(S)"
+        },
+        {
+          "line": 557,
+          "text": "Theta = Theta_cache[sender]"
+        },
+        {
+          "line": 562,
+          "text": "theta_inv = pinv(Theta)"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\simulation_revised_detection_metrics_complete_v2.py",
+      "sha256": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a",
+      "bytes": 68652,
+      "lines": 2226,
+      "params": {
+        "sensorNum": {
+          "line": 58,
+          "expression": "50"
+        },
+        "timeSize": {
+          "line": 61,
+          "expression": "150"
+        },
+        "MC_runs": {
+          "line": 65,
+          "expression": "int(os.environ.get('MC_RUNS', '1000'))"
+        },
+        "dataDim": {
+          "line": 67,
+          "expression": "2"
+        },
+        "meaDim": {
+          "line": 68,
+          "expression": "2"
+        },
+        "s": {
+          "line": 71,
+          "expression": "4"
+        },
+        "KLD_window": {
+          "line": 74,
+          "expression": "4"
+        },
+        "KLD_threshold": {
+          "line": 75,
+          "expression": "42.0"
+        },
+        "attack_links": {
+          "line": 78,
+          "expression": "[(0, 1), (2, 3), (15, 16), (17, 31), (14, 49), (17, 34)]"
+        },
+        "attack_start": {
+          "line": 88,
+          "expression": "50"
+        },
+        "attack_duration": {
+          "line": 91,
+          "expression": "60"
+        },
+        "impact_attack_duration": {
+          "line": 95,
+          "expression": "timeSize - attack_start"
+        },
+        "xi_magnitude_unstable": {
+          "line": 97,
+          "expression": "6.0"
+        },
+        "xi_magnitude_stable": {
+          "line": 98,
+          "expression": "10.0"
+        },
+        "watermark_lambda": {
+          "line": 100,
+          "expression": "0.5"
+        },
+        "watermark_vars_test": {
+          "line": 104,
+          "expression": "[0.5, 2.0, 5.0, 10.0, 50.0]"
+        },
+        "representative_kld_vars": {
+          "line": 107,
+          "expression": "[0.0, 0.5, 2.0]"
+        },
+        "representative_rmse_var": {
+          "line": 108,
+          "expression": "0.5"
+        },
+        "plot_start": {
+          "line": 110,
+          "expression": "20"
+        },
+        "output_dir": {
+          "line": 112,
+          "expression": "Path(os.environ.get('SIM_OUTPUT_DIR', 'simulation_outputs'))"
+        },
+        "run_attack_optimization": {
+          "line": 115,
+          "expression": "True"
+        },
+        "attack_opt_watermark_mc": {
+          "line": 116,
+          "expression": "MC_runs"
+        },
+        "attack_opt_multi_starts": {
+          "line": 117,
+          "expression": "8"
+        },
+        "attack_opt_seed": {
+          "line": 118,
+          "expression": "20260712"
+        },
+        "attack_opt_ftol": {
+          "line": 119,
+          "expression": "1e-10"
+        },
+        "attack_opt_maxiter": {
+          "line": 120,
+          "expression": "1500"
+        }
+      },
+      "anchors": [
+        {
+          "line": 58,
+          "text": "sensorNum = 50"
+        },
+        {
+          "line": 61,
+          "text": "timeSize = 150"
+        },
+        {
+          "line": 65,
+          "text": "MC_runs = int(os.environ.get(\"MC_RUNS\", \"1000\"))"
+        },
+        {
+          "line": 74,
+          "text": "KLD_window = 4"
+        },
+        {
+          "line": 75,
+          "text": "KLD_threshold = 42.0"
+        },
+        {
+          "line": 88,
+          "text": "attack_start = 50"
+        },
+        {
+          "line": 91,
+          "text": "attack_duration = 60"
+        },
+        {
+          "line": 95,
+          "text": "impact_attack_duration = timeSize - attack_start"
+        },
+        {
+          "line": 100,
+          "text": "watermark_lambda = 0.5"
+        },
+        {
+          "line": 104,
+          "text": "watermark_vars_test = [0.50, 2.00, 5.00, 10.00, 50.00]"
+        },
+        {
+          "line": 112,
+          "text": "output_dir = Path(os.environ.get(\"SIM_OUTPUT_DIR\", \"simulation_outputs\"))"
+        },
+        {
+          "line": 255,
+          "text": "A_unstable = np.array([[1.08, 0.05], [0.01, 1.05]], dtype=float)"
+        },
+        {
+          "line": 256,
+          "text": "A_stable = np.array([[0.95, 0.02], [0.02, 0.97]], dtype=float)"
+        },
+        {
+          "line": 305,
+          "text": "H_xs = np.vstack(["
+        },
+        {
+          "line": 329,
+          "text": "Hw_s = np.vstack(Hw_rows)"
+        },
+        {
+          "line": 338,
+          "text": "Theta = Zs @ ("
+        },
+        {
+          "line": 400,
+          "text": "covariance_hat = np.atleast_2d(np.cov(residual_matrix))"
+        },
+        {
+          "line": 401,
+          "text": "covariance_hat = ("
+        },
+        {
+          "line": 406,
+          "text": "theta_inv = pinv(Theta)"
+        },
+        {
+          "line": 547,
+          "text": "Theta = Theta_cache[sender]"
+        },
+        {
+          "line": 551,
+          "text": "stacked_measurements = np.vstack(["
+        },
+        {
+          "line": 603,
+          "text": "H_stack = np.vstack(H_ext)"
+        },
+        {
+          "line": 606,
+          "text": "gain = P_pred @ H_stack.T @ pinv(innovation_covariance)"
+        },
+        {
+          "line": 638,
+          "text": "s + KLD_window - 1 samples, and the same guard is used after attack end."
+        },
+        {
+          "line": 642,
+          "text": "Params.s + Params.KLD_window - 1,"
+        },
+        {
+          "line": 649,
+          "text": "detector_guard = Params.s + Params.KLD_window - 1"
+        },
+        {
+          "line": 977,
+          "text": "with output_path(\"Table1_No_Watermark_Per_Link_FPR_FNR.csv\").open("
+        },
+        {
+          "line": 1002,
+          "text": "with output_path(\"Table2_Watermark_Per_Link_FPR_FNR.csv\").open("
+        },
+        {
+          "line": 1032,
+          "text": "with output_path(\"Table3_Watermark_Mean_FPR_FNR.csv\").open("
+        },
+        {
+          "line": 1131,
+          "text": "output_path(\"Table1_NoWatermark_FPR_FNR.tex\").write_text("
+        },
+        {
+          "line": 1160,
+          "text": "output_path(\"Table2_Watermark_PerLink_FPR_FNR.tex\").write_text("
+        },
+        {
+          "line": 1280,
+          "text": "detector_guard = Params.s + Params.KLD_window - 1"
+        },
+        {
+          "line": 1617,
+          "text": "Theta = Theta_cache[sender]"
+        },
+        {
+          "line": 1621,
+          "text": "theta_inv = pinv(Theta)"
+        },
+        {
+          "line": 1931,
+          "text": "detector_guard = Params.s + Params.KLD_window - 1"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\simulation_revised_detection_metrics_direction_fixed.py",
+      "sha256": "6cc7c06d45d2d6664ab8cb5c63169049f4c2fc4ff56c7659797d2742bcc5177a",
+      "bytes": 45744,
+      "lines": 1388,
+      "params": {
+        "sensorNum": {
+          "line": 42,
+          "expression": "50"
+        },
+        "timeSize": {
+          "line": 43,
+          "expression": "150"
+        },
+        "MC_runs": {
+          "line": 44,
+          "expression": "5"
+        },
+        "dataDim": {
+          "line": 46,
+          "expression": "2"
+        },
+        "meaDim": {
+          "line": 47,
+          "expression": "2"
+        },
+        "s": {
+          "line": 49,
+          "expression": "4"
+        },
+        "KLD_window": {
+          "line": 50,
+          "expression": "4"
+        },
+        "KLD_threshold": {
+          "line": 51,
+          "expression": "42.0"
+        },
+        "attack_links": {
+          "line": 56,
+          "expression": "[(0, 1), (2, 3), (15, 16), (17, 31), (14, 49), (17, 34)]"
+        },
+        "attack_start": {
+          "line": 57,
+          "expression": "50"
+        },
+        "attack_duration": {
+          "line": 58,
+          "expression": "100"
+        },
+        "xi_magnitude_unstable": {
+          "line": 61,
+          "expression": "6.0"
+        },
+        "xi_magnitude_stable": {
+          "line": 62,
+          "expression": "10.0"
+        },
+        "watermark_lambda": {
+          "line": 64,
+          "expression": "0.5"
+        },
+        "watermark_vars_test": {
+          "line": 65,
+          "expression": "[0.5, 2.0, 5.0, 10.0, 50.0]"
+        },
+        "plot_start": {
+          "line": 67,
+          "expression": "20"
+        }
+      },
+      "anchors": [
+        {
+          "line": 42,
+          "text": "sensorNum = 50"
+        },
+        {
+          "line": 43,
+          "text": "timeSize = 150"
+        },
+        {
+          "line": 44,
+          "text": "MC_runs = 5  # 蒙特卡洛实验次数"
+        },
+        {
+          "line": 50,
+          "text": "KLD_window = 4"
+        },
+        {
+          "line": 51,
+          "text": "KLD_threshold = 42.0"
+        },
+        {
+          "line": 57,
+          "text": "attack_start = 50"
+        },
+        {
+          "line": 58,
+          "text": "attack_duration = 100"
+        },
+        {
+          "line": 64,
+          "text": "watermark_lambda = 0.5"
+        },
+        {
+          "line": 65,
+          "text": "watermark_vars_test = [0.5, 2.0, 5.0, 10.0, 50.0]"
+        },
+        {
+          "line": 156,
+          "text": "A_unstable = np.array([[1.08, 0.05], [0.01, 1.05]])"
+        },
+        {
+          "line": 157,
+          "text": "A_stable = np.array([[0.95, 0.02], [0.02, 0.97]])"
+        },
+        {
+          "line": 193,
+          "text": "H_xs = np.vstack([H_j @ np.linalg.matrix_power(A_sys, r) for r in range(Params.s + 1)])"
+        },
+        {
+          "line": 204,
+          "text": "Hw_s = np.vstack(Hw_rows)"
+        },
+        {
+          "line": 210,
+          "text": "Theta = Zs @ (Hw_s @ Q_s @ Hw_s.T + Hv_s @ R_s @ Hv_s.T) @ Zs.T"
+        },
+        {
+          "line": 250,
+          "text": "Theta_inv = pinv(Theta)"
+        },
+        {
+          "line": 254,
+          "text": "_, logdet_Theta = np.linalg.slogdet(Theta)"
+        },
+        {
+          "line": 322,
+          "text": "r_k = Zs @ np.vstack(Y_hist)"
+        },
+        {
+          "line": 355,
+          "text": "H_stack = np.vstack(H_ext)"
+        },
+        {
+          "line": 358,
+          "text": "K_gain = P_pred @ H_stack.T @ pinv(S)"
+        },
+        {
+          "line": 408,
+          "text": "Params.s + Params.KLD_window - 1"
+        },
+        {
+          "line": 411,
+          "text": "clean_eval_start = detector_ready_start"
+        },
+        {
+          "line": 412,
+          "text": "clean_eval_end = min(Params.attack_start, Params.timeSize)"
+        },
+        {
+          "line": 416,
+          "text": "attack_eval_start = Params.attack_start + Params.s"
+        },
+        {
+          "line": 417,
+          "text": "attack_eval_end = min("
+        },
+        {
+          "line": 875,
+          "text": "Theta = Theta_cache[sender]"
+        },
+        {
+          "line": 880,
+          "text": "theta_inv = pinv(Theta)"
+        },
+        {
+          "line": 1147,
+          "text": "\"Table1_Strictly_Stealthy_Attack_Metrics.csv\","
+        },
+        {
+          "line": 1174,
+          "text": "\"Detection_Metrics_Summary.csv\","
+        },
+        {
+          "line": 1198,
+          "text": "\"Detection_Metrics_Per_Link.csv\","
+        },
+        {
+          "line": 1265,
+          "text": "Params.s + Params.KLD_window - 1"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "仓库论文资料\\mypaper\\privacyandsaety\\code\\run_experiments.py",
+      "sha256": "0aaf11468740e01c64a341b3658555c3d10329986c1bf2608f8c7b124a3ea7f3",
+      "bytes": 29133,
+      "lines": 772,
+      "params": {
+        "n_nodes": {
+          "line": 31,
+          "expression": "5"
+        },
+        "dim": {
+          "line": 32,
+          "expression": "2"
+        },
+        "horizon": {
+          "line": 33,
+          "expression": "150"
+        },
+        "attack_start": {
+          "line": 34,
+          "expression": "50"
+        },
+        "mc_runs": {
+          "line": 35,
+          "expression": "100"
+        },
+        "seed": {
+          "line": 36,
+          "expression": "20260629"
+        },
+        "q_std": {
+          "line": 37,
+          "expression": "0.035"
+        },
+        "r_std": {
+          "line": 38,
+          "expression": "0.18"
+        },
+        "margin": {
+          "line": 39,
+          "expression": "0.03"
+        },
+        "attack_amp": {
+          "line": 40,
+          "expression": "2.2"
+        },
+        "n_attack_edges": {
+          "line": 41,
+          "expression": "1"
+        },
+        "slow_attack_amp": {
+          "line": 42,
+          "expression": "1.2"
+        },
+        "slow_rho": {
+          "line": 43,
+          "expression": "0.97"
+        },
+        "window": {
+          "line": 44,
+          "expression": "12"
+        },
+        "entropy_window": {
+          "line": 45,
+          "expression": "14"
+        },
+        "entropy_tol": {
+          "line": 46,
+          "expression": "0.95"
+        }
+      },
+      "anchors": [
+        {
+          "line": 31,
+          "text": "n_nodes: int = 5"
+        },
+        {
+          "line": 35,
+          "text": "mc_runs: int = 100"
+        },
+        {
+          "line": 51,
+          "text": "a = np.array([[0.96, 0.14], [-0.04, 0.91]], dtype=float)"
+        },
+        {
+          "line": 62,
+          "text": "def neighbors(n_nodes: int) -> list[list[int]]:"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "仓库论文资料\\mypaper\\privacyandsaety\\code\\simulation_arbitrary_attack_solver.py",
+      "sha256": "1a6250a0d52e68c6dcae0085ba18ff1ab7c1a1f423ed7805beb539f0540e2cb3",
+      "bytes": 32970,
+      "lines": 840,
+      "params": {
+        "sensorNum": {
+          "line": 41,
+          "expression": "50"
+        },
+        "timeSize": {
+          "line": 42,
+          "expression": "150"
+        },
+        "MC_runs": {
+          "line": 43,
+          "expression": "500"
+        },
+        "dataDim": {
+          "line": 45,
+          "expression": "2"
+        },
+        "meaDim": {
+          "line": 46,
+          "expression": "2"
+        },
+        "s": {
+          "line": 48,
+          "expression": "4"
+        },
+        "KLD_window": {
+          "line": 49,
+          "expression": "4"
+        },
+        "KLD_threshold": {
+          "line": 50,
+          "expression": "42.0"
+        },
+        "attack_links": {
+          "line": 52,
+          "expression": "[(0, 1), (2, 3), (15, 16), (17, 31), (14, 49), (17, 34)]"
+        },
+        "attack_start": {
+          "line": 53,
+          "expression": "50"
+        },
+        "attack_duration": {
+          "line": 54,
+          "expression": "100"
+        },
+        "xi_magnitude_unstable": {
+          "line": 57,
+          "expression": "6.0"
+        },
+        "xi_magnitude_stable": {
+          "line": 58,
+          "expression": "10.0"
+        },
+        "watermark_lambda": {
+          "line": 60,
+          "expression": "0.5"
+        },
+        "watermark_vars_test": {
+          "line": 61,
+          "expression": "[0.5, 2.0, 5.0, 10.0, 50.0]"
+        },
+        "plot_start": {
+          "line": 63,
+          "expression": "20"
+        }
+      },
+      "anchors": [
+        {
+          "line": 41,
+          "text": "sensorNum = 50"
+        },
+        {
+          "line": 42,
+          "text": "timeSize = 150"
+        },
+        {
+          "line": 43,
+          "text": "MC_runs = 500  # 蒙特卡洛实验次数"
+        },
+        {
+          "line": 49,
+          "text": "KLD_window = 4"
+        },
+        {
+          "line": 50,
+          "text": "KLD_threshold = 42.0"
+        },
+        {
+          "line": 53,
+          "text": "attack_start = 50"
+        },
+        {
+          "line": 54,
+          "text": "attack_duration = 100"
+        },
+        {
+          "line": 60,
+          "text": "watermark_lambda = 0.5"
+        },
+        {
+          "line": 61,
+          "text": "watermark_vars_test = [0.5, 2.0, 5.0, 10.0, 50.0]"
+        },
+        {
+          "line": 127,
+          "text": "A_unstable = np.array([[1.08, 0.05], [0.01, 1.05]])"
+        },
+        {
+          "line": 128,
+          "text": "A_stable = np.array([[0.95, 0.02], [0.02, 0.97]])"
+        },
+        {
+          "line": 164,
+          "text": "H_xs = np.vstack([H_j @ np.linalg.matrix_power(A_sys, r) for r in range(Params.s + 1)])"
+        },
+        {
+          "line": 175,
+          "text": "Hw_s = np.vstack(Hw_rows)"
+        },
+        {
+          "line": 181,
+          "text": "Theta = Zs @ (Hw_s @ Q_s @ Hw_s.T + Hv_s @ R_s @ Hv_s.T) @ Zs.T"
+        },
+        {
+          "line": 215,
+          "text": "Theta_inv = pinv(Theta)"
+        },
+        {
+          "line": 219,
+          "text": "_, logdet_Theta = np.linalg.slogdet(Theta)"
+        },
+        {
+          "line": 270,
+          "text": "r_k = Zs @ np.vstack(Y_hist)"
+        },
+        {
+          "line": 293,
+          "text": "H_stack = np.vstack(H_ext)"
+        },
+        {
+          "line": 296,
+          "text": "K_gain = P_pred @ H_stack.T @ pinv(S)"
+        },
+        {
+          "line": 557,
+          "text": "Theta = Theta_cache[sender]"
+        },
+        {
+          "line": 562,
+          "text": "theta_inv = pinv(Theta)"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "仓库论文资料\\mypaper\\privacyandsaety\\code\\simulation_revised_detection_metrics_complete_v2.py",
+      "sha256": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a",
+      "bytes": 68652,
+      "lines": 2226,
+      "params": {
+        "sensorNum": {
+          "line": 58,
+          "expression": "50"
+        },
+        "timeSize": {
+          "line": 61,
+          "expression": "150"
+        },
+        "MC_runs": {
+          "line": 65,
+          "expression": "int(os.environ.get('MC_RUNS', '1000'))"
+        },
+        "dataDim": {
+          "line": 67,
+          "expression": "2"
+        },
+        "meaDim": {
+          "line": 68,
+          "expression": "2"
+        },
+        "s": {
+          "line": 71,
+          "expression": "4"
+        },
+        "KLD_window": {
+          "line": 74,
+          "expression": "4"
+        },
+        "KLD_threshold": {
+          "line": 75,
+          "expression": "42.0"
+        },
+        "attack_links": {
+          "line": 78,
+          "expression": "[(0, 1), (2, 3), (15, 16), (17, 31), (14, 49), (17, 34)]"
+        },
+        "attack_start": {
+          "line": 88,
+          "expression": "50"
+        },
+        "attack_duration": {
+          "line": 91,
+          "expression": "60"
+        },
+        "impact_attack_duration": {
+          "line": 95,
+          "expression": "timeSize - attack_start"
+        },
+        "xi_magnitude_unstable": {
+          "line": 97,
+          "expression": "6.0"
+        },
+        "xi_magnitude_stable": {
+          "line": 98,
+          "expression": "10.0"
+        },
+        "watermark_lambda": {
+          "line": 100,
+          "expression": "0.5"
+        },
+        "watermark_vars_test": {
+          "line": 104,
+          "expression": "[0.5, 2.0, 5.0, 10.0, 50.0]"
+        },
+        "representative_kld_vars": {
+          "line": 107,
+          "expression": "[0.0, 0.5, 2.0]"
+        },
+        "representative_rmse_var": {
+          "line": 108,
+          "expression": "0.5"
+        },
+        "plot_start": {
+          "line": 110,
+          "expression": "20"
+        },
+        "output_dir": {
+          "line": 112,
+          "expression": "Path(os.environ.get('SIM_OUTPUT_DIR', 'simulation_outputs'))"
+        },
+        "run_attack_optimization": {
+          "line": 115,
+          "expression": "True"
+        },
+        "attack_opt_watermark_mc": {
+          "line": 116,
+          "expression": "MC_runs"
+        },
+        "attack_opt_multi_starts": {
+          "line": 117,
+          "expression": "8"
+        },
+        "attack_opt_seed": {
+          "line": 118,
+          "expression": "20260712"
+        },
+        "attack_opt_ftol": {
+          "line": 119,
+          "expression": "1e-10"
+        },
+        "attack_opt_maxiter": {
+          "line": 120,
+          "expression": "1500"
+        }
+      },
+      "anchors": [
+        {
+          "line": 58,
+          "text": "sensorNum = 50"
+        },
+        {
+          "line": 61,
+          "text": "timeSize = 150"
+        },
+        {
+          "line": 65,
+          "text": "MC_runs = int(os.environ.get(\"MC_RUNS\", \"1000\"))"
+        },
+        {
+          "line": 74,
+          "text": "KLD_window = 4"
+        },
+        {
+          "line": 75,
+          "text": "KLD_threshold = 42.0"
+        },
+        {
+          "line": 88,
+          "text": "attack_start = 50"
+        },
+        {
+          "line": 91,
+          "text": "attack_duration = 60"
+        },
+        {
+          "line": 95,
+          "text": "impact_attack_duration = timeSize - attack_start"
+        },
+        {
+          "line": 100,
+          "text": "watermark_lambda = 0.5"
+        },
+        {
+          "line": 104,
+          "text": "watermark_vars_test = [0.50, 2.00, 5.00, 10.00, 50.00]"
+        },
+        {
+          "line": 112,
+          "text": "output_dir = Path(os.environ.get(\"SIM_OUTPUT_DIR\", \"simulation_outputs\"))"
+        },
+        {
+          "line": 255,
+          "text": "A_unstable = np.array([[1.08, 0.05], [0.01, 1.05]], dtype=float)"
+        },
+        {
+          "line": 256,
+          "text": "A_stable = np.array([[0.95, 0.02], [0.02, 0.97]], dtype=float)"
+        },
+        {
+          "line": 305,
+          "text": "H_xs = np.vstack(["
+        },
+        {
+          "line": 329,
+          "text": "Hw_s = np.vstack(Hw_rows)"
+        },
+        {
+          "line": 338,
+          "text": "Theta = Zs @ ("
+        },
+        {
+          "line": 400,
+          "text": "covariance_hat = np.atleast_2d(np.cov(residual_matrix))"
+        },
+        {
+          "line": 401,
+          "text": "covariance_hat = ("
+        },
+        {
+          "line": 406,
+          "text": "theta_inv = pinv(Theta)"
+        },
+        {
+          "line": 547,
+          "text": "Theta = Theta_cache[sender]"
+        },
+        {
+          "line": 551,
+          "text": "stacked_measurements = np.vstack(["
+        },
+        {
+          "line": 603,
+          "text": "H_stack = np.vstack(H_ext)"
+        },
+        {
+          "line": 606,
+          "text": "gain = P_pred @ H_stack.T @ pinv(innovation_covariance)"
+        },
+        {
+          "line": 638,
+          "text": "s + KLD_window - 1 samples, and the same guard is used after attack end."
+        },
+        {
+          "line": 642,
+          "text": "Params.s + Params.KLD_window - 1,"
+        },
+        {
+          "line": 649,
+          "text": "detector_guard = Params.s + Params.KLD_window - 1"
+        },
+        {
+          "line": 977,
+          "text": "with output_path(\"Table1_No_Watermark_Per_Link_FPR_FNR.csv\").open("
+        },
+        {
+          "line": 1002,
+          "text": "with output_path(\"Table2_Watermark_Per_Link_FPR_FNR.csv\").open("
+        },
+        {
+          "line": 1032,
+          "text": "with output_path(\"Table3_Watermark_Mean_FPR_FNR.csv\").open("
+        },
+        {
+          "line": 1131,
+          "text": "output_path(\"Table1_NoWatermark_FPR_FNR.tex\").write_text("
+        },
+        {
+          "line": 1160,
+          "text": "output_path(\"Table2_Watermark_PerLink_FPR_FNR.tex\").write_text("
+        },
+        {
+          "line": 1280,
+          "text": "detector_guard = Params.s + Params.KLD_window - 1"
+        },
+        {
+          "line": 1617,
+          "text": "Theta = Theta_cache[sender]"
+        },
+        {
+          "line": 1621,
+          "text": "theta_inv = pinv(Theta)"
+        },
+        {
+          "line": 1931,
+          "text": "detector_guard = Params.s + Params.KLD_window - 1"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "仓库论文资料\\mypaper\\privacyandsaety\\code\\simulation_revised_detection_metrics_direction_fixed.py",
+      "sha256": "6cc7c06d45d2d6664ab8cb5c63169049f4c2fc4ff56c7659797d2742bcc5177a",
+      "bytes": 45744,
+      "lines": 1388,
+      "params": {
+        "sensorNum": {
+          "line": 42,
+          "expression": "50"
+        },
+        "timeSize": {
+          "line": 43,
+          "expression": "150"
+        },
+        "MC_runs": {
+          "line": 44,
+          "expression": "5"
+        },
+        "dataDim": {
+          "line": 46,
+          "expression": "2"
+        },
+        "meaDim": {
+          "line": 47,
+          "expression": "2"
+        },
+        "s": {
+          "line": 49,
+          "expression": "4"
+        },
+        "KLD_window": {
+          "line": 50,
+          "expression": "4"
+        },
+        "KLD_threshold": {
+          "line": 51,
+          "expression": "42.0"
+        },
+        "attack_links": {
+          "line": 56,
+          "expression": "[(0, 1), (2, 3), (15, 16), (17, 31), (14, 49), (17, 34)]"
+        },
+        "attack_start": {
+          "line": 57,
+          "expression": "50"
+        },
+        "attack_duration": {
+          "line": 58,
+          "expression": "100"
+        },
+        "xi_magnitude_unstable": {
+          "line": 61,
+          "expression": "6.0"
+        },
+        "xi_magnitude_stable": {
+          "line": 62,
+          "expression": "10.0"
+        },
+        "watermark_lambda": {
+          "line": 64,
+          "expression": "0.5"
+        },
+        "watermark_vars_test": {
+          "line": 65,
+          "expression": "[0.5, 2.0, 5.0, 10.0, 50.0]"
+        },
+        "plot_start": {
+          "line": 67,
+          "expression": "20"
+        }
+      },
+      "anchors": [
+        {
+          "line": 42,
+          "text": "sensorNum = 50"
+        },
+        {
+          "line": 43,
+          "text": "timeSize = 150"
+        },
+        {
+          "line": 44,
+          "text": "MC_runs = 5  # 蒙特卡洛实验次数"
+        },
+        {
+          "line": 50,
+          "text": "KLD_window = 4"
+        },
+        {
+          "line": 51,
+          "text": "KLD_threshold = 42.0"
+        },
+        {
+          "line": 57,
+          "text": "attack_start = 50"
+        },
+        {
+          "line": 58,
+          "text": "attack_duration = 100"
+        },
+        {
+          "line": 64,
+          "text": "watermark_lambda = 0.5"
+        },
+        {
+          "line": 65,
+          "text": "watermark_vars_test = [0.5, 2.0, 5.0, 10.0, 50.0]"
+        },
+        {
+          "line": 156,
+          "text": "A_unstable = np.array([[1.08, 0.05], [0.01, 1.05]])"
+        },
+        {
+          "line": 157,
+          "text": "A_stable = np.array([[0.95, 0.02], [0.02, 0.97]])"
+        },
+        {
+          "line": 193,
+          "text": "H_xs = np.vstack([H_j @ np.linalg.matrix_power(A_sys, r) for r in range(Params.s + 1)])"
+        },
+        {
+          "line": 204,
+          "text": "Hw_s = np.vstack(Hw_rows)"
+        },
+        {
+          "line": 210,
+          "text": "Theta = Zs @ (Hw_s @ Q_s @ Hw_s.T + Hv_s @ R_s @ Hv_s.T) @ Zs.T"
+        },
+        {
+          "line": 250,
+          "text": "Theta_inv = pinv(Theta)"
+        },
+        {
+          "line": 254,
+          "text": "_, logdet_Theta = np.linalg.slogdet(Theta)"
+        },
+        {
+          "line": 322,
+          "text": "r_k = Zs @ np.vstack(Y_hist)"
+        },
+        {
+          "line": 355,
+          "text": "H_stack = np.vstack(H_ext)"
+        },
+        {
+          "line": 358,
+          "text": "K_gain = P_pred @ H_stack.T @ pinv(S)"
+        },
+        {
+          "line": 408,
+          "text": "Params.s + Params.KLD_window - 1"
+        },
+        {
+          "line": 411,
+          "text": "clean_eval_start = detector_ready_start"
+        },
+        {
+          "line": 412,
+          "text": "clean_eval_end = min(Params.attack_start, Params.timeSize)"
+        },
+        {
+          "line": 416,
+          "text": "attack_eval_start = Params.attack_start + Params.s"
+        },
+        {
+          "line": 417,
+          "text": "attack_eval_end = min("
+        },
+        {
+          "line": 875,
+          "text": "Theta = Theta_cache[sender]"
+        },
+        {
+          "line": 880,
+          "text": "theta_inv = pinv(Theta)"
+        },
+        {
+          "line": 1147,
+          "text": "\"Table1_Strictly_Stealthy_Attack_Metrics.csv\","
+        },
+        {
+          "line": 1174,
+          "text": "\"Detection_Metrics_Summary.csv\","
+        },
+        {
+          "line": 1198,
+          "text": "\"Detection_Metrics_Per_Link.csv\","
+        },
+        {
+          "line": 1265,
+          "text": "Params.s + Params.KLD_window - 1"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "仓库论文资料\\mypaper\\学报投稿\\实验重构\\run_journal_experiments.py",
+      "sha256": "dc36cc435f98a6d0a0329a3a0e48b2c0b953770685f1e4ba05b7f954381af12d",
+      "bytes": 91464,
+      "lines": 2205,
+      "params": {},
+      "anchors": [
+        {
+          "line": 66,
+          "text": "n_nodes: int = 5"
+        },
+        {
+          "line": 96,
+          "text": "a = np.array([[0.96, 0.14], [-0.04, 0.91]], dtype=float)"
+        },
+        {
+          "line": 120,
+          "text": "def neighbor_sets(n_nodes: int) -> list[list[int]]:"
+        },
+        {
+          "line": 909,
+          "text": "single = [int(np.linalg.matrix_rank(np.vstack([h @ block for block in blocks]))) for h in h_list]"
+        },
+        {
+          "line": 910,
+          "text": "global_h = np.vstack(h_list)"
+        },
+        {
+          "line": 911,
+          "text": "global_rank = int(np.linalg.matrix_rank(np.vstack([global_h @ block for block in blocks])))"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "仓库论文资料\\mypaper\\学报投稿\\实验重构\\run_journal_experiments_第十七轮.py",
+      "sha256": "b8b64ee917fca0d40c3450860a1ec460df193688206eefe052ca4bf95909ea31",
+      "bytes": 106395,
+      "lines": 2560,
+      "params": {},
+      "anchors": [
+        {
+          "line": 67,
+          "text": "n_nodes: int = 5"
+        },
+        {
+          "line": 94,
+          "text": "variant: str = \"base\", n_nodes: int | None = None"
+        },
+        {
+          "line": 97,
+          "text": "a = np.array([[0.96, 0.14], [-0.04, 0.91]], dtype=float)"
+        },
+        {
+          "line": 125,
+          "text": "def neighbor_sets(n_nodes: int) -> list[list[int]]:"
+        },
+        {
+          "line": 991,
+          "text": "single = [int(np.linalg.matrix_rank(np.vstack([h @ block for block in blocks]))) for h in h_list]"
+        },
+        {
+          "line": 992,
+          "text": "global_h = np.vstack(h_list)"
+        },
+        {
+          "line": 993,
+          "text": "global_rank = int(np.linalg.matrix_rank(np.vstack([global_h @ block for block in blocks])))"
+        }
+      ],
+      "AST_only": true
+    },
+    {
+      "file": "仓库论文资料\\mypaper\\学报投稿\\实验重构\\run_journal_experiments_第十六轮.py",
+      "sha256": "303daf2a49ce0cf8990b4e2b47090bf8b5b5caa4a385b5eb297edbd3648ffca3",
+      "bytes": 97167,
+      "lines": 2366,
+      "params": {},
+      "anchors": [
+        {
+          "line": 67,
+          "text": "n_nodes: int = 5"
+        },
+        {
+          "line": 95,
+          "text": "a = np.array([[0.96, 0.14], [-0.04, 0.91]], dtype=float)"
+        },
+        {
+          "line": 119,
+          "text": "def neighbor_sets(n_nodes: int) -> list[list[int]]:"
+        },
+        {
+          "line": 972,
+          "text": "single = [int(np.linalg.matrix_rank(np.vstack([h @ block for block in blocks]))) for h in h_list]"
+        },
+        {
+          "line": 973,
+          "text": "global_h = np.vstack(h_list)"
+        },
+        {
+          "line": 974,
+          "text": "global_rank = int(np.linalg.matrix_rank(np.vstack([global_h @ block for block in blocks])))"
+        }
+      ],
+      "AST_only": true
+    }
+  ],
+  "exact_duplicate_source_groups": [
+    {
+      "sha256": "dc36cc435f98a6d0a0329a3a0e48b2c0b953770685f1e4ba05b7f954381af12d",
+      "files": [
+        "mypaper\\学报投稿\\实验重构\\run_journal_experiments.py",
+        "仓库论文资料\\mypaper\\学报投稿\\实验重构\\run_journal_experiments.py"
+      ]
+    },
+    {
+      "sha256": "b8b64ee917fca0d40c3450860a1ec460df193688206eefe052ca4bf95909ea31",
+      "files": [
+        "mypaper\\学报投稿\\实验重构\\run_journal_experiments_第十七轮.py",
+        "仓库论文资料\\mypaper\\学报投稿\\实验重构\\run_journal_experiments_第十七轮.py"
+      ]
+    },
+    {
+      "sha256": "303daf2a49ce0cf8990b4e2b47090bf8b5b5caa4a385b5eb297edbd3648ffca3",
+      "files": [
+        "mypaper\\学报投稿\\实验重构\\run_journal_experiments_第十六轮.py",
+        "仓库论文资料\\mypaper\\学报投稿\\实验重构\\run_journal_experiments_第十六轮.py"
+      ]
+    },
+    {
+      "sha256": "0aaf11468740e01c64a341b3658555c3d10329986c1bf2608f8c7b124a3ea7f3",
+      "files": [
+        "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\run_experiments.py",
+        "仓库论文资料\\mypaper\\privacyandsaety\\code\\run_experiments.py"
+      ]
+    },
+    {
+      "sha256": "1a6250a0d52e68c6dcae0085ba18ff1ab7c1a1f423ed7805beb539f0540e2cb3",
+      "files": [
+        "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\simulation_arbitrary_attack_solver.py",
+        "仓库论文资料\\mypaper\\privacyandsaety\\code\\simulation_arbitrary_attack_solver.py"
+      ]
+    },
+    {
+      "sha256": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a",
+      "files": [
+        "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\simulation_revised_detection_metrics_complete_v2.py",
+        "仓库论文资料\\mypaper\\privacyandsaety\\code\\simulation_revised_detection_metrics_complete_v2.py"
+      ]
+    },
+    {
+      "sha256": "6cc7c06d45d2d6664ab8cb5c63169049f4c2fc4ff56c7659797d2742bcc5177a",
+      "files": [
+        "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\simulation_revised_detection_metrics_direction_fixed.py",
+        "仓库论文资料\\mypaper\\privacyandsaety\\code\\simulation_revised_detection_metrics_direction_fixed.py"
+      ]
+    }
+  ],
+  "csv_evidence": [
+    {
+      "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Table1_No_Watermark_Per_Link_FPR_FNR.csv",
+      "sha256": "07f5a81e529013b71fec61cccd88426a4437fcbb6a150da5ed5b4c521928d654",
+      "rows": 6,
+      "columns": [
+        "receiver_node",
+        "sender_node",
+        "directed_link_sender_to_receiver",
+        "fpr_clean",
+        "fnr_strictly_stealthy_attack",
+        "tpr_strictly_stealthy_attack"
+      ]
+    },
+    {
+      "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Table2_Watermark_Per_Link_FPR_FNR.csv",
+      "sha256": "e0954a8545bdf03c994d8d5407e1a83cfb29a320a08faece8849ac5f93f6daf3",
+      "rows": 36,
+      "columns": [
+        "watermark_variance",
+        "receiver_node",
+        "sender_node",
+        "directed_link_sender_to_receiver",
+        "fpr",
+        "fnr",
+        "tpr",
+        "mean_detection_delay_samples"
+      ]
+    },
+    {
+      "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Table3_Watermark_Mean_FPR_FNR.csv",
+      "sha256": "41660137e1c5b3a86c3fa96ea46e5a135d0e89fb3407036bff3f9ee4e7f62232",
+      "rows": 6,
+      "columns": [
+        "watermark_variance",
+        "mean_fpr",
+        "mean_fnr",
+        "mean_tpr",
+        "mean_detection_delay_samples"
+      ]
+    },
+    {
+      "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Table1_Strictly_Stealthy_Attack_Metrics.csv",
+      "sha256": "f04ffa970df5069403c6acc8a1c525c3d0dbcbf214694e2bdec3430a988595a4",
+      "rows": 6,
+      "columns": [
+        "receiver_node",
+        "sender_node",
+        "directed_link_sender_to_receiver",
+        "fpr_without_attack",
+        "fnr_under_strictly_stealthy_attack",
+        "tpr_under_strictly_stealthy_attack"
+      ]
+    },
+    {
+      "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Detection_Metrics_Summary.csv",
+      "sha256": "8fe73bfaf885f525f1aebd61b19cea1173fb46b85c27e44687ba4850ba686d5f",
+      "rows": 6,
+      "columns": [
+        "watermark_variance",
+        "mean_fpr",
+        "mean_fnr",
+        "mean_tpr",
+        "mean_detection_delay_samples"
+      ]
+    },
+    {
+      "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Detection_Metrics_Per_Link.csv",
+      "sha256": "0e274f5b6e4bd6db7361199d374ec42a1ac6c8852643c28d8d7148e4146e6ccf",
+      "rows": 42,
+      "columns": [
+        "receiver_node",
+        "sender_node",
+        "directed_link_sender_to_receiver",
+        "scenario",
+        "watermark_variance",
+        "fpr",
+        "fnr",
+        "tpr",
+        "detection_delay_samples"
+      ]
+    }
+  ],
+  "original_combined_table_active_rows": [
+    {
+      "line": 1254,
+      "sender": 1,
+      "receiver": 0,
+      "percent": [
+        0.38,
+        99.75,
+        0.55,
+        0.06
+      ]
+    },
+    {
+      "line": 1255,
+      "sender": 3,
+      "receiver": 2,
+      "percent": [
+        0.36,
+        99.64,
+        0.33,
+        0.2
+      ]
+    },
+    {
+      "line": 1256,
+      "sender": 16,
+      "receiver": 15,
+      "percent": [
+        0.34,
+        99.73,
+        0.38,
+        0.17
+      ]
+    },
+    {
+      "line": 1257,
+      "sender": 31,
+      "receiver": 17,
+      "percent": [
+        0.37,
+        99.68,
+        0.34,
+        0.05
+      ]
+    },
+    {
+      "line": 1258,
+      "sender": 49,
+      "receiver": 14,
+      "percent": [
+        0.23,
+        99.74,
+        0.23,
+        0.23
+      ]
+    },
+    {
+      "line": 1259,
+      "sender": 34,
+      "receiver": 17,
+      "percent": [
+        0.35,
+        99.65,
+        0.38,
+        0.28
+      ]
+    }
+  ],
+  "original_vs_CSV": [
+    {
+      "line": 1254,
+      "sender": 1,
+      "receiver": 0,
+      "percent": [
+        0.38,
+        99.75,
+        0.55,
+        0.06
+      ],
+      "CSV_no_encoding_plus_beta05": [
+        0.39,
+        99.63,
+        0.4,
+        0.08
+      ],
+      "CSV_constant_lambda_plus_beta05": [
+        0.37,
+        99.57,
+        0.4,
+        0.08
+      ],
+      "different_cells_no_encoding": 4,
+      "different_cells_constant_lambda": 4
+    },
+    {
+      "line": 1255,
+      "sender": 3,
+      "receiver": 2,
+      "percent": [
+        0.36,
+        99.64,
+        0.33,
+        0.2
+      ],
+      "CSV_no_encoding_plus_beta05": [
+        0.34,
+        99.72,
+        0.32,
+        0.18
+      ],
+      "CSV_constant_lambda_plus_beta05": [
+        0.29,
+        99.65,
+        0.32,
+        0.18
+      ],
+      "different_cells_no_encoding": 4,
+      "different_cells_constant_lambda": 4
+    },
+    {
+      "line": 1256,
+      "sender": 16,
+      "receiver": 15,
+      "percent": [
+        0.34,
+        99.73,
+        0.38,
+        0.17
+      ],
+      "CSV_no_encoding_plus_beta05": [
+        0.32,
+        99.66,
+        0.29,
+        0.14
+      ],
+      "CSV_constant_lambda_plus_beta05": [
+        0.36,
+        99.64,
+        0.29,
+        0.14
+      ],
+      "different_cells_no_encoding": 4,
+      "different_cells_constant_lambda": 4
+    },
+    {
+      "line": 1257,
+      "sender": 31,
+      "receiver": 17,
+      "percent": [
+        0.37,
+        99.68,
+        0.34,
+        0.05
+      ],
+      "CSV_no_encoding_plus_beta05": [
+        0.36,
+        99.62,
+        0.43,
+        0.05
+      ],
+      "CSV_constant_lambda_plus_beta05": [
+        0.39,
+        99.59,
+        0.43,
+        0.05
+      ],
+      "different_cells_no_encoding": 3,
+      "different_cells_constant_lambda": 3
+    },
+    {
+      "line": 1258,
+      "sender": 49,
+      "receiver": 14,
+      "percent": [
+        0.23,
+        99.74,
+        0.23,
+        0.23
+      ],
+      "CSV_no_encoding_plus_beta05": [
+        0.21,
+        99.82,
+        0.24,
+        0.16
+      ],
+      "CSV_constant_lambda_plus_beta05": [
+        0.2,
+        99.78,
+        0.24,
+        0.16
+      ],
+      "different_cells_no_encoding": 4,
+      "different_cells_constant_lambda": 4
+    },
+    {
+      "line": 1259,
+      "sender": 34,
+      "receiver": 17,
+      "percent": [
+        0.35,
+        99.65,
+        0.38,
+        0.28
+      ],
+      "CSV_no_encoding_plus_beta05": [
+        0.33,
+        99.66,
+        0.38,
+        0.2
+      ],
+      "CSV_constant_lambda_plus_beta05": [
+        0.34,
+        99.66,
+        0.38,
+        0.2
+      ],
+      "different_cells_no_encoding": 3,
+      "different_cells_constant_lambda": 3
+    }
+  ],
+  "different_display_cells_no_encoding": 22,
+  "different_display_cells_constant_lambda": 22,
+  "Table3_is_mean_of_Table2_checks": [
+    {
+      "variance": 0.0,
+      "per_link_rows": 6,
+      "mean_differences": {
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "tpr": 0.0,
+        "delay": 0.0
+      }
+    },
+    {
+      "variance": 0.5,
+      "per_link_rows": 6,
+      "mean_differences": {
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "tpr": 0.0,
+        "delay": 0.0
+      }
+    },
+    {
+      "variance": 2.0,
+      "per_link_rows": 6,
+      "mean_differences": {
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "tpr": 0.0,
+        "delay": 0.0
+      }
+    },
+    {
+      "variance": 5.0,
+      "per_link_rows": 6,
+      "mean_differences": {
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "tpr": 0.0,
+        "delay": 0.0
+      }
+    },
+    {
+      "variance": 10.0,
+      "per_link_rows": 6,
+      "mean_differences": {
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "tpr": 0.0,
+        "delay": 0.0
+      }
+    },
+    {
+      "variance": 50.0,
+      "per_link_rows": 6,
+      "mean_differences": {
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "tpr": 0.0,
+        "delay": 0.0
+      }
+    }
+  ],
+  "original_vs_legacy_CSV": [
+    {
+      "line": 1254,
+      "sender": 1,
+      "receiver": 0,
+      "percent": [
+        0.38,
+        99.75,
+        0.55,
+        0.06
+      ],
+      "old_CSV_no_encoding_plus_beta05": [
+        2.0,
+        98.96,
+        3.33,
+        0.21
+      ],
+      "old_CSV_constant_lambda_plus_beta05": [
+        0.0,
+        98.75,
+        3.33,
+        0.21
+      ],
+      "different_cells_no_encoding": 4,
+      "different_cells_constant_lambda": 4
+    },
+    {
+      "line": 1255,
+      "sender": 3,
+      "receiver": 2,
+      "percent": [
+        0.36,
+        99.64,
+        0.33,
+        0.2
+      ],
+      "old_CSV_no_encoding_plus_beta05": [
+        0.0,
+        98.33,
+        0.0,
+        0.21
+      ],
+      "old_CSV_constant_lambda_plus_beta05": [
+        0.0,
+        98.54,
+        0.0,
+        0.21
+      ],
+      "different_cells_no_encoding": 4,
+      "different_cells_constant_lambda": 4
+    },
+    {
+      "line": 1256,
+      "sender": 16,
+      "receiver": 15,
+      "percent": [
+        0.34,
+        99.73,
+        0.38,
+        0.17
+      ],
+      "old_CSV_no_encoding_plus_beta05": [
+        0.0,
+        98.54,
+        1.33,
+        0.21
+      ],
+      "old_CSV_constant_lambda_plus_beta05": [
+        0.67,
+        99.17,
+        1.33,
+        0.21
+      ],
+      "different_cells_no_encoding": 4,
+      "different_cells_constant_lambda": 4
+    },
+    {
+      "line": 1257,
+      "sender": 31,
+      "receiver": 17,
+      "percent": [
+        0.37,
+        99.68,
+        0.34,
+        0.05
+      ],
+      "old_CSV_no_encoding_plus_beta05": [
+        0.0,
+        97.92,
+        0.0,
+        0.21
+      ],
+      "old_CSV_constant_lambda_plus_beta05": [
+        0.67,
+        100.0,
+        0.0,
+        0.21
+      ],
+      "different_cells_no_encoding": 4,
+      "different_cells_constant_lambda": 4
+    },
+    {
+      "line": 1258,
+      "sender": 49,
+      "receiver": 14,
+      "percent": [
+        0.23,
+        99.74,
+        0.23,
+        0.23
+      ],
+      "old_CSV_no_encoding_plus_beta05": [
+        0.0,
+        99.79,
+        0.0,
+        0.42
+      ],
+      "old_CSV_constant_lambda_plus_beta05": [
+        0.0,
+        99.79,
+        0.0,
+        0.42
+      ],
+      "different_cells_no_encoding": 4,
+      "different_cells_constant_lambda": 4
+    },
+    {
+      "line": 1259,
+      "sender": 34,
+      "receiver": 17,
+      "percent": [
+        0.35,
+        99.65,
+        0.38,
+        0.28
+      ],
+      "old_CSV_no_encoding_plus_beta05": [
+        0.0,
+        98.75,
+        0.0,
+        0.21
+      ],
+      "old_CSV_constant_lambda_plus_beta05": [
+        0.0,
+        98.75,
+        0.0,
+        0.21
+      ],
+      "different_cells_no_encoding": 4,
+      "different_cells_constant_lambda": 4
+    }
+  ],
+  "legacy_different_display_cells_no_encoding": 24,
+  "legacy_different_display_cells_constant_lambda": 24,
+  "legacy_summary_is_mean_of_per_link": [
+    {
+      "variance": 0.0,
+      "differences": {
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "tpr": 0.0,
+        "delay": NaN
+      }
+    },
+    {
+      "variance": 0.5,
+      "differences": {
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "tpr": 0.0,
+        "delay": 0.0
+      }
+    },
+    {
+      "variance": 2.0,
+      "differences": {
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "tpr": 0.0,
+        "delay": 0.0
+      }
+    },
+    {
+      "variance": 5.0,
+      "differences": {
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "tpr": 0.0,
+        "delay": 0.0
+      }
+    },
+    {
+      "variance": 10.0,
+      "differences": {
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "tpr": 0.0,
+        "delay": 0.0
+      }
+    },
+    {
+      "variance": 50.0,
+      "differences": {
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "tpr": 0.0,
+        "delay": 0.0
+      }
+    }
+  ],
+  "quantization_compatibility": [
+    {
+      "hypothesis": "complete_v2_default1000_geometry",
+      "clean_denominator": 130000,
+      "attack_denominator": 53000,
+      "data": [
+        {
+          "link": "1→0",
+          "compatible_false_alarms": 510,
+          "compatible_true_alarms": 198,
+          "residual": 5.090328158985358e-11
+        },
+        {
+          "link": "3→2",
+          "compatible_false_alarms": 438,
+          "compatible_true_alarms": 147,
+          "residual": 3.5214497984270565e-11
+        },
+        {
+          "link": "16→15",
+          "compatible_false_alarms": 416,
+          "compatible_true_alarms": 181,
+          "residual": 5.155698090675287e-11
+        },
+        {
+          "link": "31→17",
+          "compatible_false_alarms": 462,
+          "compatible_true_alarms": 200,
+          "residual": 5.292122295941226e-11
+        },
+        {
+          "link": "49→14",
+          "compatible_false_alarms": 274,
+          "compatible_true_alarms": 98,
+          "residual": 2.7398527890909463e-11
+        },
+        {
+          "link": "34→17",
+          "compatible_false_alarms": 435,
+          "compatible_true_alarms": 178,
+          "residual": 4.268940756446682e-11
+        }
+      ],
+      "actual_run_count_proved": false,
+      "reason": "compatible rational counts are not a signed run manifest; other multiples may also fit"
+    },
+    {
+      "hypothesis": "direction_fixed_default5_geometry",
+      "clean_denominator": 150,
+      "attack_denominator": 480,
+      "data": [
+        {
+          "link": "1→0",
+          "compatible_false_alarms": 3,
+          "compatible_true_alarms": 5,
+          "residual": 3.552713678800501e-14
+        },
+        {
+          "link": "3→2",
+          "compatible_false_alarms": 0,
+          "compatible_true_alarms": 8,
+          "residual": 7.815970093361102e-14
+        },
+        {
+          "link": "16→15",
+          "compatible_false_alarms": 0,
+          "compatible_true_alarms": 7,
+          "residual": 2.842170943040401e-14
+        },
+        {
+          "link": "31→17",
+          "compatible_false_alarms": 0,
+          "compatible_true_alarms": 10,
+          "residual": 3.552713678800501e-14
+        },
+        {
+          "link": "49→14",
+          "compatible_false_alarms": 0,
+          "compatible_true_alarms": 1,
+          "residual": 5.684341886080802e-14
+        },
+        {
+          "link": "34→17",
+          "compatible_false_alarms": 0,
+          "compatible_true_alarms": 6,
+          "residual": 2.1316282072803006e-14
+        }
+      ],
+      "actual_run_count_proved": false,
+      "reason": "compatible rational counts are not a signed run manifest; other multiples may also fit"
+    }
+  ],
+  "preserved_figures": [
+    {
+      "preserved_file": "研究规划\\第一篇小论文\\Fig1_Topology_Clean.pdf",
+      "sha256": "9da6d7dfe932d1309b83c262a5610db85cccd24dd3096d10c89b1f24c553879f",
+      "same_name_candidates": [
+        {
+          "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Fig1_Topology_Clean.pdf",
+          "sha256": "cddf9294bf50ba330ced5511be09a1d11060e0b49b311ffac729c4a9845120e1",
+          "byte_equal_to_preserved": false
+        },
+        {
+          "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig1_Topology_Clean.pdf",
+          "sha256": "ccd7f855809d758916be31ef28a0c93f0e87f34fe829f29367c8d3b31834bb51",
+          "byte_equal_to_preserved": false
+        },
+        {
+          "file": "仓库论文资料\\mypaper\\Fig1_Topology_Clean.pdf",
+          "sha256": "cddf9294bf50ba330ced5511be09a1d11060e0b49b311ffac729c4a9845120e1",
+          "byte_equal_to_preserved": false
+        },
+        {
+          "file": "仓库论文资料\\mypaper\\simulation_outputs\\Fig1_Topology_Clean.pdf",
+          "sha256": "ccd7f855809d758916be31ef28a0c93f0e87f34fe829f29367c8d3b31834bb51",
+          "byte_equal_to_preserved": false
+        }
+      ],
+      "same_bytes_do_not_prove_model_or_run_config": true
+    },
+    {
+      "preserved_file": "研究规划\\第一篇小论文\\Fig2_RMSE_Impact_Stable_Unstable.pdf",
+      "sha256": "f7fbded9ec8d07c86addbdabeaa4b7a3e923e9270b7ece878d395254fc4d932c",
+      "same_name_candidates": [
+        {
+          "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig2_RMSE_Impact_Stable_Unstable.pdf",
+          "sha256": "f7fbded9ec8d07c86addbdabeaa4b7a3e923e9270b7ece878d395254fc4d932c",
+          "byte_equal_to_preserved": true
+        },
+        {
+          "file": "仓库论文资料\\mypaper\\simulation_outputs\\Fig2_RMSE_Impact_Stable_Unstable.pdf",
+          "sha256": "f7fbded9ec8d07c86addbdabeaa4b7a3e923e9270b7ece878d395254fc4d932c",
+          "byte_equal_to_preserved": true
+        }
+      ],
+      "same_bytes_do_not_prove_model_or_run_config": true
+    },
+    {
+      "preserved_file": "研究规划\\第一篇小论文\\Fig3a_KLD_Full_LogScale_Attack_End_Recovery.pdf",
+      "sha256": "ce514e6ae99393c1975dfcaa3ae29449080cebfc8f2be447012acad406b20595",
+      "same_name_candidates": [
+        {
+          "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig3a_KLD_Full_LogScale_Attack_End_Recovery.pdf",
+          "sha256": "ce514e6ae99393c1975dfcaa3ae29449080cebfc8f2be447012acad406b20595",
+          "byte_equal_to_preserved": true
+        },
+        {
+          "file": "仓库论文资料\\mypaper\\simulation_outputs\\Fig3a_KLD_Full_LogScale_Attack_End_Recovery.pdf",
+          "sha256": "ce514e6ae99393c1975dfcaa3ae29449080cebfc8f2be447012acad406b20595",
+          "byte_equal_to_preserved": true
+        }
+      ],
+      "same_bytes_do_not_prove_model_or_run_config": true
+    },
+    {
+      "preserved_file": "研究规划\\第一篇小论文\\Fig3b_KLD_Threshold_Focused_Recovery.pdf",
+      "sha256": "e64a3ef47a07aa0a458faaeace4643b7f3a9f6fdebdf8bbf20b49c42ef656db3",
+      "same_name_candidates": [
+        {
+          "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig3b_KLD_Threshold_Focused_Recovery.pdf",
+          "sha256": "e64a3ef47a07aa0a458faaeace4643b7f3a9f6fdebdf8bbf20b49c42ef656db3",
+          "byte_equal_to_preserved": true
+        },
+        {
+          "file": "仓库论文资料\\mypaper\\simulation_outputs\\Fig3b_KLD_Threshold_Focused_Recovery.pdf",
+          "sha256": "e64a3ef47a07aa0a458faaeace4643b7f3a9f6fdebdf8bbf20b49c42ef656db3",
+          "byte_equal_to_preserved": true
+        }
+      ],
+      "same_bytes_do_not_prove_model_or_run_config": true
+    },
+    {
+      "preserved_file": "研究规划\\第一篇小论文\\Fig4_FPR_FNR_vs_WatermarkVariance.pdf",
+      "sha256": "3a8ccb60ebad512383f8dbbf0f4bc7803aac11c840db191e769f4060a8cfea52",
+      "same_name_candidates": [
+        {
+          "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Fig4_FPR_FNR_vs_WatermarkVariance.pdf",
+          "sha256": "2bcd7692162edc69ecf962174cb8f60513146cb827982fcaa7349f670b8dcaa3",
+          "byte_equal_to_preserved": false
+        },
+        {
+          "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig4_FPR_FNR_vs_WatermarkVariance.pdf",
+          "sha256": "3a8ccb60ebad512383f8dbbf0f4bc7803aac11c840db191e769f4060a8cfea52",
+          "byte_equal_to_preserved": true
+        },
+        {
+          "file": "仓库论文资料\\mypaper\\Fig4_FPR_FNR_vs_WatermarkVariance.pdf",
+          "sha256": "2bcd7692162edc69ecf962174cb8f60513146cb827982fcaa7349f670b8dcaa3",
+          "byte_equal_to_preserved": false
+        },
+        {
+          "file": "仓库论文资料\\mypaper\\simulation_outputs\\Fig4_FPR_FNR_vs_WatermarkVariance.pdf",
+          "sha256": "3a8ccb60ebad512383f8dbbf0f4bc7803aac11c840db191e769f4060a8cfea52",
+          "byte_equal_to_preserved": true
+        }
+      ],
+      "same_bytes_do_not_prove_model_or_run_config": true
+    },
+    {
+      "preserved_file": "研究规划\\第一篇小论文\\Fig4b_Detection_Delay_vs_WatermarkVariance.pdf",
+      "sha256": "919834ac03e62fc6f48a395c0551a2e1589810189677f44c938416234efb7250",
+      "same_name_candidates": [
+        {
+          "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Fig4b_Detection_Delay_vs_WatermarkVariance.pdf",
+          "sha256": "d9bd18550c65802fb7ebd64c50e61b4920b930d8299b6628fcf2a12f084cb1b5",
+          "byte_equal_to_preserved": false
+        },
+        {
+          "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig4b_Detection_Delay_vs_WatermarkVariance.pdf",
+          "sha256": "919834ac03e62fc6f48a395c0551a2e1589810189677f44c938416234efb7250",
+          "byte_equal_to_preserved": true
+        },
+        {
+          "file": "仓库论文资料\\mypaper\\Fig4b_Detection_Delay_vs_WatermarkVariance.pdf",
+          "sha256": "d9bd18550c65802fb7ebd64c50e61b4920b930d8299b6628fcf2a12f084cb1b5",
+          "byte_equal_to_preserved": false
+        },
+        {
+          "file": "仓库论文资料\\mypaper\\simulation_outputs\\Fig4b_Detection_Delay_vs_WatermarkVariance.pdf",
+          "sha256": "919834ac03e62fc6f48a395c0551a2e1589810189677f44c938416234efb7250",
+          "byte_equal_to_preserved": true
+        }
+      ],
+      "same_bytes_do_not_prove_model_or_run_config": true
+    },
+    {
+      "preserved_file": "研究规划\\第一篇小论文\\Fig5_RMSE_WithDefense_Linear.pdf",
+      "sha256": "bc84891d09b3070f683072dbb184cbc6cc1ab745c5458b85af9277f768720002",
+      "same_name_candidates": [
+        {
+          "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Fig5_RMSE_WithDefense_Linear.pdf",
+          "sha256": "cb6c5d361a919b8ab197bf1f32bdb7da4c330348c00492827894890e468338ae",
+          "byte_equal_to_preserved": false
+        },
+        {
+          "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig5_RMSE_WithDefense_Linear.pdf",
+          "sha256": "bc84891d09b3070f683072dbb184cbc6cc1ab745c5458b85af9277f768720002",
+          "byte_equal_to_preserved": true
+        },
+        {
+          "file": "仓库论文资料\\mypaper\\Fig5_RMSE_WithDefense_Linear.pdf",
+          "sha256": "cb6c5d361a919b8ab197bf1f32bdb7da4c330348c00492827894890e468338ae",
+          "byte_equal_to_preserved": false
+        },
+        {
+          "file": "仓库论文资料\\mypaper\\simulation_outputs\\Fig5_RMSE_WithDefense_Linear.pdf",
+          "sha256": "bc84891d09b3070f683072dbb184cbc6cc1ab745c5458b85af9277f768720002",
+          "byte_equal_to_preserved": true
+        }
+      ],
+      "same_bytes_do_not_prove_model_or_run_config": true
+    },
+    {
+      "preserved_file": "研究规划\\第一篇小论文\\Fig6_Arbitrary_Attack_Energy_Optimization.pdf",
+      "sha256": "04326f41f130622507f2c07dea7cd701dae3cb1cc1f7cb77debcc4eaf987e195",
+      "same_name_candidates": [
+        {
+          "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig6_Arbitrary_Attack_Energy_Optimization.pdf",
+          "sha256": "04326f41f130622507f2c07dea7cd701dae3cb1cc1f7cb77debcc4eaf987e195",
+          "byte_equal_to_preserved": true
+        },
+        {
+          "file": "仓库论文资料\\mypaper\\simulation_outputs\\Fig6_Arbitrary_Attack_Energy_Optimization.pdf",
+          "sha256": "04326f41f130622507f2c07dea7cd701dae3cb1cc1f7cb77debcc4eaf987e195",
+          "byte_equal_to_preserved": true
+        }
+      ],
+      "same_bytes_do_not_prove_model_or_run_config": true
+    }
+  ],
+  "other_configuration_candidates": [
+    {
+      "file": "mypaper\\学报投稿\\实验重构\\结果\\simulation_parameters.json",
+      "sha256": "458b667dac42ac7ae571cd5dc273cab09ea8bd6566858c23b49de749119991bc",
+      "top_level_fields": [
+        "state_matrix_A",
+        "measurement_matrices_H",
+        "process_covariance",
+        "measurement_covariances_R",
+        "privacy_covariance",
+        "gaussian_privacy_mechanism_interpretation",
+        "initialization",
+        "envelope_margin",
+        "fixed_sphere_envelope",
+        "prediction_proxy",
+        "attack",
+        "topology_in_neighbors_zero_based",
+        "config"
+      ],
+      "state_matrix_A": [
+        [
+          0.96,
+          0.14
+        ],
+        [
+          -0.04,
+          0.91
+        ]
+      ],
+      "config": {
+        "n_nodes": 5,
+        "dim": 2,
+        "horizon": 170,
+        "warmup": 35,
+        "shift_time": 75,
+        "attack_start": 90,
+        "attack_amp": 1.35,
+        "test_runs": 120,
+        "calibration_runs": 80,
+        "scaling_runs": 60,
+        "seed": 20260719,
+        "q_std": 0.035,
+        "q_std_burst": 0.105,
+        "r_std": 0.18,
+        "privacy_std": 0.2,
+        "privacy_std_low": 0.1,
+        "privacy_std_high": 0.38,
+        "margin_var": 0.0025,
+        "target_false_activation": 0.05,
+        "fixed_prediction_var": 0.1,
+        "covariance_inflation": 2.0,
+        "solver_iterations": 5,
+        "dp_l2_sensitivity": 0.02,
+        "dp_delta": 1e-05
+      },
+      "is_original_50_node_run_manifest": false
+    },
+    {
+      "file": "mypaper\\学报投稿\\实验重构\\结果_第十六轮核心重算\\simulation_parameters.json",
+      "sha256": "f64a11da1302e74849a6fa1b540718ef4374238b5b1e4d5f690f42b659e90d31",
+      "top_level_fields": [
+        "purpose",
+        "methods",
+        "proxy_status",
+        "solver",
+        "config"
+      ],
+      "state_matrix_A": null,
+      "config": {
+        "n_nodes": 5,
+        "dim": 2,
+        "horizon": 170,
+        "warmup": 35,
+        "shift_time": 75,
+        "attack_start": 90,
+        "attack_amp": 1.35,
+        "test_runs": 64,
+        "calibration_runs": 48,
+        "scaling_runs": 60,
+        "seed": 20260719,
+        "q_std": 0.035,
+        "q_std_burst": 0.105,
+        "r_std": 0.18,
+        "privacy_std": 0.2,
+        "privacy_std_low": 0.1,
+        "privacy_std_high": 0.38,
+        "margin_var": 0.0025,
+        "target_false_activation": 0.05,
+        "fixed_prediction_var": 0.1,
+        "covariance_inflation": 2.0,
+        "solver_tolerance": 1e-08,
+        "solver_max_iterations": 80
+      },
+      "is_original_50_node_run_manifest": false
+    },
+    {
+      "file": "仓库论文资料\\mypaper\\学报投稿\\实验重构\\结果\\simulation_parameters.json",
+      "sha256": "458b667dac42ac7ae571cd5dc273cab09ea8bd6566858c23b49de749119991bc",
+      "top_level_fields": [
+        "state_matrix_A",
+        "measurement_matrices_H",
+        "process_covariance",
+        "measurement_covariances_R",
+        "privacy_covariance",
+        "gaussian_privacy_mechanism_interpretation",
+        "initialization",
+        "envelope_margin",
+        "fixed_sphere_envelope",
+        "prediction_proxy",
+        "attack",
+        "topology_in_neighbors_zero_based",
+        "config"
+      ],
+      "state_matrix_A": [
+        [
+          0.96,
+          0.14
+        ],
+        [
+          -0.04,
+          0.91
+        ]
+      ],
+      "config": {
+        "n_nodes": 5,
+        "dim": 2,
+        "horizon": 170,
+        "warmup": 35,
+        "shift_time": 75,
+        "attack_start": 90,
+        "attack_amp": 1.35,
+        "test_runs": 120,
+        "calibration_runs": 80,
+        "scaling_runs": 60,
+        "seed": 20260719,
+        "q_std": 0.035,
+        "q_std_burst": 0.105,
+        "r_std": 0.18,
+        "privacy_std": 0.2,
+        "privacy_std_low": 0.1,
+        "privacy_std_high": 0.38,
+        "margin_var": 0.0025,
+        "target_false_activation": 0.05,
+        "fixed_prediction_var": 0.1,
+        "covariance_inflation": 2.0,
+        "solver_iterations": 5,
+        "dp_l2_sensitivity": 0.02,
+        "dp_delta": 1e-05
+      },
+      "is_original_50_node_run_manifest": false
+    },
+    {
+      "file": "仓库论文资料\\mypaper\\学报投稿\\实验重构\\结果_第十六轮核心重算\\simulation_parameters.json",
+      "sha256": "f64a11da1302e74849a6fa1b540718ef4374238b5b1e4d5f690f42b659e90d31",
+      "top_level_fields": [
+        "purpose",
+        "methods",
+        "proxy_status",
+        "solver",
+        "config"
+      ],
+      "state_matrix_A": null,
+      "config": {
+        "n_nodes": 5,
+        "dim": 2,
+        "horizon": 170,
+        "warmup": 35,
+        "shift_time": 75,
+        "attack_start": 90,
+        "attack_amp": 1.35,
+        "test_runs": 64,
+        "calibration_runs": 48,
+        "scaling_runs": 60,
+        "seed": 20260719,
+        "q_std": 0.035,
+        "q_std_burst": 0.105,
+        "r_std": 0.18,
+        "privacy_std": 0.2,
+        "privacy_std_low": 0.1,
+        "privacy_std_high": 0.38,
+        "margin_var": 0.0025,
+        "target_false_activation": 0.05,
+        "fixed_prediction_var": 0.1,
+        "covariance_inflation": 2.0,
+        "solver_tolerance": 1e-08,
+        "solver_max_iterations": 80
+      },
+      "is_original_50_node_run_manifest": false
+    }
+  ],
+  "stored_attack_arrays": [
+    {
+      "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Fig7_Optimal_Arbitrary_Attack_Sequences.npz",
+      "sha256": "1f152a30f714553c6e252adc80cff35035c5d9f990804bb79546017c279e7a13",
+      "arrays": {
+        "watermark_var_0_5": {
+          "shape": [
+            100,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "watermark_var_2_0": {
+          "shape": [
+            100,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "watermark_var_5_0": {
+          "shape": [
+            100,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "watermark_var_10_0": {
+          "shape": [
+            100,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "watermark_var_50_0": {
+          "shape": [
+            100,
+            2
+          ],
+          "dtype": "float64"
+        }
+      },
+      "contains_all_physical_MC_runs": false
+    },
+    {
+      "file": "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig6_Optimal_Arbitrary_Attack_Sequences.npz",
+      "sha256": "66279bb05a2a98b335485e09d9d96044f13402dd17807d04b2a350ed7797eb99",
+      "arrays": {
+        "watermark_var_0_5": {
+          "shape": [
+            60,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "watermark_var_2_0": {
+          "shape": [
+            60,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "watermark_var_5_0": {
+          "shape": [
+            60,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "watermark_var_10_0": {
+          "shape": [
+            60,
+            2
+          ],
+          "dtype": "float64"
+        },
+        "watermark_var_50_0": {
+          "shape": [
+            60,
+            2
+          ],
+          "dtype": "float64"
+        }
+      },
+      "contains_all_physical_MC_runs": false
+    }
+  ],
+  "found_50node_source_with_original_theta39_or_Astable08": [],
+  "protected_static_inputs": 59,
+  "protected_changed": [],
+  "input_hashes": {
+    "mypaper\\学报投稿\\实验重构\\run_journal_experiments.py": "dc36cc435f98a6d0a0329a3a0e48b2c0b953770685f1e4ba05b7f954381af12d",
+    "mypaper\\学报投稿\\实验重构\\run_journal_experiments_第十七轮.py": "b8b64ee917fca0d40c3450860a1ec460df193688206eefe052ca4bf95909ea31",
+    "mypaper\\学报投稿\\实验重构\\run_journal_experiments_第十六轮.py": "303daf2a49ce0cf8990b4e2b47090bf8b5b5caa4a385b5eb297edbd3648ffca3",
+    "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\run_experiments.py": "0aaf11468740e01c64a341b3658555c3d10329986c1bf2608f8c7b124a3ea7f3",
+    "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\simulation_arbitrary_attack_solver.py": "1a6250a0d52e68c6dcae0085ba18ff1ab7c1a1f423ed7805beb539f0540e2cb3",
+    "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\simulation_revised_detection_metrics_complete_v2.py": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a",
+    "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\simulation_revised_detection_metrics_direction_fixed.py": "6cc7c06d45d2d6664ab8cb5c63169049f4c2fc4ff56c7659797d2742bcc5177a",
+    "仓库论文资料\\mypaper\\privacyandsaety\\code\\run_experiments.py": "0aaf11468740e01c64a341b3658555c3d10329986c1bf2608f8c7b124a3ea7f3",
+    "仓库论文资料\\mypaper\\privacyandsaety\\code\\simulation_arbitrary_attack_solver.py": "1a6250a0d52e68c6dcae0085ba18ff1ab7c1a1f423ed7805beb539f0540e2cb3",
+    "仓库论文资料\\mypaper\\privacyandsaety\\code\\simulation_revised_detection_metrics_complete_v2.py": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a",
+    "仓库论文资料\\mypaper\\privacyandsaety\\code\\simulation_revised_detection_metrics_direction_fixed.py": "6cc7c06d45d2d6664ab8cb5c63169049f4c2fc4ff56c7659797d2742bcc5177a",
+    "仓库论文资料\\mypaper\\学报投稿\\实验重构\\run_journal_experiments.py": "dc36cc435f98a6d0a0329a3a0e48b2c0b953770685f1e4ba05b7f954381af12d",
+    "仓库论文资料\\mypaper\\学报投稿\\实验重构\\run_journal_experiments_第十七轮.py": "b8b64ee917fca0d40c3450860a1ec460df193688206eefe052ca4bf95909ea31",
+    "仓库论文资料\\mypaper\\学报投稿\\实验重构\\run_journal_experiments_第十六轮.py": "303daf2a49ce0cf8990b4e2b47090bf8b5b5caa4a385b5eb297edbd3648ffca3",
+    "研究规划\\第一篇小论文\\secure distributed safety.tex": "0d59143f19ee62cdbb95f8207e47ec9cc481bedcda10b3a24398cd5bfa36b609",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Table1_No_Watermark_Per_Link_FPR_FNR.csv": "07f5a81e529013b71fec61cccd88426a4437fcbb6a150da5ed5b4c521928d654",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Table2_Watermark_Per_Link_FPR_FNR.csv": "e0954a8545bdf03c994d8d5407e1a83cfb29a320a08faece8849ac5f93f6daf3",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Table3_Watermark_Mean_FPR_FNR.csv": "41660137e1c5b3a86c3fa96ea46e5a135d0e89fb3407036bff3f9ee4e7f62232",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Table1_Strictly_Stealthy_Attack_Metrics.csv": "f04ffa970df5069403c6acc8a1c525c3d0dbcbf214694e2bdec3430a988595a4",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Detection_Metrics_Summary.csv": "8fe73bfaf885f525f1aebd61b19cea1173fb46b85c27e44687ba4850ba686d5f",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Detection_Metrics_Per_Link.csv": "0e274f5b6e4bd6db7361199d374ec42a1ac6c8852643c28d8d7148e4146e6ccf",
+    "研究规划\\第一篇小论文\\Fig1_Topology_Clean.pdf": "9da6d7dfe932d1309b83c262a5610db85cccd24dd3096d10c89b1f24c553879f",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Fig1_Topology_Clean.pdf": "cddf9294bf50ba330ced5511be09a1d11060e0b49b311ffac729c4a9845120e1",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig1_Topology_Clean.pdf": "ccd7f855809d758916be31ef28a0c93f0e87f34fe829f29367c8d3b31834bb51",
+    "仓库论文资料\\mypaper\\Fig1_Topology_Clean.pdf": "cddf9294bf50ba330ced5511be09a1d11060e0b49b311ffac729c4a9845120e1",
+    "仓库论文资料\\mypaper\\simulation_outputs\\Fig1_Topology_Clean.pdf": "ccd7f855809d758916be31ef28a0c93f0e87f34fe829f29367c8d3b31834bb51",
+    "研究规划\\第一篇小论文\\Fig2_RMSE_Impact_Stable_Unstable.pdf": "f7fbded9ec8d07c86addbdabeaa4b7a3e923e9270b7ece878d395254fc4d932c",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig2_RMSE_Impact_Stable_Unstable.pdf": "f7fbded9ec8d07c86addbdabeaa4b7a3e923e9270b7ece878d395254fc4d932c",
+    "仓库论文资料\\mypaper\\simulation_outputs\\Fig2_RMSE_Impact_Stable_Unstable.pdf": "f7fbded9ec8d07c86addbdabeaa4b7a3e923e9270b7ece878d395254fc4d932c",
+    "研究规划\\第一篇小论文\\Fig3a_KLD_Full_LogScale_Attack_End_Recovery.pdf": "ce514e6ae99393c1975dfcaa3ae29449080cebfc8f2be447012acad406b20595",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig3a_KLD_Full_LogScale_Attack_End_Recovery.pdf": "ce514e6ae99393c1975dfcaa3ae29449080cebfc8f2be447012acad406b20595",
+    "仓库论文资料\\mypaper\\simulation_outputs\\Fig3a_KLD_Full_LogScale_Attack_End_Recovery.pdf": "ce514e6ae99393c1975dfcaa3ae29449080cebfc8f2be447012acad406b20595",
+    "研究规划\\第一篇小论文\\Fig3b_KLD_Threshold_Focused_Recovery.pdf": "e64a3ef47a07aa0a458faaeace4643b7f3a9f6fdebdf8bbf20b49c42ef656db3",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig3b_KLD_Threshold_Focused_Recovery.pdf": "e64a3ef47a07aa0a458faaeace4643b7f3a9f6fdebdf8bbf20b49c42ef656db3",
+    "仓库论文资料\\mypaper\\simulation_outputs\\Fig3b_KLD_Threshold_Focused_Recovery.pdf": "e64a3ef47a07aa0a458faaeace4643b7f3a9f6fdebdf8bbf20b49c42ef656db3",
+    "研究规划\\第一篇小论文\\Fig4_FPR_FNR_vs_WatermarkVariance.pdf": "3a8ccb60ebad512383f8dbbf0f4bc7803aac11c840db191e769f4060a8cfea52",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Fig4_FPR_FNR_vs_WatermarkVariance.pdf": "2bcd7692162edc69ecf962174cb8f60513146cb827982fcaa7349f670b8dcaa3",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig4_FPR_FNR_vs_WatermarkVariance.pdf": "3a8ccb60ebad512383f8dbbf0f4bc7803aac11c840db191e769f4060a8cfea52",
+    "仓库论文资料\\mypaper\\Fig4_FPR_FNR_vs_WatermarkVariance.pdf": "2bcd7692162edc69ecf962174cb8f60513146cb827982fcaa7349f670b8dcaa3",
+    "仓库论文资料\\mypaper\\simulation_outputs\\Fig4_FPR_FNR_vs_WatermarkVariance.pdf": "3a8ccb60ebad512383f8dbbf0f4bc7803aac11c840db191e769f4060a8cfea52",
+    "研究规划\\第一篇小论文\\Fig4b_Detection_Delay_vs_WatermarkVariance.pdf": "919834ac03e62fc6f48a395c0551a2e1589810189677f44c938416234efb7250",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Fig4b_Detection_Delay_vs_WatermarkVariance.pdf": "d9bd18550c65802fb7ebd64c50e61b4920b930d8299b6628fcf2a12f084cb1b5",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig4b_Detection_Delay_vs_WatermarkVariance.pdf": "919834ac03e62fc6f48a395c0551a2e1589810189677f44c938416234efb7250",
+    "仓库论文资料\\mypaper\\Fig4b_Detection_Delay_vs_WatermarkVariance.pdf": "d9bd18550c65802fb7ebd64c50e61b4920b930d8299b6628fcf2a12f084cb1b5",
+    "仓库论文资料\\mypaper\\simulation_outputs\\Fig4b_Detection_Delay_vs_WatermarkVariance.pdf": "919834ac03e62fc6f48a395c0551a2e1589810189677f44c938416234efb7250",
+    "研究规划\\第一篇小论文\\Fig5_RMSE_WithDefense_Linear.pdf": "bc84891d09b3070f683072dbb184cbc6cc1ab745c5458b85af9277f768720002",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Fig5_RMSE_WithDefense_Linear.pdf": "cb6c5d361a919b8ab197bf1f32bdb7da4c330348c00492827894890e468338ae",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig5_RMSE_WithDefense_Linear.pdf": "bc84891d09b3070f683072dbb184cbc6cc1ab745c5458b85af9277f768720002",
+    "仓库论文资料\\mypaper\\Fig5_RMSE_WithDefense_Linear.pdf": "cb6c5d361a919b8ab197bf1f32bdb7da4c330348c00492827894890e468338ae",
+    "仓库论文资料\\mypaper\\simulation_outputs\\Fig5_RMSE_WithDefense_Linear.pdf": "bc84891d09b3070f683072dbb184cbc6cc1ab745c5458b85af9277f768720002",
+    "研究规划\\第一篇小论文\\Fig6_Arbitrary_Attack_Energy_Optimization.pdf": "04326f41f130622507f2c07dea7cd701dae3cb1cc1f7cb77debcc4eaf987e195",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig6_Arbitrary_Attack_Energy_Optimization.pdf": "04326f41f130622507f2c07dea7cd701dae3cb1cc1f7cb77debcc4eaf987e195",
+    "仓库论文资料\\mypaper\\simulation_outputs\\Fig6_Arbitrary_Attack_Energy_Optimization.pdf": "04326f41f130622507f2c07dea7cd701dae3cb1cc1f7cb77debcc4eaf987e195",
+    "mypaper\\学报投稿\\实验重构\\结果\\simulation_parameters.json": "458b667dac42ac7ae571cd5dc273cab09ea8bd6566858c23b49de749119991bc",
+    "mypaper\\学报投稿\\实验重构\\结果_第十六轮核心重算\\simulation_parameters.json": "f64a11da1302e74849a6fa1b540718ef4374238b5b1e4d5f690f42b659e90d31",
+    "仓库论文资料\\mypaper\\学报投稿\\实验重构\\结果\\simulation_parameters.json": "458b667dac42ac7ae571cd5dc273cab09ea8bd6566858c23b49de749119991bc",
+    "仓库论文资料\\mypaper\\学报投稿\\实验重构\\结果_第十六轮核心重算\\simulation_parameters.json": "f64a11da1302e74849a6fa1b540718ef4374238b5b1e4d5f690f42b659e90d31",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\Fig7_Optimal_Arbitrary_Attack_Sequences.npz": "1f152a30f714553c6e252adc80cff35035c5d9f990804bb79546017c279e7a13",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig6_Optimal_Arbitrary_Attack_Sequences.npz": "66279bb05a2a98b335485e09d9d96044f13402dd17807d04b2a350ed7797eb99"
+  }
+}

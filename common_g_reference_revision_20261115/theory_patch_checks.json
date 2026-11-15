@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-15",
+  "purpose": "review-only mathematical corrections, not new method or five-node performance proof",
+  "checks": [
+    {
+      "id": "TP1",
+      "claim": "locally observable A=0 counterexample to full-row-rank strict positivity",
+      "O": "Matrix([[1], [0]])",
+      "Z": "Matrix([[0, 1]])",
+      "Delta": "Matrix([[2], [0]])",
+      "c1": "0",
+      "exact": true
+    },
+    {
+      "id": "TP2",
+      "claim": "same-time posterior/prediction identity; F and Phi differ but have equal characteristic polynomial",
+      "F": "Matrix([[3/10, 3/20], [1/20, 37/100]])",
+      "Phi": "Matrix([[31/100, 9/50], [9/200, 9/25]])",
+      "posterior_0": "Matrix([[3/10], [-1/4]])",
+      "prediction_1": "Matrix([[1/4], [-9/40]])",
+      "exact": true
+    },
+    {
+      "id": "TP3",
+      "claim": "independent m=2 Gaussian polynomial moment expansion and decoded-energy factor",
+      "covariance": "Matrix([[q**2*(2*a**2 + b**2), a*b*q**2], [a*b*q**2, q**2*(a**2 + 2*b**2)]])",
+      "decoded_energy": "a**2*lam**2 + 2*a**2*lam*q + 4*a**2*q**2 + b**2*lam**2 + 2*b**2*lam*q + 4*b**2*q**2",
+      "exact": true
+    },
+    {
+      "id": "TP4",
+      "claim": "structured time-block trace identity; full column rank per block not required",
+      "trace": "a**2 + b**2/2 + 7*c**2/6 + 4*d**2/3",
+      "exact": true
+    },
+    {
+      "id": "TP5",
+      "claim": "finite support autonomous attack has exposed onset/termination despite zero interior shift",
+      "L": 2,
+      "s": 1,
+      "shifts_at_k_0_1_2": [
+        1,
+        0,
+        -1
+      ],
+      "exact": true
+    },
+    {
+      "id": "TP6",
+      "claim": "unit-circle Jordan excitation and distinct finite-stop decay",
+      "posterior_at_t": "(t,1)^T",
+      "prediction_at_t_ge_1": "(t,1)^T",
+      "first_posterior_after_stop": "(0,0)^T",
+      "exact": true
+    },
+    {
+      "id": "TP7",
+      "claim": "KL trace-bound inverse uses increasing f; q^-2 is sigma_beta^-4",
+      "f_derivative": "1 - 1/(t + 1)",
+      "exact": true
+    }
+  ],
+  "exact_checks_passed": 7,
+  "physical_samples": 0,
+  "Monte_Carlo": 0,
+  "old_scripts_executed": false,
+  "review_tex_sha256": "c8132e1af025d9d45882bdedce24df3d949578d6ebdd7080487c1727136c40c9"
+}
