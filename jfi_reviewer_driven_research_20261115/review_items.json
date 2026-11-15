@@ -1,0 +1,218 @@
+{
+  "date": "2026-11-15",
+  "attachment_sha256": "7d102ac814cf740fa6049a506cb89fb12b54e36959467704d45c7828e3d3ad2a",
+  "attachment_read": true,
+  "counts": [
+    4,
+    3,
+    6,
+    6,
+    5,
+    5
+  ],
+  "items": [
+    {
+      "id": "R1.1",
+      "reviewer": 1,
+      "number": 1,
+      "source_start_line": 49,
+      "text": "The proposed strictly stealthy attack exploits the null space of the parity-space projection by constructing the stacked attack sequence in the column space of the extended observability matrix. This appears to follow directly from the parity-space formulation and is closely related to existing completely stealthy attacks under parity-space monitoring. The manuscript does not clearly identify the novel attack condition or theoretical insight beyond existing results."
+    },
+    {
+      "id": "R1.2",
+      "reviewer": 1,
+      "number": 2,
+      "source_start_line": 51,
+      "text": "The proposed defense uses a random multiplicative watermarking matrix to disrupt the parity-space alignment of the attack. Multiplicative and switching watermarking schemes have already been extensively studied for secure and distributed state estimation. The manuscript does not clearly distinguish the proposed method from these approaches, and a direct comparison with closely related watermarking-based methods is missing."
+    },
+    {
+      "id": "R1.3",
+      "reviewer": 1,
+      "number": 3,
+      "source_start_line": 53,
+      "text": "In deriving (42), the manuscript claims that \\(D_s\\neq0\\), \\(D_s\\geq0\\), full row rank of \\(Z_s\\), and \\(\\Theta_s^{-1}>0\\) imply\n$$\n\\operatorname{tr}(\\Theta_s^{-1}Z_sD_sZ_s^\\top)>0.\n$$\nHowever, these conditions alone do not guarantee \\(Z_sD_sZ_s^\\top\\neq0\\). An additional condition is required for strict positivity. Since this property is essential to establishing the K-L statistic divergence in Theorem 2, the proof requires substantial reconsideration."
+    },
+    {
+      "id": "R1.4",
+      "reviewer": 1,
+      "number": 4,
+      "source_start_line": 61,
+      "text": "The simulations mainly consider the specific attacks constructed in the manuscript. Although the FPR/FNR results show that the proposed watermarking can disrupt these attacks, comparisons with existing watermarking-based and attack-resilient distributed estimation methods are missing. Thus, the simulations do not convincingly demonstrate superiority over existing approaches or robustness against other stealthy attacks."
+    },
+    {
+      "id": "R2.1",
+      "reviewer": 2,
+      "number": 1,
+      "source_start_line": 67,
+      "text": "How does the KL divergence based detector detect the abnormal signals? It is worthy to mention that, the KL divergence indeed can characterized the difference between the distribution of two random signals. However, the system detector cannot obtain the distribution of the real time received signals timely. So I think the KL divergence only can describe the stealthiness of the attack strategy, but cannot be used as a detection mechanism by the system side."
+    },
+    {
+      "id": "R2.2",
+      "reviewer": 2,
+      "number": 2,
+      "source_start_line": 69,
+      "text": "Compared with the existing results with the watermarking, what are the main difficulties and advantages of this paper?"
+    },
+    {
+      "id": "R2.3",
+      "reviewer": 2,
+      "number": 3,
+      "source_start_line": 71,
+      "text": "In the simulation, some experiments should be added to compare the method with the existing results."
+    },
+    {
+      "id": "R3.1",
+      "reviewer": 3,
+      "number": 1,
+      "source_start_line": 78,
+      "text": "System model assumptions. Why is every sensor assumed to have identical measurement dimension m? Why require local observability \\((A, H_i)\\) for every sensor, rather than global (network-level) observability? These assumptions are strong and need justification."
+    },
+    {
+      "id": "R3.2",
+      "reviewer": 3,
+      "number": 2,
+      "source_start_line": 80,
+      "text": "Online KL-divergence detection. The K-L divergence is a distribution-level metric, not a pointwise statistic. How is it evaluated at each time step? Is a sliding window used?"
+    },
+    {
+      "id": "R3.3",
+      "reviewer": 3,
+      "number": 3,
+      "source_start_line": 82,
+      "text": "Proposition 1 rigor.** The existence conditions for strictly stealthy attacks are not clearly specified. Necessary and sufficient conditions — rather than a constructive example — should be provided."
+    },
+    {
+      "id": "R3.4",
+      "reviewer": 3,
+      "number": 4,
+      "source_start_line": 84,
+      "text": "Missing case \\(|\\lambda_u| = 1\\). The analysis covers only \\(|\\lambda_u| < 1\\) and \\(|\\lambda_u| > 1\\). The marginally stable case (eigenvalues on the unit circle) is omitted, yet it is practically important (e.g., double integrators, random walks)."
+    },
+    {
+      "id": "R3.5",
+      "reviewer": 3,
+      "number": 5,
+      "source_start_line": 86,
+      "text": "Watermarking novelty. The differences between the proposed multiplicative watermarking and existing schemes  are not sufficiently emphasized. A clear comparison is needed."
+    },
+    {
+      "id": "R3.6",
+      "reviewer": 3,
+      "number": 6,
+      "source_start_line": 88,
+      "text": "Simulation is too simple. A 2-dimensional system with diagonal observation matrices is insufficient. Higher-dimensional systems and parameter sensitivity studies are needed to support the generality of the claims. COMMENTS FOR AUTHORS HERE"
+    },
+    {
+      "id": "R4.1",
+      "reviewer": 4,
+      "number": 1,
+      "source_start_line": 97,
+      "text": "The manuscript presents three main contributions, each of which is described in relatively great detail. This may affect the overall balance of the paper. The authors may consider streamlining the presentation of the contributions or, alternatively, enriching the main body with additional technical content."
+    },
+    {
+      "id": "R4.2",
+      "reviewer": 4,
+      "number": 2,
+      "source_start_line": 99,
+      "text": "Definition 1 directly provides the calculation formula of the K-L divergence when the variables follow a Gaussian distribution, instead of presenting a general definition. It is recommended that relevant content be added."
+    },
+    {
+      "id": "R4.3",
+      "reviewer": 4,
+      "number": 3,
+      "source_start_line": 101,
+      "text": "How can the consistency of time-varying watermarks be maintained between the transmitter and receiver in practical scenarios?"
+    },
+    {
+      "id": "R4.4",
+      "reviewer": 4,
+      "number": 4,
+      "source_start_line": 103,
+      "text": "In Scenario 2, is the $\\theta$-stealthy based on the K-L divergence a detection mechanism or a method for attackers to assess the stealthiness of their attacks? In the case of a detection mechanism, how should the defender obtain $\\Theta_{s}^{*}$ to compute the K-L divergence?"
+    },
+    {
+      "id": "R4.5",
+      "reviewer": 4,
+      "number": 5,
+      "source_start_line": 105,
+      "text": "There are duplicate formulas and symbols with different meanings in the proofs of Theorem 2 and Theorem 3. Please revise."
+    },
+    {
+      "id": "R4.6",
+      "reviewer": 4,
+      "number": 6,
+      "source_start_line": 107,
+      "text": "Figure 6 shows that there is a slight difference in the RMSE of the watermarked estimator under attack compared with that of the nominal watermarked estimator in the early stages. Please add an analysis of how different \\(\\sigma_{\\beta}^{2}\\) values affect this difference, in a manner similar to Figure 4."
+    },
+    {
+      "id": "R5.1",
+      "reviewer": 5,
+      "number": 1,
+      "source_start_line": 111,
+      "text": "New research on FDIA is now available, such as differential evolution-based dynamic FDIA and differential evolution-based stealthy FDIA. The authors could further enrich the introduction."
+    },
+    {
+      "id": "R5.2",
+      "reviewer": 5,
+      "number": 2,
+      "source_start_line": 112,
+      "text": "This paper only considers a single FDIA. Can it be extended to hybrid attack scenarios?"
+    },
+    {
+      "id": "R5.3",
+      "reviewer": 5,
+      "number": 3,
+      "source_start_line": 113,
+      "text": "This paper provides many derived formulas, some of which appear very similar to existing methods. What are the specific difficulties in the derivations?"
+    },
+    {
+      "id": "R5.4",
+      "reviewer": 5,
+      "number": 4,
+      "source_start_line": 114,
+      "text": "Some basic introductions can be partially removed. Focus on highlighting the novelty of this paper."
+    },
+    {
+      "id": "R5.5",
+      "reviewer": 5,
+      "number": 5,
+      "source_start_line": 115,
+      "text": "If possible, add more comparative analysis in the simulations."
+    },
+    {
+      "id": "R6.1",
+      "reviewer": 6,
+      "number": 1,
+      "source_start_line": 120,
+      "text": "Section 3.1 describes construction of strictly stealthy attacks against the parity-space detector mathematically. However, It is recommended to describe a real life physical similar attack happening in cyber physical system and compare the events of the same with the mathematical formulation presented in the section 3.1 for better readability."
+    },
+    {
+      "id": "R6.2",
+      "reviewer": 6,
+      "number": 2,
+      "source_start_line": 122,
+      "text": "Authors need to provide the implementation of mathematical equations i.e. eq.(13) to eq.(53) in simulation software utilized by authors."
+    },
+    {
+      "id": "R6.3",
+      "reviewer": 6,
+      "number": 3,
+      "source_start_line": 124,
+      "text": "Under section 5, authors need to first discuss the handling of simulation software utilized by authors for processing the results presented in the manuscript."
+    },
+    {
+      "id": "R6.4",
+      "reviewer": 6,
+      "number": 4,
+      "source_start_line": 126,
+      "text": "Authors need to discuss the deeper insights of data reported in Table 1 for each link."
+    },
+    {
+      "id": "R6.5",
+      "reviewer": 6,
+      "number": 5,
+      "source_start_line": 128,
+      "text": "Abstract and conclusion need to include critical results in mathematical figure."
+    }
+  ]
+}

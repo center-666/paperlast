@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-15",
+  "purpose": "JFI reviewer-driven direct-neighbor audit only",
+  "unique_library_sha256_read_only": "99e64d87d6ee0a27c0caf4e9036a0e55467c2bb56b35b8d6c03d44cc41cf6490",
+  "unique_library_records": 187,
+  "papers": [
+    {
+      "id": "FPN06",
+      "doi": "10.1016/j.automatica.2025.112701",
+      "title": "Secure distributed consensus estimation under false data injection attacks: A defense strategy based on partial channel coding",
+      "local_file": "E:\\硕士毕业论文\\参考文献\\02_期刊与会议论文\\FPN06_2026_Paper_Huang2026_PartialChannelCoding.pdf",
+      "sha256": "ea19df8af9c0ac6a0df8f98df9413d4af31d843aa403b1ac0ca8d7e989dc6183",
+      "pdf_pages": 14,
+      "read_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "visual_pages": [
+        9
+      ],
+      "evidence": "fulltext specified model/theorem/proof/simulation pages; not all proofs independently certified"
+    },
+    {
+      "id": "Han2025",
+      "doi": "10.1016/j.sysconle.2025.106115",
+      "title": "Consensus-based distributed estimator of cyber–physical systems against false data injection attacks: A two-layer estimation approach",
+      "source_page": "https://www.sciencedirect.com/science/article/pii/S0167691125000970",
+      "evidence": "publisher/author repository preview only; fulltext missing",
+      "pdf_pages": null,
+      "theorem_formula_numbers": null,
+      "original_fulltext_download_required": true
+    },
+    {
+      "id": "FPN31",
+      "doi": "10.1109/TPWRS.2025.3586788",
+      "title": "Double-Layer Detection-Based Distributed Secure State Estimation Under False Data Injection Attacks",
+      "source_page": "https://ieeexplore.ieee.org/document/11072370/",
+      "evidence": "publisher/author repository preview only; fulltext missing",
+      "pdf_pages": null,
+      "theorem_formula_numbers": null,
+      "original_fulltext_download_required": true
+    },
+    {
+      "id": "FPN10",
+      "doi": "10.1016/j.jfranklin.2026.108914",
+      "title": "Distributed secure state estimation for cyber-physical systems: A residual-exchanging approach under FDI attacks",
+      "source_page": "https://www.sciencedirect.com/science/article/pii/S0016003226005107",
+      "evidence": "publisher/author repository preview only; fulltext missing",
+      "pdf_pages": null,
+      "theorem_formula_numbers": null,
+      "original_fulltext_download_required": true
+    },
+    {
+      "id": "FPN21",
+      "doi": "10.1016/j.neucom.2026.134053",
+      "title": "Distributed collaborative detection for cyber-physical systems against false data injection attacks",
+      "source_page": "https://www.sciencedirect.com/science/article/pii/S0925231226014517",
+      "evidence": "publisher/author repository preview only; fulltext missing",
+      "pdf_pages": null,
+      "theorem_formula_numbers": null,
+      "original_fulltext_download_required": true
+    }
+  ],
+  "local_search": "unique library, project filenames, Zotero filenames, read-only Zotero SQLite DOI search (4 missing DOIs yielded no entries)",
+  "network_downloads_completed": 0,
+  "Han_ssrn_note": "OpenAlex green linked DOI10.2139/ssrn.4854011; SSRN official abstract indexed 7 pages (posted 2024-06-04), PDF delivery returned403; not fulltext obtained",
+  "prior_records_modified": false
+}

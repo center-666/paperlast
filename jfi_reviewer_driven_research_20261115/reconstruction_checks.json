@@ -1,0 +1,293 @@
+{
+  "scope": "Candidate II necessity screen only; no new estimator/recovery algorithm or MC",
+  "input_canonical_json_sha256": "0f67852d389ab9dabfe4f5d564778a11b411441f53fcd77da22f8680c5793e76",
+  "input": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\original_estimator_gate_20261114\\five_node_aggregate_model.json",
+  "input_sha256": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+  "physical_samples": 0,
+  "identities": {
+    "false_alarm_counterexample": {
+      "marginal_noise_variance": "1/2",
+      "K": "1/5",
+      "G": "2/5",
+      "healthy_MSE": "1/10",
+      "corrected_healthy_MSE": "9/50",
+      "increment": "2/25",
+      "attack_damage": "4/25 * xi^2",
+      "compensation_helps_only_if_xi_squared_gt": "1/2",
+      "scope": "one-packet scalar common-G example; no assertion about original five-node optimum"
+    },
+    "fixed_linear_history_replay_identity_exact": true
+  },
+  "models": {
+    "unstable": {
+      "model_gain_regime": "frozen nominal K/G; F independently rebuilt from original common-G formula",
+      "F_rebuilt": [
+        [
+          0.11608937711784263,
+          0.004741198836942393
+        ],
+        [
+          0.000392365851485101,
+          0.09867123909434958
+        ]
+      ],
+      "F_saved_difference_norm": 1.112527838307741e-16,
+      "F_spectral_radius": 0.11619553173173833,
+      "F_norm2_float": 0.11648176278325466,
+      "strict_norm_upper_bound_exact_rational": "3/25",
+      "norm_upper_bound_Sylvester_certificate_exact": true,
+      "target_rejection_F_norm2_float": 0.41068694365953917,
+      "target_rejection_norm_upper_bound_exact_rational": "21/50",
+      "target_rejection_norm_certificate_exact": true,
+      "onset_interior_ambiguity_example": {
+        "first_start": 0,
+        "second_start": 2,
+        "length_both": 10,
+        "xi": [
+          "1/100",
+          "1/50"
+        ],
+        "eta": [
+          "13799/1000000",
+          "22273/1000000"
+        ],
+        "equal_observed_indices": [
+          2,
+          9
+        ],
+        "first_total_energy": 0.011949449171820078,
+        "second_total_energy": 0.017055450621363172,
+        "full_prehistory_distinguishes": true
+      },
+      "no_watermark_chain_template_ranks": [
+        {
+          "L": 1,
+          "rank_T0": 2,
+          "rank_T2": 2,
+          "rank_combined": 2,
+          "intersection_dimension": 2
+        },
+        {
+          "L": 2,
+          "rank_T0": 2,
+          "rank_T2": 2,
+          "rank_combined": 4,
+          "intersection_dimension": 0
+        },
+        {
+          "L": 10,
+          "rank_T0": 2,
+          "rank_T2": 2,
+          "rank_combined": 4,
+          "intersection_dimension": 0
+        }
+      ],
+      "GLS_analytic_diagnostics": [
+        {
+          "L": 1,
+          "source_template_rank": 2,
+          "GLS_parameter_covariance": [
+            [
+              0.9132231404958677,
+              0.0
+            ],
+            [
+              0.0,
+              0.8472222222222224
+            ]
+          ],
+          "known_support_no_alarm_selection": true,
+          "normal_error_GLS_cross_covariance": [
+            [
+              0.012293446953166087,
+              6.984002679287008e-06
+            ],
+            [
+              1.3968005358573732e-05,
+              0.020972297376012486
+            ]
+          ],
+          "unconditional_compensation_MSE_increment_over_healthy": 0.10325336726174815,
+          "not_a_detector_conditioned_result": true,
+          "max_stop_bias_squared_at_E10_no_watermark": 0.7314710044060464,
+          "relative_tail_squared_bounds_after_1_2_3_updates": [
+            0.0144,
+            0.00020736,
+            2.985984e-06
+          ]
+        },
+        {
+          "L": 10,
+          "source_template_rank": 2,
+          "GLS_parameter_covariance": [
+            [
+              0.04509065974516343,
+              -0.014992761591350781
+            ],
+            [
+              -0.014992761591350778,
+              0.052473054271815506
+            ]
+          ],
+          "known_support_no_alarm_selection": true,
+          "normal_error_GLS_cross_covariance": [
+            [
+              0.0012085610108237936,
+              -0.00046294481655345004
+            ],
+            [
+              0.00014002536274846747,
+              0.0022015660576432286
+            ]
+          ],
+          "unconditional_compensation_MSE_increment_over_healthy": 0.021725842557616674,
+          "not_a_detector_conditioned_result": true,
+          "max_stop_bias_squared_at_E10_no_watermark": 0.18022253426442855,
+          "relative_tail_squared_bounds_after_1_2_3_updates": [
+            0.0144,
+            0.00020736,
+            2.985984e-06
+          ]
+        }
+      ]
+    },
+    "stable": {
+      "model_gain_regime": "frozen nominal K/G; F independently rebuilt from original common-G formula",
+      "F_rebuilt": [
+        [
+          0.09060252112577437,
+          0.005176588517070657
+        ],
+        [
+          0.0006008502613592058,
+          0.08675116543795026
+        ]
+      ],
+      "F_saved_difference_norm": 9.732828026321454e-17,
+      "F_spectral_radius": 0.09128808622765743,
+      "F_norm2_float": 0.09217808566638795,
+      "strict_norm_upper_bound_exact_rational": "1/10",
+      "norm_upper_bound_Sylvester_certificate_exact": true,
+      "target_rejection_F_norm2_float": 0.3207510483051654,
+      "target_rejection_norm_upper_bound_exact_rational": "33/100",
+      "target_rejection_norm_certificate_exact": true,
+      "onset_interior_ambiguity_example": {
+        "first_start": 0,
+        "second_start": 2,
+        "length_both": 10,
+        "xi": [
+          "1/100",
+          "1/50"
+        ],
+        "eta": [
+          "1621/200000",
+          "819/50000"
+        ],
+        "equal_observed_indices": [
+          2,
+          9
+        ],
+        "first_total_energy": 0.002374714218601048,
+        "second_total_energy": 0.0015877322149356913,
+        "full_prehistory_distinguishes": true
+      },
+      "no_watermark_chain_template_ranks": [
+        {
+          "L": 1,
+          "rank_T0": 2,
+          "rank_T2": 2,
+          "rank_combined": 2,
+          "intersection_dimension": 2
+        },
+        {
+          "L": 2,
+          "rank_T0": 2,
+          "rank_T2": 2,
+          "rank_combined": 4,
+          "intersection_dimension": 0
+        },
+        {
+          "L": 10,
+          "rank_T0": 2,
+          "rank_T2": 2,
+          "rank_combined": 4,
+          "intersection_dimension": 0
+        }
+      ],
+      "GLS_analytic_diagnostics": [
+        {
+          "L": 1,
+          "source_template_rank": 2,
+          "GLS_parameter_covariance": [
+            [
+              0.9132231404958677,
+              0.0
+            ],
+            [
+              0.0,
+              0.8472222222222224
+            ]
+          ],
+          "known_support_no_alarm_selection": true,
+          "normal_error_GLS_cross_covariance": [
+            [
+              0.01221405086697365,
+              6.255231942066939e-06
+            ],
+            [
+              1.2510463884133485e-05,
+              0.02091630987834614
+            ]
+          ],
+          "unconditional_compensation_MSE_increment_over_healthy": 0.10224909812115388,
+          "not_a_detector_conditioned_result": true,
+          "max_stop_bias_squared_at_E10_no_watermark": 0.7220521866396118,
+          "relative_tail_squared_bounds_after_1_2_3_updates": [
+            0.01,
+            0.0001,
+            1e-06
+          ]
+        },
+        {
+          "L": 10,
+          "source_template_rank": 2,
+          "GLS_parameter_covariance": [
+            [
+              0.3358872989456361,
+              -0.031273187923675595
+            ],
+            [
+              -0.031273187923675595,
+              0.18060539151309155
+            ]
+          ],
+          "known_support_no_alarm_selection": true,
+          "normal_error_GLS_cross_covariance": [
+            [
+              0.0006454569732347328,
+              -0.00010365262706527651
+            ],
+            [
+              0.00028733637610751884,
+              0.0019229150213816981
+            ]
+          ],
+          "unconditional_compensation_MSE_increment_over_healthy": 0.002402350691820207,
+          "not_a_detector_conditioned_result": true,
+          "max_stop_bias_squared_at_E10_no_watermark": 0.028593056878099248,
+          "relative_tail_squared_bounds_after_1_2_3_updates": [
+            0.01,
+            0.0001,
+            1e-06
+          ]
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Frozen K/G decimals treated as exact rationals for norm certificates; no physical uncertainty certification",
+    "GLS numerics assume correct known onset/link/length and fixed window, no selection on alarm",
+    "Tail certificates require common fixed admission path; data-dependent isolation changes dynamics",
+    "No method novelty or whole-field impossibility asserted"
+  ]
+}

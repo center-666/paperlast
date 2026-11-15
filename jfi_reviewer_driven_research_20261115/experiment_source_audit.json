@@ -1,0 +1,295 @@
+{
+  "date": "2026-11-15",
+  "static_read_only": true,
+  "simulation_modules_imported": false,
+  "original_sha256": "0d59143f19ee62cdbb95f8207e47ec9cc481bedcda10b3a24398cd5bfa36b609",
+  "candidate_code_sha256": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a",
+  "candidate_anchors": [
+    {
+      "line": 65,
+      "text": "MC_runs = int(os.environ.get(\"MC_RUNS\", \"1000\"))"
+    },
+    {
+      "line": 74,
+      "text": "KLD_window = 4"
+    },
+    {
+      "line": 75,
+      "text": "KLD_threshold = 42.0"
+    },
+    {
+      "line": 91,
+      "text": "attack_duration = 60"
+    },
+    {
+      "line": 95,
+      "text": "impact_attack_duration = timeSize - attack_start"
+    },
+    {
+      "line": 100,
+      "text": "watermark_lambda = 0.5"
+    },
+    {
+      "line": 169,
+      "text": "for receiver, sender in Params.attack_links:"
+    },
+    {
+      "line": 212,
+      "text": "for receiver, sender in Params.attack_links"
+    },
+    {
+      "line": 256,
+      "text": "A_stable = np.array([[0.95, 0.02], [0.02, 0.97]], dtype=float)"
+    },
+    {
+      "line": 259,
+      "text": "np.random.seed(42)"
+    },
+    {
+      "line": 379,
+      "text": "for receiver, sender in Params.attack_links:"
+    },
+    {
+      "line": 400,
+      "text": "covariance_hat = np.atleast_2d(np.cov(residual_matrix))"
+    },
+    {
+      "line": 401,
+      "text": "covariance_hat = ("
+    },
+    {
+      "line": 544,
+      "text": "for receiver, sender in Params.attack_links:"
+    },
+    {
+      "line": 565,
+      "text": "isolated_links[link][k] = ("
+    },
+    {
+      "line": 583,
+      "text": "and isolated_links[link][k]"
+    },
+    {
+      "line": 603,
+      "text": "H_stack = np.vstack(H_ext)"
+    },
+    {
+      "line": 606,
+      "text": "gain = P_pred @ H_stack.T @ pinv(innovation_covariance)"
+    }
+  ],
+  "table_comparison": [
+    {
+      "link": "1->0",
+      "original_percent": [
+        0.38,
+        99.75,
+        0.55,
+        0.06
+      ],
+      "saved_csv_percent": [
+        0.39230769230769136,
+        99.62641509433952,
+        0.39692307692307593,
+        0.07924528301886792
+      ],
+      "saved_csv_rounded_percent": [
+        0.39,
+        99.63,
+        0.4,
+        0.08
+      ],
+      "different_cells": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "link": "3->2",
+      "original_percent": [
+        0.36,
+        99.64,
+        0.33,
+        0.2
+      ],
+      "saved_csv_percent": [
+        0.33692307692307616,
+        99.7226415094339,
+        0.3230769230769223,
+        0.1830188679245283
+      ],
+      "saved_csv_rounded_percent": [
+        0.34,
+        99.72,
+        0.32,
+        0.18
+      ],
+      "different_cells": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "link": "16->15",
+      "original_percent": [
+        0.34,
+        99.73,
+        0.38,
+        0.17
+      ],
+      "saved_csv_percent": [
+        0.3199999999999993,
+        99.65849056603764,
+        0.2915384615384609,
+        0.14150943396226415
+      ],
+      "saved_csv_rounded_percent": [
+        0.32,
+        99.66,
+        0.29,
+        0.14
+      ],
+      "different_cells": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "link": "31->17",
+      "original_percent": [
+        0.37,
+        99.68,
+        0.34,
+        0.05
+      ],
+      "saved_csv_percent": [
+        0.3553846153846147,
+        99.62264150943386,
+        0.4323076923076913,
+        0.0509433962264151
+      ],
+      "saved_csv_rounded_percent": [
+        0.36,
+        99.62,
+        0.43,
+        0.05
+      ],
+      "different_cells": [
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "link": "49->14",
+      "original_percent": [
+        0.23,
+        99.74,
+        0.23,
+        0.23
+      ],
+      "saved_csv_percent": [
+        0.2107692307692304,
+        99.81509433962259,
+        0.23692307692307657,
+        0.16226415094339622
+      ],
+      "saved_csv_rounded_percent": [
+        0.21,
+        99.82,
+        0.24,
+        0.16
+      ],
+      "different_cells": [
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "link": "34->17",
+      "original_percent": [
+        0.35,
+        99.65,
+        0.38,
+        0.28
+      ],
+      "saved_csv_percent": [
+        0.33461538461538387,
+        99.66415094339615,
+        0.3776923076923068,
+        0.20188679245283017
+      ],
+      "saved_csv_rounded_percent": [
+        0.33,
+        99.66,
+        0.38,
+        0.2
+      ],
+      "different_cells": [
+        true,
+        true,
+        false,
+        true
+      ]
+    }
+  ],
+  "different_display_cells": 22,
+  "total_display_cells": 24,
+  "saved_npz": {
+    "watermark_var_0_5": {
+      "shape": [
+        60,
+        2
+      ],
+      "dtype": "float64"
+    },
+    "watermark_var_2_0": {
+      "shape": [
+        60,
+        2
+      ],
+      "dtype": "float64"
+    },
+    "watermark_var_5_0": {
+      "shape": [
+        60,
+        2
+      ],
+      "dtype": "float64"
+    },
+    "watermark_var_10_0": {
+      "shape": [
+        60,
+        2
+      ],
+      "dtype": "float64"
+    },
+    "watermark_var_50_0": {
+      "shape": [
+        60,
+        2
+      ],
+      "dtype": "float64"
+    }
+  },
+  "input_sha256": {
+    "研究规划\\第一篇小论文\\secure distributed safety.tex": "0d59143f19ee62cdbb95f8207e47ec9cc481bedcda10b3a24398cd5bfa36b609",
+    "mypaper\\非华理学报投稿件_归档\\privacyandsaety\\code\\simulation_revised_detection_metrics_complete_v2.py": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Fig6_Optimal_Arbitrary_Attack_Sequences.npz": "66279bb05a2a98b335485e09d9d96044f13402dd17807d04b2a350ed7797eb99",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Table1_No_Watermark_Per_Link_FPR_FNR.csv": "07f5a81e529013b71fec61cccd88426a4437fcbb6a150da5ed5b4c521928d654",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Table2_Watermark_Per_Link_FPR_FNR.csv": "e0954a8545bdf03c994d8d5407e1a83cfb29a320a08faece8849ac5f93f6daf3",
+    "mypaper\\学报投稿\\历史归档\\根目录散落实验输出\\simulation_outputs\\Table3_Watermark_Mean_FPR_FNR.csv": "41660137e1c5b3a86c3fa96ea46e5a135d0e89fb3407036bff3f9ee4e7f62232"
+  },
+  "not_evidence_of_fabrication": true,
+  "original_50node_reproduction_closed": false,
+  "new_physical_samples": 0
+}

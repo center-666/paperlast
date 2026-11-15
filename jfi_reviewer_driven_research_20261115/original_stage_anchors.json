@@ -1,0 +1,818 @@
+{
+  "O": {
+    "path": "E:\\硕士毕业论文\\研究规划\\第一篇小论文\\secure distributed safety.tex",
+    "sha256": "0d59143f19ee62cdbb95f8207e47ec9cc481bedcda10b3a24398cd5bfa36b609",
+    "lines": 1476,
+    "anchors": [
+      {
+        "line": 87,
+        "text": "\\section{Introduction}"
+      },
+      {
+        "line": 122,
+        "text": "\\section{Problem Formulation}"
+      },
+      {
+        "line": 123,
+        "text": "\\subsection{System Model}"
+      },
+      {
+        "line": 125,
+        "text": "\\[x_{k+1} = A x_k + \\omega_k,\\tag{1}\\]"
+      },
+      {
+        "line": 126,
+        "text": "\\[y_{k}^i = H_i x_k + v_{k}^i, \\tag{2}\\]"
+      },
+      {
+        "line": 138,
+        "text": "\\subsection{Distributed Estimator}"
+      },
+      {
+        "line": 144,
+        "text": "\\end{aligned}\\tag{3}"
+      },
+      {
+        "line": 151,
+        "text": "\\hat{x}_{k}^{i} = \\hat{x}_{k}^{i-} + \\hat{K}_k^{i} (\\hat{y}_k^i - \\hat{H}_i \\hat{x}_{k}^{i-}), \\tag{4}"
+      },
+      {
+        "line": 161,
+        "text": "\\subsection{Attack Detector via Parity Space Residuals}"
+      },
+      {
+        "line": 164,
+        "text": "y_{a,k}^j=y_k^j+\\delta_{k}^{ij}, j \\in \\mathcal{N}_i, \\tag{5}"
+      },
+      {
+        "line": 169,
+        "text": "\\[Y_{s,k}^{ij}=H_{0,s}x_{k-s}+E_{s,k}^{ij},\\tag{6}\\]"
+      },
+      {
+        "line": 196,
+        "text": "\\[r_{s,k}^{ij}=Z_s Y_{s,k}^{ij}, \\tag{7}"
+      },
+      {
+        "line": 201,
+        "text": "\\[r_{s,k}^{ij}=Z_sE_{s,k}^{ij}\\sim \\mathcal{N}(\\mathbf{0},\\Theta_s), \\tag{8}\\]"
+      },
+      {
+        "line": 210,
+        "text": "\\tag{9}\\]"
+      },
+      {
+        "line": 219,
+        "text": "\\end{aligned} \\tag{10}"
+      },
+      {
+        "line": 244,
+        "text": "\\tag{11}"
+      },
+      {
+        "line": 255,
+        "text": "\\label{fig_1}"
+      },
+      {
+        "line": 272,
+        "text": "\\tag{12}"
+      },
+      {
+        "line": 285,
+        "text": "\\section{Construction and Impact Analysis of Stealthy FDI Attacks}"
+      },
+      {
+        "line": 287,
+        "text": "\\subsection{Construction of Strictly Stealthy Attacks against the Parity-Space Detector}"
+      },
+      {
+        "line": 295,
+        "text": "\\tag{13}"
+      },
+      {
+        "line": 304,
+        "text": "x_{f, t+1} = A x_{f, t}, \\quad \\text{for } t \\geq k-s ,\\tag{14}"
+      },
+      {
+        "line": 308,
+        "text": "\\delta_t^{ij} = H_j x_{f, t}, \\tag{15}"
+      },
+      {
+        "line": 319,
+        "text": "\\end{aligned} \\tag{16}"
+      },
+      {
+        "line": 324,
+        "text": "r_{a,s,k}^{ij} = Z_s (Y_{s,k}^{ij} + H_{0,s} x_{f, k-s}) = r_{s,k}^{ij} + Z_s H_{0,s} x_{f, k-s}. \\tag{17}"
+      },
+      {
+        "line": 341,
+        "text": "\\label{alg:stealthy_attack}"
+      },
+      {
+        "line": 361,
+        "text": "\\subsection{Impact on Distributed Estimation Performance}"
+      },
+      {
+        "line": 366,
+        "text": "\\tag{18}\\]"
+      },
+      {
+        "line": 373,
+        "text": "d_{k+1}^{i-} = \\Phi_i d_k^{i-} + \\Psi_i \\delta_k^{ij}. \\tag{19}\\label{eq:bias_dynamics}"
+      },
+      {
+        "line": 394,
+        "text": "\\lim_{k \\to \\infty} \\|d_k^{i-}\\| = 0. \\tag{20}"
+      },
+      {
+        "line": 415,
+        "text": "\\xi = c_u v_u + \\tilde{\\xi}, \\tag{21}"
+      },
+      {
+        "line": 421,
+        "text": "\\delta_k^{ij} = H_j A^k \\xi = c_u \\lambda_u^k H_j v_u + H_j A^k \\tilde{\\xi}. \\tag{22}\\label{eq:unstable_attack_seq}"
+      },
+      {
+        "line": 426,
+        "text": "d_k^{i-} = \\sum_{m=0}^{k-1} \\Phi_i^{k-1-m} \\Psi_i \\delta_m^{ij} = d_{u, k} + \\tilde{d}_k, \\tag{23}\\label{eq:split_response}"
+      },
+      {
+        "line": 430,
+        "text": "d_{u, k} = c_u \\sum_{m=0}^{k-1} \\lambda_u^m \\Phi_i^{k-1-m} \\Psi_i H_j v_u, \\tag{24}\\label{eq:dominant_response}"
+      },
+      {
+        "line": 434,
+        "text": "\\tilde{d}_k = \\sum_{m=0}^{k-1} \\Phi_i^{k-1-m} \\Psi_i H_j A^m \\tilde{\\xi}. \\tag{25}\\label{eq:residual_response}"
+      },
+      {
+        "line": 439,
+        "text": "d_{u, k} = c_u \\lambda_u^{k-1} \\sum_{l=0}^{k-1} (\\lambda_u^{-1} \\Phi_i)^l \\eta. \\tag{26}\\label{eq:rearranged_sum}"
+      },
+      {
+        "line": 444,
+        "text": "\\lim_{k \\to \\infty} \\sum_{l=0}^{k-1} (\\lambda_u^{-1} \\Phi_i)^l = (I - \\lambda_u^{-1} \\Phi_i)^{-1}. \\tag{27}\\label{eq:neumann_series}"
+      },
+      {
+        "line": 449,
+        "text": "\\lim_{k \\to \\infty} \\frac{\\|d_k^{i-}\\|}{|\\lambda_u|^{k-1}} = \\lim_{k \\to \\infty} \\left\\| \\frac{d_{u, k}}{|\\lambda_u|^{k-1}} + \\frac{\\tilde{d}_k}{|\\lambda_u|^{k-1}} \\right\\|. \\tag{28}\\label{eq:limit_scaling}"
+      },
+      {
+        "line": 454,
+        "text": "\\lim_{k \\to \\infty} \\frac{\\|d_k^{i-}\\|}{|\\lambda_u|^{k-1}} = |c_u| \\|v^*\\| > 0. \\tag{29}\\label{eq:final_limit}"
+      },
+      {
+        "line": 465,
+        "text": "\\section{Proactive Defense via Pseudo-Random Watermarking}"
+      },
+      {
+        "line": 467,
+        "text": "\\subsection{Watermarking Mechanism Design}"
+      },
+      {
+        "line": 472,
+        "text": "M_k = \\lambda I_m + \\beta_k \\beta_k^\\top, \\tag{30}"
+      },
+      {
+        "line": 478,
+        "text": "\\tilde{y}_k^j = M_k^{-1} y_k^j. \\tag{31}"
+      },
+      {
+        "line": 483,
+        "text": "y_{a,k}^{ij*} = M_k \\tilde{y}_k^{ij} = y_k^j + M_k \\delta_k^{ij}. \\tag{32}"
+      },
+      {
+        "line": 488,
+        "text": "Y_{s,k}^{ij*} = Y_{s,k}^{ij} + M_{s,k} \\Delta Y_{s,k}^{ij}, \\tag{33}"
+      },
+      {
+        "line": 492,
+        "text": "r_{a,s,k}^{ij*} = Z_s Y_{s,k}^{ij*} = r_{s,k}^{ij} + Z_s M_{s,k} \\Delta Y_{s,k}^{ij}. \\tag{34}"
+      },
+      {
+        "line": 495,
+        "text": "\\subsection{Security Analysis against Stealthy Attack}"
+      },
+      {
+        "line": 509,
+        "text": "\\tag{35}"
+      },
+      {
+        "line": 514,
+        "text": "%\\Delta r_{s,k}^{ij} = Z_s \\left[ \\lambda \\Delta Y_{s,k}^{ij} + \\mathrm{diag}\\left(\\beta_{k-s+l} \\beta_{k-s+l}^\\top \\delta_{k-s+l}^{ij}\\right)_{l=0}^s \\right]. \\tag{36}"
+      },
+      {
+        "line": 528,
+        "text": "\\tag{36}"
+      },
+      {
+        "line": 546,
+        "text": "%\t\\tag{36}"
+      },
+      {
+        "line": 550,
+        "text": "\\Delta r_{s,k}^{ij} = \\sum_{l=0}^s Z_{s,l} \\left(\\beta_{k-s+l}^\\top \\delta_{k-s+l}^{ij}\\right) \\beta_{k-s+l}, \\tag{37}"
+      },
+      {
+        "line": 566,
+        "text": "\\tag{38}"
+      },
+      {
+        "line": 584,
+        "text": "\\mathrm{Cov}(\\Delta r_{s,k}^{ij}) = \\sigma_\\beta^4 Z_s D_s Z_s^\\top, \\tag{39}"
+      },
+      {
+        "line": 609,
+        "text": "D\\left(r_{a,s,k}^{ij*} \\| r_{s,k}^{ij}\\right) = \\frac{1}{2} \\left[ \\mathrm{tr}(\\Theta_s^{-1} \\Theta_s^*) - n_r + \\ln \\frac{|\\Theta_s|}{|\\Theta_s^*|} \\right]. \\tag{40}"
+      },
+      {
+        "line": 613,
+        "text": "\\mathrm{tr}(\\Theta_s^{-1} \\Theta_s^*) = n_r + \\sigma_\\beta^4 \\mathrm{tr}(\\Theta_s^{-1} Z_s D_s Z_s^\\top). \\tag{41}"
+      },
+      {
+        "line": 618,
+        "text": "c_1 \\triangleq \\mathrm{tr}(\\Theta_s^{-1} Z_s D_s Z_s^\\top) = \\mathrm{tr}(\\Theta_s^{-1/2} Z_s D_s Z_s^\\top \\Theta_s^{-1/2}) > 0. \\tag{42}"
+      },
+      {
+        "line": 623,
+        "text": "\\ln \\frac{|\\Theta_s|}{|\\Theta_s^*|} = - \\sum_{l=1}^{n_r} \\ln(1 + \\sigma_\\beta^4 \\mu_l). \\tag{43}"
+      },
+      {
+        "line": 628,
+        "text": "\\ln \\frac{|\\Theta_s|}{|\\Theta_s^*|} \\ge - n_r \\ln(1 + \\mu_{\\max} \\sigma_\\beta^4). \\tag{44}"
+      },
+      {
+        "line": 632,
+        "text": "D\\left(r_{a,s,k}^{ij*} \\| r_{s,k}^{ij}\\right) \\ge \\frac{1}{2} \\left[ c_1 \\sigma_\\beta^4 - n_r \\ln(1 + \\mu_{\\max} \\sigma_\\beta^4) \\right]. \\tag{45}"
+      },
+      {
+        "line": 636,
+        "text": "\\lim_{\\sigma_\\beta \\to \\infty} D\\left(r_{a,s,k}^{ij*} \\| r_{s,k}^{ij}\\right) = +\\infty. \\tag{46}"
+      },
+      {
+        "line": 707,
+        "text": "\\tag{47}"
+      },
+      {
+        "line": 720,
+        "text": "\\tag{48}"
+      },
+      {
+        "line": 789,
+        "text": "\\tag{49}"
+      },
+      {
+        "line": 832,
+        "text": "\\tag{50}"
+      },
+      {
+        "line": 895,
+        "text": "\\tag{51}"
+      },
+      {
+        "line": 934,
+        "text": "\\tag{52}"
+      },
+      {
+        "line": 966,
+        "text": "\\tag{53}"
+      },
+      {
+        "line": 984,
+        "text": "%\t\\section{Simulation}"
+      },
+      {
+        "line": 986,
+        "text": "%\tThis section provides a numerical example to illustrate the analytical results and verify the proposed watermarking-based defense. All performance metrics are averaged over $M = 500$ independent Monte Carlo runs."
+      },
+      {
+        "line": 994,
+        "text": "%\t\t\\label{fig2}"
+      },
+      {
+        "line": 1008,
+        "text": "%\t\\text{RMSE}(k) = \\frac{1}{M} \\sum_{m=1}^{M} \\sqrt{ \\frac{1}{q} \\sum_{i=0}^{q-1} \\left\\| x_k^{(m)} - \\hat{x}_{i,k}^{(m)} \\right\\|^2 }, \\tag{54}"
+      },
+      {
+        "line": 1017,
+        "text": "%\t\t\\label{fig3}"
+      },
+      {
+        "line": 1022,
+        "text": "%\tLet $\\gamma_{ij,k}^{(m)} = \\mathbb{I}\\left\\{ D\\left(r_{a,s,k}^{ij,(m)}\\|r_{s,k}^{ij,(m)}\\right) > \\theta \\right\\} \\in \\{0,1\\}$ denote the detection decision for link $j\\to i$ at time $k$ in the $m$-th Monte Carlo run, where $\\mathbb{I}\\{\\cdot\\}$ is the indicator function. Let $\\mathcal{K}_0$ and $\\mathcal{K}_a = \\{T_a+s,\\ldots,T-1\\}$ denote the attack-free and attacked evaluation intervals, respectively, where $\\mathcal{K}_a$ is delayed by $s$ to ensure each evaluated window is fully occupied by attacked measurements. The false-positive rate ($\\mathrm{FPR}_{ij}$) and false-negative rate ($\\mathrm{FNR}_{ij}$) are computed as"
+      },
+      {
+        "line": 1037,
+        "text": "%\t\\label{tab1}"
+      },
+      {
+        "line": 1088,
+        "text": "%\t\t\\label{fig4}"
+      },
+      {
+        "line": 1097,
+        "text": "%\t\t\\label{fig5}"
+      },
+      {
+        "line": 1107,
+        "text": "%\t\t\\label{fig6}"
+      },
+      {
+        "line": 1111,
+        "text": "\\section{Simulation}"
+      },
+      {
+        "line": 1116,
+        "text": "$M=1000$ independent Monte Carlo runs."
+      },
+      {
+        "line": 1129,
+        "text": "\\label{fig:topology}"
+      },
+      {
+        "line": 1180,
+        "text": "\\tag{54}"
+      },
+      {
+        "line": 1183,
+        "text": "the estimate of node $i$ in the $m$-th Monte Carlo run, respectively."
+      },
+      {
+        "line": 1192,
+        "text": "\\label{fig:rmse_impact}"
+      },
+      {
+        "line": 1233,
+        "text": "\\tag{55}"
+      },
+      {
+        "line": 1245,
+        "text": "\\label{tab:detection_metrics}"
+      },
+      {
+        "line": 1273,
+        "text": "Figure~\\ref{fig:kld_time} shows the Monte Carlo-averaged K-L divergence"
+      },
+      {
+        "line": 1283,
+        "text": "\\label{fig:kld_time}"
+      },
+      {
+        "line": 1302,
+        "text": "\\label{fig:detection_metrics_mean}"
+      },
+      {
+        "line": 1323,
+        "text": "\\label{fig:rmse_defense}"
+      },
+      {
+        "line": 1338,
+        "text": "\\tag{56}"
+      },
+      {
+        "line": 1348,
+        "text": "\\label{fig:attack_energy}"
+      },
+      {
+        "line": 1354,
+        "text": "\\section{Conclusion}"
+      },
+      {
+        "line": 1362,
+        "text": "\\section*{Acknowledgment}"
+      }
+    ]
+  },
+  "B": {
+    "path": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\manuscript.tex",
+    "sha256": "6564cb2669d0523b49f4e31ede8af353ab2a514679f59037901062408a011320",
+    "lines": 60,
+    "anchors": [
+      {
+        "line": 29,
+        "text": "\\tnotetext[revision]{Working revision, 2 November 2026. This version contains revised analysis, a detector specification and analytical checks. Comparative simulation results are not included; this is not a submission-ready version.}"
+      },
+      {
+        "line": 55,
+        "text": "\\section*{Acknowledgment}"
+      }
+    ]
+  },
+  "B/01_introduction.tex": {
+    "path": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\sections\\01_introduction.tex",
+    "sha256": "dc733ed09e3431dad377cb9c4f1cbb6143d06e9e2da30f492c268ce5a2d7f760",
+    "lines": 17,
+    "anchors": [
+      {
+        "line": 1,
+        "text": "\\section{Introduction}"
+      }
+    ]
+  },
+  "B/02_model_detector.tex": {
+    "path": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\sections\\02_model_detector.tex",
+    "sha256": "1d7c357efe2fa592fe87a6db050cbab9b1fe15b35b9faafd0edfc8c826456bee",
+    "lines": 233,
+    "anchors": [
+      {
+        "line": 1,
+        "text": "\\section{Model, stealthiness budget, and online detection}"
+      },
+      {
+        "line": 2,
+        "text": "\\label{mod:section}"
+      },
+      {
+        "line": 4,
+        "text": "\\subsection{Measurement-sharing estimator}"
+      },
+      {
+        "line": 9,
+        "text": "\\label{mod:system}"
+      },
+      {
+        "line": 39,
+        "text": "\\label{mod:estimator}"
+      },
+      {
+        "line": 51,
+        "text": "\\subsection{Finite-window residual}"
+      },
+      {
+        "line": 58,
+        "text": "\\label{mod:observability}"
+      },
+      {
+        "line": 67,
+        "text": "\\label{mod:window}"
+      },
+      {
+        "line": 81,
+        "text": "\\label{mod:noiseblocks}"
+      },
+      {
+        "line": 90,
+        "text": "\\label{mod:nominalresidual}"
+      },
+      {
+        "line": 107,
+        "text": "\\label{mod:encodedresidual}"
+      },
+      {
+        "line": 111,
+        "text": "\\subsection{Distributional stealthiness}"
+      },
+      {
+        "line": 121,
+        "text": "\\label{eq:klbudget}"
+      },
+      {
+        "line": 131,
+        "text": "\\label{mod:deterministicKL}"
+      },
+      {
+        "line": 139,
+        "text": "\\subsection{A computable detector and its calibration}"
+      },
+      {
+        "line": 145,
+        "text": "\\label{eq:score}"
+      },
+      {
+        "line": 155,
+        "text": "\\begin{proposition}[Nominal single-decision calibration]"
+      },
+      {
+        "line": 156,
+        "text": "\\label{mod:nominal}"
+      },
+      {
+        "line": 190,
+        "text": "\\label{mod:gatedestimator}"
+      },
+      {
+        "line": 199,
+        "text": "\\label{mod:algorithm}"
+      }
+    ]
+  },
+  "B/03_attack.tex": {
+    "path": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\sections\\03_attack.tex",
+    "sha256": "71aa152fc1058b291c88fa232c6b94e27462beba6f74aa17c567ffdd502b4d9c",
+    "lines": 347,
+    "anchors": [
+      {
+        "line": 1,
+        "text": "\\section{Causal attacks under overlapping parity monitoring}"
+      },
+      {
+        "line": 2,
+        "text": "\\label{att:section}"
+      },
+      {
+        "line": 4,
+        "text": "\\subsection{A fixed-window characterization and a consistent sequence}"
+      },
+      {
+        "line": 15,
+        "text": "\\begin{proposition}[Deterministic fixed-window stealthiness]"
+      },
+      {
+        "line": 16,
+        "text": "\\label{att:window}"
+      },
+      {
+        "line": 19,
+        "text": "\\label{att:kernel}"
+      },
+      {
+        "line": 53,
+        "text": "\\label{att:sequence}"
+      },
+      {
+        "line": 61,
+        "text": "\\label{att:completewindow}"
+      },
+      {
+        "line": 73,
+        "text": "\\subsection{Healthy prehistory and overlapping-window consistency}"
+      },
+      {
+        "line": 74,
+        "text": "\\label{att:onsetsection}"
+      },
+      {
+        "line": 87,
+        "text": "\\label{att:overlap}"
+      },
+      {
+        "line": 97,
+        "text": "\\begin{theorem}[Causal realization from a healthy history]"
+      },
+      {
+        "line": 98,
+        "text": "\\label{att:causal}"
+      },
+      {
+        "line": 102,
+        "text": "\\label{att:allwindows}"
+      },
+      {
+        "line": 108,
+        "text": "\\label{att:realization}"
+      },
+      {
+        "line": 152,
+        "text": "\\label{att:oneextra}"
+      },
+      {
+        "line": 177,
+        "text": "\\subsection{Displacement under fixed estimator gains}"
+      },
+      {
+        "line": 190,
+        "text": "\\label{att:phipsi}"
+      },
+      {
+        "line": 193,
+        "text": "\\label{att:biasrecursion}"
+      },
+      {
+        "line": 199,
+        "text": "\\label{att:convolution}"
+      },
+      {
+        "line": 208,
+        "text": "\\begin{proposition}[Which exact attacks affect the receiver]"
+      },
+      {
+        "line": 209,
+        "text": "\\label{att:harmful}"
+      },
+      {
+        "line": 212,
+        "text": "\\label{att:augmented}"
+      },
+      {
+        "line": 220,
+        "text": "\\label{att:reachability}"
+      },
+      {
+        "line": 251,
+        "text": "\\begin{proposition}[Stable and power-bounded virtual dynamics]"
+      },
+      {
+        "line": 252,
+        "text": "\\label{att:bounded}"
+      },
+      {
+        "line": 258,
+        "text": "\\label{att:randomwalk}"
+      },
+      {
+        "line": 276,
+        "text": "\\begin{theorem}[An excited, separated real unstable mode]"
+      },
+      {
+        "line": 277,
+        "text": "\\label{att:unstable}"
+      },
+      {
+        "line": 287,
+        "text": "\\label{att:asymptotic}"
+      },
+      {
+        "line": 293,
+        "text": "\\label{att:normlimit}"
+      },
+      {
+        "line": 318,
+        "text": "\\subsection{The unit-circle boundary}"
+      },
+      {
+        "line": 328,
+        "text": "\\label{att:jordanmodel}"
+      },
+      {
+        "line": 334,
+        "text": "\\label{att:jordanbias}"
+      }
+    ]
+  },
+  "B/04_watermark.tex": {
+    "path": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\sections\\04_watermark.tex",
+    "sha256": "686a8aa9ec53edd1a3b1af294e359f65696330c4eed36fdaaa0df883d970ac42",
+    "lines": 308,
+    "anchors": [
+      {
+        "line": 1,
+        "text": "\\section{Multiplicative Encoding and Finite-Window Guarantees}"
+      },
+      {
+        "line": 2,
+        "text": "\\label{wm:section}"
+      },
+      {
+        "line": 4,
+        "text": "\\subsection{Encoding, synchronization, and attack information}"
+      },
+      {
+        "line": 14,
+        "text": "\\label{wm:matrix}"
+      },
+      {
+        "line": 22,
+        "text": "\\label{wm:decoded}"
+      },
+      {
+        "line": 47,
+        "text": "\\label{wm:window}"
+      },
+      {
+        "line": 64,
+        "text": "\\subsection{Moment identities and a non-Gaussian KL bound}"
+      },
+      {
+        "line": 66,
+        "text": "\\begin{lemma}[Residual moments]"
+      },
+      {
+        "line": 67,
+        "text": "\\label{wm:moments}"
+      },
+      {
+        "line": 73,
+        "text": "\\label{wm:D}"
+      },
+      {
+        "line": 77,
+        "text": "\\mu:=\\mathbb E U&=(\\lambda+q)Z\\mathbb E\\Delta,\\label{wm:mean}\\\\"
+      },
+      {
+        "line": 81,
+        "text": "\\label{wm:covariance}"
+      },
+      {
+        "line": 115,
+        "text": "\\label{wm:entropy}"
+      },
+      {
+        "line": 126,
+        "text": "\\label{wm:tracebound}"
+      },
+      {
+        "line": 131,
+        "text": "\\subsection{Fixed attacks: the role of nondegeneracy}"
+      },
+      {
+        "line": 137,
+        "text": "\\label{wm:c1}"
+      },
+      {
+        "line": 144,
+        "text": "\\label{wm:structural}"
+      },
+      {
+        "line": 150,
+        "text": "\\begin{theorem}[KL growth for a fixed nondegenerate attack]"
+      },
+      {
+        "line": 151,
+        "text": "\\label{wm:fixed}"
+      },
+      {
+        "line": 158,
+        "text": "\\label{wm:fixedbound}"
+      },
+      {
+        "line": 177,
+        "text": "\\label{wm:power}"
+      },
+      {
+        "line": 184,
+        "text": "\\label{wm:powerlimit}"
+      },
+      {
+        "line": 218,
+        "text": "\\subsection{Parameter-aware attacks and a total energy bound}"
+      },
+      {
+        "line": 224,
+        "text": "\\label{wm:cZ}"
+      },
+      {
+        "line": 230,
+        "text": "\\begin{theorem}[Finite-window encoded injection energy]"
+      },
+      {
+        "line": 231,
+        "text": "\\label{wm:energy}"
+      },
+      {
+        "line": 238,
+        "text": "\\label{wm:energybound}"
+      },
+      {
+        "line": 273,
+        "text": "\\label{wm:scoremean}"
+      },
+      {
+        "line": 283,
+        "text": "\\subsection{Meaning and limits of the guarantees}"
+      },
+      {
+        "line": 290,
+        "text": "\\label{wm:decodedenergy}"
+      }
+    ]
+  },
+  "B/05_analytical_checks.tex": {
+    "path": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\sections\\05_analytical_checks.tex",
+    "sha256": "e575ae4f0d7cf22e8e32541053e27b7bd00c446a09cdb141604cc9df4a997912",
+    "lines": 93,
+    "anchors": [
+      {
+        "line": 1,
+        "text": "\\section{Analytical examples and implementation checks}"
+      },
+      {
+        "line": 2,
+        "text": "The following examples evaluate structural identities rather than Monte Carlo performance. They use fixed model parameters and exact expressions. They do not provide a comparison of detection delay, network-wide false alarms or estimation accuracy with competing algorithms."
+      },
+      {
+        "line": 4,
+        "text": "\\subsection{A finite attack with no start-up or termination residual}"
+      },
+      {
+        "line": 5,
+        "text": "\\label{ex:causal}"
+      },
+      {
+        "line": 43,
+        "text": "\\subsection{A nonzero attack in a degenerate time block}"
+      },
+      {
+        "line": 55,
+        "text": "\\subsection{A full-rank measurement with a temporal blind direction}"
+      },
+      {
+        "line": 82,
+        "text": "\\subsection{Encoded energy, decoded disturbance and packet access}"
+      },
+      {
+        "line": 92,
+        "text": "\\subsection{Reproducible calculation scope}"
+      }
+    ]
+  },
+  "B/06_conclusion.tex": {
+    "path": "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\sections\\06_conclusion.tex",
+    "sha256": "aa6ad618906c44a09934683e8048b3642cd4a56df5dd89b296c9eb24b7803ea1",
+    "lines": 2,
+    "anchors": [
+      {
+        "line": 1,
+        "text": "\\section{Conclusion}"
+      }
+    ]
+  }
+}

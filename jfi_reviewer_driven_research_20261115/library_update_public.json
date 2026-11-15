@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-15",
+  "before_sha256": "99e64d87d6ee0a27c0caf4e9036a0e55467c2bb56b35b8d6c03d44cc41cf6490",
+  "after_sha256": "c561f1c3cef2c0f923eeaebf61c10b0525524a13c786f3c252ccd2e0fdaef907",
+  "old_count": 187,
+  "old_records_unchanged": 181,
+  "count_after": 190,
+  "local_pdf_records_after": 135,
+  "new_PDF_papers": 7,
+  "new_ids": [
+    "JRA01",
+    "JRA02",
+    "JRA03"
+  ],
+  "all_old_ids_citationkeys_prior_reading_notes_preserved": true,
+  "fulltext_ids": [
+    "FPN10",
+    "FPN21",
+    "FPN31",
+    "FPN07",
+    "FPN08",
+    "FPN11",
+    "JRA01"
+  ],
+  "third_party_fulltexts_uploaded": false
+}

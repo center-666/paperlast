@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-15",
+  "checks": {
+    "finite_horizon_checks": {
+      "exit_code": 0,
+      "mathematical_outputs_equal": true,
+      "input_canonical_json_sha256": "0f67852d389ab9dabfe4f5d564778a11b411441f53fcd77da22f8680c5793e76",
+      "absolute_provenance_paths_may_differ": true,
+      "model_raw_hash_may_differ_due_CRLF_LF": true
+    },
+    "reconstruction_checks": {
+      "exit_code": 0,
+      "mathematical_outputs_equal": true,
+      "input_canonical_json_sha256": "0f67852d389ab9dabfe4f5d564778a11b411441f53fcd77da22f8680c5793e76",
+      "absolute_provenance_paths_may_differ": true,
+      "model_raw_hash_may_differ_due_CRLF_LF": true
+    }
+  },
+  "python": "3.10.18",
+  "dependencies": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.3",
+    "sympy": "1.14.0"
+  },
+  "physical_samples": 0,
+  "MC": 0,
+  "new_algorithms": 0,
+  "old_simulation_entrypoints_run": false
+}

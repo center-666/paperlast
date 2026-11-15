@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-15",
+  "required_reports": 11,
+  "report_status_counts": {
+    "当前无法关闭": 5,
+    "已有可采用证据": 9,
+    "仍需明确补充": 15
+  },
+  "all_required_reports_present": true,
+  "broken_local_report_links": [],
+  "checked_fulltext_hashes": 11,
+  "physical_samples": 0,
+  "large_simulations": 0,
+  "manuscript_edits": 0,
+  "scope": "first paper only; second paper frozen",
+  "limits": "No external independent peer review; source/frozen decimal arithmetic only"
+}
