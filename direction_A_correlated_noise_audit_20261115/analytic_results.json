@@ -1,0 +1,529 @@
+{
+  "scope": "G0 finite analytic diagnostics; fixed decimal gains interpreted as exact rationals; no DARE recomputation; no physical samples",
+  "input_sha256": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+  "physical_samples": 0,
+  "aggregate_model": [
+    {
+      "name": "unstable",
+      "F_spectral_radius": 0.11619553173173833,
+      "F_norm2": 0.11648176278325466,
+      "saved_F_difference": 1.112527838307741e-16,
+      "rho_cases": [
+        {
+          "rho": "-1/4",
+          "joint_eigenvalues": [
+            0.625,
+            0.0
+          ],
+          "posterior_trace": 0.12421605532666995,
+          "prediction_trace": 2.141396725407827,
+          "aggregate_R": [
+            [
+              0.5,
+              0.0,
+              -0.25,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0,
+              -0.25
+            ],
+            [
+              -0.25,
+              0.0,
+              0.75,
+              0.0
+            ],
+            [
+              0.0,
+              -0.25,
+              0.0,
+              0.75
+            ]
+          ],
+          "lyapunov_residual_exact_zero": true,
+          "relative_to_independent_percent": -45.47047397884466
+        },
+        {
+          "rho": "-1/5",
+          "joint_eigenvalues": [
+            0.6,
+            0.1
+          ],
+          "posterior_trace": 0.14493203554368048,
+          "prediction_trace": 2.164974182541183,
+          "aggregate_R": [
+            [
+              0.5,
+              0.0,
+              -0.2,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0,
+              -0.2
+            ],
+            [
+              -0.2,
+              0.0,
+              0.8,
+              0.0
+            ],
+            [
+              0.0,
+              -0.2,
+              0.0,
+              0.8
+            ]
+          ],
+          "lyapunov_residual_exact_zero": true,
+          "relative_to_independent_percent": -36.37637918307573
+        },
+        {
+          "rho": "0",
+          "joint_eigenvalues": [
+            0.5,
+            0.5
+          ],
+          "posterior_trace": 0.2277959564117226,
+          "prediction_trace": 2.2592840110746066,
+          "aggregate_R": [
+            [
+              0.5,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lyapunov_residual_exact_zero": true,
+          "relative_to_independent_percent": 0.0
+        },
+        {
+          "rho": "1/2",
+          "joint_eigenvalues": [
+            0.25,
+            1.5
+          ],
+          "posterior_trace": 0.43495575858182783,
+          "prediction_trace": 2.4950585824081664,
+          "aggregate_R": [
+            [
+              0.5,
+              0.0,
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ],
+            [
+              0.5,
+              0.0,
+              1.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0,
+              1.5
+            ]
+          ],
+          "lyapunov_residual_exact_zero": true,
+          "relative_to_independent_percent": 90.9409479576893
+        },
+        {
+          "rho": "1",
+          "joint_eigenvalues": [
+            0.0,
+            2.5
+          ],
+          "posterior_trace": 0.6421155607519331,
+          "prediction_trace": 2.7308331537417256,
+          "aggregate_R": [
+            [
+              0.5,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0,
+              1.0
+            ],
+            [
+              1.0,
+              0.0,
+              2.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              2.0
+            ]
+          ],
+          "lyapunov_residual_exact_zero": true,
+          "relative_to_independent_percent": 181.8818959153786
+        }
+      ],
+      "posterior_affine_in_rho_exact": true,
+      "actual_neighbor_template_intersections": [
+        {
+          "L": 1,
+          "combined_rank": 2,
+          "intersection_dimension": 2
+        },
+        {
+          "L": 2,
+          "combined_rank": 4,
+          "intersection_dimension": 0
+        },
+        {
+          "L": 10,
+          "combined_rank": 4,
+          "intersection_dimension": 0
+        }
+      ]
+    },
+    {
+      "name": "stable",
+      "F_spectral_radius": 0.09128808622765743,
+      "F_norm2": 0.09217808566638795,
+      "saved_F_difference": 9.732828026321454e-17,
+      "rho_cases": [
+        {
+          "rho": "-1/4",
+          "joint_eigenvalues": [
+            0.625,
+            0.0
+          ],
+          "posterior_trace": 0.12451155714435222,
+          "prediction_trace": 2.089520374012641,
+          "aggregate_R": [
+            [
+              0.5,
+              0.0,
+              -0.25,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0,
+              -0.25
+            ],
+            [
+              -0.25,
+              0.0,
+              0.75,
+              0.0
+            ],
+            [
+              0.0,
+              -0.25,
+              0.0,
+              0.75
+            ]
+          ],
+          "lyapunov_residual_exact_zero": true,
+          "relative_to_independent_percent": -45.08185122834604
+        },
+        {
+          "rho": "-1/5",
+          "joint_eigenvalues": [
+            0.6,
+            0.1
+          ],
+          "posterior_trace": 0.1449536573277752,
+          "prediction_trace": 2.1042484549316294,
+          "aggregate_R": [
+            [
+              0.5,
+              0.0,
+              -0.2,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0,
+              -0.2
+            ],
+            [
+              -0.2,
+              0.0,
+              0.8,
+              0.0
+            ],
+            [
+              0.0,
+              -0.2,
+              0.0,
+              0.8
+            ]
+          ],
+          "lyapunov_residual_exact_zero": true,
+          "relative_to_independent_percent": -36.06548098267683
+        },
+        {
+          "rho": "0",
+          "joint_eigenvalues": [
+            0.5,
+            0.5
+          ],
+          "posterior_trace": 0.22672205806146717,
+          "prediction_trace": 2.163160778607583,
+          "aggregate_R": [
+            [
+              0.5,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lyapunov_residual_exact_zero": true,
+          "relative_to_independent_percent": 0.0
+        },
+        {
+          "rho": "1/2",
+          "joint_eigenvalues": [
+            0.25,
+            1.5
+          ],
+          "posterior_trace": 0.43114305989569707,
+          "prediction_trace": 2.3104415877974662,
+          "aggregate_R": [
+            [
+              0.5,
+              0.0,
+              0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0,
+              0.5
+            ],
+            [
+              0.5,
+              0.0,
+              1.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0,
+              1.5
+            ]
+          ],
+          "lyapunov_residual_exact_zero": true,
+          "relative_to_independent_percent": 90.16370245669208
+        },
+        {
+          "rho": "1",
+          "joint_eigenvalues": [
+            0.0,
+            2.5
+          ],
+          "posterior_trace": 0.635564061729927,
+          "prediction_trace": 2.457722396987349,
+          "aggregate_R": [
+            [
+              0.5,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0,
+              1.0
+            ],
+            [
+              1.0,
+              0.0,
+              2.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              2.0
+            ]
+          ],
+          "lyapunov_residual_exact_zero": true,
+          "relative_to_independent_percent": 180.32740491338416
+        }
+      ],
+      "posterior_affine_in_rho_exact": true,
+      "actual_neighbor_template_intersections": [
+        {
+          "L": 1,
+          "combined_rank": 2,
+          "intersection_dimension": 2
+        },
+        {
+          "L": 2,
+          "combined_rank": 4,
+          "intersection_dimension": 0
+        },
+        {
+          "L": 10,
+          "combined_rank": 4,
+          "intersection_dimension": 0
+        }
+      ]
+    }
+  ],
+  "scalar_checks": [
+    {
+      "rho": "-1/2",
+      "time_variance": 2.0,
+      "space_variance": 1.5,
+      "time_space_covariance": 0.75,
+      "conditional_space_variance": 1.21875,
+      "nominal_independence_spatial_FAR": 0.10953118385237459,
+      "covariance_envelope_2_FAR": 0.023625121317601104
+    },
+    {
+      "rho": "0",
+      "time_variance": 2.0,
+      "space_variance": 1.0,
+      "time_space_covariance": 0.5,
+      "conditional_space_variance": 0.875,
+      "nominal_independence_spatial_FAR": 0.05000000000000004,
+      "covariance_envelope_2_FAR": 0.005574596680784399
+    },
+    {
+      "rho": "1/2",
+      "time_variance": 2.0,
+      "space_variance": 0.5,
+      "time_space_covariance": 0.25,
+      "conditional_space_variance": 0.46875,
+      "nominal_independence_spatial_FAR": 0.005574596680784399,
+      "covariance_envelope_2_FAR": 8.857543832140334e-05
+    }
+  ],
+  "directional_counterexample": {
+    "Rii": "I2",
+    "Rjj": "I2",
+    "Rij": "diag(1/2,-1/2)",
+    "global_joint_eigenvalues": [
+      0.5,
+      0.5,
+      1.5,
+      1.5
+    ],
+    "actual_spatial_covariance": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "independent_covariance": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "unit_attack_noncentralities": {
+      "x": 1.0,
+      "y": 0.3333333333333333
+    },
+    "independent_noncentrality": 0.5
+  },
+  "aggregation_cancellation_counterexample": {
+    "C": [
+      [
+        "1",
+        "1/5",
+        "-1/5"
+      ],
+      [
+        "1/5",
+        "1",
+        "0"
+      ],
+      [
+        "-1/5",
+        "0",
+        "1"
+      ]
+    ],
+    "aggregate_covariance": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "leading_principal_minors": [
+      "1",
+      "24/25",
+      "23/25"
+    ]
+  },
+  "joint_matched_conditional_identity_exact": true
+}

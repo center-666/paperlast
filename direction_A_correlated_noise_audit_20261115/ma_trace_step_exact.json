@@ -1,0 +1,16 @@
+{
+  "purpose": "Ma2024 Eq14 first CI fusion with Eq11 trace gate; local counterexample to an inverse-trace inference only",
+  "Omega_i": "Matrix([[1, 0], [0, 1]])",
+  "Omega_j": "Matrix([[3, 0], [0, 1/10]])",
+  "pi_i": "31/51",
+  "pi_j": "20/51",
+  "Omega_f": "Matrix([[91/51, 0], [0, 11/17]])",
+  "beta": 1,
+  "trace_Omega_i": "2",
+  "trace_Omega_f": "124/51",
+  "trace_inverse_i": "2",
+  "trace_inverse_f": "2108/1001",
+  "trace_gate_passes": true,
+  "inverse_trace_increases": true,
+  "full_dynamic_theorem_disproved": false
+}

@@ -1,0 +1,17 @@
+{
+  "old_files": 570,
+  "changed": [],
+  "missing": [],
+  "authorized_library_append": [
+    {
+      "path": "参考文献/文献库.json",
+      "old_records_unchanged": 183,
+      "append_only_ids": [
+        "CNA01",
+        "CNA02",
+        "CNA03",
+        "CNA04"
+      ]
+    }
+  ]
+}

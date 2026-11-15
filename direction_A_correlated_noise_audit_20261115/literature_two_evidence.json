@@ -1,0 +1,68 @@
+{
+    "date":  "2026-11-15",
+    "scope":  "G1 theorem-interface review only",
+    "outputs":  [
+                    "literature_two.md",
+                    "literature_work/Ma2024.txt",
+                    "literature_work/Ma2024_p3.txt",
+                    "literature_work/Ma2024_p4.png",
+                    "literature_work/Ma2024_p5.png",
+                    "literature_work/Ma2024_p7.png"
+                ],
+    "sources":  [
+                    {
+                        "doi":  "10.1016/j.jfranklin.2026.108914",
+                        "url":  "https://www.sciencedirect.com/science/article/pii/S0016003226005107",
+                        "level":  "publisher abstract introduction section snippets; no full text",
+                        "id":  "FPN10",
+                        "pdf_obtained":  false
+                    },
+                    {
+                        "doi":  "10.1016/j.neucom.2026.134053",
+                        "url":  "https://www.sciencedirect.com/science/article/pii/S0925231226014517",
+                        "level":  "publisher abstract introduction contributions; no full text",
+                        "id":  "FPN21",
+                        "pdf_obtained":  false
+                    },
+                    {
+                        "id":  "new DOI not present at lookup",
+                        "printed_pages":  "24880-24891",
+                        "title":  "Covariance Intersection-Based Kalman Consensus Filtering With Sequential Replay Attack Detection Over Sensor Networks",
+                        "visual_pages":  [
+                                             4,
+                                             5,
+                                             7
+                                         ],
+                        "source_file":  "C:\\Users\\26626\\Zotero\\storage\\JRGJGTAU\\Ma 等 - 2024 - Covariance Intersection-Based Kalman Consensus Filtering With Sequential Replay Attack Detection Ove.pdf",
+                        "independent_proof_audit":  false,
+                        "uniform_unknown_cross_covariance_false_alarm_guarantee_found":  false,
+                        "theorems":  [
+                                         "Assumption 1",
+                                         "Assumption 2",
+                                         "Lemma 1",
+                                         "Lemma 2",
+                                         "Theorem 1",
+                                         "Theorem 2"
+                                     ],
+                        "authors":  "Yinping Ma; Yinya Li; Ning Wang; Yuan Liang",
+                        "doi":  "10.1109/JSEN.2024.3417511",
+                        "fixed_common_G_measurement_sum":  false,
+                        "equations":  [
+                                          "1-14",
+                                          "15",
+                                          "16-22",
+                                          "23-35"
+                                      ],
+                        "reviewed_pdf_pages":  [
+                                                   3,
+                                                   4,
+                                                   5,
+                                                   6,
+                                                   7
+                                               ],
+                        "pages":  12,
+                        "sha256":  "bc0a904fecaeecfc38b8c00174d2647d5f509d4b30c6a8b3f5829fd142407375"
+                    }
+                ],
+    "no_old_files_modified":  true
+}

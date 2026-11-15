@@ -1,0 +1,15 @@
+{
+  "cross_implementation_matching_cases": 4,
+  "max_trace_difference": 2.7755575615628914e-17,
+  "historical_protection_counts": {
+    "original_and_formal_sources": 17,
+    "original_archive_members": 14,
+    "stage_TeX_PDF": 8,
+    "old_50node_sources_and_outputs": 20
+  },
+  "mismatches": [],
+  "physical_samples": 0,
+  "new_algorithms": 0,
+  "G2_G4_executed": false,
+  "third_party_pdfs_for_public_upload": false
+}

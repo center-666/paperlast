@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-15",
+  "authorized_stage": "G0 and G1 only",
+  "baseline_commit": "8941dff6df39980116f4f595384065c2c3a7f8c3",
+  "model": "../original_estimator_gate_20261114/five_node_aggregate_model.json",
+  "model_sha256": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+  "receiver": 1,
+  "attacked_source": 0,
+  "gain_policy": "fixed nominal common K/G; no recalculation",
+  "joint_R_family_for_G0_examples": "0.5*((1-rho)*I5+rho*ones5) kron I2",
+  "global_PSD_interval": [-0.25, 1],
+  "main_analytic_probe_rho": [-0.25, -0.2, 0, 0.5, 1],
+  "independent_check_rho": [-0.2, 0, 0.2],
+  "scalar_spatial_miscalibration": {"Q": 1, "R_marginal": 0.5, "A": 1, "H": 1, "rho": [-0.5, 0, 0.5], "single_test_alpha": 0.05},
+  "old_E_D_L_retained_but_no_G2_optimization": {"E": 10, "D": 0.1, "L": 10},
+  "formal_event_detection_or_risk_experiment": false,
+  "physical_samples": 0,
+  "random_matrix_search": false
+}
