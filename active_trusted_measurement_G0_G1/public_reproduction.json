@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-16",
+  "JSON_semantically_and_generated_reports_byte_identical": {
+    "structural_certificates.json": true,
+    "batch_power_results.json": true,
+    "prior_baseline_results.json": true,
+    "online_bounds_results.json": true,
+    "independent_checks.json": true,
+    "research_decision.json": true,
+    "03_可信量测噪声与检测功效.md": true,
+    "04_标准联合检测强基线.md": true,
+    "05_最坏攻击方向与资源约束.md": true
+  },
+  "compared_arrays": 160,
+  "all_arrays_exactly_identical": true,
+  "sibling_frozen_inputs_unchanged": true,
+  "new_physical_noise_samples": 0,
+  "conditional_noise_formulas_recomputed": true,
+  "unconditional_Gaussian_integral_certified": false,
+  "global_danger_risk_certified": false
+}

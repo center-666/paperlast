@@ -1,0 +1,1682 @@
+{
+  "date": "2026-11-16",
+  "batch_FA": 0.05,
+  "batch_times": [
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "damage_times": "attack ten posteriors; auxiliary never enters estimator",
+  "models": {
+    "unstable": {
+      "schemes": {
+        "B0": {
+          "df": 8,
+          "P1": {
+            "k": 9,
+            "value": 0.18022253426442864,
+            "xi": [
+              -0.5372209387736734,
+              -0.2935871029513719
+            ]
+          },
+          "Pd_at_P1": 0.04999999999999999,
+          "P3": {
+            "xi": [
+              -0.156091101187735,
+              -0.5175784168426711
+            ],
+            "energy": 6.377112392893186,
+            "expected_peak_damage": 0.10000000000020001,
+            "Pd": 0.049999999999999975,
+            "theta": 1.2778909723632303,
+            "candidate_count": 14,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "min_ncp_at_full_energy": 8.312610834444541e-32,
+          "note": "minimum batch noncentrality under FULL E=10"
+        },
+        "B1": {
+          "df": 2,
+          "P1": {
+            "k": 9,
+            "value": 0.18022253426442864,
+            "xi": [
+              -0.5372209387736734,
+              -0.2935871029513719
+            ]
+          },
+          "Pd_at_P1": 0.42944179942823335,
+          "P3": {
+            "xi": [
+              -0.39230192421415977,
+              -0.2311609887147896
+            ],
+            "energy": 5.549942634443957,
+            "expected_peak_damage": 0.10000000000020004,
+            "Pd": 0.25463222275693037,
+            "theta": 0.5324720638396125,
+            "candidate_count": 14,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "min_ncp_at_full_energy": 4.150073391943679,
+          "note": "minimum batch noncentrality under FULL E=10"
+        },
+        "B2": {
+          "df": 2,
+          "P1": {
+            "k": 9,
+            "value": 0.28607832898701674,
+            "xi": [
+              -0.5230403119544881,
+              -0.3157471173127485
+            ]
+          },
+          "Pd_at_P1": 0.5444531281688059,
+          "P3": {
+            "xi": [
+              0.3011438138351517,
+              0.1988693029708387
+            ],
+            "energy": 3.496713241414497,
+            "expected_peak_damage": 0.1000000000002,
+            "Pd": 0.2587686711337374,
+            "theta": 0.5836375455786978,
+            "candidate_count": 182,
+            "method": "181-angle search plus local refinement, finite old-secret average; not global probability certificate"
+          },
+          "min_ncp_at_full_energy": 7.102924776071364,
+          "note": "this eigenvalue is minimum expected noncentrality, not minimum real power"
+        },
+        "B3_coord0": {
+          "df": 2,
+          "P1": {
+            "k": 9,
+            "value": 0.18022253426442864,
+            "xi": [
+              -0.5372209387736734,
+              -0.2935871029513719
+            ]
+          },
+          "Pd_at_P1": 0.4353442496121703,
+          "P3": {
+            "xi": [
+              -0.3887921460693318,
+              -0.23663822255637115
+            ],
+            "energy": 5.551284787925756,
+            "expected_peak_damage": 0.10000000000020004,
+            "Pd": 0.2579908304417164,
+            "theta": 0.5467553100043627,
+            "candidate_count": 14,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "min_ncp_at_full_energy": 4.211190035986505,
+          "note": "minimum batch noncentrality under FULL E=10"
+        },
+        "B3_coord1": {
+          "df": 2,
+          "P1": {
+            "k": 9,
+            "value": 0.18022253426442864,
+            "xi": [
+              -0.5372209387736734,
+              -0.2935871029513719
+            ]
+          },
+          "Pd_at_P1": 0.43045568115759325,
+          "P3": {
+            "xi": [
+              -0.39459265803334365,
+              -0.22755900204521004
+            ],
+            "energy": 5.5493253056760565,
+            "expected_peak_damage": 0.10000000000020004,
+            "Pd": 0.25528422282947516,
+            "theta": 0.5231060225070898,
+            "candidate_count": 14,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "min_ncp_at_full_energy": 4.163130402830477,
+          "note": "minimum batch noncentrality under FULL E=10"
+        }
+      },
+      "auxiliary": {
+        "0": {
+          "phases": [
+            {
+              "phase": 0,
+              "aux_times": [
+                10
+              ],
+              "G": [
+                [
+                  10.336723784124288,
+                  1.2803600142790659
+                ],
+                [
+                  1.2803600142790659,
+                  9.652907567926563
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -0.3887921460693318,
+                  -0.23663822255637115
+                ],
+                "energy": 5.551284787925756,
+                "expected_peak_damage": 0.10000000000020004,
+                "Pd": 0.2579908304417164,
+                "theta": 0.5467553100043627,
+                "candidate_count": 14,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.4353442496121703
+            },
+            {
+              "phase": 1,
+              "aux_times": [
+                11
+              ],
+              "G": [
+                [
+                  10.364900308070448,
+                  1.2934614101859425
+                ],
+                [
+                  1.2934614101859425,
+                  9.656315518983423
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -0.38852700620388386,
+                  -0.23704996851698726
+                ],
+                "energy": 5.551405435078053,
+                "expected_peak_damage": 0.10000000000020001,
+                "Pd": 0.2586500393490759,
+                "theta": 0.5478309764474569,
+                "candidate_count": 14,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.43647667045730937
+            },
+            {
+              "phase": 2,
+              "aux_times": [
+                7
+              ],
+              "G": [
+                [
+                  10.261623372662786,
+                  1.254024635660135
+                ],
+                [
+                  1.254024635660135,
+                  9.649336063991088
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -0.3897725366862342,
+                  -0.2351132810205913
+                ],
+                "energy": 5.550862058231754,
+                "expected_peak_damage": 0.10000000000020001,
+                "Pd": 0.2564134228578794,
+                "theta": 0.5427737981950163,
+                "candidate_count": 14,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.4326088450078819
+            },
+            {
+              "phase": 3,
+              "aux_times": [
+                8
+              ],
+              "G": [
+                [
+                  10.284380638497057,
+                  1.2605838894348769
+                ],
+                [
+                  1.2605838894348769,
+                  9.649647514896564
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -0.3894329656594048,
+                  -0.2356419025562633
+                ],
+                "energy": 5.551004302638186,
+                "expected_peak_damage": 0.10000000000020003,
+                "Pd": 0.2568625778297715,
+                "theta": 0.5441535739981034,
+                "candidate_count": 14,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.43339185139938197
+            },
+            {
+              "phase": 4,
+              "aux_times": [
+                9
+              ],
+              "G": [
+                [
+                  10.30850192450025,
+                  1.269241607228731
+                ],
+                [
+                  1.269241607228731,
+                  9.650739194991877
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -0.38912104288197885,
+                  -0.23612707364170957
+                ],
+                "energy": 5.551138865364942,
+                "expected_peak_damage": 0.10000000000020001,
+                "Pd": 0.25737242701907614,
+                "theta": 0.5454203279866205,
+                "candidate_count": 14,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.4342757684550916
+            }
+          ],
+          "min_phase_P3_power": 0.2564134228578794,
+          "best_phase_for_aligned_batch": 1,
+          "unknown_start_minimax_phase_tie": true,
+          "statement": "two samples per public10-cycle: any nonuniform spacing has a5-step empty window and attains the B1 worst-start bound; uniform spacing is a standard optimal coverage baseline for this declared marginal-power objective, not optimal online danger risk"
+        },
+        "1": {
+          "phases": [
+            {
+              "phase": 0,
+              "aux_times": [
+                10
+              ],
+              "G": [
+                [
+                  10.140635570464712,
+                  1.2573217720848897
+                ],
+                [
+                  1.2573217720848897,
+                  9.766285854165853
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -0.39459265803334365,
+                  -0.22755900204521004
+                ],
+                "energy": 5.5493253056760565,
+                "expected_peak_damage": 0.10000000000020004,
+                "Pd": 0.25528422282947516,
+                "theta": 0.5231060225070898,
+                "candidate_count": 14,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.43045568115759325
+            },
+            {
+              "phase": 1,
+              "aux_times": [
+                11
+              ],
+              "G": [
+                [
+                  10.140737197018003,
+                  1.2589637064371437
+                ],
+                [
+                  1.2589637064371437,
+                  9.776581739252135
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -0.39481671405065716,
+                  -0.22720552822716306
+                ],
+                "energy": 5.549276022050629,
+                "expected_peak_damage": 0.10000000000020001,
+                "Pd": 0.2553651969862968,
+                "theta": 0.5221880987125433,
+                "candidate_count": 14,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.43058559129457497
+            },
+            {
+              "phase": 2,
+              "aux_times": [
+                7
+              ],
+              "G": [
+                [
+                  10.140534808816655,
+                  1.2538697718635632
+                ],
+                [
+                  1.2538697718635632,
+                  9.735144252861575
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -0.3939388406379716,
+                  -0.22858928326040986
+                ],
+                "energy": 5.549480460413398,
+                "expected_peak_damage": 0.10000000000020001,
+                "Pd": 0.2550674587516876,
+                "theta": 0.5257827519286313,
+                "candidate_count": 14,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.43011133695740633
+            },
+            {
+              "phase": 3,
+              "aux_times": [
+                8
+              ],
+              "G": [
+                [
+                  10.140543421533986,
+                  1.2547982147765686
+                ],
+                [
+                  1.2547982147765686,
+                  9.745290831623945
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -0.394148842679047,
+                  -0.2282585563899692
+                ],
+                "energy": 5.549428786629205,
+                "expected_peak_damage": 0.10000000000020004,
+                "Pd": 0.25513450257437004,
+                "theta": 0.5249233060248599,
+                "candidate_count": 14,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.43021730041048445
+            },
+            {
+              "phase": 4,
+              "aux_times": [
+                9
+              ],
+              "G": [
+                [
+                  10.1405741750658,
+                  1.2559307996518054
+                ],
+                [
+                  1.2559307996518054,
+                  9.755235685254982
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -0.39435830222686524,
+                  -0.2279285020361483
+                ],
+                "energy": 5.549378979190575,
+                "expected_peak_damage": 0.10000000000020004,
+                "Pd": 0.2552042349439842,
+                "theta": 0.5240657947511722,
+                "candidate_count": 14,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.4303280911386205
+            }
+          ],
+          "min_phase_P3_power": 0.2550674587516876,
+          "best_phase_for_aligned_batch": 1,
+          "unknown_start_minimax_phase_tie": true,
+          "statement": "two samples per public10-cycle: any nonuniform spacing has a5-step empty window and attains the B1 worst-start bound; uniform spacing is a standard optimal coverage baseline for this declared marginal-power objective, not optimal online danger risk"
+        }
+      },
+      "normal_target_MSE_average7to31": 0.22779595641172254,
+      "normal_all_baselines_identical": true,
+      "P1_original_gain_unchanged": true,
+      "existing_local_structural_rank": 2,
+      "normal_encoded_signal_energy_multiplier_Gaussian": 2.538544683758135
+    },
+    "stable": {
+      "schemes": {
+        "B0": {
+          "df": 8,
+          "P1": {
+            "k": 0,
+            "value": 0.27002636257468193,
+            "xi": [
+              -1.904188148255,
+              0.3634296817448765
+            ]
+          },
+          "Pd_at_P1": 0.04999999999999998,
+          "P3": {
+            "xi": [
+              -0.9411880625947731,
+              -0.7552233217789055
+            ],
+            "energy": 5.83910273841273,
+            "expected_peak_damage": 0.10000000000020001,
+            "Pd": 0.049999999999999975,
+            "theta": 0.6762117064342692,
+            "candidate_count": 6,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "min_ncp_at_full_energy": 1.584911450061497e-31,
+          "note": "minimum batch noncentrality under FULL E=10"
+        },
+        "B1": {
+          "df": 2,
+          "P1": {
+            "k": 0,
+            "value": 0.27002636257468193,
+            "xi": [
+              -1.904188148255,
+              0.3634296817448765
+            ]
+          },
+          "Pd_at_P1": 0.9138307962993775,
+          "P3": {
+            "xi": [
+              -1.1633694399490095,
+              0.19146998848696725
+            ],
+            "energy": 3.7056256580836258,
+            "expected_peak_damage": 0.10000000000020001,
+            "Pd": 0.4961795985768906,
+            "theta": 2.978472716389377,
+            "candidate_count": 6,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "min_ncp_at_full_energy": 11.136606517800086,
+          "note": "minimum batch noncentrality under FULL E=10"
+        },
+        "B2": {
+          "df": 2,
+          "P1": {
+            "k": 0,
+            "value": 0.46457988087405144,
+            "xi": [
+              -1.9017815856483014,
+              0.3773885580185944
+            ]
+          },
+          "Pd_at_P1": 0.8650161806898153,
+          "P3": {
+            "xi": [
+              -0.8910797782249654,
+              0.11604022169888982
+            ],
+            "energy": 2.161180897714102,
+            "expected_peak_damage": 0.10000000000020004,
+            "Pd": 0.43608204818597757,
+            "theta": 3.0120971041389364,
+            "candidate_count": 182,
+            "method": "181-angle search plus local refinement, finite old-secret average; not global probability certificate"
+          },
+          "min_ncp_at_full_energy": 21.871027793275385,
+          "note": "this eigenvalue is minimum expected noncentrality, not minimum real power"
+        },
+        "B3_coord0": {
+          "df": 2,
+          "P1": {
+            "k": 0,
+            "value": 0.27002636257468193,
+            "xi": [
+              -1.904188148255,
+              0.3634296817448765
+            ]
+          },
+          "Pd_at_P1": 0.9160663763093874,
+          "P3": {
+            "xi": [
+              -1.1625828539828318,
+              0.1969069104525204
+            ],
+            "energy": 3.704867206207365,
+            "expected_peak_damage": 0.10000000000020003,
+            "Pd": 0.4996315260373894,
+            "theta": 2.973814653400918,
+            "candidate_count": 6,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "min_ncp_at_full_energy": 11.150442180167897,
+          "note": "minimum batch noncentrality under FULL E=10"
+        },
+        "B3_coord1": {
+          "df": 2,
+          "P1": {
+            "k": 0,
+            "value": 0.27002636257468193,
+            "xi": [
+              -1.904188148255,
+              0.3634296817448765
+            ]
+          },
+          "Pd_at_P1": 0.9139222214345222,
+          "P3": {
+            "xi": [
+              -1.163795379408958,
+              0.1884583320780459
+            ],
+            "energy": 3.7061111394262287,
+            "expected_peak_damage": 0.10000000000020004,
+            "Pd": 0.49627470858718425,
+            "theta": 2.9810519932437787,
+            "candidate_count": 6,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "min_ncp_at_full_energy": 11.225915578694508,
+          "note": "minimum batch noncentrality under FULL E=10"
+        }
+      },
+      "auxiliary": {
+        "0": {
+          "phases": [
+            {
+              "phase": 0,
+              "aux_times": [
+                10
+              ],
+              "G": [
+                [
+                  3.640156641019395,
+                  0.38333486185584886
+                ],
+                [
+                  0.38333486185584886,
+                  5.361354910746032
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -1.1625828539828318,
+                  0.1969069104525204
+                ],
+                "energy": 3.704867206207365,
+                "expected_peak_damage": 0.10000000000020003,
+                "Pd": 0.4996315260373894,
+                "theta": 2.973814653400918,
+                "candidate_count": 6,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.9160663763093874
+            },
+            {
+              "phase": 1,
+              "aux_times": [
+                11
+              ],
+              "G": [
+                [
+                  3.6284065061174404,
+                  0.38263524508292807
+                ],
+                [
+                  0.38263524508292807,
+                  5.361736665761717
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -1.1627606636052774,
+                  0.19569151334829302
+                ],
+                "energy": 3.705023562010898,
+                "expected_peak_damage": 0.10000000000020003,
+                "Pd": 0.498309617827172,
+                "theta": 2.9748561343977133,
+                "candidate_count": 6,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.9152085954486728
+            },
+            {
+              "phase": 2,
+              "aux_times": [
+                7
+              ],
+              "G": [
+                [
+                  3.727635716576415,
+                  0.37664256303114196
+                ],
+                [
+                  0.37664256303114196,
+                  5.359922872039547
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -1.1620868521137986,
+                  0.2002570425471953
+                ],
+                "energy": 3.7044756017809446,
+                "expected_peak_damage": 0.10000000000019998,
+                "Pd": 0.5098707328347325,
+                "theta": 2.9709433173819613,
+                "candidate_count": 6,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.9225300480904015
+            },
+            {
+              "phase": 3,
+              "aux_times": [
+                8
+              ],
+              "G": [
+                [
+                  3.686206119216218,
+                  0.3814126785727056
+                ],
+                [
+                  0.3814126785727056,
+                  5.3602258507174705
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -1.1622059822115953,
+                  0.1994577073420736
+                ],
+                "energy": 3.704563785925256,
+                "expected_peak_damage": 0.10000000000020004,
+                "Pd": 0.504972864517037,
+                "theta": 2.9716284916751685,
+                "candidate_count": 6,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.9194821682199954
+            },
+            {
+              "phase": 4,
+              "aux_times": [
+                9
+              ],
+              "G": [
+                [
+                  3.658117427808753,
+                  0.38317878562153007
+                ],
+                [
+                  0.38317878562153007,
+                  5.360800510452785
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -1.162394140360742,
+                  0.1981884261769483
+                ],
+                "energy": 3.704710579819509,
+                "expected_peak_damage": 0.10000000000020003,
+                "Pd": 0.501695332270268,
+                "theta": 2.9727163924448736,
+                "candidate_count": 6,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.917396905956315
+            }
+          ],
+          "min_phase_P3_power": 0.498309617827172,
+          "best_phase_for_aligned_batch": 2,
+          "unknown_start_minimax_phase_tie": true,
+          "statement": "two samples per public10-cycle: any nonuniform spacing has a5-step empty window and attains the B1 worst-start bound; uniform spacing is a standard optimal coverage baseline for this declared marginal-power objective, not optimal online danger risk"
+        },
+        "1": {
+          "phases": [
+            {
+              "phase": 0,
+              "aux_times": [
+                10
+              ],
+              "G": [
+                [
+                  3.607981796676012,
+                  0.3779201447196428
+                ],
+                [
+                  0.3779201447196428,
+                  5.406175052131092
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -1.163795379408958,
+                  0.1884583320780459
+                ],
+                "energy": 3.7061111394262287,
+                "expected_peak_damage": 0.10000000000020004,
+                "Pd": 0.49627470858718425,
+                "theta": 2.9810519932437787,
+                "candidate_count": 6,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.9139222214345222
+            },
+            {
+              "phase": 1,
+              "aux_times": [
+                11
+              ],
+              "G": [
+                [
+                  3.607993367892886,
+                  0.37794025113697677
+                ],
+                [
+                  0.37794025113697677,
+                  5.397062747800824
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -1.1636937174532116,
+                  0.18918163536141064
+                ],
+                "energy": 3.7059902956795163,
+                "expected_peak_damage": 0.1000000000002,
+                "Pd": 0.4962475918711137,
+                "theta": 2.980432594464339,
+                "candidate_count": 6,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.9138972370824814
+            },
+            {
+              "phase": 2,
+              "aux_times": [
+                7
+              ],
+              "G": [
+                [
+                  3.607940761943155,
+                  0.3765263514157245
+                ],
+                [
+                  0.3765263514157245,
+                  5.445325770209377
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -1.1643029605064932,
+                  0.18480335268471185
+                ],
+                "energy": 3.706762803106259,
+                "expected_peak_damage": 0.10000000000020001,
+                "Pd": 0.496437840944699,
+                "theta": 2.9841813445709677,
+                "candidate_count": 6,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.9140681070782074
+            },
+            {
+              "phase": 3,
+              "aux_times": [
+                8
+              ],
+              "G": [
+                [
+                  3.60794950502225,
+                  0.3773262409755929
+                ],
+                [
+                  0.3773262409755929,
+                  5.430166016443181
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -1.1640926908687481,
+                  0.18632641827807603
+                ],
+                "energy": 3.7064829288171386,
+                "expected_peak_damage": 0.10000000000020003,
+                "Pd": 0.496364888912814,
+                "theta": 2.9828774303981866,
+                "candidate_count": 6,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.9140035437430889
+            },
+            {
+              "phase": 4,
+              "aux_times": [
+                9
+              ],
+              "G": [
+                [
+                  3.6079659747704125,
+                  0.37774103424425154
+                ],
+                [
+                  0.37774103424425154,
+                  5.416896653176854
+                ]
+              ],
+              "P3": {
+                "xi": [
+                  -1.1639237375675704,
+                  0.18754098454716628
+                ],
+                "energy": 3.706268261891616,
+                "expected_peak_damage": 0.10000000000020001,
+                "Pd": 0.49631187150319056,
+                "theta": 2.9818375064166314,
+                "candidate_count": 6,
+                "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+              },
+              "Pd_at_P1": 0.9139559592366759
+            }
+          ],
+          "min_phase_P3_power": 0.4962475918711137,
+          "best_phase_for_aligned_batch": 2,
+          "unknown_start_minimax_phase_tie": true,
+          "statement": "two samples per public10-cycle: any nonuniform spacing has a5-step empty window and attains the B1 worst-start bound; uniform spacing is a standard optimal coverage baseline for this declared marginal-power objective, not optimal online danger risk"
+        }
+      },
+      "normal_target_MSE_average7to31": 0.22672205806146717,
+      "normal_all_baselines_identical": true,
+      "P1_original_gain_unchanged": true,
+      "existing_local_structural_rank": 2,
+      "normal_encoded_signal_energy_multiplier_Gaussian": 2.538544683758135
+    }
+  },
+  "sensitivity": {
+    "unstable/coord0/R0.25/delay0/rho0.0": {
+      "P3": {
+        "xi": [
+          -0.38632232801271216,
+          -0.2404628210075363
+        ],
+        "energy": 5.552512203769485,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.2603063300869602,
+        "theta": 0.5567569531990344,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4394421726303424,
+      "available_aux_rows": 1
+    },
+    "unstable/coord0/R0.25/delay0/rho0.5": {
+      "P3": {
+        "xi": [
+          -0.3888042747596045,
+          -0.23661938069490043
+        ],
+        "energy": 5.551279333249663,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.25797936325646925,
+        "theta": 0.5467060928997483,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4353240142840464,
+      "available_aux_rows": 1
+    },
+    "unstable/coord0/R0.25/delay1/rho0.0": {
+      "P3": {
+        "xi": [
+          -0.38632232801271216,
+          -0.2404628210075363
+        ],
+        "energy": 5.552512203769485,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.2603063300869602,
+        "theta": 0.5567569531990344,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4394421726303424,
+      "available_aux_rows": 1
+    },
+    "unstable/coord0/R0.25/delay1/rho0.5": {
+      "P3": {
+        "xi": [
+          -0.3888042747596045,
+          -0.23661938069490043
+        ],
+        "energy": 5.551279333249663,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.25797936325646925,
+        "theta": 0.5467060928997483,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4353240142840464,
+      "available_aux_rows": 1
+    },
+    "unstable/coord0/R0.5/delay0/rho0.0": {
+      "P3": {
+        "xi": [
+          -0.3887921460693318,
+          -0.23663822255637115
+        ],
+        "energy": 5.551284787925756,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.2579908304417164,
+        "theta": 0.5467553100043627,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4353442496121703,
+      "available_aux_rows": 1
+    },
+    "unstable/coord0/R0.5/delay0/rho0.5": {
+      "P3": {
+        "xi": [
+          -0.3912165790905958,
+          -0.23286008158561852
+        ],
+        "energy": 5.550306786334571,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.255679535441025,
+        "theta": 0.5368976633385225,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4312771904469677,
+      "available_aux_rows": 1
+    },
+    "unstable/coord0/R0.5/delay1/rho0.0": {
+      "P3": {
+        "xi": [
+          -0.3887921460693318,
+          -0.23663822255637115
+        ],
+        "energy": 5.551284787925756,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.2579908304417164,
+        "theta": 0.5467553100043627,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4353442496121703,
+      "available_aux_rows": 1
+    },
+    "unstable/coord0/R0.5/delay1/rho0.5": {
+      "P3": {
+        "xi": [
+          -0.3912165790905958,
+          -0.23286008158561852
+        ],
+        "energy": 5.550306786334571,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.255679535441025,
+        "theta": 0.5368976633385225,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4312771904469677,
+      "available_aux_rows": 1
+    },
+    "unstable/coord0/R1.0/delay0/rho0.0": {
+      "P3": {
+        "xi": [
+          -0.39037999723198824,
+          -0.23416646496061022
+        ],
+        "energy": 5.550618663694077,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.25648144209085566,
+        "theta": 0.5403035919812238,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.43268565649088603,
+      "available_aux_rows": 1
+    },
+    "unstable/coord0/R1.0/delay0/rho0.5": {
+      "P3": {
+        "xi": [
+          -0.39216308330417315,
+          -0.23137861074750612
+        ],
+        "energy": 5.549986659934259,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.254766639753719,
+        "theta": 0.5330386339235016,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4296771039802236,
+      "available_aux_rows": 1
+    },
+    "unstable/coord0/R1.0/delay1/rho0.0": {
+      "P3": {
+        "xi": [
+          -0.39037999723198824,
+          -0.23416646496061022
+        ],
+        "energy": 5.550618663694077,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.25648144209085566,
+        "theta": 0.5403035919812238,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.43268565649088603,
+      "available_aux_rows": 1
+    },
+    "unstable/coord0/R1.0/delay1/rho0.5": {
+      "P3": {
+        "xi": [
+          -0.39216308330417315,
+          -0.23137861074750612
+        ],
+        "energy": 5.549986659934259,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.254766639753719,
+        "theta": 0.5330386339235016,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4296771039802236,
+      "available_aux_rows": 1
+    },
+    "unstable/coord1/R0.25/delay0/rho0.0": {
+      "P3": {
+        "xi": [
+          -0.3962167218941166,
+          -0.22499212204019722
+        ],
+        "energy": 5.549013198500532,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.25574687955171665,
+        "theta": 0.5164451347394134,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4311929960242028,
+      "available_aux_rows": 1
+    },
+    "unstable/coord1/R0.25/delay0/rho0.5": {
+      "P3": {
+        "xi": [
+          -0.39436758598244587,
+          -0.22791386901956742
+        ],
+        "energy": 5.549376811689965,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.2552201327122979,
+        "theta": 0.5240277811755631,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4303547303739538,
+      "available_aux_rows": 1
+    },
+    "unstable/coord1/R0.25/delay1/rho0.0": {
+      "P3": {
+        "xi": [
+          -0.3962167218941166,
+          -0.22499212204019722
+        ],
+        "energy": 5.549013198500532,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.25574687955171665,
+        "theta": 0.5164451347394134,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4311929960242028,
+      "available_aux_rows": 1
+    },
+    "unstable/coord1/R0.25/delay1/rho0.5": {
+      "P3": {
+        "xi": [
+          -0.39436758598244587,
+          -0.22791386901956742
+        ],
+        "energy": 5.549376811689965,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.2552201327122979,
+        "theta": 0.5240277811755631,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4303547303739538,
+      "available_aux_rows": 1
+    },
+    "unstable/coord1/R0.5/delay0/rho0.0": {
+      "P3": {
+        "xi": [
+          -0.39459265803334365,
+          -0.22755900204521004
+        ],
+        "energy": 5.5493253056760565,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.25528422282947516,
+        "theta": 0.5231060225070898,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.43045568115759325,
+      "available_aux_rows": 1
+    },
+    "unstable/coord1/R0.5/delay0/rho0.5": {
+      "P3": {
+        "xi": [
+          -0.392866181764568,
+          -0.2302757469761908
+        ],
+        "energy": 5.549771459467443,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.25479276518843597,
+        "theta": 0.5301681874047337,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.42968877828315266,
+      "available_aux_rows": 1
+    },
+    "unstable/coord1/R0.5/delay1/rho0.0": {
+      "P3": {
+        "xi": [
+          -0.39459265803334365,
+          -0.22755900204521004
+        ],
+        "energy": 5.5493253056760565,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.25528422282947516,
+        "theta": 0.5231060225070898,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.43045568115759325,
+      "available_aux_rows": 1
+    },
+    "unstable/coord1/R0.5/delay1/rho0.5": {
+      "P3": {
+        "xi": [
+          -0.392866181764568,
+          -0.2302757469761908
+        ],
+        "energy": 5.549771459467443,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.25479276518843597,
+        "theta": 0.5301681874047337,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.42968877828315266,
+      "available_aux_rows": 1
+    },
+    "unstable/coord1/R1.0/delay0/rho0.0": {
+      "P3": {
+        "xi": [
+          -0.39355386453824354,
+          -0.22919509899039264
+        ],
+        "energy": 5.549579699376851,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.25498847615889414,
+        "theta": 0.527357543976422,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4299922027460962,
+      "available_aux_rows": 1
+    },
+    "unstable/coord1/R1.0/delay0/rho0.5": {
+      "P3": {
+        "xi": [
+          -0.39234401927312823,
+          -0.23109499247843798
+        ],
+        "energy": 5.549929434974592,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.2546441983405934,
+        "theta": 0.532300260898174,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4294601634268746,
+      "available_aux_rows": 1
+    },
+    "unstable/coord1/R1.0/delay1/rho0.0": {
+      "P3": {
+        "xi": [
+          -0.39355386453824354,
+          -0.22919509899039264
+        ],
+        "energy": 5.549579699376851,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.25498847615889414,
+        "theta": 0.527357543976422,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4299922027460962,
+      "available_aux_rows": 1
+    },
+    "unstable/coord1/R1.0/delay1/rho0.5": {
+      "P3": {
+        "xi": [
+          -0.39234401927312823,
+          -0.23109499247843798
+        ],
+        "energy": 5.549929434974592,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.2546441983405934,
+        "theta": 0.532300260898174,
+        "candidate_count": 14,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.4294601634268746,
+      "available_aux_rows": 1
+    },
+    "stable/coord0/R0.25/delay0/rho0.0": {
+      "P3": {
+        "xi": [
+          -1.1620205147625988,
+          0.20070072535258524
+        ],
+        "energy": 3.7044280752165104,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.5019894710652125,
+        "theta": 2.970562979775281,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9175724781804862,
+      "available_aux_rows": 1
+    },
+    "stable/coord0/R0.25/delay0/rho0.5": {
+      "P3": {
+        "xi": [
+          -1.1625855975854997,
+          0.1968882156946096
+        ],
+        "energy": 3.7048695536430203,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.49961980478249,
+        "theta": 2.9738306739045237,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9160588471655794,
+      "available_aux_rows": 1
+    },
+    "stable/coord0/R0.25/delay1/rho0.0": {
+      "P3": {
+        "xi": [
+          -1.1620205147625988,
+          0.20070072535258524
+        ],
+        "energy": 3.7044280752165104,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.5019894710652125,
+        "theta": 2.970562979775281,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9175724781804862,
+      "available_aux_rows": 1
+    },
+    "stable/coord0/R0.25/delay1/rho0.5": {
+      "P3": {
+        "xi": [
+          -1.1625855975854997,
+          0.1968882156946096
+        ],
+        "energy": 3.7048695536430203,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.49961980478249,
+        "theta": 2.9738306739045237,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9160588471655794,
+      "available_aux_rows": 1
+    },
+    "stable/coord0/R0.5/delay0/rho0.0": {
+      "P3": {
+        "xi": [
+          -1.1625828539828318,
+          0.1969069104525204
+        ],
+        "energy": 3.704867206207365,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.4996315260373894,
+        "theta": 2.973814653400918,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9160663763093874,
+      "available_aux_rows": 1
+    },
+    "stable/coord0/R0.5/delay0/rho0.5": {
+      "P3": {
+        "xi": [
+          -1.1631277808276106,
+          0.19315715184137264
+        ],
+        "energy": 3.7053740377254454,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.4972601193395109,
+        "theta": 2.977027483390196,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9145345218677156,
+      "available_aux_rows": 1
+    },
+    "stable/coord0/R0.5/delay1/rho0.0": {
+      "P3": {
+        "xi": [
+          -1.1625828539828318,
+          0.1969069104525204
+        ],
+        "energy": 3.704867206207365,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.4996315260373894,
+        "theta": 2.973814653400918,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9160663763093874,
+      "available_aux_rows": 1
+    },
+    "stable/coord0/R0.5/delay1/rho0.5": {
+      "P3": {
+        "xi": [
+          -1.1631277808276106,
+          0.19315715184137264
+        ],
+        "energy": 3.7053740377254454,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.4972601193395109,
+        "theta": 2.977027483390196,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9145345218677156,
+      "available_aux_rows": 1
+    },
+    "stable/coord0/R1.0/delay0/rho0.0": {
+      "P3": {
+        "xi": [
+          -1.1629405428474453,
+          0.19445399099195515
+        ],
+        "energy": 3.7051905724426053,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.4980849210090964,
+        "theta": 2.9759164592407914,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.915069277789911,
+      "available_aux_rows": 1
+    },
+    "stable/coord0/R1.0/delay0/rho0.5": {
+      "P3": {
+        "xi": [
+          -1.1633386053837007,
+          0.1916861149547493
+        ],
+        "energy": 3.705592608834264,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.4963184885713196,
+        "theta": 2.978287593163602,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9139214552204015,
+      "available_aux_rows": 1
+    },
+    "stable/coord0/R1.0/delay1/rho0.0": {
+      "P3": {
+        "xi": [
+          -1.1629405428474453,
+          0.19445399099195515
+        ],
+        "energy": 3.7051905724426053,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.4980849210090964,
+        "theta": 2.9759164592407914,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.915069277789911,
+      "available_aux_rows": 1
+    },
+    "stable/coord0/R1.0/delay1/rho0.5": {
+      "P3": {
+        "xi": [
+          -1.1633386053837007,
+          0.1916861149547493
+        ],
+        "energy": 3.705592608834264,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.4963184885713196,
+        "theta": 2.978287593163602,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9139214552204015,
+      "available_aux_rows": 1
+    },
+    "stable/coord1/R0.25/delay0/rho0.0": {
+      "P3": {
+        "xi": [
+          -1.164089434870059,
+          0.18634990196512435
+        ],
+        "energy": 3.706478706549043,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.4963412339304653,
+        "theta": 2.982857324436466,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9139882887257048,
+      "available_aux_rows": 1
+    },
+    "stable/coord1/R0.25/delay0/rho0.5": {
+      "P3": {
+        "xi": [
+          -1.1637541152541375,
+          0.18875226219428604
+        ],
+        "energy": 3.7060617082435754,
+        "expected_peak_damage": 0.10000000000020007,
+        "Pd": 0.4962654305655675,
+        "theta": 2.9808002916078973,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9139131483549704,
+      "available_aux_rows": 1
+    },
+    "stable/coord1/R0.25/delay1/rho0.0": {
+      "P3": {
+        "xi": [
+          -1.164089434870059,
+          0.18634990196512435
+        ],
+        "energy": 3.706478706549043,
+        "expected_peak_damage": 0.10000000000020001,
+        "Pd": 0.4963412339304653,
+        "theta": 2.982857324436466,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9139882887257048,
+      "available_aux_rows": 1
+    },
+    "stable/coord1/R0.25/delay1/rho0.5": {
+      "P3": {
+        "xi": [
+          -1.1637541152541375,
+          0.18875226219428604
+        ],
+        "energy": 3.7060617082435754,
+        "expected_peak_damage": 0.10000000000020007,
+        "Pd": 0.4962654305655675,
+        "theta": 2.9808002916078973,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9139131483549704,
+      "available_aux_rows": 1
+    },
+    "stable/coord1/R0.5/delay0/rho0.0": {
+      "P3": {
+        "xi": [
+          -1.163795379408958,
+          0.1884583320780459
+        ],
+        "energy": 3.7061111394262287,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.49627470858718425,
+        "theta": 2.9810519932437787,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9139222214345222,
+      "available_aux_rows": 1
+    },
+    "stable/coord1/R0.5/delay0/rho0.5": {
+      "P3": {
+        "xi": [
+          -1.1634755965985286,
+          0.19072398107705335
+        ],
+        "energy": 3.7057415775574634,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.4962031674719612,
+        "theta": 2.9791116827696675,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.91385312901298,
+      "available_aux_rows": 1
+    },
+    "stable/coord1/R0.5/delay1/rho0.0": {
+      "P3": {
+        "xi": [
+          -1.163795379408958,
+          0.1884583320780459
+        ],
+        "energy": 3.7061111394262287,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.49627470858718425,
+        "theta": 2.9810519932437787,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9139222214345222,
+      "available_aux_rows": 1
+    },
+    "stable/coord1/R0.5/delay1/rho0.5": {
+      "P3": {
+        "xi": [
+          -1.1634755965985286,
+          0.19072398107705335
+        ],
+        "energy": 3.7057415775574634,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.4962031674719612,
+        "theta": 2.9791116827696675,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.91385312901298,
+      "available_aux_rows": 1
+    },
+    "stable/coord1/R1.0/delay0/rho0.0": {
+      "P3": {
+        "xi": [
+          -1.1636038725267808,
+          0.18981849885071264
+        ],
+        "energy": 3.705886115604482,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.49623176627832283,
+        "theta": 2.9798871864464784,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9138805111572235,
+      "available_aux_rows": 1
+    },
+    "stable/coord1/R1.0/delay0/rho0.5": {
+      "P3": {
+        "xi": [
+          -1.1633773878299727,
+          0.19141423919729567
+        ],
+        "energy": 3.7056342219745466,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.49618136010315267,
+        "theta": 2.9785204679064927,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9138324582129019,
+      "available_aux_rows": 1
+    },
+    "stable/coord1/R1.0/delay1/rho0.0": {
+      "P3": {
+        "xi": [
+          -1.1636038725267808,
+          0.18981849885071264
+        ],
+        "energy": 3.705886115604482,
+        "expected_peak_damage": 0.10000000000020004,
+        "Pd": 0.49623176627832283,
+        "theta": 2.9798871864464784,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9138805111572235,
+      "available_aux_rows": 1
+    },
+    "stable/coord1/R1.0/delay1/rho0.5": {
+      "P3": {
+        "xi": [
+          -1.1633773878299727,
+          0.19141423919729567
+        ],
+        "energy": 3.7056342219745466,
+        "expected_peak_damage": 0.10000000000020003,
+        "Pd": 0.49618136010315267,
+        "theta": 2.9785204679064927,
+        "candidate_count": 6,
+        "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+      },
+      "Pd_at_P1": 0.9138324582129019,
+      "available_aux_rows": 1
+    }
+  },
+  "Gaussian_secret_nodes": 128,
+  "secret_average_is_diagnostic_not_certified": true,
+  "new_physical_noise_samples": 0,
+  "no_new_adaptive_or_online_sampling_design": true
+}

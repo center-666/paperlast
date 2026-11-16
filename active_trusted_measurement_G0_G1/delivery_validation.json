@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-16",
+  "baseline": "28c363343b2545a65b4abee915cff04a17fbad80",
+  "protected_prior_inputs": 742,
+  "changed_prior_research_files": [],
+  "authorized_library_update": {
+    "before_sha256": "52a8a7b2be7fa00da3557264808c59d55f18080598de00240b3c8ef6f812a5ba",
+    "after_sha256": "1161866dee2c93d2dc0f6b6d94cf1c39ee09a6d9c5e6dc4c1a9997664c6a8d95",
+    "before_records": 193,
+    "after_records": 194,
+    "before_local_PDF": 138,
+    "after_local_PDF": 140,
+    "unchanged_full_theses": 46,
+    "new_record_ids": [
+      "GMA01"
+    ],
+    "attached_existing_id": "FPN26",
+    "updated_note_ids": [
+      "INTRO06",
+      "FPN02",
+      "FPN06",
+      "FPN10",
+      "FPN19",
+      "FPN26",
+      "FPN30"
+    ],
+    "unchanged_citation_keys": true,
+    "parallel_library_created": false,
+    "fulltext_still_missing": [
+      "FPN30"
+    ],
+    "new_PDFs": [
+      {
+        "id": "FPN26",
+        "file": "02_期刊与会议论文/FPN26_2022_Khazraei_IntermittentAuthentication_author.pdf",
+        "sha256": "de19e3b3f2a847470d9837ebe3b3ea313d4582f5687eff02f8ff25b10d936503"
+      },
+      {
+        "id": "GMA01",
+        "file": "02_期刊与会议论文/GMA01_2009_JoshiBoyd_SensorSelection.pdf",
+        "sha256": "6f555645e8dbc6e9c8feb2c3d66aca410025d94b0f66a9eb678616793f5cdcfb"
+      }
+    ]
+  },
+  "protected_formal_sources": 17,
+  "archive_sources_and_zip_members": 14,
+  "stage_TeX_unchanged": 7,
+  "stage_PDF_unchanged": true,
+  "all_accepted_reference_manifest_files_unchanged": true,
+  "registration_sha256": "c1d1cf042b5c9113a131cb23ccb7fb73c3f074354aaa5c8e78cdc8b47e224ff8",
+  "exact_support_checks": 64,
+  "independent_numeric_checks": 700,
+  "new_physical_noise_samples": 0,
+  "second_paper_writes": 0,
+  "new_G2_or_algorithm": false,
+  "large_50node_MC": false,
+  "Gaussian_unconditional_integral_certified": false,
+  "global_pre_alarm_risk_certified": false,
+  "missing_fulltext": [
+    "FPN30"
+  ],
+  "reports": [
+    "01_量测来源与权限.md",
+    "02_联合隐蔽性充要条件.md",
+    "03_可信量测噪声与检测功效.md",
+    "04_标准联合检测强基线.md",
+    "05_最坏攻击方向与资源约束.md",
+    "06_直接近邻理论排重.md",
+    "07_G0G1研究决定.md"
+  ],
+  "broken_links": [],
+  "decision": "C"
+}

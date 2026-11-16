@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-16",
+  "retrieval": [
+    {
+      "id": "FPN26",
+      "file": "02_期刊与会议论文/FPN26_2022_Khazraei_IntermittentAuthentication_author.pdf",
+      "sha256": "de19e3b3f2a847470d9837ebe3b3ea313d4582f5687eff02f8ff25b10d936503",
+      "pages": 12,
+      "url": "https://cpsl.pratt.duke.edu/sites/cpsl.pratt.duke.edu/files/docs/khazraei_aut21.pdf",
+      "acquired": true
+    },
+    {
+      "id": "GMA01",
+      "file": "02_期刊与会议论文/GMA01_2009_JoshiBoyd_SensorSelection.pdf",
+      "sha256": "6f555645e8dbc6e9c8feb2c3d66aca410025d94b0f66a9eb678616793f5cdcfb",
+      "pages": 12,
+      "url": "https://web.stanford.edu/~boyd/papers/pdf/sensor_selection.pdf",
+      "acquired": true
+    },
+    {
+      "id": "FPN30",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/3f20d522-08da-4945-b0ec-5f771e9ab910-MECA.pdf?abstractid=5234353&mirid=1",
+      "acquired": false,
+      "error": "Command '['C:/Windows/System32/curl.exe', '--fail', '--location', '--silent', '--show-error', '--max-time', '25', '--proxy', 'http://127.0.0.1:7890', 'https://papers.ssrn.com/sol3/Delivery.cfm/3f20d522-08da-4945-b0ec-5f771e9ab910-MECA.pdf?abstractid="
+    }
+  ],
+  "existing_sources": {
+    "INTRO06": {
+      "file": "02_期刊与会议论文/INTRO06_2023_Paper_Zhou2023_DistributedWatermark.pdf",
+      "sha256": "97d2a8e5acf8d7d6795be8249b2dbdc12240730bd22ec7a993f704d0173e597d",
+      "selected_PDF_pages": [
+        2,
+        4,
+        5,
+        6
+      ],
+      "full_proof_audit": false
+    },
+    "FPN02": {
+      "file": "02_期刊与会议论文/FPN02_2024_Paper_Ding2024_PeriodicEncoding.pdf",
+      "sha256": "2e6fdc61646a2f5856e0a3865ad75b18538309e50683251054c3b73889208f45",
+      "selected_PDF_pages": [
+        7,
+        8,
+        9
+      ],
+      "full_proof_audit": false
+    },
+    "FPN06": {
+      "file": "02_期刊与会议论文/FPN06_2026_Paper_Huang2026_PartialChannelCoding.pdf",
+      "sha256": "ea19df8af9c0ac6a0df8f98df9413d4af31d843aa403b1ac0ca8d7e989dc6183",
+      "selected_PDF_pages": [
+        4,
+        9,
+        12,
+        13
+      ],
+      "full_proof_audit": false
+    },
+    "FPN10": {
+      "file": "02_期刊与会议论文/FPN10_formal_received_20261115.pdf",
+      "sha256": "17c1a14e1c3fb83b3872b2c3074cc60bf2ce2e5a76121f1cf5a88e1b5d5b2525",
+      "selected_PDF_pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "full_proof_audit": false
+    },
+    "FPN19": {
+      "file": "02_期刊与会议论文/FPN19_formal_2026.pdf",
+      "sha256": "1a6357421ee9eac8c727c75889bdc961d508d018f7aea4c50034fb69655b9884",
+      "selected_PDF_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "full_proof_audit": false
+    },
+    "FPN26": {
+      "id": "FPN26",
+      "file": "02_期刊与会议论文/FPN26_2022_Khazraei_IntermittentAuthentication_author.pdf",
+      "sha256": "de19e3b3f2a847470d9837ebe3b3ea313d4582f5687eff02f8ff25b10d936503",
+      "pages": 12,
+      "url": "https://cpsl.pratt.duke.edu/sites/cpsl.pratt.duke.edu/files/docs/khazraei_aut21.pdf",
+      "acquired": true
+    },
+    "GMA01": {
+      "id": "GMA01",
+      "file": "02_期刊与会议论文/GMA01_2009_JoshiBoyd_SensorSelection.pdf",
+      "sha256": "6f555645e8dbc6e9c8feb2c3d66aca410025d94b0f66a9eb678616793f5cdcfb",
+      "pages": 12,
+      "url": "https://web.stanford.edu/~boyd/papers/pdf/sensor_selection.pdf",
+      "acquired": true
+    }
+  },
+  "missing_fulltext_ids": [
+    "FPN30"
+  ],
+  "one_unique_library": true
+}

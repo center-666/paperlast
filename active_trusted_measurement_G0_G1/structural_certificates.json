@@ -1,0 +1,1216 @@
+{
+  "date": "2026-11-16",
+  "models": {
+    "unstable": {
+      "full_window": {
+        "none": {
+          "rank_attack": 2,
+          "rank_residual": 0,
+          "kernel_condition": false,
+          "all_effective_directions_visible": false,
+          "invisible_initial_basis": [
+            "Matrix([[1], [0]])",
+            "Matrix([[0], [1]])"
+          ],
+          "left_null_rows": 8
+        },
+        "local_trusted": {
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        "local_plus_other": {
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 28
+        },
+        "trusted_repeated_Hj": {
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        "coordinate1_(0,)": {
+          "rank_attack": 2,
+          "rank_residual": 1,
+          "kernel_condition": false,
+          "all_effective_directions_visible": false,
+          "invisible_initial_basis": [
+            "Matrix([[0], [1]])"
+          ],
+          "left_null_rows": 9
+        },
+        "coordinate1_(4,)": {
+          "rank_attack": 2,
+          "rank_residual": 1,
+          "kernel_condition": false,
+          "all_effective_directions_visible": false,
+          "invisible_initial_basis": [
+            "Matrix([[-24174435/136392406], [1]])"
+          ],
+          "left_null_rows": 9
+        },
+        "coordinate1_(0, 4)": {
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 10
+        },
+        "coordinate2_(0,)": {
+          "rank_attack": 2,
+          "rank_residual": 1,
+          "kernel_condition": false,
+          "all_effective_directions_visible": false,
+          "invisible_initial_basis": [
+            "Matrix([[1], [0]])"
+          ],
+          "left_null_rows": 9
+        },
+        "coordinate2_(4,)": {
+          "rank_attack": 2,
+          "rank_residual": 1,
+          "kernel_condition": false,
+          "all_effective_directions_visible": false,
+          "invisible_initial_basis": [
+            "Matrix([[-121887745/4834887], [1]])"
+          ],
+          "left_null_rows": 9
+        },
+        "coordinate2_(0, 4)": {
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 10
+        }
+      },
+      "truncated_patterns_with_trusted_local": [
+        {
+          "mask": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rank_attack": 0,
+          "rank_residual": 0,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [
+            "Matrix([[1], [0]])",
+            "Matrix([[0], [1]])"
+          ],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        }
+      ],
+      "original_Hj_rank": 2,
+      "trusted_current_Hi_rank": 2,
+      "stop_tail_certificate": {
+        "F_exact_decimal_inputs": "Matrix([[36277930349325823683/312500000000000000000, 1185299709235598247/250000000000000000000], [245228657178188131/625000000000000000000, 49335619547174791403/500000000000000000000]])",
+        "F_frobenius_squared": "145221186383723889781762075454827319188997/6250000000000000000000000000000000000000000",
+        "exact_less_than_1_over_25": true,
+        "consequence": "after injection stops, ||b_stop+r||<=5**(-r)||b_stop|| for all integer r>=0; all-accept fixed gains only"
+      }
+    },
+    "stable": {
+      "full_window": {
+        "none": {
+          "rank_attack": 2,
+          "rank_residual": 0,
+          "kernel_condition": false,
+          "all_effective_directions_visible": false,
+          "invisible_initial_basis": [
+            "Matrix([[1], [0]])",
+            "Matrix([[0], [1]])"
+          ],
+          "left_null_rows": 8
+        },
+        "local_trusted": {
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        "local_plus_other": {
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 28
+        },
+        "trusted_repeated_Hj": {
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        "coordinate1_(0,)": {
+          "rank_attack": 2,
+          "rank_residual": 1,
+          "kernel_condition": false,
+          "all_effective_directions_visible": false,
+          "invisible_initial_basis": [
+            "Matrix([[0], [1]])"
+          ],
+          "left_null_rows": 9
+        },
+        "coordinate1_(4,)": {
+          "rank_attack": 2,
+          "rank_residual": 1,
+          "kernel_condition": false,
+          "all_effective_directions_visible": false,
+          "invisible_initial_basis": [
+            "Matrix([[-493340/1646741], [1]])"
+          ],
+          "left_null_rows": 9
+        },
+        "coordinate1_(0, 4)": {
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 10
+        },
+        "coordinate2_(0,)": {
+          "rank_attack": 2,
+          "rank_residual": 1,
+          "kernel_condition": false,
+          "all_effective_directions_visible": false,
+          "invisible_initial_basis": [
+            "Matrix([[1], [0]])"
+          ],
+          "left_null_rows": 9
+        },
+        "coordinate2_(4,)": {
+          "rank_attack": 2,
+          "rank_residual": 1,
+          "kernel_condition": false,
+          "all_effective_directions_visible": false,
+          "invisible_initial_basis": [
+            "Matrix([[-2633421/98668], [1]])"
+          ],
+          "left_null_rows": 9
+        },
+        "coordinate2_(0, 4)": {
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 10
+        }
+      },
+      "truncated_patterns_with_trusted_local": [
+        {
+          "mask": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rank_attack": 0,
+          "rank_residual": 0,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [
+            "Matrix([[1], [0]])",
+            "Matrix([[0], [1]])"
+          ],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        },
+        {
+          "mask": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "rank_attack": 2,
+          "rank_residual": 2,
+          "kernel_condition": true,
+          "all_effective_directions_visible": true,
+          "invisible_initial_basis": [],
+          "left_null_rows": 18
+        }
+      ],
+      "original_Hj_rank": 2,
+      "trusted_current_Hi_rank": 2,
+      "stop_tail_certificate": {
+        "F_exact_decimal_inputs": "Matrix([[2265063028144359077861/25000000000000000000000, 12941471292676643999/2500000000000000000000], [375531413349503573/625000000000000000000, 867511654379502576073/10000000000000000000000]])",
+        "F_frobenius_squared": "39404349072251620732516797059056999433180509/2500000000000000000000000000000000000000000000",
+        "exact_less_than_1_over_25": true,
+        "consequence": "after injection stops, ||b_stop+r||<=5**(-r)||b_stop|| for all integer r>=0; all-accept fixed gains only"
+      }
+    }
+  },
+  "restricted_subspace_counterexample": {
+    "Oj": "Matrix([[1, 0]])",
+    "Oc": "Matrix([[1, -1]])",
+    "R": "Matrix([[1], [0]])",
+    "v": "Matrix([[1], [1]])",
+    "naive_restricted_kernel_condition": true,
+    "effective_allowed_attack_is_invisible": true
+  },
+  "boundary_nonnecessity_counterexample": {
+    "rank_attack": 1,
+    "rank_residual": 1,
+    "kernel_condition": false,
+    "all_effective_directions_visible": true,
+    "invisible_initial_basis": [],
+    "left_null_rows": 2
+  },
+  "scalar_trusted_same_direction": {
+    "Oj": "ones(3,1)",
+    "Oc": "ones(3,1)",
+    "rank_joint_state": 1,
+    "rank_attack_residual": 1,
+    "interpretation": "independent trusted repeat measures same state direction but exposes uncompensated tampering"
+  },
+  "deterministic_duplicate": {
+    "A": "1",
+    "H": "1",
+    "T": "2",
+    "corrupted_pair": "[y+a;2(y+a)]",
+    "joint_residual_attack": "0",
+    "protected_pre_tamper_copy": "[y+a;y]",
+    "protected_difference": "a",
+    "interpretation": "the latter adds a trusted channel, not independent physical sensing; noise is singular and must not be falsely pseudowhitened away"
+  },
+  "all_checks_exact": true,
+  "new_physical_samples": 0
+}

@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-16",
+  "errors": {
+    "GLS_info": 1.2434497875801753e-14,
+    "shared_noise": 5.440092820663267e-15,
+    "normal_covariance": 4.163336342344337e-17,
+    "template_cover": 7.207795503434553e-16
+  },
+  "independent_checks": 700,
+  "P3_crosschecks": [
+    {
+      "model": "unstable",
+      "label": "B0",
+      "analytic_candidate_Pd": 0.049999999999999975,
+      "independent721_ray_min": 0.049999999999999975
+    },
+    {
+      "model": "unstable",
+      "label": "B1",
+      "analytic_candidate_Pd": 0.25463222275693037,
+      "independent721_ray_min": 0.25463230755580685
+    },
+    {
+      "model": "unstable",
+      "label": "B3_coord0",
+      "analytic_candidate_Pd": 0.2579908304417164,
+      "independent721_ray_min": 0.25799130454154057
+    },
+    {
+      "model": "unstable",
+      "label": "B3_coord1",
+      "analytic_candidate_Pd": 0.25528422282947516,
+      "independent721_ray_min": 0.25528422881635754
+    },
+    {
+      "model": "stable",
+      "label": "B0",
+      "analytic_candidate_Pd": 0.049999999999999975,
+      "independent721_ray_min": 0.049999999999999975
+    },
+    {
+      "model": "stable",
+      "label": "B1",
+      "analytic_candidate_Pd": 0.4961795985768906,
+      "independent721_ray_min": 0.49618059509450807
+    },
+    {
+      "model": "stable",
+      "label": "B3_coord0",
+      "analytic_candidate_Pd": 0.4996315260373894,
+      "independent721_ray_min": 0.49963279154673107
+    },
+    {
+      "model": "stable",
+      "label": "B3_coord1",
+      "analytic_candidate_Pd": 0.49627470858718425,
+      "independent721_ray_min": 0.49627483793149874
+    }
+  ],
+  "full_window_blindness_and_counterexamples_exact": true,
+  "unknown_onset_template_cover_verified": true,
+  "new_physical_samples": 0,
+  "probability_values_not_interval_certified": true,
+  "new_G2_algorithm": false
+}

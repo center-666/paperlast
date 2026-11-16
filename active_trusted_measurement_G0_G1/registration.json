@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-16",
+  "baseline": "28c363343b2545a65b4abee915cff04a17fbad80",
+  "reference": "0ea9c7d",
+  "registered_utc": "2026-11-16T14:17:27.851175+00:00",
+  "models": [
+    "unstable",
+    "stable"
+  ],
+  "receiver": 1,
+  "attacked_sender": 0,
+  "other_healthy_neighbor": 2,
+  "T": 32,
+  "s": 4,
+  "L": 10,
+  "E": 10.0,
+  "D": 0.1,
+  "primary_aux_variance": 0.5,
+  "variance_probes": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "cross_noise_correlation_probes": [
+    0.0,
+    0.5
+  ],
+  "delay_probes": [
+    0,
+    1
+  ],
+  "auxiliary_candidates": [
+    "C=[1,0], conditional position-like channel",
+    "C=[0,1], conditional velocity-like channel"
+  ],
+  "physical_limit": "frozen x1/x2 have no supplied position/velocity units or actual hardware specification; candidates are explicitly additional local hardware hypotheses, not existing capability",
+  "primary_schedule": "one auxiliary scalar each5 steps, two per public10-step cycle; fixed phase0",
+  "B4": "standard optimal PREDETERMINED two-per10 minimax five-step coverage baseline; establish by maximum-gap proof and evaluate the five periodic phases; no adaptive schedule or new schedule search",
+  "batch": {
+    "times": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "FA": 0.05,
+    "meaning": "one complete first five-packet batch; separate from online event"
+  },
+  "online": {
+    "window_ends": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "FA": 0.05,
+    "templates": "5 active suffixes +4 proper active prefixes, L10>=window5, all nuisance initial states unrestricted",
+    "evaluation_attack_starts": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "interpretation": "five fixed start phases; detector does not receive true start; finite 28-window scan, not infinite operation",
+    "event_probability": "rigorous Gaussian marginal union/Frechet bounds with exact joint covariance constructed; no independent-window approximation or Monte Carlo point estimates"
+  },
+  "profiles": [
+    "P1 actual expected peak damage",
+    "P3 least batch power at expected-peak damage>=.1",
+    "finite searched maximum pre-alarm risk upper/lower bounds"
+  ],
+  "attack_angle_grid": 181,
+  "Gaussian_secret_bank": "reuse first128 existing paths per model; conditional noise power exact, secret averaging diagnostic only; no new physical noise samples",
+  "gains": "unchanged reference common-G, no admission or isolation in G0/G1; detector-only danger measured on fixed all-accept trajectory",
+  "normal_MSE": "identical in all five baselines because auxiliary never enters state update and no gating is introduced",
+  "B0": "original target single-source temporal parity, omnibus chi-square",
+  "B1": "standard joint Gaussian trajectory GLRT using local1 and raw neighbors0/2",
+  "B2": "B1 plus original .5I+beta betaT coded-channel watermark",
+  "B3": "B1 plus periodic trusted auxiliary",
+  "counterexamples": [
+    "noninjective Oj restricted-xi projection condition is insufficient",
+    "mixed finite-support window condition not necessary",
+    "trusted repeated direction adds independent integrity evidence",
+    "duplicate transformed compromised measurement adds no new information"
+  ],
+  "input_hashes": {
+    "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\common_g_reference_revision_20261115\\common_g_reference.py": "95b667539e8d1341ae142ca4a1f9586b10cd85e9f4e1e9c62154bac0f789e8f4",
+    "E:\\硕士毕业论文\\研究规划\\第一篇小论文_重新投稿修订_20261102\\common_g_reference_revision_20261115\\inputs\\five_node_aggregate_model.json": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1"
+  },
+  "G2_started": false,
+  "new_physical_samples": 0,
+  "new_watermark_or_detector": false
+}

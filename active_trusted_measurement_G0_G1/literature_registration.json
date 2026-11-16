@@ -1,0 +1,39 @@
+{
+  "before_sha256": "52a8a7b2be7fa00da3557264808c59d55f18080598de00240b3c8ef6f812a5ba",
+  "after_sha256": "1161866dee2c93d2dc0f6b6d94cf1c39ee09a6d9c5e6dc4c1a9997664c6a8d95",
+  "before_records": 193,
+  "after_records": 194,
+  "before_local_PDF": 138,
+  "after_local_PDF": 140,
+  "unchanged_full_theses": 46,
+  "new_record_ids": [
+    "GMA01"
+  ],
+  "attached_existing_id": "FPN26",
+  "updated_note_ids": [
+    "INTRO06",
+    "FPN02",
+    "FPN06",
+    "FPN10",
+    "FPN19",
+    "FPN26",
+    "FPN30"
+  ],
+  "unchanged_citation_keys": true,
+  "parallel_library_created": false,
+  "fulltext_still_missing": [
+    "FPN30"
+  ],
+  "new_PDFs": [
+    {
+      "id": "FPN26",
+      "file": "02_期刊与会议论文/FPN26_2022_Khazraei_IntermittentAuthentication_author.pdf",
+      "sha256": "de19e3b3f2a847470d9837ebe3b3ea313d4582f5687eff02f8ff25b10d936503"
+    },
+    {
+      "id": "GMA01",
+      "file": "02_期刊与会议论文/GMA01_2009_JoshiBoyd_SensorSelection.pdf",
+      "sha256": "6f555645e8dbc6e9c8feb2c3d66aca410025d94b0f66a9eb678616793f5cdcfb"
+    }
+  ]
+}

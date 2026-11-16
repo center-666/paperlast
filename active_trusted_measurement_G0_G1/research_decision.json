@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-16",
+  "decision": "C",
+  "G2_started": false,
+  "reports": 7,
+  "structural_new_capability_over_B1": false,
+  "physical_hardware_verified": false,
+  "worst_pre_alarm_risk_improvement_proved": false,
+  "new_physical_noise_samples": 0,
+  "missing_fulltext": [
+    "FPN30"
+  ],
+  "finite_noise_gain": "small and explained by standard Gaussian information/fixed sampling"
+}

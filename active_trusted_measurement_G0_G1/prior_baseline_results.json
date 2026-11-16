@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-16",
+  "audit_supplement": true,
+  "purpose": "do not call five-packet nuisance-invariant GLRT globally optimal when the known Gaussian prior and raw history are available",
+  "information": "local1, raw neighbors0/2 at times0..11; known x0~N(0,I); auxiliary periodic times0,5,10 when included",
+  "batch_FA": 0.05,
+  "attack_start": 7,
+  "known_start_single_batch_only": true,
+  "models": {
+    "unstable": {
+      "schemes": {
+        "B1_prior_history": {
+          "P3": {
+            "xi": [
+              -0.3918784859527705,
+              -0.23182444782912173
+            ],
+            "energy": 5.550079252548326,
+            "expected_peak_damage": 0.10000000000020001,
+            "Pd": 0.2557255212409446,
+            "theta": 0.5341995979581782,
+            "candidate_count": 14,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "Pd_at_P1": 0.4313215505996486,
+          "min_expected_ncp_E10": 4.1703944777666
+        },
+        "B3_prior_history_coord0": {
+          "P3": {
+            "xi": [
+              -0.3883858694251444,
+              -0.23726903029944665
+            ],
+            "energy": 5.551470751785856,
+            "expected_peak_damage": 0.10000000000019998,
+            "Pd": 0.2590788679041746,
+            "theta": 0.5484033726461424,
+            "candidate_count": 14,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "Pd_at_P1": 0.4372146036373395,
+          "min_expected_ncp_E10": 4.23132466555722
+        },
+        "B3_prior_history_coord1": {
+          "P3": {
+            "xi": [
+              -0.394163231079973,
+              -0.22823588978380957
+            ],
+            "energy": 5.5494253098260256,
+            "expected_peak_damage": 0.10000000000020003,
+            "Pd": 0.2563811412520671,
+            "theta": 0.5248644101366544,
+            "candidate_count": 14,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "Pd_at_P1": 0.4323339278522857,
+          "min_expected_ncp_E10": 4.183570456938245
+        },
+        "B2_prior_history": {
+          "P3": {
+            "xi": [
+              0.300745320316999,
+              0.1994612327132475
+            ],
+            "energy": 3.49682981302938,
+            "expected_peak_damage": 0.10000000000020001,
+            "Pd": 0.2598256495845032,
+            "theta": 0.5856147801078415,
+            "candidate_count": 182,
+            "method": "181-angle search plus local refinement, finite old-secret average; not global probability certificate"
+          },
+          "Pd_at_P1": 0.5462443459029465,
+          "min_expected_ncp_E10": 7.140688544516445
+        }
+      },
+      "registered_B1_P3": 0.25463222275693037,
+      "min_eigenvalue_Gprior_minus_Gregistered": 0.04249034973505489
+    },
+    "stable": {
+      "schemes": {
+        "B1_prior_history": {
+          "P3": {
+            "xi": [
+              -1.1632601331901051,
+              0.19223501423018458
+            ],
+            "energy": 3.705509751579816,
+            "expected_peak_damage": 0.1000000000002,
+            "Pd": 0.5034809380646033,
+            "theta": 2.9778174176216052,
+            "candidate_count": 6,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "Pd_at_P1": 0.918582485067189,
+          "min_expected_ncp_E10": 11.22820431928502
+        },
+        "B3_prior_history_coord0": {
+          "P3": {
+            "xi": [
+              -1.1624658269294512,
+              0.19770262744421851
+            ],
+            "energy": 3.7047689588067176,
+            "expected_peak_damage": 0.10000000000020005,
+            "Pd": 0.506903255794445,
+            "theta": 2.9731327375667824,
+            "candidate_count": 6,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "Pd_at_P1": 0.9207066216232377,
+          "min_expected_ncp_E10": 11.241569148040218
+        },
+        "B3_prior_history_coord1": {
+          "P3": {
+            "xi": [
+              -1.1636916953728411,
+              0.18919599313188007
+            ],
+            "energy": 3.70598792406275,
+            "expected_peak_damage": 0.1000000000002,
+            "Pd": 0.5035761959662912,
+            "theta": 2.980420298839706,
+            "candidate_count": 6,
+            "method": "all generalized eigenstationary directions plus energy-boundary rays for each peak-time quadratic; floating arithmetic, no interval certificate"
+          },
+          "Pd_at_P1": 0.9186693564612486,
+          "min_expected_ncp_E10": 11.317908217443321
+        },
+        "B2_prior_history": {
+          "P3": {
+            "xi": [
+              -0.8910409320271533,
+              0.11637062277424905
+            ],
+            "energy": 2.1610843979215084,
+            "expected_peak_damage": 0.10000000000020001,
+            "Pd": 0.4396125198913876,
+            "theta": 3.0117269192455276,
+            "candidate_count": 182,
+            "method": "181-angle search plus local refinement, finite old-secret average; not global probability certificate"
+          },
+          "Pd_at_P1": 0.86770749165125,
+          "min_expected_ncp_E10": 22.097950664204134
+        }
+      },
+      "registered_B1_P3": 0.4961795985768906,
+      "min_eigenvalue_Gprior_minus_Gregistered": 0.04347495740591512
+    }
+  },
+  "new_detector_or_G2": false,
+  "new_physical_samples": 0,
+  "secret_average_is_diagnostic_not_certified": true,
+  "unknown_start_online_full_history_optimality_not_claimed": true
+}
