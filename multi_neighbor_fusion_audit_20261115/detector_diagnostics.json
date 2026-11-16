@@ -1,0 +1,3145 @@
+{
+  "results": {
+    "unstable/known/j0/identity": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 40,
+          "n": 64,
+          "estimate": 0.625,
+          "Wilson95": [
+            0.502503786840045,
+            0.7333401982117536
+          ]
+        },
+        "normal_event_FA": {
+          "count": 4,
+          "n": 64,
+          "estimate": 0.0625,
+          "Wilson95": [
+            0.024571201396618017,
+            0.14997485092208662
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 46,
+          "n": 64,
+          "estimate": 0.71875,
+          "Wilson95": [
+            0.5986606971779259,
+            0.8140662766627217
+          ]
+        },
+        "first_packet_detection": {
+          "count": 0,
+          "n": 64,
+          "estimate": 0.0,
+          "Wilson95": [
+            0.0,
+            0.05662405979280534
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 13.45,
+          "sample_SE": 0.3921505467063017,
+          "n": 40
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 48,
+          "n": 64,
+          "estimate": 0.75,
+          "Wilson95": [
+            0.631837235413303,
+            0.8398507346902941
+          ]
+        },
+        "normal_event_FA": {
+          "count": 3,
+          "n": 64,
+          "estimate": 0.046875,
+          "Wilson95": [
+            0.016069016786292974,
+            0.12899653740093686
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 40,
+          "n": 64,
+          "estimate": 0.625,
+          "Wilson95": [
+            0.502503786840045,
+            0.7333401982117536
+          ]
+        },
+        "first_packet_detection": {
+          "count": 0,
+          "n": 64,
+          "estimate": 0.0,
+          "Wilson95": [
+            0.0,
+            0.05662405979280534
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 13.291666666666666,
+          "sample_SE": 0.3420297327155429,
+          "n": 48
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 13,
+          "n": 64,
+          "estimate": 0.203125,
+          "Wilson95": [
+            0.12273417819183653,
+            0.3171363573101416
+          ]
+        },
+        "normal_event_FA": {
+          "count": 3,
+          "n": 64,
+          "estimate": 0.046875,
+          "Wilson95": [
+            0.016069016786292974,
+            0.12899653740093686
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.014668680285921432,
+        "joint_focused": 0.021483268896166068,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 1.10962257196752,
+        "mean_ncp_joint": 1.468040112568729
+      }
+    },
+    "unstable/unknown/j0/identity": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 33,
+          "n": 64,
+          "estimate": 0.515625,
+          "Wilson95": [
+            0.39581601478580125,
+            0.6336644833456737
+          ]
+        },
+        "normal_event_FA": {
+          "count": 3,
+          "n": 64,
+          "estimate": 0.046875,
+          "Wilson95": [
+            0.016069016786292974,
+            0.12899653740093686
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 50,
+          "n": 64,
+          "estimate": 0.78125,
+          "Wilson95": [
+            0.6656721604337418,
+            0.8649768059328052
+          ]
+        },
+        "first_packet_detection": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 13.545454545454545,
+          "sample_SE": 0.46075306665257476,
+          "n": 33
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 42,
+          "n": 64,
+          "estimate": 0.65625,
+          "Wilson95": [
+            0.5340364020991819,
+            0.7607685792155665
+          ]
+        },
+        "normal_event_FA": {
+          "count": 4,
+          "n": 64,
+          "estimate": 0.0625,
+          "Wilson95": [
+            0.024571201396618017,
+            0.14997485092208662
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 42,
+          "n": 64,
+          "estimate": 0.65625,
+          "Wilson95": [
+            0.5340364020991819,
+            0.7607685792155665
+          ]
+        },
+        "first_packet_detection": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 13.30952380952381,
+          "sample_SE": 0.3693986940504752,
+          "n": 42
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 13,
+          "n": 64,
+          "estimate": 0.203125,
+          "Wilson95": [
+            0.12273417819183653,
+            0.3171363573101416
+          ]
+        },
+        "normal_event_FA": {
+          "count": 3,
+          "n": 64,
+          "estimate": 0.046875,
+          "Wilson95": [
+            0.016069016786292974,
+            0.12899653740093686
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.008822308557800904,
+        "joint_focused": 0.01337114200836742,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 1.10962257196752,
+        "mean_ncp_joint": 1.468040112568729
+      }
+    },
+    "unstable/known/j0/original_Gaussian": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 49,
+          "n": 64,
+          "estimate": 0.765625,
+          "Wilson95": [
+            0.6486674241743136,
+            0.8525010440607586
+          ]
+        },
+        "normal_event_FA": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 41,
+          "n": 64,
+          "estimate": 0.640625,
+          "Wilson95": [
+            0.518208506097791,
+            0.7471159770854825
+          ]
+        },
+        "first_packet_detection": {
+          "count": 4,
+          "n": 64,
+          "estimate": 0.0625,
+          "Wilson95": [
+            0.024571201396618017,
+            0.14997485092208662
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 12.387755102040817,
+          "sample_SE": 0.3732286127696755,
+          "n": 49
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 54,
+          "n": 64,
+          "estimate": 0.84375,
+          "Wilson95": [
+            0.7357193822745122,
+            0.912851576617934
+          ]
+        },
+        "normal_event_FA": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 39,
+          "n": 64,
+          "estimate": 0.609375,
+          "Wilson95": [
+            0.4869191788027247,
+            0.7194443081175993
+          ]
+        },
+        "first_packet_detection": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 12.351851851851851,
+          "sample_SE": 0.31184109560486334,
+          "n": 54
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 25,
+          "n": 64,
+          "estimate": 0.390625,
+          "Wilson95": [
+            0.2805556918824008,
+            0.5130808211972754
+          ]
+        },
+        "normal_event_FA": {
+          "count": 3,
+          "n": 64,
+          "estimate": 0.046875,
+          "Wilson95": [
+            0.016069016786292974,
+            0.12899653740093686
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.051200537696271385,
+        "joint_focused": 0.06922093671663487,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 1.940571398687878,
+        "mean_ncp_joint": 2.5646290661984468
+      }
+    },
+    "unstable/unknown/j0/original_Gaussian": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 47,
+          "n": 64,
+          "estimate": 0.734375,
+          "Wilson95": [
+            0.6151712627143486,
+            0.8270362092577739
+          ]
+        },
+        "normal_event_FA": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 47,
+          "n": 64,
+          "estimate": 0.734375,
+          "Wilson95": [
+            0.6151712627143486,
+            0.8270362092577739
+          ]
+        },
+        "first_packet_detection": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 12.872340425531915,
+          "sample_SE": 0.3241968961185626,
+          "n": 47
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 53,
+          "n": 64,
+          "estimate": 0.828125,
+          "Wilson95": [
+            0.7178678837734179,
+            0.9012225769875536
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 41,
+          "n": 64,
+          "estimate": 0.640625,
+          "Wilson95": [
+            0.518208506097791,
+            0.7471159770854825
+          ]
+        },
+        "first_packet_detection": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 12.69811320754717,
+          "sample_SE": 0.31940722679907935,
+          "n": 53
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 25,
+          "n": 64,
+          "estimate": 0.390625,
+          "Wilson95": [
+            0.2805556918824008,
+            0.5130808211972754
+          ]
+        },
+        "normal_event_FA": {
+          "count": 3,
+          "n": 64,
+          "estimate": 0.046875,
+          "Wilson95": [
+            0.016069016786292974,
+            0.12899653740093686
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.0412774262726739,
+        "joint_focused": 0.05713194184668413,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 1.940571398687878,
+        "mean_ncp_joint": 2.5646290661984468
+      }
+    },
+    "unstable/known/j2/identity": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 27,
+          "n": 64,
+          "estimate": 0.421875,
+          "Wilson95": [
+            0.30869782474345486,
+            0.5438996845991709
+          ]
+        },
+        "normal_event_FA": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 53,
+          "n": 64,
+          "estimate": 0.828125,
+          "Wilson95": [
+            0.7178678837734179,
+            0.9012225769875536
+          ]
+        },
+        "first_packet_detection": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 13.333333333333334,
+          "sample_SE": 0.47740991602628857,
+          "n": 27
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 41,
+          "n": 64,
+          "estimate": 0.640625,
+          "Wilson95": [
+            0.518208506097791,
+            0.7471159770854825
+          ]
+        },
+        "normal_event_FA": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 44,
+          "n": 64,
+          "estimate": 0.6875,
+          "Wilson95": [
+            0.5660766429725185,
+            0.7876893346051795
+          ]
+        },
+        "first_packet_detection": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 13.21951219512195,
+          "sample_SE": 0.38336156772965085,
+          "n": 41
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 6,
+          "n": 64,
+          "estimate": 0.09375,
+          "Wilson95": [
+            0.04367825258519838,
+            0.18982879599645597
+          ]
+        },
+        "normal_event_FA": {
+          "count": 3,
+          "n": 64,
+          "estimate": 0.046875,
+          "Wilson95": [
+            0.016069016786292974,
+            0.12899653740093686
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.011339808438001012,
+        "joint_focused": 0.01611654620081073,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 0.9031276440290388,
+        "mean_ncp_joint": 1.1954360116575866
+      }
+    },
+    "unstable/unknown/j2/identity": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 21,
+          "n": 64,
+          "estimate": 0.328125,
+          "Wilson95": [
+            0.22570557904469185,
+            0.45000894150908505
+          ]
+        },
+        "normal_event_FA": {
+          "count": 3,
+          "n": 64,
+          "estimate": 0.046875,
+          "Wilson95": [
+            0.016069016786292974,
+            0.12899653740093686
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 54,
+          "n": 64,
+          "estimate": 0.84375,
+          "Wilson95": [
+            0.7357193822745122,
+            0.912851576617934
+          ]
+        },
+        "first_packet_detection": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 13.0,
+          "sample_SE": 0.5648430038936652,
+          "n": 21
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 35,
+          "n": 64,
+          "estimate": 0.546875,
+          "Wilson95": [
+            0.4257359722005412,
+            0.6627055221938833
+          ]
+        },
+        "normal_event_FA": {
+          "count": 4,
+          "n": 64,
+          "estimate": 0.0625,
+          "Wilson95": [
+            0.024571201396618017,
+            0.14997485092208662
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 50,
+          "n": 64,
+          "estimate": 0.78125,
+          "Wilson95": [
+            0.6656721604337418,
+            0.8649768059328052
+          ]
+        },
+        "first_packet_detection": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 13.542857142857143,
+          "sample_SE": 0.3765005990439221,
+          "n": 35
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 6,
+          "n": 64,
+          "estimate": 0.09375,
+          "Wilson95": [
+            0.04367825258519838,
+            0.18982879599645597
+          ]
+        },
+        "normal_event_FA": {
+          "count": 3,
+          "n": 64,
+          "estimate": 0.046875,
+          "Wilson95": [
+            0.016069016786292974,
+            0.12899653740093686
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.006664199849328029,
+        "joint_focused": 0.009769425277139098,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 0.9031276440290388,
+        "mean_ncp_joint": 1.1954360116575866
+      }
+    },
+    "unstable/known/j2/original_Gaussian": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 47,
+          "n": 64,
+          "estimate": 0.734375,
+          "Wilson95": [
+            0.6151712627143486,
+            0.8270362092577739
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 43,
+          "n": 64,
+          "estimate": 0.671875,
+          "Wilson95": [
+            0.549991058490915,
+            0.7742944209553081
+          ]
+        },
+        "first_packet_detection": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 12.106382978723405,
+          "sample_SE": 0.4194993299616699,
+          "n": 47
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 51,
+          "n": 64,
+          "estimate": 0.796875,
+          "Wilson95": [
+            0.6828636426898583,
+            0.8772658218081634
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 41,
+          "n": 64,
+          "estimate": 0.640625,
+          "Wilson95": [
+            0.518208506097791,
+            0.7471159770854825
+          ]
+        },
+        "first_packet_detection": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 11.745098039215685,
+          "sample_SE": 0.38383323304289113,
+          "n": 51
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 27,
+          "n": 64,
+          "estimate": 0.421875,
+          "Wilson95": [
+            0.30869782474345486,
+            0.5438996845991709
+          ]
+        },
+        "normal_event_FA": {
+          "count": 3,
+          "n": 64,
+          "estimate": 0.046875,
+          "Wilson95": [
+            0.016069016786292974,
+            0.12899653740093686
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.045529259566532525,
+        "joint_focused": 0.06155505175517732,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 1.6708260772580588,
+        "mean_ncp_joint": 2.2070141849599763
+      }
+    },
+    "unstable/unknown/j2/original_Gaussian": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 44,
+          "n": 64,
+          "estimate": 0.6875,
+          "Wilson95": [
+            0.5660766429725185,
+            0.7876893346051795
+          ]
+        },
+        "normal_event_FA": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 45,
+          "n": 64,
+          "estimate": 0.703125,
+          "Wilson95": [
+            0.5822979889645707,
+            0.8009484867446022
+          ]
+        },
+        "first_packet_detection": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 12.090909090909092,
+          "sample_SE": 0.4396065194982816,
+          "n": 44
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 48,
+          "n": 64,
+          "estimate": 0.75,
+          "Wilson95": [
+            0.631837235413303,
+            0.8398507346902941
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 41,
+          "n": 64,
+          "estimate": 0.640625,
+          "Wilson95": [
+            0.518208506097791,
+            0.7471159770854825
+          ]
+        },
+        "first_packet_detection": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 11.895833333333334,
+          "sample_SE": 0.4106727564425972,
+          "n": 48
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 27,
+          "n": 64,
+          "estimate": 0.421875,
+          "Wilson95": [
+            0.30869782474345486,
+            0.5438996845991709
+          ]
+        },
+        "normal_event_FA": {
+          "count": 3,
+          "n": 64,
+          "estimate": 0.046875,
+          "Wilson95": [
+            0.016069016786292974,
+            0.12899653740093686
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.03653402016628915,
+        "joint_focused": 0.050631874149164716,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 1.6708260772580588,
+        "mean_ncp_joint": 2.2070141849599763
+      }
+    },
+    "stable/known/j0/identity": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 41,
+          "n": 64,
+          "estimate": 0.640625,
+          "Wilson95": [
+            0.518208506097791,
+            0.7471159770854825
+          ]
+        },
+        "normal_event_FA": {
+          "count": 0,
+          "n": 64,
+          "estimate": 0.0,
+          "Wilson95": [
+            0.0,
+            0.05662405979280534
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 53,
+          "n": 64,
+          "estimate": 0.828125,
+          "Wilson95": [
+            0.7178678837734179,
+            0.9012225769875536
+          ]
+        },
+        "first_packet_detection": {
+          "count": 11,
+          "n": 64,
+          "estimate": 0.171875,
+          "Wilson95": [
+            0.09877742301244645,
+            0.282132116226582
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.878048780487806,
+          "sample_SE": 0.3185238857513988,
+          "n": 41
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 48,
+          "n": 64,
+          "estimate": 0.75,
+          "Wilson95": [
+            0.631837235413303,
+            0.8398507346902941
+          ]
+        },
+        "normal_event_FA": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 46,
+          "n": 64,
+          "estimate": 0.71875,
+          "Wilson95": [
+            0.5986606971779259,
+            0.8140662766627217
+          ]
+        },
+        "first_packet_detection": {
+          "count": 18,
+          "n": 64,
+          "estimate": 0.28125,
+          "Wilson95": [
+            0.18593372333727837,
+            0.40133930282207403
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.4375,
+          "sample_SE": 0.23236803240176887,
+          "n": 48
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 12,
+          "n": 64,
+          "estimate": 0.1875,
+          "Wilson95": [
+            0.11064643172948806,
+            0.29974360564101526
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.019840607592506533,
+        "joint_focused": 0.030598526446800268,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 1.099007023762124,
+        "mean_ncp_joint": 1.4564172684496417
+      }
+    },
+    "stable/unknown/j0/identity": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 36,
+          "n": 64,
+          "estimate": 0.5625,
+          "Wilson95": [
+            0.4408620895699301,
+            0.6770599029559693
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 56,
+          "n": 64,
+          "estimate": 0.875,
+          "Wilson95": [
+            0.7722543817887005,
+            0.9352775733666955
+          ]
+        },
+        "first_packet_detection": {
+          "count": 8,
+          "n": 64,
+          "estimate": 0.125,
+          "Wilson95": [
+            0.06472242663330453,
+            0.22774561821129946
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 9.305555555555555,
+          "sample_SE": 0.36692511334154476,
+          "n": 36
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 48,
+          "n": 64,
+          "estimate": 0.75,
+          "Wilson95": [
+            0.631837235413303,
+            0.8398507346902941
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 53,
+          "n": 64,
+          "estimate": 0.828125,
+          "Wilson95": [
+            0.7178678837734179,
+            0.9012225769875536
+          ]
+        },
+        "first_packet_detection": {
+          "count": 11,
+          "n": 64,
+          "estimate": 0.171875,
+          "Wilson95": [
+            0.09877742301244645,
+            0.282132116226582
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 9.041666666666666,
+          "sample_SE": 0.3122191409285711,
+          "n": 48
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 12,
+          "n": 64,
+          "estimate": 0.1875,
+          "Wilson95": [
+            0.11064643172948806,
+            0.29974360564101526
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.012859996873476182,
+        "joint_focused": 0.020829214613043927,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 1.099007023762124,
+        "mean_ncp_joint": 1.4564172684496417
+      }
+    },
+    "stable/known/j0/original_Gaussian": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 45,
+          "n": 64,
+          "estimate": 0.703125,
+          "Wilson95": [
+            0.5822979889645707,
+            0.8009484867446022
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 43,
+          "n": 64,
+          "estimate": 0.671875,
+          "Wilson95": [
+            0.549991058490915,
+            0.7742944209553081
+          ]
+        },
+        "first_packet_detection": {
+          "count": 14,
+          "n": 64,
+          "estimate": 0.21875,
+          "Wilson95": [
+            0.13502319406719474,
+            0.3343278395662582
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.622222222222222,
+          "sample_SE": 0.2405567802707527,
+          "n": 45
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 50,
+          "n": 64,
+          "estimate": 0.78125,
+          "Wilson95": [
+            0.6656721604337418,
+            0.8649768059328052
+          ]
+        },
+        "normal_event_FA": {
+          "count": 3,
+          "n": 64,
+          "estimate": 0.046875,
+          "Wilson95": [
+            0.016069016786292974,
+            0.12899653740093686
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 39,
+          "n": 64,
+          "estimate": 0.609375,
+          "Wilson95": [
+            0.4869191788027247,
+            0.7194443081175993
+          ]
+        },
+        "first_packet_detection": {
+          "count": 20,
+          "n": 64,
+          "estimate": 0.3125,
+          "Wilson95": [
+            0.21231066539482046,
+            0.4339233570274815
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.48,
+          "sample_SE": 0.23077509150067052,
+          "n": 50
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 27,
+          "n": 64,
+          "estimate": 0.421875,
+          "Wilson95": [
+            0.30869782474345486,
+            0.5438996845991709
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.061576846430468214,
+        "joint_focused": 0.07961777782146791,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 2.078160309794504,
+        "mean_ncp_joint": 2.7489018132101934
+      }
+    },
+    "stable/unknown/j0/original_Gaussian": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 44,
+          "n": 64,
+          "estimate": 0.6875,
+          "Wilson95": [
+            0.5660766429725185,
+            0.7876893346051795
+          ]
+        },
+        "normal_event_FA": {
+          "count": 0,
+          "n": 64,
+          "estimate": 0.0,
+          "Wilson95": [
+            0.0,
+            0.05662405979280534
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 44,
+          "n": 64,
+          "estimate": 0.6875,
+          "Wilson95": [
+            0.5660766429725185,
+            0.7876893346051795
+          ]
+        },
+        "first_packet_detection": {
+          "count": 13,
+          "n": 64,
+          "estimate": 0.203125,
+          "Wilson95": [
+            0.12273417819183653,
+            0.3171363573101416
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.954545454545455,
+          "sample_SE": 0.2833552843735136,
+          "n": 44
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 49,
+          "n": 64,
+          "estimate": 0.765625,
+          "Wilson95": [
+            0.6486674241743136,
+            0.8525010440607586
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 41,
+          "n": 64,
+          "estimate": 0.640625,
+          "Wilson95": [
+            0.518208506097791,
+            0.7471159770854825
+          ]
+        },
+        "first_packet_detection": {
+          "count": 16,
+          "n": 64,
+          "estimate": 0.25,
+          "Wilson95": [
+            0.16014926530970577,
+            0.36816276458669694
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.551020408163266,
+          "sample_SE": 0.22599218969745,
+          "n": 49
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 27,
+          "n": 64,
+          "estimate": 0.421875,
+          "Wilson95": [
+            0.30869782474345486,
+            0.5438996845991709
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.05195829309819524,
+        "joint_focused": 0.0686003595600371,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 2.078160309794504,
+        "mean_ncp_joint": 2.7489018132101934
+      }
+    },
+    "stable/known/j2/identity": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 43,
+          "n": 64,
+          "estimate": 0.671875,
+          "Wilson95": [
+            0.549991058490915,
+            0.7742944209553081
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 57,
+          "n": 64,
+          "estimate": 0.890625,
+          "Wilson95": [
+            0.7910135867310387,
+            0.945998866555832
+          ]
+        },
+        "first_packet_detection": {
+          "count": 7,
+          "n": 64,
+          "estimate": 0.109375,
+          "Wilson95": [
+            0.05400113344416797,
+            0.20898641326896122
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.930232558139535,
+          "sample_SE": 0.25861747779243843,
+          "n": 43
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 51,
+          "n": 64,
+          "estimate": 0.796875,
+          "Wilson95": [
+            0.6828636426898583,
+            0.8772658218081634
+          ]
+        },
+        "normal_event_FA": {
+          "count": 2,
+          "n": 64,
+          "estimate": 0.03125,
+          "Wilson95": [
+            0.008612138346171874,
+            0.10697291770958313
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 48,
+          "n": 64,
+          "estimate": 0.75,
+          "Wilson95": [
+            0.631837235413303,
+            0.8398507346902941
+          ]
+        },
+        "first_packet_detection": {
+          "count": 16,
+          "n": 64,
+          "estimate": 0.25,
+          "Wilson95": [
+            0.16014926530970577,
+            0.36816276458669694
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.470588235294118,
+          "sample_SE": 0.23153865755490996,
+          "n": 51
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 17,
+          "n": 64,
+          "estimate": 0.265625,
+          "Wilson95": [
+            0.17296379074222612,
+            0.38482873728565137
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.015086607130062935,
+        "joint_focused": 0.02279774190377497,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 0.9105785478005657,
+        "mean_ncp_joint": 1.206910286390516
+      }
+    },
+    "stable/unknown/j2/identity": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 40,
+          "n": 64,
+          "estimate": 0.625,
+          "Wilson95": [
+            0.502503786840045,
+            0.7333401982117536
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 59,
+          "n": 64,
+          "estimate": 0.921875,
+          "Wilson95": [
+            0.8298046264583709,
+            0.9661688230914496
+          ]
+        },
+        "first_packet_detection": {
+          "count": 5,
+          "n": 64,
+          "estimate": 0.078125,
+          "Wilson95": [
+            0.03383117690855046,
+            0.17019537354162906
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 9.35,
+          "sample_SE": 0.2876741390121994,
+          "n": 40
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 47,
+          "n": 64,
+          "estimate": 0.734375,
+          "Wilson95": [
+            0.6151712627143486,
+            0.8270362092577739
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 50,
+          "n": 64,
+          "estimate": 0.78125,
+          "Wilson95": [
+            0.6656721604337418,
+            0.8649768059328052
+          ]
+        },
+        "first_packet_detection": {
+          "count": 14,
+          "n": 64,
+          "estimate": 0.21875,
+          "Wilson95": [
+            0.13502319406719474,
+            0.3343278395662582
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.74468085106383,
+          "sample_SE": 0.2659666973414366,
+          "n": 47
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 17,
+          "n": 64,
+          "estimate": 0.265625,
+          "Wilson95": [
+            0.17296379074222612,
+            0.38482873728565137
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.00948171097097574,
+        "joint_focused": 0.015004353268362663,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 0.9105785478005657,
+        "mean_ncp_joint": 1.206910286390516
+      }
+    },
+    "stable/known/j2/original_Gaussian": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 40,
+          "n": 64,
+          "estimate": 0.625,
+          "Wilson95": [
+            0.502503786840045,
+            0.7333401982117536
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 46,
+          "n": 64,
+          "estimate": 0.71875,
+          "Wilson95": [
+            0.5986606971779259,
+            0.8140662766627217
+          ]
+        },
+        "first_packet_detection": {
+          "count": 13,
+          "n": 64,
+          "estimate": 0.203125,
+          "Wilson95": [
+            0.12273417819183653,
+            0.3171363573101416
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.6,
+          "sample_SE": 0.2626296993379823,
+          "n": 40
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 44,
+          "n": 64,
+          "estimate": 0.6875,
+          "Wilson95": [
+            0.5660766429725185,
+            0.7876893346051795
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 40,
+          "n": 64,
+          "estimate": 0.625,
+          "Wilson95": [
+            0.502503786840045,
+            0.7333401982117536
+          ]
+        },
+        "first_packet_detection": {
+          "count": 17,
+          "n": 64,
+          "estimate": 0.265625,
+          "Wilson95": [
+            0.17296379074222612,
+            0.38482873728565137
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.590909090909092,
+          "sample_SE": 0.2840327636056458,
+          "n": 44
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 10.596634733096074
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 23,
+          "n": 64,
+          "estimate": 0.359375,
+          "Wilson95": [
+            0.25288402291451745,
+            0.48179149390220904
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.03462674914299511,
+        "joint_focused": 0.046748456941309344,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 1.3752933872620179,
+        "mean_ncp_joint": 1.8203905034537293
+      }
+    },
+    "stable/unknown/j2/original_Gaussian": {
+      "local_prefix_GLRT": {
+        "Pd": {
+          "count": 36,
+          "n": 64,
+          "estimate": 0.5625,
+          "Wilson95": [
+            0.4408620895699301,
+            0.6770599029559693
+          ]
+        },
+        "normal_event_FA": {
+          "count": 0,
+          "n": 64,
+          "estimate": 0.0,
+          "Wilson95": [
+            0.0,
+            0.05662405979280534
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 52,
+          "n": 64,
+          "estimate": 0.8125,
+          "Wilson95": [
+            0.7002563943589847,
+            0.8893535682705119
+          ]
+        },
+        "first_packet_detection": {
+          "count": 8,
+          "n": 64,
+          "estimate": 0.125,
+          "Wilson95": [
+            0.06472242663330453,
+            0.22774561821129946
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.944444444444445,
+          "sample_SE": 0.2787285316508897,
+          "n": 36
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "joint_prefix_GLRT": {
+        "Pd": {
+          "count": 40,
+          "n": 64,
+          "estimate": 0.625,
+          "Wilson95": [
+            0.502503786840045,
+            0.7333401982117536
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "all_accept_counterfactual_danger_before_diagnostic_alarm": {
+          "count": 43,
+          "n": 64,
+          "estimate": 0.671875,
+          "Wilson95": [
+            0.549991058490915,
+            0.7742944209553081
+          ]
+        },
+        "first_packet_detection": {
+          "count": 14,
+          "n": 64,
+          "estimate": 0.21875,
+          "Wilson95": [
+            0.13502319406719474,
+            0.3343278395662582
+          ]
+        },
+        "mean_first_time_alarms_only": {
+          "mean": 8.725,
+          "sample_SE": 0.3182232324030187,
+          "n": 40
+        },
+        "not_unknown_onset": true,
+        "number_distinct_prefixes": 10,
+        "threshold": 11.982929094215963
+      },
+      "omnibus4": {
+        "Pd": {
+          "count": 23,
+          "n": 64,
+          "estimate": 0.359375,
+          "Wilson95": [
+            0.25288402291451745,
+            0.48179149390220904
+          ]
+        },
+        "normal_event_FA": {
+          "count": 1,
+          "n": 64,
+          "estimate": 0.015625,
+          "Wilson95": [
+            0.002763541923337505,
+            0.08334101600094265
+          ]
+        },
+        "df": 4,
+        "threshold": 16.923758195804655
+      },
+      "noise_integrated_own_link_power": {
+        "single": 0.027501749827626626,
+        "joint_focused": 0.038175255378600545,
+        "meaning": "mean per-packet marginal power over ten attack times and saved secret draws, not event power or unknown-link attribution",
+        "mean_ncp_single": 1.3752933872620179,
+        "mean_ncp_joint": 1.8203905034537293
+      }
+    }
+  },
+  "first_packet_oracle": {
+    "unstable/j0/identity": {
+      "first_attack": [
+        -0.5372209387736733,
+        -0.29358710295137214
+      ],
+      "xi": [
+        -0.5372209387736733,
+        -0.29358710295137214
+      ],
+      "unprotected_first_bias_squared": [
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503,
+        0.026596202089457503
+      ],
+      "conditional_oracle_power_relaxed_alpha05": [
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743,
+        0.21797232921603743
+      ],
+      "oracle_scope": "conditional fixed current secret NP test; unconditional secret-dependent alpha allocation is not bounded by its unweighted mean"
+    },
+    "unstable/j0/original_Gaussian": {
+      "first_attack": [
+        -0.5230403119544879,
+        -0.31574711731274874
+      ],
+      "xi": [
+        -0.5230403119544879,
+        -0.31574711731274874
+      ],
+      "unprotected_first_bias_squared": [
+        0.03169098347101616,
+        0.01707260156346978,
+        0.0966615601481459,
+        0.03024468330139027,
+        0.00987756849614654,
+        0.008685114451023834,
+        0.03771371600830516,
+        0.05750656680335268,
+        0.0075805316080070915,
+        0.17542242720444956,
+        0.013139617848843675,
+        0.0070816592508157195,
+        0.008835919800165605,
+        0.0854382079278051,
+        0.06036436008880096,
+        0.15276194693133324,
+        0.03817233495460819,
+        0.05311239967370004,
+        0.06805305589170718,
+        0.034507409662639155,
+        0.011386931463513918,
+        0.010718645249646767,
+        0.013704396429341471,
+        0.016977627921432918,
+        0.011023063101047122,
+        0.06954843115381741,
+        0.006635397749020762,
+        0.06458863231962234,
+        0.10759067625009748,
+        0.01709817774859801,
+        0.008241083556071489,
+        0.0073171973234903605,
+        0.010945549071023204,
+        0.00691751690561286,
+        0.03497429817912915,
+        0.006822982175884559,
+        0.00810000135812278,
+        0.03685422757325191,
+        0.010357486095605311,
+        0.04780771721027358,
+        0.013859106314301622,
+        0.1690844813652589,
+        0.006747720638499464,
+        0.025328025889006848,
+        0.14817138220171092,
+        0.010360149803076424,
+        0.011498497669840279,
+        0.00752715137142049,
+        0.46522084224095733,
+        0.015664845827014818,
+        0.18684784039350733,
+        0.18598472951102837,
+        0.00658406713727449,
+        0.03128047671848466,
+        0.0066334419130964425,
+        0.0709267266211134,
+        0.011581288814904687,
+        0.09920121955951385,
+        0.0808057118756152,
+        0.006671526313448818,
+        0.006677821932339588,
+        0.011050199751750336,
+        0.020058737880883876,
+        0.006836957240676192
+      ],
+      "conditional_oracle_power_relaxed_alpha05": [
+        0.2377483087545077,
+        0.17009514329646847,
+        0.492551354542943,
+        0.237221873969719,
+        0.1307181431430508,
+        0.1270278206316055,
+        0.27981150316650644,
+        0.3596680811968694,
+        0.1185126108155749,
+        0.757183150993436,
+        0.14802217579847304,
+        0.11484372225067307,
+        0.12473834193486832,
+        0.4584613432686027,
+        0.3602153522263835,
+        0.6656267938719223,
+        0.26662102884426436,
+        0.3335785108953527,
+        0.3940870588490074,
+        0.25031284730285763,
+        0.13886205481363623,
+        0.14247569452228603,
+        0.15209406579501605,
+        0.17649609409322337,
+        0.1366573775903815,
+        0.3978899488462749,
+        0.11313694885784775,
+        0.39479181846866507,
+        0.5669294465702752,
+        0.17411578885275525,
+        0.12476526538134569,
+        0.11715185842703058,
+        0.14143222207066375,
+        0.11444944140410096,
+        0.2549815240104656,
+        0.11514295442308531,
+        0.12150097973729185,
+        0.27300353017799417,
+        0.13404022932383997,
+        0.3169323844661721,
+        0.15321979275105052,
+        0.7164015528288992,
+        0.11359290320415932,
+        0.2239169849703172,
+        0.644970946790839,
+        0.1378710738968415,
+        0.1404884645064487,
+        0.11918784366511748,
+        0.973252089931576,
+        0.16960340026748538,
+        0.7347038315857162,
+        0.7447558750273747,
+        0.11288212191294522,
+        0.23583127523619524,
+        0.11297669029003377,
+        0.4035983559693646,
+        0.1413316881239785,
+        0.5104566188247951,
+        0.44494593491259626,
+        0.11295002557157585,
+        0.11304848775760012,
+        0.1368843959953535,
+        0.18349859501205024,
+        0.11428584462621072
+      ],
+      "oracle_scope": "conditional fixed current secret NP test; unconditional secret-dependent alpha allocation is not bounded by its unweighted mean"
+    },
+    "unstable/j2/identity": {
+      "first_attack": [
+        -0.5597945632462891,
+        -0.26878008901578365
+      ],
+      "xi": [
+        -0.4664954693719076,
+        -0.19198577786841692
+      ],
+      "unprotected_first_bias_squared": [
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744,
+        0.027522764680995744
+      ],
+      "conditional_oracle_power_relaxed_alpha05": [
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866,
+        0.2216420714540866
+      ],
+      "oracle_scope": "conditional fixed current secret NP test; unconditional secret-dependent alpha allocation is not bounded by its unweighted mean"
+    },
+    "unstable/j2/original_Gaussian": {
+      "first_attack": [
+        -0.5465990212563959,
+        -0.29166271062693244
+      ],
+      "xi": [
+        -0.45549918438032994,
+        -0.20833050759066604
+      ],
+      "unprotected_first_bias_squared": [
+        0.006878358481648496,
+        0.13224466313087485,
+        0.007443519234485154,
+        0.23265768411430163,
+        0.09204006030168989,
+        0.008920888124647981,
+        0.006995822334304295,
+        0.03392473993918879,
+        0.01040573734312735,
+        0.01754945111134371,
+        0.0202793939990732,
+        0.013851739101268228,
+        0.008569062744315624,
+        0.019373118782429276,
+        0.021691289704550722,
+        0.00842636020579637,
+        0.08945159804740382,
+        0.040856309313393055,
+        0.022660402322407968,
+        0.029033537241930273,
+        0.27480317845078256,
+        0.013128871794393529,
+        0.017809125478322065,
+        0.014955724984986233,
+        0.2868658577296429,
+        0.008508222467797895,
+        0.007466935991635068,
+        0.010360881424727202,
+        0.010656910753359122,
+        0.6488406606815065,
+        0.016962606468066205,
+        0.012411693489818892,
+        0.010631638155597789,
+        0.030694533563515577,
+        0.007811132423680233,
+        0.04044041688390039,
+        0.05210643825090293,
+        0.007139831585650522,
+        0.008164879298379337,
+        0.1141998004960033,
+        0.008112525739457085,
+        0.050905815857440626,
+        0.017440716019911144,
+        0.09403620990054107,
+        0.006852220052458114,
+        0.05811463828529187,
+        0.01899630729638334,
+        0.02786808069442393,
+        0.34534049293867125,
+        0.0068241275342722065,
+        0.0068744228305397306,
+        0.023746776899919227,
+        0.049055677617172104,
+        0.0077396730448302435,
+        0.006972894675237308,
+        0.011903109307154993,
+        0.030701691782515472,
+        0.0076245565526286705,
+        0.025487294484925302,
+        0.014246079976073668,
+        0.006894629932996048,
+        0.12932348962234722,
+        0.12732272641652026,
+        0.01002913422128024
+      ],
+      "conditional_oracle_power_relaxed_alpha05": [
+        0.11414553811556394,
+        0.6018749389020258,
+        0.1167135159427034,
+        0.8109981833603569,
+        0.4826513133582125,
+        0.12595998882753506,
+        0.11560597991435528,
+        0.257657441766292,
+        0.13365566414523988,
+        0.17250476384355207,
+        0.18435730073875362,
+        0.15214459857691864,
+        0.12390330813840456,
+        0.17979012430836983,
+        0.19142093875972083,
+        0.12429073211851516,
+        0.46820900495934137,
+        0.2808421332222704,
+        0.2085292506433482,
+        0.2259522284993497,
+        0.8644564013836906,
+        0.15632038830109757,
+        0.17668220989704536,
+        0.15739935467194294,
+        0.8780807489711432,
+        0.12361982249418985,
+        0.11857833487941505,
+        0.13519427772877707,
+        0.13456836550464074,
+        0.99753010560935,
+        0.17058842988626233,
+        0.14643232815620666,
+        0.13450124923187634,
+        0.2405738813343526,
+        0.12122557072421791,
+        0.2985632968000468,
+        0.32751200871348285,
+        0.11608112810826776,
+        0.12078295933048838,
+        0.5556702355557868,
+        0.12379948356620496,
+        0.33059010756199214,
+        0.17695774131528902,
+        0.5122879445633275,
+        0.1138709152951865,
+        0.35057354937365903,
+        0.17802832352307052,
+        0.22602266567288481,
+        0.9262522829151404,
+        0.11408455720844024,
+        0.11426710389254546,
+        0.20272676353396557,
+        0.32311091347302023,
+        0.11857561451922133,
+        0.11459452351713884,
+        0.14767357702337863,
+        0.24361354750684538,
+        0.11989771475537342,
+        0.21709626163839113,
+        0.15611314060537962,
+        0.11429621750876212,
+        0.5934614179141754,
+        0.5876541330835995,
+        0.13303075008902543
+      ],
+      "oracle_scope": "conditional fixed current secret NP test; unconditional secret-dependent alpha allocation is not bounded by its unweighted mean"
+    },
+    "unstable/identity_ordinary_first_packet_impossibility": {
+      "xi": [
+        -0.6992835177624613,
+        0.15539633728054694
+      ],
+      "coding_energy": 9.999999999980004,
+      "damage": 0.03727959032426969,
+      "oracle_NP_miss_lower_bound": 0.736239073275657,
+      "danger_is_deterministic": false,
+      "legal_scope": "no watermark, all-accept before first alarm, clean prior; offline oracle knows x and xi; at most .05 total event false alarm",
+      "not_a_lower_bound_for_preemptive_clipping_or_permanent_rejection": true
+    },
+    "stable/j0/identity": {
+      "first_attack": [
+        -1.904188148255,
+        0.3634296817448766
+      ],
+      "xi": [
+        -1.904188148255,
+        0.3634296817448766
+      ],
+      "unprotected_first_bias_squared": [
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175,
+        0.27002636257414175
+      ],
+      "conditional_oracle_power_relaxed_alpha05": [
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866,
+        0.8636101722105866
+      ],
+      "oracle_scope": "conditional fixed current secret NP test; unconditional secret-dependent alpha allocation is not bounded by its unweighted mean"
+    },
+    "stable/j0/original_Gaussian": {
+      "first_attack": [
+        -1.9017815856483014,
+        0.3773885580185945
+      ],
+      "xi": [
+        -1.9017815856483014,
+        0.3773885580185945
+      ],
+      "unprotected_first_bias_squared": [
+        0.09704513310653878,
+        0.30503391999335977,
+        0.07801905836492341,
+        0.06759810581106188,
+        0.08560947613345803,
+        0.07136780572467956,
+        0.5473006465112158,
+        0.253686001621683,
+        0.07584208375325682,
+        0.06844956122127116,
+        0.07562626956153905,
+        0.4520188372718328,
+        0.14316656538380432,
+        0.15408504627257674,
+        0.422614426901547,
+        0.16495563908668903,
+        0.08895959437486066,
+        0.0698684331226277,
+        0.9769545273059834,
+        0.5059105551807824,
+        0.08141369293664334,
+        0.4447664915057805,
+        1.8659696015342255,
+        1.1810250161370845,
+        2.177892002550678,
+        3.3437528085892145,
+        0.08897140504843029,
+        0.10803917965153507,
+        0.8648984363064014,
+        0.19591494854063693,
+        1.3589312013271075,
+        1.121564541897088,
+        0.4655511367603303,
+        0.11096319042170907,
+        0.1354334757769794,
+        0.22704855300242374,
+        0.197308107686915,
+        0.7818920684693021,
+        0.07111550277978888,
+        0.07012872798747483,
+        0.12159448371644714,
+        0.07585791931801705,
+        0.10620979162222591,
+        3.456427304331662,
+        0.0941861028783396,
+        0.10800051398696851,
+        0.07504921452378914,
+        0.40839323047292153,
+        0.10504664000700967,
+        0.10816899777877982,
+        0.16058945601437288,
+        0.3433413608103578,
+        0.34342408578020955,
+        0.23306014079220325,
+        1.3553116222756902,
+        0.21694088627320762,
+        0.09095158276921705,
+        1.0300734303083408,
+        0.13184670127605022,
+        0.20388194948421787,
+        0.2335457534719647,
+        0.09710649846821956,
+        0.09063216680730415,
+        0.16593527721925258
+      ],
+      "conditional_oracle_power_relaxed_alpha05": [
+        0.5060367146317208,
+        0.9049433486076759,
+        0.4315100553073303,
+        0.39334010225175636,
+        0.4599073190946319,
+        0.4066191925486921,
+        0.9886733193249364,
+        0.8477112854616882,
+        0.42445039218793695,
+        0.396621912351416,
+        0.4220678961713321,
+        0.9736632473548902,
+        0.654456406519504,
+        0.6649515231474523,
+        0.9628983999552783,
+        0.6888830472009821,
+        0.4719062912023064,
+        0.40159817868461767,
+        0.9998227936920391,
+        0.9825362092735281,
+        0.4449823111412724,
+        0.9747741849175879,
+        0.9999999857879152,
+        0.9999812276744892,
+        0.9999999995558765,
+        0.9999999999999999,
+        0.47327885363598204,
+        0.5344469287969732,
+        0.9994359230847313,
+        0.7617114555337136,
+        0.9999969582544382,
+        0.9999724379349662,
+        0.9741975754978934,
+        0.5455109518915555,
+        0.6198118496580322,
+        0.8059246384461429,
+        0.7560183863367915,
+        0.9994986064424055,
+        0.4091107389057728,
+        0.4029180518094069,
+        0.5860507555715547,
+        0.4258243251510135,
+        0.5289995964004551,
+        0.9999999999999999,
+        0.49983479820461235,
+        0.5346939855829811,
+        0.4203161272275707,
+        0.9575560221805252,
+        0.5275465647074778,
+        0.5357106766229708,
+        0.6789671873628066,
+        0.9254917017422531,
+        0.9279088244500244,
+        0.8281307642995711,
+        0.9999966927435605,
+        0.7931096201746685,
+        0.4772623175559441,
+        0.9998944798181677,
+        0.6057864806350161,
+        0.7688329571922905,
+        0.8190574422330922,
+        0.500494657394044,
+        0.475967587278408,
+        0.6963693579084979
+      ],
+      "oracle_scope": "conditional fixed current secret NP test; unconditional secret-dependent alpha allocation is not bounded by its unweighted mean"
+    },
+    "stable/j2/identity": {
+      "first_attack": [
+        -1.9028214509910304,
+        0.34585865273017236
+      ],
+      "xi": [
+        -1.5856845424925254,
+        0.247041894807266
+      ],
+      "unprotected_first_bias_squared": [
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544,
+        0.2688706111659544
+      ],
+      "conditional_oracle_power_relaxed_alpha05": [
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759,
+        0.8621945992781759
+      ],
+      "oracle_scope": "conditional fixed current secret NP test; unconditional secret-dependent alpha allocation is not bounded by its unweighted mean"
+    },
+    "stable/j2/original_Gaussian": {
+      "first_attack": [
+        -1.9005706001404028,
+        0.3595636086293258
+      ],
+      "xi": [
+        -1.5838088334503357,
+        0.256831149020947
+      ],
+      "unprotected_first_bias_squared": [
+        0.09777024463135069,
+        0.19304041995622498,
+        0.9607100854752336,
+        0.1097940071369248,
+        0.08492821134723691,
+        0.2494262382449151,
+        0.20409761344522848,
+        0.6474150475611337,
+        0.22704624181938488,
+        0.14208788228990715,
+        0.1444020029023799,
+        0.2867078564974498,
+        0.10036711348123109,
+        0.2089638996148324,
+        0.12138710721463415,
+        0.2386698047194491,
+        0.15466184918712816,
+        0.0692277040875639,
+        0.12039672351489855,
+        0.3310112730357093,
+        0.15023383095830062,
+        0.3104202492735714,
+        0.521793750483963,
+        0.44973818193297554,
+        1.4952598169960591,
+        0.13109561866259747,
+        0.2526698360319976,
+        0.086091552134815,
+        1.290376260633975,
+        0.5143728842936418,
+        1.6242423556537613,
+        0.14873045737133017,
+        0.12441201614850425,
+        0.4522973484823942,
+        0.1731466282648274,
+        0.13097314681215178,
+        1.2235487992593224,
+        0.7282446782389287,
+        0.4686833028005626,
+        0.08436232524152444,
+        0.07264165948829616,
+        0.12541349536946356,
+        0.10047494612764826,
+        0.06783839546304464,
+        0.0676214391245572,
+        8.345860284439611,
+        0.08054725659820008,
+        0.08293807778183515,
+        0.11622428302692306,
+        0.1791231856692914,
+        0.24006744478700298,
+        1.7088459216654457,
+        0.06954554153212669,
+        0.09434589272980869,
+        0.13106053869409545,
+        0.06801105278744744,
+        0.11992542963174606,
+        0.16884934100455984,
+        0.10107022545175581,
+        0.08388174014444372,
+        0.47013824881824473,
+        0.43824392945976265,
+        0.507223844959407,
+        0.06874304210639702
+      ],
+      "conditional_oracle_power_relaxed_alpha05": [
+        0.5003126956876098,
+        0.7514973514101323,
+        0.9997866072175636,
+        0.5547761820040054,
+        0.4558651271762188,
+        0.8390157775587264,
+        0.7704598376015532,
+        0.9954023665721746,
+        0.8211749750999879,
+        0.6470637358367578,
+        0.6387879400886717,
+        0.8828246133295901,
+        0.5090086254531181,
+        0.7849419139741436,
+        0.5816943485850901,
+        0.8237535366310296,
+        0.6657703577273939,
+        0.3979652087304149,
+        0.5726499296670216,
+        0.916722456644347,
+        0.6595184332817312,
+        0.9041735047098173,
+        0.9853851989085933,
+        0.9737876427502834,
+        0.9999991697232705,
+        0.6079264547527388,
+        0.8427510223935448,
+        0.47036971160141117,
+        0.9999975896686529,
+        0.9836606472144129,
+        0.9999998313448033,
+        0.6709403787404067,
+        0.5887875570487944,
+        0.9709331352703594,
+        0.7332891232800941,
+        0.6211773780841819,
+        0.9999922355245109,
+        0.9978882115198742,
+        0.9799283577204453,
+        0.4591725454966819,
+        0.41173371675569514,
+        0.6118886563536615,
+        0.5100607605829075,
+        0.3945270606655421,
+        0.39349157160554893,
+        1.0,
+        0.4402087870875239,
+        0.44919034645220096,
+        0.5753202885231211,
+        0.734589714893556,
+        0.8479676751598969,
+        0.9999999321211337,
+        0.3989825130494412,
+        0.489069325880773,
+        0.605529873903912,
+        0.3950654905211827,
+        0.5735276019037209,
+        0.704811955747024,
+        0.5144959520092782,
+        0.452475240440593,
+        0.9761870091840167,
+        0.9677482247563232,
+        0.9832865288610796,
+        0.3963834392923208
+      ],
+      "oracle_scope": "conditional fixed current secret NP test; unconditional secret-dependent alpha allocation is not bounded by its unweighted mean"
+    },
+    "stable/identity_ordinary_first_packet_impossibility": {
+      "xi": [
+        -1.8930811926725317,
+        0.42068470948278486
+      ],
+      "coding_energy": 9.999999999980004,
+      "damage": 0.26979372804538143,
+      "oracle_NP_miss_lower_bound": 0.1361731838286433,
+      "danger_is_deterministic": true,
+      "legal_scope": "no watermark, all-accept before first alarm, clean prior; offline oracle knows x and xi; at most .05 total event false alarm",
+      "not_a_lower_bound_for_preemptive_clipping_or_permanent_rejection": true
+    }
+  },
+  "new_physical_samples": 0,
+  "finite_time_marginal_power_is_not_danger_risk": true,
+  "overlap_prefixes_not_independent": true
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-16",
+  "before_sha256": "787e958221bc3992873f8626d2b5233eb1d3e3407b6e57d7db362b0141470586",
+  "after_sha256": "eb82c5eec0c279706587a64418f85b91bdd288e4d7c8ec00cea0080f7e3d29d8",
+  "records_before": 190,
+  "records_after": 190,
+  "changed_existing_ids": [
+    "FPN02",
+    "FPN10",
+    "FPN12",
+    "FPN18",
+    "JRA01"
+  ],
+  "untouched_existing_ids": 185,
+  "new_records": 0,
+  "new_PDFs": 0,
+  "allowed_changes": "only append actual reading notes/report links to five existing unique-library records; export regenerated separately"
+}

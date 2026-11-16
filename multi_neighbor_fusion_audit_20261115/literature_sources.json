@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-16",
+  "sources": {
+    "FPN02": {
+      "title": "A Periodic Dynamic Encoding Mechanism for Stealthy Attack Detection in Distributed State Estimation",
+      "citation_key": "Paper_Ding2024_PeriodicEncoding",
+      "doi": "10.1002/rnc.7688",
+      "pdf_file": "02_期刊与会议论文/FPN02_2024_Paper_Ding2024_PeriodicEncoding.pdf",
+      "pdf_sha256": "2e6fdc61646a2f5856e0a3865ad75b18538309e50683251054c3b73889208f45",
+      "selected_PDF_pages": [
+        8,
+        9
+      ],
+      "full_proof_chain_reviewed": false,
+      "visual_pages": [
+        8
+      ]
+    },
+    "FPN12": {
+      "title": "How to Secure Distributed Filters Under Sensor Attacks",
+      "citation_key": "Paper_He2022_SecureDistributedFilters",
+      "doi": "10.1109/TAC.2021.3092603",
+      "pdf_file": "02_期刊与会议论文/FPN12_2022_Paper_He2022_SecureDistributedFilters.pdf",
+      "pdf_sha256": "d6549df8aa9dca62e8f080100c19fcbf7381b60b2b96db268777dd331901a80a",
+      "selected_PDF_pages": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "full_proof_chain_reviewed": false,
+      "visual_pages": [
+        7
+      ]
+    },
+    "JRA01": {
+      "title": "Consensus-based distributed estimator of cyber–physical systems against false data injection attacks: A two-layer estimation approach",
+      "citation_key": "Paper_Han2025_TwoLayerFDI",
+      "doi": "10.1016/j.sysconle.2025.106115",
+      "pdf_file": "02_期刊与会议论文/JRA01_2025_Han_TwoLayer.pdf",
+      "pdf_sha256": "0fa5b079547661f2d55afb3c68b90f2e2c48b9401b9c3341477dc4df85ef93dc",
+      "selected_PDF_pages": [
+        3,
+        4
+      ],
+      "full_proof_chain_reviewed": false,
+      "visual_pages": [
+        3
+      ]
+    },
+    "FPN18": {
+      "title": "Secure state and output estimation for accommodation of false data injection attacks in large-scale systems",
+      "citation_key": "Paper_Tabatabaei2025_AttackAccommodation",
+      "doi": "10.1016/j.automatica.2025.112460",
+      "pdf_file": "02_期刊与会议论文/FPN18_formal_2025.pdf",
+      "pdf_sha256": "77edb502051642497d1de078606e4ebccd9c8712b19055efa9528711e5c272b7",
+      "selected_PDF_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "full_proof_chain_reviewed": false,
+      "visual_pages": []
+    },
+    "FPN10": {
+      "title": "Distributed secure state estimation for cyber-physical systems: A residual-exchanging approach under FDI attacks",
+      "citation_key": "Paper_Zhang2026_ResidualExchanging",
+      "doi": "10.1016/j.jfranklin.2026.108914",
+      "pdf_file": "02_期刊与会议论文/FPN10_formal_received_20261115.pdf",
+      "pdf_sha256": "17c1a14e1c3fb83b3872b2c3074cc60bf2ce2e5a76121f1cf5a88e1b5d5b2525",
+      "selected_PDF_pages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "full_proof_chain_reviewed": false,
+      "visual_pages": []
+    }
+  },
+  "no_new_download": true,
+  "unique_library_records": 190,
+  "scope": "targeted methods/formula/theorem pages; not all proofs independently audited"
+}
