@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-17",
+  "frozen_inputs": 6,
+  "matched_outputs": 14,
+  "full_replay": true,
+  "all_match": true,
+  "no_new_physical_samples": true,
+  "no_parameter_search": true
+}

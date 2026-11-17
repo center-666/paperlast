@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-17",
+  "papers": [
+    {
+      "id": "FPN28",
+      "citation_key": "Paper_Wang2025_InformationStealthy",
+      "doi": "10.1016/j.neucom.2024.129087",
+      "title": "Information-based stealthy attacks against distributed state estimation over sensor networks",
+      "PDF_sha256": "7f960d20c143aa06fe3cb3d0016dacf2ab7352dc7195747a7aeed084011d0316",
+      "PDF_pages": "3—6，重点本轮复读4",
+      "printed_pages": "文章3—6",
+      "formulas": "式(27)—(36)、(44)，Theorem1",
+      "claim": "同共G下MMSE信息通过实际MSE交叉项影响攻击；本轮硬球能量改变约束，非新MMSE原则"
+    },
+    {
+      "id": "AIA02",
+      "citation_key": "Paper_Wei2025_VaryingDataAccess",
+      "doi": "10.1016/j.automatica.2025.112162",
+      "title": "Integrity attacks on state estimation with varying data access: From visibility to full restriction",
+      "PDF_sha256": "6f0a4d25f1d97a32cd9fef4db4baa106d72e18300f951a5e4a7f37fb41f824b4",
+      "PDF_pages": "4—8、11—12，重点本轮复读11",
+      "printed_pages": "文章4—8、11—12",
+      "formulas": "Proposition4、Theorems3/6；AppendixD式(105)—(117)，尤其(108)",
+      "claim": "受限信息下MMSE正交投影与全可行最优性已有；未把原Gaussian隐蔽约束定理扩展到本硬预算编码混合观测"
+    },
+    {
+      "id": "AIA01",
+      "citation_key": "Paper_Xing2025_HistoricalDistributedFDI",
+      "doi": "10.1109/tifs.2025.3564063",
+      "title": "Stealthy Attacks With Historical Data on Distributed State Estimation",
+      "PDF_sha256": "54d5105ce9bc3af16e6888663d739d648898e6ef438ddeecb474ab53245f35be",
+      "PDF_pages": "3—5，重点本轮复读5",
+      "printed_pages": "4543—4545",
+      "formulas": "Lemma3式(15)—(16)、Theorem1式(27)—(29)",
+      "claim": "历史/当前反馈的MSE相关项已有；本轮信息价值是该原则和标准二次优化的具体边界核验"
+    }
+  ],
+  "independent_all_proofs": false,
+  "only_one_library": true
+}

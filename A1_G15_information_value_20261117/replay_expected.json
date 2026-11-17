@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-17",
+  "inputs": {
+    "registration.json": "04b76896e5c51b84510962f31fb34d0795b588d8f3f334e2ff48716e0c6dbe01",
+    "../common_g_reference_revision_20261115/inputs/five_node_aggregate_model.json": "0f67852d389ab9dabfe4f5d564778a11b411441f53fcd77da22f8680c5793e76",
+    "../common_g_reference_revision_20261115/common_g_reference.py": "95b667539e8d1341ae142ca4a1f9586b10cd85e9f4e1e9c62154bac0f789e8f4",
+    "../A1_information_aware_attack_audit_20261116/attacker_observer_bounds.py": "b3fa7a8704735df7a7bde34a952230782e2b082c494c303b074b6add5da69429",
+    "../A1_information_aware_attack_audit_20261116/attack_models.py": "b92c6d43c69ec163fedf77919e99d006de7ecb09cc752816ab94a58476448480",
+    "../A1_information_aware_attack_audit_20261116/registration.json": "e9266d103171cf73eaa92b6b2c60fef0740470a81af0aeb2c2ccdaf0b853b0f0"
+  },
+  "outputs": {
+    "deterministic_diagnostics.json": "611a2381b07ae3e8d26f43ac434db9356c4f380ef12309880e00f4ebdd2147d3",
+    "exact_information_certificates.json": "0b66b94b513ed0f07e682bc32cee87222b019242a37b285b6d6e645b99132668",
+    "validated_current_integrals.json": "9e11a2c048fb8f2ddc5aa8eed0188fa26de698c32c050a52f60cc18824a4e422",
+    "conditional_posterior_probes.json": "5515e5852c172b0aa0341a6d5a6a3df11029bbc63d8165bab99687e191cd8599",
+    "independent_checks.json": "9c0edb24b8490ff529dffd8c06b25b56f16bd7cb4ceecd26005a5f992601e6d5",
+    "01_攻击策略集合与公平对照.md": "34150aa66460a526a4ecb6d2200490ea76c8b57c62dd5d32b8491c38df6b0421",
+    "02_条件最优攻击与真实信息积分.md": "cc442cef8fb01f7baab665e3b0128643b5981ef851c6acc0a3ba70f0e2023e70",
+    "03_信息价值定理与严格上下界.md": "dd13737390dfba051023edf66664870b1e6918162df3bfc2086a2d2098c2ee9a",
+    "04_最小确定性数值与证据等级.md": "66102306bdda9be8b5aeeb66412894e9c0d1edcf031afe2147391bedf2344a51",
+    "05_直接近邻逐式排重.md": "a79119a159aacd2abdf6aea63038a81ecbb62d92f215e98dbcad20352f53cf43",
+    "06_攻防机制必要性分析.md": "8410a3571cee397c5878c123e5a3813ec4f7ddeee9972d6c24696249a58cca43",
+    "07_下一阶段研究决定.md": "1149ba20c4f42967282ccdd39f3060b6093d0c59821b6e57349795378ca18cbf",
+    "README.md": "3dbdbf4ee6e0497493a9ba2103ad7d6430bdeb769910685cf11d4f6073cf9d14",
+    "evidence_table.md": "dd15b56fe2a5dcb5db6e7ee858b798b822251f48c0b3a066e44db17a93e50464"
+  },
+  "normalization": "canonical JSON, UTF8 LF text",
+  "frozen_for_replay_not_independent_proof": true
+}

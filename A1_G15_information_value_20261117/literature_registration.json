@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-17",
+  "before_sha256": "3c8402d410a56dbf5356755778e49333dca76d7bbd465d80844e2716ca64c159",
+  "after_sha256": "fe6d921fc9c4c9ed830d0e013f27dacd165d8e204805d2056c63bf0f3136d845",
+  "records_before": 198,
+  "records_after": 198,
+  "local_PDF": 143,
+  "independent_full_theses": 46,
+  "updated_existing_note_ids": [
+    "FPN28",
+    "AIA02",
+    "AIA01"
+  ],
+  "new_records": 0,
+  "new_PDFs": 0,
+  "old_citation_keys_preserved": true
+}

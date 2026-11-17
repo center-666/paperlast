@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-17",
+  "registered_UTC": "2026-11-17T13:15:10.081095+00:00",
+  "baseline": "557e1d26692228c45fd4ca9f5e0f8af119ea81c5",
+  "models": [
+    "unstable",
+    "stable"
+  ],
+  "T": 32,
+  "Ta": 7,
+  "L": 10,
+  "E": 10,
+  "D_retained_but_not_optimized": 0.1,
+  "receiver": 1,
+  "target_source": 0,
+  "estimator": "frozen original common-G all-accept; zero initial saved estimate; x0~N(0,I2)",
+  "watermark": "M=.5I+beta betaT; beta~N(0,.5I2), fresh independent per packet",
+  "primary_objectives": [
+    "posterior actual MSE at7; only attack action7 allowed to all classes",
+    "sum posterior actual MSE7..31; all20 coded actions7..16 allowed to all classes"
+  ],
+  "OL": "any waveform fixed independently of physical/watermark realizations; optional independent seed cannot improve its quadratic optimum",
+  "H": "actions measurable w.r.t target coded packets through k-1, own actions and public model; hard total energy",
+  "C": "same, plus current target coded packet; no secret M/local data/state/error",
+  "constructive_comparison": "same near-optimal unrestricted OL waveform; history/current packet chooses ONLY overall sign",
+  "historical_packet": 6,
+  "current_packet": 7,
+  "energy_radius_is_fixed": true,
+  "deterministic_quadrature_orders": [
+    [
+      32,
+      64
+    ],
+    [
+      64,
+      128
+    ],
+    [
+      96,
+      256
+    ]
+  ],
+  "certification": "exact rational frozen-model moment identities and spectral bounds; optional validated interval integration with explicit tail",
+  "new_physical_noise_seeds": 0,
+  "Monte_Carlo": false,
+  "attack_policy_grid": false,
+  "new_defense": false,
+  "no_claim": [
+    "multi-step causal global optimum",
+    "pre-alarm risk advantage",
+    "new MMSE principle",
+    "new watermark"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-17",
+  "errors": {
+    "unstable": {
+      "physical_covariance": 1.3441437223713808e-14,
+      "block_Gram": 2.7755575615628914e-17,
+      "pointwise_sign_squared": 0.0
+    },
+    "stable": {
+      "physical_covariance": 1.4700426206187833e-16,
+      "block_Gram": 2.7755575615628914e-17,
+      "pointwise_sign_squared": 0.0
+    }
+  },
+  "Gaussian_watermark_moment_identity_exact": true,
+  "trust_region_regular_and_hard_cases": 3,
+  "no_new_physical_samples": true,
+  "no_actual_state_or_M_input_to_sign_policy": true,
+  "no_original_estimator_changes": true
+}
