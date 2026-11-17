@@ -1,0 +1,1811 @@
+[
+  {
+    "time": 0,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 0,
+    "phase": "encode",
+    "packet_time": 0,
+    "tag_present": true
+  },
+  {
+    "time": 0,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 0,
+    "phase": "verify",
+    "packet_time": 0,
+    "passed": true,
+    "deadline": 0,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 0,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 0,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 0,
+    "phase": "update",
+    "output_time": 0,
+    "uses_only_verdicts_received_by": 0
+  },
+  {
+    "time": 1,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 1,
+    "phase": "encode",
+    "packet_time": 1,
+    "tag_present": true
+  },
+  {
+    "time": 1,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 1,
+    "phase": "verify",
+    "packet_time": 1,
+    "passed": true,
+    "deadline": 1,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 1,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 1,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 1,
+    "phase": "update",
+    "output_time": 1,
+    "uses_only_verdicts_received_by": 1
+  },
+  {
+    "time": 2,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 2,
+    "phase": "encode",
+    "packet_time": 2,
+    "tag_present": true
+  },
+  {
+    "time": 2,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 2,
+    "phase": "verify",
+    "packet_time": 2,
+    "passed": true,
+    "deadline": 2,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 2,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 2,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 2,
+    "phase": "update",
+    "output_time": 2,
+    "uses_only_verdicts_received_by": 2
+  },
+  {
+    "time": 3,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 3,
+    "phase": "encode",
+    "packet_time": 3,
+    "tag_present": true
+  },
+  {
+    "time": 3,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 3,
+    "phase": "verify",
+    "packet_time": 3,
+    "passed": true,
+    "deadline": 3,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 3,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 3,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 3,
+    "phase": "update",
+    "output_time": 3,
+    "uses_only_verdicts_received_by": 3
+  },
+  {
+    "time": 4,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 4,
+    "phase": "encode",
+    "packet_time": 4,
+    "tag_present": true
+  },
+  {
+    "time": 4,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 4,
+    "phase": "verify",
+    "packet_time": 4,
+    "passed": true,
+    "deadline": 4,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 4,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 4,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 4,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 4,
+    "phase": "update",
+    "output_time": 4,
+    "uses_only_verdicts_received_by": 4
+  },
+  {
+    "time": 5,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 5,
+    "phase": "encode",
+    "packet_time": 5,
+    "tag_present": true
+  },
+  {
+    "time": 5,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 5,
+    "phase": "verify",
+    "packet_time": 5,
+    "passed": true,
+    "deadline": 5,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 5,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 5,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 5,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 5,
+    "phase": "update",
+    "output_time": 5,
+    "uses_only_verdicts_received_by": 5
+  },
+  {
+    "time": 6,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 6,
+    "phase": "encode",
+    "packet_time": 6,
+    "tag_present": true
+  },
+  {
+    "time": 6,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 6,
+    "phase": "verify",
+    "packet_time": 6,
+    "passed": true,
+    "deadline": 6,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 6,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 6,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 6,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 6,
+    "phase": "update",
+    "output_time": 6,
+    "uses_only_verdicts_received_by": 6
+  },
+  {
+    "time": 7,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 7,
+    "phase": "encode",
+    "packet_time": 7,
+    "tag_present": true
+  },
+  {
+    "time": 7,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 1e-06,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 7,
+    "phase": "verify",
+    "packet_time": 7,
+    "passed": false,
+    "deadline": 7,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 7,
+    "phase": "decode_admission",
+    "accepted": false,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 7,
+    "phase": "statistical",
+    "complete_window": false,
+    "action": "skip, do not zero-fill"
+  },
+  {
+    "time": 7,
+    "phase": "admission_final",
+    "accepted": false,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 7,
+    "phase": "update",
+    "output_time": 7,
+    "uses_only_verdicts_received_by": 7
+  },
+  {
+    "time": 8,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 8,
+    "phase": "encode",
+    "packet_time": 8,
+    "tag_present": true
+  },
+  {
+    "time": 8,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 8,
+    "phase": "verify",
+    "packet_time": 8,
+    "passed": true,
+    "deadline": 8,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 8,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 8,
+    "phase": "statistical",
+    "complete_window": false,
+    "action": "skip, do not zero-fill"
+  },
+  {
+    "time": 8,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 8,
+    "phase": "update",
+    "output_time": 8,
+    "uses_only_verdicts_received_by": 8
+  },
+  {
+    "time": 9,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 9,
+    "phase": "encode",
+    "packet_time": 9,
+    "tag_present": true
+  },
+  {
+    "time": 9,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 9,
+    "phase": "verify",
+    "packet_time": 9,
+    "passed": true,
+    "deadline": 9,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 9,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 9,
+    "phase": "statistical",
+    "complete_window": false,
+    "action": "skip, do not zero-fill"
+  },
+  {
+    "time": 9,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 9,
+    "phase": "update",
+    "output_time": 9,
+    "uses_only_verdicts_received_by": 9
+  },
+  {
+    "time": 10,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 10,
+    "phase": "encode",
+    "packet_time": 10,
+    "tag_present": true
+  },
+  {
+    "time": 10,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 10,
+    "phase": "verify",
+    "packet_time": 10,
+    "passed": true,
+    "deadline": 10,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 10,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 10,
+    "phase": "statistical",
+    "complete_window": false,
+    "action": "skip, do not zero-fill"
+  },
+  {
+    "time": 10,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 10,
+    "phase": "update",
+    "output_time": 10,
+    "uses_only_verdicts_received_by": 10
+  },
+  {
+    "time": 11,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 11,
+    "phase": "encode",
+    "packet_time": 11,
+    "tag_present": true
+  },
+  {
+    "time": 11,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 11,
+    "phase": "verify",
+    "packet_time": 11,
+    "passed": true,
+    "deadline": 11,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 11,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 11,
+    "phase": "statistical",
+    "complete_window": false,
+    "action": "skip, do not zero-fill"
+  },
+  {
+    "time": 11,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 11,
+    "phase": "update",
+    "output_time": 11,
+    "uses_only_verdicts_received_by": 11
+  },
+  {
+    "time": 12,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 12,
+    "phase": "encode",
+    "packet_time": 12,
+    "tag_present": true
+  },
+  {
+    "time": 12,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 12,
+    "phase": "verify",
+    "packet_time": 12,
+    "passed": true,
+    "deadline": 12,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 12,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 12,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 12,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 12,
+    "phase": "update",
+    "output_time": 12,
+    "uses_only_verdicts_received_by": 12
+  },
+  {
+    "time": 13,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 13,
+    "phase": "encode",
+    "packet_time": 13,
+    "tag_present": true
+  },
+  {
+    "time": 13,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 13,
+    "phase": "verify",
+    "packet_time": 13,
+    "passed": true,
+    "deadline": 13,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 13,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 13,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 13,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 13,
+    "phase": "update",
+    "output_time": 13,
+    "uses_only_verdicts_received_by": 13
+  },
+  {
+    "time": 14,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 14,
+    "phase": "encode",
+    "packet_time": 14,
+    "tag_present": true
+  },
+  {
+    "time": 14,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 14,
+    "phase": "verify",
+    "packet_time": 14,
+    "passed": true,
+    "deadline": 14,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 14,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 14,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 14,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 14,
+    "phase": "update",
+    "output_time": 14,
+    "uses_only_verdicts_received_by": 14
+  },
+  {
+    "time": 15,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 15,
+    "phase": "encode",
+    "packet_time": 15,
+    "tag_present": true
+  },
+  {
+    "time": 15,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 15,
+    "phase": "verify",
+    "packet_time": 15,
+    "passed": true,
+    "deadline": 15,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 15,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 15,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 15,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 15,
+    "phase": "update",
+    "output_time": 15,
+    "uses_only_verdicts_received_by": 15
+  },
+  {
+    "time": 16,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 16,
+    "phase": "encode",
+    "packet_time": 16,
+    "tag_present": true
+  },
+  {
+    "time": 16,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 16,
+    "phase": "verify",
+    "packet_time": 16,
+    "passed": true,
+    "deadline": 16,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 16,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 16,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 16,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 16,
+    "phase": "update",
+    "output_time": 16,
+    "uses_only_verdicts_received_by": 16
+  },
+  {
+    "time": 17,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 17,
+    "phase": "encode",
+    "packet_time": 17,
+    "tag_present": true
+  },
+  {
+    "time": 17,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 17,
+    "phase": "verify",
+    "packet_time": 17,
+    "passed": true,
+    "deadline": 17,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 17,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 17,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 17,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 17,
+    "phase": "update",
+    "output_time": 17,
+    "uses_only_verdicts_received_by": 17
+  },
+  {
+    "time": 18,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 18,
+    "phase": "encode",
+    "packet_time": 18,
+    "tag_present": true
+  },
+  {
+    "time": 18,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 18,
+    "phase": "verify",
+    "packet_time": 18,
+    "passed": true,
+    "deadline": 18,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 18,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 18,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 18,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 18,
+    "phase": "update",
+    "output_time": 18,
+    "uses_only_verdicts_received_by": 18
+  },
+  {
+    "time": 19,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 19,
+    "phase": "encode",
+    "packet_time": 19,
+    "tag_present": true
+  },
+  {
+    "time": 19,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 19,
+    "phase": "verify",
+    "packet_time": 19,
+    "passed": true,
+    "deadline": 19,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 19,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 19,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 19,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 19,
+    "phase": "update",
+    "output_time": 19,
+    "uses_only_verdicts_received_by": 19
+  },
+  {
+    "time": 20,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 20,
+    "phase": "encode",
+    "packet_time": 20,
+    "tag_present": true
+  },
+  {
+    "time": 20,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 20,
+    "phase": "verify",
+    "packet_time": 20,
+    "passed": true,
+    "deadline": 20,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 20,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 20,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 20,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 20,
+    "phase": "update",
+    "output_time": 20,
+    "uses_only_verdicts_received_by": 20
+  },
+  {
+    "time": 21,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 21,
+    "phase": "encode",
+    "packet_time": 21,
+    "tag_present": true
+  },
+  {
+    "time": 21,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 21,
+    "phase": "verify",
+    "packet_time": 21,
+    "passed": true,
+    "deadline": 21,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 21,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 21,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 21,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 21,
+    "phase": "update",
+    "output_time": 21,
+    "uses_only_verdicts_received_by": 21
+  },
+  {
+    "time": 22,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 22,
+    "phase": "encode",
+    "packet_time": 22,
+    "tag_present": true
+  },
+  {
+    "time": 22,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 22,
+    "phase": "verify",
+    "packet_time": 22,
+    "passed": true,
+    "deadline": 22,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 22,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 22,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 22,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 22,
+    "phase": "update",
+    "output_time": 22,
+    "uses_only_verdicts_received_by": 22
+  },
+  {
+    "time": 23,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 23,
+    "phase": "encode",
+    "packet_time": 23,
+    "tag_present": true
+  },
+  {
+    "time": 23,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 23,
+    "phase": "verify",
+    "packet_time": 23,
+    "passed": true,
+    "deadline": 23,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 23,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 23,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 23,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 23,
+    "phase": "update",
+    "output_time": 23,
+    "uses_only_verdicts_received_by": 23
+  },
+  {
+    "time": 24,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 24,
+    "phase": "encode",
+    "packet_time": 24,
+    "tag_present": true
+  },
+  {
+    "time": 24,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 24,
+    "phase": "verify",
+    "packet_time": 24,
+    "passed": true,
+    "deadline": 24,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 24,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 24,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 24,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 24,
+    "phase": "update",
+    "output_time": 24,
+    "uses_only_verdicts_received_by": 24
+  },
+  {
+    "time": 25,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 25,
+    "phase": "encode",
+    "packet_time": 25,
+    "tag_present": true
+  },
+  {
+    "time": 25,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 25,
+    "phase": "verify",
+    "packet_time": 25,
+    "passed": true,
+    "deadline": 25,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 25,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 25,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 25,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 25,
+    "phase": "update",
+    "output_time": 25,
+    "uses_only_verdicts_received_by": 25
+  },
+  {
+    "time": 26,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 26,
+    "phase": "encode",
+    "packet_time": 26,
+    "tag_present": true
+  },
+  {
+    "time": 26,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 26,
+    "phase": "verify",
+    "packet_time": 26,
+    "passed": true,
+    "deadline": 26,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 26,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 26,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 26,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 26,
+    "phase": "update",
+    "output_time": 26,
+    "uses_only_verdicts_received_by": 26
+  },
+  {
+    "time": 27,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 27,
+    "phase": "encode",
+    "packet_time": 27,
+    "tag_present": true
+  },
+  {
+    "time": 27,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 27,
+    "phase": "verify",
+    "packet_time": 27,
+    "passed": true,
+    "deadline": 27,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 27,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 27,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 27,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 27,
+    "phase": "update",
+    "output_time": 27,
+    "uses_only_verdicts_received_by": 27
+  },
+  {
+    "time": 28,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 28,
+    "phase": "encode",
+    "packet_time": 28,
+    "tag_present": true
+  },
+  {
+    "time": 28,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 28,
+    "phase": "verify",
+    "packet_time": 28,
+    "passed": true,
+    "deadline": 28,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 28,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 28,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 28,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 28,
+    "phase": "update",
+    "output_time": 28,
+    "uses_only_verdicts_received_by": 28
+  },
+  {
+    "time": 29,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 29,
+    "phase": "encode",
+    "packet_time": 29,
+    "tag_present": true
+  },
+  {
+    "time": 29,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 29,
+    "phase": "verify",
+    "packet_time": 29,
+    "passed": true,
+    "deadline": 29,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 29,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 29,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 29,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 29,
+    "phase": "update",
+    "output_time": 29,
+    "uses_only_verdicts_received_by": 29
+  },
+  {
+    "time": 30,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 30,
+    "phase": "encode",
+    "packet_time": 30,
+    "tag_present": true
+  },
+  {
+    "time": 30,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 30,
+    "phase": "verify",
+    "packet_time": 30,
+    "passed": true,
+    "deadline": 30,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 30,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 30,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 30,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 30,
+    "phase": "update",
+    "output_time": 30,
+    "uses_only_verdicts_received_by": 30
+  },
+  {
+    "time": 31,
+    "phase": "physical",
+    "sender_measurement_not_visible_to_attacker": true
+  },
+  {
+    "time": 31,
+    "phase": "encode",
+    "packet_time": 31,
+    "tag_present": true
+  },
+  {
+    "time": 31,
+    "phase": "attack",
+    "family": "OL",
+    "energy_spent": 0.0,
+    "accessible_fields": [
+      "k",
+      "past_q",
+      "current_q",
+      "public_gamma"
+    ],
+    "private_schedule_hidden": false
+  },
+  {
+    "time": 31,
+    "phase": "verify",
+    "packet_time": 31,
+    "passed": true,
+    "deadline": 31,
+    "late": false,
+    "receiver_result_only": true
+  },
+  {
+    "time": 31,
+    "phase": "decode_admission",
+    "accepted": true,
+    "provisional": false,
+    "rejected_is_missing_not_zero": true
+  },
+  {
+    "time": 31,
+    "phase": "statistical",
+    "complete_window": true
+  },
+  {
+    "time": 31,
+    "phase": "admission_final",
+    "accepted": true,
+    "rule": "authentication eligibility only; statistical alarm logged without extra gating"
+  },
+  {
+    "time": 31,
+    "phase": "update",
+    "output_time": 31,
+    "uses_only_verdicts_received_by": 31
+  }
+]

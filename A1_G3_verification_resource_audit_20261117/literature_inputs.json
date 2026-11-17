@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-18",
+  "sources": [
+    {
+      "id": "FPN26",
+      "title": "Attack-resilient state estimation with intermittent data authentication",
+      "file": "02_期刊与会议论文/FPN26_2022_Khazraei_IntermittentAuthentication_author.pdf",
+      "sha256": "de19e3b3f2a847470d9837ebe3b3ea313d4582f5687eff02f8ff25b10d936503",
+      "PDF_pages": 12,
+      "extracted_pages": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "read_pages_pending": true
+    },
+    {
+      "id": "FPN19",
+      "title": "Stealthy integrity attacks and optimal selective protection for distributed state estimation",
+      "file": "02_期刊与会议论文/FPN19_formal_2026.pdf",
+      "sha256": "1a6357421ee9eac8c727c75889bdc961d508d018f7aea4c50034fb69655b9884",
+      "PDF_pages": 15,
+      "extracted_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "read_pages_pending": true
+    },
+    {
+      "id": "FPN02",
+      "title": "A Periodic Dynamic Encoding Mechanism for Stealthy Attack Detection in Distributed State Estimation",
+      "file": "02_期刊与会议论文/FPN02_2024_Paper_Ding2024_PeriodicEncoding.pdf",
+      "sha256": "2e6fdc61646a2f5856e0a3865ad75b18538309e50683251054c3b73889208f45",
+      "PDF_pages": 13,
+      "extracted_pages": [
+        7,
+        8,
+        9
+      ],
+      "read_pages_pending": true
+    },
+    {
+      "id": "INTRO05",
+      "title": "A Switching Multiplicative Watermarking Scheme for Detection of Stealthy Cyber-Attacks",
+      "file": "02_期刊与会议论文/INTRO05_2021_Paper_Ferrari2021_SwitchingMW.pdf",
+      "sha256": "1837cd711ff5d2b1451c1420e4b57dff27c7b4aa50bcd312f3fd09f255ad8d65",
+      "PDF_pages": 18,
+      "extracted_pages": [
+        6,
+        7,
+        13,
+        14
+      ],
+      "read_pages_pending": true
+    },
+    {
+      "id": "INTRO06",
+      "title": "Watermarking-Based Protection Strategy Against Stealthy Integrity Attack on Distributed State Estimation",
+      "file": "02_期刊与会议论文/INTRO06_2023_Paper_Zhou2023_DistributedWatermark.pdf",
+      "sha256": "97d2a8e5acf8d7d6795be8249b2dbdc12240730bd22ec7a993f704d0173e597d",
+      "PDF_pages": 8,
+      "extracted_pages": [
+        4,
+        5,
+        6
+      ],
+      "read_pages_pending": true
+    },
+    {
+      "id": "FPN28",
+      "title": "Information-based stealthy attacks against distributed state estimation over sensor networks",
+      "file": "02_期刊与会议论文/FPN28_2025_Wang_InformationBasedFDI.pdf",
+      "sha256": "7f960d20c143aa06fe3cb3d0016dacf2ab7352dc7195747a7aeed084011d0316",
+      "PDF_pages": 9,
+      "extracted_pages": [
+        4,
+        6,
+        7
+      ],
+      "read_pages_pending": true
+    },
+    {
+      "id": "AIA02",
+      "title": "Integrity attacks on state estimation with varying data access: From visibility to full restriction",
+      "file": "02_期刊与会议论文/AIA02_2025_Wei_VaryingDataAccess.pdf",
+      "sha256": "6f0a4d25f1d97a32cd9fef4db4baa106d72e18300f951a5e4a7f37fb41f824b4",
+      "PDF_pages": 13,
+      "extracted_pages": [
+        7,
+        8,
+        11,
+        12
+      ],
+      "read_pages_pending": true
+    }
+  ],
+  "library_parallel_copy": false
+}

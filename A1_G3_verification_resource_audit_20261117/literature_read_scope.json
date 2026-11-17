@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-18",
+  "sources": [
+    {
+      "id": "INTRO05",
+      "title": "A Switching Multiplicative Watermarking Scheme for Detection of Stealthy Cyber-Attacks",
+      "doi": "10.1109/TAC.2020.3013850",
+      "citation_key": "Paper_Ferrari2021_SwitchingMW",
+      "year": 2021,
+      "file": "02_期刊与会议论文/INTRO05_2021_Paper_Ferrari2021_SwitchingMW.pdf",
+      "sha256": "1837cd711ff5d2b1451c1420e4b57dff27c7b4aa50bcd312f3fd09f255ad8d65",
+      "actual_scope": "本机PDF6—7/2561—2562、13—14/2568—2569，Lemma1式8、Theorem1/Theorem5式27—28；同步及检测充分条件，非MAC完整性保证",
+      "source_page": "https://pure.tudelft.nl/ws/portalfiles/portal/90979445/09157952.pdf",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "INTRO06",
+      "title": "Watermarking-Based Protection Strategy Against Stealthy Integrity Attack on Distributed State Estimation",
+      "doi": "10.1109/TAC.2022.3171422",
+      "citation_key": "Paper_Zhou2023_DistributedWatermark",
+      "year": 2023,
+      "file": "02_期刊与会议论文/INTRO06_2023_Paper_Zhou2023_DistributedWatermark.pdf",
+      "sha256": "97d2a8e5acf8d7d6795be8249b2dbdc12240730bd22ec7a993f704d0173e597d",
+      "actual_scope": "本机PDF4—6/631—633，式21—24、Theorem2/3及泄露段；交换估计的水印检测，不提供拒包后干净量测",
+      "source_page": "https://doi.org/10.1109/TAC.2022.3171422",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "FPN02",
+      "title": "A Periodic Dynamic Encoding Mechanism for Stealthy Attack Detection in Distributed State Estimation",
+      "doi": "10.1002/rnc.7688",
+      "citation_key": "Paper_Ding2024_PeriodicEncoding",
+      "year": 2024,
+      "file": "02_期刊与会议论文/FPN02_2024_Paper_Ding2024_PeriodicEncoding.pdf",
+      "sha256": "2e6fdc61646a2f5856e0a3865ad75b18538309e50683251054c3b73889208f45",
+      "actual_scope": "复用本机及A1既有核读，定位PDF7—9，式30—38/Theorem2/Algorithm2；周期历史编码不等于本轮即时认证",
+      "source_page": "https://doi.org/10.1002/rnc.7688",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "FPN19",
+      "title": "Stealthy integrity attacks and optimal selective protection for distributed state estimation",
+      "doi": "10.1007/s11432-025-4567-3",
+      "citation_key": "Paper_Zhou2026_SelectiveProtection",
+      "year": 2026,
+      "file": "02_期刊与会议论文/FPN19_formal_2026.pdf",
+      "sha256": "1a6357421ee9eac8c727c75889bdc961d508d018f7aea4c50034fb69655b9884",
+      "actual_scope": "正式PDF3—7、10—12，式4—9/13、Theorem1/2/5、保护P1式51；视觉10；实际来源SCIS2026非Automatica；受保护量测不可注入假设与真实拒包区分",
+      "source_page": "https://link.springer.com/article/10.1007/s11432-025-4567-3",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "FPN26",
+      "title": "Attack-resilient state estimation with intermittent data authentication",
+      "doi": "10.1016/j.automatica.2021.110035",
+      "citation_key": "Paper_Khazraei2022_IntermittentAuthentication",
+      "year": 2022,
+      "file": "02_期刊与会议论文/FPN26_2022_Khazraei_IntermittentAuthentication_author.pdf",
+      "sha256": "de19e3b3f2a847470d9837ebe3b3ea313d4582f5687eff02f8ff25b10d936503",
+      "actual_scope": "本机作者PDF2—5、8—11，重点Definition3/Theorem4式29、Proposition3/Theorem5（9—10）；视觉9；公开认证时刻、保护点a=0模型；不将有界噪声l0-RSE的PA保证直接当本Gaussian首包D保证",
+      "source_page": "https://scholars.duke.edu/publication/1446800",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "FPN28",
+      "title": "Information-based stealthy attacks against distributed state estimation over sensor networks",
+      "doi": "10.1016/j.neucom.2024.129087",
+      "citation_key": "Paper_Wang2025_InformationStealthy",
+      "year": 2025,
+      "file": "02_期刊与会议论文/FPN28_2025_Wang_InformationBasedFDI.pdf",
+      "sha256": "7f960d20c143aa06fe3cb3d0016dacf2ab7352dc7195747a7aeed084011d0316",
+      "actual_scope": "沿用A1/G15实读核心段PDF3—7，本轮定位4/6/7；信息权限和式44输入限制不改变；非新全文审证",
+      "source_page": "https://www.sciencedirect.com/science/article/pii/S0925231224018587",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "AIA02",
+      "title": "Integrity attacks on state estimation with varying data access: From visibility to full restriction",
+      "doi": "10.1016/j.automatica.2025.112162",
+      "citation_key": "Paper_Wei2025_VaryingDataAccess",
+      "year": 2025,
+      "file": "02_期刊与会议论文/AIA02_2025_Wei_VaryingDataAccess.pdf",
+      "sha256": "6f0a4d25f1d97a32cd9fef4db4baa106d72e18300f951a5e4a7f37fb41f824b4",
+      "actual_scope": "沿用A1/G15实读PDF7—8、11—12，本轮核条件信息/统计约束；Proposition4、Theorem5/6，非本硬预算风险算法复现",
+      "source_page": "https://api.crossref.org/works/10.1016/j.automatica.2025.112162",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "G3S01",
+      "title": "Recommendation for Block Cipher Modes of Operation: The CMAC Mode for Authentication",
+      "doi": "10.6028/NIST.SP.800-38B",
+      "citation_key": "Standard_NIST2005_SP80038B",
+      "year": 2005,
+      "file": "",
+      "sha256": "",
+      "actual_scope": "官方在线PDF16—17/印刷11—12 Appendix A.2，PDF19/印刷14 Appendix C；标签预算与抗重放；未通读全部CMAC算法证明",
+      "source_page": "https://doi.org/10.6028/NIST.SP.800-38B",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "G3S02",
+      "title": "IP Encapsulating Security Payload (ESP)",
+      "doi": "10.17487/RFC4303",
+      "citation_key": "Standard_Kent2005_RFC4303",
+      "year": 2005,
+      "file": "",
+      "sha256": "",
+      "actual_scope": "§3.3.3、3.4.3—3.4.4，序号保护、抗重放与完整性失败拒收；非全文通读",
+      "source_page": "https://www.rfc-editor.org/rfc/rfc4303.html",
+      "PDF_uploaded": false
+    }
+  ],
+  "visual_pages": {
+    "FPN26": [
+      9
+    ],
+    "FPN19": [
+      10
+    ]
+  },
+  "no_parallel_library": true
+}

@@ -1,0 +1,43 @@
+{
+  "executed": "2026-11-18",
+  "inputs": {
+    "registration.json": "1ac790c41748d166b99e06cff6b01717e67010e26e7c9aa3df45e49822a33f2c",
+    "../common_g_reference_revision_20261115/common_g_reference.py": "95b667539e8d1341ae142ca4a1f9586b10cd85e9f4e1e9c62154bac0f789e8f4",
+    "../common_g_reference_revision_20261115/inputs/five_node_aggregate_model.json": "0f67852d389ab9dabfe4f5d564778a11b411441f53fcd77da22f8680c5793e76",
+    "../attack_gain_switch_audit_20261115/sampling_seed_map.json": "983fc5b039b6ca1cf7d0ae82f32d89ab5cfa8b321567c3e28943954c4fd52e71",
+    "../A1_information_aware_attack_audit_20261116/attack_models.py": "b92c6d43c69ec163fedf77919e99d006de7ecb09cc752816ab94a58476448480",
+    "../A1_information_aware_attack_audit_20261116/screen_attack_classes.py": "d4168e9becb8a87dddb6e24609659292064d735e69b40e73d5f86d1e188b7eac",
+    "../A1_information_aware_attack_audit_20261116/registration.json": "e9266d103171cf73eaa92b6b2c60fef0740470a81af0aeb2c2ccdaf0b853b0f0",
+    "../active_trusted_measurement_G0_G1/measurement_model.py": "6dc2861daa6dbd612c2aa949c45bd026e7bb8ff9b9b5c863a9d22afb6d577bae",
+    "../active_trusted_measurement_G0_G1/registration.json": "386b2b2cba5fc68ba14293a657b6e6f208ddbce2af9621d5be4aabf636239f16",
+    "../A1_G2_attack_information_defense_20261117/risk_bounds.py": "fc89b8855fd410e9f5c2a33c3f3908af6094c9109c925245dc3e5538f3b56d15",
+    "../A1_G2_attack_information_defense_20261117/gain_models.py": "89c3a987d9e7427b3d10b0a0157ea181186ab5f4dd748844a8a01aeea5de3b10",
+    "../A1_G2_attack_information_defense_20261117/registration.json": "c5a2385f0ed4fdea9ad8b430a4c56c7180df2caf86d183b8eee9c749c28a375f",
+    "../A1_G2_attack_information_defense_20261117/coupling_certificates.json": "09b409df96fcbafb15e957649ee864824a76b4e3fc849aedcbb6b6ad56cc4490",
+    "../A1_G2_attack_information_defense_20261117/training_metrics.json": "6820df9b3648bb41b351ac2833a8f13219a136054610813a7da1189f194bd810"
+  },
+  "outputs": {
+    "boundary_certificates.json": "ea2a98529383e3358eb981195f61c6c4d9e4b3b46180d090d7def22bcd50be72",
+    "protocol_checks.json": "c379e539847e55e2c0288244fab7b10d56e58942e26b5ae096be62540f9741cc",
+    "protocol_trace_tiny_edit.json": "c6bc9d5831483e4c70ab7bd748368c93499e7119b815eae41394a45f8298f740",
+    "independent_covariance.json": "0c20b464172b03c8652907d788ec6f9b60ee52462eb4e072660701683dd1a6d7",
+    "protocol_regression.npz": "219e8680aa04ea4580acb11c4310e6a15a4ed494c81cc35cb6de25504719f0d5",
+    "01_已有成果与代码审计.md": "81c61210d2a88e4d08c26d4ab0987f775bf9719c8212c280b4fd0037d17e993f",
+    "02_攻击者与防御者权限矩阵.md": "82e26d5d9b61cc0119f34b4eccb24de24a355283b305ec6464ec727e05e394af",
+    "03_完整验证与有限资源的数学模型.md": "1e403b07dc3521eb27d4de1a30732bf0ddb2faffb8f5acdd5c38cef904d19231",
+    "04_首包危险与有限保护边界.md": "64ad214b97d8b1895614d7eb9d76bfc55c01a10071f632eb1d3a22edb9a2476b",
+    "05_最小协议闭环与单元测试.md": "425bf3114dfaec4a426b7b15149d682a8bc44b28e2915f9594b756a33c90cae4",
+    "06_成熟防御与直接近邻对照.md": "1494eaeb399940e930110df9e1d8bd10140ff9b2acb97a76fa874e835e254027",
+    "07_可投稿的中心命题候选.md": "62bc85c1153699ca5705a09d13bb68ad296a17c3901a45f419917a2e39ab99d7",
+    "08_下一阶段立项决定.md": "22792f1cf3c828bc9ab67a4babb0514e21ca3bfcbd5a62e9de8522cd0e1a2b38",
+    "evidence_table.md": "23eddc772f962330c9ed48f1b66a5f3a26f314c80e4ec4f61eadbf68bd4f6d11",
+    "README.md": "6dfbe019fe5a44181077fd6c2d4fc2ba638e325e5e6a944a2f7b1f75cbbd5286",
+    "review_request.md": "e9e0289b9b27ec7b92b2fc507f9c7fa9adfb23e6fb089418e02c1403ef3c11ce",
+    "关键成果_代码_审稿意见对应表.md": "f3ae1846de3543440138f9229af619e3ab959a17990684b0eaf2ab768e9048f7",
+    "建议版根README_未应用.md": "6887f4d4bccfe7a6d1a6d028f09bbfae7e9a928de1403216d4e58f06be4da449"
+  },
+  "normalization": "canonical JSON / UTF8 LF text",
+  "snapshot_not_independent_proof": true,
+  "npz_semantic_arrays_compared": true,
+  "npz_zip_header_bytes_not_compared": true
+}

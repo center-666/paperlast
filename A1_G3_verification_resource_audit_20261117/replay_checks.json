@@ -1,0 +1,12 @@
+{
+  "executed": "2026-11-18",
+  "full_replay": true,
+  "all_match": true,
+  "frozen_inputs": 14,
+  "matched_outputs": 18,
+  "reused_old_physical_fixtures": 4,
+  "new_physical_samples": 0,
+  "probability_MC": false,
+  "exact_rational_and_interval_assertions": true,
+  "bitwise_replay_requires_pinned_environment": true
+}

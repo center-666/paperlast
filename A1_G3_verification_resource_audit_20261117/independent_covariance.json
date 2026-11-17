@@ -1,0 +1,23 @@
+{
+  "executed": "2026-11-18",
+  "models": {
+    "unstable": {
+      "covariance_max_error": 9.71445146547012e-17,
+      "healthy_MSE": 0.2277959564117224,
+      "rejected_MSE": 0.43314725388768227,
+      "aggregate_max_error": 9.71445146547012e-17,
+      "primitive_dimension": 384,
+      "shared_state_and_noise": true
+    },
+    "stable": {
+      "covariance_max_error": 2.7755575615628914e-17,
+      "healthy_MSE": 0.22672205806146717,
+      "rejected_MSE": 0.42346528251383275,
+      "aggregate_max_error": 5.551115123125783e-17,
+      "primitive_dimension": 384,
+      "shared_state_and_noise": true
+    }
+  },
+  "no_random_sampling": true,
+  "independent_primitive_map": true
+}
