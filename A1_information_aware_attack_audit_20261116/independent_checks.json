@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-17",
+  "errors": {
+    "affine_trajectory": 2.362346429585216e-14,
+    "bias_recursion": 9.41231530124311e-15,
+    "mse_identity": 2.220446049250313e-14,
+    "causality": 0.0,
+    "A0_embedding": 0.0,
+    "watermark_cancellation": 1.4210854715202004e-14,
+    "nominal_covariance": 3.1086244689504383e-15
+  },
+  "independent_target_updates": 2976,
+  "maximum_executed_energy": 9.999999999990003,
+  "joint_overlap_cross_covariance_norms": {
+    "unstable": 2.8095953917313974,
+    "stable": 2.8118351440575338
+  },
+  "no_future_packet_dependence": true,
+  "A0_exact_embedding": true,
+  "selection_unchanged_after_roundoff_guard": true,
+  "new_physical_paths": 0,
+  "actual_MSE_includes_cross_term": true,
+  "global_attack_optimality": false
+}

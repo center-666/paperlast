@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-17",
+  "baseline": "abab2f9a14d4a782752018d7d79cbb5718b18bd3",
+  "protected_prior_inputs": 823,
+  "changed_prior_research_files": [],
+  "authorized_library_changes_only": true,
+  "library_receipt_chain": [
+    "1161866dee2c93d2dc0f6b6d94cf1c39ee09a6d9c5e6dc4c1a9997664c6a8d95",
+    "b6b4be6e78712c3ec40c3c50e9b46593a7e420240dc3c00bb4355f0022d4974c",
+    "3c8402d410a56dbf5356755778e49333dca76d7bbd465d80844e2716ca64c159"
+  ],
+  "library_counts": {
+    "records": 198,
+    "local_PDF": 143,
+    "independent_full_theses": 46
+  },
+  "original_Zotero_files_unchanged": true,
+  "old_citation_keys_preserved": true,
+  "protected_formal_sources": 17,
+  "archive_sources_and_zip_members": 14,
+  "archive_ZIP_unchanged": true,
+  "stage_TeX_unchanged": 7,
+  "stage_PDF_unchanged": true,
+  "frozen_reference_artifacts_unchanged": 33,
+  "registration_sha256": "cb1dab96897226e452fef9d684ad5a8e85edb453233efc34c32709d448378f6d",
+  "selection_sha256": "1a72c30b6178b91a2f06c5213e214e82643355bb277f6e49433ecc0a88f3b8e8",
+  "independent_target_updates": 2976,
+  "new_physical_seeds": 0,
+  "original_50_node_MC": false,
+  "original_manuscript_changes": false,
+  "second_paper_writes": 0,
+  "new_defense": false,
+  "resolved_core_fulltext_gap": [
+    "FPN28",
+    "AIA02"
+  ],
+  "remaining_metadata_only": [
+    "AIA03",
+    "AIA04"
+  ],
+  "all_field_novelty_cleared": false,
+  "decision": "A1 capability retained; no independent simple-feedback attack-method claim; no G2 approved",
+  "broken_links": []
+}

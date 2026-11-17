@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-17",
+  "before_sha256": "b6b4be6e78712c3ec40c3c50e9b46593a7e420240dc3c00bb4355f0022d4974c",
+  "after_sha256": "3c8402d410a56dbf5356755778e49333dca76d7bbd465d80844e2716ca64c159",
+  "before_records": 198,
+  "after_records": 198,
+  "before_local_PDF": 141,
+  "after_local_PDF": 143,
+  "old_citation_keys_preserved": true,
+  "full_independent_theses_unchanged": 46,
+  "new_records": 0,
+  "attached_existing_ids": [
+    "FPN28",
+    "AIA02"
+  ],
+  "resolved_core_fulltext_gap": [
+    "FPN28",
+    "AIA02"
+  ],
+  "supplemental_metadata_only": [
+    "AIA03",
+    "AIA04"
+  ],
+  "alternate_comparison": {
+    "primary_sha256": "6f0a4d25f1d97a32cd9fef4db4baa106d72e18300f951a5e4a7f37fb41f824b4",
+    "alternate_sha256": "49aa5f0720094a5099ea44a6ff18fc8bbb04a29b00d3239236e27265b4dd8c40",
+    "byte_identical": false,
+    "normalized_extracted_text_identical": true,
+    "pages_each": 13,
+    "counted_as_new_record": false,
+    "limit": "text identity is not a byte-level identity claim; originals retained"
+  },
+  "original_Zotero_files_unchanged": true,
+  "parallel_library": false
+}

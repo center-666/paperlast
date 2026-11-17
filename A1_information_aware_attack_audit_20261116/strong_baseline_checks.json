@@ -1,0 +1,1667 @@
+{
+  "date": "2026-11-17",
+  "scope": "auditor baseline supplement after initial screen; same fixed12 directions and OLD sample splits",
+  "reason": "training sample damage must not replace population A0 P3 feasibility; and temporal concentration must not be credited automatically to information",
+  "models": {
+    "unstable": {
+      "analytic_A0_P1": {
+        "population_expected_peak": 0.28607832898701674,
+        "policy": {
+          "id": "A0_analytic_P1",
+          "family": "A0",
+          "xi": [
+            -0.5230403119544881,
+            -0.3157471173127485
+          ],
+          "theta": 0.0,
+          "kind": "projected_feedback"
+        },
+        "validation": {
+          "energy_mean": 9.999999999980004,
+          "energy_max": 9.999999999980002,
+          "peak_mean_bias": 0.269910358572168,
+          "mean_actual_MSE": 0.27397035926989066,
+          "mean_MSE_increment": 0.05527630798027142,
+          "mean_bias_energy": 0.058355961849349144,
+          "mean_cross": -0.0030796538690777133,
+          "danger_rate": 1.0,
+          "clipping_fraction": 0.0,
+          "detectors": {
+            "temporal": {
+              "event_alarm_rate": 0.14583333333333334,
+              "event_miss_rate": 0.8541666666666666,
+              "pre_alarm_danger_rate": 1.0,
+              "pre_attack_alarm_count": 0,
+              "alive_at_start_count": 48,
+              "risk_given_no_pre_alarm": 1.0,
+              "score_decrease_internal_fraction": 0.2465277777777778,
+              "mean_first_alarm_capped_at32": 29.458333333333332,
+              "mean_nominal_score": 7.793546034736223,
+              "mean_attacked_score": 9.03526162698091
+            },
+            "joint_GLRT": {
+              "event_alarm_rate": 0.5416666666666666,
+              "event_miss_rate": 0.4583333333333333,
+              "pre_alarm_danger_rate": 0.9375,
+              "pre_attack_alarm_count": 0,
+              "alive_at_start_count": 48,
+              "risk_given_no_pre_alarm": 0.9375,
+              "score_decrease_internal_fraction": 0.059027777777777776,
+              "mean_first_alarm_capped_at32": 22.083333333333332,
+              "mean_nominal_score": 9.781923142332278,
+              "mean_attacked_score": 14.649575535001796
+            }
+          }
+        }
+      },
+      "population_P3_candidates": {
+        "A0_population_P3/ray0": {
+          "policy": {
+            "id": "A0_population_P3/ray0",
+            "family": "A0",
+            "xi": [
+              0.4088112638142709,
+              0.0
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020003,
+            "encoded_energy": 3.739324436399582
+          },
+          "metrics": {
+            "energy_mean": 3.739324436399582,
+            "energy_max": 3.739324436399582,
+            "peak_mean_bias": 0.1021575698265382,
+            "mean_actual_MSE": 0.24193201273195178,
+            "mean_MSE_increment": 0.019902855479082895,
+            "mean_bias_energy": 0.02172028361513773,
+            "mean_cross": -0.001817428136054824,
+            "danger_rate": 0.8125,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.8125,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.8125,
+                "score_decrease_internal_fraction": 0.2916666666666667,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 7.8046514705648615,
+                "mean_attacked_score": 8.160364301473994
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.25,
+                "event_miss_rate": 0.75,
+                "pre_alarm_danger_rate": 0.8125,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.8125,
+                "score_decrease_internal_fraction": 0.09375,
+                "mean_first_alarm_capped_at32": 27.375,
+                "mean_nominal_score": 9.992301321601406,
+                "mean_attacked_score": 11.646216318813677
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray1": {
+          "policy": {
+            "id": "A0_population_P3/ray1",
+            "family": "A0",
+            "xi": [
+              0.3130904482856631,
+              0.18076285459842817
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020004,
+            "encoded_energy": 3.495818074177945
+          },
+          "metrics": {
+            "energy_mean": 3.4958180741779454,
+            "energy_max": 3.4958180741779454,
+            "peak_mean_bias": 0.08747880467091125,
+            "mean_actual_MSE": 0.23616388581948972,
+            "mean_MSE_increment": 0.014134728566620831,
+            "mean_bias_energy": 0.016729475503435363,
+            "mean_cross": -0.002594746936814535,
+            "danger_rate": 0.625,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.625,
+                "score_decrease_internal_fraction": 0.3541666666666667,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 7.8046514705648615,
+                "mean_attacked_score": 8.0697196992013
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.1875,
+                "event_miss_rate": 0.8125,
+                "pre_alarm_danger_rate": 0.5625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.5625,
+                "score_decrease_internal_fraction": 0.11458333333333333,
+                "mean_first_alarm_capped_at32": 28.5625,
+                "mean_nominal_score": 9.992301321601406,
+                "mean_attacked_score": 11.272000940629264
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray2": {
+          "policy": {
+            "id": "A0_population_P3/ray2",
+            "family": "A0",
+            "xi": [
+              0.19381677295774732,
+              0.33570049812185987
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020001,
+            "encoded_energy": 3.686984958253645
+          },
+          "metrics": {
+            "energy_mean": 3.6869849582536447,
+            "energy_max": 3.6869849582536447,
+            "peak_mean_bias": 0.07265197793345402,
+            "mean_actual_MSE": 0.23353209834574476,
+            "mean_MSE_increment": 0.011502941092875849,
+            "mean_bias_energy": 0.014598449293040333,
+            "mean_cross": -0.003095508200164481,
+            "danger_rate": 0.5625,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.5625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.5625,
+                "score_decrease_internal_fraction": 0.3958333333333333,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 7.8046514705648615,
+                "mean_attacked_score": 8.03480293127816
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.1875,
+                "event_miss_rate": 0.8125,
+                "pre_alarm_danger_rate": 0.5,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.5,
+                "score_decrease_internal_fraction": 0.13541666666666666,
+                "mean_first_alarm_capped_at32": 28.5625,
+                "mean_nominal_score": 9.992301321601406,
+                "mean_attacked_score": 11.184921071619183
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray3": {
+          "policy": {
+            "id": "A0_population_P3/ray3",
+            "family": "A0",
+            "xi": [
+              3.064818154953789e-17,
+              0.5005227886256894
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020004,
+            "encoded_energy": 4.498286676324518
+          },
+          "metrics": {
+            "energy_mean": 4.4982866763245175,
+            "energy_max": 4.4982866763245175,
+            "peak_mean_bias": 0.0633757198683515,
+            "mean_actual_MSE": 0.2358032301369031,
+            "mean_MSE_increment": 0.013774072884034204,
+            "mean_bias_energy": 0.01710472638714802,
+            "mean_cross": -0.003330653503113815,
+            "danger_rate": 0.5625,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.5625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.5625,
+                "score_decrease_internal_fraction": 0.4270833333333333,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 7.8046514705648615,
+                "mean_attacked_score": 8.084460315049583
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.25,
+                "event_miss_rate": 0.75,
+                "pre_alarm_danger_rate": 0.5,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.5,
+                "score_decrease_internal_fraction": 0.14583333333333334,
+                "mean_first_alarm_capped_at32": 27.5,
+                "mean_nominal_score": 9.992301321601406,
+                "mean_attacked_score": 11.54774811283141
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray4": {
+          "policy": {
+            "id": "A0_population_P3/ray4",
+            "family": "A0",
+            "xi": [
+              -0.3279782133118808,
+              0.568074929231841
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020003,
+            "encoded_energy": 5.844503362580567
+          },
+          "metrics": {
+            "energy_mean": 5.844503362580567,
+            "energy_max": 5.844503362580567,
+            "peak_mean_bias": 0.12484323336289811,
+            "mean_actual_MSE": 0.24993021088406042,
+            "mean_MSE_increment": 0.02790105363119154,
+            "mean_bias_energy": 0.030223149270026957,
+            "mean_cross": -0.0023220956388354114,
+            "danger_rate": 1.0,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 1.0,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 1.0,
+                "score_decrease_internal_fraction": 0.3541666666666667,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 7.8046514705648615,
+                "mean_attacked_score": 8.320782470862678
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.5,
+                "event_miss_rate": 0.5,
+                "pre_alarm_danger_rate": 0.9375,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.9375,
+                "score_decrease_internal_fraction": 0.07291666666666667,
+                "mean_first_alarm_capped_at32": 22.9375,
+                "mean_nominal_score": 9.992301321601406,
+                "mean_attacked_score": 12.755086961815323
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray5": {
+          "policy": {
+            "id": "A0_population_P3/ray5",
+            "family": "A0",
+            "xi": [
+              -0.4752936742109899,
+              0.2744109307498415
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020003,
+            "encoded_energy": 4.756747333198772
+          },
+          "metrics": {
+            "energy_mean": 4.7567473331987715,
+            "energy_max": 4.7567473331987715,
+            "peak_mean_bias": 0.1160414569115113,
+            "mean_actual_MSE": 0.25276326486862843,
+            "mean_MSE_increment": 0.03073410761575958,
+            "mean_bias_energy": 0.030447148751081867,
+            "mean_cross": 0.0002869588646777216,
+            "danger_rate": 0.875,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.875,
+                "score_decrease_internal_fraction": 0.3541666666666667,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 7.8046514705648615,
+                "mean_attacked_score": 8.357726216750928
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.25,
+                "event_miss_rate": 0.75,
+                "pre_alarm_danger_rate": 0.875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.875,
+                "score_decrease_internal_fraction": 0.13541666666666666,
+                "mean_first_alarm_capped_at32": 27.3125,
+                "mean_nominal_score": 9.992301321601406,
+                "mean_attacked_score": 12.602292400644709
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray6": {
+          "policy": {
+            "id": "A0_population_P3/ray6",
+            "family": "A0",
+            "xi": [
+              -0.4088112638142709,
+              5.0064940568553105e-17
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020003,
+            "encoded_energy": 3.739324436399582
+          },
+          "metrics": {
+            "energy_mean": 3.739324436399582,
+            "energy_max": 3.739324436399582,
+            "peak_mean_bias": 0.1021575698265382,
+            "mean_actual_MSE": 0.24556686900406144,
+            "mean_MSE_increment": 0.023537711751192552,
+            "mean_bias_energy": 0.021720283615137722,
+            "mean_cross": 0.001817428136054824,
+            "danger_rate": 0.8125,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.8125,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.8125,
+                "score_decrease_internal_fraction": 0.40625,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 7.8046514705648615,
+                "mean_attacked_score": 8.248039293460659
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.25,
+                "event_miss_rate": 0.75,
+                "pre_alarm_danger_rate": 0.75,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.75,
+                "score_decrease_internal_fraction": 0.2604166666666667,
+                "mean_first_alarm_capped_at32": 27.3125,
+                "mean_nominal_score": 9.992301321601406,
+                "mean_attacked_score": 11.833353265596994
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray7": {
+          "policy": {
+            "id": "A0_population_P3/ray7",
+            "family": "A0",
+            "xi": [
+              -0.3130904482856632,
+              -0.18076285459842809
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020004,
+            "encoded_energy": 3.495818074177946
+          },
+          "metrics": {
+            "energy_mean": 3.4958180741779454,
+            "energy_max": 3.4958180741779454,
+            "peak_mean_bias": 0.08747880467091124,
+            "mean_actual_MSE": 0.24135337969311876,
+            "mean_MSE_increment": 0.019324222440249905,
+            "mean_bias_energy": 0.016729475503435367,
+            "mean_cross": 0.0025947469368145333,
+            "danger_rate": 0.625,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.625,
+                "score_decrease_internal_fraction": 0.40625,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 7.8046514705648615,
+                "mean_attacked_score": 8.190625544464897
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.125,
+                "event_miss_rate": 0.875,
+                "pre_alarm_danger_rate": 0.5625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.5625,
+                "score_decrease_internal_fraction": 0.23958333333333334,
+                "mean_first_alarm_capped_at32": 29.5625,
+                "mean_nominal_score": 9.992301321601406,
+                "mean_attacked_score": 11.455836679272045
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray8": {
+          "policy": {
+            "id": "A0_population_P3/ray8",
+            "family": "A0",
+            "xi": [
+              -0.19381677295774744,
+              -0.3357004981218598
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020004,
+            "encoded_energy": 3.686984958253646
+          },
+          "metrics": {
+            "energy_mean": 3.686984958253645,
+            "energy_max": 3.686984958253645,
+            "peak_mean_bias": 0.07265197793345404,
+            "mean_actual_MSE": 0.2397231147460737,
+            "mean_MSE_increment": 0.01769395749320482,
+            "mean_bias_energy": 0.014598449293040336,
+            "mean_cross": 0.0030955082001644816,
+            "danger_rate": 0.5625,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.5625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.5625,
+                "score_decrease_internal_fraction": 0.3541666666666667,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 7.8046514705648615,
+                "mean_attacked_score": 8.176207906704132
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.125,
+                "event_miss_rate": 0.875,
+                "pre_alarm_danger_rate": 0.5625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.5625,
+                "score_decrease_internal_fraction": 0.22916666666666666,
+                "mean_first_alarm_capped_at32": 29.6875,
+                "mean_nominal_score": 9.992301321601406,
+                "mean_attacked_score": 11.348885660909733
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray9": {
+          "policy": {
+            "id": "A0_population_P3/ray9",
+            "family": "A0",
+            "xi": [
+              -9.194454464861365e-17,
+              -0.5005227886256893
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020001,
+            "encoded_energy": 4.498286676324517
+          },
+          "metrics": {
+            "energy_mean": 4.498286676324517,
+            "energy_max": 4.498286676324517,
+            "peak_mean_bias": 0.06337571986835147,
+            "mean_actual_MSE": 0.2424645371431307,
+            "mean_MSE_increment": 0.02043537989026183,
+            "mean_bias_energy": 0.01710472638714801,
+            "mean_cross": 0.003330653503113812,
+            "danger_rate": 0.5625,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.5625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.5625,
+                "score_decrease_internal_fraction": 0.2708333333333333,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 7.8046514705648615,
+                "mean_attacked_score": 8.233317391295857
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.125,
+                "event_miss_rate": 0.875,
+                "pre_alarm_danger_rate": 0.5,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.5,
+                "score_decrease_internal_fraction": 0.17708333333333334,
+                "mean_first_alarm_capped_at32": 29.125,
+                "mean_nominal_score": 9.992301321601406,
+                "mean_attacked_score": 11.659934320702847
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray10": {
+          "policy": {
+            "id": "A0_population_P3/ray10",
+            "family": "A0",
+            "xi": [
+              0.3279782133118805,
+              -0.5680749292318411
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020001,
+            "encoded_energy": 5.844503362580566
+          },
+          "metrics": {
+            "energy_mean": 5.844503362580566,
+            "energy_max": 5.844503362580566,
+            "peak_mean_bias": 0.12484323336289806,
+            "mean_actual_MSE": 0.2545744021617313,
+            "mean_MSE_increment": 0.032545244908862354,
+            "mean_bias_energy": 0.03022314927002694,
+            "mean_cross": 0.0023220956388354135,
+            "danger_rate": 1.0,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 1.0,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 1.0,
+                "score_decrease_internal_fraction": 0.23958333333333334,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 7.8046514705648615,
+                "mean_attacked_score": 8.41939049619368
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.375,
+                "event_miss_rate": 0.625,
+                "pre_alarm_danger_rate": 0.9375,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.9375,
+                "score_decrease_internal_fraction": 0.10416666666666667,
+                "mean_first_alarm_capped_at32": 24.625,
+                "mean_nominal_score": 9.992301321601406,
+                "mean_attacked_score": 12.732279267648869
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray11": {
+          "policy": {
+            "id": "A0_population_P3/ray11",
+            "family": "A0",
+            "xi": [
+              0.47529367421098984,
+              -0.2744109307498416
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.1000000000002,
+            "encoded_energy": 4.756747333198771
+          },
+          "metrics": {
+            "energy_mean": 4.7567473331987715,
+            "energy_max": 4.7567473331987715,
+            "peak_mean_bias": 0.11604145691151126,
+            "mean_actual_MSE": 0.252189347139273,
+            "mean_MSE_increment": 0.03016018988640413,
+            "mean_bias_energy": 0.030447148751081853,
+            "mean_cross": -0.00028695886467771964,
+            "danger_rate": 0.875,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.875,
+                "score_decrease_internal_fraction": 0.2916666666666667,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 7.8046514705648615,
+                "mean_attacked_score": 8.337403878414174
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.4375,
+                "event_miss_rate": 0.5625,
+                "pre_alarm_danger_rate": 0.8125,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.8125,
+                "score_decrease_internal_fraction": 0.11458333333333333,
+                "mean_first_alarm_capped_at32": 23.5,
+                "mean_nominal_score": 9.992301321601406,
+                "mean_attacked_score": 12.446228480790454
+              }
+            }
+          }
+        }
+      },
+      "population_P3_selected_using_training": {
+        "temporal": "A0_population_P3/ray4",
+        "joint_GLRT": "A0_population_P3/ray7"
+      },
+      "population_P3_validation": {
+        "A0_population_P3/ray4": {
+          "policy": {
+            "id": "A0_population_P3/ray4",
+            "family": "A0",
+            "xi": [
+              -0.3279782133118808,
+              0.568074929231841
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020003,
+            "encoded_energy": 5.844503362580567
+          },
+          "metrics": {
+            "energy_mean": 5.844503362580567,
+            "energy_max": 5.844503362580567,
+            "peak_mean_bias": 0.13348330238462833,
+            "mean_actual_MSE": 0.24842792818577658,
+            "mean_MSE_increment": 0.029733876896157353,
+            "mean_bias_energy": 0.029083244843399397,
+            "mean_cross": 0.0006506320527579514,
+            "danger_rate": 0.7708333333333334,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.08333333333333333,
+                "event_miss_rate": 0.9166666666666666,
+                "pre_alarm_danger_rate": 0.7708333333333334,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 48,
+                "risk_given_no_pre_alarm": 0.7708333333333334,
+                "score_decrease_internal_fraction": 0.3125,
+                "mean_first_alarm_capped_at32": 30.479166666666668,
+                "mean_nominal_score": 7.793546034736223,
+                "mean_attacked_score": 8.426394560206253
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.3333333333333333,
+                "event_miss_rate": 0.6666666666666666,
+                "pre_alarm_danger_rate": 0.7083333333333334,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 48,
+                "risk_given_no_pre_alarm": 0.7083333333333334,
+                "score_decrease_internal_fraction": 0.14583333333333334,
+                "mean_first_alarm_capped_at32": 25.5,
+                "mean_nominal_score": 9.781923142332278,
+                "mean_attacked_score": 12.458398984466445
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray7": {
+          "policy": {
+            "id": "A0_population_P3/ray7",
+            "family": "A0",
+            "xi": [
+              -0.3130904482856632,
+              -0.18076285459842809
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020004,
+            "encoded_energy": 3.495818074177946
+          },
+          "metrics": {
+            "energy_mean": 3.495818074177946,
+            "energy_max": 3.4958180741779454,
+            "peak_mean_bias": 0.09492073972456477,
+            "mean_actual_MSE": 0.237315150055667,
+            "mean_MSE_increment": 0.018621098766047776,
+            "mean_bias_energy": 0.020436792464687874,
+            "mean_cross": -0.001815693698640102,
+            "danger_rate": 0.7083333333333334,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.041666666666666664,
+                "event_miss_rate": 0.9583333333333334,
+                "pre_alarm_danger_rate": 0.7083333333333334,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 48,
+                "risk_given_no_pre_alarm": 0.7083333333333334,
+                "score_decrease_internal_fraction": 0.3125,
+                "mean_first_alarm_capped_at32": 31.3125,
+                "mean_nominal_score": 7.793546034736223,
+                "mean_attacked_score": 8.238791159237715
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.1875,
+                "event_miss_rate": 0.8125,
+                "pre_alarm_danger_rate": 0.6458333333333334,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 48,
+                "risk_given_no_pre_alarm": 0.6458333333333334,
+                "score_decrease_internal_fraction": 0.14930555555555555,
+                "mean_first_alarm_capped_at32": 28.770833333333332,
+                "mean_nominal_score": 9.781923142332278,
+                "mean_attacked_score": 11.482083083023323
+              }
+            }
+          }
+        }
+      },
+      "public_first_packet": {
+        "policy": {
+          "id": "public_first_packet",
+          "family": "A1-H",
+          "xi": [
+            0.0,
+            0.0
+          ],
+          "theta": 0.0,
+          "kind": "public_first_packet",
+          "packet": [
+            -3.162161747242819,
+            -0.02707552869730573
+          ]
+        },
+        "theoretical_expected_peak": 1.2555461913350507,
+        "validation": {
+          "energy_mean": 9.999999999979996,
+          "energy_max": 9.999999999979996,
+          "peak_mean_bias": 1.5717776936015693,
+          "mean_actual_MSE": 0.2798097917531027,
+          "mean_MSE_increment": 0.06111574046348348,
+          "mean_bias_energy": 0.06370149972802423,
+          "mean_cross": -0.0025857592645407448,
+          "danger_rate": 1.0,
+          "clipping_fraction": 0.0,
+          "detectors": {
+            "temporal": {
+              "event_alarm_rate": 0.4166666666666667,
+              "event_miss_rate": 0.5833333333333334,
+              "pre_alarm_danger_rate": 0.8125,
+              "pre_attack_alarm_count": 0,
+              "alive_at_start_count": 48,
+              "risk_given_no_pre_alarm": 0.8125,
+              "score_decrease_internal_fraction": 0.024305555555555556,
+              "mean_first_alarm_capped_at32": 22.041666666666668,
+              "mean_nominal_score": 7.793546034736223,
+              "mean_attacked_score": 10.762057487354777
+            },
+            "joint_GLRT": {
+              "event_alarm_rate": 0.5416666666666666,
+              "event_miss_rate": 0.4583333333333333,
+              "pre_alarm_danger_rate": 0.5625,
+              "pre_attack_alarm_count": 0,
+              "alive_at_start_count": 48,
+              "risk_given_no_pre_alarm": 0.5625,
+              "score_decrease_internal_fraction": 0.006944444444444444,
+              "mean_first_alarm_capped_at32": 18.875,
+              "mean_nominal_score": 9.781923142332278,
+              "mean_attacked_score": 16.189323385724606
+            }
+          }
+        }
+      },
+      "no_feedback_policy_reselected": true
+    },
+    "stable": {
+      "analytic_A0_P1": {
+        "population_expected_peak": 0.46457988087405144,
+        "policy": {
+          "id": "A0_analytic_P1",
+          "family": "A0",
+          "xi": [
+            -1.9017815856483014,
+            0.3773885580185944
+          ],
+          "theta": 0.0,
+          "kind": "projected_feedback"
+        },
+        "validation": {
+          "energy_mean": 9.999999999979993,
+          "energy_max": 9.999999999979995,
+          "peak_mean_bias": 0.37494346018532504,
+          "mean_actual_MSE": 0.27432618517139257,
+          "mean_MSE_increment": 0.05222422362764211,
+          "mean_bias_energy": 0.0493967575284599,
+          "mean_cross": 0.0028274660991822113,
+          "danger_rate": 0.9583333333333334,
+          "clipping_fraction": 0.0,
+          "detectors": {
+            "temporal": {
+              "event_alarm_rate": 0.16666666666666666,
+              "event_miss_rate": 0.8333333333333334,
+              "pre_alarm_danger_rate": 0.8958333333333334,
+              "pre_attack_alarm_count": 0,
+              "alive_at_start_count": 48,
+              "risk_given_no_pre_alarm": 0.8958333333333334,
+              "score_decrease_internal_fraction": 0.2881944444444444,
+              "mean_first_alarm_capped_at32": 28.125,
+              "mean_nominal_score": 7.7858091173594115,
+              "mean_attacked_score": 8.993846654390314
+            },
+            "joint_GLRT": {
+              "event_alarm_rate": 0.4583333333333333,
+              "event_miss_rate": 0.5416666666666666,
+              "pre_alarm_danger_rate": 0.8333333333333334,
+              "pre_attack_alarm_count": 0,
+              "alive_at_start_count": 48,
+              "risk_given_no_pre_alarm": 0.8333333333333334,
+              "score_decrease_internal_fraction": 0.12152777777777778,
+              "mean_first_alarm_capped_at32": 21.479166666666668,
+              "mean_nominal_score": 9.588928310838066,
+              "mean_attacked_score": 14.12021761061971
+            }
+          }
+        }
+      },
+      "population_P3_candidates": {
+        "A0_population_P3/ray0": {
+          "policy": {
+            "id": "A0_population_P3/ray0",
+            "family": "A0",
+            "xi": [
+              0.8978215090012374,
+              0.0
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020003,
+            "encoded_energy": 2.227210939668837
+          },
+          "metrics": {
+            "energy_mean": 2.227210939668837,
+            "energy_max": 2.227210939668837,
+            "peak_mean_bias": 0.1251867780904225,
+            "mean_actual_MSE": 0.23168700277215443,
+            "mean_MSE_increment": 0.014125433352841742,
+            "mean_bias_energy": 0.012806800479987295,
+            "mean_cross": 0.0013186328728544468,
+            "danger_rate": 0.4375,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.4375,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.4375,
+                "score_decrease_internal_fraction": 0.3333333333333333,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 8.284054686289243,
+                "mean_attacked_score": 8.457060608588183
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.125,
+                "event_miss_rate": 0.875,
+                "pre_alarm_danger_rate": 0.375,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.375,
+                "score_decrease_internal_fraction": 0.2708333333333333,
+                "mean_first_alarm_capped_at32": 29.0625,
+                "mean_nominal_score": 10.563179410488429,
+                "mean_attacked_score": 11.62135917551929
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray1": {
+          "policy": {
+            "id": "A0_population_P3/ray1",
+            "family": "A0",
+            "xi": [
+              0.7864484052700105,
+              0.45405619848639234
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020003,
+            "encoded_energy": 3.0288353405332167
+          },
+          "metrics": {
+            "energy_mean": 3.0288353405332162,
+            "energy_max": 3.0288353405332162,
+            "peak_mean_bias": 0.1514567382412624,
+            "mean_actual_MSE": 0.2402550586555833,
+            "mean_MSE_increment": 0.022693489236270573,
+            "mean_bias_energy": 0.019422005576748086,
+            "mean_cross": 0.0032714836595224904,
+            "danger_rate": 0.6875,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.6875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.6875,
+                "score_decrease_internal_fraction": 0.2708333333333333,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 8.284054686289243,
+                "mean_attacked_score": 8.703105136315044
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.1875,
+                "event_miss_rate": 0.8125,
+                "pre_alarm_danger_rate": 0.625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.625,
+                "score_decrease_internal_fraction": 0.16666666666666666,
+                "mean_first_alarm_capped_at32": 27.5625,
+                "mean_nominal_score": 10.563179410488429,
+                "mean_attacked_score": 12.568753527190996
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray2": {
+          "policy": {
+            "id": "A0_population_P3/ray2",
+            "family": "A0",
+            "xi": [
+              0.4652273714816613,
+              0.8057974444779573
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020003,
+            "encoded_energy": 4.051444371500619
+          },
+          "metrics": {
+            "energy_mean": 4.051444371500619,
+            "energy_max": 4.051444371500619,
+            "peak_mean_bias": 0.1469760246992657,
+            "mean_actual_MSE": 0.2459041207072173,
+            "mean_MSE_increment": 0.02834255128790457,
+            "mean_bias_energy": 0.02390332656476957,
+            "mean_cross": 0.004439224723135002,
+            "danger_rate": 0.875,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0625,
+                "event_miss_rate": 0.9375,
+                "pre_alarm_danger_rate": 0.875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.875,
+                "score_decrease_internal_fraction": 0.2708333333333333,
+                "mean_first_alarm_capped_at32": 30.5,
+                "mean_nominal_score": 8.284054686289243,
+                "mean_attacked_score": 8.908239839805335
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.375,
+                "event_miss_rate": 0.625,
+                "pre_alarm_danger_rate": 0.75,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.75,
+                "score_decrease_internal_fraction": 0.10416666666666667,
+                "mean_first_alarm_capped_at32": 23.5,
+                "mean_nominal_score": 10.563179410488429,
+                "mean_attacked_score": 13.328904979296547
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray3": {
+          "policy": {
+            "id": "A0_population_P3/ray3",
+            "family": "A0",
+            "xi": [
+              5.77177169172584e-17,
+              0.9426018498957205
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020004,
+            "encoded_energy": 4.24421942164905
+          },
+          "metrics": {
+            "energy_mean": 4.244219421649051,
+            "energy_max": 4.244219421649051,
+            "peak_mean_bias": 0.14218765620963877,
+            "mean_actual_MSE": 0.24328381924520745,
+            "mean_MSE_increment": 0.02572224982589472,
+            "mean_bias_energy": 0.021328639728817586,
+            "mean_cross": 0.004393610097077128,
+            "danger_rate": 0.6875,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0625,
+                "event_miss_rate": 0.9375,
+                "pre_alarm_danger_rate": 0.6875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.6875,
+                "score_decrease_internal_fraction": 0.2708333333333333,
+                "mean_first_alarm_capped_at32": 30.5,
+                "mean_nominal_score": 8.284054686289243,
+                "mean_attacked_score": 8.944289490145199
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.4375,
+                "event_miss_rate": 0.5625,
+                "pre_alarm_danger_rate": 0.5625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.5625,
+                "score_decrease_internal_fraction": 0.10416666666666667,
+                "mean_first_alarm_capped_at32": 22.75,
+                "mean_nominal_score": 10.563179410488429,
+                "mean_attacked_score": 13.275061022639742
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray4": {
+          "policy": {
+            "id": "A0_population_P3/ray4",
+            "family": "A0",
+            "xi": [
+              -0.46555420379745976,
+              0.8063635346544763
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020001,
+            "encoded_energy": 3.352593961508786
+          },
+          "metrics": {
+            "energy_mean": 3.352593961508786,
+            "energy_max": 3.352593961508786,
+            "peak_mean_bias": 0.10055833075305927,
+            "mean_actual_MSE": 0.2348040001178492,
+            "mean_MSE_increment": 0.01724243069853648,
+            "mean_bias_energy": 0.014167608754416352,
+            "mean_cross": 0.0030748219441201273,
+            "danger_rate": 0.6875,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0625,
+                "event_miss_rate": 0.9375,
+                "pre_alarm_danger_rate": 0.625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.625,
+                "score_decrease_internal_fraction": 0.2708333333333333,
+                "mean_first_alarm_capped_at32": 30.5,
+                "mean_nominal_score": 8.284054686289243,
+                "mean_attacked_score": 8.830100404100019
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.1875,
+                "event_miss_rate": 0.8125,
+                "pre_alarm_danger_rate": 0.625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.625,
+                "score_decrease_internal_fraction": 0.11458333333333333,
+                "mean_first_alarm_capped_at32": 27.6875,
+                "mean_nominal_score": 10.563179410488429,
+                "mean_attacked_score": 12.51073434428304
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray5": {
+          "policy": {
+            "id": "A0_population_P3/ray5",
+            "family": "A0",
+            "xi": [
+              -0.7869746611370493,
+              0.4543600324528903
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020004,
+            "encoded_energy": 2.361819339349457
+          },
+          "metrics": {
+            "energy_mean": 2.3618193393494575,
+            "energy_max": 2.3618193393494575,
+            "peak_mean_bias": 0.08604045328866715,
+            "mean_actual_MSE": 0.22866642555779065,
+            "mean_MSE_increment": 0.011104856138477972,
+            "mean_bias_energy": 0.010142846965970509,
+            "mean_cross": 0.0009620091725074598,
+            "danger_rate": 0.375,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0625,
+                "event_miss_rate": 0.9375,
+                "pre_alarm_danger_rate": 0.3125,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.3125,
+                "score_decrease_internal_fraction": 0.3333333333333333,
+                "mean_first_alarm_capped_at32": 30.5,
+                "mean_nominal_score": 8.284054686289243,
+                "mean_attacked_score": 8.711321859373003
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.125,
+                "event_miss_rate": 0.875,
+                "pre_alarm_danger_rate": 0.3125,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.3125,
+                "score_decrease_internal_fraction": 0.17708333333333334,
+                "mean_first_alarm_capped_at32": 29.25,
+                "mean_nominal_score": 10.563179410488429,
+                "mean_attacked_score": 11.820847101626498
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray6": {
+          "policy": {
+            "id": "A0_population_P3/ray6",
+            "family": "A0",
+            "xi": [
+              -0.8978215090012374,
+              1.0995142372040119e-16
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020003,
+            "encoded_energy": 2.227210939668837
+          },
+          "metrics": {
+            "energy_mean": 2.227210939668837,
+            "energy_max": 2.227210939668837,
+            "peak_mean_bias": 0.1251867780904225,
+            "mean_actual_MSE": 0.22904973702644554,
+            "mean_MSE_increment": 0.011488167607132846,
+            "mean_bias_energy": 0.012806800479987293,
+            "mean_cross": -0.001318632872854446,
+            "danger_rate": 0.4375,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0625,
+                "event_miss_rate": 0.9375,
+                "pre_alarm_danger_rate": 0.375,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.375,
+                "score_decrease_internal_fraction": 0.4583333333333333,
+                "mean_first_alarm_capped_at32": 30.5,
+                "mean_nominal_score": 8.284054686289243,
+                "mean_attacked_score": 8.67355396914871
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.0625,
+                "event_miss_rate": 0.9375,
+                "pre_alarm_danger_rate": 0.375,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.375,
+                "score_decrease_internal_fraction": 0.21875,
+                "mean_first_alarm_capped_at32": 30.5,
+                "mean_nominal_score": 10.563179410488429,
+                "mean_attacked_score": 11.70562118128446
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray7": {
+          "policy": {
+            "id": "A0_population_P3/ray7",
+            "family": "A0",
+            "xi": [
+              -0.7864484052700106,
+              -0.4540561984863921
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020004,
+            "encoded_energy": 3.028835340533216
+          },
+          "metrics": {
+            "energy_mean": 3.028835340533216,
+            "energy_max": 3.028835340533216,
+            "peak_mean_bias": 0.1514567382412624,
+            "mean_actual_MSE": 0.2337120913365383,
+            "mean_MSE_increment": 0.016150521917225595,
+            "mean_bias_energy": 0.01942200557674808,
+            "mean_cross": -0.0032714836595224895,
+            "danger_rate": 0.6875,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0625,
+                "event_miss_rate": 0.9375,
+                "pre_alarm_danger_rate": 0.625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.625,
+                "score_decrease_internal_fraction": 0.4375,
+                "mean_first_alarm_capped_at32": 30.5,
+                "mean_nominal_score": 8.284054686289243,
+                "mean_attacked_score": 8.684613814462953
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.125,
+                "event_miss_rate": 0.875,
+                "pre_alarm_danger_rate": 0.625,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.625,
+                "score_decrease_internal_fraction": 0.19791666666666666,
+                "mean_first_alarm_capped_at32": 29.125,
+                "mean_nominal_score": 10.563179410488429,
+                "mean_attacked_score": 12.035302074992874
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray8": {
+          "policy": {
+            "id": "A0_population_P3/ray8",
+            "family": "A0",
+            "xi": [
+              -0.46522737148166154,
+              -0.8057974444779571
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020001,
+            "encoded_energy": 4.051444371500618
+          },
+          "metrics": {
+            "energy_mean": 4.051444371500618,
+            "energy_max": 4.051444371500618,
+            "peak_mean_bias": 0.14697602469926568,
+            "mean_actual_MSE": 0.23702567126094728,
+            "mean_MSE_increment": 0.01946410184163457,
+            "mean_bias_energy": 0.023903326564769567,
+            "mean_cross": -0.004439224723135,
+            "danger_rate": 0.875,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0625,
+                "event_miss_rate": 0.9375,
+                "pre_alarm_danger_rate": 0.875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.875,
+                "score_decrease_internal_fraction": 0.4270833333333333,
+                "mean_first_alarm_capped_at32": 30.625,
+                "mean_nominal_score": 8.284054686289243,
+                "mean_attacked_score": 8.651061673609785
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.125,
+                "event_miss_rate": 0.875,
+                "pre_alarm_danger_rate": 0.875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.875,
+                "score_decrease_internal_fraction": 0.13541666666666666,
+                "mean_first_alarm_capped_at32": 29.125,
+                "mean_nominal_score": 10.563179410488429,
+                "mean_attacked_score": 12.294882903952953
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray9": {
+          "policy": {
+            "id": "A0_population_P3/ray9",
+            "family": "A0",
+            "xi": [
+              -1.7315315075177519e-16,
+              -0.9426018498957205
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020004,
+            "encoded_energy": 4.24421942164905
+          },
+          "metrics": {
+            "energy_mean": 4.244219421649051,
+            "energy_max": 4.244219421649051,
+            "peak_mean_bias": 0.14218765620963877,
+            "mean_actual_MSE": 0.23449659905105322,
+            "mean_MSE_increment": 0.01693502963174046,
+            "mean_bias_energy": 0.02132863972881759,
+            "mean_cross": -0.004393610097077127,
+            "danger_rate": 0.6875,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.6875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.6875,
+                "score_decrease_internal_fraction": 0.4270833333333333,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 8.284054686289243,
+                "mean_attacked_score": 8.512222145929874
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.0625,
+                "event_miss_rate": 0.9375,
+                "pre_alarm_danger_rate": 0.6875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.6875,
+                "score_decrease_internal_fraction": 0.14583333333333334,
+                "mean_first_alarm_capped_at32": 30.5,
+                "mean_nominal_score": 10.563179410488429,
+                "mean_attacked_score": 12.014412538192698
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray10": {
+          "policy": {
+            "id": "A0_population_P3/ray10",
+            "family": "A0",
+            "xi": [
+              0.4655542037974593,
+              -0.8063635346544765
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.1000000000002,
+            "encoded_energy": 3.3525939615087865
+          },
+          "metrics": {
+            "energy_mean": 3.352593961508787,
+            "energy_max": 3.352593961508787,
+            "peak_mean_bias": 0.10055833075305931,
+            "mean_actual_MSE": 0.22865435622960895,
+            "mean_MSE_increment": 0.011092786810296231,
+            "mean_bias_energy": 0.014167608754416361,
+            "mean_cross": -0.0030748219441201303,
+            "danger_rate": 0.6875,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.6875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.6875,
+                "score_decrease_internal_fraction": 0.4895833333333333,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 8.284054686289243,
+                "mean_attacked_score": 8.348221672699678
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.0625,
+                "event_miss_rate": 0.9375,
+                "pre_alarm_danger_rate": 0.6875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.6875,
+                "score_decrease_internal_fraction": 0.20833333333333334,
+                "mean_first_alarm_capped_at32": 30.625,
+                "mean_nominal_score": 10.563179410488429,
+                "mean_attacked_score": 11.38859981078912
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray11": {
+          "policy": {
+            "id": "A0_population_P3/ray11",
+            "family": "A0",
+            "xi": [
+              0.7869746611370492,
+              -0.4543600324528904
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020001,
+            "encoded_energy": 2.361819339349457
+          },
+          "metrics": {
+            "energy_mean": 2.3618193393494575,
+            "energy_max": 2.3618193393494575,
+            "peak_mean_bias": 0.08604045328866716,
+            "mean_actual_MSE": 0.22674240721277578,
+            "mean_MSE_increment": 0.00918083779346305,
+            "mean_bias_energy": 0.01014284696597051,
+            "mean_cross": -0.0009620091725074614,
+            "danger_rate": 0.375,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0,
+                "event_miss_rate": 1.0,
+                "pre_alarm_danger_rate": 0.375,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.375,
+                "score_decrease_internal_fraction": 0.5,
+                "mean_first_alarm_capped_at32": 32.0,
+                "mean_nominal_score": 8.284054686289243,
+                "mean_attacked_score": 8.313288853608077
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.125,
+                "event_miss_rate": 0.875,
+                "pre_alarm_danger_rate": 0.25,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 16,
+                "risk_given_no_pre_alarm": 0.25,
+                "score_decrease_internal_fraction": 0.375,
+                "mean_first_alarm_capped_at32": 29.0625,
+                "mean_nominal_score": 10.563179410488429,
+                "mean_attacked_score": 11.139320989350425
+              }
+            }
+          }
+        }
+      },
+      "population_P3_selected_using_training": {
+        "temporal": "A0_population_P3/ray1",
+        "joint_GLRT": "A0_population_P3/ray9"
+      },
+      "population_P3_validation": {
+        "A0_population_P3/ray9": {
+          "policy": {
+            "id": "A0_population_P3/ray9",
+            "family": "A0",
+            "xi": [
+              -1.7315315075177519e-16,
+              -0.9426018498957205
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020004,
+            "encoded_energy": 4.24421942164905
+          },
+          "metrics": {
+            "energy_mean": 4.24421942164905,
+            "energy_max": 4.244219421649051,
+            "peak_mean_bias": 0.1586209871600327,
+            "mean_actual_MSE": 0.24763756534411646,
+            "mean_MSE_increment": 0.02553560380036601,
+            "mean_bias_energy": 0.023848763589160046,
+            "mean_cross": 0.0016868402112059637,
+            "danger_rate": 0.7708333333333334,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.0625,
+                "event_miss_rate": 0.9375,
+                "pre_alarm_danger_rate": 0.75,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 48,
+                "risk_given_no_pre_alarm": 0.75,
+                "score_decrease_internal_fraction": 0.3645833333333333,
+                "mean_first_alarm_capped_at32": 30.833333333333332,
+                "mean_nominal_score": 7.7858091173594115,
+                "mean_attacked_score": 8.320858974134984
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.20833333333333334,
+                "event_miss_rate": 0.7916666666666666,
+                "pre_alarm_danger_rate": 0.6875,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 48,
+                "risk_given_no_pre_alarm": 0.6875,
+                "score_decrease_internal_fraction": 0.16319444444444445,
+                "mean_first_alarm_capped_at32": 27.5,
+                "mean_nominal_score": 9.588928310838066,
+                "mean_attacked_score": 11.83888371101863
+              }
+            }
+          }
+        },
+        "A0_population_P3/ray1": {
+          "policy": {
+            "id": "A0_population_P3/ray1",
+            "family": "A0",
+            "xi": [
+              0.7864484052700105,
+              0.45405619848639234
+            ],
+            "theta": 0.0,
+            "kind": "projected_feedback",
+            "population_peak_damage": 0.10000000000020003,
+            "encoded_energy": 3.0288353405332167
+          },
+          "metrics": {
+            "energy_mean": 3.0288353405332162,
+            "energy_max": 3.0288353405332162,
+            "peak_mean_bias": 0.11659497561690636,
+            "mean_actual_MSE": 0.23460990604568666,
+            "mean_MSE_increment": 0.012507944501936192,
+            "mean_bias_energy": 0.014769035839169942,
+            "mean_cross": -0.00226109133723375,
+            "danger_rate": 0.5208333333333334,
+            "clipping_fraction": 0.0,
+            "detectors": {
+              "temporal": {
+                "event_alarm_rate": 0.041666666666666664,
+                "event_miss_rate": 0.9583333333333334,
+                "pre_alarm_danger_rate": 0.5,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 48,
+                "risk_given_no_pre_alarm": 0.5,
+                "score_decrease_internal_fraction": 0.3819444444444444,
+                "mean_first_alarm_capped_at32": 31.020833333333332,
+                "mean_nominal_score": 7.7858091173594115,
+                "mean_attacked_score": 8.066677058674319
+              },
+              "joint_GLRT": {
+                "event_alarm_rate": 0.08333333333333333,
+                "event_miss_rate": 0.9166666666666666,
+                "pre_alarm_danger_rate": 0.4791666666666667,
+                "pre_attack_alarm_count": 0,
+                "alive_at_start_count": 48,
+                "risk_given_no_pre_alarm": 0.4791666666666667,
+                "score_decrease_internal_fraction": 0.16666666666666666,
+                "mean_first_alarm_capped_at32": 30.020833333333332,
+                "mean_nominal_score": 9.588928310838066,
+                "mean_attacked_score": 10.917021419096255
+              }
+            }
+          }
+        }
+      },
+      "public_first_packet": {
+        "policy": {
+          "id": "public_first_packet",
+          "family": "A1-H",
+          "xi": [
+            0.0,
+            0.0
+          ],
+          "theta": 0.0,
+          "kind": "public_first_packet",
+          "packet": [
+            -3.1621730639045627,
+            -0.025719912449968244
+          ]
+        },
+        "theoretical_expected_peak": 1.2405739404852743,
+        "validation": {
+          "energy_mean": 9.999999999980004,
+          "energy_max": 9.999999999980004,
+          "peak_mean_bias": 0.9908823726456158,
+          "mean_actual_MSE": 0.2647291767713123,
+          "mean_MSE_increment": 0.04262721522756185,
+          "mean_bias_energy": 0.03996806980221156,
+          "mean_cross": 0.0026591454253502844,
+          "danger_rate": 1.0,
+          "clipping_fraction": 0.0,
+          "detectors": {
+            "temporal": {
+              "event_alarm_rate": 0.20833333333333334,
+              "event_miss_rate": 0.7916666666666666,
+              "pre_alarm_danger_rate": 0.9375,
+              "pre_attack_alarm_count": 0,
+              "alive_at_start_count": 48,
+              "risk_given_no_pre_alarm": 0.9375,
+              "score_decrease_internal_fraction": 0.04513888888888889,
+              "mean_first_alarm_capped_at32": 26.979166666666668,
+              "mean_nominal_score": 7.7858091173594115,
+              "mean_attacked_score": 9.57935396979635
+            },
+            "joint_GLRT": {
+              "event_alarm_rate": 0.3541666666666667,
+              "event_miss_rate": 0.6458333333333334,
+              "pre_alarm_danger_rate": 0.7083333333333334,
+              "pre_attack_alarm_count": 0,
+              "alive_at_start_count": 48,
+              "risk_given_no_pre_alarm": 0.7083333333333334,
+              "score_decrease_internal_fraction": 0.010416666666666666,
+              "mean_first_alarm_capped_at32": 23.25,
+              "mean_nominal_score": 9.588928310838066,
+              "mean_attacked_score": 13.644921394384689
+            }
+          }
+        }
+      },
+      "no_feedback_policy_reselected": true
+    }
+  },
+  "new_physical_paths": 0,
+  "not_global_P3_probability_optimality": true
+}

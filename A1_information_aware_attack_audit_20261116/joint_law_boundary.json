@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-17",
+  "models": {
+    "unstable": {
+      "prefix": 5,
+      "raw_target_dimension": 10,
+      "exact_cross_rank": 10,
+      "determinant": "39135393/9765625",
+      "state_covariance_determinant": "1",
+      "general_prefix_argument": "for any N, state map is unit block triangular; x0 covariance I and Q positive; invertible H0/H1 imply cross rank2N",
+      "scope": "full finite raw trusted+target history, known Gaussian initial law; equality also joint with secret M",
+      "not_a_claim_about": "sliding parity statistic, finite power, alarm before danger, or arbitrary partial-observation networks"
+    },
+    "stable": {
+      "prefix": 5,
+      "raw_target_dimension": 10,
+      "exact_cross_rank": 10,
+      "determinant": "39135393/9765625",
+      "state_covariance_determinant": "1",
+      "general_prefix_argument": "for any N, state map is unit block triangular; x0 covariance I and Q positive; invertible H0/H1 imply cross rank2N",
+      "scope": "full finite raw trusted+target history, known Gaussian initial law; equality also joint with secret M",
+      "not_a_claim_about": "sliding parity statistic, finite power, alarm before danger, or arbitrary partial-observation networks"
+    }
+  },
+  "theorem": "For joint Gaussian X,Y with Cov(X,Y) full column rank, any g=f(Y,U) with independent U preserving the joint law of(X,g) equalsY a.s. Conditional on independent secret matrices, this applies to all target-q causal policies.",
+  "proof": "L=Cov(X,Y)Cov(Y)^-1 has full column rank. E[XgT]=L E[YgT]=Cov(X,Y)=L Cov(Y) implies E[YgT]=Cov(Y). Equal second moments give E[(g-Y)(g-Y)T]=0.",
+  "relation_to_prior": "standard Gaussian regression/moment argument and block lifting of the safe-suspicious cross-covariance obstruction; closest Wei eq20,81 and Remark10; not an independent central novelty",
+  "new_detector": false,
+  "new_physical_paths": 0
+}

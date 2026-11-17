@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-17",
+  "mode": "full registered replay",
+  "frozen_input_count": 10,
+  "output_count": 19,
+  "compared_outputs": [
+    "training_results.json",
+    "validation_results.json",
+    "validation_arrays.npz",
+    "mechanism_witnesses.json",
+    "strong_baseline_checks.json",
+    "observer_bounds.json",
+    "exact_math_certificates.json",
+    "joint_law_boundary.json",
+    "independent_checks.json",
+    "01_攻击者知识与通信时序.md",
+    "02_A0_A1H_A1C攻击数学模型.md",
+    "03_自适应攻击与原水印理论边界.md",
+    "04_攻击者预测误差重建可行性.md",
+    "05_攻击损害与检测功效.md",
+    "06_直接近邻逐式对照.md",
+    "07_潜在防御机制与攻击依赖关系.md",
+    "08_下一阶段研究决定.md",
+    "README.md",
+    "evidence_table.md"
+  ],
+  "all_semantic_outputs_match": true,
+  "NPZ_comparison": "all array names, shapes, dtypes and raw value bytes; not zip timestamps",
+  "versions": {
+    "numpy": "2.2.5",
+    "scipy": "1.15.3",
+    "sympy": "1.14.0"
+  },
+  "new_physical_seeds": 0,
+  "selection_changed": false,
+  "sibling_files_changed": false,
+  "original_50_node_reproduction": false,
+  "new_defense": false
+}

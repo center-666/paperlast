@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-17",
+  "before_sha256": "1161866dee2c93d2dc0f6b6d94cf1c39ee09a6d9c5e6dc4c1a9997664c6a8d95",
+  "after_sha256": "b6b4be6e78712c3ec40c3c50e9b46593a7e420240dc3c00bb4355f0022d4974c",
+  "before_records": 194,
+  "after_records": 198,
+  "before_local_PDF": 140,
+  "after_local_PDF": 141,
+  "old_citation_keys_preserved": true,
+  "new_record_ids": [
+    "AIA01",
+    "AIA02",
+    "AIA03",
+    "AIA04"
+  ],
+  "updated_existing_notes": [
+    "INTRO06",
+    "FPN02",
+    "FPN22",
+    "FPN28"
+  ],
+  "new_full_PDF_ids": [
+    "AIA01"
+  ],
+  "full_independent_theses_unchanged": 46,
+  "metadata_only_recount": "derived from records without local file; avoids carrying historical summary count drift",
+  "missing_core_fulltext": [
+    "FPN28",
+    "AIA02"
+  ],
+  "supplemental_metadata_only": [
+    "AIA03",
+    "AIA04"
+  ],
+  "parallel_library": false
+}

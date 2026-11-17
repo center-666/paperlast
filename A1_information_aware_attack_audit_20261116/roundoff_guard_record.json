@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-17",
+  "old_floating_energy_max": 10.000000000000002,
+  "old_roundoff_excess": 1.7763568394002505e-15,
+  "change": "uniform 1e-12 numerical budget reserve, without changing E/D, candidate set, thresholds or sample IDs",
+  "prior_selection_sha256": "1a72c30b6178b91a2f06c5213e214e82643355bb277f6e49433ecc0a88f3b8e8",
+  "prior_result_sha256": {
+    "training_results.json": "64a3a6481fb598c1dbee4c065be2f2391a9317f5696636a91eff2078da6c0726",
+    "selection_before_validation.json": "1a72c30b6178b91a2f06c5213e214e82643355bb277f6e49433ecc0a88f3b8e8",
+    "validation_results.json": "0e6acabe326b805a26bc6dbeeec588a5e6da8fafb6e352af94e93c5c519721ac",
+    "validation_arrays.npz": "cfaadd230b5ecc2d63f11bba4df621863f012abbe0df345edf12c9b1abe30260",
+    "mechanism_witnesses.json": "86758bb9df8388881c1be9323b08f5580f990292dbd7feca92fb4b81a6bc66e5"
+  },
+  "required": "selection IDs must remain identical; no validation-based reselection"
+}

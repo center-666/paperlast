@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-17",
+  "sole_library": "project reference library; no parallel library",
+  "records": [
+    {
+      "id": "FPN28",
+      "citation_key": "Paper_Wang2025_InformationStealthy",
+      "title": "Information-based stealthy attacks against distributed state estimation over sensor networks",
+      "author": "Yichao Wang; Kaijing Jin; Dan Ye",
+      "year": 2025,
+      "journal": "Neurocomputing",
+      "doi": "10.1016/j.neucom.2024.129087",
+      "pages": 9,
+      "sha256": "7f960d20c143aa06fe3cb3d0016dacf2ab7352dc7195747a7aeed084011d0316",
+      "reading_status": "正式全文已从用户本机Zotero归档；指定核心页逐式核读，非全部证明独立审证",
+      "read_scope": "式(3)—(9)、(16)—(28)、(33)—(36)、(42)—(45)；Assumptions1—3、Theorems1—3、Remark8；文章页2—7。指定段落及Theorem1证明的SVD步骤核读；不称全部证明独立重证、算法复现或未知水印/硬总能量最优性"
+    },
+    {
+      "id": "AIA02",
+      "citation_key": "Paper_Wei2025_VaryingDataAccess",
+      "title": "Integrity attacks on state estimation with varying data access: From visibility to full restriction",
+      "author": "Jinyuan Wei; Jing Zhou; Tongwen Chen",
+      "year": 2025,
+      "journal": "Automatica",
+      "doi": "10.1016/j.automatica.2025.112162",
+      "pages": 13,
+      "sha256": "6f0a4d25f1d97a32cd9fef4db4baa106d72e18300f951a5e4a7f37fb41f824b4",
+      "reading_status": "正式全文已从用户本机Zotero归档；指定核心页逐式核读，非全部证明独立审证",
+      "read_scope": "式(14)、(20)—(23)、(26)、(30)—(33)、(73)—(85)、(105)—(117)；Propositions1/4、Theorems2/3/5/6、Remarks5/6/10/13；文章页3—8、11—12。指定核心公式及Theorem3证明、AppendixD核读；未独立复算其全部SVD/数值实验，原结果不自动覆盖未知M编码混合观测、硬逐路径总能量及本首次报警目标"
+    },
+    {
+      "id": "AIA01",
+      "citation_key": "Paper_Xing2025_HistoricalDistributedFDI",
+      "title": "Stealthy Attacks With Historical Data on Distributed State Estimation",
+      "author": "Jitao Xing; Dan Ye; Pengyu Li",
+      "year": 2025,
+      "journal": "IEEE Transactions on Information Forensics and Security",
+      "doi": "10.1109/tifs.2025.3564063",
+      "pages": 10,
+      "sha256": "54d5105ce9bc3af16e6888663d739d648898e6ef438ddeecb474ab53245f35be",
+      "reading_status": "正式全文已从本机Zotero归档；指定页核读，非全证明审证",
+      "read_scope": "PDF2—7 / 印刷4542—4547；重点式(6)—(10)、(15)—(16)、(24)—(29)，Theorem1、Lemma4、Theorem2/Algorithm2；视觉PDF5。非全部LMI独立证明或完整算法复现。"
+    },
+    {
+      "id": "FPN22",
+      "citation_key": "Paper_Niu2023_InnovationStealthyAttack",
+      "title": "Innovation-based stealthy attack against distributed state estimation over sensor networks",
+      "author": "Mengfei Niu; Guanghui Wen; Yuezu Lv; Guanrong Chen",
+      "year": 2023,
+      "journal": "Automatica",
+      "doi": "10.1016/j.automatica.2023.110962",
+      "pages": 9,
+      "sha256": "4b29107b464ec7d33f7308ff48f80e5ed0043f3815ff9a2aa0949cb86d9b263d",
+      "reading_status": "本地完整PDF已归档；定向核读模型/攻击接口/算例指定页，未通读或全证明审证",
+      "read_scope": "2026-11-03定向核PDF/印刷2—5页模型、攻击与估计器接口，7页图1/假设算例及Remark6，8页实验解释/结论；视觉核3、4、7页。未逐式审证全部证明，未通读全文。另有2026-10-05/07历史阅读记录，非本轮新增全文阅读。"
+    },
+    {
+      "id": "INTRO06",
+      "citation_key": "Paper_Zhou2023_DistributedWatermark",
+      "title": "Watermarking-Based Protection Strategy Against Stealthy Integrity Attack on Distributed State Estimation",
+      "author": "Jiayu Zhou、Wen Yang、Wenjie Ding、Wei Xing Zheng、Yong Xu",
+      "year": 2023,
+      "journal": "IEEE Transactions on Automatic Control",
+      "doi": "10.1109/TAC.2022.3171422",
+      "pages": 8,
+      "sha256": "97d2a8e5acf8d7d6795be8249b2dbdc12240730bd22ec7a993f704d0173e597d",
+      "reading_status": "第1—2章指定部分已核读，未通读全文",
+      "read_scope": "\n本轮第1章补读：[{\"pdf_pages\": \"1–4\", \"printed_pages\": \"628–631\", \"location\": \"摘要、Section II、Section III及Algorithm 1、Section IV-A\", \"supports\": \"节点交换估计值；接收端以本地量测生成残差；利用量测矩阵零空间隐藏估计偏移；生成伪随机矩阵并作变换/逆变换。\"}, {\"pdf_pages\": \"5–6\", \"printed_pages\": \"632–633\", \"location\": \"公式(25)、Remark 4、Theorems 2–3、Section IV-B\", \"supports\": \"λI+ββᵀ及秘密种子同步；不知道水印仍沿用原攻击与统计参数已泄露重新设计的两种场景；固定旧攻击在水印方差增大时KL增强；参数极限不是时间极限。\"}]\n本轮第二章核读本地原文提取PDF第2—3页，印刷页629—630；并对照此前已核PDF第4—6页，印刷页631—633。既往核读范围不表述为本轮新增通读范围。\n2026-10-30第一篇查新：PDF3—6/印刷630—633；定理1、算法1、式(21)—(38)，PDF6渲染核对。\n2026-11-03主动可信验证：复核PDF2、4/印刷629、631的模型和编码接口，视觉核PDF2；未新增通读。\n2026-11-05水印收束本机核读：PDF6/印刷633；Information Leakage、Theorem3及证明、Corollary1。公开lambda/协方差与本拍秘密实现知情不同；参数趋于无穷的论述不能直接充当本轮攻击随公开设计缩放后的实际损害或首达风险保证。；2026-11-14：PDF2、4—6/印刷629、631—633；协作定向核读，主过程视觉核PDF6/633。"
+    },
+    {
+      "id": "FPN02",
+      "citation_key": "Paper_Ding2024_PeriodicEncoding",
+      "title": "A Periodic Dynamic Encoding Mechanism for Stealthy Attack Detection in Distributed State Estimation",
+      "author": "Kun Ding; Wen Yang; Yun Liu; Yue Luo; Jialing Chen",
+      "year": 2024,
+      "journal": "International Journal of Robust and Nonlinear Control",
+      "doi": "10.1002/rnc.7688",
+      "pages": 13,
+      "sha256": "2e6fdc61646a2f5856e0a3865ad75b18538309e50683251054c3b73889208f45",
+      "reading_status": "指定部分已读，非全文审证",
+      "read_scope": "PDF/本地印刷1—2、8；核读摘要、贡献、定理2及Remark4，PDF8渲染核对。\n2026-11-05水印收束本机核读：PDF7—8/印刷7—8 of 13；式30—44、Remarks3—4、Theorem2及该页证明；视觉核对8页。准备期不受攻、周期重用历史编码数据及特定混合替换攻击；Remark4明确周期内k<=N，不能直接移用渐近检测论证为有限概率保证。将周期加性历史掩码移到本研究时，预定加性注入在解码后不变，是本轮推论而非原文定理。\n2026-11-15攻防协同首轮：PDF2—9，印刷2—9 of13；视觉PDF8；式3、6—8、10、16、30—38；Theorems1—2；Algorithm2/PDF9；Remark4。式38已由报警指示量切换局部/分布式增益，Algorithm2明确检测后重算K；编码为准备期历史加性重用，攻击和估计共享不同于本稿；不把渐近检测移为有限概率。 限指定页，非全部证明独立审证或同协议算法复现。"
+    },
+    {
+      "id": "AIA03",
+      "citation_key": "Paper_XingYe2026_HistoricalDistributedFDI",
+      "title": "Stealthy Attack Strategies in Distributed CPSs: Maximized Exploitation of Historical Innovations",
+      "author": "Jitao Xing; Dan Ye",
+      "year": 2026,
+      "journal": "IEEE Internet of Things Journal",
+      "doi": "10.1109/jiot.2026.3705388",
+      "pages": 0,
+      "sha256": "",
+      "reading_status": "仅题录/公开预览；未核核心定理",
+      "read_scope": "Crossref主注册题录；AIA02另核出版社公开预览；未取得可核定理全文，无PDF页码。"
+    },
+    {
+      "id": "AIA04",
+      "citation_key": "Paper_XingYe2026_AuxiliaryInnovation",
+      "title": "Auxiliary Innovation-Based Stealthy Attack Strategies Against Distributed State Estimation",
+      "author": "Jitao Xing; Dan Ye",
+      "year": 2026,
+      "journal": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+      "doi": "10.1109/tsmc.2026.3661026",
+      "pages": 0,
+      "sha256": "",
+      "reading_status": "仅题录/公开预览；未核核心定理",
+      "read_scope": "Crossref主注册题录；AIA02另核出版社公开预览；未取得可核定理全文，无PDF页码。"
+    }
+  ],
+  "library_counts": {
+    "records": 198,
+    "local_PDF": 143,
+    "independent_full_theses": 46
+  },
+  "fulltext_gap_resolved": [
+    "FPN28",
+    "AIA02"
+  ],
+  "PDF_files_uploaded": false
+}

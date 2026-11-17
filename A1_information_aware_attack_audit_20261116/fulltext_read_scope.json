@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-17",
+  "read_scope": {
+    "FPN28": {
+      "PDF_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "printed_pages": "文章页2—7",
+      "visual_PDF_pages": [
+        3,
+        6
+      ],
+      "location": "式(3)—(9)、(16)—(28)、(33)—(36)、(42)—(45)；Assumptions1—3、Theorems1—3、Remark8",
+      "claim": "共G估计器、预测误差MMSE攻击、部分邻居访问及信息选择已有；式(44)还显式含接收节点本地量测，不能免费移植到单条编码q权限",
+      "limit": "指定段落及Theorem1证明的SVD步骤核读；不称全部证明独立重证、算法复现或未知水印/硬总能量最优性"
+    },
+    "AIA02": {
+      "PDF_pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12
+      ],
+      "printed_pages": "文章页3—8、11—12",
+      "visual_PDF_pages": [
+        3,
+        7
+      ],
+      "location": "式(14)、(20)—(23)、(26)、(30)—(33)、(73)—(85)、(105)—(117)；Propositions1/4、Theorems2/3/5/6、Remarks5/6/10/13",
+      "claim": "完整/受限创新可读信息下MMSE攻击与其全可行类最优性已有；安全—可疑交叉统计、滑窗跨时统计及满列秩无非平凡攻击边界均已明确讨论",
+      "limit": "指定核心公式及Theorem3证明、AppendixD核读；未独立复算其全部SVD/数值实验，原结果不自动覆盖未知M编码混合观测、硬逐路径总能量及本首次报警目标"
+    }
+  },
+  "alternate_comparison": {
+    "primary_sha256": "6f0a4d25f1d97a32cd9fef4db4baa106d72e18300f951a5e4a7f37fb41f824b4",
+    "alternate_sha256": "49aa5f0720094a5099ea44a6ff18fc8bbb04a29b00d3239236e27265b4dd8c40",
+    "byte_identical": false,
+    "normalized_extracted_text_identical": true,
+    "pages_each": 13,
+    "counted_as_new_record": false,
+    "limit": "text identity is not a byte-level identity claim; originals retained"
+  },
+  "historical_missing_records_preserved": true,
+  "core_fulltext_gap_resolved": true,
+  "all_field_novelty_cleared": false
+}
