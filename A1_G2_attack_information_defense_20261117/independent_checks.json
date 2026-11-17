@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-17",
+  "errors": {
+    "trajectory": 1.9764682422210756e-14,
+    "covariance": 1.5010388765279714e-13,
+    "constraint": 2.220462989844635e-16,
+    "local_optimality": 4.7813315806610746e-17,
+    "detector_info": 4.218847493575595e-15,
+    "causality": 0.0
+  },
+  "independent_target_updates": 2304,
+  "maximum_executed_energy": 9.999999999980005,
+  "joint_overlap_covariance_norms": {
+    "unstable": 2.8095953917313974,
+    "stable": 2.8118351440575338
+  },
+  "no_independent_window_assumption": true,
+  "attack_API_inputs": "coded q plus public plan only",
+  "no_new_physical_samples": true,
+  "original_reference_unchanged": true
+}

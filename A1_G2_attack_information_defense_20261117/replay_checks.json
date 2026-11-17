@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-17",
+  "full_replay": true,
+  "all_match": true,
+  "frozen_inputs": 10,
+  "matched_outputs": 16,
+  "old_physical_inputs_reused": 128,
+  "new_physical_samples": 0,
+  "new_attack_parameter_grid": false
+}

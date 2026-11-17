@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-17",
+  "existing_sources": [
+    {
+      "id": "FPN22",
+      "file": "02_期刊与会议论文/FPN22_2023_Paper_Niu2023_InnovationStealthyAttack.pdf",
+      "sha256": "4b29107b464ec7d33f7308ff48f80e5ed0043f3815ff9a2aa0949cb86d9b263d",
+      "pages": 9,
+      "doi": "10.1016/j.automatica.2023.110962"
+    },
+    {
+      "id": "FPN28",
+      "file": "02_期刊与会议论文/FPN28_2025_Wang_InformationBasedFDI.pdf",
+      "sha256": "7f960d20c143aa06fe3cb3d0016dacf2ab7352dc7195747a7aeed084011d0316",
+      "pages": 9,
+      "doi": "10.1016/j.neucom.2024.129087"
+    },
+    {
+      "id": "AIA02",
+      "file": "02_期刊与会议论文/AIA02_2025_Wei_VaryingDataAccess.pdf",
+      "sha256": "6f0a4d25f1d97a32cd9fef4db4baa106d72e18300f951a5e4a7f37fb41f824b4",
+      "pages": 13,
+      "doi": "10.1016/j.automatica.2025.112162"
+    },
+    {
+      "id": "AIA01",
+      "file": "02_期刊与会议论文/AIA01_2025_Xing_HistoricalData.pdf",
+      "sha256": "54d5105ce9bc3af16e6888663d739d648898e6ef438ddeecb474ab53245f35be",
+      "pages": 10,
+      "doi": "10.1109/tifs.2025.3564063"
+    },
+    {
+      "id": "FPN12",
+      "file": "02_期刊与会议论文/FPN12_2022_Paper_He2022_SecureDistributedFilters.pdf",
+      "sha256": "d6549df8aa9dca62e8f080100c19fcbf7381b60b2b96db268777dd331901a80a",
+      "pages": 14,
+      "doi": "10.1109/TAC.2021.3092603"
+    },
+    {
+      "id": "FUS18",
+      "file": "02_期刊与会议论文/FUS18_2018_Wasserstein2018.pdf",
+      "sha256": "d0bec3d6b0335573310beadb723366d71e09fc89732424eb632bfc92d1c0f91e",
+      "pages": 17,
+      "doi": ""
+    },
+    {
+      "id": "FUS23",
+      "file": "02_期刊与会议论文/FUS23_2019_Xu2019.pdf",
+      "sha256": "572d6ae891db9a8bd2c093e7dae02a48c18b010a82b8d5fdf424c4d64cb2ccea",
+      "pages": 14,
+      "doi": "10.1016/j.automatica.2019.108592"
+    }
+  ]
+}

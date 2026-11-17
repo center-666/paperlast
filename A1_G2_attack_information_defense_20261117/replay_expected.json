@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-17",
+  "inputs": {
+    "registration.json": "c5a2385f0ed4fdea9ad8b430a4c56c7180df2caf86d183b8eee9c749c28a375f",
+    "../common_g_reference_revision_20261115/common_g_reference.py": "95b667539e8d1341ae142ca4a1f9586b10cd85e9f4e1e9c62154bac0f789e8f4",
+    "../common_g_reference_revision_20261115/inputs/five_node_aggregate_model.json": "0f67852d389ab9dabfe4f5d564778a11b411441f53fcd77da22f8680c5793e76",
+    "../attack_gain_switch_audit_20261115/sampling_seed_map.json": "983fc5b039b6ca1cf7d0ae82f32d89ab5cfa8b321567c3e28943954c4fd52e71",
+    "../A1_information_aware_attack_audit_20261116/attack_models.py": "b92c6d43c69ec163fedf77919e99d006de7ecb09cc752816ab94a58476448480",
+    "../A1_information_aware_attack_audit_20261116/attacker_observer_bounds.py": "b3fa7a8704735df7a7bde34a952230782e2b082c494c303b074b6add5da69429",
+    "../A1_information_aware_attack_audit_20261116/screen_attack_classes.py": "d4168e9becb8a87dddb6e24609659292064d735e69b40e73d5f86d1e188b7eac",
+    "../A1_information_aware_attack_audit_20261116/registration.json": "e9266d103171cf73eaa92b6b2c60fef0740470a81af0aeb2c2ccdaf0b853b0f0",
+    "../active_trusted_measurement_G0_G1/measurement_model.py": "6dc2861daa6dbd612c2aa949c45bd026e7bb8ff9b9b5c863a9d22afb6d577bae",
+    "../active_trusted_measurement_G0_G1/registration.json": "386b2b2cba5fc68ba14293a657b6e6f208ddbce2af9621d5be4aabf636239f16"
+  },
+  "outputs": {
+    "gain_designs.json": "6aba0b84c0a8f6c856871afeb43d730d094f0d80338e7412f1b9908967943976",
+    "coupling_certificates.json": "09b409df96fcbafb15e957649ee864824a76b4e3fc849aedcbb6b6ad56cc4490",
+    "population_risk_bounds.json": "484ad2fae486ff2db211771e67a05fc12b965304569c86e43e9050d9a03895de",
+    "attack_comparison.json": "67c4d7609d3170841e04a297129d520cb6f2f09dbf26b7e40f1447710f69dd1a",
+    "training_metrics.json": "6820df9b3648bb41b351ac2833a8f13219a136054610813a7da1189f194bd810",
+    "selection_before_validation.json": "769e0265f6d4bee9d08a46386a7ec0e4a1bc431b609a5377062eee110f6c95a4",
+    "quadratic_information_counterexample.json": "626089d4b5587720f5978b5a6c17716ee09b3c4ac35e01f76e650001ae458658",
+    "independent_checks.json": "fe8e80d756a03a82b8a978f717c9c3b3f390e48b6308e8dc5f65ddb3b9da5c25",
+    "01_检测约束下OL_H_C风险比较.md": "ab4f373dac46da11aa2ec42566479402e8cb39b10678d182afe09bf6d13caff0",
+    "02_共G聚合与单链报文相关性.md": "285086479d2cfdd9295349e1c7ddb110ba044ad67c9a76057bbca861aa70de57",
+    "03_信息耦合指标_性能界与反例.md": "8869d625b9e6270b4dc7c2c7ae4c607623d358014d14d2210368d07fb43b1cee",
+    "04_最小原型与强基线比较.md": "38234a47339fd6aa5c1d3fa3e6f8a60a2372ea0cc16a4a012f2152e76f78a28e",
+    "05_直接近邻逐式对照.md": "209f704eea9e2715ef61ce6f93992033f7014a5fe4724485e24b927d266a76e2",
+    "06_研究决定_A_B_C.md": "552884914ec1485aee8c0c3fb40f736a1b3a3f72486167089d9375ec448922df",
+    "README.md": "b8556b35e3e66313a847950bc2b7793273350ca76e3171e2196fddf856e77ca8",
+    "evidence_table.md": "1300ff178e8c7df384d7e5f498867eaf2d6ae9ff602e46ced7f9396f31598cae"
+  },
+  "normalization": "canonical JSON and UTF8 LF text",
+  "snapshot_not_independent_proof": true
+}

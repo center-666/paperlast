@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-17",
+  "sources": [
+    {
+      "id": "FPN22",
+      "citation_key": "Paper_Niu2023_InnovationStealthyAttack",
+      "title": "Innovation-based stealthy attack against distributed state estimation over sensor networks",
+      "year": 2023,
+      "DOI": "10.1016/j.automatica.2023.110962",
+      "PDF_SHA256": "4b29107b464ec7d33f7308ff48f80e5ed0043f3815ff9a2aa0949cb86d9b263d",
+      "actual_read_note": {
+        "date": "2026-11-17",
+        "scope": "复用PDF3—5/文章3—5，Theorem1式9—13；共G压缩量测聚合与最优增益；不把单源原量测正交当成聚合创新正交",
+        "report": "../研究规划/第一篇小论文_重新投稿修订_20261102/A1_G2_attack_information_defense_20261117/05_直接近邻逐式对照.md",
+        "limits": "指定核心段，非全部证明审证或完整算法复现"
+      },
+      "version_note": "本机既有Elsevier期刊PDF共9页；110962为文章号，非pp.1–12；本轮仅复制归档，不是新下载。",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "FPN28",
+      "citation_key": "Paper_Wang2025_InformationStealthy",
+      "title": "Information-based stealthy attacks against distributed state estimation over sensor networks",
+      "year": 2025,
+      "DOI": "10.1016/j.neucom.2024.129087",
+      "PDF_SHA256": "7f960d20c143aa06fe3cb3d0016dacf2ab7352dc7195747a7aeed084011d0316",
+      "actual_read_note": {
+        "date": "2026-11-17",
+        "scope": "复用PDF3—6/文章3—6，式27—36、44；预测误差MMSE与交叉项、相同共G架构",
+        "report": "../研究规划/第一篇小论文_重新投稿修订_20261102/A1_G2_attack_information_defense_20261117/05_直接近邻逐式对照.md",
+        "limits": "指定核心段，非全部证明审证或完整算法复现"
+      },
+      "version_note": "2026-11-17用户下载后补齐；既有未取得记录保留为历史状态，不再代表当前；Zotero原件不移动、不修改",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "AIA02",
+      "citation_key": "Paper_Wei2025_VaryingDataAccess",
+      "title": "Integrity attacks on state estimation with varying data access: From visibility to full restriction",
+      "year": 2025,
+      "DOI": "10.1016/j.automatica.2025.112162",
+      "PDF_SHA256": "6f0a4d25f1d97a32cd9fef4db4baa106d72e18300f951a5e4a7f37fb41f824b4",
+      "actual_read_note": {
+        "date": "2026-11-17",
+        "scope": "复用PDF7—8、11—12，Proposition4、Theorems5/6、Remark10/13；本轮Gamma不覆盖条件二次项Q",
+        "report": "../研究规划/第一篇小论文_重新投稿修订_20261102/A1_G2_attack_information_defense_20261117/05_直接近邻逐式对照.md",
+        "limits": "指定核心段，非全部证明审证或完整算法复现"
+      },
+      "version_note": "2026-11-17用户下载后补齐；既有未取得记录保留为历史状态，不再代表当前；Zotero原件不移动、不修改",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "AIA01",
+      "citation_key": "Paper_Xing2025_HistoricalDistributedFDI",
+      "title": "Stealthy Attacks With Historical Data on Distributed State Estimation",
+      "year": 2025,
+      "DOI": "10.1109/tifs.2025.3564063",
+      "PDF_SHA256": "54d5105ce9bc3af16e6888663d739d648898e6ef438ddeecb474ab53245f35be",
+      "actual_read_note": {
+        "date": "2026-11-17",
+        "scope": "复用PDF4—5/4544—4545，Lemma3、Theorem1；历史/当前相关项及协方差约束",
+        "report": "../研究规划/第一篇小论文_重新投稿修订_20261102/A1_G2_attack_information_defense_20261117/05_直接近邻逐式对照.md",
+        "limits": "指定核心段，非全部证明审证或完整算法复现"
+      },
+      "version_note": "用户既有Zotero NRZQHZ24复制；未移动或改变原附件",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "G2N01",
+      "citation_key": "Paper_VilaValls2022_RobustLCKF",
+      "title": "Robust Linearly Constrained Kalman Filter for General Mismatched Linear State-Space Models",
+      "year": 2022,
+      "DOI": "10.1109/TAC.2021.3132890",
+      "PDF_SHA256": "55df6a09b691f3d68631f0094fa7ba0621147fcd9b60cc8387aea0d5f8e8a388",
+      "actual_read_note": {
+        "date": "2026-11-17",
+        "PDF_pages": "2—4",
+        "printed_pages": "作者版2—4；未核最终版对应",
+        "claim": "约束增益闭式解及一般DLE=F形式已有；本轮候选单步求解器与式9/15直接对应",
+        "limits": "不宣称其原文已有本FDI风险定理或本轮全部递推为其全局WF最优解",
+        "report": "../研究规划/第一篇小论文_重新投稿修订_20261102/A1_G2_attack_information_defense_20261117/05_直接近邻逐式对照.md"
+      },
+      "version_note": "NSF公开收录的IEEE待排版作者版；不冒充最终出版社分页",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "FPN12",
+      "citation_key": "Paper_He2022_SecureDistributedFilters",
+      "title": "How to Secure Distributed Filters Under Sensor Attacks",
+      "year": 2022,
+      "DOI": "10.1109/TAC.2021.3092603",
+      "PDF_SHA256": "d6549df8aa9dca62e8f080100c19fcbf7381b60b2b96db268777dd331901a80a",
+      "actual_read_note": {
+        "date": "2026-11-17",
+        "scope": "本轮PDF4—6/2846—2848定点文本核读Algorithm1、Theorems1/2；有界噪声、稀疏传感器攻击及饱和/共识结构；非同协议复现",
+        "report": "../研究规划/第一篇小论文_重新投稿修订_20261102/A1_G2_attack_information_defense_20261117/05_直接近邻逐式对照.md",
+        "limits": "指定核心段，非全部证明审证或完整算法复现"
+      },
+      "version_note": "",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "FUS18",
+      "citation_key": "Paper_FUS18_Wasserstein2018",
+      "title": "Wasserstein Distributionally Robust Kalman Filtering",
+      "year": 2018,
+      "DOI": "",
+      "PDF_SHA256": "d0bec3d6b0335573310beadb723366d71e09fc89732424eb632bfc92d1c0f91e",
+      "actual_read_note": {
+        "date": "2026-11-17",
+        "scope": "复用作者稿PDF3—4、6—7，Theorems2.3/2.5、Algorithm3；分布鲁棒MSE设计，不把它称为当前噪声膨胀基线的完整复现",
+        "report": "../研究规划/第一篇小论文_重新投稿修订_20261102/A1_G2_attack_information_defense_20261117/05_直接近邻逐式对照.md",
+        "limits": "指定核心段，非全部证明审证或完整算法复现"
+      },
+      "version_note": "本地为arXiv:1809.08830v3作者稿17页；关联NeurIPS2018正式会议论文，不将作者稿页数当正式页数。",
+      "PDF_uploaded": false
+    },
+    {
+      "id": "FUS23",
+      "citation_key": "Paper_FUS23_Xu2019",
+      "title": "Event-triggered minimax state estimation with a relative entropy constraint",
+      "year": 2019,
+      "DOI": "10.1016/j.automatica.2019.108592",
+      "PDF_SHA256": "572d6ae891db9a8bd2c093e7dae02a48c18b010a82b8d5fdf424c4d64cb2ccea",
+      "actual_read_note": {
+        "date": "2026-11-17",
+        "scope": "本轮PDF3—4/文章3—4定点文本核读P0及式14—15；相对熵不确定与事件触发最小最大估计，不是本检测FA约束",
+        "report": "../研究规划/第一篇小论文_重新投稿修订_20261102/A1_G2_attack_information_defense_20261117/05_直接近邻逐式对照.md",
+        "limits": "指定核心段，非全部证明审证或完整算法复现"
+      },
+      "version_note": "",
+      "PDF_uploaded": false
+    }
+  ],
+  "sole_library": true,
+  "counts": {
+    "records": 199,
+    "local_PDF": 144,
+    "independent_full_theses": 46
+  }
+}

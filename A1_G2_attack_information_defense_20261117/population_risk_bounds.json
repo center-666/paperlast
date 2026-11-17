@@ -1,0 +1,1248 @@
+{
+  "date": "2026-11-17",
+  "models": {
+    "unstable": {
+      "Niu": {
+        "temporal": {
+          "full_budget_OL_witness_lower": {
+            "lower": "341957497221/500000000000",
+            "upper": "683914994443/1000000000000",
+            "lower_display": 0.683914994442,
+            "upper_display": 0.683914994443,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "111811519/1000000000000",
+            "upper": "349411/3125000000",
+            "lower_display": 0.000111811519,
+            "upper_display": 0.00011181152,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "8371/1000",
+            "radial_stop_exact": "12371/1000",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285717/1000000000000",
+            "upper": "499107142859/500000000000",
+            "lower_display": 0.998214285717,
+            "upper_display": 0.998214285718,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "1049163279193821379514242673600/2028236823912198382629752161063",
+              "-13934081411415764065008568800/2028236823912198382629752161063"
+            ],
+            [
+              "-13934081411415764065008568800/2028236823912198382629752161063",
+              "7447084972847767470574042752800/14197657767385388678408265127441"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "528671719/1000000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        },
+        "joint_GLRT": {
+          "full_budget_OL_witness_lower": {
+            "lower": "402518073931/1000000000000",
+            "upper": "100629518483/250000000000",
+            "lower_display": 0.402518073931,
+            "upper_display": 0.402518073932,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "106554399/1000000000000",
+            "upper": "133193/1250000000",
+            "lower_display": 0.000106554399,
+            "upper_display": 0.0001065544,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "8371/1000",
+            "radial_stop_exact": "12371/1000",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285719/1000000000000",
+            "upper": "24955357143/25000000000",
+            "lower_display": 0.998214285719,
+            "upper_display": 0.99821428572,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "32951301144970110785934459614372997506/21811926579748722804502342397679144773",
+              "-5888925056415858654445577973402000/21811926579748722804502342397679144773"
+            ],
+            [
+              "-5888925056415858654445577973402000/21811926579748722804502342397679144773",
+              "34627332757245149135402744498540337581/21811926579748722804502342397679144773"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "1587542179/1000000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        }
+      },
+      "TV_MMSE": {
+        "temporal": {
+          "full_budget_OL_witness_lower": {
+            "lower": "341957497221/500000000000",
+            "upper": "683914994443/1000000000000",
+            "lower_display": 0.683914994442,
+            "upper_display": 0.683914994443,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "111811519/1000000000000",
+            "upper": "349411/3125000000",
+            "lower_display": 0.000111811519,
+            "upper_display": 0.00011181152,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "8371/1000",
+            "radial_stop_exact": "12371/1000",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285717/1000000000000",
+            "upper": "499107142859/500000000000",
+            "lower_display": 0.998214285717,
+            "upper_display": 0.998214285718,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "1049163279193821379514242673600/2028236823912198382629752161063",
+              "-13934081411415764065008568800/2028236823912198382629752161063"
+            ],
+            [
+              "-13934081411415764065008568800/2028236823912198382629752161063",
+              "7447084972847767470574042752800/14197657767385388678408265127441"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "528671719/1000000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        },
+        "joint_GLRT": {
+          "full_budget_OL_witness_lower": {
+            "lower": "402518073931/1000000000000",
+            "upper": "100629518483/250000000000",
+            "lower_display": 0.402518073931,
+            "upper_display": 0.402518073932,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "106554399/1000000000000",
+            "upper": "133193/1250000000",
+            "lower_display": 0.000106554399,
+            "upper_display": 0.0001065544,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "8371/1000",
+            "radial_stop_exact": "12371/1000",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285719/1000000000000",
+            "upper": "24955357143/25000000000",
+            "lower_display": 0.998214285719,
+            "upper_display": 0.99821428572,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "32951301144970110785934459614372997506/21811926579748722804502342397679144773",
+              "-5888925056415858654445577973402000/21811926579748722804502342397679144773"
+            ],
+            [
+              "-5888925056415858654445577973402000/21811926579748722804502342397679144773",
+              "34627332757245149135402744498540337581/21811926579748722804502342397679144773"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "1587542179/1000000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        }
+      },
+      "raw_orthogonal": {
+        "temporal": {
+          "full_budget_OL_witness_lower": {
+            "lower": "341957497221/500000000000",
+            "upper": "683914994443/1000000000000",
+            "lower_display": 0.683914994442,
+            "upper_display": 0.683914994443,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "89224019/1000000000000",
+            "upper": "4461201/50000000000",
+            "lower_display": 8.9224019e-05,
+            "upper_display": 8.922402e-05,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "2149/250",
+            "radial_stop_exact": "3149/250",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285717/1000000000000",
+            "upper": "499107142859/500000000000",
+            "lower_display": 0.998214285717,
+            "upper_display": 0.998214285718,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "1049163279193821379514242673600/2028236823912198382629752161063",
+              "-13934081411415764065008568800/2028236823912198382629752161063"
+            ],
+            [
+              "-13934081411415764065008568800/2028236823912198382629752161063",
+              "7447084972847767470574042752800/14197657767385388678408265127441"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "528671719/1000000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        },
+        "joint_GLRT": {
+          "full_budget_OL_witness_lower": {
+            "lower": "402518073931/1000000000000",
+            "upper": "100629518483/250000000000",
+            "lower_display": 0.402518073931,
+            "upper_display": 0.402518073932,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "84605487/1000000000000",
+            "upper": "5287843/62500000000",
+            "lower_display": 8.4605487e-05,
+            "upper_display": 8.4605488e-05,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "2149/250",
+            "radial_stop_exact": "3149/250",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285719/1000000000000",
+            "upper": "24955357143/25000000000",
+            "lower_display": 0.998214285719,
+            "upper_display": 0.99821428572,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "32951301144970110785934459614372997506/21811926579748722804502342397679144773",
+              "-5888925056415858654445577973402000/21811926579748722804502342397679144773"
+            ],
+            [
+              "-5888925056415858654445577973402000/21811926579748722804502342397679144773",
+              "34627332757245149135402744498540337581/21811926579748722804502342397679144773"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "1587542179/1000000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        }
+      },
+      "robust_matched": {
+        "temporal": {
+          "full_budget_OL_witness_lower": {
+            "lower": "341957497221/500000000000",
+            "upper": "683914994443/1000000000000",
+            "lower_display": 0.683914994442,
+            "upper_display": 0.683914994443,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "41754209/500000000000",
+            "upper": "83508419/1000000000000",
+            "lower_display": 8.3508418e-05,
+            "upper_display": 8.3508419e-05,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "4331/500",
+            "radial_stop_exact": "6331/500",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285717/1000000000000",
+            "upper": "499107142859/500000000000",
+            "lower_display": 0.998214285717,
+            "upper_display": 0.998214285718,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "1049163279193821379514242673600/2028236823912198382629752161063",
+              "-13934081411415764065008568800/2028236823912198382629752161063"
+            ],
+            [
+              "-13934081411415764065008568800/2028236823912198382629752161063",
+              "7447084972847767470574042752800/14197657767385388678408265127441"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "528671719/1000000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        },
+        "joint_GLRT": {
+          "full_budget_OL_witness_lower": {
+            "lower": "402518073931/1000000000000",
+            "upper": "100629518483/250000000000",
+            "lower_display": 0.402518073931,
+            "upper_display": 0.402518073932,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "79063483/1000000000000",
+            "upper": "19765871/250000000000",
+            "lower_display": 7.9063483e-05,
+            "upper_display": 7.9063484e-05,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "4331/500",
+            "radial_stop_exact": "6331/500",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285719/1000000000000",
+            "upper": "24955357143/25000000000",
+            "lower_display": 0.998214285719,
+            "upper_display": 0.99821428572,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "32951301144970110785934459614372997506/21811926579748722804502342397679144773",
+              "-5888925056415858654445577973402000/21811926579748722804502342397679144773"
+            ],
+            [
+              "-5888925056415858654445577973402000/21811926579748722804502342397679144773",
+              "34627332757245149135402744498540337581/21811926579748722804502342397679144773"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "1587542179/1000000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        }
+      },
+      "robust_cap20": {
+        "temporal": {
+          "full_budget_OL_witness_lower": {
+            "lower": "61119630647/250000000000",
+            "upper": "244478522589/1000000000000",
+            "lower_display": 0.244478522588,
+            "upper_display": 0.244478522589,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "221/1000",
+            "radial_stop_exact": "4221/1000",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "23229/31250000000",
+            "upper": "743329/1000000000000",
+            "lower_display": 7.43328e-07,
+            "upper_display": 7.43329e-07,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "2671/200",
+            "radial_stop_exact": "3471/200",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285717/1000000000000",
+            "upper": "499107142859/500000000000",
+            "lower_display": 0.998214285717,
+            "upper_display": 0.998214285718,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "1049163279193821379514242673600/2028236823912198382629752161063",
+              "-13934081411415764065008568800/2028236823912198382629752161063"
+            ],
+            [
+              "-13934081411415764065008568800/2028236823912198382629752161063",
+              "7447084972847767470574042752800/14197657767385388678408265127441"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "528671719/1000000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        },
+        "joint_GLRT": {
+          "full_budget_OL_witness_lower": {
+            "lower": "10896762847/100000000000",
+            "upper": "108967628471/1000000000000",
+            "lower_display": 0.10896762847,
+            "upper_display": 0.108967628471,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "221/1000",
+            "radial_stop_exact": "4221/1000",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "545267/1000000000000",
+            "upper": "136317/250000000000",
+            "lower_display": 5.45267e-07,
+            "upper_display": 5.45268e-07,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "2671/200",
+            "radial_stop_exact": "3471/200",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285719/1000000000000",
+            "upper": "24955357143/25000000000",
+            "lower_display": 0.998214285719,
+            "upper_display": 0.99821428572,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "32951301144970110785934459614372997506/21811926579748722804502342397679144773",
+              "-5888925056415858654445577973402000/21811926579748722804502342397679144773"
+            ],
+            [
+              "-5888925056415858654445577973402000/21811926579748722804502342397679144773",
+              "34627332757245149135402744498540337581/21811926579748722804502342397679144773"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "1587542179/1000000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        }
+      },
+      "shrink_matched": {
+        "temporal": {
+          "full_budget_OL_witness_lower": {
+            "lower": "341957497221/500000000000",
+            "upper": "683914994443/1000000000000",
+            "lower_display": 0.683914994442,
+            "upper_display": 0.683914994443,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "46812409/500000000000",
+            "upper": "93624819/1000000000000",
+            "lower_display": 9.3624818e-05,
+            "upper_display": 9.3624819e-05,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "2137/250",
+            "radial_stop_exact": "3137/250",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285717/1000000000000",
+            "upper": "499107142859/500000000000",
+            "lower_display": 0.998214285717,
+            "upper_display": 0.998214285718,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "1049163279193821379514242673600/2028236823912198382629752161063",
+              "-13934081411415764065008568800/2028236823912198382629752161063"
+            ],
+            [
+              "-13934081411415764065008568800/2028236823912198382629752161063",
+              "7447084972847767470574042752800/14197657767385388678408265127441"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "528671719/1000000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        },
+        "joint_GLRT": {
+          "full_budget_OL_witness_lower": {
+            "lower": "402518073931/1000000000000",
+            "upper": "100629518483/250000000000",
+            "lower_display": 0.402518073931,
+            "upper_display": 0.402518073932,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "88876227/1000000000000",
+            "upper": "22219057/250000000000",
+            "lower_display": 8.8876227e-05,
+            "upper_display": 8.8876228e-05,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "2137/250",
+            "radial_stop_exact": "3137/250",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285719/1000000000000",
+            "upper": "24955357143/25000000000",
+            "lower_display": 0.998214285719,
+            "upper_display": 0.99821428572,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "32951301144970110785934459614372997506/21811926579748722804502342397679144773",
+              "-5888925056415858654445577973402000/21811926579748722804502342397679144773"
+            ],
+            [
+              "-5888925056415858654445577973402000/21811926579748722804502342397679144773",
+              "34627332757245149135402744498540337581/21811926579748722804502342397679144773"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "1587542179/1000000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        }
+      }
+    },
+    "stable": {
+      "Niu": {
+        "temporal": {
+          "full_budget_OL_witness_lower": {
+            "lower": "330377262179/500000000000",
+            "upper": "660754524359/1000000000000",
+            "lower_display": 0.660754524358,
+            "upper_display": 0.660754524359,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "54495173/500000000000",
+            "upper": "108990347/1000000000000",
+            "lower_display": 0.000108990346,
+            "upper_display": 0.000108990347,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "1679/200",
+            "radial_stop_exact": "2479/200",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285717/1000000000000",
+            "upper": "499107142859/500000000000",
+            "lower_display": 0.998214285717,
+            "upper_display": 0.998214285718,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "3934612852695075960167742288800/6799942108948059220384066534881",
+              "-44450934526491833201706664000/6799942108948059220384066534881"
+            ],
+            [
+              "-44450934526491833201706664000/6799942108948059220384066534881",
+              "3794948596414938036852203540000/6799942108948059220384066534881"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "23221139/40000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        },
+        "joint_GLRT": {
+          "full_budget_OL_witness_lower": {
+            "lower": "50290190367/125000000000",
+            "upper": "402321522937/1000000000000",
+            "lower_display": 0.402321522936,
+            "upper_display": 0.402321522937,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "103958437/1000000000000",
+            "upper": "51979219/500000000000",
+            "lower_display": 0.000103958437,
+            "upper_display": 0.000103958438,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "1679/200",
+            "radial_stop_exact": "2479/200",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285719/1000000000000",
+            "upper": "24955357143/25000000000",
+            "lower_display": 0.998214285719,
+            "upper_display": 0.99821428572,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "24078094916999209718136712769111949026/15905384259339348380452120671556322933",
+              "-3843517625111824802537617645380000/15905384259339348380452120671556322933"
+            ],
+            [
+              "-3843517625111824802537617645380000/15905384259339348380452120671556322933",
+              "25267436961817828733051861421316995101/15905384259339348380452120671556322933"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "317721961/200000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        }
+      },
+      "TV_MMSE": {
+        "temporal": {
+          "full_budget_OL_witness_lower": {
+            "lower": "330377262179/500000000000",
+            "upper": "660754524359/1000000000000",
+            "lower_display": 0.660754524358,
+            "upper_display": 0.660754524359,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "54495173/500000000000",
+            "upper": "108990347/1000000000000",
+            "lower_display": 0.000108990346,
+            "upper_display": 0.000108990347,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "1679/200",
+            "radial_stop_exact": "2479/200",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285717/1000000000000",
+            "upper": "499107142859/500000000000",
+            "lower_display": 0.998214285717,
+            "upper_display": 0.998214285718,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "3934612852695075960167742288800/6799942108948059220384066534881",
+              "-44450934526491833201706664000/6799942108948059220384066534881"
+            ],
+            [
+              "-44450934526491833201706664000/6799942108948059220384066534881",
+              "3794948596414938036852203540000/6799942108948059220384066534881"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "23221139/40000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        },
+        "joint_GLRT": {
+          "full_budget_OL_witness_lower": {
+            "lower": "50290190367/125000000000",
+            "upper": "402321522937/1000000000000",
+            "lower_display": 0.402321522936,
+            "upper_display": 0.402321522937,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "103958437/1000000000000",
+            "upper": "51979219/500000000000",
+            "lower_display": 0.000103958437,
+            "upper_display": 0.000103958438,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "1679/200",
+            "radial_stop_exact": "2479/200",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285719/1000000000000",
+            "upper": "24955357143/25000000000",
+            "lower_display": 0.998214285719,
+            "upper_display": 0.99821428572,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "24078094916999209718136712769111949026/15905384259339348380452120671556322933",
+              "-3843517625111824802537617645380000/15905384259339348380452120671556322933"
+            ],
+            [
+              "-3843517625111824802537617645380000/15905384259339348380452120671556322933",
+              "25267436961817828733051861421316995101/15905384259339348380452120671556322933"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "317721961/200000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        }
+      },
+      "raw_orthogonal": {
+        "temporal": {
+          "full_budget_OL_witness_lower": {
+            "lower": "330377262179/500000000000",
+            "upper": "660754524359/1000000000000",
+            "lower_display": 0.660754524358,
+            "upper_display": 0.660754524359,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "21458397/250000000000",
+            "upper": "85833589/1000000000000",
+            "lower_display": 8.5833588e-05,
+            "upper_display": 8.5833589e-05,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "8633/1000",
+            "radial_stop_exact": "12633/1000",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285717/1000000000000",
+            "upper": "499107142859/500000000000",
+            "lower_display": 0.998214285717,
+            "upper_display": 0.998214285718,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "3934612852695075960167742288800/6799942108948059220384066534881",
+              "-44450934526491833201706664000/6799942108948059220384066534881"
+            ],
+            [
+              "-44450934526491833201706664000/6799942108948059220384066534881",
+              "3794948596414938036852203540000/6799942108948059220384066534881"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "23221139/40000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        },
+        "joint_GLRT": {
+          "full_budget_OL_witness_lower": {
+            "lower": "50290190367/125000000000",
+            "upper": "402321522937/1000000000000",
+            "lower_display": 0.402321522936,
+            "upper_display": 0.402321522937,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "3257813/40000000000",
+            "upper": "40722663/500000000000",
+            "lower_display": 8.1445325e-05,
+            "upper_display": 8.1445326e-05,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "8633/1000",
+            "radial_stop_exact": "12633/1000",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285719/1000000000000",
+            "upper": "24955357143/25000000000",
+            "lower_display": 0.998214285719,
+            "upper_display": 0.99821428572,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "24078094916999209718136712769111949026/15905384259339348380452120671556322933",
+              "-3843517625111824802537617645380000/15905384259339348380452120671556322933"
+            ],
+            [
+              "-3843517625111824802537617645380000/15905384259339348380452120671556322933",
+              "25267436961817828733051861421316995101/15905384259339348380452120671556322933"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "317721961/200000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        }
+      },
+      "robust_matched": {
+        "temporal": {
+          "full_budget_OL_witness_lower": {
+            "lower": "330377262179/500000000000",
+            "upper": "660754524359/1000000000000",
+            "lower_display": 0.660754524358,
+            "upper_display": 0.660754524359,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "80009833/1000000000000",
+            "upper": "40004917/500000000000",
+            "lower_display": 8.0009833e-05,
+            "upper_display": 8.0009834e-05,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "8703/1000",
+            "radial_stop_exact": "12703/1000",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285717/1000000000000",
+            "upper": "499107142859/500000000000",
+            "lower_display": 0.998214285717,
+            "upper_display": 0.998214285718,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "3934612852695075960167742288800/6799942108948059220384066534881",
+              "-44450934526491833201706664000/6799942108948059220384066534881"
+            ],
+            [
+              "-44450934526491833201706664000/6799942108948059220384066534881",
+              "3794948596414938036852203540000/6799942108948059220384066534881"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "23221139/40000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        },
+        "joint_GLRT": {
+          "full_budget_OL_witness_lower": {
+            "lower": "50290190367/125000000000",
+            "upper": "402321522937/1000000000000",
+            "lower_display": 0.402321522936,
+            "upper_display": 0.402321522937,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "75796267/1000000000000",
+            "upper": "18949067/250000000000",
+            "lower_display": 7.5796267e-05,
+            "upper_display": 7.5796268e-05,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "8703/1000",
+            "radial_stop_exact": "12703/1000",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285719/1000000000000",
+            "upper": "24955357143/25000000000",
+            "lower_display": 0.998214285719,
+            "upper_display": 0.99821428572,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "24078094916999209718136712769111949026/15905384259339348380452120671556322933",
+              "-3843517625111824802537617645380000/15905384259339348380452120671556322933"
+            ],
+            [
+              "-3843517625111824802537617645380000/15905384259339348380452120671556322933",
+              "25267436961817828733051861421316995101/15905384259339348380452120671556322933"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "317721961/200000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        }
+      },
+      "robust_cap20": {
+        "temporal": {
+          "full_budget_OL_witness_lower": {
+            "lower": "230723797061/1000000000000",
+            "upper": "115361898531/500000000000",
+            "lower_display": 0.230723797061,
+            "upper_display": 0.230723797062,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "227/1000",
+            "radial_stop_exact": "4227/1000",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "675201/1000000000000",
+            "upper": "337601/500000000000",
+            "lower_display": 6.75201e-07,
+            "upper_display": 6.75202e-07,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "6721/500",
+            "radial_stop_exact": "8721/500",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285717/1000000000000",
+            "upper": "499107142859/500000000000",
+            "lower_display": 0.998214285717,
+            "upper_display": 0.998214285718,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "3934612852695075960167742288800/6799942108948059220384066534881",
+              "-44450934526491833201706664000/6799942108948059220384066534881"
+            ],
+            [
+              "-44450934526491833201706664000/6799942108948059220384066534881",
+              "3794948596414938036852203540000/6799942108948059220384066534881"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "23221139/40000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        },
+        "joint_GLRT": {
+          "full_budget_OL_witness_lower": {
+            "lower": "13347873471/125000000000",
+            "upper": "106782987769/1000000000000",
+            "lower_display": 0.106782987768,
+            "upper_display": 0.106782987769,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "227/1000",
+            "radial_stop_exact": "4227/1000",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "494911/1000000000000",
+            "upper": "7733/15625000000",
+            "lower_display": 4.94911e-07,
+            "upper_display": 4.94912e-07,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "6721/500",
+            "radial_stop_exact": "8721/500",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285719/1000000000000",
+            "upper": "24955357143/25000000000",
+            "lower_display": 0.998214285719,
+            "upper_display": 0.99821428572,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "24078094916999209718136712769111949026/15905384259339348380452120671556322933",
+              "-3843517625111824802537617645380000/15905384259339348380452120671556322933"
+            ],
+            [
+              "-3843517625111824802537617645380000/15905384259339348380452120671556322933",
+              "25267436961817828733051861421316995101/15905384259339348380452120671556322933"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "317721961/200000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        }
+      },
+      "shrink_matched": {
+        "temporal": {
+          "full_budget_OL_witness_lower": {
+            "lower": "330377262179/500000000000",
+            "upper": "660754524359/1000000000000",
+            "lower_display": 0.660754524358,
+            "upper_display": 0.660754524359,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "45034961/500000000000",
+            "upper": "90069923/1000000000000",
+            "lower_display": 9.0069922e-05,
+            "upper_display": 9.0069923e-05,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "1717/200",
+            "radial_stop_exact": "2517/200",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285717/1000000000000",
+            "upper": "499107142859/500000000000",
+            "lower_display": 0.998214285717,
+            "upper_display": 0.998214285718,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "3934612852695075960167742288800/6799942108948059220384066534881",
+              "-44450934526491833201706664000/6799942108948059220384066534881"
+            ],
+            [
+              "-44450934526491833201706664000/6799942108948059220384066534881",
+              "3794948596414938036852203540000/6799942108948059220384066534881"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "23221139/40000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        },
+        "joint_GLRT": {
+          "full_budget_OL_witness_lower": {
+            "lower": "50290190367/125000000000",
+            "upper": "402321522937/1000000000000",
+            "lower_display": 0.402321522936,
+            "upper_display": 0.402321522937,
+            "verified_outward": true
+          },
+          "full_witness": {
+            "radial_start_exact": "0",
+            "radial_stop_exact": "4",
+            "angular_fraction": "1",
+            "bins": 64
+          },
+          "beta25_feasible_OL_witness_lower": {
+            "lower": "42779069/500000000000",
+            "upper": "85558139/1000000000000",
+            "lower_display": 8.5558138e-05,
+            "upper_display": 8.5558139e-05,
+            "verified_outward": true
+          },
+          "low_energy_witness": {
+            "radial_start_exact": "1717/200",
+            "radial_stop_exact": "2517/200",
+            "angular_fraction": "1/2",
+            "bins": 64
+          },
+          "every_OL_H_C_class_upper": {
+            "lower": "998214285719/1000000000000",
+            "upper": "24955357143/25000000000",
+            "lower_display": 0.998214285719,
+            "upper_display": 0.99821428572,
+            "verified_outward": true
+          },
+          "last_packet_noncentral_matrix": [
+            [
+              "24078094916999209718136712769111949026/15905384259339348380452120671556322933",
+              "-3843517625111824802537617645380000/15905384259339348380452120671556322933"
+            ],
+            [
+              "-3843517625111824802537617645380000/15905384259339348380452120671556322933",
+              "25267436961817828733051861421316995101/15905384259339348380452120671556322933"
+            ]
+          ],
+          "last_packet_spectral_upper_exact": "317721961/200000000",
+          "classes_share_witness": true,
+          "no_strict_information_risk_order_proved": true
+        }
+      }
+    }
+  },
+  "detectors": {
+    "temporal": {
+      "df": 8,
+      "threshold": "24.64405575",
+      "single_FA": {
+        "lower": "892857141/500000000000",
+        "upper": "1785714283/1000000000000",
+        "lower_display": 0.001785714282,
+        "upper_display": 0.001785714283,
+        "verified_outward": true
+      },
+      "total_FA_upper": {
+        "lower": "12499999977/250000000000",
+        "upper": "49999999909/1000000000000",
+        "lower_display": 0.049999999908,
+        "upper_display": 0.049999999909,
+        "verified_outward": true
+      },
+      "unavoidable_pre_alarm_risk_upper": {
+        "lower": "998214285717/1000000000000",
+        "upper": "499107142859/500000000000",
+        "lower_display": 0.998214285717,
+        "upper_display": 0.998214285718,
+        "verified_outward": true
+      }
+    },
+    "joint_GLRT": {
+      "df": 10,
+      "threshold": "28.02950818",
+      "single_FA": {
+        "lower": "44642857/25000000000",
+        "upper": "1785714281/1000000000000",
+        "lower_display": 0.00178571428,
+        "upper_display": 0.001785714281,
+        "verified_outward": true
+      },
+      "total_FA_upper": {
+        "lower": "49999999841/1000000000000",
+        "upper": "24999999921/500000000000",
+        "lower_display": 0.049999999841,
+        "upper_display": 0.049999999842,
+        "verified_outward": true
+      },
+      "unavoidable_pre_alarm_risk_upper": {
+        "lower": "998214285719/1000000000000",
+        "upper": "24955357143/25000000000",
+        "lower_display": 0.998214285719,
+        "upper_display": 0.99821428572,
+        "verified_outward": true
+      }
+    }
+  },
+  "attacked_alarm_bound_for_OL_and_strict_H_energy_1_over_25": {
+    "lower": "118541434669/500000000000",
+    "upper": "237082869339/1000000000000",
+    "lower_display": 0.237082869338,
+    "upper_display": 0.237082869339,
+    "verified_outward": true
+  },
+  "C_general_energy_does_not_certify_stealth": true,
+  "full_class_suprema_not_computed": true,
+  "overlaps_not_assumed_independent": true,
+  "Monte_Carlo": false
+}
