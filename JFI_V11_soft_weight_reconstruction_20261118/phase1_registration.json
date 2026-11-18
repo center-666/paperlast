@@ -1,0 +1,49 @@
+{
+  "baseline_commit": "fa77d6d5aaa59684a78a7b7b681351fb66d71a77",
+  "baseline_directory": "JFI_reconstruction_attack_aware_soft_accommodation_V1",
+  "ordering": "Complete this six-policy closed-loop ablation before defining or running V1.1.",
+  "models": [
+    "unstable",
+    "stable"
+  ],
+  "policies": [
+    "V0",
+    "V1a",
+    "V1b-original",
+    "V1b-no-margin",
+    "V1b-no-cap",
+    "V1b-unconstrained"
+  ],
+  "archive_source_indices": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "phase1_profiles": [
+    "healthy",
+    "A0",
+    "A0_P3_proxy",
+    "A1_H_mismatch",
+    "A1_C_mismatch"
+  ],
+  "monitoring": "All paired weight comparisons use the original mixture BF alarm. V0 native parity, with its original threshold rule, is saved separately.",
+  "onset_scoring": "At the original event's last update, compare each active onset posterior mass and the aggregate mass for no active event. Count a no-active decision as an error. Also retain active-only MAP and the mass on the true onset.",
+  "sample_scope": "Development and regression only. No fresh randomness for this phase.",
+  "protected_V1": {
+    "accommodation.py": "93ee5df1d634b5ac34a42289b2216489e6bb08ee336d71cd66bf3774ec2a1dda",
+    "run_validation.py": "56b0b6aabfabe38c8c06dbe9779ec791b4ff675262dc70039704112fab0d38bc",
+    "test_accommodation.py": "83797f9b5dc272c545b2cc6743ea9ad9bb9aff89b8bff32d2c5ae649ffda4539",
+    "registration.json": "1e327f04291ea6f1735fc9a98816c228e0a0bc42da25f9811fecac41c8d47c6b",
+    "results/comparison.json": "23863bd5540c51d1062143aca49ce5c9c5d714345fba1d120373b7693b2f3051",
+    "results/paired_paths.npz": "ec7ec9c7112a8a7f543cc96a40dcb9497ee3fd3f3b835775a218e638d76c8e7b"
+  }
+}

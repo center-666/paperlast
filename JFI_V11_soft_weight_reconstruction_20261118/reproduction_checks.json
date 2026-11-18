@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-18",
+  "protected_counts": {
+    "V1": 6,
+    "shared_input_archive": 7,
+    "V11_pilot_and_code_frozen_before_independent_draw": 8,
+    "local_frozen_common_G": 33,
+    "manuscript_and_formal_chapters": 17,
+    "stage_TeX_and_PDF": 9,
+    "archive_members": 14
+  },
+  "clean_mirror_head": "fa77d6d5aaa59684a78a7b7b681351fb66d71a77",
+  "passed_unit_tests": 5,
+  "phase1_legacy_method_scenario_trajectory_and_alarm_regressions": 30,
+  "independent_physical_seeds": 96,
+  "historical_matched_records_per_model": 32,
+  "trace_summary_checks": {
+    "phase1_results/stable_step_logs.npz": {
+      "path_count": 12,
+      "method_count": 6,
+      "timestamps": 32,
+      "profiles": 5,
+      "max_V11_budget_excess": null,
+      "sha256": "d79064bf2ba28971e2d37d8b40fd2196bba0d7854cc9e719c11801f9014fdccf"
+    },
+    "phase1_results/unstable_step_logs.npz": {
+      "path_count": 12,
+      "method_count": 6,
+      "timestamps": 32,
+      "profiles": 5,
+      "max_V11_budget_excess": null,
+      "sha256": "8b378e3a304d65060f26d4d62b5b4262a23e7e2f05cc131426bca11ec6284cd1"
+    },
+    "phase2_results/stable_matched_archive_step_logs.npz": {
+      "path_count": 32,
+      "method_count": 7,
+      "timestamps": 32,
+      "profiles": 3,
+      "max_V11_budget_excess": 5.377642775528102e-17,
+      "sha256": "0541cd57c4f169b7874721a895bc9797e514c65fc019430657080c1537f015aa"
+    },
+    "phase2_results/stable_step_logs.npz": {
+      "path_count": 48,
+      "method_count": 7,
+      "timestamps": 32,
+      "profiles": 5,
+      "max_V11_budget_excess": 7.19910242530375e-17,
+      "sha256": "217f6fce271a4c0c9ea675ef40dc262e9de39feb7720cbcf5544a7fc3450444e"
+    },
+    "phase2_results/unstable_matched_archive_step_logs.npz": {
+      "path_count": 32,
+      "method_count": 7,
+      "timestamps": 32,
+      "profiles": 3,
+      "max_V11_budget_excess": 5.2909066017292616e-17,
+      "sha256": "6c8d72f7ee638f755875a06210d26e520d656fc854e07c7d13902107828dec89"
+    },
+    "phase2_results/unstable_step_logs.npz": {
+      "path_count": 48,
+      "method_count": 7,
+      "timestamps": 32,
+      "profiles": 5,
+      "max_V11_budget_excess": 5.117434254131581e-17,
+      "sha256": "0e010ae70123b70acf54da1944987109acae8cbd97dfc1fe8c7bd33db0cfdb0e"
+    }
+  },
+  "results_sha256": {
+    "phase1_results/ablation.json": "0415344fb5ea950c8fb80fa0e45c9e4f5ee776790028d194b9b22dd72b535f65",
+    "phase2_results/heldout.json": "f20e2f2b0352448ef85f47c1b94f7d7a3e7a453dbdcbead0234d8799206b3aea"
+  },
+  "markdown_relative_file_links_checked": true
+}

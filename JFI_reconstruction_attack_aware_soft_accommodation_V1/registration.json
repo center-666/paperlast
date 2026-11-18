@@ -1,0 +1,60 @@
+{
+  "baseline": "fa77d6d5aaa59684a78a7b7b681351fb66d71a77",
+  "models": [
+    "unstable",
+    "stable"
+  ],
+  "receiver": 1,
+  "target": 0,
+  "healthy": 2,
+  "horizon": 32,
+  "template_duration": 10,
+  "coded_energy_reference": 10,
+  "danger_squared": 0.1,
+  "evaluation_onset": 7,
+  "parity_order": 4,
+  "event_false_alarm": 0.05,
+  "reject_hold_updates": 5,
+  "no_event_prior": 0.5,
+  "nominal_one_step_allowance": 0.02,
+  "uncertainty_standard_deviations": 1,
+  "gain_shrink_grid_intervals": 100,
+  "watermark": {
+    "lambda": 0.5,
+    "q": 0.5
+  },
+  "samples": {
+    "physical_indices": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "new_physical_paths": 0
+  },
+  "cases": {
+    "healthy": "archived physical samples and Gaussian realizations",
+    "A0": "archived ordinary record in gain-switch screen",
+    "A0_P3_proxy": "archived A0/P3_proxy_joint_GLRT selection, unchanged",
+    "A1_H_mismatch": "archived A1-H/P1_peak_mean_bias selection, unchanged",
+    "A1_C_mismatch": "archived A1-C/P1_peak_mean_bias selection, unchanged"
+  },
+  "rule": "No performance-based reselection of recorded perturbations or tuning of V1. Known-onset GLS uses a diagnostic pseudo-onset on clean trajectories.",
+  "files": {
+    "common_g_reference_revision_20261115/common_g_reference.py": "95b667539e8d1341ae142ca4a1f9586b10cd85e9f4e1e9c62154bac0f789e8f4",
+    "common_g_reference_revision_20261115/inputs/five_node_aggregate_model.json": "dbe91a198a0a17efe5fe3c81a553234af327b94c1b966b6356920e32ec85c11e",
+    "common_g_reference_revision_20261115/test_results.npz": "8ecff83b1a05f659e14b34adbe600a2282eb403b2a57dcdce54985cd74033cd2",
+    "attack_gain_switch_audit_20261115/screen_arrays.npz": "47b45c0367c78732fdb7aa81ba8f3cc481a1ac7c473848f233c7a47a7e1a6b3f",
+    "A1_information_aware_attack_audit_20261116/validation_arrays.npz": "67c1b051145d652150ca3a5f5bfdf9458c444096187233a0c48696fc9d5afb11",
+    "A1_information_aware_attack_audit_20261116/registration.json": "cb1dab96897226e452fef9d684ad5a8e85edb453233efc34c32709d448378f6d",
+    "A1_information_aware_attack_audit_20261116/selection_before_validation.json": "1a72c30b6178b91a2f06c5213e214e82643355bb277f6e49433ecc0a88f3b8e8"
+  }
+}
