@@ -1,0 +1,20 @@
+{
+  "base": "afcab9e4fa8728fab01ab1edc8420079cf474c7a",
+  "prior_result_hashes_verified": 10,
+  "new_physical_seeds": 0,
+  "source_sha256": {
+    "affine_frontier.py": "b687be42128aeeba97caaa7315111b54ea42a7bc09bb57d72eda792abe535281",
+    "archived_audit.py": "7907f7c99f957754bdda38125d292b10b193c56325a5f0767d356bcd8f60c2c4",
+    "energy_inputs.py": "bbb23ac337515989d1cb8c651d3c696b538539ab23ed3ffdbb169c35010f4f75",
+    "nonlinear_bounds.py": "0061f7ff6ef7a69c952f499bd144e716645c3068f28fe07f7d4724cacdea6c65",
+    "review_delivery.py": "faf8ef966f78df396b0baef11f33c7fc1a574a1687499bf3a9a3217d76b42198",
+    "spectral_influence.py": "3f677ccb79ac55b590cec1278fbedeab90628308fbf01a8a34aee6f1be03dff8",
+    "test_energy.py": "36f8159b35ad63a7cd6ea99df925cf0462ee4e89129211ce597c438dc5417872"
+  },
+  "results_sha256": {
+    "affine_frontier.json": "2859389fb42669740b6467279e3a5c8b195917ddfbbf99c5ce92e6d7ce1f9321",
+    "archived_comparison.json": "bdc4f2b0f3944d10ce39c8313028cbc9c846597b6bc5bf92af175597b76028f1",
+    "gain_and_feasibility.png": "70c1400588b5fd2afb20417e9e91667f7c4594f2ba6f1109e3a00827b21cd1c8",
+    "linear_influence.json": "2f52151114f39591109fce0cd80b0dd5b0d5f97de21c59edabe9338bbfcb8842"
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "baseline": "afcab9e4fa8728fab01ab1edc8420079cf474c7a",
+  "model_sha256": "dbe91a198a0a17efe5fe3c81a553234af327b94c1b966b6356920e32ec85c11e",
+  "waveform_energy": 10,
+  "D_squared": 0.1,
+  "comparison_sets": {
+    "zero_danger": "every fixed admissible single-packet change at every allowed epoch",
+    "nominal": "affine in current target given trusted history, past target, and synchronized watermark"
+  },
+  "exact_floors": {
+    "sigma_min_B": "51/250",
+    "lambda_min_V": "3/5",
+    "gamma": "1/10",
+    "relaxed_gamma": "21/200",
+    "angle_fraction_lower": "19/100"
+  },
+  "penalty_lower_gamma_down": 0.00870036,
+  "penalty_lower_relaxed_gamma_down": 0.00823034,
+  "pointwise_relaxed_penalty_upper_up": 0.0249696,
+  "models": {
+    "unstable": {
+      "stages": [
+        {
+          "time": 0,
+          "sigma_min_B": 0.2040816326530612,
+          "lambda_min_V": 0.6282051282051283
+        },
+        {
+          "time": 1,
+          "sigma_min_B": 0.20620860811598615,
+          "lambda_min_V": 0.6298884128905474
+        },
+        {
+          "time": 2,
+          "sigma_min_B": 0.2062287184890898,
+          "lambda_min_V": 0.6299043712544891
+        },
+        {
+          "time": 3,
+          "sigma_min_B": 0.20622890856977016,
+          "lambda_min_V": 0.6299045220947663
+        },
+        {
+          "time": 4,
+          "sigma_min_B": 0.2062289103673985,
+          "lambda_min_V": 0.6299045235212913
+        },
+        {
+          "time": 5,
+          "sigma_min_B": 0.20622891038441085,
+          "lambda_min_V": 0.6299045235347918
+        },
+        {
+          "time": 6,
+          "sigma_min_B": 0.20622891038457197,
+          "lambda_min_V": 0.6299045235349195
+        },
+        {
+          "time": 7,
+          "sigma_min_B": 0.20622891038457344,
+          "lambda_min_V": 0.629904523534921
+        },
+        {
+          "time": 8,
+          "sigma_min_B": 0.20622891038457353,
+          "lambda_min_V": 0.629904523534921
+        },
+        {
+          "time": 9,
+          "sigma_min_B": 0.20622891038457355,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 10,
+          "sigma_min_B": 0.2062289103845736,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 11,
+          "sigma_min_B": 0.20622891038457353,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 12,
+          "sigma_min_B": 0.20622891038457358,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 13,
+          "sigma_min_B": 0.20622891038457358,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 14,
+          "sigma_min_B": 0.20622891038457355,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 15,
+          "sigma_min_B": 0.2062289103845736,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 16,
+          "sigma_min_B": 0.20622891038457355,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 17,
+          "sigma_min_B": 0.2062289103845736,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 18,
+          "sigma_min_B": 0.2062289103845736,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 19,
+          "sigma_min_B": 0.20622891038457353,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 20,
+          "sigma_min_B": 0.20622891038457355,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 21,
+          "sigma_min_B": 0.20622891038457358,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 22,
+          "sigma_min_B": 0.20622891038457355,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 23,
+          "sigma_min_B": 0.2062289103845735,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 24,
+          "sigma_min_B": 0.20622891038457358,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 25,
+          "sigma_min_B": 0.2062289103845736,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 26,
+          "sigma_min_B": 0.20622891038457358,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 27,
+          "sigma_min_B": 0.20622891038457358,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 28,
+          "sigma_min_B": 0.20622891038457355,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 29,
+          "sigma_min_B": 0.20622891038457364,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 30,
+          "sigma_min_B": 0.20622891038457364,
+          "lambda_min_V": 0.6299045235349207
+        },
+        {
+          "time": 31,
+          "sigma_min_B": 0.20622891038457355,
+          "lambda_min_V": 0.6299045235349207
+        }
+      ],
+      "nominal_V0": 0.22771117695278012,
+      "nominal_full_MMSE": 0.22534716972835114,
+      "nominal_trusted_only": 0.2929666565710684,
+      "nominal_two_pct_cap_up": 0.23226541,
+      "no_danger_healthy_mse_lower_down": 0.23404753,
+      "no_danger_percent_lower_down": 2.78262787,
+      "no_danger_margin_above_two_pct_down": 0.00178213,
+      "minimum_eligible_ticks_for_this_uniform_lower_certificate": 26,
+      "worst_total_danger_probability_lower_at_two_pct_down": 0.00998424,
+      "chance_feasible_upper_via_episode_mixture_up": 0.89768881
+    },
+    "stable": {
+      "stages": [
+        {
+          "time": 0,
+          "sigma_min_B": 0.2040816326530612,
+          "lambda_min_V": 0.6282051282051283
+        },
+        {
+          "time": 1,
+          "sigma_min_B": 0.2056833125011226,
+          "lambda_min_V": 0.6294718565895754
+        },
+        {
+          "time": 2,
+          "sigma_min_B": 0.2056950114300865,
+          "lambda_min_V": 0.6294811277721072
+        },
+        {
+          "time": 3,
+          "sigma_min_B": 0.20569509693919716,
+          "lambda_min_V": 0.6294811955374848
+        },
+        {
+          "time": 4,
+          "sigma_min_B": 0.20569509756487037,
+          "lambda_min_V": 0.6294811960333264
+        },
+        {
+          "time": 5,
+          "sigma_min_B": 0.20569509756945362,
+          "lambda_min_V": 0.6294811960369586
+        },
+        {
+          "time": 6,
+          "sigma_min_B": 0.20569509756948726,
+          "lambda_min_V": 0.6294811960369855
+        },
+        {
+          "time": 7,
+          "sigma_min_B": 0.20569509756948745,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 8,
+          "sigma_min_B": 0.2056950975694875,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 9,
+          "sigma_min_B": 0.2056950975694875,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 10,
+          "sigma_min_B": 0.2056950975694875,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 11,
+          "sigma_min_B": 0.2056950975694875,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 12,
+          "sigma_min_B": 0.2056950975694875,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 13,
+          "sigma_min_B": 0.2056950975694875,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 14,
+          "sigma_min_B": 0.20569509756948753,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 15,
+          "sigma_min_B": 0.20569509756948742,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 16,
+          "sigma_min_B": 0.20569509756948748,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 17,
+          "sigma_min_B": 0.20569509756948753,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 18,
+          "sigma_min_B": 0.2056950975694875,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 19,
+          "sigma_min_B": 0.20569509756948748,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 20,
+          "sigma_min_B": 0.20569509756948748,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 21,
+          "sigma_min_B": 0.2056950975694875,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 22,
+          "sigma_min_B": 0.20569509756948748,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 23,
+          "sigma_min_B": 0.20569509756948745,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 24,
+          "sigma_min_B": 0.2056950975694875,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 25,
+          "sigma_min_B": 0.20569509756948753,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 26,
+          "sigma_min_B": 0.2056950975694875,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 27,
+          "sigma_min_B": 0.20569509756948748,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 28,
+          "sigma_min_B": 0.2056950975694875,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 29,
+          "sigma_min_B": 0.20569509756948748,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 30,
+          "sigma_min_B": 0.20569509756948748,
+          "lambda_min_V": 0.6294811960369853
+        },
+        {
+          "time": 31,
+          "sigma_min_B": 0.20569509756948745,
+          "lambda_min_V": 0.6294811960369853
+        }
+      ],
+      "nominal_V0": 0.22666559033630543,
+      "nominal_full_MMSE": 0.22433070801496027,
+      "nominal_trusted_only": 0.2907888975828977,
+      "nominal_two_pct_cap_up": 0.23119891,
+      "no_danger_healthy_mse_lower_down": 0.23303106,
+      "no_danger_percent_lower_down": 2.80831315,
+      "no_danger_margin_above_two_pct_down": 0.00183216,
+      "minimum_eligible_ticks_for_this_uniform_lower_certificate": 26,
+      "worst_total_danger_probability_lower_at_two_pct_down": 0.01036498,
+      "chance_feasible_upper_via_episode_mixture_up": 0.89665391
+    }
+  }
+}

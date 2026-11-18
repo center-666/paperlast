@@ -1,0 +1,1365 @@
+{
+  "baseline": "afcab9e4fa8728fab01ab1edc8420079cf474c7a",
+  "model_sha256": "dbe91a198a0a17efe5fe3c81a553234af327b94c1b966b6356920e32ec85c11e",
+  "quadrature_power_and_seed": [
+    [
+      13,
+      617
+    ],
+    [
+      14,
+      809
+    ]
+  ],
+  "physical_episodes_generated": 0,
+  "models": {
+    "unstable": [
+      {
+        "time": 0,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.1280074257710581,
+          "expected_operator_sq_analytic_upper": 0.23884520507924506,
+          "expected_operator_sq_watermark_qmc": [
+            0.22180240029439707,
+            0.22193846925166189
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1255546191335051
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10161126433444624,
+          "expected_operator_sq_analytic_upper": 0.17449756171053954,
+          "expected_operator_sq_watermark_qmc": [
+            0.16229677192741704,
+            0.16242631579146005
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09750769762611011
+        }
+      },
+      {
+        "time": 1,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12973631360532123,
+          "expected_operator_sq_analytic_upper": 0.2416521256632269,
+          "expected_operator_sq_watermark_qmc": [
+            0.22350700206729804,
+            0.22339669820286046
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12613503547495064
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.1060654384451271,
+          "expected_operator_sq_analytic_upper": 0.18116853215875506,
+          "expected_operator_sq_watermark_qmc": [
+            0.16796608230290766,
+            0.16780375397550035
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10084286113977091
+        }
+      },
+      {
+        "time": 2,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12975971533144715,
+          "expected_operator_sq_analytic_upper": 0.2416860114277572,
+          "expected_operator_sq_watermark_qmc": [
+            0.223246184324211,
+            0.22334781969254275
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614287698130514
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616247274159941,
+          "expected_operator_sq_analytic_upper": 0.1812996883028754,
+          "expected_operator_sq_watermark_qmc": [
+            0.16774945843015798,
+            0.1678558724871856
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10089984909641207
+        }
+      },
+      {
+        "time": 3,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.1297600324129373,
+          "expected_operator_sq_analytic_upper": 0.2416864305052377,
+          "expected_operator_sq_watermark_qmc": [
+            0.2233207466251615,
+            0.22342392199386443
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298322447637
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616427336807674,
+          "expected_operator_sq_analytic_upper": 0.18130193557856236,
+          "expected_operator_sq_watermark_qmc": [
+            0.1678304447257345,
+            0.1679199288929623
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090077683547072
+        }
+      },
+      {
+        "time": 4,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003671142125,
+          "expected_operator_sq_analytic_upper": 0.24168643579628513,
+          "expected_operator_sq_watermark_qmc": [
+            0.22338858891647154,
+            0.22370780799020917
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298466473528
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430423876808,
+          "expected_operator_sq_analytic_upper": 0.18130197184605099,
+          "expected_operator_sq_watermark_qmc": [
+            0.16790743553165507,
+            0.16814591074512797
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1009007915115796
+        }
+      },
+      {
+        "time": 5,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003676970083,
+          "expected_operator_sq_analytic_upper": 0.24168643586422692,
+          "expected_operator_sq_watermark_qmc": [
+            0.22335441279952858,
+            0.22337822987036082
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468426258
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430474324452,
+          "expected_operator_sq_analytic_upper": 0.18130197241268609,
+          "expected_operator_sq_watermark_qmc": [
+            0.16790372827101596,
+            0.16788839030987662
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1009007917387832
+        }
+      },
+      {
+        "time": 6,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677049092,
+          "expected_operator_sq_analytic_upper": 0.2416864358651111,
+          "expected_operator_sq_watermark_qmc": [
+            0.22333391604480002,
+            0.22345550019952742
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468452723
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475122612,
+          "expected_operator_sq_analytic_upper": 0.18130197242136128,
+          "expected_operator_sq_watermark_qmc": [
+            0.16784049907629295,
+            0.16796582302810004
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174224144
+        }
+      },
+      {
+        "time": 7,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050163,
+          "expected_operator_sq_analytic_upper": 0.24168643586512273,
+          "expected_operator_sq_watermark_qmc": [
+            0.2247729828147149,
+            0.22334855506144047
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453095
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475134953,
+          "expected_operator_sq_analytic_upper": 0.1813019724214922,
+          "expected_operator_sq_watermark_qmc": [
+            0.16901403142563248,
+            0.16786918630982672
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1009007917422934
+        }
+      },
+      {
+        "time": 8,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22367878081948717,
+            0.2233655034022871
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453092
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135141,
+          "expected_operator_sq_analytic_upper": 0.1813019724214942,
+          "expected_operator_sq_watermark_qmc": [
+            0.1681253087250938,
+            0.16786454761253222
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229416
+        }
+      },
+      {
+        "time": 9,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22333336759980793,
+            0.22336219755834258
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453083
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.16784911846538864,
+            0.16786785660615602
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229413
+        }
+      },
+      {
+        "time": 10,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.2234790385554858,
+            0.22339950290584729
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1261429846845308
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.1813019724214943,
+          "expected_operator_sq_watermark_qmc": [
+            0.16794311676322166,
+            0.16798590702770136
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229416
+        }
+      },
+      {
+        "time": 11,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22376357437727218,
+            0.22338424131410556
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453083
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135141,
+          "expected_operator_sq_analytic_upper": 0.1813019724214942,
+          "expected_operator_sq_watermark_qmc": [
+            0.16814167448323897,
+            0.16789648864058077
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229422
+        }
+      },
+      {
+        "time": 12,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22330994809771773,
+            0.2234749276839007
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453086
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.16782632079877613,
+            0.16793734472646182
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229424
+        }
+      },
+      {
+        "time": 13,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22328173069850954,
+            0.22336476493049717
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453078
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.16780831337982408,
+            0.16787823545934705
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229405
+        }
+      },
+      {
+        "time": 14,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.2238326099957953,
+            0.22338315169134287
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453092
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.16827727823093358,
+            0.1678788028260098
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1009007917422941
+        }
+      },
+      {
+        "time": 15,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22398021974946336,
+            0.22357754710700514
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453086
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.1813019724214943,
+          "expected_operator_sq_watermark_qmc": [
+            0.16836255562273789,
+            0.16807171963509343
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229413
+        }
+      },
+      {
+        "time": 16,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.2232677187343106,
+            0.22342616800441162
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1261429846845309
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.16777509259152817,
+            0.16793223840105195
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229415
+        }
+      },
+      {
+        "time": 17,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22341405020018437,
+            0.22343061454644556
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1261429846845308
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.1813019724214943,
+          "expected_operator_sq_watermark_qmc": [
+            0.16793949830662083,
+            0.16791803300205493
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229416
+        }
+      },
+      {
+        "time": 18,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22313522583981701,
+            0.22338064814648648
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453097
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135141,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.1675171215339332,
+            0.16789868534046912
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229417
+        }
+      },
+      {
+        "time": 19,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22331274736028872,
+            0.22341840496173976
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453086
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135141,
+          "expected_operator_sq_analytic_upper": 0.1813019724214942,
+          "expected_operator_sq_watermark_qmc": [
+            0.16787427603620764,
+            0.1679790479294805
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229413
+        }
+      },
+      {
+        "time": 20,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.2236827624608615,
+            0.22390319740977477
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453083
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.16816786945807047,
+            0.16834302985248126
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229415
+        }
+      },
+      {
+        "time": 21,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22329121339466088,
+            0.22326502046825358
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453095
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.1677701454328469,
+            0.1677153379725285
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1009007917422942
+        }
+      },
+      {
+        "time": 22,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22340806475551317,
+            0.22341760950382206
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453086
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.1678765860883465,
+            0.167899897191586
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1009007917422942
+        }
+      },
+      {
+        "time": 23,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22344743458946487,
+            0.2234604295993433
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453095
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135144,
+          "expected_operator_sq_analytic_upper": 0.1813019724214942,
+          "expected_operator_sq_watermark_qmc": [
+            0.16798569319215,
+            0.1679831987984017
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229416
+        }
+      },
+      {
+        "time": 24,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22341428336335245,
+            0.22334828147985816
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1261429846845308
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135138,
+          "expected_operator_sq_analytic_upper": 0.1813019724214942,
+          "expected_operator_sq_watermark_qmc": [
+            0.16790968979846435,
+            0.1678553154609217
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1009007917422941
+        }
+      },
+      {
+        "time": 25,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.223219563858483,
+            0.2234805121906297
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1261429846845309
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.1813019724214943,
+          "expected_operator_sq_watermark_qmc": [
+            0.16772296492303146,
+            0.1679548809053407
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229417
+        }
+      },
+      {
+        "time": 26,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.2234364220111417,
+            0.22341586168696437
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453086
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.1679079860639116,
+            0.16793218143363747
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229423
+        }
+      },
+      {
+        "time": 27,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.2237916303982495,
+            0.2234339562661339
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453095
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.16832199038650247,
+            0.16793640770429166
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229422
+        }
+      },
+      {
+        "time": 28,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.2235781246732937,
+            0.2234836407334061
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1261429846845307
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.16806646306327144,
+            0.1680097866029766
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229416
+        }
+      },
+      {
+        "time": 29,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22332387105532023,
+            0.22353949292557734
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453095
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135141,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.16786877826527746,
+            0.16803486007421983
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229413
+        }
+      },
+      {
+        "time": 30,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.22325445395183724,
+            0.22348972083461346
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1261429846845309
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135141,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.16776756373978297,
+            0.16795616649834433
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229419
+        }
+      },
+      {
+        "time": 31,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12976003677050177,
+          "expected_operator_sq_analytic_upper": 0.24168643586512287,
+          "expected_operator_sq_watermark_qmc": [
+            0.2233584725374259,
+            0.22339684049150316
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12614298468453083
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10616430475135143,
+          "expected_operator_sq_analytic_upper": 0.18130197242149426,
+          "expected_operator_sq_watermark_qmc": [
+            0.16790344304839885,
+            0.16788630216237443
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.10090079174229413
+        }
+      }
+    ],
+    "stable": [
+      {
+        "time": 0,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12635913266193208,
+          "expected_operator_sq_analytic_upper": 0.23660609503003163,
+          "expected_operator_sq_watermark_qmc": [
+            0.21971449290242712,
+            0.21984761698431093
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12405739404852742
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10161126433444624,
+          "expected_operator_sq_analytic_upper": 0.17449756171053954,
+          "expected_operator_sq_watermark_qmc": [
+            0.16229677192741704,
+            0.16242631579146005
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09750769762611011
+        }
+      },
+      {
+        "time": 1,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740056719516699,
+          "expected_operator_sq_analytic_upper": 0.23847618209851784,
+          "expected_operator_sq_watermark_qmc": [
+            0.22086684886090013,
+            0.2207627953820779
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440559272368676
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10422201761395261,
+          "expected_operator_sq_analytic_upper": 0.17878906921806823,
+          "expected_operator_sq_watermark_qmc": [
+            0.1659556646664887,
+            0.16579834369388863
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.099482198373322
+        }
+      },
+      {
+        "time": 2,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740920316575283,
+          "expected_operator_sq_analytic_upper": 0.2384910489850124,
+          "expected_operator_sq_watermark_qmc": [
+            0.22060249769778095,
+            0.22070480626373307
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1244084755861397
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425719958840257,
+          "expected_operator_sq_analytic_upper": 0.1788443556595736,
+          "expected_operator_sq_watermark_qmc": [
+            0.16568683048496977,
+            0.16579435276262014
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950302745324077
+        }
+      },
+      {
+        "time": 3,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.1274092751189524,
+          "expected_operator_sq_analytic_upper": 0.23849116784340846,
+          "expected_operator_sq_watermark_qmc": [
+            0.2206873275836035,
+            0.22077902720958803
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849960193583
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760264861378,
+          "expected_operator_sq_analytic_upper": 0.17884496280704154,
+          "expected_operator_sq_watermark_qmc": [
+            0.16577465904032357,
+            0.16585570273915853
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323669410588
+        }
+      },
+      {
+        "time": 4,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.1274092757209283,
+          "expected_operator_sq_analytic_upper": 0.23849116879881907,
+          "expected_operator_sq_watermark_qmc": [
+            0.22074343061030044,
+            0.2210595358631231
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.1244084998028339
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760691727401,
+          "expected_operator_sq_analytic_upper": 0.17884496898689517,
+          "expected_operator_sq_watermark_qmc": [
+            0.16584241078941458,
+            0.16607837577723877
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323873624801
+        }
+      },
+      {
+        "time": 5,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572598168,
+          "expected_operator_sq_analytic_upper": 0.2384911688065383,
+          "expected_operator_sq_watermark_qmc": [
+            0.2207121161934248,
+            0.22073231070477528
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980452022
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696043197,
+          "expected_operator_sq_analytic_upper": 0.17884496904711317,
+          "expected_operator_sq_watermark_qmc": [
+            0.16584002914711016,
+            0.1658235912721788
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.0995032387557771
+        }
+      },
+      {
+        "time": 6,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.1274092757260242,
+          "expected_operator_sq_analytic_upper": 0.23849116880660093,
+          "expected_operator_sq_watermark_qmc": [
+            0.2206887229048396,
+            0.22080382282447886
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453443
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085529,
+          "expected_operator_sq_analytic_upper": 0.17884496904768404,
+          "expected_operator_sq_watermark_qmc": [
+            0.1657758065492868,
+            0.16589704499402583
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596105
+        }
+      },
+      {
+        "time": 7,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22211306874125866,
+            0.2207041274928309
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453446
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085931,
+          "expected_operator_sq_analytic_upper": 0.1788449690476893,
+          "expected_operator_sq_watermark_qmc": [
+            0.16693660926286735,
+            0.16580475417278268
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596274
+        }
+      },
+      {
+        "time": 8,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22101500421870018,
+            0.2207238463372344
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453458
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085931,
+          "expected_operator_sq_analytic_upper": 0.17884496904768934,
+          "expected_operator_sq_watermark_qmc": [
+            0.1660463143394012,
+            0.16580247150214195
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596279
+        }
+      },
+      {
+        "time": 9,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22067958639976573,
+            0.2207198750852
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453454
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085934,
+          "expected_operator_sq_analytic_upper": 0.17884496904768937,
+          "expected_operator_sq_watermark_qmc": [
+            0.16577839857341753,
+            0.16580486679133666
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596288
+        }
+      },
+      {
+        "time": 10,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.220841087486716,
+            0.22075383865728143
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453454
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085934,
+          "expected_operator_sq_analytic_upper": 0.17884496904768937,
+          "expected_operator_sq_watermark_qmc": [
+            0.16588263443426798,
+            0.1659206943860112
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596281
+        }
+      },
+      {
+        "time": 11,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22111446889730046,
+            0.2207431630212116
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453454
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.1042576069608593,
+          "expected_operator_sq_analytic_upper": 0.17884496904768932,
+          "expected_operator_sq_watermark_qmc": [
+            0.1660734859703466,
+            0.16583406626748076
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596276
+        }
+      },
+      {
+        "time": 12,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.2206656141335109,
+            0.22083092714581914
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453451
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085931,
+          "expected_operator_sq_analytic_upper": 0.17884496904768934,
+          "expected_operator_sq_watermark_qmc": [
+            0.1657630392092026,
+            0.16587399342745912
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.0995032387559628
+        }
+      },
+      {
+        "time": 13,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.2206402075642999,
+            0.22072161142113605
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453449
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085934,
+          "expected_operator_sq_analytic_upper": 0.17884496904768937,
+          "expected_operator_sq_watermark_qmc": [
+            0.1657459234594303,
+            0.16581433275807372
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596288
+        }
+      },
+      {
+        "time": 14,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22118128421998196,
+            0.2207377180371456
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453453
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085935,
+          "expected_operator_sq_analytic_upper": 0.17884496904768943,
+          "expected_operator_sq_watermark_qmc": [
+            0.16620694606907996,
+            0.1658142016681401
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596277
+        }
+      },
+      {
+        "time": 15,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.2213303183754696,
+            0.22092991052541938
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453454
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085935,
+          "expected_operator_sq_analytic_upper": 0.17884496904768932,
+          "expected_operator_sq_watermark_qmc": [
+            0.16629395388841167,
+            0.1660050602470609
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596286
+        }
+      },
+      {
+        "time": 16,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22062291751155944,
+            0.2207826914255036
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453453
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.1042576069608593,
+          "expected_operator_sq_analytic_upper": 0.17884496904768932,
+          "expected_operator_sq_watermark_qmc": [
+            0.16571103159665895,
+            0.16586789952821424
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596263
+        }
+      },
+      {
+        "time": 17,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22076448219867,
+            0.2207839958805403
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453444
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085928,
+          "expected_operator_sq_analytic_upper": 0.17884496904768934,
+          "expected_operator_sq_watermark_qmc": [
+            0.1658715720903086,
+            0.16585227576732914
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596273
+        }
+      },
+      {
+        "time": 18,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22050220189984673,
+            0.22072927040859758
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453456
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085928,
+          "expected_operator_sq_analytic_upper": 0.17884496904768932,
+          "expected_operator_sq_watermark_qmc": [
+            0.16546434450340092,
+            0.1658298120018863
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596281
+        }
+      },
+      {
+        "time": 19,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22067114412524963,
+            0.22076848828032747
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453454
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.1042576069608593,
+          "expected_operator_sq_analytic_upper": 0.17884496904768932,
+          "expected_operator_sq_watermark_qmc": [
+            0.1658121522893662,
+            0.16591019101354842
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596286
+        }
+      },
+      {
+        "time": 20,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22103239488196402,
+            0.22125774165815382
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453453
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085935,
+          "expected_operator_sq_analytic_upper": 0.17884496904768937,
+          "expected_operator_sq_watermark_qmc": [
+            0.1660994479593293,
+            0.166280729159094
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596287
+        }
+      },
+      {
+        "time": 21,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.220650168210833,
+            0.2206253298431866
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453453
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085931,
+          "expected_operator_sq_analytic_upper": 0.17884496904768934,
+          "expected_operator_sq_watermark_qmc": [
+            0.16570846098576258,
+            0.16565493247862162
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596276
+        }
+      },
+      {
+        "time": 22,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.2207672108966948,
+            0.22077498281457877
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453451
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085935,
+          "expected_operator_sq_analytic_upper": 0.17884496904768937,
+          "expected_operator_sq_watermark_qmc": [
+            0.1658155075685987,
+            0.1658374080204501
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596291
+        }
+      },
+      {
+        "time": 23,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22080096768830065,
+            0.220812364120538
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453447
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085926,
+          "expected_operator_sq_analytic_upper": 0.17884496904768926,
+          "expected_operator_sq_watermark_qmc": [
+            0.16592053141982305,
+            0.16591607829985422
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596273
+        }
+      },
+      {
+        "time": 24,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22076393415088164,
+            0.22070114174090244
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453447
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085937,
+          "expected_operator_sq_analytic_upper": 0.1788449690476894,
+          "expected_operator_sq_watermark_qmc": [
+            0.16583953600373585,
+            0.16578946927563282
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596277
+        }
+      },
+      {
+        "time": 25,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.2205797007152664,
+            0.220835455066977
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453443
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085928,
+          "expected_operator_sq_analytic_upper": 0.17884496904768934,
+          "expected_operator_sq_watermark_qmc": [
+            0.16566201401203184,
+            0.16589042907094895
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596274
+        }
+      },
+      {
+        "time": 26,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22079407722066846,
+            0.2207697222332194
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453454
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085931,
+          "expected_operator_sq_analytic_upper": 0.17884496904768934,
+          "expected_operator_sq_watermark_qmc": [
+            0.16584571081941685,
+            0.16586680643791296
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596279
+        }
+      },
+      {
+        "time": 27,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.2211427161547719,
+            0.2207842347235211
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453451
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085935,
+          "expected_operator_sq_analytic_upper": 0.17884496904768937,
+          "expected_operator_sq_watermark_qmc": [
+            0.16625345320935458,
+            0.16586778028592053
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596276
+        }
+      },
+      {
+        "time": 28,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.2209311834056006,
+            0.22083767730030035
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453454
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085931,
+          "expected_operator_sq_analytic_upper": 0.17884496904768934,
+          "expected_operator_sq_watermark_qmc": [
+            0.16599979018648406,
+            0.16594396079698975
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596277
+        }
+      },
+      {
+        "time": 29,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22067632729240572,
+            0.22089201628213806
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453451
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085935,
+          "expected_operator_sq_analytic_upper": 0.17884496904768937,
+          "expected_operator_sq_watermark_qmc": [
+            0.1658020455495284,
+            0.16596774854267454
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596287
+        }
+      },
+      {
+        "time": 30,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22061471878816588,
+            0.22084317552832713
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453456
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.1042576069608593,
+          "expected_operator_sq_analytic_upper": 0.17884496904768932,
+          "expected_operator_sq_watermark_qmc": [
+            0.1657060890172903,
+            0.1658904812343825
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596276
+        }
+      },
+      {
+        "time": 31,
+        "common_G": {
+          "expected_operator_sq_analytic_lower": 0.12740927572602456,
+          "expected_operator_sq_analytic_upper": 0.23849116880660148,
+          "expected_operator_sq_watermark_qmc": [
+            0.22071503136376394,
+            0.22075195151842075
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.12440849980453444
+        },
+        "full_nominal_conditional": {
+          "expected_operator_sq_analytic_lower": 0.10425760696085931,
+          "expected_operator_sq_analytic_upper": 0.17884496904768932,
+          "expected_operator_sq_watermark_qmc": [
+            0.16583914404924704,
+            0.1658220713357445
+          ],
+          "best_deterministic_open_loop_expected_sq_gain": 0.09950323875596273
+        }
+      }
+    ]
+  }
+}
