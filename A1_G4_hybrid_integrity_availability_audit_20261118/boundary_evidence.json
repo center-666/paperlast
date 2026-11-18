@@ -1,0 +1,359 @@
+{
+  "baseline": "334ab65e4b895b58eaa0e62cc0cea60e4600820d",
+  "models": {
+    "unstable": {
+      "pathwise_symbolic_mask_checks": 2,
+      "exact_positive_margins": {
+        "F0_norm_squared_upper": {
+          "leading_minor": "61105593225758728210016683849806480244703/6250000000000000000000000000000000000000000",
+          "determinant": "560665909860544884445058107277703116301054730925857647177146118369495856126217121/1562500000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "F1_norm_squared_upper": {
+          "leading_minor": "360586941183555864450997421630355988883/390625000000000000000000000000000000000000",
+          "determinant": "6008190200320265253481073096035512218355341289414176446542398058130142784729/1525878906250000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "G_norm_squared_upper": {
+          "leading_minor": "513048711422387515159290754260591/97656250000000000000000000000000000",
+          "determinant": "193189310067952441937578380565179187074682164287822913712245644521449/2441406250000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "retained_energy_difference_lower": {
+          "leading_minor": "20786551913327126624847970995851168623097/250000000000000000000000000000000000000000",
+          "determinant": "66932070765888150150711204695590452358979120861725216124539635164180206978433919/15625000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      "two_update_comparison": {
+        "deadline": 8,
+        "clean_actual_MSE": 0.2277959564117226,
+        "B_only_missing_actual_MSE": 0.43314725388768405,
+        "B_only_missing_expected_squared_displacement": 0.22255706734968567,
+        "B_true_MSE_increment_vs_complete": 0.20535129747596145,
+        "B_cross_term_actual_MSE": -0.017205769873724196,
+        "retention_coefficients_per_unit_coded_energy": {
+          "A_complete_measurement": {
+            "lower": {
+              "exact": "1167969399/1000000000000",
+              "display": 0.001167969399
+            },
+            "upper": {
+              "exact": "102434449/62500000000",
+              "display": 0.001638951184
+            }
+          },
+          "C_missing_measurement": {
+            "lower": {
+              "exact": "15479137399/1000000000000",
+              "display": 0.015479137399
+            },
+            "upper": {
+              "exact": "10244688133/500000000000",
+              "display": 0.020489376266
+            }
+          },
+          "C_minus_A_excess": {
+            "lower": {
+              "exact": "14310236739/1000000000000",
+              "display": 0.014310236739
+            },
+            "upper": {
+              "exact": "9425678171/500000000000",
+              "display": 0.018851356342
+            }
+          }
+        }
+      },
+      "first_unavailable_statistical_alarm": {
+        "coordinate_variance_exact": "1119714677042487338768328565893206896019647965658943873928575128286249382580016371615853419279862972236415649549249399365703353193865668136390376739783109856491975280336007417107819626913790379515862090723747319144005452564861790838904360559154565422321169112882368866835883455809079177879249058626396257382408793534738617118514134101411/9313225746154785156250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "coordinate_danger_probability_enclosure": {
+          "lower": {
+            "exact": "90441753443/250000000000",
+            "display": 0.361767013772
+          },
+          "upper": {
+            "exact": "14470680551/40000000000",
+            "display": 0.361767013775
+          }
+        },
+        "earlier_possible_window_ends": 3,
+        "B_risk_lower_bound_both_detectors": {
+          "exact": "71281974183/200000000000",
+          "display": 0.356409870915
+        },
+        "G3_independent_interval_overlap": true,
+        "pure_B_risk_with_availability_alarm": "0"
+      },
+      "uniform_second_moment_envelopes": {
+        "A": {
+          "input_energy_cap": {
+            "exact": "10",
+            "display": 10.0
+          },
+          "missing_count_cap": 0,
+          "max_consecutive_missing": 0,
+          "probability_independence_required_for_masks": false,
+          "period_peak_bias_rms_upper_b0_zero": {
+            "exact": "2033468381338761788695407/625000000000000000000000",
+            "display": 3.253549410142019
+          },
+          "actual_pointwise_MSE_upper_b0_zero": {
+            "exact": "5437143045311705510027563671649067645649022895649/390625000000000000000000000000000000000000000000",
+            "display": 13.919086195997966
+          },
+          "transition_squared_weight_sum_upper": {
+            "exact": "14764524379430653207246114/14551915228366851806640625",
+            "display": 1.0146103896103895
+          },
+          "accepted_decoded_disturbance_energy_expectation_upper": {
+            "exact": "42254263/317520",
+            "display": 133.07591017888637
+          },
+          "omitted_healthy_innovations_energy_expectation_upper": {
+            "exact": "0",
+            "display": 0.0
+          }
+        },
+        "B": {
+          "input_energy_cap": {
+            "exact": "0",
+            "display": 0.0
+          },
+          "missing_count_cap": 1,
+          "max_consecutive_missing": 1,
+          "probability_independence_required_for_masks": false,
+          "period_peak_bias_rms_upper_b0_zero": {
+            "exact": "7254614855976566695244649/6250000000000000000000000",
+            "display": 1.1607383769562507
+          },
+          "actual_pointwise_MSE_upper_b0_zero": {
+            "exact": "104808725497976742645355121853767419618289963133201/39062500000000000000000000000000000000000000000000",
+            "display": 2.6831033727482048
+          },
+          "transition_squared_weight_sum_upper": {
+            "exact": "68625509315593675856231461/58207660913467407226562500",
+            "display": 1.1789772727272727
+          },
+          "accepted_decoded_disturbance_energy_expectation_upper": {
+            "exact": "0",
+            "display": 0.0
+          },
+          "omitted_healthy_innovations_energy_expectation_upper": {
+            "exact": "72881482061/5000000000",
+            "display": 14.5762964122
+          }
+        },
+        "C": {
+          "input_energy_cap": {
+            "exact": "10",
+            "display": 10.0
+          },
+          "missing_count_cap": 1,
+          "max_consecutive_missing": 1,
+          "probability_independence_required_for_masks": false,
+          "period_peak_bias_rms_upper_b0_zero": {
+            "exact": "116698446928378292249811861/25000000000000000000000000",
+            "display": 4.667937877135132
+          },
+          "actual_pointwise_MSE_upper_b0_zero": {
+            "exact": "16545790246558449132014158670064321409098789896283321/625000000000000000000000000000000000000000000000000",
+            "display": 26.47326439449352
+          },
+          "transition_squared_weight_sum_upper": {
+            "exact": "68625509315593675856231461/58207660913467407226562500",
+            "display": 1.1789772727272727
+          },
+          "accepted_decoded_disturbance_energy_expectation_upper": {
+            "exact": "42254263/317520",
+            "display": 133.07591017888637
+          },
+          "omitted_healthy_innovations_energy_expectation_upper": {
+            "exact": "72881482061/5000000000",
+            "display": 14.5762964122
+          }
+        }
+      }
+    },
+    "stable": {
+      "pathwise_symbolic_mask_checks": 2,
+      "exact_positive_margins": {
+        "F0_norm_squared_upper": {
+          "leading_minor": "12971218069042350865422608212401462856920671/156250000000000000000000000000000000000000000",
+          "determinant": "25212608668519300041053647095018302223236192366575894364344561583124128012748457646769/3906250000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "F1_norm_squared_upper": {
+          "leading_minor": "3869263840385646754804341002350258113538279/625000000000000000000000000000000000000000000",
+          "determinant": "2632480564174288868687595015058652628248551336654844670710267934024007184024556170089/62500000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "G_norm_squared_upper": {
+          "leading_minor": "61953903888703087865125812196433795111/10000000000000000000000000000000000000000",
+          "determinant": "2385259635309266019721917394890945030657564975432061438236382919501491205521/25000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "retained_energy_difference_lower": {
+          "leading_minor": "1896878312843248658622781630548881337171119/125000000000000000000000000000000000000000000",
+          "determinant": "683125794989249938592861585568106628774809852364977229576192740113239476007748210873/2500000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      "two_update_comparison": {
+        "deadline": 8,
+        "clean_actual_MSE": 0.22672205806146717,
+        "B_only_missing_actual_MSE": 0.42346528251383275,
+        "B_only_missing_expected_squared_displacement": 0.21380709208208812,
+        "B_true_MSE_increment_vs_complete": 0.19674322445236558,
+        "B_cross_term_actual_MSE": -0.01706386762972253,
+        "retention_coefficients_per_unit_coded_energy": {
+          "A_complete_measurement": {
+            "lower": {
+              "exact": "2123463/2500000000",
+              "display": 0.0008493852
+            },
+            "upper": {
+              "exact": "1020701869/1000000000000",
+              "display": 0.001020701869
+            }
+          },
+          "C_missing_measurement": {
+            "lower": {
+              "exact": "5316631027/500000000000",
+              "display": 0.010633262054
+            },
+            "upper": {
+              "exact": "1198412913/100000000000",
+              "display": 0.01198412913
+            }
+          },
+          "C_minus_A_excess": {
+            "lower": {
+              "exact": "9773119217/1000000000000",
+              "display": 0.009773119217
+            },
+            "upper": {
+              "exact": "10974184899/1000000000000",
+              "display": 0.010974184899
+            }
+          }
+        }
+      },
+      "first_unavailable_statistical_alarm": {
+        "coordinate_variance_exact": "21738214657529904084190401371733055256731745334919541421807915476076694433345658081709330777783981225855964494269286161189305296830387115598723274070459715889972126418401317372726728053894515100304936919273689608714258419427353974758350143389110344792381952107110369532352687375956429135303177192844112574630878481669022956888252895412400571840990767890377/190734863281250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "coordinate_danger_probability_enclosure": {
+          "lower": {
+            "exact": "69782005617/200000000000",
+            "display": 0.348910028085
+          },
+          "upper": {
+            "exact": "348910028087/1000000000000",
+            "display": 0.348910028087
+          }
+        },
+        "earlier_possible_window_ends": 3,
+        "B_risk_lower_bound_both_detectors": {
+          "exact": "85888221307/250000000000",
+          "display": 0.343552885228
+        },
+        "G3_independent_interval_overlap": true,
+        "pure_B_risk_with_availability_alarm": "0"
+      },
+      "uniform_second_moment_envelopes": {
+        "A": {
+          "input_energy_cap": {
+            "exact": "10",
+            "display": 10.0
+          },
+          "missing_count_cap": 0,
+          "max_consecutive_missing": 0,
+          "probability_independence_required_for_masks": false,
+          "period_peak_bias_rms_upper_b0_zero": {
+            "exact": "2033468381338761788695407/625000000000000000000000",
+            "display": 3.253549410142019
+          },
+          "actual_pointwise_MSE_upper_b0_zero": {
+            "exact": "5433860560236526878616887020173051980649022895649/390625000000000000000000000000000000000000000000",
+            "display": 13.910683034205508
+          },
+          "transition_squared_weight_sum_upper": {
+            "exact": "14764524379430653207246114/14551915228366851806640625",
+            "display": 1.0146103896103895
+          },
+          "accepted_decoded_disturbance_energy_expectation_upper": {
+            "exact": "42254263/317520",
+            "display": 133.07591017888637
+          },
+          "omitted_healthy_innovations_energy_expectation_upper": {
+            "exact": "0",
+            "display": 0.0
+          }
+        },
+        "B": {
+          "input_energy_cap": {
+            "exact": "0",
+            "display": 0.0
+          },
+          "missing_count_cap": 1,
+          "max_consecutive_missing": 1,
+          "probability_independence_required_for_masks": false,
+          "period_peak_bias_rms_upper_b0_zero": {
+            "exact": "7146770307602998438619001/6250000000000000000000000",
+            "display": 1.1434832492164797
+          },
+          "actual_pointwise_MSE_upper_b0_zero": {
+            "exact": "102469643272109297299706464939137574829124038238001/39062500000000000000000000000000000000000000000000",
+            "display": 2.623222867765998
+          },
+          "transition_squared_weight_sum_upper": {
+            "exact": "68625509315593675856231461/58207660913467407226562500",
+            "display": 1.1789772727272727
+          },
+          "accepted_decoded_disturbance_energy_expectation_upper": {
+            "exact": "0",
+            "display": 0.0
+          },
+          "omitted_healthy_innovations_energy_expectation_upper": {
+            "exact": "1768268177231/125000000000",
+            "display": 14.146145417848
+          }
+        },
+        "C": {
+          "input_energy_cap": {
+            "exact": "10",
+            "display": 10.0
+          },
+          "missing_count_cap": 1,
+          "max_consecutive_missing": 1,
+          "probability_independence_required_for_masks": false,
+          "period_peak_bias_rms_upper_b0_zero": {
+            "exact": "116267068734884019223309269/25000000000000000000000000",
+            "display": 4.650682749395361
+          },
+          "actual_pointwise_MSE_upper_b0_zero": {
+            "exact": "16427780548945343051834086756347701813861251621314361/625000000000000000000000000000000000000000000000000",
+            "display": 26.28444887831255
+          },
+          "transition_squared_weight_sum_upper": {
+            "exact": "68625509315593675856231461/58207660913467407226562500",
+            "display": 1.1789772727272727
+          },
+          "accepted_decoded_disturbance_energy_expectation_upper": {
+            "exact": "42254263/317520",
+            "display": 133.07591017888637
+          },
+          "omitted_healthy_innovations_energy_expectation_upper": {
+            "exact": "1768268177231/125000000000",
+            "display": 14.146145417848
+          }
+        }
+      }
+    }
+  },
+  "inputs": {
+    "common_g_reference_revision_20261115/inputs/five_node_aggregate_model.json": "dbe91a198a0a17efe5fe3c81a553234af327b94c1b966b6356920e32ec85c11e",
+    "common_g_reference_revision_20261115/common_g_reference.py": "95b667539e8d1341ae142ca4a1f9586b10cd85e9f4e1e9c62154bac0f789e8f4",
+    "A1_G4_hybrid_integrity_availability_audit_20261118/registration.json": "f09ebd145a99d8b4b821c9a96ec1d3e79c2cc241c69b809f19779d626e5b4597",
+    "A1_G3_verification_resource_audit_20261117/registration.json": "d6ea17494fd0a5c788fd153b46d15612bc1774a31fcc78bbaf8fb99d51d7f8af",
+    "A1_G3_verification_resource_audit_20261117/boundary_certificates.json": "c038bdac2103fa2c63373b9d0a3842ee2a12e551b058697448d022ccbbb1816e"
+  },
+  "dependencies": {
+    "python": "3.10.18",
+    "sympy": "1.14.0"
+  },
+  "input_hash_normalization": "UTF-8 with LF newlines",
+  "numeric_scope": "exact frozen decimal matrices; outward rational Gaussian and spectral enclosures; floats for display",
+  "new_physical_samples": 0
+}
