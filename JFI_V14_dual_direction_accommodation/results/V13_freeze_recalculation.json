@@ -1,0 +1,106 @@
+{
+  "full_result_hashes_match": 14,
+  "V1a_frozen_artifact_hashes": {
+    "results\\validation\\stable_paths.npz": "8497b4db05e63aba0f3e96d5f002ba3cfbc95bae69fbbbc9a2233bf43e9556c7",
+    "results\\validation\\unstable_paths.npz": "8a92b190be5232b0b7dbb8b51470afdbdfd1adb7c0be9aa835a84253bb07a752"
+  },
+  "paired_recalculation": {
+    "unstable": {
+      "unknown_start": {
+        "counts": [
+          1004,
+          1012
+        ],
+        "paired95": [
+          -0.0006578753794039272,
+          0.008289045845101737
+        ]
+      },
+      "timing_mismatch": {
+        "counts": [
+          901,
+          908
+        ],
+        "paired95": [
+          -0.0009465870859508858,
+          0.0076133631738331915
+        ]
+      },
+      "A1_H_replay": {
+        "counts": [
+          1458,
+          1458
+        ],
+        "paired95": [
+          -0.002137373998909767,
+          0.002137373998909767
+        ]
+      },
+      "A1_C_replay": {
+        "counts": [
+          1466,
+          1466
+        ],
+        "paired95": [
+          -0.002137373998909767,
+          0.002137373998909767
+        ]
+      },
+      "A1_C_first_packet": {
+        "score": 0.015322900377213955,
+        "observed": 0.973595125253893,
+        "eligible": 1477
+      }
+    },
+    "stable": {
+      "unknown_start": {
+        "counts": [
+          1131,
+          1138
+        ],
+        "paired95": [
+          -0.0009465870859508858,
+          0.0076133631738331915
+        ]
+      },
+      "timing_mismatch": {
+        "counts": [
+          1134,
+          1140
+        ],
+        "paired95": [
+          -0.0012205418984860116,
+          0.006925049267542749
+        ]
+      },
+      "A1_H_replay": {
+        "counts": [
+          1285,
+          1283
+        ],
+        "paired95": [
+          -0.0039600239829884355,
+          0.002055762802353041
+        ]
+      },
+      "A1_C_replay": {
+        "counts": [
+          1293,
+          1295
+        ],
+        "paired95": [
+          -0.002055762802353041,
+          0.0039600239829884355
+        ]
+      },
+      "A1_C_first_packet": {
+        "score": 0.09549426287412643,
+        "observed": 0.8828125,
+        "eligible": 1408
+      }
+    }
+  },
+  "V1a_replay_max_abs": 3.774758283725532e-14,
+  "V12_trace_files_read_only": 4,
+  "old_pre_alarm_hits_unreachable_with_scalar": 363
+}

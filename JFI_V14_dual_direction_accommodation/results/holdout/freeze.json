@@ -1,0 +1,21 @@
+{
+  "development_sha256": "7e2a5ac6cb9159adbacfa43a0d41c093f06512b361b576952fe6d23b516a1d33",
+  "source_hashes": {
+    "dual_receiver.py": "2a9bb0b3fa734a1a538dd67f6adef101340dbf48ceec2b789849a67940acdaf0",
+    "geometry_and_freeze.py": "1e7907dbee1f70755e91fb4183f37e3a57d583338bab6a880c454cebc7edd9a1",
+    "paired_replay.py": "961c26a51837c6534a7fa332b4b1c55085f8872ffef97cb69b2e14f760e7cf51",
+    "registration.json": "05c479b8a2dd50d588d6626310d6fbbdd21d1035c3ffb065b210b539a150a38c",
+    "run_screen.py": "0a2350c40193b1a8221931726681adf67956b0ac6ced96272f00cb8427434239",
+    "test_v14.py": "941d2403f33f85c9274bea52b05bcd1eb82bc1ea7ba5411f7def87a6ae0d22fa",
+    "trusted_prediction.py": "2544f995635d2a89008a4b525fd45bd5276be04a6b19b46d97eca0e924ab6c63",
+    "v14_inputs.py": "91784d0a917ec24a5a44e36a9a7e9c81e0c8e0767b87b2d47d7148e463b2192c"
+  },
+  "registration": {
+    "paths_per_model_and_profile": 2048,
+    "seeds": {
+      "unstable": 71451827,
+      "stable": 71451863
+    },
+    "mode": "Receiver replays only. Open after all development gates and freeze code and analysis."
+  }
+}

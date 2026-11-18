@@ -1,0 +1,26 @@
+{
+  "baseline": "1feac0edd8083b3ce2ffc1d38861b9b2628e6a41",
+  "models": ["unstable", "stable"],
+  "horizon": 32,
+  "danger_squared": 0.1,
+  "nominal_allocation_fraction": 0.02,
+  "alarm": "Frozen V1 finite-episode raw-packet Bayes-factor crossing, nominal event budget 0.05",
+  "trusted_score_level": 0.95,
+  "rays_S_T": [[1.0, 0.0], [0.75, 0.25], [0.5, 0.5], [0.25, 0.75], [0.0, 1.0]],
+  "development": {
+    "sets": ["V1.1 archived 48", "V1.2 archived 96", "V1.2 archived matched histories 32"],
+    "primary": ["A0_onset_replay", "A1_H_mismatch", "A1_C_mismatch"],
+    "max_relative_active_mse_vs_V12a": 0.01,
+    "holdout_gate": [
+      "Triangle can avert at least one additional fixed-history crossing compared with the structural segment.",
+      "Observed whole-episode health cost stays within 2% of V0 for both old primary 96 ensembles.",
+      "V1.4 strictly reduces at least one of the six primary risk counts versus V1.2a and increases none. Its active MSE across these groups stays within 1% of V1.2a.",
+      "At least one primary group has fewer pre-alarm crossings than the single trusted direction with the same budget and at most 1% additional active MSE versus that baseline."
+    ]
+  },
+  "conditional_holdout": {
+    "paths_per_model_and_profile": 2048,
+    "seeds": {"unstable": 71451827, "stable": 71451863},
+    "mode": "Receiver replays only. Open after all development gates and freeze code and analysis."
+  }
+}

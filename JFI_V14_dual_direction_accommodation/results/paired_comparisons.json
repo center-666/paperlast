@@ -1,0 +1,1835 @@
+{
+  "holdout": {
+    "unstable": {
+      "unknown_start": {
+        "V1a": {
+          "counts_base_new": [
+            1025,
+            1112
+          ],
+          "pointwise95": {
+            "difference": 0.04248046875,
+            "only_new": 113,
+            "only_reference": 26,
+            "exact_interval": [
+              0.02499243003509261,
+              0.059761856994173614
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.04248046875,
+            "only_new": 113,
+            "only_reference": 26,
+            "exact_interval": [
+              0.01703433461813149,
+              0.06754721442549473
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.01220703125,
+            "only_new": 28,
+            "only_reference": 3,
+            "exact_interval": [
+              0.003816934131017518,
+              0.020391513503444276
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.15681625408719424
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            1117,
+            1112
+          ],
+          "pointwise95": {
+            "difference": -0.00244140625,
+            "only_new": 20,
+            "only_reference": 25,
+            "exact_interval": [
+              -0.01330683032269906,
+              0.008444442961185714
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.00244140625,
+            "only_new": 20,
+            "only_reference": 25,
+            "exact_interval": [
+              -0.018203470037057575,
+              0.013352012749176979
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": -0.00048828125,
+            "only_new": 1,
+            "only_reference": 2,
+            "exact_interval": [
+              -0.003953882018350934,
+              0.003029985239908354
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.00017905952699581729
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            1074,
+            1112
+          ],
+          "pointwise95": {
+            "difference": 0.0185546875,
+            "only_new": 291,
+            "only_reference": 253,
+            "exact_interval": [
+              -0.01554765295840374,
+              0.05258754766144938
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.0185546875,
+            "only_new": 291,
+            "only_reference": 253,
+            "exact_interval": [
+              -0.03111088464891447,
+              0.06808062000591533
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.03955078125,
+            "only_new": 112,
+            "only_reference": 31,
+            "exact_interval": [
+              0.021621168420155604,
+              0.05729283833239436
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.01427197033466332
+        }
+      },
+      "timing_mismatch": {
+        "V1a": {
+          "counts_base_new": [
+            969,
+            1038
+          ],
+          "pointwise95": {
+            "difference": 0.03369140625,
+            "only_new": 97,
+            "only_reference": 28,
+            "exact_interval": [
+              0.016803814489320498,
+              0.05041173530685301
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.03369140625,
+            "only_new": 97,
+            "only_reference": 28,
+            "exact_interval": [
+              0.009131121690477254,
+              0.057946535210748426
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.00927734375,
+            "only_new": 27,
+            "only_reference": 8,
+            "exact_interval": [
+              -0.0001095807167011565,
+              0.018555665119515924
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.11375197576812557
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            1054,
+            1038
+          ],
+          "pointwise95": {
+            "difference": -0.0078125,
+            "only_new": 15,
+            "only_reference": 31,
+            "exact_interval": [
+              -0.01861910748254155,
+              0.003060740012514794
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.0078125,
+            "only_new": 15,
+            "only_reference": 31,
+            "exact_interval": [
+              -0.023491197445310936,
+              0.007967514061489683
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": -0.00439453125,
+            "only_new": 1,
+            "only_reference": 10,
+            "exact_interval": [
+              -0.009604227849058022,
+              0.0010202437387903094
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.0014795493893925427
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            960,
+            1038
+          ],
+          "pointwise95": {
+            "difference": 0.0380859375,
+            "only_new": 313,
+            "only_reference": 235,
+            "exact_interval": [
+              0.003929749492989104,
+              0.07209951492406304
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.0380859375,
+            "only_new": 313,
+            "only_reference": 235,
+            "exact_interval": [
+              -0.01167845781717644,
+              0.08756371449804987
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.03564453125,
+            "only_new": 111,
+            "only_reference": 38,
+            "exact_interval": [
+              0.017141820410305344,
+              0.05398287537644057
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.008744191429832848
+        }
+      },
+      "A1_H_replay": {
+        "V1a": {
+          "counts_base_new": [
+            1471,
+            1117
+          ],
+          "pointwise95": {
+            "difference": -0.1728515625,
+            "only_new": 0,
+            "only_reference": 354,
+            "exact_interval": [
+              -0.1924125631239859,
+              -0.15234934047271956
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.1728515625,
+            "only_new": 0,
+            "only_reference": 354,
+            "exact_interval": [
+              -0.20167814234405884,
+              -0.14276254169582048
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": -0.14990234375,
+            "only_new": 43,
+            "only_reference": 350,
+            "exact_interval": [
+              -0.17585306502068168,
+              -0.12335609252143914
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.04761047640767946
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            1471,
+            1117
+          ],
+          "pointwise95": {
+            "difference": -0.1728515625,
+            "only_new": 0,
+            "only_reference": 354,
+            "exact_interval": [
+              -0.1924125631239859,
+              -0.15234934047271956
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.1728515625,
+            "only_new": 0,
+            "only_reference": 354,
+            "exact_interval": [
+              -0.20167814234405884,
+              -0.14276254169582048
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": -0.1708984375,
+            "only_new": 0,
+            "only_reference": 350,
+            "exact_interval": [
+              -0.1903790707965345,
+              -0.1504838163791357
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.028440556685797813
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            1048,
+            1117
+          ],
+          "pointwise95": {
+            "difference": 0.03369140625,
+            "only_new": 334,
+            "only_reference": 265,
+            "exact_interval": [
+              -0.001768181581493583,
+              0.06902538782818597
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.03369140625,
+            "only_new": 334,
+            "only_reference": 265,
+            "exact_interval": [
+              -0.017972068505910294,
+              0.08510208387171313
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.02880859375,
+            "only_new": 322,
+            "only_reference": 263,
+            "exact_interval": [
+              -0.006320047594477074,
+              0.06382972408849011
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.024121138187325752
+        }
+      },
+      "A1_C_replay": {
+        "V1a": {
+          "counts_base_new": [
+            1479,
+            1114
+          ],
+          "pointwise95": {
+            "difference": -0.17822265625,
+            "only_new": 1,
+            "only_reference": 366,
+            "exact_interval": [
+              -0.1985017220765705,
+              -0.15697688308932925
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.17822265625,
+            "only_new": 1,
+            "only_reference": 366,
+            "exact_interval": [
+              -0.2078758375745308,
+              -0.14707461223560872
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": -0.16455078125,
+            "only_new": 28,
+            "only_reference": 365,
+            "exact_interval": [
+              -0.18943561514216922,
+              -0.138998279789594
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.037793797215273095
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            1480,
+            1114
+          ],
+          "pointwise95": {
+            "difference": -0.1787109375,
+            "only_new": 0,
+            "only_reference": 366,
+            "exact_interval": [
+              -0.198507864041208,
+              -0.15795110552688457
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.1787109375,
+            "only_new": 0,
+            "only_reference": 366,
+            "exact_interval": [
+              -0.20787609195389986,
+              -0.14823959772421524
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": -0.17822265625,
+            "only_new": 0,
+            "only_reference": 365,
+            "exact_interval": [
+              -0.19800021400808743,
+              -0.15748399913790037
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.029874159569720393
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            1039,
+            1114
+          ],
+          "pointwise95": {
+            "difference": 0.03662109375,
+            "only_new": 340,
+            "only_reference": 265,
+            "exact_interval": [
+              0.0010250292831421315,
+              0.07208068450628417
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.03662109375,
+            "only_new": 340,
+            "only_reference": 265,
+            "exact_interval": [
+              -0.015244739642469113,
+              0.08821222280279446
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.03759765625,
+            "only_new": 341,
+            "only_reference": 264,
+            "exact_interval": [
+              0.0020048220066304356,
+              0.07305037535268147
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.022530743268171283
+        }
+      }
+    },
+    "stable": {
+      "unknown_start": {
+        "V1a": {
+          "counts_base_new": [
+            1142,
+            1176
+          ],
+          "pointwise95": {
+            "difference": 0.0166015625,
+            "only_new": 100,
+            "only_reference": 66,
+            "exact_interval": [
+              -0.0033694841045511306,
+              0.036500222414831404
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.0166015625,
+            "only_new": 100,
+            "only_reference": 66,
+            "exact_interval": [
+              -0.012433761035040798,
+              0.045498609290737464
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.13623046875,
+            "only_new": 358,
+            "only_reference": 79,
+            "exact_interval": [
+              0.10712611163481477,
+              0.1648093902668372
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.1509164001550365
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            1228,
+            1176
+          ],
+          "pointwise95": {
+            "difference": -0.025390625,
+            "only_new": 14,
+            "only_reference": 66,
+            "exact_interval": [
+              -0.0386932533020702,
+              -0.01192434213990334
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.025390625,
+            "only_new": 14,
+            "only_reference": 66,
+            "exact_interval": [
+              -0.044690835733756644,
+              -0.005818674034120121
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": -0.03369140625,
+            "only_new": 10,
+            "only_reference": 79,
+            "exact_interval": [
+              -0.04713564734057592,
+              -0.02002542509943462
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.0034791404099819845
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            1024,
+            1176
+          ],
+          "pointwise95": {
+            "difference": 0.07421875,
+            "only_new": 307,
+            "only_reference": 155,
+            "exact_interval": [
+              0.04281369445311396,
+              0.1053424623099478
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.07421875,
+            "only_new": 307,
+            "only_reference": 155,
+            "exact_interval": [
+              0.02843436062549934,
+              0.11943995918327606
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.1025390625,
+            "only_new": 331,
+            "only_reference": 121,
+            "exact_interval": [
+              0.07194756486494033,
+              0.13273981222777026
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.020461047620271455
+        }
+      },
+      "timing_mismatch": {
+        "V1a": {
+          "counts_base_new": [
+            1154,
+            1204
+          ],
+          "pointwise95": {
+            "difference": 0.0244140625,
+            "only_new": 123,
+            "only_reference": 73,
+            "exact_interval": [
+              0.0029029965084618817,
+              0.04582235811718825
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.0244140625,
+            "only_new": 123,
+            "only_reference": 73,
+            "exact_interval": [
+              -0.00687596295326514,
+              0.05550542898832181
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.13623046875,
+            "only_new": 370,
+            "only_reference": 91,
+            "exact_interval": [
+              0.10621847736452716,
+              0.16572065636620495
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.1854239562198552
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            1261,
+            1204
+          ],
+          "pointwise95": {
+            "difference": -0.02783203125,
+            "only_new": 16,
+            "only_reference": 73,
+            "exact_interval": [
+              -0.04184255259544387,
+              -0.013653964753743338
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.02783203125,
+            "only_new": 16,
+            "only_reference": 73,
+            "exact_interval": [
+              -0.04815685840964547,
+              -0.007222047656436834
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": -0.0390625,
+            "only_new": 10,
+            "only_reference": 90,
+            "exact_interval": [
+              -0.05310689901802779,
+              -0.02477313136614654
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.003961340939220737
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            1043,
+            1204
+          ],
+          "pointwise95": {
+            "difference": 0.07861328125,
+            "only_new": 306,
+            "only_reference": 145,
+            "exact_interval": [
+              0.047618464226202306,
+              0.10930941636789004
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.07861328125,
+            "only_new": 306,
+            "only_reference": 145,
+            "exact_interval": [
+              0.03342329253025039,
+              0.12320583221664297
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.09765625,
+            "only_new": 327,
+            "only_reference": 127,
+            "exact_interval": [
+              0.0668968631324581,
+              0.12804392197562808
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.019419692743910533
+        }
+      },
+      "A1_H_replay": {
+        "V1a": {
+          "counts_base_new": [
+            1336,
+            1059
+          ],
+          "pointwise95": {
+            "difference": -0.13525390625,
+            "only_new": 27,
+            "only_reference": 304,
+            "exact_interval": [
+              -0.15874776289246892,
+              -0.1111994137846607
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.13525390625,
+            "only_new": 27,
+            "only_reference": 304,
+            "exact_interval": [
+              -0.1692951340234769,
+              -0.10012597397735695
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.07666015625,
+            "only_new": 443,
+            "only_reference": 286,
+            "exact_interval": [
+              0.03848786064589932,
+              0.11454868337007705
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.08286063182084669
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            1364,
+            1059
+          ],
+          "pointwise95": {
+            "difference": -0.14892578125,
+            "only_new": 1,
+            "only_reference": 306,
+            "exact_interval": [
+              -0.1679434375147297,
+              -0.1290501176355261
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.14892578125,
+            "only_new": 1,
+            "only_reference": 306,
+            "exact_interval": [
+              -0.17676668687168007,
+              -0.11980911966573923
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": -0.13916015625,
+            "only_new": 4,
+            "only_reference": 289,
+            "exact_interval": [
+              -0.15882112815659055,
+              -0.11879197149618693
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.012260861500507092
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            854,
+            1059
+          ],
+          "pointwise95": {
+            "difference": 0.10009765625,
+            "only_new": 416,
+            "only_reference": 211,
+            "exact_interval": [
+              0.0644525961565583,
+              0.13536961846864862
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.10009765625,
+            "only_new": 416,
+            "only_reference": 211,
+            "exact_interval": [
+              0.04809439778406144,
+              0.15134997523958926
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.0908203125,
+            "only_new": 389,
+            "only_reference": 203,
+            "exact_interval": [
+              0.0559455407228885,
+              0.12535573216903068
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.021222604404572465
+        }
+      },
+      "A1_C_replay": {
+        "V1a": {
+          "counts_base_new": [
+            1331,
+            1098
+          ],
+          "pointwise95": {
+            "difference": -0.11376953125,
+            "only_new": 33,
+            "only_reference": 266,
+            "exact_interval": [
+              -0.13693342826032617,
+              -0.09013415361229932
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.11376953125,
+            "only_new": 33,
+            "only_reference": 266,
+            "exact_interval": [
+              -0.14734562157176306,
+              -0.07927883168032737
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.11376953125,
+            "only_new": 504,
+            "only_reference": 271,
+            "exact_interval": [
+              0.07497356367971417,
+              0.15214494455385372
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.09260183771205854
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            1361,
+            1098
+          ],
+          "pointwise95": {
+            "difference": -0.12841796875,
+            "only_new": 4,
+            "only_reference": 267,
+            "exact_interval": [
+              -0.1475341533482052,
+              -0.10863475025307137
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.12841796875,
+            "only_new": 4,
+            "only_reference": 267,
+            "exact_interval": [
+              -0.1561916020253533,
+              -0.09949274642223592
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": -0.13037109375,
+            "only_new": 5,
+            "only_reference": 272,
+            "exact_interval": [
+              -0.14987111891926183,
+              -0.11021645954516568
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.010982710675162655
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            873,
+            1098
+          ],
+          "pointwise95": {
+            "difference": 0.10986328125,
+            "only_new": 428,
+            "only_reference": 203,
+            "exact_interval": [
+              0.07424495016166076,
+              0.1450720602846099
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.10986328125,
+            "only_new": 428,
+            "only_reference": 203,
+            "exact_interval": [
+              0.05788888351270356,
+              0.16101340664940872
+            ],
+            "tail_per_sign": 0.0010416666666666667
+          },
+          "first_packet95": {
+            "difference": 0.10009765625,
+            "only_new": 425,
+            "only_reference": 220,
+            "exact_interval": [
+              0.06401487726752327,
+              0.1358078355935842
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.02259124274261004
+        }
+      }
+    }
+  },
+  "old96": {
+    "unstable": {
+      "A0": {
+        "V1a": {
+          "counts_base_new": [
+            50,
+            56
+          ],
+          "pointwise95": {
+            "difference": 0.0625,
+            "only_new": 7,
+            "only_reference": 1,
+            "exact_interval": [
+              -0.03876780937470649,
+              0.15541195759953635
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.0625,
+            "only_new": 7,
+            "only_reference": 1,
+            "exact_interval": [
+              -0.03876780937470649,
+              0.15541195759953635
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.03125,
+            "only_new": 3,
+            "only_reference": 0,
+            "exact_interval": [
+              -0.039641712065189516,
+              0.09794690338950936
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.11666626432255667
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            56,
+            56
+          ],
+          "pointwise95": {
+            "difference": 0.0,
+            "only_new": 1,
+            "only_reference": 1,
+            "exact_interval": [
+              -0.06450434253129553,
+              0.06450434253129553
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.0,
+            "only_new": 1,
+            "only_reference": 1,
+            "exact_interval": [
+              -0.06450434253129553,
+              0.06450434253129553
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.010416666666666666,
+            "only_new": 1,
+            "only_reference": 0,
+            "exact_interval": [
+              -0.04448897854414046,
+              0.06463536292869493
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.0034416123335924143
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            56,
+            56
+          ],
+          "pointwise95": {
+            "difference": 0.0,
+            "only_new": 14,
+            "only_reference": 14,
+            "exact_interval": [
+              -0.1702881546031964,
+              0.1702881546031964
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.0,
+            "only_new": 14,
+            "only_reference": 14,
+            "exact_interval": [
+              -0.1702881546031964,
+              0.1702881546031964
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.041666666666666664,
+            "only_new": 5,
+            "only_reference": 1,
+            "exact_interval": [
+              -0.05033651042956993,
+              0.12754174063124557
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.012822205828516564
+        }
+      },
+      "A1_H_mismatch": {
+        "V1a": {
+          "counts_base_new": [
+            66,
+            47
+          ],
+          "pointwise95": {
+            "difference": -0.19791666666666666,
+            "only_new": 1,
+            "only_reference": 20,
+            "exact_interval": [
+              -0.3168284459753437,
+              -0.05861164140555018
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.19791666666666666,
+            "only_new": 1,
+            "only_reference": 20,
+            "exact_interval": [
+              -0.3168284459753437,
+              -0.05861164140555018
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": -0.14583333333333334,
+            "only_new": 3,
+            "only_reference": 17,
+            "exact_interval": [
+              -0.2766678552803988,
+              -0.000736285236500156
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.04634567063677397
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            67,
+            47
+          ],
+          "pointwise95": {
+            "difference": -0.20833333333333334,
+            "only_new": 0,
+            "only_reference": 20,
+            "exact_interval": [
+              -0.31695946637274314,
+              -0.07862700539270524
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.20833333333333334,
+            "only_new": 0,
+            "only_reference": 20,
+            "exact_interval": [
+              -0.31695946637274314,
+              -0.07862700539270524
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": -0.17708333333333334,
+            "only_new": 0,
+            "only_reference": 17,
+            "exact_interval": [
+              -0.2816461421567491,
+              -0.054063189684469645
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.024894379051772386
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            54,
+            47
+          ],
+          "pointwise95": {
+            "difference": -0.07291666666666667,
+            "only_new": 7,
+            "only_reference": 14,
+            "exact_interval": [
+              -0.21953103467827192,
+              0.08043254436787177
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.07291666666666667,
+            "only_new": 7,
+            "only_reference": 14,
+            "exact_interval": [
+              -0.21953103467827192,
+              0.08043254436787177
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": -0.052083333333333336,
+            "only_new": 8,
+            "only_reference": 13,
+            "exact_interval": [
+              -0.20086298091664842,
+              0.10148449810259633
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.026245248296848822
+        }
+      },
+      "A1_C_mismatch": {
+        "V1a": {
+          "counts_base_new": [
+            70,
+            51
+          ],
+          "pointwise95": {
+            "difference": -0.19791666666666666,
+            "only_new": 0,
+            "only_reference": 19,
+            "exact_interval": [
+              -0.305281577481298,
+              -0.07034087339578221
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.19791666666666666,
+            "only_new": 0,
+            "only_reference": 19,
+            "exact_interval": [
+              -0.305281577481298,
+              -0.07034087339578221
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": -0.17708333333333334,
+            "only_new": 2,
+            "only_reference": 19,
+            "exact_interval": [
+              -0.3035332839010839,
+              -0.033007548401265546
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.005556130109966473
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            70,
+            51
+          ],
+          "pointwise95": {
+            "difference": -0.19791666666666666,
+            "only_new": 0,
+            "only_reference": 19,
+            "exact_interval": [
+              -0.305281577481298,
+              -0.07034087339578221
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.19791666666666666,
+            "only_new": 0,
+            "only_reference": 19,
+            "exact_interval": [
+              -0.305281577481298,
+              -0.07034087339578221
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": -0.1875,
+            "only_new": 1,
+            "only_reference": 19,
+            "exact_interval": [
+              -0.3051505570838986,
+              -0.05032550940862715
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.036823738121724126
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            52,
+            51
+          ],
+          "pointwise95": {
+            "difference": -0.010416666666666666,
+            "only_new": 13,
+            "only_reference": 14,
+            "exact_interval": [
+              -0.17788336590533677,
+              0.15796097484238397
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.010416666666666666,
+            "only_new": 13,
+            "only_reference": 14,
+            "exact_interval": [
+              -0.17788336590533677,
+              0.15796097484238397
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": -0.010416666666666666,
+            "only_new": 13,
+            "only_reference": 14,
+            "exact_interval": [
+              -0.17788336590533677,
+              0.15796097484238397
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.029062639749498742
+        }
+      },
+      "A0_onset_replay": {
+        "V1a": {
+          "counts_base_new": [
+            48,
+            54
+          ],
+          "pointwise95": {
+            "difference": 0.0625,
+            "only_new": 8,
+            "only_reference": 2,
+            "exact_interval": [
+              -0.049744896381257016,
+              0.16725142684930583
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.0625,
+            "only_new": 8,
+            "only_reference": 2,
+            "exact_interval": [
+              -0.049744896381257016,
+              0.16725142684930583
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.010416666666666666,
+            "only_new": 1,
+            "only_reference": 0,
+            "exact_interval": [
+              -0.04448897854414046,
+              0.06463536292869493
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.14634668184134103
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            56,
+            54
+          ],
+          "pointwise95": {
+            "difference": -0.020833333333333332,
+            "only_new": 0,
+            "only_reference": 2,
+            "exact_interval": [
+              -0.08195332393605653,
+              0.042871705361325764
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.020833333333333332,
+            "only_new": 0,
+            "only_reference": 2,
+            "exact_interval": [
+              -0.08195332393605653,
+              0.042871705361325764
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.0,
+            "only_new": 0,
+            "only_reference": 0,
+            "exact_interval": [
+              -0.04461999894153987,
+              0.04461999894153987
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.0010007403408396343
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            52,
+            54
+          ],
+          "pointwise95": {
+            "difference": 0.020833333333333332,
+            "only_new": 15,
+            "only_reference": 13,
+            "exact_interval": [
+              -0.15022733004700434,
+              0.19008188762484582
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.020833333333333332,
+            "only_new": 15,
+            "only_reference": 13,
+            "exact_interval": [
+              -0.15022733004700434,
+              0.19008188762484582
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.052083333333333336,
+            "only_new": 5,
+            "only_reference": 0,
+            "exact_interval": [
+              -0.03032114644241487,
+              0.12767276102864497
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.012002353571393787
+        }
+      }
+    },
+    "stable": {
+      "A0": {
+        "V1a": {
+          "counts_base_new": [
+            59,
+            59
+          ],
+          "pointwise95": {
+            "difference": 0.0,
+            "only_new": 2,
+            "only_reference": 2,
+            "exact_interval": [
+              -0.08020503035584242,
+              0.08020503035584242
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.0,
+            "only_new": 2,
+            "only_reference": 2,
+            "exact_interval": [
+              -0.08020503035584242,
+              0.08020503035584242
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.14583333333333334,
+            "only_new": 20,
+            "only_reference": 6,
+            "exact_interval": [
+              -0.018541169236616042,
+              0.2970885689658407
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.18013020603520769
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            61,
+            59
+          ],
+          "pointwise95": {
+            "difference": -0.020833333333333332,
+            "only_new": 0,
+            "only_reference": 2,
+            "exact_interval": [
+              -0.08195332393605653,
+              0.042871705361325764
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.020833333333333332,
+            "only_new": 0,
+            "only_reference": 2,
+            "exact_interval": [
+              -0.08195332393605653,
+              0.042871705361325764
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": -0.0625,
+            "only_new": 0,
+            "only_reference": 6,
+            "exact_interval": [
+              -0.14178817357086115,
+              0.024749101534637385
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.0010769705483766323
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            48,
+            59
+          ],
+          "pointwise95": {
+            "difference": 0.11458333333333333,
+            "only_new": 15,
+            "only_reference": 4,
+            "exact_interval": [
+              -0.03026191804603895,
+              0.24832600160723864
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.11458333333333333,
+            "only_new": 15,
+            "only_reference": 4,
+            "exact_interval": [
+              -0.03026191804603895,
+              0.24832600160723864
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.14583333333333334,
+            "only_new": 20,
+            "only_reference": 6,
+            "exact_interval": [
+              -0.018541169236616042,
+              0.2970885689658407
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.014396938296959871
+        }
+      },
+      "A1_H_mismatch": {
+        "V1a": {
+          "counts_base_new": [
+            65,
+            49
+          ],
+          "pointwise95": {
+            "difference": -0.16666666666666666,
+            "only_new": 1,
+            "only_reference": 17,
+            "exact_interval": [
+              -0.2815151217593497,
+              -0.034047825697314585
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.16666666666666666,
+            "only_new": 1,
+            "only_reference": 17,
+            "exact_interval": [
+              -0.2815151217593497,
+              -0.034047825697314585
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.010416666666666666,
+            "only_new": 17,
+            "only_reference": 16,
+            "exact_interval": [
+              -0.1709936368637534,
+              0.19094128676652072
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.1190024602294375
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            66,
+            49
+          ],
+          "pointwise95": {
+            "difference": -0.17708333333333334,
+            "only_new": 0,
+            "only_reference": 17,
+            "exact_interval": [
+              -0.2816461421567491,
+              -0.054063189684469645
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.17708333333333334,
+            "only_new": 0,
+            "only_reference": 17,
+            "exact_interval": [
+              -0.2816461421567491,
+              -0.054063189684469645
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": -0.16666666666666666,
+            "only_new": 0,
+            "only_reference": 16,
+            "exact_interval": [
+              -0.2696768254897629,
+              -0.04608485644868851
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.006080490087907009
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            42,
+            49
+          ],
+          "pointwise95": {
+            "difference": 0.07291666666666667,
+            "only_new": 19,
+            "only_reference": 12,
+            "exact_interval": [
+              -0.10564303435056352,
+              0.2452096442238641
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.07291666666666667,
+            "only_new": 19,
+            "only_reference": 12,
+            "exact_interval": [
+              -0.10564303435056352,
+              0.2452096442238641
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.07291666666666667,
+            "only_new": 19,
+            "only_reference": 12,
+            "exact_interval": [
+              -0.10564303435056352,
+              0.2452096442238641
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.019494100392196456
+        }
+      },
+      "A1_C_mismatch": {
+        "V1a": {
+          "counts_base_new": [
+            56,
+            47
+          ],
+          "pointwise95": {
+            "difference": -0.09375,
+            "only_new": 4,
+            "only_reference": 13,
+            "exact_interval": [
+              -0.22380030012691715,
+              0.04559077414355893
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.09375,
+            "only_new": 4,
+            "only_reference": 13,
+            "exact_interval": [
+              -0.22380030012691715,
+              0.04559077414355893
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.15625,
+            "only_new": 27,
+            "only_reference": 12,
+            "exact_interval": [
+              -0.037043637764545057,
+              0.3364175796405487
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.13651946554637306
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            60,
+            47
+          ],
+          "pointwise95": {
+            "difference": -0.13541666666666666,
+            "only_new": 0,
+            "only_reference": 13,
+            "exact_interval": [
+              -0.23307140847144794,
+              -0.022895223385383745
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.13541666666666666,
+            "only_new": 0,
+            "only_reference": 13,
+            "exact_interval": [
+              -0.23307140847144794,
+              -0.022895223385383745
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": -0.125,
+            "only_new": 0,
+            "only_reference": 12,
+            "exact_interval": [
+              -0.2206039066878856,
+              -0.015451934315894068
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.010698656888248781
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            43,
+            47
+          ],
+          "pointwise95": {
+            "difference": 0.041666666666666664,
+            "only_new": 16,
+            "only_reference": 12,
+            "exact_interval": [
+              -0.12989905129765722,
+              0.20960489223232898
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.041666666666666664,
+            "only_new": 16,
+            "only_reference": 12,
+            "exact_interval": [
+              -0.12989905129765722,
+              0.20960489223232898
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.07291666666666667,
+            "only_new": 16,
+            "only_reference": 9,
+            "exact_interval": [
+              -0.09149885425290913,
+              0.23084022426994144
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.023853454060694723
+        }
+      },
+      "A0_onset_replay": {
+        "V1a": {
+          "counts_base_new": [
+            58,
+            55
+          ],
+          "pointwise95": {
+            "difference": -0.03125,
+            "only_new": 1,
+            "only_reference": 4,
+            "exact_interval": [
+              -0.11297497607308314,
+              0.05536425458416415
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.03125,
+            "only_new": 1,
+            "only_reference": 4,
+            "exact_interval": [
+              -0.11297497607308314,
+              0.05536425458416415
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.13541666666666666,
+            "only_new": 17,
+            "only_reference": 4,
+            "exact_interval": [
+              -0.014422807844473029,
+              0.27237503381221834
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": 0.1760685449415491
+        },
+        "V1.2a": {
+          "counts_base_new": [
+            59,
+            55
+          ],
+          "pointwise95": {
+            "difference": -0.041666666666666664,
+            "only_new": 0,
+            "only_reference": 4,
+            "exact_interval": [
+              -0.11310599647048254,
+              0.03534889059700909
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": -0.041666666666666664,
+            "only_new": 0,
+            "only_reference": 4,
+            "exact_interval": [
+              -0.11310599647048254,
+              0.03534889059700909
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": -0.041666666666666664,
+            "only_new": 0,
+            "only_reference": 4,
+            "exact_interval": [
+              -0.11310599647048254,
+              0.03534889059700909
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.000510676583456493
+        },
+        "trusted-budget": {
+          "counts_base_new": [
+            51,
+            55
+          ],
+          "pointwise95": {
+            "difference": 0.041666666666666664,
+            "only_new": 14,
+            "only_reference": 10,
+            "exact_interval": [
+              -0.12007859901781083,
+              0.19968850253749434
+            ],
+            "tail_per_sign": 0.025
+          },
+          "familywise95": {
+            "difference": 0.041666666666666664,
+            "only_new": 14,
+            "only_reference": 10,
+            "exact_interval": [
+              -0.12007859901781083,
+              0.19968850253749434
+            ],
+            "tail_per_sign": 0.025
+          },
+          "first_packet95": {
+            "difference": 0.0625,
+            "only_new": 15,
+            "only_reference": 9,
+            "exact_interval": [
+              -0.09935963121869391,
+              0.21876050873194797
+            ],
+            "tail_per_sign": 0.025
+          },
+          "relative_active_mse_difference": -0.028555384328653677
+        }
+      }
+    }
+  },
+  "geometry_totals": {
+    "hits": 363,
+    "structural_avoided": 0,
+    "trusted_replacement_avoided": 262,
+    "trusted_segment_avoided": 303,
+    "triangle_avoided": 305,
+    "triangle_only_vs_both_segments": 2,
+    "first_packet_hits": 292,
+    "first_packet_triangle_avoided": 254,
+    "triangle_only_first_packet": 1
+  },
+  "maximum_ledger_replay_difference": 3.400058012914542e-16,
+  "simultaneous_family": "Eight non-nominal profiles times three comparators, two signs each."
+}

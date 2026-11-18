@@ -1,0 +1,38 @@
+{
+  "python": "3.10.18",
+  "numpy": "2.2.5",
+  "scipy": "1.15.3",
+  "unit_tests_passed": 4,
+  "V1_protected_files": {
+    "accommodation.py": "93ee5df1d634b5ac34a42289b2216489e6bb08ee336d71cd66bf3774ec2a1dda",
+    "run_validation.py": "56b0b6aabfabe38c8c06dbe9779ec791b4ff675262dc70039704112fab0d38bc",
+    "test_accommodation.py": "83797f9b5dc272c545b2cc6743ea9ad9bb9aff89b8bff32d2c5ae649ffda4539",
+    "registration.json": "1e327f04291ea6f1735fc9a98816c228e0a0bc42da25f9811fecac41c8d47c6b",
+    "results/comparison.json": "23863bd5540c51d1062143aca49ce5c9c5d714345fba1d120373b7693b2f3051",
+    "results/paired_paths.npz": "ec7ec9c7112a8a7f543cc96a40dcb9497ee3fd3f3b835775a218e638d76c8e7b"
+  },
+  "V12_registration_and_original_seed_hash_match": true,
+  "V13_frozen_results_match": 14,
+  "V12_frozen_trace_files_match": 4,
+  "V1a_and_V12a_numeric_path_regressions": 28,
+  "maximum_replayed_two_world_difference": 3.630646130958759e-14,
+  "maximum_ledger_replay_roundoff": 3.400058012914542e-16,
+  "files_sha256": {
+    "results/development/stable_32_paths.npz": "2b2351d65ac244d47da6abaa441cc7a786353d04ea26fd2b5f4fa2f188588722",
+    "results/development/stable_48_paths.npz": "e1e90a551a9b554bd5c7e827af0b0e8af584af2b975fa48eed0df788f1021d86",
+    "results/development/stable_96_paths.npz": "9426c26bf6a1ed27d3c022fe687b7f27d8c0f01fcb899aaa9de582fc6242c4f7",
+    "results/development/summary.json": "7e2a5ac6cb9159adbacfa43a0d41c093f06512b361b576952fe6d23b516a1d33",
+    "results/development/unstable_32_paths.npz": "915786e4dad7917ed0aeaed2a3447643073d37755547227fdb0afff827ac35e7",
+    "results/development/unstable_48_paths.npz": "dba6efb25be7874e504af72c45ef70c5e73bfda35af2042f68d4f3f676c7198b",
+    "results/development/unstable_96_paths.npz": "6a171784146e664943b08b6f2e3f4f550f0d42b6fbbd32e9d3ce1c0de9bb84da",
+    "results/geometry.json": "00271a54c1f7dce291146e6ec78567ea98c5c044d973f9d1c0a3327ab640ecc6",
+    "results/geometry_and_holdout.png": "54936711dd1b4e41f80c99a662fad640c7757a195f872a5d9fbf6eaef21ea221",
+    "results/holdout/freeze.json": "0c8331c39ef31b3a6e6f3d4a4e65ee5140e346a2b463a797ddbe3501edb63450",
+    "results/holdout/stable_2048_paths.npz": "e53acc5e5c813c62763243dacac3e876a34ea41958f32fb0b7da089de0754622",
+    "results/holdout/summary.json": "359bfa838eef8f1e84fd882d870d72f44ffc903ee996ab713f1f9cbf7245cb63",
+    "results/holdout/unstable_2048_paths.npz": "c1269b1decb268370f04de89cdf5a020ee699917ebec4b95c950580218d01d4c",
+    "results/paired_comparisons.json": "702394b81fbeb538632e5664f4fb70b3596cd6deb68b81726e667a26380a2a18",
+    "results/V13_freeze_recalculation.json": "94e78cf173ebc6ce381f960906f932b27c1e6c54d7511ea299f82f4c4d7bdbe3",
+    "results/holdout/archive_parts.json": "a3913eb30c7b1ac312225f9ff5d8d5f7325f8a742f841a00adcec89c5f54d8a2"
+  }
+}
