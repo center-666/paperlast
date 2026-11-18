@@ -1,0 +1,25 @@
+{
+  "baseline": "3c145beb43beee9672300030b7a3c83350973e37",
+  "horizon": 32,
+  "D_squared": 0.1,
+  "BF_event_budget": 0.05,
+  "coded_energy_limit": 10,
+  "strict_ball_radius": 0.158,
+  "target_nominal_health_penalties": [0.001, 0.005, 0.01, 0.02],
+  "calibration": {
+    "method": "Health only. Fit radial thresholds for frozen V14 current-target ellipsoidal clip via paired conditional-MSE means. Each named target fixes an operating point.",
+    "paths_per_model": 8192,
+    "seed": {"unstable": 81488201, "stable": 81488213}
+  },
+  "holdout": {
+    "paths_per_model_and_profile": 2048,
+    "seed": {"unstable": 81488309, "stable": 81488321},
+    "profiles": ["healthy", "unknown_start", "timing_mismatch", "A1_H_replay", "A1_C_replay"],
+    "mode": "New independent physical, decoder and archive-selection draws. Fixed archived impairments only.",
+    "contrasts": "Report empirical paired differences and pointwise 95% bands. No worst-adversary optimization or claims."
+  },
+  "methods": {
+    "fixed": ["V0", "V1a", "V1.2a", "V1.4", "clip95", "trusted-MMSE", "anchor-safe"],
+    "cost_grid": ["trusted-ledger", "innovation-clip", "anchor"]
+  }
+}
