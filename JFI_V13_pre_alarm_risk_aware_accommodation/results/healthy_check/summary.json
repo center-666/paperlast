@@ -1,0 +1,56 @@
+{
+  "unstable": {
+    "exact_v0_mse": 0.2277111769527801,
+    "n": 4096,
+    "tail_allowance": 0.00012392838037579457,
+    "policies": {
+      "V1a": {
+        "mean_sample_and_t_interval": [
+          0.22701817022897552,
+          0.22576598263039332,
+          0.22827035782755772
+        ],
+        "model_mean_estimate": 0.2275243262792381,
+        "upper_one_sided_joint95": 0.23062881567902074,
+        "upper_relative_to_exact_v0": 0.012812892038433832
+      },
+      "V1.3": {
+        "mean_sample_and_t_interval": [
+          0.22697054573033132,
+          0.22571851635224519,
+          0.22822257510841745
+        ],
+        "model_mean_estimate": 0.22746796788434018,
+        "upper_one_sided_joint95": 0.23057249323876983,
+        "upper_relative_to_exact_v0": 0.012565550467393605
+      }
+    }
+  },
+  "stable": {
+    "exact_v0_mse": 0.22666559033630546,
+    "n": 4096,
+    "tail_allowance": 0.00012392838037579457,
+    "policies": {
+      "V1a": {
+        "mean_sample_and_t_interval": [
+          0.22620591079221686,
+          0.22497442535292897,
+          0.22743739623150475
+        ],
+        "model_mean_estimate": 0.2264478614563829,
+        "upper_one_sided_joint95": 0.22955252724191877,
+        "upper_relative_to_exact_v0": 0.0127365468279943
+      },
+      "V1.3": {
+        "mean_sample_and_t_interval": [
+          0.2261566257146693,
+          0.22492553000691548,
+          0.2273877214224231
+        ],
+        "model_mean_estimate": 0.22639929221866684,
+        "upper_one_sided_joint95": 0.22950398182521825,
+        "upper_relative_to_exact_v0": 0.012522374854963436
+      }
+    }
+  }
+}

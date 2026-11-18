@@ -1,0 +1,23 @@
+{
+  "V1_V11_V12_frozen_inputs_matched": true,
+  "legacy_regressions": 46,
+  "independent_paths_per_model_and_profile": 2048,
+  "development_policy_frozen": 16.0,
+  "identity_checks": "test_frozen_observer_moments (test_v13.ReceiverTests) ... ok\ntest_isotropic_and_degenerate_angular_integral (test_v13.ReceiverTests) ... ok\ntest_jacobian_small_observation_variation (test_v13.ReceiverTests) ... ok\ntest_no_alarm_changes_for_policy_and_exact_after_alarm_fallback (test_v13.ReceiverTests) ... ok\ntest_online_matches_paired_replay_with_no_truth_leak (test_v13.ReceiverTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.646s\n\nOK\n",
+  "verified_result_hashes": {
+    "results\\independent_calibration.png": "1f3df2ab64f723c1b8d62adc37d82ba3e1cc9848c68b1066fe11b5491a92ee1a",
+    "results\\legacy_pareto.json": "b62a651ada1aa6f616c660a550e80440281042e1c90208a696f5a1da8d75aa2c",
+    "results\\legacy_pareto.png": "377b998609495495c0bb52142121d7c1ec35966f0f1ad26e08b8c2a7cf539e29",
+    "results\\numerical_and_runtime_audit.json": "350fce9f8d2b15993c37eacbcbf85487b6705780392566e1e92ccf443730721d",
+    "results\\offline_action_reachability.json": "07698134d2dc286f79286fc686640644f4477760b041a177cf12e021f6c8c26a",
+    "results\\recovery.json": "6f443fa9da4894f148fe6056ac75a4c208b0ea4244f5ec8ddc19c6a1968b9602",
+    "results\\development\\summary.json": "4c2428e1a52ed3112596a587f8958085f86f341ffc6eeb8a42a6316e40946df1",
+    "results\\healthy_check\\stable_integrands.npz": "7b461ce4eb28c6ebf03e3804dbdbe0714d6c91d4ea986859054fac3fcbf0a202",
+    "results\\healthy_check\\summary.json": "b8a5953e06941cb772dd9a18bc029f9779eead938cda49a3607c0718e194df55",
+    "results\\healthy_check\\unstable_integrands.npz": "6145575d2559e4a85e014c6c23ef44951e98cf07d2883b18086d53f43e4c3b77",
+    "results\\historical_joint\\summary.json": "87eecd220917c944efe1a9315df0e74b690f5959c1fcb31a6c49fa8d8d6e55ad",
+    "results\\validation\\stable_paths.npz": "8497b4db05e63aba0f3e96d5f002ba3cfbc95bae69fbbbc9a2233bf43e9556c7",
+    "results\\validation\\summary.json": "88f8d775babe7769537c819c57b6ff6bfdcb7e6e01434b4b6370da0901d0fa2a",
+    "results\\validation\\unstable_paths.npz": "8a92b190be5232b0b7dbb8b51470afdbdfd1adb7c0be9aa835a84253bb07a752"
+  }
+}

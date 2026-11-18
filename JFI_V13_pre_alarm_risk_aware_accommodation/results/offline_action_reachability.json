@@ -1,0 +1,46 @@
+{
+  "scope": "Archived 96-path trajectories; fixed V1a past and current healthy output.",
+  "oracle": "Retrospective single corrupted-side weight only. Not an online policy or global bound.",
+  "models": {
+    "unstable": {
+      "A0_onset_replay": {
+        "v1a_pre_alarm_first_hits": 48,
+        "cannot_remove_with_scalar_at_that_same_history": 48,
+        "first_packet_crossings": 7,
+        "first_packet_crossings_unreachable_by_reducing_weight": 7
+      },
+      "A1_H_mismatch": {
+        "v1a_pre_alarm_first_hits": 66,
+        "cannot_remove_with_scalar_at_that_same_history": 66,
+        "first_packet_crossings": 89,
+        "first_packet_crossings_unreachable_by_reducing_weight": 89
+      },
+      "A1_C_mismatch": {
+        "v1a_pre_alarm_first_hits": 70,
+        "cannot_remove_with_scalar_at_that_same_history": 70,
+        "first_packet_crossings": 94,
+        "first_packet_crossings_unreachable_by_reducing_weight": 94
+      }
+    },
+    "stable": {
+      "A0_onset_replay": {
+        "v1a_pre_alarm_first_hits": 58,
+        "cannot_remove_with_scalar_at_that_same_history": 58,
+        "first_packet_crossings": 39,
+        "first_packet_crossings_unreachable_by_reducing_weight": 39
+      },
+      "A1_H_mismatch": {
+        "v1a_pre_alarm_first_hits": 65,
+        "cannot_remove_with_scalar_at_that_same_history": 65,
+        "first_packet_crossings": 69,
+        "first_packet_crossings_unreachable_by_reducing_weight": 69
+      },
+      "A1_C_mismatch": {
+        "v1a_pre_alarm_first_hits": 56,
+        "cannot_remove_with_scalar_at_that_same_history": 56,
+        "first_packet_crossings": 62,
+        "first_packet_crossings_unreachable_by_reducing_weight": 60
+      }
+    }
+  }
+}

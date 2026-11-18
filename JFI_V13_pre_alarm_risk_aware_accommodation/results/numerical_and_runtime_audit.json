@@ -1,0 +1,154 @@
+{
+  "unstable": {
+    "quadrature_fixed_action_16_vs_128": {
+      "healthy": {
+        "pre_alarm_points": 384,
+        "mean_abs": 7.3221753803155604e-06,
+        "q95_abs": 1.567516769259278e-05,
+        "maximum_abs": 0.0007800251249597823
+      },
+      "A0": {
+        "pre_alarm_points": 189,
+        "mean_abs": 3.82478194155549e-05,
+        "q95_abs": 4.6009099006979325e-05,
+        "maximum_abs": 0.002440758313540431
+      },
+      "A1_C_mismatch": {
+        "pre_alarm_points": 309,
+        "mean_abs": 5.855533482630005e-06,
+        "q95_abs": 1.1815714318520995e-05,
+        "maximum_abs": 0.0006717777100333777
+      }
+    },
+    "latency_after_setup": {
+      "healthy": {
+        "V1a": {
+          "steps": 256,
+          "milliseconds_mean": 4.535740234331342,
+          "milliseconds_q50_q90_q99": [
+            4.4443999977374915,
+            7.464349997462705,
+            9.76963999819418
+          ],
+          "python_and_traced_numpy_peak_bytes": 105071
+        },
+        "V1.3": {
+          "steps": 256,
+          "milliseconds_mean": 1.4944105468828184,
+          "milliseconds_q50_q90_q99": [
+            1.4470999994955491,
+            1.9079999983659945,
+            2.63824499961629
+          ],
+          "python_and_traced_numpy_peak_bytes": 658177
+        },
+        "matched_backend_throughput": {
+          "common_backend_full_median_ms_per_update": 0.12424322917089133,
+          "common_backend_with_risk_median_ms_per_update": 0.3675774739519966
+        }
+      },
+      "A1_C_mismatch": {
+        "V1a": {
+          "steps": 256,
+          "milliseconds_mean": 4.421689452982491,
+          "milliseconds_q50_q90_q99": [
+            4.318449999118457,
+            7.559400000900496,
+            9.266455000761196
+          ],
+          "python_and_traced_numpy_peak_bytes": 99535
+        },
+        "V1.3": {
+          "steps": 256,
+          "milliseconds_mean": 1.3342320315814504,
+          "milliseconds_q50_q90_q99": [
+            1.344150001386879,
+            1.8773000010696705,
+            2.4144399969372894
+          ],
+          "python_and_traced_numpy_peak_bytes": 654376
+        },
+        "matched_backend_throughput": {
+          "common_backend_full_median_ms_per_update": 0.1273007812585547,
+          "common_backend_with_risk_median_ms_per_update": 0.3342703124928903
+        }
+      }
+    }
+  },
+  "stable": {
+    "quadrature_fixed_action_16_vs_128": {
+      "healthy": {
+        "pre_alarm_points": 384,
+        "mean_abs": 4.359920043568772e-06,
+        "q95_abs": 1.7154389993508386e-05,
+        "maximum_abs": 0.000245937713502644
+      },
+      "A0": {
+        "pre_alarm_points": 248,
+        "mean_abs": 1.8886229656422946e-05,
+        "q95_abs": 3.4008637094992664e-05,
+        "maximum_abs": 0.0011708440883221871
+      },
+      "A1_C_mismatch": {
+        "pre_alarm_points": 312,
+        "mean_abs": 1.726336382005177e-05,
+        "q95_abs": 3.8842252703004706e-05,
+        "maximum_abs": 0.0027668534115440346
+      }
+    },
+    "latency_after_setup": {
+      "healthy": {
+        "V1a": {
+          "steps": 256,
+          "milliseconds_mean": 4.599205468537093,
+          "milliseconds_q50_q90_q99": [
+            4.554049995931564,
+            7.742599998891819,
+            9.646395003801445
+          ],
+          "python_and_traced_numpy_peak_bytes": 111582
+        },
+        "V1.3": {
+          "steps": 256,
+          "milliseconds_mean": 2.142728906164848,
+          "milliseconds_q50_q90_q99": [
+            1.6905500015127473,
+            3.6439000032260083,
+            6.688985000801034
+          ],
+          "python_and_traced_numpy_peak_bytes": 655697
+        },
+        "matched_backend_throughput": {
+          "common_backend_full_median_ms_per_update": 0.1519059895827013,
+          "common_backend_with_risk_median_ms_per_update": 0.40479192708176015
+        }
+      },
+      "A1_C_mismatch": {
+        "V1a": {
+          "steps": 256,
+          "milliseconds_mean": 5.746569140711699,
+          "milliseconds_q50_q90_q99": [
+            5.31550000232528,
+            9.740849996887846,
+            23.307020000356573
+          ],
+          "python_and_traced_numpy_peak_bytes": 99746
+        },
+        "V1.3": {
+          "steps": 256,
+          "milliseconds_mean": 1.7962195312009044,
+          "milliseconds_q50_q90_q99": [
+            1.6616499997326173,
+            2.8286499982641544,
+            5.157435000364783
+          ],
+          "python_and_traced_numpy_peak_bytes": 654379
+        },
+        "matched_backend_throughput": {
+          "common_backend_full_median_ms_per_update": 0.16935598958411902,
+          "common_backend_with_risk_median_ms_per_update": 1.0592274739546308
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "selected": "risk-16",
+  "lambda": 16.0,
+  "passed_development_mse_screen": true,
+  "scores": {
+    "risk-0.25": {
+      "lambda": 0.25,
+      "max_support_relative_mse": 0.02391408731267841,
+      "nominal_relative_to_V1a_development": [
+        -0.0006596717289067966,
+        -0.0012504715585901494
+      ],
+      "mean_primary_risk_difference": 0.0322265625,
+      "max_primary_risk_difference": 0.10546875,
+      "mean_weight_shortfall": 0.05370124937996032,
+      "within_development_mse_screen": false
+    },
+    "risk-1": {
+      "lambda": 1.0,
+      "max_support_relative_mse": 0.021519179455076864,
+      "nominal_relative_to_V1a_development": [
+        -0.0006787249076162238,
+        -0.0013064328599877717
+      ],
+      "mean_primary_risk_difference": 0.0283203125,
+      "max_primary_risk_difference": 0.08984375,
+      "mean_weight_shortfall": 0.06919449094742065,
+      "within_development_mse_screen": false
+    },
+    "risk-4": {
+      "lambda": 4.0,
+      "max_support_relative_mse": 0.007675367722514315,
+      "nominal_relative_to_V1a_development": [
+        -0.000505432476325729,
+        -0.0006487657889272525
+      ],
+      "mean_primary_risk_difference": 0.013020833333333334,
+      "max_primary_risk_difference": 0.0546875,
+      "mean_weight_shortfall": 0.08513823009672619,
+      "within_development_mse_screen": true
+    },
+    "risk-16": {
+      "lambda": 16.0,
+      "max_support_relative_mse": 0.001567835253006189,
+      "nominal_relative_to_V1a_development": [
+        -0.00027874254273030363,
+        -0.0003471007337843002
+      ],
+      "mean_primary_risk_difference": 0.0016276041666666667,
+      "max_primary_risk_difference": 0.005859375,
+      "mean_weight_shortfall": 0.08838084387400792,
+      "within_development_mse_screen": true
+    }
+  },
+  "development_sha256": "4c2428e1a52ed3112596a587f8958085f86f341ffc6eeb8a42a6316e40946df1",
+  "design_sha256": "3eef29a0161c46154bca3bb515d796b70e6f7be0b8d0d4818e6f844656168adf"
+}

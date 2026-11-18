@@ -1,0 +1,118 @@
+{
+  "unstable": {
+    "unknown_start": {
+      "V1a": {
+        "mean_stop_state_offset_squared": 0.00957999937236309,
+        "danger_at_or_after_stop": 45,
+        "mean_updates_until_final_recovery": 0.07373046875,
+        "horizon_censored_count": 1
+      },
+      "V1.3": {
+        "mean_stop_state_offset_squared": 0.00958183966577053,
+        "danger_at_or_after_stop": 45,
+        "mean_updates_until_final_recovery": 0.07373046875,
+        "horizon_censored_count": 1
+      }
+    },
+    "timing_mismatch": {
+      "V1a": {
+        "mean_stop_state_offset_squared": 0.015867160633206367,
+        "danger_at_or_after_stop": 80,
+        "mean_updates_until_final_recovery": 0.1015625,
+        "horizon_censored_count": 1
+      },
+      "V1.3": {
+        "mean_stop_state_offset_squared": 0.01565910503268242,
+        "danger_at_or_after_stop": 82,
+        "mean_updates_until_final_recovery": 0.10302734375,
+        "horizon_censored_count": 1
+      }
+    },
+    "A1_H_replay": {
+      "V1a": {
+        "mean_stop_state_offset_squared": 0.0002902217675000429,
+        "danger_at_or_after_stop": 4,
+        "mean_updates_until_final_recovery": 0.00830078125,
+        "horizon_censored_count": 0
+      },
+      "V1.3": {
+        "mean_stop_state_offset_squared": 0.00028272345662117004,
+        "danger_at_or_after_stop": 4,
+        "mean_updates_until_final_recovery": 0.00830078125,
+        "horizon_censored_count": 0
+      }
+    },
+    "A1_C_replay": {
+      "V1a": {
+        "mean_stop_state_offset_squared": 0.00013955171743873507,
+        "danger_at_or_after_stop": 1,
+        "mean_updates_until_final_recovery": 0.00439453125,
+        "horizon_censored_count": 0
+      },
+      "V1.3": {
+        "mean_stop_state_offset_squared": 0.00013569233124144375,
+        "danger_at_or_after_stop": 1,
+        "mean_updates_until_final_recovery": 0.00439453125,
+        "horizon_censored_count": 0
+      }
+    }
+  },
+  "stable": {
+    "unknown_start": {
+      "V1a": {
+        "mean_stop_state_offset_squared": 0.0007329930085688829,
+        "danger_at_or_after_stop": 14,
+        "mean_updates_until_final_recovery": 0.07568359375,
+        "horizon_censored_count": 3
+      },
+      "V1.3": {
+        "mean_stop_state_offset_squared": 0.0007107699057087302,
+        "danger_at_or_after_stop": 13,
+        "mean_updates_until_final_recovery": 0.06787109375,
+        "horizon_censored_count": 3
+      }
+    },
+    "timing_mismatch": {
+      "V1a": {
+        "mean_stop_state_offset_squared": 0.006087479647248983,
+        "danger_at_or_after_stop": 24,
+        "mean_updates_until_final_recovery": 0.0986328125,
+        "horizon_censored_count": 2
+      },
+      "V1.3": {
+        "mean_stop_state_offset_squared": 0.00590702798217535,
+        "danger_at_or_after_stop": 24,
+        "mean_updates_until_final_recovery": 0.0986328125,
+        "horizon_censored_count": 2
+      }
+    },
+    "A1_H_replay": {
+      "V1a": {
+        "mean_stop_state_offset_squared": 0.0005319571937434375,
+        "danger_at_or_after_stop": 11,
+        "mean_updates_until_final_recovery": 0.04150390625,
+        "horizon_censored_count": 1
+      },
+      "V1.3": {
+        "mean_stop_state_offset_squared": 0.0005249803652986884,
+        "danger_at_or_after_stop": 11,
+        "mean_updates_until_final_recovery": 0.04150390625,
+        "horizon_censored_count": 1
+      }
+    },
+    "A1_C_replay": {
+      "V1a": {
+        "mean_stop_state_offset_squared": 0.0003551449626684189,
+        "danger_at_or_after_stop": 10,
+        "mean_updates_until_final_recovery": 0.0380859375,
+        "horizon_censored_count": 1
+      },
+      "V1.3": {
+        "mean_stop_state_offset_squared": 0.0003448797797318548,
+        "danger_at_or_after_stop": 10,
+        "mean_updates_until_final_recovery": 0.0380859375,
+        "horizon_censored_count": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "registered_at": "2026-11-18T17:58:53.967079+08:00",
+  "github_baseline": "76dfdd11211a74ef6485a1c66cd123273acf8e38",
+  "first_review": "Old 48 and 96 closed-loop paths were evaluated before design; no new input drawn before writing this file.",
+  "sources": {
+    "inputs.py": "0aadb33415ec57c2caea5a641fd3c0cc15cb84c7c95b47d216f1ece581db5d02",
+    "batched_observer.py": "eeb174f41018191ef9af454c4897b08ad3e5606eb5842d675fd854fee8bcd891",
+    "replay.py": "819d0e7f3c1ad75a6e4867eb43d3dbc9d8d6ecdbe66c64be4ea6967313cbfd99",
+    "legacy_screen.py": "2356f0c5e1d5fdc0bd25b3e2e2549ee780e59e7019c7b5eee2b42e06604b3b8d",
+    "risk_policy.py": "72f6c6bfa78f8124d108cc6522a9d0f9da0a9d39f593c7fdf29bdeb635771e80",
+    "experiments.py": "1631eeac397a5e22ad06e637c79acdd640f2b8b3d59dbc49049101aac3dbef77",
+    "test_v13.py": "e52660da34d3625734ef18f675c756f9b8c9cfc94fb96f4db79c8e4aeada9cd6",
+    "results/legacy_pareto.json": "b62a651ada1aa6f616c660a550e80440281042e1c90208a696f5a1da8d75aa2c",
+    "../JFI_V12_budget_and_risk_aware_compensation_20261118/registration.json": "793a6aecfcca9c986bb0e2ab36ae802320a022c6ec491fe0e816b012addf3d0b",
+    "../JFI_V12_budget_and_risk_aware_compensation_20261118/nominal_audit.py": "36963ef8f5143e04d0e4f1905cf2141f2e4134b5a7d021f5af952f2b8a428301",
+    "../JFI_V11_soft_weight_reconstruction_20261118/analytical_weight.py": "594cfcaa19a2b7d079fed8872975e0d6beac805045c243152c9496ad9da110ec"
+  },
+  "lambda_grid": [
+    0.25,
+    1.0,
+    4.0,
+    16.0
+  ],
+  "mse_screen_relative_margin": 0.01,
+  "weight_grid": [
+    1.0,
+    0.75,
+    0.5,
+    0.25,
+    0.0
+  ],
+  "angular_nodes": 16,
+  "batch": 96,
+  "paths": {
+    "development": 512,
+    "validation": 2048,
+    "healthy_check": 4096,
+    "historical_joint": 32
+  },
+  "seeds": {
+    "unstable": {
+      "development": 3818261118000,
+      "validation": 3828261118000,
+      "healthy_check": 3838261118000
+    },
+    "stable": {
+      "development": 3818261118100,
+      "validation": 3828261118100,
+      "healthy_check": 3838261118100
+    }
+  },
+  "selection_rule": "Within +1% development support-MSE per group relative to V1a, minimize mean then maximum paired pre-alarm risk change in six primary groups. Break ties by smallest average shortfall from full weight, then larger lambda. If no eligible, freeze largest lambda for diagnostic only.",
+  "test_rule": "Lock lambda before validation. Health joint one-sided 95% <=2%. MSE support relative margin +1% as declared screening convention. Primary risk groups are two models by unknown start / A1-H / A1-C, paired risk intervals and six-group simultaneous 95% upper. Timing mismatch is secondary. No tuning on independent data.",
+  "alarm": "First original mixture BF >=20. The action chosen from the raw packet is pre-alarm only when no alarm occurred through that update. Strict tau_D < tau_A.",
+  "scope": "Five-node receiver and offline frozen distortions. Unknown starts uniform from 3, 7, 11; timing variation stops after 8 instead of 10. A1 replays select bank rows before observing current packets. Existing joint historical records are separate development evidence."
+}

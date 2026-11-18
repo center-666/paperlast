@@ -1,6 +1,10 @@
 # 第一篇论文：GPT Web审阅入口
 
-## 最新研究结果 · 2026-11-18
+## 最新研究结果 · V1.3
+
+[V1.3 报警前风险感知补偿](JFI_V13_pre_alarm_risk_aware_accommodation/README.md)提供危险模型、独立配对数据、校准图、Pareto 图和第四第五章技术段落。每模型 2,048 条独立风险路径没有验证出报警前风险改善。V1.3 通过冻结名义模型的健康 2% 检验，A1 首包风险预测明显偏低。继续以 V1a 为原 A0 主算法，V1.2a 为解析名义精度配置。
+
+## V1.2 及前置结果 · 2026-11-18
 
 - [V1.2 健康预算结转与风险感知补偿](JFI_V12_budget_and_risk_aware_compensation_20261118/README.md)。包括 V1a 健康 2% 核验、独立闭环配对、账本实现、报警前危险归因，以及第四、第五章技术修改稿。
 - [V1.1 权重重构与闭环消融](JFI_V11_soft_weight_reconstruction_20261118/README.md)和 [V1 在线辨识与软补偿](JFI_reconstruction_attack_aware_soft_accommodation_V1/README.md)提供前置模型、基线与复算记录。

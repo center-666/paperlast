@@ -1,0 +1,3988 @@
+{
+  "methods": [
+    "V1a",
+    "V1.2a",
+    "conditional-MSE",
+    "V1.3"
+  ],
+  "angles": 16,
+  "profile_scope": "historical_joint",
+  "design_sha256": "3eef29a0161c46154bca3bb515d796b70e6f7be0b8d0d4818e6f844656168adf",
+  "models": {
+    "unstable": {
+      "profiles": {
+        "healthy": {
+          "n": 32,
+          "methods": {
+            "V1a": {
+              "healthy_mse": [
+                0.22076495579500524,
+                0.21002399740487146,
+                0.23150591418513902
+              ],
+              "active_mse": [
+                0.23137222897881216,
+                0.20883468126324742,
+                0.2539097766943769
+              ],
+              "mse_difference": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mse_relative": 0.0,
+              "after_mse": [
+                0.21919106440586333,
+                0.19716330968558307,
+                0.2412188191261436
+              ],
+              "alarm_before_window_end": 0,
+              "first_packet_danger": 0,
+              "risk_before_alarm": 0,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.2089843327948709,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0037899544074697774,
+                  "mean_correction_sq": 0.0037899544074697774,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.15943341262065258,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.09169682156068916,
+                  "mean_correction_sq": 0.09169682156068916,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.2393654307963854,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.006354168504754256,
+                  "mean_correction_sq": 0.006354168504754256,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21919106440586333,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.018738370370522197,
+                  "mean_correction_sq": 0.018738370370522197,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0
+                }
+              },
+              "peak_displacement": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "V1.2a": {
+              "healthy_mse": [
+                0.22062626035037902,
+                0.2099456170928823,
+                0.23130690360787576
+              ],
+              "active_mse": [
+                0.23142723039637486,
+                0.20890153425549685,
+                0.2539529265372529
+              ],
+              "mse_difference": [
+                5.5001417562710805e-05,
+                -9.689987480056107e-05,
+                0.00020690270992598268
+              ],
+              "mse_relative": 0.0002377183199793187,
+              "after_mse": [
+                0.21880381364147544,
+                0.1969773604972873,
+                0.24063026678566357
+              ],
+              "alarm_before_window_end": 0,
+              "first_packet_danger": 0,
+              "risk_before_alarm": 0,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.2091015460894641,
+                  "mean_alpha": 0.8966965711516367,
+                  "alpha_quantile": [
+                    0.4601717768579666,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0037752601227760973,
+                  "mean_correction_sq": 0.0037752601227760973,
+                  "correction_nonzero_fraction": 0.9107142857142857,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.15929658987142442,
+                  "mean_alpha": 0.8583518128711856,
+                  "alpha_quantile": [
+                    0.0574156690964676,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.09153053952669905,
+                  "mean_correction_sq": 0.09153053952669905,
+                  "correction_nonzero_fraction": 0.875,
+                  "residual_displacement_sq": 0.0
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.23944174601025825,
+                  "mean_alpha": 0.8114555803886564,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.005991447874740797,
+                  "mean_correction_sq": 0.005991447874740797,
+                  "correction_nonzero_fraction": 0.8368055555555556,
+                  "residual_displacement_sq": 0.0
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21880381364147544,
+                  "mean_alpha": 0.8189224963664422,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.018040583883919898,
+                  "mean_correction_sq": 0.018040583883919898,
+                  "correction_nonzero_fraction": 0.8458333333333333,
+                  "residual_displacement_sq": 0.0
+                }
+              },
+              "peak_displacement": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "conditional-MSE": {
+              "healthy_mse": [
+                0.22069188836259956,
+                0.2099275868773544,
+                0.23145618984784472
+              ],
+              "active_mse": [
+                0.23142723039637486,
+                0.20890153425549685,
+                0.2539529265372529
+              ],
+              "mse_difference": [
+                5.5001417562710805e-05,
+                -9.689987480056107e-05,
+                0.00020690270992598268
+              ],
+              "mse_relative": 0.0002377183199793187,
+              "after_mse": [
+                0.21894382006754587,
+                0.19691889638757432,
+                0.24096874374751742
+              ],
+              "alarm_before_window_end": 0,
+              "first_packet_danger": 0,
+              "risk_before_alarm": 0,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.2091015460894641,
+                  "mean_alpha": 0.8966965711516367,
+                  "alpha_quantile": [
+                    0.4601717768579666,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0037752601227760973,
+                  "mean_correction_sq": 0.0037752601227760973,
+                  "correction_nonzero_fraction": 0.9107142857142857,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.15929658987142442,
+                  "mean_alpha": 0.8583518128711856,
+                  "alpha_quantile": [
+                    0.0574156690964676,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.09153053952669905,
+                  "mean_correction_sq": 0.09153053952669905,
+                  "correction_nonzero_fraction": 0.875,
+                  "residual_displacement_sq": 0.0
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.23944174601025825,
+                  "mean_alpha": 0.8114555803886564,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.005991447874740797,
+                  "mean_correction_sq": 0.005991447874740797,
+                  "correction_nonzero_fraction": 0.8368055555555556,
+                  "residual_displacement_sq": 0.0
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21894382006754587,
+                  "mean_alpha": 0.8191444336275008,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0184686570426104,
+                  "mean_correction_sq": 0.0184686570426104,
+                  "correction_nonzero_fraction": 0.8458333333333333,
+                  "residual_displacement_sq": 0.0
+                }
+              },
+              "peak_displacement": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "V1.3": {
+              "healthy_mse": [
+                0.22071465532338447,
+                0.2099469478247381,
+                0.23148236282203083
+              ],
+              "active_mse": [
+                0.23143286929300955,
+                0.20890815949833605,
+                0.25395757908768307
+              ],
+              "mse_difference": [
+                6.06403141974049e-05,
+                -0.00013780457978296044,
+                0.0002590852081777702
+              ],
+              "mse_relative": 0.00026208985609477153,
+              "after_mse": [
+                0.2189924354874164,
+                0.1969421974225055,
+                0.2410426735523273
+              ],
+              "alarm_before_window_end": 0,
+              "first_packet_danger": 0,
+              "risk_before_alarm": 0,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.20909339215813746,
+                  "mean_alpha": 0.9095982142857143,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.003776707615623514,
+                  "mean_correction_sq": 0.003776707615623514,
+                  "correction_nonzero_fraction": 0.9151785714285714,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.1593012659324255,
+                  "mean_alpha": 0.875,
+                  "alpha_quantile": [
+                    0.30000000000000004,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.09166469329854153,
+                  "mean_correction_sq": 0.09166469329854153,
+                  "correction_nonzero_fraction": 0.90625,
+                  "residual_displacement_sq": 0.0
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.23944749188863002,
+                  "mean_alpha": 0.8211805555555556,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.005972431780362293,
+                  "mean_correction_sq": 0.005972431780362293,
+                  "correction_nonzero_fraction": 0.8368055555555556,
+                  "residual_displacement_sq": 0.0
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.2189924354874164,
+                  "mean_alpha": 0.8385416666666666,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.01852668647258694,
+                  "mean_correction_sq": 0.01852668647258694,
+                  "correction_nonzero_fraction": 0.85625,
+                  "residual_displacement_sq": 0.0
+                }
+              },
+              "peak_displacement": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "calibration": {
+            "V1a": {
+              "brier": 0.0015517275977994926,
+              "ece": 0.006111546175098726,
+              "observed": 0.0,
+              "predicted": 0.006111546175098725,
+              "first_packet_predicted": 0.03902035576222074,
+              "first_packet_observed": 0.0,
+              "first_eligible_n": 32,
+              "bins": [
+                {
+                  "range": [
+                    0.0,
+                    0.005
+                  ],
+                  "packets": 804,
+                  "episodes": 32,
+                  "predicted": 0.0012156600466434768,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.005,
+                    0.02
+                  ],
+                  "packets": 196,
+                  "episodes": 32,
+                  "predicted": 0.008849375151869864,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.02,
+                    0.05
+                  ],
+                  "packets": 15,
+                  "episodes": 12,
+                  "predicted": 0.023868945821425333,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.05,
+                    0.1
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.09689475419645463,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.1,
+                    0.2
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.13540200621088466,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.4,
+                    0.6
+                  ],
+                  "packets": 4,
+                  "episodes": 2,
+                  "predicted": 0.5215586897170582,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.6,
+                    0.8
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.6374926090289551,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "V1.3": {
+              "brier": 0.0015527400699578127,
+              "ece": 0.006216220557131083,
+              "observed": 0.0,
+              "predicted": 0.006216220557131083,
+              "first_packet_predicted": 0.03908960245074919,
+              "first_packet_observed": 0.0,
+              "first_eligible_n": 32,
+              "bins": [
+                {
+                  "range": [
+                    0.0,
+                    0.005
+                  ],
+                  "packets": 797,
+                  "episodes": 32,
+                  "predicted": 0.0012600294846857273,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.005,
+                    0.02
+                  ],
+                  "packets": 203,
+                  "episodes": 32,
+                  "predicted": 0.008939495017386117,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.02,
+                    0.05
+                  ],
+                  "packets": 15,
+                  "episodes": 12,
+                  "predicted": 0.02387501250928344,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.05,
+                    0.1
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.09689925274515604,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.1,
+                    0.2
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.13540200618996726,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.4,
+                    0.6
+                  ],
+                  "packets": 4,
+                  "episodes": 2,
+                  "predicted": 0.5215571370353458,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.6,
+                    0.8
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.6374926090274415,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "A1_H_mismatch": {
+          "n": 32,
+          "methods": {
+            "V1a": {
+              "healthy_mse": [
+                0.22076495579500524,
+                0.21002399740487146,
+                0.23150591418513902
+              ],
+              "active_mse": [
+                0.29560864716645885,
+                0.25929073932220226,
+                0.33192655501071544
+              ],
+              "mse_difference": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mse_relative": 0.0,
+              "after_mse": [
+                0.21809198964632048,
+                0.19656475810486546,
+                0.2396192211877755
+              ],
+              "alarm_before_window_end": 15,
+              "first_packet_danger": 30,
+              "risk_before_alarm": 18,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.2089843327948709,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0037899544074697774,
+                  "mean_correction_sq": 0.0037899544074697774,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.5390019914691484,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 5.715772975026017,
+                  "mean_correction_sq": 7.0357839371915665,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.3674702075763746
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.2685649422439378,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.39549955268841924,
+                  "mean_correction_sq": 0.5173750528500789,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.028583358816845077
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21809198964632046,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.013049781043733454,
+                  "mean_correction_sq": 0.013049781043733454,
+                  "correction_nonzero_fraction": 0.8729166666666667,
+                  "residual_displacement_sq": 0.00033570715927926976
+                }
+              },
+              "peak_displacement": [
+                0.4041888805875706,
+                0.34534632872502674,
+                0.4630314324501144
+              ]
+            },
+            "V1.2a": {
+              "healthy_mse": [
+                0.22062626035037902,
+                0.2099456170928823,
+                0.23130690360787576
+              ],
+              "active_mse": [
+                0.308079060229029,
+                0.26612261244057056,
+                0.3500355080174874
+              ],
+              "mse_difference": [
+                0.01247041306257015,
+                -0.0033207535741855906,
+                0.02826157969932589
+              ],
+              "mse_relative": 0.04218554897532467,
+              "after_mse": [
+                0.2176724405966935,
+                0.19648514913273338,
+                0.2388597320606536
+              ],
+              "alarm_before_window_end": 15,
+              "first_packet_danger": 30,
+              "risk_before_alarm": 18,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.2091015460894641,
+                  "mean_alpha": 0.8966965711516367,
+                  "alpha_quantile": [
+                    0.4601717768579666,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0037752601227760973,
+                  "mean_correction_sq": 0.0037752601227760973,
+                  "correction_nonzero_fraction": 0.9107142857142857,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.849193194704301,
+                  "mean_alpha": 0.768915270917923,
+                  "alpha_quantile": [
+                    0.4477242052217216,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 10.808826988020517,
+                  "mean_correction_sq": 1.6464071442609707,
+                  "correction_nonzero_fraction": 0.96875,
+                  "residual_displacement_sq": 0.7020578496491116
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.24795526750955432,
+                  "mean_alpha": 0.6358387493381366,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.14537876080687534,
+                  "mean_correction_sq": 0.06852498791336276,
+                  "correction_nonzero_fraction": 0.8576388888888888,
+                  "residual_displacement_sq": 0.010112212137553228
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.2176724405966935,
+                  "mean_alpha": 0.812069306880782,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.010373340029193302,
+                  "mean_correction_sq": 0.010373340029193302,
+                  "correction_nonzero_fraction": 0.7333333333333333,
+                  "residual_displacement_sq": 0.00037781376216653047
+                }
+              },
+              "peak_displacement": [
+                0.7509636917036725,
+                0.5533326161137235,
+                0.9485947672936215
+              ]
+            },
+            "conditional-MSE": {
+              "healthy_mse": [
+                0.22069188836259956,
+                0.2099275868773544,
+                0.23145618984784472
+              ],
+              "active_mse": [
+                0.2884538993292922,
+                0.2540550656356673,
+                0.3228527330229171
+              ],
+              "mse_difference": [
+                -0.007154747837166581,
+                -0.012381238082458095,
+                -0.0019282575918750664
+              ],
+              "mse_relative": -0.024203445689928493,
+              "after_mse": [
+                0.21791961619921274,
+                0.1963733767060155,
+                0.23946585569240997
+              ],
+              "alarm_before_window_end": 15,
+              "first_packet_danger": 30,
+              "risk_before_alarm": 18,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.2091015460894641,
+                  "mean_alpha": 0.8966965711516367,
+                  "alpha_quantile": [
+                    0.4601717768579666,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0037752601227760973,
+                  "mean_correction_sq": 0.0037752601227760973,
+                  "correction_nonzero_fraction": 0.9107142857142857,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.5390153053493559,
+                  "mean_alpha": 0.96875,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 5.713516175596623,
+                  "mean_correction_sq": 7.035333797863766,
+                  "correction_nonzero_fraction": 0.96875,
+                  "residual_displacement_sq": 0.3676311323031485
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.26061374310484076,
+                  "mean_alpha": 0.7626542036718165,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.3032002135673338,
+                  "mean_correction_sq": 0.42507570907541564,
+                  "correction_nonzero_fraction": 0.84375,
+                  "residual_displacement_sq": 0.021350490212890545
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21791961619921274,
+                  "mean_alpha": 0.8133059890244799,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.012887068630193909,
+                  "mean_correction_sq": 0.012887068630193909,
+                  "correction_nonzero_fraction": 0.7333333333333333,
+                  "residual_displacement_sq": 0.000323927578978668
+                }
+              },
+              "peak_displacement": [
+                0.39390534254258314,
+                0.33437760070923117,
+                0.4534330843759351
+              ]
+            },
+            "V1.3": {
+              "healthy_mse": [
+                0.22071465532338447,
+                0.2099469478247381,
+                0.23148236282203083
+              ],
+              "active_mse": [
+                0.2949332579436479,
+                0.2585302044611884,
+                0.33133631142610737
+              ],
+              "mse_difference": [
+                -0.0006753892228109322,
+                -0.001367433702375945,
+                1.665525675408064e-05
+              ],
+              "mse_relative": -0.0022847410902382403,
+              "after_mse": [
+                0.21792835112720993,
+                0.1963914518320321,
+                0.23946525042238775
+              ],
+              "alarm_before_window_end": 15,
+              "first_packet_danger": 30,
+              "risk_before_alarm": 18,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.20909339215813746,
+                  "mean_alpha": 0.9095982142857143,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.003776707615623514,
+                  "mean_correction_sq": 0.003776707615623514,
+                  "correction_nonzero_fraction": 0.9151785714285714,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.5390181410408338,
+                  "mean_alpha": 0.96875,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 5.713516175596623,
+                  "mean_correction_sq": 7.035333797863766,
+                  "correction_nonzero_fraction": 0.96875,
+                  "residual_displacement_sq": 0.3676245602825781
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.2678127153772939,
+                  "mean_alpha": 0.8984375,
+                  "alpha_quantile": [
+                    0.6750000000000007,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.3927914244986931,
+                  "mean_correction_sq": 0.514666924027108,
+                  "correction_nonzero_fraction": 0.9201388888888888,
+                  "residual_displacement_sq": 0.028257315115561073
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21792835112720996,
+                  "mean_alpha": 0.9182291666666667,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.012926834466607048,
+                  "mean_correction_sq": 0.012926834466607048,
+                  "correction_nonzero_fraction": 0.8,
+                  "residual_displacement_sq": 0.00032967663998182995
+                }
+              },
+              "peak_displacement": [
+                0.404520794068689,
+                0.3456637164881251,
+                0.4633778716492529
+              ],
+              "mse_1pct_margin_point": -0.003631475694475525,
+              "mse_1pct_margin_upper95_t": -0.0030128736008495868,
+              "pre_alarm_simultaneous_upper95": 0.1574059292855846
+            }
+          },
+          "calibration": {
+            "V1a": {
+              "brier": 0.028409757359726503,
+              "ece": 0.02616020040895875,
+              "observed": 0.029141104294478526,
+              "predicted": 0.007321985589022641,
+              "first_packet_predicted": 0.02738702758485052,
+              "first_packet_observed": 0.8947368421052632,
+              "first_eligible_n": 19,
+              "bins": [
+                {
+                  "range": [
+                    0.0,
+                    0.005
+                  ],
+                  "packets": 516,
+                  "episodes": 32,
+                  "predicted": 0.0012373379925174665,
+                  "observed": 0.01937984496124031,
+                  "episode_cluster_interval95": [
+                    0.010815805571362877,
+                    0.02794388435111774
+                  ]
+                },
+                {
+                  "range": [
+                    0.005,
+                    0.02
+                  ],
+                  "packets": 114,
+                  "episodes": 25,
+                  "predicted": 0.008933249683633807,
+                  "observed": 0.043859649122807015,
+                  "episode_cluster_interval95": [
+                    0.012927911512264492,
+                    0.07479138673334954
+                  ]
+                },
+                {
+                  "range": [
+                    0.02,
+                    0.05
+                  ],
+                  "packets": 12,
+                  "episodes": 9,
+                  "predicted": 0.02761376456580113,
+                  "observed": 0.08333333333333333,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.23227517380768392
+                  ]
+                },
+                {
+                  "range": [
+                    0.05,
+                    0.1
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.09289342074134599,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.1,
+                    0.2
+                  ],
+                  "packets": 3,
+                  "episodes": 2,
+                  "predicted": 0.11917323239681737,
+                  "observed": 0.3333333333333333,
+                  "episode_cluster_interval95": [
+                    0.020420984913352147,
+                    0.6462456817533144
+                  ]
+                },
+                {
+                  "range": [
+                    0.2,
+                    0.4
+                  ],
+                  "packets": 3,
+                  "episodes": 2,
+                  "predicted": 0.33766674288249815,
+                  "observed": 0.6666666666666666,
+                  "episode_cluster_interval95": [
+                    0.3537543182466855,
+                    0.9795790150866477
+                  ]
+                },
+                {
+                  "range": [
+                    0.4,
+                    0.6
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.5335349243968728,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.6,
+                    0.8
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.69587086946237,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "V1.3": {
+              "brier": 0.0278363226885959,
+              "ece": 0.025828275165447407,
+              "observed": 0.029141104294478526,
+              "predicted": 0.006194447389688913,
+              "first_packet_predicted": 0.027505497703458958,
+              "first_packet_observed": 0.8947368421052632,
+              "first_eligible_n": 19,
+              "bins": [
+                {
+                  "range": [
+                    0.0,
+                    0.005
+                  ],
+                  "packets": 508,
+                  "episodes": 32,
+                  "predicted": 0.0012423411144693733,
+                  "observed": 0.01968503937007874,
+                  "episode_cluster_interval95": [
+                    0.011012660986712015,
+                    0.028357417753445465
+                  ]
+                },
+                {
+                  "range": [
+                    0.005,
+                    0.02
+                  ],
+                  "packets": 125,
+                  "episodes": 25,
+                  "predicted": 0.008858428532597416,
+                  "observed": 0.04,
+                  "episode_cluster_interval95": [
+                    0.012326057380295276,
+                    0.06767394261970472
+                  ]
+                },
+                {
+                  "range": [
+                    0.02,
+                    0.05
+                  ],
+                  "packets": 10,
+                  "episodes": 9,
+                  "predicted": 0.023562266174599188,
+                  "observed": 0.1,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.26897266814678983
+                  ]
+                },
+                {
+                  "range": [
+                    0.05,
+                    0.1
+                  ],
+                  "packets": 3,
+                  "episodes": 3,
+                  "predicted": 0.08139962830016118,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.1,
+                    0.2
+                  ],
+                  "packets": 2,
+                  "episodes": 1,
+                  "predicted": 0.11385758491808007,
+                  "observed": 0.5,
+                  "episode_cluster_interval95": [
+                    0.5,
+                    0.5
+                  ]
+                },
+                {
+                  "range": [
+                    0.2,
+                    0.4
+                  ],
+                  "packets": 3,
+                  "episodes": 2,
+                  "predicted": 0.29920715359848665,
+                  "observed": 0.6666666666666666,
+                  "episode_cluster_interval95": [
+                    0.3537543182466855,
+                    0.9795790150866477
+                  ]
+                },
+                {
+                  "range": [
+                    0.6,
+                    0.8
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.6952086680739576,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "A1_C_mismatch": {
+          "n": 32,
+          "methods": {
+            "V1a": {
+              "healthy_mse": [
+                0.22076495579500524,
+                0.21002399740487146,
+                0.23150591418513902
+              ],
+              "active_mse": [
+                0.2690597533173682,
+                0.23619678933915483,
+                0.30192271729558157
+              ],
+              "mse_difference": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mse_relative": 0.0,
+              "after_mse": [
+                0.2190950914633205,
+                0.1970527816098549,
+                0.24113740131678613
+              ],
+              "alarm_before_window_end": 4,
+              "first_packet_danger": 32,
+              "risk_before_alarm": 28,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.2089843327948709,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0037899544074697774,
+                  "mean_correction_sq": 0.0037899544074697774,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.4895726784206369,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 4.759787739264249,
+                  "mean_correction_sq": 2.352545827372201,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.30170149587080275
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.24455831719478283,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.10643016371021669,
+                  "mean_correction_sq": 0.09314378834526803,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0076887965038007705
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21909509146332046,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.01739989905037897,
+                  "mean_correction_sq": 0.01739989905037897,
+                  "correction_nonzero_fraction": 0.9875,
+                  "residual_displacement_sq": 9.965220204913854e-05
+                }
+              },
+              "peak_displacement": [
+                0.30814794984980065,
+                0.24780062393088625,
+                0.36849527576871505
+              ]
+            },
+            "V1.2a": {
+              "healthy_mse": [
+                0.22062626035037902,
+                0.2099456170928823,
+                0.23130690360787576
+              ],
+              "active_mse": [
+                0.27761889524891087,
+                0.24298894549388508,
+                0.3122488450039367
+              ],
+              "mse_difference": [
+                0.008559141931542627,
+                -0.0028457693944543613,
+                0.019964053257539617
+              ],
+              "mse_relative": 0.03181130520641928,
+              "after_mse": [
+                0.21853223086055812,
+                0.19692888723431268,
+                0.24013557448680356
+              ],
+              "alarm_before_window_end": 4,
+              "first_packet_danger": 32,
+              "risk_before_alarm": 28,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.2091015460894641,
+                  "mean_alpha": 0.8966965711516367,
+                  "alpha_quantile": [
+                    0.4601717768579666,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0037752601227760973,
+                  "mean_correction_sq": 0.0037752601227760973,
+                  "correction_nonzero_fraction": 0.9107142857142857,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.5991651698305522,
+                  "mean_alpha": 0.8702532538647225,
+                  "alpha_quantile": [
+                    0.4584815725225271,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 6.2672814352928405,
+                  "mean_correction_sq": 0.6850919043036627,
+                  "correction_nonzero_fraction": 0.9375,
+                  "residual_displacement_sq": 0.40500273730458614
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.24189153140650627,
+                  "mean_alpha": 0.7464735160052745,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.026572013643627282,
+                  "mean_correction_sq": 0.012978195606938657,
+                  "correction_nonzero_fraction": 0.8298611111111112,
+                  "residual_displacement_sq": 0.002000359875041314
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21853223086055812,
+                  "mean_alpha": 0.8143929613210849,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.014384329863962592,
+                  "mean_correction_sq": 0.014384329863962592,
+                  "correction_nonzero_fraction": 0.8354166666666667,
+                  "residual_displacement_sq": 0.00013647680103799382
+                }
+              },
+              "peak_displacement": [
+                0.4099837934315097,
+                0.2917249202143414,
+                0.528242666648678
+              ]
+            },
+            "conditional-MSE": {
+              "healthy_mse": [
+                0.22069188836259956,
+                0.2099275868773544,
+                0.23145618984784472
+              ],
+              "active_mse": [
+                0.26829842061689035,
+                0.23607100238784784,
+                0.30052583884593287
+              ],
+              "mse_difference": [
+                -0.0007613327004779161,
+                -0.0025424738914684806,
+                0.0010198084905126484
+              ],
+              "mse_relative": -0.002829604543567066,
+              "after_mse": [
+                0.2188384042425831,
+                0.19680265743761471,
+                0.2408741510475515
+              ],
+              "alarm_before_window_end": 4,
+              "first_packet_danger": 32,
+              "risk_before_alarm": 28,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.2091015460894641,
+                  "mean_alpha": 0.8966965711516367,
+                  "alpha_quantile": [
+                    0.4601717768579666,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0037752601227760973,
+                  "mean_correction_sq": 0.0037752601227760973,
+                  "correction_nonzero_fraction": 0.9107142857142857,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.48929114583140054,
+                  "mean_alpha": 0.9375,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 4.753335892659223,
+                  "mean_correction_sq": 2.3524105330027014,
+                  "correction_nonzero_fraction": 0.9375,
+                  "residual_displacement_sq": 0.3017481836330332
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.24374367337083364,
+                  "mean_alpha": 0.7823460121623245,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.08320251314669098,
+                  "mean_correction_sq": 0.06960870011309292,
+                  "correction_nonzero_fraction": 0.8298611111111112,
+                  "residual_displacement_sq": 0.005913554124419955
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.2188384042425831,
+                  "mean_alpha": 0.8155871241145047,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.017152974066223143,
+                  "mean_correction_sq": 0.017152974066223143,
+                  "correction_nonzero_fraction": 0.8354166666666667,
+                  "residual_displacement_sq": 9.586846751007587e-05
+                }
+              },
+              "peak_displacement": [
+                0.30820105880030857,
+                0.24765145046869125,
+                0.3687506671319259
+              ]
+            },
+            "V1.3": {
+              "healthy_mse": [
+                0.22071465532338447,
+                0.2099469478247381,
+                0.23148236282203083
+              ],
+              "active_mse": [
+                0.2688275338514352,
+                0.23596978958209897,
+                0.30168527812077145
+              ],
+              "mse_difference": [
+                -0.00023221946593298803,
+                -0.0007474257038338071,
+                0.00028298677196783107
+              ],
+              "mse_relative": -0.0008630776735273349,
+              "after_mse": [
+                0.2189051353699456,
+                0.19684632583200729,
+                0.24096394490788392
+              ],
+              "alarm_before_window_end": 4,
+              "first_packet_danger": 32,
+              "risk_before_alarm": 28,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.20909339215813746,
+                  "mean_alpha": 0.9095982142857143,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.003776707615623514,
+                  "mean_correction_sq": 0.003776707615623514,
+                  "correction_nonzero_fraction": 0.9151785714285714,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.4892907750600401,
+                  "mean_alpha": 0.9375,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 4.753335892659223,
+                  "mean_correction_sq": 2.3524105330027014,
+                  "correction_nonzero_fraction": 0.9375,
+                  "residual_displacement_sq": 0.3016584494390473
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.24433161816159027,
+                  "mean_alpha": 0.8220486111111112,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.10565354409122003,
+                  "mean_correction_sq": 0.09205973162411966,
+                  "correction_nonzero_fraction": 0.8472222222222222,
+                  "residual_displacement_sq": 0.007650945917803119
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21890513536994557,
+                  "mean_alpha": 0.8697916666666666,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.01721784515244457,
+                  "mean_correction_sq": 0.01721784515244457,
+                  "correction_nonzero_fraction": 0.8729166666666667,
+                  "residual_displacement_sq": 9.626113861293801e-05
+                }
+              },
+              "peak_displacement": [
+                0.3083098342790454,
+                0.24776376103557785,
+                0.36885590752251296
+              ],
+              "mse_1pct_margin_point": -0.0029228169991066732,
+              "mse_1pct_margin_upper95_t": -0.002410671687781373,
+              "pre_alarm_simultaneous_upper95": 0.1574059292855846
+            }
+          },
+          "calibration": {
+            "V1a": {
+              "brier": 0.02990666099812705,
+              "ece": 0.027336584100123462,
+              "observed": 0.031385281385281384,
+              "predicted": 0.0058006663630259135,
+              "first_packet_predicted": 0.04571382380867624,
+              "first_packet_observed": 1.0,
+              "first_eligible_n": 28,
+              "bins": [
+                {
+                  "range": [
+                    0.0,
+                    0.005
+                  ],
+                  "packets": 714,
+                  "episodes": 32,
+                  "predicted": 0.001199166041833573,
+                  "observed": 0.025210084033613446,
+                  "episode_cluster_interval95": [
+                    0.017309430639501883,
+                    0.03311073742772501
+                  ]
+                },
+                {
+                  "range": [
+                    0.005,
+                    0.02
+                  ],
+                  "packets": 190,
+                  "episodes": 31,
+                  "predicted": 0.009079648839573946,
+                  "observed": 0.03684210526315789,
+                  "episode_cluster_interval95": [
+                    0.013392447547127453,
+                    0.060291762979188326
+                  ]
+                },
+                {
+                  "range": [
+                    0.02,
+                    0.05
+                  ],
+                  "packets": 11,
+                  "episodes": 8,
+                  "predicted": 0.02351965476645845,
+                  "observed": 0.18181818181818182,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.40626906332793383
+                  ]
+                },
+                {
+                  "range": [
+                    0.05,
+                    0.1
+                  ],
+                  "packets": 4,
+                  "episodes": 2,
+                  "predicted": 0.07923263076536337,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.1,
+                    0.2
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.13544490297612088,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.4,
+                    0.6
+                  ],
+                  "packets": 3,
+                  "episodes": 2,
+                  "predicted": 0.4523447626458115,
+                  "observed": 0.3333333333333333,
+                  "episode_cluster_interval95": [
+                    0.020420984913352147,
+                    0.6462456817533144
+                  ]
+                },
+                {
+                  "range": [
+                    0.6,
+                    0.8
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.7103519696416718,
+                  "observed": 1.0,
+                  "episode_cluster_interval95": [
+                    1.0,
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "V1.3": {
+              "brier": 0.029870412157275202,
+              "ece": 0.02684728495199035,
+              "observed": 0.031385281385281384,
+              "predicted": 0.00567453857162195,
+              "first_packet_predicted": 0.04576836873342306,
+              "first_packet_observed": 1.0,
+              "first_eligible_n": 28,
+              "bins": [
+                {
+                  "range": [
+                    0.0,
+                    0.005
+                  ],
+                  "packets": 708,
+                  "episodes": 32,
+                  "predicted": 0.0012471650300899357,
+                  "observed": 0.025423728813559324,
+                  "episode_cluster_interval95": [
+                    0.017404949127800017,
+                    0.03344250849931863
+                  ]
+                },
+                {
+                  "range": [
+                    0.005,
+                    0.02
+                  ],
+                  "packets": 198,
+                  "episodes": 31,
+                  "predicted": 0.009318865790276147,
+                  "observed": 0.03535353535353535,
+                  "episode_cluster_interval95": [
+                    0.012715202515057332,
+                    0.05799186819201337
+                  ]
+                },
+                {
+                  "range": [
+                    0.02,
+                    0.05
+                  ],
+                  "packets": 12,
+                  "episodes": 9,
+                  "predicted": 0.023309244570814677,
+                  "observed": 0.16666666666666666,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.37363873068678294
+                  ]
+                },
+                {
+                  "range": [
+                    0.05,
+                    0.1
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.08402612069636545,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.4,
+                    0.6
+                  ],
+                  "packets": 3,
+                  "episodes": 2,
+                  "predicted": 0.4523434088387169,
+                  "observed": 0.3333333333333333,
+                  "episode_cluster_interval95": [
+                    0.020420984913352147,
+                    0.6462456817533144
+                  ]
+                },
+                {
+                  "range": [
+                    0.6,
+                    0.8
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.7103519696416718,
+                  "observed": 1.0,
+                  "episode_cluster_interval95": [
+                    1.0,
+                    1.0
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "seconds_batch": 1.648360799998045
+    },
+    "stable": {
+      "profiles": {
+        "healthy": {
+          "n": 32,
+          "methods": {
+            "V1a": {
+              "healthy_mse": [
+                0.21716140672572365,
+                0.20425707386860945,
+                0.23006573958283785
+              ],
+              "active_mse": [
+                0.22216186432625123,
+                0.19280720083370986,
+                0.2515165278187926
+              ],
+              "mse_difference": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mse_relative": 0.0,
+              "after_mse": [
+                0.21176857816898617,
+                0.19174038235350288,
+                0.23179677398446946
+              ],
+              "alarm_before_window_end": 0,
+              "first_packet_danger": 0,
+              "risk_before_alarm": 0,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.22157395706083596,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.019047383685731594,
+                  "mean_correction_sq": 0.019047383685731594,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.2577193271481397,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.023005915362809985,
+                  "mean_correction_sq": 0.023005915362809985,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.21821103512381917,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0030461545903965833,
+                  "mean_correction_sq": 0.0030461545903965833,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21176857816898617,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0024301809694514177,
+                  "mean_correction_sq": 0.0024301809694514177,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0
+                }
+              },
+              "peak_displacement": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "V1.2a": {
+              "healthy_mse": [
+                0.21692371251179443,
+                0.20407585452522575,
+                0.2297715704983631
+              ],
+              "active_mse": [
+                0.22163248841389904,
+                0.19249183124365388,
+                0.2507731455841442
+              ],
+              "mse_difference": [
+                -0.0005293759123521941,
+                -0.0017076423749706176,
+                0.0006488905502662293
+              ],
+              "mse_relative": -0.0023828388097013598,
+              "after_mse": [
+                0.21180036387982742,
+                0.19175275906999117,
+                0.23184796868966367
+              ],
+              "alarm_before_window_end": 0,
+              "first_packet_danger": 0,
+              "risk_before_alarm": 0,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.2211754940058599,
+                  "mean_alpha": 0.9162991802573938,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.009220349019549174,
+                  "mean_correction_sq": 0.009220349019549174,
+                  "correction_nonzero_fraction": 0.9241071428571429,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.257312181366885,
+                  "mean_alpha": 0.7447491146709463,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.004661224717435762,
+                  "mean_correction_sq": 0.004661224717435762,
+                  "correction_nonzero_fraction": 0.84375,
+                  "residual_displacement_sq": 0.0
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.2176680780857895,
+                  "mean_alpha": 0.8259461901070889,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.002019191313119972,
+                  "mean_correction_sq": 0.002019191313119972,
+                  "correction_nonzero_fraction": 0.8402777777777778,
+                  "residual_displacement_sq": 0.0
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21180036387982742,
+                  "mean_alpha": 0.8410834132726526,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.002371762848266129,
+                  "mean_correction_sq": 0.002371762848266129,
+                  "correction_nonzero_fraction": 0.8541666666666666,
+                  "residual_displacement_sq": 0.0
+                }
+              },
+              "peak_displacement": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "conditional-MSE": {
+              "healthy_mse": [
+                0.21707860320560465,
+                0.20420124463204659,
+                0.22995596177916272
+              ],
+              "active_mse": [
+                0.22187451471632944,
+                0.19264050398864263,
+                0.25110852544401624
+              ],
+              "mse_difference": [
+                -0.0002873496099217981,
+                -0.0009746422874801447,
+                0.00039994306763654853
+              ],
+              "mse_relative": -0.0012934245523786858,
+              "after_mse": [
+                0.21180036387981307,
+                0.19175275906997263,
+                0.23184796868965352
+              ],
+              "alarm_before_window_end": 0,
+              "first_packet_danger": 0,
+              "risk_before_alarm": 0,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.22153781388840832,
+                  "mean_alpha": 0.9178844147012664,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.01900529885492904,
+                  "mean_correction_sq": 0.01900529885492904,
+                  "correction_nonzero_fraction": 0.9241071428571429,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.257994417291274,
+                  "mean_alpha": 0.7629074557676848,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.02291521102088124,
+                  "mean_correction_sq": 0.02291521102088124,
+                  "correction_nonzero_fraction": 0.84375,
+                  "residual_displacement_sq": 0.0
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.2178611922080023,
+                  "mean_alpha": 0.827244250663759,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0024537461877784444,
+                  "mean_correction_sq": 0.0024537461877784444,
+                  "correction_nonzero_fraction": 0.8402777777777778,
+                  "residual_displacement_sq": 0.0
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21180036387981307,
+                  "mean_alpha": 0.8410834132726541,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.002371762848266129,
+                  "mean_correction_sq": 0.002371762848266129,
+                  "correction_nonzero_fraction": 0.8541666666666666,
+                  "residual_displacement_sq": 0.0
+                }
+              },
+              "peak_displacement": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "V1.3": {
+              "healthy_mse": [
+                0.21707346996778865,
+                0.20419829191733455,
+                0.22994864801824275
+              ],
+              "active_mse": [
+                0.22184365597574335,
+                0.19262164999770057,
+                0.2510656619537861
+              ],
+              "mse_difference": [
+                -0.0003182083505079208,
+                -0.0010713994088216044,
+                0.0004349827078057628
+              ],
+              "mse_relative": -0.001432326612278434,
+              "after_mse": [
+                0.2118096306484939,
+                0.19176345032753617,
+                0.23185581096945163
+              ],
+              "alarm_before_window_end": 0,
+              "first_packet_danger": 0,
+              "risk_before_alarm": 0,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.22153857421205644,
+                  "mean_alpha": 0.9274553571428571,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.019022681313097894,
+                  "mean_correction_sq": 0.019022681313097894,
+                  "correction_nonzero_fraction": 0.9330357142857143,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.2577110888600292,
+                  "mean_alpha": 0.765625,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.013231527128089803,
+                  "mean_correction_sq": 0.013231527128089803,
+                  "correction_nonzero_fraction": 0.84375,
+                  "residual_displacement_sq": 0.0
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.2178583856552671,
+                  "mean_alpha": 0.8324652777777778,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.002485373347432053,
+                  "mean_correction_sq": 0.002485373347432053,
+                  "correction_nonzero_fraction": 0.8402777777777778,
+                  "residual_displacement_sq": 0.0
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.2118096306484939,
+                  "mean_alpha": 0.8536458333333333,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0023736516486060665,
+                  "mean_correction_sq": 0.0023736516486060665,
+                  "correction_nonzero_fraction": 0.8645833333333334,
+                  "residual_displacement_sq": 0.0
+                }
+              },
+              "peak_displacement": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "calibration": {
+            "V1a": {
+              "brier": 0.0012209050605863,
+              "ece": 0.00713570425007241,
+              "observed": 0.0,
+              "predicted": 0.00713570425007241,
+              "first_packet_predicted": 0.025618023805536638,
+              "first_packet_observed": 0.0,
+              "first_eligible_n": 32,
+              "bins": [
+                {
+                  "range": [
+                    0.0,
+                    0.005
+                  ],
+                  "packets": 684,
+                  "episodes": 32,
+                  "predicted": 0.0024780422971624884,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.005,
+                    0.02
+                  ],
+                  "packets": 297,
+                  "episodes": 32,
+                  "predicted": 0.009369461623489434,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.02,
+                    0.05
+                  ],
+                  "packets": 40,
+                  "episodes": 22,
+                  "predicted": 0.02629558054281539,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.2,
+                    0.4
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.3034814325064889,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.6,
+                    0.8
+                  ],
+                  "packets": 2,
+                  "episodes": 1,
+                  "predicted": 0.7369727322097697,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "V1.3": {
+              "brier": 0.000765610413039443,
+              "ece": 0.0065036508136351295,
+              "observed": 0.0,
+              "predicted": 0.0065036508136351295,
+              "first_packet_predicted": 0.013498486966094219,
+              "first_packet_observed": 0.0,
+              "first_eligible_n": 32,
+              "bins": [
+                {
+                  "range": [
+                    0.0,
+                    0.005
+                  ],
+                  "packets": 682,
+                  "episodes": 32,
+                  "predicted": 0.002518053852383222,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.005,
+                    0.02
+                  ],
+                  "packets": 300,
+                  "episodes": 32,
+                  "predicted": 0.00936280214420447,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.02,
+                    0.05
+                  ],
+                  "packets": 40,
+                  "episodes": 22,
+                  "predicted": 0.026276365657567673,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.2,
+                    0.4
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.28262055949123854,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.6,
+                    0.8
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.7999098767817289,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "A1_H_mismatch": {
+          "n": 32,
+          "methods": {
+            "V1a": {
+              "healthy_mse": [
+                0.21716140672572365,
+                0.20425707386860945,
+                0.23006573958283785
+              ],
+              "active_mse": [
+                0.2538712132762091,
+                0.221589055454476,
+                0.2861533710979422
+              ],
+              "mse_difference": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mse_relative": 0.0,
+              "after_mse": [
+                0.21202579958078746,
+                0.19198347165918372,
+                0.2320681275023912
+              ],
+              "alarm_before_window_end": 10,
+              "first_packet_danger": 22,
+              "risk_before_alarm": 21,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.22157395706083596,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.019047383685731594,
+                  "mean_correction_sq": 0.019047383685731594,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.3743312172793647,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 2.6041924544153887,
+                  "mean_correction_sq": 7.487015946268587,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.1689347998959709
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.2404867683869695,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.3339965717477877,
+                  "mean_correction_sq": 0.5729437161693024,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.024923484358516695
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21202579958078746,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0021446972633554677,
+                  "mean_correction_sq": 0.0021446972633554677,
+                  "correction_nonzero_fraction": 0.8666666666666667,
+                  "residual_displacement_sq": 6.851548614056433e-05
+                }
+              },
+              "peak_displacement": [
+                0.28313507019522277,
+                0.19462089618549103,
+                0.3716492442049545
+              ]
+            },
+            "V1.2a": {
+              "healthy_mse": [
+                0.21692371251179443,
+                0.20407585452522575,
+                0.2297715704983631
+              ],
+              "active_mse": [
+                0.2754532310830567,
+                0.23560920320820675,
+                0.3152972589579066
+              ],
+              "mse_difference": [
+                0.021582017806847632,
+                0.0032870829209715527,
+                0.03987695269272371
+              ],
+              "mse_relative": 0.08501167788317376,
+              "after_mse": [
+                0.21198605536855697,
+                0.19193151149445692,
+                0.23204059924265702
+              ],
+              "alarm_before_window_end": 10,
+              "first_packet_danger": 27,
+              "risk_before_alarm": 21,
+              "paired_first": {
+                "difference": 0.15625,
+                "only_new": 5,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.08379967299236134,
+                  0.35259355796636044
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.2211754940058599,
+                  "mean_alpha": 0.9162991802573938,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.009220349019549174,
+                  "mean_correction_sq": 0.009220349019549174,
+                  "correction_nonzero_fraction": 0.9241071428571429,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.5677498986263434,
+                  "mean_alpha": 0.828126598395637,
+                  "alpha_quantile": [
+                    0.38961431652609774,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 6.188654883121587,
+                  "mean_correction_sq": 1.2546228157820583,
+                  "correction_nonzero_fraction": 0.96875,
+                  "residual_displacement_sq": 0.39694942024554997
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.24297582357824707,
+                  "mean_alpha": 0.7379196886797327,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.38004249132766166,
+                  "mean_correction_sq": 0.051904869986763885,
+                  "correction_nonzero_fraction": 0.8611111111111112,
+                  "residual_displacement_sq": 0.027190020118189717
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.211986055368557,
+                  "mean_alpha": 0.7556348907957141,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0018642342574165939,
+                  "mean_correction_sq": 0.0018642342574165939,
+                  "correction_nonzero_fraction": 0.7416666666666667,
+                  "residual_displacement_sq": 4.920578179256256e-05
+                }
+              },
+              "peak_displacement": [
+                0.5900709772946134,
+                0.26858611917824643,
+                0.9115558354109805
+              ]
+            },
+            "conditional-MSE": {
+              "healthy_mse": [
+                0.21707860320560465,
+                0.20420124463204659,
+                0.22995596177916272
+              ],
+              "active_mse": [
+                0.2504715209929994,
+                0.21884535635075134,
+                0.28209768563524745
+              ],
+              "mse_difference": [
+                -0.0033996922832097215,
+                -0.006223094003154572,
+                -0.0005762905632648711
+              ],
+              "mse_relative": -0.013391405190595007,
+              "after_mse": [
+                0.21200848001047798,
+                0.19195653253621286,
+                0.2320604274847431
+              ],
+              "alarm_before_window_end": 10,
+              "first_packet_danger": 22,
+              "risk_before_alarm": 21,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.22153781388840832,
+                  "mean_alpha": 0.9178844147012664,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.01900529885492904,
+                  "mean_correction_sq": 0.01900529885492904,
+                  "correction_nonzero_fraction": 0.9241071428571429,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.3742678559792383,
+                  "mean_alpha": 0.96875,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 2.604965600903289,
+                  "mean_correction_sq": 7.486997737677804,
+                  "correction_nonzero_fraction": 0.96875,
+                  "residual_displacement_sq": 0.16923618738140503
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.23671637266119502,
+                  "mean_alpha": 0.8179647689250102,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.27649847359220253,
+                  "mean_correction_sq": 0.515445615627061,
+                  "correction_nonzero_fraction": 0.8611111111111112,
+                  "residual_displacement_sq": 0.020287491331153113
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21200848001047798,
+                  "mean_alpha": 0.7559048916690762,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0019235445898366636,
+                  "mean_correction_sq": 0.0019235445898366636,
+                  "correction_nonzero_fraction": 0.7416666666666667,
+                  "residual_displacement_sq": 5.5207650767500036e-05
+                }
+              },
+              "peak_displacement": [
+                0.2636151185572503,
+                0.1910999590407401,
+                0.3361302780737605
+              ]
+            },
+            "V1.3": {
+              "healthy_mse": [
+                0.21707346996778865,
+                0.20419829191733455,
+                0.22994864801824275
+              ],
+              "active_mse": [
+                0.253947301755867,
+                0.22172186058548427,
+                0.2861727429262497
+              ],
+              "mse_difference": [
+                7.60884796579017e-05,
+                -0.00023027842323169393,
+                0.00038245538254749734
+              ],
+              "mse_relative": 0.00029971290827335295,
+              "after_mse": [
+                0.21204711981415766,
+                0.19199895733769928,
+                0.23209528229061605
+              ],
+              "alarm_before_window_end": 10,
+              "first_packet_danger": 22,
+              "risk_before_alarm": 21,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.22153857421205644,
+                  "mean_alpha": 0.9274553571428571,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.019022681313097894,
+                  "mean_correction_sq": 0.019022681313097894,
+                  "correction_nonzero_fraction": 0.9330357142857143,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.37426819820787405,
+                  "mean_alpha": 0.96875,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 2.604965600903289,
+                  "mean_correction_sq": 7.486997737677804,
+                  "correction_nonzero_fraction": 0.96875,
+                  "residual_displacement_sq": 0.1697363188732598
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.24057831326119952,
+                  "mean_alpha": 0.8758680555555556,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.3326055341829996,
+                  "mean_correction_sq": 0.5715526785986298,
+                  "correction_nonzero_fraction": 0.8854166666666666,
+                  "residual_displacement_sq": 0.02455218073600067
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.2120471198141577,
+                  "mean_alpha": 0.8890625,
+                  "alpha_quantile": [
+                    0.22500000000000142,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0020949101746408193,
+                  "mean_correction_sq": 0.0020949101746408193,
+                  "correction_nonzero_fraction": 0.7666666666666667,
+                  "residual_displacement_sq": 6.836253151485418e-05
+                }
+              },
+              "peak_displacement": [
+                0.2815872847962226,
+                0.19406642189090084,
+                0.3691081477015443
+              ],
+              "mse_1pct_margin_point": -0.0024626236531041902,
+              "mse_1pct_margin_upper95_t": -0.0020591052805057756,
+              "pre_alarm_simultaneous_upper95": 0.1574059292855846
+            }
+          },
+          "calibration": {
+            "V1a": {
+              "brier": 0.027732706966294072,
+              "ece": 0.02345662915117199,
+              "observed": 0.0280970625798212,
+              "predicted": 0.009326905041862829,
+              "first_packet_predicted": 0.0717061546769522,
+              "first_packet_observed": 0.8,
+              "first_eligible_n": 25,
+              "bins": [
+                {
+                  "range": [
+                    0.0,
+                    0.005
+                  ],
+                  "packets": 515,
+                  "episodes": 32,
+                  "predicted": 0.002486099477571511,
+                  "observed": 0.013592233009708738,
+                  "episode_cluster_interval95": [
+                    0.0049262038868850885,
+                    0.02225826213253239
+                  ]
+                },
+                {
+                  "range": [
+                    0.005,
+                    0.02
+                  ],
+                  "packets": 225,
+                  "episodes": 31,
+                  "predicted": 0.00933583312571799,
+                  "observed": 0.02666666666666667,
+                  "episode_cluster_interval95": [
+                    0.00940136413682216,
+                    0.04393196919651118
+                  ]
+                },
+                {
+                  "range": [
+                    0.02,
+                    0.05
+                  ],
+                  "packets": 33,
+                  "episodes": 19,
+                  "predicted": 0.026257160705032645,
+                  "observed": 0.18181818181818182,
+                  "episode_cluster_interval95": [
+                    0.06806126405745322,
+                    0.2955750995789104
+                  ]
+                },
+                {
+                  "range": [
+                    0.05,
+                    0.1
+                  ],
+                  "packets": 3,
+                  "episodes": 3,
+                  "predicted": 0.06721254260005516,
+                  "observed": 0.3333333333333333,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.8753134191124357
+                  ]
+                },
+                {
+                  "range": [
+                    0.1,
+                    0.2
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.13455255801533972,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.2,
+                    0.4
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.2940394586284198,
+                  "observed": 0.5,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.4,
+                    0.6
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.4311064786465068,
+                  "observed": 1.0,
+                  "episode_cluster_interval95": [
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.6,
+                    0.8
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.7828242602712259,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "V1.3": {
+              "brier": 0.027573314360069778,
+              "ece": 0.02374897500415001,
+              "observed": 0.0280970625798212,
+              "predicted": 0.008904079027087926,
+              "first_packet_predicted": 0.07178024062373457,
+              "first_packet_observed": 0.8,
+              "first_eligible_n": 25,
+              "bins": [
+                {
+                  "range": [
+                    0.0,
+                    0.005
+                  ],
+                  "packets": 512,
+                  "episodes": 32,
+                  "predicted": 0.002517821925208129,
+                  "observed": 0.013671875,
+                  "episode_cluster_interval95": [
+                    0.004963488047907593,
+                    0.022380261952092407
+                  ]
+                },
+                {
+                  "range": [
+                    0.005,
+                    0.02
+                  ],
+                  "packets": 228,
+                  "episodes": 31,
+                  "predicted": 0.009292214097714446,
+                  "observed": 0.02631578947368421,
+                  "episode_cluster_interval95": [
+                    0.00920211050980254,
+                    0.04342946843756588
+                  ]
+                },
+                {
+                  "range": [
+                    0.02,
+                    0.05
+                  ],
+                  "packets": 34,
+                  "episodes": 20,
+                  "predicted": 0.026297267974234536,
+                  "observed": 0.17647058823529413,
+                  "episode_cluster_interval95": [
+                    0.06547108071233516,
+                    0.2874700957582531
+                  ]
+                },
+                {
+                  "range": [
+                    0.05,
+                    0.1
+                  ],
+                  "packets": 3,
+                  "episodes": 3,
+                  "predicted": 0.06721254210457524,
+                  "observed": 0.3333333333333333,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.8753134191124357
+                  ]
+                },
+                {
+                  "range": [
+                    0.1,
+                    0.2
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.10901106634359964,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.2,
+                    0.4
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.2536223689105338,
+                  "observed": 1.0,
+                  "episode_cluster_interval95": [
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.4,
+                    0.6
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.4311064786465068,
+                  "observed": 1.0,
+                  "episode_cluster_interval95": [
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.6,
+                    0.8
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.7828242602712259,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "A1_C_mismatch": {
+          "n": 32,
+          "methods": {
+            "V1a": {
+              "healthy_mse": [
+                0.21716140672572365,
+                0.20425707386860945,
+                0.23006573958283785
+              ],
+              "active_mse": [
+                0.2434361778313822,
+                0.21032969725890457,
+                0.2765426584038598
+              ],
+              "mse_difference": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mse_relative": 0.0,
+              "after_mse": [
+                0.2118019209908008,
+                0.1917504905030157,
+                0.2318533514785859
+              ],
+              "alarm_before_window_end": 1,
+              "first_packet_danger": 30,
+              "risk_before_alarm": 31,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.22157395706083596,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.019047383685731594,
+                  "mean_correction_sq": 0.019047383685731594,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.4784297099762871,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 3.192141245236896,
+                  "mean_correction_sq": 1.2814661028325154,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.21053926714239635
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.21732578537083722,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.048029665356541434,
+                  "mean_correction_sq": 0.017662545164697716,
+                  "correction_nonzero_fraction": 1.0,
+                  "residual_displacement_sq": 0.0032106790604653837
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21180192099080083,
+                  "mean_alpha": 1.0,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0021669467030503422,
+                  "mean_correction_sq": 0.0021669467030503422,
+                  "correction_nonzero_fraction": 0.96875,
+                  "residual_displacement_sq": 5.890267294954647e-06
+                }
+              },
+              "peak_displacement": [
+                0.21578463143525922,
+                0.1892017509653701,
+                0.24236751190514835
+              ]
+            },
+            "V1.2a": {
+              "healthy_mse": [
+                0.21692371251179443,
+                0.20407585452522575,
+                0.2297715704983631
+              ],
+              "active_mse": [
+                0.24429839164959594,
+                0.21156586925530502,
+                0.27703091404388686
+              ],
+              "mse_difference": [
+                0.0008622138182137113,
+                -0.001901468224636992,
+                0.0036258958610644147
+              ],
+              "mse_relative": 0.0035418475014463713,
+              "after_mse": [
+                0.21181105107384343,
+                0.1917458040332714,
+                0.23187629811441546
+              ],
+              "alarm_before_window_end": 1,
+              "first_packet_danger": 30,
+              "risk_before_alarm": 31,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.2211754940058599,
+                  "mean_alpha": 0.9162991802573938,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.009220349019549174,
+                  "mean_correction_sq": 0.009220349019549174,
+                  "correction_nonzero_fraction": 0.9241071428571429,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.4918929115115851,
+                  "mean_alpha": 0.9335593116440157,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 3.6861894395088317,
+                  "mean_correction_sq": 0.2996473494046727,
+                  "correction_nonzero_fraction": 0.96875,
+                  "residual_displacement_sq": 0.24465814247309448
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.21678788944270824,
+                  "mean_alpha": 0.821883632201622,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.04093112481946236,
+                  "mean_correction_sq": 0.010736046831298508,
+                  "correction_nonzero_fraction": 0.8541666666666666,
+                  "residual_displacement_sq": 0.002765668755922006
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21181105107384343,
+                  "mean_alpha": 0.8149707224978626,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.002112220306724533,
+                  "mean_correction_sq": 0.002112220306724533,
+                  "correction_nonzero_fraction": 0.825,
+                  "residual_displacement_sq": 5.8087268569050445e-06
+                }
+              },
+              "peak_displacement": [
+                0.24941863585838497,
+                0.18539120256716934,
+                0.3134460691496006
+              ]
+            },
+            "conditional-MSE": {
+              "healthy_mse": [
+                0.21707860320560465,
+                0.20420124463204659,
+                0.22995596177916272
+              ],
+              "active_mse": [
+                0.24289299482249727,
+                0.20989654534353896,
+                0.27588944430145557
+              ],
+              "mse_difference": [
+                -0.0005431830088849245,
+                -0.001217720899499052,
+                0.00013135488172920297
+              ],
+              "mse_relative": -0.0022313158780415954,
+              "after_mse": [
+                0.21181104985937965,
+                0.19174580288675638,
+                0.23187629683200292
+              ],
+              "alarm_before_window_end": 1,
+              "first_packet_danger": 30,
+              "risk_before_alarm": 31,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.22153781388840832,
+                  "mean_alpha": 0.9178844147012664,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.01900529885492904,
+                  "mean_correction_sq": 0.01900529885492904,
+                  "correction_nonzero_fraction": 0.9241071428571429,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.4773989406534618,
+                  "mean_alpha": 0.954730280203651,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 3.175886443335531,
+                  "mean_correction_sq": 1.2785378038378956,
+                  "correction_nonzero_fraction": 0.96875,
+                  "residual_displacement_sq": 0.21046012105264467
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.21683677861905679,
+                  "mean_alpha": 0.8260094579147796,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.04624332699366324,
+                  "mean_correction_sq": 0.016061416662309886,
+                  "correction_nonzero_fraction": 0.8541666666666666,
+                  "residual_displacement_sq": 0.003109956648907386
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21181104985937968,
+                  "mean_alpha": 0.8149707224978626,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.002112220306724533,
+                  "mean_correction_sq": 0.002112220306724533,
+                  "correction_nonzero_fraction": 0.825,
+                  "residual_displacement_sq": 5.808708309159039e-06
+                }
+              },
+              "peak_displacement": [
+                0.21533279569712227,
+                0.18824490634052204,
+                0.2424206850537225
+              ]
+            },
+            "V1.3": {
+              "healthy_mse": [
+                0.21707346996778865,
+                0.20419829191733455,
+                0.22994864801824275
+              ],
+              "active_mse": [
+                0.24315008643104824,
+                0.21022080744816032,
+                0.2760793654139362
+              ],
+              "mse_difference": [
+                -0.0002860914003339748,
+                -0.0008835262026198,
+                0.00031134340195185044
+              ],
+              "mse_relative": -0.0011752213778681853,
+              "after_mse": [
+                0.21181917614618886,
+                0.19175633734782385,
+                0.23188201494455388
+              ],
+              "alarm_before_window_end": 1,
+              "first_packet_danger": 30,
+              "risk_before_alarm": 31,
+              "paired_first": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "paired_risk": {
+                "difference": 0.0,
+                "only_new": 0,
+                "only_reference": 0,
+                "exact_interval": [
+                  -0.12797599984079655,
+                  0.12797599984079655
+                ],
+                "tail_per_sign": 0.025
+              },
+              "phases": {
+                "pre": {
+                  "n": 224,
+                  "mse": 0.22153857421205644,
+                  "mean_alpha": 0.9274553571428571,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.019022681313097894,
+                  "mean_correction_sq": 0.019022681313097894,
+                  "correction_nonzero_fraction": 0.9330357142857143,
+                  "residual_displacement_sq": 0.0
+                },
+                "first": {
+                  "n": 32,
+                  "mse": 0.4772972143749398,
+                  "mean_alpha": 0.953125,
+                  "alpha_quantile": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 3.1740137135673,
+                  "mean_correction_sq": 1.278311177614935,
+                  "correction_nonzero_fraction": 0.96875,
+                  "residual_displacement_sq": 0.21110739947941035
+                },
+                "active_later": {
+                  "n": 288,
+                  "mse": 0.21713373888172693,
+                  "mean_alpha": 0.8420138888888888,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.04722802176147454,
+                  "mean_correction_sq": 0.017053035195577645,
+                  "correction_nonzero_fraction": 0.8611111111111112,
+                  "residual_displacement_sq": 0.003187582038410422
+                },
+                "after": {
+                  "n": 480,
+                  "mse": 0.21181917614618886,
+                  "mean_alpha": 0.8546875,
+                  "alpha_quantile": [
+                    0.0,
+                    1.0,
+                    1.0
+                  ],
+                  "uncompensated_direction_sq": 0.0021140178417532463,
+                  "mean_correction_sq": 0.0021140178417532463,
+                  "correction_nonzero_fraction": 0.8354166666666667,
+                  "residual_displacement_sq": 5.814711643290476e-06
+                }
+              },
+              "peak_displacement": [
+                0.21635276325253727,
+                0.18975358133978174,
+                0.2429519451652928
+              ],
+              "mse_1pct_margin_point": -0.002720453178647797,
+              "mse_1pct_margin_upper95_t": -0.0020834542374243478,
+              "pre_alarm_simultaneous_upper95": 0.1574059292855846
+            }
+          },
+          "calibration": {
+            "V1a": {
+              "brier": 0.03055156485586246,
+              "ece": 0.02546782702580258,
+              "observed": 0.03203203203203203,
+              "predicted": 0.009148794613658048,
+              "first_packet_predicted": 0.05483432640330956,
+              "first_packet_observed": 0.9354838709677419,
+              "first_eligible_n": 31,
+              "bins": [
+                {
+                  "range": [
+                    0.0,
+                    0.005
+                  ],
+                  "packets": 662,
+                  "episodes": 32,
+                  "predicted": 0.002490730739755148,
+                  "observed": 0.021148036253776436,
+                  "episode_cluster_interval95": [
+                    0.013298887084480826,
+                    0.028997185423072044
+                  ]
+                },
+                {
+                  "range": [
+                    0.005,
+                    0.02
+                  ],
+                  "packets": 284,
+                  "episodes": 32,
+                  "predicted": 0.009586700208193705,
+                  "observed": 0.035211267605633804,
+                  "episode_cluster_interval95": [
+                    0.018378122011490423,
+                    0.052044413199777186
+                  ]
+                },
+                {
+                  "range": [
+                    0.02,
+                    0.05
+                  ],
+                  "packets": 43,
+                  "episodes": 24,
+                  "predicted": 0.026290208501863845,
+                  "observed": 0.11627906976744186,
+                  "episode_cluster_interval95": [
+                    0.021773225761944473,
+                    0.21078491377293923
+                  ]
+                },
+                {
+                  "range": [
+                    0.05,
+                    0.1
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.08823385470285365,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.1,
+                    0.2
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.1500686706593236,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.2,
+                    0.4
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.34667773570873883,
+                  "observed": 1.0,
+                  "episode_cluster_interval95": [
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.4,
+                    0.6
+                  ],
+                  "packets": 4,
+                  "episodes": 2,
+                  "predicted": 0.503621895351125,
+                  "observed": 0.5,
+                  "episode_cluster_interval95": [
+                    0.14797360802752124,
+                    0.8520263919724788
+                  ]
+                },
+                {
+                  "range": [
+                    0.6,
+                    0.8
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.7999098767817289,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "V1.3": {
+              "brier": 0.0308941216006807,
+              "ece": 0.025969837298398964,
+              "observed": 0.03203203203203203,
+              "predicted": 0.008273810258687215,
+              "first_packet_predicted": 0.04379231705875737,
+              "first_packet_observed": 0.9354838709677419,
+              "first_eligible_n": 31,
+              "bins": [
+                {
+                  "range": [
+                    0.0,
+                    0.005
+                  ],
+                  "packets": 660,
+                  "episodes": 32,
+                  "predicted": 0.0025252167921438,
+                  "observed": 0.022727272727272728,
+                  "episode_cluster_interval95": [
+                    0.014866752597976448,
+                    0.030587792856569006
+                  ]
+                },
+                {
+                  "range": [
+                    0.005,
+                    0.02
+                  ],
+                  "packets": 288,
+                  "episodes": 32,
+                  "predicted": 0.00956381645574745,
+                  "observed": 0.034722222222222224,
+                  "episode_cluster_interval95": [
+                    0.018167139121574936,
+                    0.05127730532286951
+                  ]
+                },
+                {
+                  "range": [
+                    0.02,
+                    0.05
+                  ],
+                  "packets": 44,
+                  "episodes": 24,
+                  "predicted": 0.026564181346581207,
+                  "observed": 0.11363636363636363,
+                  "episode_cluster_interval95": [
+                    0.02094849935291425,
+                    0.20632422791981303
+                  ]
+                },
+                {
+                  "range": [
+                    0.05,
+                    0.1
+                  ],
+                  "packets": 2,
+                  "episodes": 2,
+                  "predicted": 0.08154834627749091,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.1,
+                    0.2
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.14169538542783428,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                },
+                {
+                  "range": [
+                    0.4,
+                    0.6
+                  ],
+                  "packets": 3,
+                  "episodes": 2,
+                  "predicted": 0.5236627641147457,
+                  "observed": 0.6666666666666666,
+                  "episode_cluster_interval95": [
+                    0.3537543182466855,
+                    0.9795790150866477
+                  ]
+                },
+                {
+                  "range": [
+                    0.6,
+                    0.8
+                  ],
+                  "packets": 1,
+                  "episodes": 1,
+                  "predicted": 0.7999098767817289,
+                  "observed": 0.0,
+                  "episode_cluster_interval95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "seconds_batch": 1.7441956999973627
+    }
+  },
+  "frozen_policy_sha256": "7723444d6678082b85c969f32b27f3af3389a8c9fcfcdbd1ecf289c1c962d132"
+}
