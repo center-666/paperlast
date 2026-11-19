@@ -1,0 +1,829 @@
+diff --git a/JFI_defensive_offline_validation/onset_diagnostics.py b/JFI_defensive_offline_validation/onset_diagnostics.py
+new file mode 100644
+--- /dev/null
++++ b/JFI_defensive_offline_validation/onset_diagnostics.py
+@@ -0,0 +1,144 @@
++"""Defensive observation traces and post-run A0 identification scoring."""
++
++import numpy as np
++from scipy.special import expit, logit
++
++from paired_analysis import finite_mean
++from risk_metrics import first_crossing
++
++
++def capture_posterior(observer, observations):
++    """Capture original V1 values from receiver inputs; no evaluation labels enter."""
++    model = observer.prepared
++    settings = model.settings
++    n, horizon = len(observations), settings.horizon
++    weights = np.empty((n, horizon, horizon + 1))
++    component_mean = np.zeros((n, horizon, horizon, model.m))
++    delta = np.empty((n, horizon, model.m))
++    log_bf = np.empty((n, horizon))
++    p_active = np.empty_like(log_bf)
++    p_null = logit(settings.no_event_prior)
++    for k in range(horizon):
++        frame = observer.at(observations, k)
++        weights[:, k, 0] = expit(p_null - frame.log_bf)
++        weights[:, k, 1:k + 2] = frame.posterior_weights
++        weights[:, k, k + 2:] = (
++            weights[:, k, :1] * (1 - settings.no_event_prior)
++            / (horizon * settings.no_event_prior)
++        )
++        component_mean[:, k, :k + 1] = (frame.transfer @ frame.posterior_coef[..., None])[..., 0]
++        delta[:, k] = frame.delta
++        p_active[:, k] = frame.probability_active
++        log_bf[:, k] = frame.log_bf
++    np.testing.assert_allclose(weights.sum(axis=2), 1, rtol=0, atol=2e-12)
++    np.testing.assert_allclose(np.sum(weights[:, :, 1:, None] * component_mean, axis=2),
++                               delta, rtol=1e-11, atol=1e-12)
++    return dict(weights=weights, component_mean=component_mean, delta=delta,
++                p_active=p_active, log_bf=log_bf)
++
++
++def diagnose_a0(trace, healthy, decoded_truth, metrics, gain, path_ids, duration):
++    """The saved onset and decoded distortion are scoring targets after replay."""
++    ev = metrics.events
++    n, horizon, _ = trace["delta"].shape
++    starts = np.arange(horizon)
++    ticks = starts[None, :]
++    active = (ticks >= ev.onset[:, None]) & (ticks < ev.stop[:, None])
++    can_be_active = (ticks.T >= starts) & (ticks.T < starts + duration)
++    observed_weights = trace["weights"][:, :, 1:]
++    map_active = np.where(can_be_active, observed_weights, -np.inf).argmax(axis=2)
++    rows = np.arange(n)[:, None]
++    p_truth = observed_weights[rows, ticks, ev.onset[:, None]]
++    true_mean = trace["component_mean"][rows, ticks, ev.onset[:, None]]
++    p_active = trace["p_active"]
++    if np.any(p_active[active] <= 0):
++        raise ValueError("The archived active mass must be positive for this diagnostic.")
++    normalized = np.divide(trace["delta"], p_active[..., None],
++                           out=np.zeros_like(trace["delta"]), where=p_active[..., None] > 0)
++    p_truth_given_active = np.divide(p_truth, p_active, out=np.zeros_like(p_truth),
++                                     where=active)
++    components = {
++        "inactive_probability_mass": trace["delta"] - normalized,
++        "onset_mixture_given_active": normalized - true_mean,
++        "fit_with_frozen_true_onset": true_mean - decoded_truth,
++    }
++    error = trace["delta"] - decoded_truth
++    np.testing.assert_allclose(sum(components.values()), error, atol=1e-12)
++    sse = np.sum(error ** 2, axis=-1)
++    component_squares = {name: np.sum(vec ** 2, axis=-1) for name, vec in components.items()}
++    total_cross = sse - sum(component_squares.values())
++    mixture_gap = np.sum((trace["delta"] - true_mean) ** 2, axis=-1)
++    mixture_cross = sse - mixture_gap - component_squares["fit_with_frozen_true_onset"]
++
++    raw = np.sum((decoded_truth @ gain.T) ** 2, axis=-1)
++    paired_correction = trace["delta"] - healthy["delta"]
++    residual = np.sum(((decoded_truth - paired_correction) @ gain.T) ** 2, axis=-1)
++    first_effect = first_crossing(active & (raw - residual > 1e-12))
++    first_half = first_crossing(active & (raw > 1e-12) & (residual <= 0.5 * raw))
++    first_posterior = first_crossing(active & (p_active >= 0.5))
++    onset_packet = ticks == ev.onset[:, None]
++    dangerous_tick = active & (ticks == ev.danger[:, None])
++    phases = {
++        "first_packet": onset_packet,
++        "later_support": active & ~onset_packet,
++        "whole_support": active,
++        "first_danger_in_support": dangerous_tick,
++    }
++    grouped = {}
++    for name, mask in phases.items():
++        grouped[name] = {
++            "packet_count": int(mask.sum()),
++            "no_event_probability": finite_mean(trace["weights"][:, :, 0][mask]),
++            "active_probability": finite_mean(p_active[mask]),
++            "true_onset_probability": finite_mean(p_truth[mask]),
++            "true_onset_given_active": finite_mean(p_truth_given_active[mask]),
++            "active_map_correct": finite_mean((map_active == ev.onset[:, None])[mask]),
++            "decoded_squared_error": finite_mean(sse[mask]),
++            "mixture_gap_squared": finite_mean(mixture_gap[mask]),
++            "mixture_and_true_onset_cross_term": finite_mean(mixture_cross[mask]),
++            **{f"{key}_squared": finite_mean(values[mask])
++               for key, values in component_squares.items()},
++            "all_three_cross_terms": finite_mean(total_cross[mask]),
++        }
++    pre_active = ev.before & (ev.danger < ev.stop)
++    summary = {
++        "phases": grouped,
++        "healthy_mean_no_event_probability": finite_mean(healthy["weights"][:, :, 0]),
++        "paired_update_first_packet_improves": int(np.sum(first_effect == ev.onset)),
++        "paired_update_first_packet_halves_residual": int(np.sum(first_half == ev.onset)),
++        "paired_update_ever_improves_in_support": int(np.sum(first_effect < horizon)),
++        "paired_update_ever_halves_residual_in_support": int(np.sum(first_half < horizon)),
++        "strict_pre_alarm_dangers_in_support": int(pre_active.sum()),
++        "strict_pre_alarm_before_first_improving_compensation": int(
++            np.sum(pre_active & (ev.danger < first_effect))
++        ),
++        "strict_pre_alarm_before_half_residual": int(np.sum(pre_active & (ev.danger < first_half))),
++        "strict_pre_alarm_before_active_probability_half": int(
++            np.sum(pre_active & (ev.danger < first_posterior))
++        ),
++    }
++    per_path = []
++    for i, path_id in enumerate(path_ids):
++        record = {"path_id": int(path_id), "true_onset": int(ev.onset[i])}
++        for name, times in (("first_danger", ev.danger), ("first_alarm", ev.alarm),
++                            ("first_improving_compensation", first_effect),
++                            ("first_half_residual", first_half),
++                            ("first_active_probability_at_least_half", first_posterior)):
++            record[name] = int(times[i]) if times[i] < horizon else None
++        record["support"] = [
++            {
++                "tick": int(k),
++                "p_no_event": float(trace["weights"][i, k, 0]),
++                "p_active": float(p_active[i, k]),
++                "p_true_onset": float(p_truth[i, k]),
++                "p_true_onset_given_active": float(p_truth_given_active[i, k]),
++                "active_map_onset": int(map_active[i, k]),
++                "decoded_squared_error": float(sse[i, k]),
++                "true_onset_fit_squared_error": float(component_squares["fit_with_frozen_true_onset"][i, k]),
++                "paired_update_residual_squared": float(residual[i, k]),
++                "uncompensated_update_squared": float(raw[i, k]),
++            }
++            for k in np.flatnonzero(active[i])
++        ]
++        per_path.append(record)
++    return summary, per_path
+diff --git a/JFI_defensive_offline_validation/paired_analysis.py b/JFI_defensive_offline_validation/paired_analysis.py
+new file mode 100644
+--- /dev/null
++++ b/JFI_defensive_offline_validation/paired_analysis.py
+@@ -0,0 +1,98 @@
++"""Path-aligned defender comparisons with censoring retained."""
++
++from itertools import combinations
++
++import numpy as np
++from scipy.stats import beta
++
++
++def paired_risk(candidate, reference, confidence=0.95):
++    """Bonferroni difference of two exact binomial intervals for discordant pairs."""
++    candidate, reference = map(np.asarray, (candidate, reference))
++    if (candidate.ndim != 1 or candidate.shape != reference.shape or not candidate.size
++            or candidate.dtype != np.bool_ or reference.dtype != np.bool_
++            or not 0 < confidence < 1):
++        raise ValueError("Expected nonempty paired Boolean risks and a valid confidence level.")
++    n = len(candidate)
++    only_candidate = int(np.sum(candidate & ~reference))
++    only_reference = int(np.sum(reference & ~candidate))
++    tail = (1 - confidence) / 4
++
++    def limits(count):
++        lo = beta.ppf(tail, count, n - count + 1) if count else 0.0
++        hi = beta.ppf(1 - tail, count + 1, n - count) if count < n else 1.0
++        return float(lo), float(hi)
++
++    cl, cu = limits(only_candidate)
++    rl, ru = limits(only_reference)
++    return {
++        "n": n,
++        "only_candidate": only_candidate,
++        "only_reference": only_reference,
++        "both": int(np.sum(candidate & reference)),
++        "neither": int(np.sum(~candidate & ~reference)),
++        "difference": (only_candidate - only_reference) / n,
++        "confidence": confidence,
++        "interval": [cl - ru, cu - rl],
++    }
++
++
++def finite_mean(values):
++    valid = np.asarray(values)[np.isfinite(values)]
++    return float(valid.mean()) if valid.size else None
++
++
++def defender_comparison(methods):
++    summary = {}
++    for name, row in methods.items():
++        n = len(row.events.danger)
++        counts = row.events.counts()
++        summary[name] = {
++            "n": n,
++            "event_counts": counts,
++            "strict_pre_alarm_rate": counts["before_alarm"] / n,
++            "first_packet_rate": counts["first_packet"] / n,
++            "healthy_mse": finite_mean(row.healthy_mse),
++            "support_mse": finite_mean(row.support_mse),
++            "tail_mse": finite_mean(row.tail_mse),
++        }
++        if row.full_mse is not None:
++            summary[name]["full_mse"] = finite_mean(row.full_mse)
++
++    pairs = {}
++    for reference, candidate in combinations(methods, 2):
++        a, b = methods[candidate], methods[reference]
++        np.testing.assert_array_equal(a.events.alarm, b.events.alarm)
++        np.testing.assert_array_equal(a.events.onset, b.events.onset)
++        np.testing.assert_array_equal(a.events.stop, b.events.stop)
++        pairs[f"{candidate} - {reference}"] = {
++            "before_alarm": paired_risk(a.events.before, b.events.before),
++            "first_packet": paired_risk(a.events.first_packet, b.events.first_packet),
++            "support_mse_difference": finite_mean(a.support_mse - b.support_mse),
++            "tail_mse_difference": finite_mean(a.tail_mse - b.tail_mse),
++            "healthy_mse_difference": finite_mean(a.healthy_mse - b.healthy_mse),
++        }
++    return {"methods": summary, "paired_differences": pairs}
++
++
++def v1a_tradeoff(v1a, saturation, path_ids):
++    """Identify which archived paths favor either receiver under both criteria."""
++    ids = np.asarray(path_ids)
++    diff = v1a.support_mse - saturation.support_mse
++    if ids.shape != diff.shape or not np.all(np.isfinite(diff)):
++        raise ValueError("Expected identities and active MSE from the same paired trajectories.")
++    v_risk, s_risk = v1a.events.before, saturation.events.before
++    v_safer, s_safer = ~v_risk & s_risk, v_risk & ~s_risk
++    v_accurate, s_accurate = diff < -1e-12, diff > 1e-12
++    groups = {
++        "v1a_only_avoids_pre_alarm_danger": v_safer,
++        "saturation_only_avoids_pre_alarm_danger": s_safer,
++        "v1a_lower_support_mse": v_accurate,
++        "saturation_lower_support_mse": s_accurate,
++        "v1a_pareto_improves": (~s_safer & ~s_accurate) & (v_safer | v_accurate),
++        "saturation_pareto_improves": (~v_safer & ~v_accurate) & (s_safer | s_accurate),
++        "v1a_lower_mse_but_saturation_safer": v_accurate & s_safer,
++        "saturation_lower_mse_but_v1a_safer": s_accurate & v_safer,
++    }
++    return {key: {"count": int(mask.sum()), "path_ids": ids[mask].tolist()}
++            for key, mask in groups.items()}
+diff --git a/JFI_defensive_offline_validation/replay_evaluator.py b/JFI_defensive_offline_validation/replay_evaluator.py
+new file mode 100644
+--- /dev/null
++++ b/JFI_defensive_offline_validation/replay_evaluator.py
+@@ -0,0 +1,282 @@
++"""Re-run frozen receivers on saved synthetic observations and score paired outputs."""
++
++import argparse
++from hashlib import sha256
++from importlib import import_module
++import json
++from pathlib import Path
++import sys
++
++import numpy as np
++
++from onset_diagnostics import capture_posterior, diagnose_a0
++from paired_analysis import defender_comparison, v1a_tradeoff
++from risk_metrics import BF_THRESHOLD, DANGER_SQUARED, PathMetrics, events_from_times, score_estimates
++
++
++HERE = Path(__file__).resolve().parent
++BASELINE = "0beb3edace40d514d1969cde205eba3f3b2272be"
++MODELS = ("unstable", "stable")
++METHODS = ("V0", "V1a", "V1.2a", "V1.4", "anchor@2%")
++PROFILES = ("A0", "A1_H_mismatch", "A1_C_mismatch")
++
++REFERENCE = Path("common_g_reference_revision_20261115")
++MODEL = REFERENCE / "inputs/five_node_aggregate_model.json"
++V1 = Path("JFI_reconstruction_attack_aware_soft_accommodation_V1")
++V11 = Path("JFI_V11_soft_weight_reconstruction_20261118")
++FRONTIER = Path("JFI_secure_estimation_accuracy_safety_frontier")
++OBSERVATIONS = Path("attack_gain_switch_audit_20261115/screen_arrays.npz")
++
++
++def read_json(path):
++    return json.loads(path.read_text(encoding="utf-8"))
++
++
++def verify_inputs(base):
++    manifest = read_json(HERE / "frozen_inputs_sha256.json")
++    if manifest["baseline"] != BASELINE:
++        raise ValueError("Unexpected baseline registration.")
++    for path, expected in manifest["files"].items():
++        data = (base / path).read_bytes()
++        if Path(path).suffix in (".py", ".json"):
++            data = data.replace(b"\r\n", b"\n")
++        if sha256(data).hexdigest() != expected:
++            raise ValueError(f"Frozen input changed: {path}")
++    return manifest
++
++
++def load_receiver_modules(base):
++    """Resolve the existing estimator and its original observation model."""
++    paths = sys.path[:]
++    sys.dont_write_bytecode = True
++    sys.path[:0] = [str(base / folder) for folder in (FRONTIER, REFERENCE)]
++    try:
++        receiver = import_module("receiver")
++        common = import_module("common_g_reference")
++        evidence = import_module("accommodation")
++    finally:
++        sys.path[:] = paths
++    for module, folder in ((receiver, FRONTIER), (common, REFERENCE), (evidence, V1)):
++        expected = base / folder / f"{module.__name__}.py"
++        if Path(module.__file__).resolve() != expected:
++            raise ValueError(f"Wrong frozen module for {module.__name__}.")
++    return receiver, common, evidence
++
++
++def saved_sensor_inputs(base, name, settings, path_ids):
++    with np.load(base / OBSERVATIONS, allow_pickle=False) as bank:
++        measurements = bank[f"{name}__physical__y"][path_ids]
++        decoders = bank[f"{name}__M_target"][path_ids]
++    local = measurements[:, :, settings.receiver]
++    neighbor = measurements[:, :, settings.healthy]
++    trusted = np.concatenate((local, neighbor), axis=2)
++    target = measurements[:, :, settings.target]
++    for array in (trusted, target, decoders):
++        if not np.all(np.isfinite(array)):
++            raise ValueError("Nonfinite saved sensor input.")
++        array.flags.writeable = False
++    return trusted, target, decoders
++
++
++def compare_replay_with_log(run, trace, saved, profile, legacy_policies):
++    checks = {}
++    pairs = {
++        "log_bf": (run.log_bf, saved[f"{profile}__log_bf"]),
++        "observer_log_bf": (trace["log_bf"], run.log_bf),
++        "posterior_weights": (trace["weights"], saved[f"{profile}__onset_weights"]),
++        "estimated_distortion": (trace["delta"], saved[f"{profile}__delta_hat"]),
++    }
++    for method in ("V0", "V1a"):
++        pairs[method] = (run.post[:, METHODS.index(method)],
++                         saved[f"{profile}__post"][:, legacy_policies.index(method)])
++    for label, (actual, expected) in pairs.items():
++        np.testing.assert_allclose(actual, expected, rtol=2e-10, atol=2e-11,
++                                   err_msg=f"{profile}: {label}")
++        checks[label] = float(np.max(np.abs(actual - expected)))
++    np.testing.assert_array_equal(run.log_bf >= np.log(BF_THRESHOLD),
++                                  saved[f"{profile}__common_alarm"])
++    return checks
++
++
++def path_rows(row, path_ids):
++    ev = row.events
++
++    def stamp(times, index):
++        return int(times[index]) if times[index] < ev.horizon else None
++
++    return [
++        {
++            "path_id": int(label),
++            "first_alarm": stamp(ev.alarm, i),
++            "first_danger": stamp(ev.danger, i),
++            "strictly_before_alarm": bool(ev.before[i]),
++            "first_packet_danger": bool(ev.first_packet[i]),
++            "healthy_mse": float(row.healthy_mse[i]),
++            "active_mse": float(row.support_mse[i]),
++            "after_stop_mse": float(row.tail_mse[i]),
++        }
++        for i, label in enumerate(path_ids)
++    ]
++
++
++def replay_model(base, name, settings, spec, table, receiver, common, evidence):
++    prepared = evidence.PreparedModel(common.load_model(name, base / MODEL), settings)
++    observer = receiver.BatchedObserver(prepared)
++    path_ids = spec["samples"]["physical_indices"]
++    trusted, target, decoder = saved_sensor_inputs(base, name, settings, path_ids)
++    legacy = read_json(base / V11 / "phase1_results/ablation.json")["policies"]
++    start = np.full(len(path_ids), spec["evaluation_onset"])
++    stop = start + settings.template_duration
++    if stop.max() >= settings.horizon:
++        raise ValueError("A tail segment is required for these registered A0 records.")
++
++    clean_obs = receiver.Observations(trusted, target, decoder)
++    clean = receiver.run_receiver(prepared, clean_obs, table)
++    clean_trace = capture_posterior(observer, clean_obs)
++    cases, checks, detail = {}, {}, {}
++    filename = base / V11 / f"phase1_results/{name}_step_logs.npz"
++    with np.load(filename, allow_pickle=False) as saved:
++        checks["healthy"] = compare_replay_with_log(clean, clean_trace, saved, "healthy", legacy)
++        with np.load(base / OBSERVATIONS, allow_pickle=False) as bank:
++            truth = bank[f"{name}__physical__x"][path_ids]
++        np.testing.assert_array_equal(truth, saved["healthy__state_truth"])
++        for profile in PROFILES:
++            # Assemble the recorded decoded quantity from its separately saved terms.
++            recorded_change = saved[f"{profile}__decoded_difference"]
++            received = target + recorded_change
++            received.flags.writeable = False
++            obs = receiver.Observations(trusted, received, decoder)
++            run = receiver.run_receiver(prepared, obs, table)
++            trace = capture_posterior(observer, obs)
++            checks[profile] = compare_replay_with_log(run, trace, saved, profile, legacy)
++            np.testing.assert_array_equal(truth, saved[f"{profile}__state_truth"])
++            np.testing.assert_allclose(run.post[:, :, :start[0]], clean.post[:, :, :start[0]],
++                                       rtol=0, atol=2e-12)
++
++            metrics = {
++                method: score_estimates(run.post[:, j], clean.post[:, j], truth, run.log_bf, start, stop)
++                for j, method in enumerate(METHODS)
++            }
++            cases[profile] = defender_comparison(metrics)
++            if profile == "A0":
++                cases[profile]["v1a_vs_state_saturation"] = v1a_tradeoff(
++                    metrics["V1a"], metrics["anchor@2%"], path_ids
++                )
++                diagnosis, paths = diagnose_a0(
++                    trace, clean_trace, recorded_change, metrics["V1a"],
++                    prepared.model.G[settings.receiver], path_ids, settings.template_duration
++                )
++                cases[profile]["onset_diagnostics"] = diagnosis
++                detail["identified_paths"] = paths
++                detail["methods"] = {method: path_rows(result, path_ids)
++                                     for method, result in metrics.items()}
++
++    return {
++        "physical_path_ids": path_ids,
++        "source": "Archived decoded receiver inputs and V11 phase-1 reference logs",
++        "recorded_onset": int(start[0]),
++        "recorded_stop_exclusive": int(stop[0]),
++        "healthy_alarm_count": int(np.sum((clean.log_bf >= np.log(BF_THRESHOLD)).any(axis=1))),
++        "frozen_log_comparison_max_abs": checks,
++        "cases": cases,
++    }, detail
++
++
++def stored_comparison(base, name, columns, horizon, fixed_onset):
++    """Audit saved holdout outcomes whose raw input arrays were not retained."""
++    cases = {}
++    report = (
++        ("A0_fixed_onset", "unknown_start"),
++        ("A0_all_three_onsets", "unknown_start"),
++        ("A1_H_offline_mismatch", "A1_H_replay"),
++        ("A1_C_offline_mismatch", "A1_C_replay"),
++    )
++    with np.load(base / FRONTIER / f"results/{name}_paired.npz", allow_pickle=False) as saved:
++        for label, profile in report:
++            onset = saved[f"{profile}__onset"]
++            stop = saved[f"{profile}__stop"]
++            if np.any(stop - onset != 10):
++                raise ValueError("The requested holdout profile is not ten ticks.")
++            chosen = onset == fixed_onset if label == "A0_fixed_onset" else np.ones(len(onset), dtype=bool)
++            alarm = saved[f"{profile}__first_alarm"][chosen]
++            selected = np.ix_(chosen, columns)
++            danger = saved[f"{profile}__first_danger"][selected]
++            first_packet = saved[f"{profile}__first_packet"][selected]
++            before = saved[f"{profile}__pre_alarm"][selected]
++            active = saved[f"{profile}__active_mean_mse"][selected]
++            after = saved[f"{profile}__tail_mean_mse"][selected]
++            healthy = saved[f"{profile}__health_mean_mse"][selected]
++            np.testing.assert_array_equal(healthy, saved["healthy__health_mean_mse"][selected])
++            np.testing.assert_array_equal(danger < horizon,
++                                          saved[f"{profile}__peak_paired_squared"][selected] >= DANGER_SQUARED)
++            metrics = {}
++            for j, method in enumerate(METHODS):
++                events = events_from_times(danger[:, j], alarm, onset[chosen], stop[chosen], horizon)
++                np.testing.assert_array_equal(events.before, before[:, j])
++                np.testing.assert_array_equal(events.first_packet, first_packet[:, j])
++                metrics[method] = PathMetrics(events, healthy[:, j], active[:, j], after[:, j])
++            cases[label] = defender_comparison(metrics)
++            cases[label]["archived_profile"] = profile
++            cases[label]["recorded_onsets"] = np.unique(onset[chosen]).tolist()
++            if label.startswith("A0"):
++                cases[label]["v1a_vs_state_saturation"] = v1a_tradeoff(
++                    metrics["V1a"], metrics["anchor@2%"], np.flatnonzero(chosen)
++                )
++    return cases
++
++
++def evaluate(base):
++    base = Path(base).resolve()
++    receipt = verify_inputs(base)
++    receiver, common, evidence = load_receiver_modules(base)
++    spec = read_json(base / V1 / "registration.json")
++    settings = evidence.Settings.from_registration(spec)
++    if (settings.horizon, settings.template_duration, settings.event_false_alarm, spec["danger_squared"]) != (
++            32, 10, 1 / BF_THRESHOLD, DANGER_SQUARED):
++        raise ValueError("Unexpected registered detector, danger threshold or window.")
++    frozen = read_json(base / FRONTIER / "results/comparison.json")["models"]
++    report = {
++        "baseline": BASELINE,
++        "settings": {"horizon": settings.horizon, "attack_duration": settings.template_duration,
++                     "bf_threshold": BF_THRESHOLD, "danger_squared": DANGER_SQUARED},
++        "verified_frozen_files": len(receipt["files"]),
++        "models": {},
++    }
++    details = {"timestamp_indexing": "0-based; null is right-censored at 32", "models": {}}
++    for name in MODELS:
++        config = frozen[name]["method_table"]
++        names = [item["name"] for item in config]
++        columns = [names.index(method) for method in METHODS]
++        table = tuple(receiver.Method(**config[j]) for j in columns)
++        replay, detail = replay_model(base, name, settings, spec, table, receiver, common, evidence)
++        archive = stored_comparison(base, name, columns, settings.horizon, spec["evaluation_onset"])
++        report["models"][name] = {"receiver_replay": replay, "saved_holdout_outcomes": archive}
++        details["models"][name] = detail
++    verify_inputs(base)
++    return report, details
++
++
++def write_json(path, value):
++    path.write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + "\n",
++                    encoding="utf-8", newline="\n")
++
++
++def main():
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument("--baseline", type=Path, default=HERE.parent,
++                        help="Root of the full frozen research tree")
++    args = parser.parse_args()
++    result, details = evaluate(args.baseline)
++    output = HERE / "results"
++    output.mkdir(exist_ok=True)
++    write_json(output / "summary.json", result)
++    write_json(output / "a0_replay_paths.json", details)
++    for name, model in result["models"].items():
++        rows = model["receiver_replay"]["cases"]["A0"]["methods"]
++        counts = ", ".join(f"{m}: {r['event_counts']['before_alarm']}/{r['n']}"
++                           for m, r in rows.items())
++        print(f"{name} A0 strict pre-alarm danger from receiver replay: {counts}")
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/JFI_defensive_offline_validation/risk_metrics.py b/JFI_defensive_offline_validation/risk_metrics.py
+new file mode 100644
+--- /dev/null
++++ b/JFI_defensive_offline_validation/risk_metrics.py
+@@ -0,0 +1,123 @@
++"""Finite-horizon receiver events and paired state-error measurements."""
++
++from dataclasses import dataclass
++
++import numpy as np
++
++
++DANGER_SQUARED = 0.1
++BF_THRESHOLD = 20.0
++
++
++def first_crossing(flags):
++    """A time equal to the number of ticks denotes right censoring."""
++    flags = np.asarray(flags)
++    if flags.dtype != np.bool_ or flags.ndim != 2 or not flags.shape[1]:
++        raise ValueError("Expected a Boolean paths-by-ticks array.")
++    horizon = flags.shape[1]
++    return np.min(np.where(flags, np.arange(horizon), horizon), axis=1)
++
++
++@dataclass(frozen=True)
++class Events:
++    danger: np.ndarray
++    alarm: np.ndarray
++    onset: np.ndarray
++    stop: np.ndarray
++    horizon: int
++
++    @property
++    def observed(self):
++        return self.danger < self.horizon
++
++    @property
++    def before(self):
++        return self.observed & (self.danger < self.alarm)
++
++    @property
++    def first_packet(self):
++        return self.observed & (self.danger == self.onset)
++
++    def counts(self):
++        observed_alarm = self.alarm < self.horizon
++        both = self.observed & observed_alarm
++        flags = {
++            "any_danger": self.observed,
++            "before_alarm": self.before,
++            "same_tick": both & (self.danger == self.alarm),
++            "after_alarm": both & (self.danger > self.alarm),
++            "first_packet": self.first_packet,
++            "first_packet_before_alarm": self.first_packet & self.before,
++            "danger_alarm_censored": self.observed & ~observed_alarm,
++            "alarm_danger_censored": observed_alarm & ~self.observed,
++            "both_censored": ~self.observed & ~observed_alarm,
++            "alarm_observed": observed_alarm,
++            "alarm_before_onset": observed_alarm & (self.alarm < self.onset),
++            "first_danger_at_or_after_stop": self.observed & (self.danger >= self.stop),
++        }
++        return {name: int(flag.sum()) for name, flag in flags.items()}
++
++
++def events_from_times(danger, alarm, onset, stop, horizon):
++    times = tuple(np.asarray(values) for values in (danger, alarm, onset, stop))
++    shape = times[0].shape
++    if len(shape) != 1 or not shape[0] or horizon < 1:
++        raise ValueError("At least one finite-horizon path is required.")
++    for values in times:
++        if (values.shape != shape or not np.issubdtype(values.dtype, np.integer)
++                or np.any((values < 0) | (values > horizon))):
++            raise ValueError("Event and support times must be aligned integer indices.")
++    danger, alarm, onset, stop = times
++    if np.any(onset > stop) or np.any(danger < onset):
++        raise ValueError("Invalid support or a difference before the recorded onset.")
++    return Events(danger, alarm, onset, stop, horizon)
++
++
++def masked_mean(values, mask):
++    counts = mask.sum(axis=1)
++    return np.divide(
++        np.where(mask, values, 0.0).sum(axis=1),
++        counts,
++        out=np.full(len(values), np.nan),
++        where=counts > 0,
++    )
++
++
++@dataclass(frozen=True)
++class PathMetrics:
++    events: Events
++    healthy_mse: np.ndarray
++    support_mse: np.ndarray
++    tail_mse: np.ndarray
++    full_mse: np.ndarray | None = None
++
++
++def score_estimates(attacked_post, healthy_post, truth, log_bf, onset, stop):
++    """Score two completed closed loops using the same saved physical truth."""
++    attacked_post, healthy_post, truth = map(np.asarray, (attacked_post, healthy_post, truth))
++    if (attacked_post.ndim != 3 or attacked_post.shape != healthy_post.shape
++            or attacked_post.shape != truth.shape or not attacked_post.shape[-1]):
++        raise ValueError("Expected aligned paths-by-ticks-by-state estimates.")
++    if not all(np.all(np.isfinite(x)) for x in (attacked_post, healthy_post, truth)):
++        raise ValueError("Estimates and truth must be finite.")
++    log_bf = np.asarray(log_bf)
++    if log_bf.shape != attacked_post.shape[:2] or np.any(np.isnan(log_bf)):
++        raise ValueError("The original BF must have one observed score per tick and path.")
++    paired_squared = np.sum((attacked_post - healthy_post) ** 2, axis=-1)
++    horizon = paired_squared.shape[1]
++    events = events_from_times(
++        first_crossing(paired_squared >= DANGER_SQUARED),
++        first_crossing(log_bf >= np.log(BF_THRESHOLD)),
++        onset, stop, horizon,
++    )
++    ticks = np.arange(horizon)[None, :]
++    support = (ticks >= events.onset[:, None]) & (ticks < events.stop[:, None])
++    tail = ticks >= events.stop[:, None]
++    squared_errors = np.sum((attacked_post - truth) ** 2, axis=-1)
++    return PathMetrics(
++        events,
++        np.sum((healthy_post - truth) ** 2, axis=-1).mean(axis=1),
++        masked_mean(squared_errors, support),
++        masked_mean(squared_errors, tail),
++        squared_errors.mean(axis=1),
++    )
+diff --git a/JFI_defensive_offline_validation/test_evaluator.py b/JFI_defensive_offline_validation/test_evaluator.py
+new file mode 100644
+--- /dev/null
++++ b/JFI_defensive_offline_validation/test_evaluator.py
+@@ -0,0 +1,157 @@
++"""Defensive timing, score, and archived receiver regression tests."""
++
++from pathlib import Path
++from tempfile import TemporaryDirectory
++import unittest
++from unittest.mock import patch
++
++import numpy as np
++
++from paired_analysis import paired_risk
++from replay_evaluator import HERE, METHODS, evaluate, load_receiver_modules, verify_inputs
++from risk_metrics import events_from_times, score_estimates
++
++
++class TimingTests(unittest.TestCase):
++    def test_censored_alarms_do_not_drop_danger(self):
++        events = events_from_times(
++            np.array([8, 9, 10, 32, 32, 7]),
++            np.array([32, 9, 6, 32, 12, 7]),
++            np.full(6, 7),
++            np.full(6, 17),
++            32,
++        )
++        counts = events.counts()
++        self.assertEqual(counts["any_danger"], 4)
++        self.assertEqual(counts["before_alarm"], 1)
++        self.assertEqual(counts["same_tick"], 2)
++        self.assertEqual(counts["after_alarm"], 1)
++        self.assertEqual(counts["first_packet"], 1)
++        self.assertEqual(counts["first_packet_before_alarm"], 0)
++        self.assertEqual(counts["danger_alarm_censored"], 1)
++        self.assertEqual(counts["alarm_danger_censored"], 1)
++        self.assertEqual(counts["both_censored"], 1)
++
++    def test_thresholds_are_inclusive_and_same_tick_is_not_strict(self):
++        nominal = np.zeros((1, 2, 2))
++        observed = nominal.copy()
++        observed[0, 1, 0] = np.sqrt(0.1)
++        row = score_estimates(observed, nominal, nominal,
++                              np.log(np.array([[1.0, 20.0]])), [1], [2])
++        self.assertEqual(row.events.counts()["same_tick"], 1)
++        self.assertEqual(row.events.counts()["before_alarm"], 0)
++        self.assertEqual(row.events.counts()["first_packet"], 1)
++        self.assertTrue(np.isnan(row.tail_mse[0]))
++
++    def test_true_state_mse_and_stop_tick_in_tail(self):
++        truth = np.zeros((1, 4, 2))
++        healthy = np.array([[[0.1, 0.0], [0.2, 0.0], [0.2, 0.0], [0.0, 0.1]]])
++        observed = np.array([[[0.1, 0.0], [0.3, 0.1], [0.0, 0.2], [0.4, 0.3]]])
++        row = score_estimates(observed, healthy, truth,
++                              np.log(np.array([[1.0, 20.0, 1.0, 1.0]])), [1], [3])
++        np.testing.assert_allclose(row.support_mse, [0.07])
++        np.testing.assert_allclose(row.tail_mse, [0.25])
++        np.testing.assert_allclose(row.healthy_mse, [0.025])
++        np.testing.assert_allclose(row.full_mse, [0.1])
++        self.assertEqual(row.events.counts()["first_danger_at_or_after_stop"], 1)
++        self.assertEqual(row.events.counts()["after_alarm"], 1)
++
++    def test_inconsistent_episode_times_fail(self):
++        with self.assertRaises(ValueError):
++            events_from_times([6], [18], [7], [17], 32)
++
++
++class PairedTests(unittest.TestCase):
++    def test_paired_discordance_and_difference_direction(self):
++        a = np.array([True, True, False, False])
++        b = np.array([False, False, True, False])
++        result, reversed_result = paired_risk(a, b), paired_risk(b, a)
++        self.assertEqual(result["only_candidate"], 2)
++        self.assertEqual(result["only_reference"], 1)
++        self.assertEqual(result["difference"], 0.25)
++        self.assertLessEqual(result["interval"][0], result["difference"])
++        self.assertGreaterEqual(result["interval"][1], result["difference"])
++        np.testing.assert_allclose(result["interval"], -np.array(reversed_result["interval"])[::-1])
++
++    def test_identical_zero_observations_keep_interval_uncertainty(self):
++        empty_events = np.zeros(12, dtype=bool)
++        result = paired_risk(empty_events, empty_events)
++        self.assertEqual(result["difference"], 0)
++        self.assertLess(result["interval"][0], 0)
++        self.assertGreater(result["interval"][1], 0)
++
++
++class FrozenInputTests(unittest.TestCase):
++    def test_changed_input_is_rejected_before_loading_receiver(self):
++        files = verify_inputs(HERE.parent)["files"]
++        with TemporaryDirectory() as directory:
++            root = Path(directory)
++            path = root / next(iter(files))
++            path.parent.mkdir(parents=True)
++            path.write_bytes(b"wrong snapshot")
++            with self.assertRaisesRegex(ValueError, "Frozen input changed"):
++                verify_inputs(root)
++
++
++class ReceiverReplayTests(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls):
++        base = HERE.parent
++        verify_inputs(base)
++        receiver, _, _ = load_receiver_modules(base)
++        cls.calls = []
++        run = receiver.run_receiver
++
++        def inspect_inputs(prepared, observation, table):
++            cls.calls.append((len(observation), tuple(item.name for item in table),
++                              set(vars(observation)), all(not a.flags.writeable
++                                                         for a in vars(observation).values())))
++            return run(prepared, observation, table)
++
++        with patch.object(receiver, "run_receiver", side_effect=inspect_inputs):
++            cls.report, cls.path_details = evaluate(base)
++
++    def test_receiver_runs_both_models_and_sees_only_recorded_inputs(self):
++        self.assertEqual(len(self.calls), 8)
++        for count, methods, columns, read_only in self.calls:
++            self.assertEqual(count, 12)
++            self.assertEqual(methods, METHODS)
++            self.assertEqual(columns, {"trusted", "target", "decoder"})
++            self.assertTrue(read_only)
++
++    def test_post_bf_and_inference_reproduce_frozen_log(self):
++        for model in self.report["models"].values():
++            comparisons = model["receiver_replay"]["frozen_log_comparison_max_abs"]
++            self.assertEqual(set(comparisons), {"healthy", "A0", "A1_H_mismatch", "A1_C_mismatch"})
++            for stage in comparisons.values():
++                self.assertLess(max(stage.values()), 1e-10)
++
++    def test_archive_holdout_keeps_all_censored_paths(self):
++        expected = {"unstable": (670, 318, 116), "stable": (681, 378, 189)}
++        for name, model in self.report["models"].items():
++            n, before, censored = expected[name]
++            v1a = model["saved_holdout_outcomes"]["A0_fixed_onset"]["methods"]["V1a"]
++            self.assertEqual(v1a["n"], n)
++            self.assertEqual(v1a["event_counts"]["before_alarm"], before)
++            self.assertEqual(v1a["event_counts"]["danger_alarm_censored"], censored)
++
++    def test_true_onset_diagnostics_and_error_decomposition(self):
++        for name, model in self.report["models"].items():
++            diagnosis = model["receiver_replay"]["cases"]["A0"]["onset_diagnostics"]
++            self.assertEqual(diagnosis["phases"]["first_packet"]["packet_count"], 12)
++            values = diagnosis["phases"]["whole_support"]
++            self.assertAlmostEqual(
++                values["decoded_squared_error"],
++                values["fit_with_frozen_true_onset_squared"] + values["mixture_gap_squared"]
++                + values["mixture_and_true_onset_cross_term"],
++                places=12,
++            )
++            paths = self.path_details["models"][name]["identified_paths"]
++            self.assertEqual(len(paths), 12)
++            for row in paths:
++                self.assertEqual(row["true_onset"], 7)
++                self.assertEqual([item["tick"] for item in row["support"]], list(range(7, 17)))
++
++
++if __name__ == "__main__":
++    unittest.main()

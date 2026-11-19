@@ -1,0 +1,24 @@
+Python 3.10.18; NumPy 2.2.5; SciPy 1.15.3; SymPy 1.14.0
+Baseline 0beb3edace40d514d1969cde205eba3f3b2272be
+
+> python -B -X utf8 -m unittest discover -v
+test_changed_input_is_rejected_before_loading_receiver (test_evaluator.FrozenInputTests) ... ok
+test_identical_zero_observations_keep_interval_uncertainty (test_evaluator.PairedTests) ... ok
+test_paired_discordance_and_difference_direction (test_evaluator.PairedTests) ... ok
+test_archive_holdout_keeps_all_censored_paths (test_evaluator.ReceiverReplayTests) ... ok
+test_post_bf_and_inference_reproduce_frozen_log (test_evaluator.ReceiverReplayTests) ... ok
+test_receiver_runs_both_models_and_sees_only_recorded_inputs (test_evaluator.ReceiverReplayTests) ... ok
+test_true_onset_diagnostics_and_error_decomposition (test_evaluator.ReceiverReplayTests) ... ok
+test_censored_alarms_do_not_drop_danger (test_evaluator.TimingTests) ... ok
+test_inconsistent_episode_times_fail (test_evaluator.TimingTests) ... ok
+test_thresholds_are_inclusive_and_same_tick_is_not_strict (test_evaluator.TimingTests) ... ok
+test_true_state_mse_and_stop_tick_in_tail (test_evaluator.TimingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 3.064s
+
+OK
+
+> python -B -X utf8 replay_evaluator.py
+unstable A0 strict pre-alarm danger from receiver replay: V0: 8/12, V1a: 5/12, V1.2a: 5/12, V1.4: 6/12, anchor@2%: 4/12
+stable A0 strict pre-alarm danger from receiver replay: V0: 9/12, V1a: 8/12, V1.2a: 8/12, V1.4: 8/12, anchor@2%: 4/12

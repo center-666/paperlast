@@ -1,0 +1,31 @@
+{
+  "baseline": "0beb3edace40d514d1969cde205eba3f3b2272be",
+  "verified_frozen_input_files": 29,
+  "tests_passed": 11,
+  "repeated_evaluation_byte_identical": true,
+  "added_code_paths": [
+    "JFI_defensive_offline_validation/onset_diagnostics.py",
+    "JFI_defensive_offline_validation/paired_analysis.py",
+    "JFI_defensive_offline_validation/replay_evaluator.py",
+    "JFI_defensive_offline_validation/risk_metrics.py",
+    "JFI_defensive_offline_validation/test_evaluator.py"
+  ],
+  "added_code_patch_apply_check": true,
+  "new_physical_paths": 0,
+  "a0_complete_receiver_input_paths": 24,
+  "paired_outcome_archives": "Prior fixed ten-tick and mismatch profiles",
+  "sha256": {
+    "onset_diagnostics.py": "12d59395678f3d2a3b98651d851c4325e996a039c60b78a9efad7530fc03c237",
+    "paired_analysis.py": "9efbd28e21946b763f0f6125ac9e1e2219bed17a58fef7606aff1be250ff937b",
+    "replay_evaluator.py": "7a056a5745f8bfcdda3b69af10d65d250bab258dcf544592bed1fbe0c38d585b",
+    "risk_metrics.py": "6267492c05a50f7e94db2b536b06825c58509e30c2ba49290499d3b59d1658a7",
+    "test_evaluator.py": "7c1df6a9257367970317b8a4c8973c7d3e7ba9330f4da7c4e0b0b726f4284b23",
+    "frozen_inputs_sha256.json": "7e40c9b68db975477988f27016c3ec61f693e4ce1de5bd9c3f974f011dcee17d",
+    "requirements.txt": "5aa65b59186a3f663b85bd03ae40d3f9008f507f00c1b0e90930db32fabb4cee",
+    "README.md": "d3c599bc9a3a0db8ea031cf5dd37408a47faed37322c2a3368fcab8385a10bcf",
+    "results/summary.json": "77d62981fe9e646725653f57178b57c78afd8b49fccf767270c1127c5c1ba0b5",
+    "results/a0_replay_paths.json": "54b95c9aa171d6d3fcf6fc3b109f64774b79aa7b0e1f799a8d659faeae4f012d",
+    "results/test_log.txt": "5ca0f238d20fe8750ffad02fd447e7ba20bd291205965216d9a064ddd1d511e3",
+    "results/code_changes.patch": "b408fd00baf737232dad8da229a07d70425273f59f13a5034a42aa0cf6f9791a"
+  }
+}
