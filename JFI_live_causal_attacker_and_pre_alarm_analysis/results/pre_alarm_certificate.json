@@ -1,0 +1,96 @@
+{
+  "baseline": "bebc8ae84d511100a61a72725c8a4b56c42194d2",
+  "model_sha256": "dbe91a198a0a17efe5fe3c81a553234af327b94c1b966b6356920e32ec85c11e",
+  "nominal_finite_window_bf_alpha": "1/20",
+  "required_increment_norm_per_root_coded_energy": "1/10",
+  "mean_stage_penalty_if_absolute_zero_lower_down": 0.00870036,
+  "max_stage_penalty_exact": "3903/156250",
+  "healthy_false_alarm_allowance_exact": "3903/3125000",
+  "mean_stage_penalty_if_strict_pre_alarm_zero_lower_down": 0.0074514,
+  "zero_risk_scope": "Current-packet affine receiver, fixed admissible full-energy single-packet changes at eligible ticks.",
+  "abstract_gaussian_shift_examples": [
+    {
+      "mahalanobis_length": 0.0,
+      "nominal_level_005_no_alarm_probability_lower": 0.95
+    },
+    {
+      "mahalanobis_length": 1.0,
+      "nominal_level_005_no_alarm_probability_lower": 0.7404889771585558
+    },
+    {
+      "mahalanobis_length": 2.0,
+      "nominal_level_005_no_alarm_probability_lower": 0.3612399686876647
+    },
+    {
+      "mahalanobis_length": 3.0,
+      "nominal_level_005_no_alarm_probability_lower": 0.08768546324970355
+    },
+    {
+      "mahalanobis_length": 4.0,
+      "nominal_level_005_no_alarm_probability_lower": 0.009257705373495387
+    }
+  ],
+  "physical_episodes_generated": 0,
+  "models": {
+    "unstable": {
+      "V0_nominal_MSE": 0.22771117695278012,
+      "full_nominal_MMSE": 0.22534716972835114,
+      "two_percent_nominal_cap_up": 0.23226541,
+      "minimum_eligible_ticks_for_this_certificate": 30,
+      "exact_covariance_stages_checked": 32,
+      "windows": {
+        "B_all_32_ticks": {
+          "eligible_ticks": 32,
+          "MSE_lower_down": 0.23279857,
+          "percentage_vs_V0_lower_down": 2.23414359,
+          "gap_over_two_pct_down": 0.00053317,
+          "rejects_two_pct": true
+        },
+        "A_if_single_packet_required_at_each_of_10_ticks": {
+          "eligible_ticks": 10,
+          "MSE_lower_down": 0.22767573,
+          "percentage_vs_V0_lower_down": -0.01556539,
+          "gap_over_two_pct_down": -0.00458967,
+          "rejects_two_pct": false
+        },
+        "A_if_single_packet_required_on_union_of_archived_supports": {
+          "eligible_ticks": 18,
+          "MSE_lower_down": 0.22953858,
+          "percentage_vs_V0_lower_down": 0.8025106,
+          "gap_over_two_pct_down": -0.00272682,
+          "rejects_two_pct": false
+        }
+      }
+    },
+    "stable": {
+      "V0_nominal_MSE": 0.22666559033630543,
+      "full_nominal_MMSE": 0.22433070801496027,
+      "two_percent_nominal_cap_up": 0.23119891,
+      "minimum_eligible_ticks_for_this_certificate": 30,
+      "exact_covariance_stages_checked": 32,
+      "windows": {
+        "B_all_32_ticks": {
+          "eligible_ticks": 32,
+          "MSE_lower_down": 0.2317821,
+          "percentage_vs_V0_lower_down": 2.25729876,
+          "gap_over_two_pct_down": 0.0005832,
+          "rejects_two_pct": true
+        },
+        "A_if_single_packet_required_at_each_of_10_ticks": {
+          "eligible_ticks": 10,
+          "MSE_lower_down": 0.22665927,
+          "percentage_vs_V0_lower_down": -0.00278791,
+          "gap_over_two_pct_down": -0.00453964,
+          "rejects_two_pct": false
+        },
+        "A_if_single_packet_required_on_union_of_archived_supports": {
+          "eligible_ticks": 18,
+          "MSE_lower_down": 0.22852212,
+          "percentage_vs_V0_lower_down": 0.81906179,
+          "gap_over_two_pct_down": -0.00267679,
+          "rejects_two_pct": false
+        }
+      }
+    }
+  }
+}
