@@ -1,0 +1,13 @@
+{
+  "baseline": "74819cd7963417612e384be7974074c2380cdc13",
+  "tree": "75e5a8f8d9427e58ece9c3e71bb855ecfe4e5101",
+  "files": {
+    "JFI_defensive_offline_validation/frozen_inputs_sha256.json": "7e40c9b68db975477988f27016c3ec61f693e4ce1de5bd9c3f974f011dcee17d",
+    "JFI_defensive_offline_validation/replay_evaluator.py": "7a056a5745f8bfcdda3b69af10d65d250bab258dcf544592bed1fbe0c38d585b",
+    "JFI_defensive_offline_validation/onset_diagnostics.py": "12d59395678f3d2a3b98651d851c4325e996a039c60b78a9efad7530fc03c237",
+    "JFI_defensive_offline_validation/paired_analysis.py": "9efbd28e21946b763f0f6125ac9e1e2219bed17a58fef7606aff1be250ff937b",
+    "JFI_defensive_offline_validation/risk_metrics.py": "6267492c05a50f7e94db2b536b06825c58509e30c2ba49290499d3b59d1658a7",
+    "JFI_A0_early_identifiability_and_safety_theory/results/results.json": "6d1dc491e5f0358e70de3991d9825375a1283a86e67510774c12cfbada6e5936",
+    "attack_gain_switch_audit_20261115/registration.json": "667905eed453a595513c19dbc1ea5598289a1bdea4bd172f7976c8267429468f"
+  }
+}

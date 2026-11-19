@@ -1,0 +1,9 @@
+test_late_danger_does_not_retroactively_count (test_joint_analysis.JointEventChecks) ... ok
+test_projection_degenerate_cases_and_ellipse_bound (test_joint_analysis.JointEventChecks) ... ok
+test_single_prefix_bayes_integral (test_joint_analysis.JointEventChecks) ... ok
+test_strict_alarm_timing (test_joint_analysis.JointEventChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.009s
+
+OK

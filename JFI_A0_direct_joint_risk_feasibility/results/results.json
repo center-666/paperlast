@@ -1,0 +1,1382 @@
+{
+  "baseline": "74819cd7963417612e384be7974074c2380cdc13",
+  "protected_inputs": 36,
+  "onset_and_integration_cutoff": [
+    7,
+    9
+  ],
+  "models": {
+    "unstable": {
+      "profile_verified_against_norm_10_formula_max_roundoff": 4.440892098500626e-16,
+      "certificate_inputs": "Frozen model and registered direction decimals as exact rationals; normalization squared exact",
+      "displayed_probability_bounds_identical_on_saved_dyadics": true,
+      "rigorous_bounds": {
+        "checked_first_packet_conditions": {
+          "state_gap_at_lambda_squared_upper": 0.0075704871,
+          "whitened_length_squared_at_state_threshold_upper": 2.566293331,
+          "history_gap_standard_deviation_upper": 0.031,
+          "conditional_full_mean_map_norm_upper": 0.2,
+          "v1a_midpoint_displacement_strict_lower": 0.35625
+        },
+        "first_packet_probability_certificate": {
+          "saturation_radius_at_least_0p34": {
+            "radius_minimum": 0.34,
+            "grid_accepted_cells_before_sign_reflection": 740,
+            "decoder_probability_lower_down": 0.0393938273,
+            "history_no_alarm_and_bf_guard_probability_lower_down": 0.5890006482,
+            "current_innovation_probability_lower_down": 0.0229012851,
+            "strict_first_packet_risk_lower_down": 0.00053137828
+          },
+          "saturation_radius_at_least_0p24": {
+            "radius_minimum": 0.24,
+            "grid_accepted_cells_before_sign_reflection": 25,
+            "decoder_probability_lower_down": 0.0019336189,
+            "history_no_alarm_and_bf_guard_probability_lower_down": 0.4927607533,
+            "current_innovation_probability_lower_down": 0.0013064928,
+            "strict_first_packet_risk_lower_down": 1.24484e-06
+          },
+          "v0_decoder_probability_lower_down": 0.0727839791,
+          "v0_first_packet_risk_lower_down": 0.01819599479
+        },
+        "saturation_upper_bound_all_radii": {
+          "1": {
+            "squared_beta_norm_cap": 1.0,
+            "unconditional_risk_upper_up": 0.367879442
+          },
+          "2": {
+            "squared_beta_norm_cap": 0.793,
+            "unconditional_risk_upper_up": 0.700227655
+          },
+          "3": {
+            "squared_beta_norm_cap": 0.708,
+            "unconditional_risk_upper_up": 0.869389443
+          }
+        },
+        "saturation_ellipse_upper_bound": {
+          "1": {
+            "state_shift_second_moment_upper_up": 0.050986901,
+            "coefficient_upper_up": 1.129014
+          },
+          "2": {
+            "state_shift_second_moment_upper_up": 0.066020091,
+            "coefficient_upper_up": 2.413733
+          },
+          "3": {
+            "state_shift_second_moment_upper_up": 0.07622965,
+            "coefficient_upper_up": 3.794219
+          }
+        },
+        "v0_upper_bound": {
+          "1": {
+            "squared_beta_norm_cap": 0.83,
+            "unconditional_risk_upper_up": 0.436049287
+          },
+          "2": {
+            "squared_beta_norm_cap": 0.65,
+            "unconditional_risk_upper_up": 0.771559761
+          },
+          "3": {
+            "squared_beta_norm_cap": 0.577,
+            "unconditional_risk_upper_up": 0.91573071
+          }
+        },
+        "health_budget_radius_certificate": {
+          "radius": 0.24,
+          "nominal_32_round_mse_lower_down": 0.2322921093,
+          "nominal_2pct_cap_upper_up": 0.2322654005,
+          "margin_lower_down": 2.67088e-05,
+          "isotropic_standard_deviation_lower": 0.182,
+          "at_most_2pct_implies_radius_strictly_above_0p24": true
+        }
+      },
+      "nominal_v0_mse": 0.2277111769527801,
+      "nominal_cost_numerical_evaluation": {
+        "sat_nominal_matched": {
+          "radius": 0.34157653174344843,
+          "nominal_mse": 0.22756189097703342,
+          "pct_over_nominal_v0": -0.06555935362699827
+        },
+        "anchor@0.1%": {
+          "radius": 0.32978413207169066,
+          "nominal_mse": 0.22793888812973284,
+          "pct_over_nominal_v0": 0.09999999999998899
+        },
+        "anchor@0.5%": {
+          "radius": 0.3065551879646441,
+          "nominal_mse": 0.228849732837544,
+          "pct_over_nominal_v0": 0.5000000000000115
+        },
+        "anchor@1%": {
+          "radius": 0.284020083047555,
+          "nominal_mse": 0.22998828872230787,
+          "pct_over_nominal_v0": 0.9999999999999787
+        },
+        "anchor@2%": {
+          "radius": 0.25050124320626643,
+          "nominal_mse": 0.2322654004918357,
+          "pct_over_nominal_v0": 2.0000000000000018
+        },
+        "zero_risk_boundary": {
+          "radius": 0.15811388300841897,
+          "nominal_mse": 0.24381160133333166,
+          "pct_over_nominal_v0": 7.070546380729592
+        }
+      },
+      "v1a_match_mse_approximate_95_interval": [
+        0.227516845997468,
+        0.22760693595659998
+      ],
+      "matched_radius_approximate_95_range": [
+        0.3400781212118749,
+        0.34310215409921235
+      ],
+      "archive_regression": {
+        "saved_complete_inputs": 12,
+        "maximum_absolute_log_bf_error": 1.0125233984581428e-13,
+        "maximum_absolute_paired_output_error": 1.432187701766452e-14,
+        "maximum_absolute_active_posterior_error": 2.1871393585115584e-14,
+        "first_three_event_indicators_match": true
+      },
+      "numerical_integral": {
+        "methods": [
+          "V0",
+          "V1a",
+          "sat_nominal_matched",
+          "anchor@0.1%",
+          "anchor@0.5%",
+          "anchor@1%",
+          "anchor@2%"
+        ],
+        "nodes_per_replication": [
+          512,
+          1024
+        ],
+        "dimension": 60,
+        "checkpoint_dimensions_including_watermarks": [
+          48,
+          54,
+          60
+        ],
+        "score_columns": [
+          "frozen_active_probability",
+          "equal_odds_mixed_start_work",
+          "equal_odds_fixed_start_work",
+          "equal_odds_fixed_a0"
+        ],
+        "replications": {
+          "nodes_power_9": [
+            {
+              "seed": 8539,
+              "risk_by_method_by_age": [
+                [
+                  0.13671875,
+                  0.2734375,
+                  0.3984375
+                ],
+                [
+                  0.080078125,
+                  0.169921875,
+                  0.232421875
+                ],
+                [
+                  0.060546875,
+                  0.126953125,
+                  0.19140625
+                ],
+                [
+                  0.060546875,
+                  0.12109375,
+                  0.18359375
+                ],
+                [
+                  0.05078125,
+                  0.107421875,
+                  0.1640625
+                ],
+                [
+                  0.046875,
+                  0.09375,
+                  0.146484375
+                ],
+                [
+                  0.041015625,
+                  0.080078125,
+                  0.123046875
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.14017761082413624,
+                  0.4729272211042962,
+                  0.5969146208925575,
+                  0.7140581145924794
+                ],
+                [
+                  0.18941210534577757,
+                  0.5150068436333075,
+                  0.6112797092690575,
+                  0.737900367709622
+                ],
+                [
+                  0.1941540535401199,
+                  0.4966063226646,
+                  0.5645226826754172,
+                  0.6797968913040047
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                41,
+                53,
+                38
+              ]
+            },
+            {
+              "seed": 12149,
+              "risk_by_method_by_age": [
+                [
+                  0.126953125,
+                  0.271484375,
+                  0.390625
+                ],
+                [
+                  0.078125,
+                  0.1640625,
+                  0.2265625
+                ],
+                [
+                  0.05078125,
+                  0.115234375,
+                  0.1875
+                ],
+                [
+                  0.05078125,
+                  0.111328125,
+                  0.1796875
+                ],
+                [
+                  0.044921875,
+                  0.1015625,
+                  0.16015625
+                ],
+                [
+                  0.044921875,
+                  0.091796875,
+                  0.142578125
+                ],
+                [
+                  0.041015625,
+                  0.078125,
+                  0.1171875
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.15245750637450434,
+                  0.4723634428560695,
+                  0.5712603286190013,
+                  0.6656802733842838
+                ],
+                [
+                  0.19796606270508932,
+                  0.5153654701108917,
+                  0.6062335511780413,
+                  0.7028680201954935
+                ],
+                [
+                  0.2438909673767095,
+                  0.5587438939609601,
+                  0.6243625034459758,
+                  0.7552085547914441
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                40,
+                45,
+                40
+              ]
+            },
+            {
+              "seed": 19381,
+              "risk_by_method_by_age": [
+                [
+                  0.13671875,
+                  0.2890625,
+                  0.416015625
+                ],
+                [
+                  0.0859375,
+                  0.16796875,
+                  0.251953125
+                ],
+                [
+                  0.056640625,
+                  0.109375,
+                  0.17578125
+                ],
+                [
+                  0.052734375,
+                  0.10546875,
+                  0.166015625
+                ],
+                [
+                  0.04296875,
+                  0.08984375,
+                  0.142578125
+                ],
+                [
+                  0.03515625,
+                  0.07421875,
+                  0.119140625
+                ],
+                [
+                  0.025390625,
+                  0.056640625,
+                  0.0859375
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.1772478230030396,
+                  0.49971158315873954,
+                  0.6252436251141422,
+                  0.6979655362529064
+                ],
+                [
+                  0.13266565423659885,
+                  0.445406962971355,
+                  0.5631666284984062,
+                  0.6850613683951199
+                ],
+                [
+                  0.22571154169863888,
+                  0.5499968171217385,
+                  0.6424931736681516,
+                  0.7918585281042497
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                44,
+                46,
+                49
+              ]
+            },
+            {
+              "seed": 27397,
+              "risk_by_method_by_age": [
+                [
+                  0.138671875,
+                  0.28515625,
+                  0.396484375
+                ],
+                [
+                  0.08203125,
+                  0.173828125,
+                  0.236328125
+                ],
+                [
+                  0.05859375,
+                  0.130859375,
+                  0.1953125
+                ],
+                [
+                  0.0546875,
+                  0.12109375,
+                  0.189453125
+                ],
+                [
+                  0.05078125,
+                  0.11328125,
+                  0.173828125
+                ],
+                [
+                  0.04296875,
+                  0.095703125,
+                  0.146484375
+                ],
+                [
+                  0.033203125,
+                  0.076171875,
+                  0.1171875
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.1361022462026639,
+                  0.45442370791718883,
+                  0.6003745316252911,
+                  0.7030210931079767
+                ],
+                [
+                  0.19034554715030516,
+                  0.504298470993653,
+                  0.5908263887907959,
+                  0.7153075763743754
+                ],
+                [
+                  0.20325022554461075,
+                  0.5075148999671819,
+                  0.609746538977968,
+                  0.7759068088144971
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                42,
+                51,
+                45
+              ]
+            }
+          ],
+          "nodes_power_10": [
+            {
+              "seed": 8539,
+              "risk_by_method_by_age": [
+                [
+                  0.140625,
+                  0.2822265625,
+                  0.4033203125
+                ],
+                [
+                  0.080078125,
+                  0.169921875,
+                  0.234375
+                ],
+                [
+                  0.0625,
+                  0.12890625,
+                  0.189453125
+                ],
+                [
+                  0.0615234375,
+                  0.123046875,
+                  0.1826171875
+                ],
+                [
+                  0.0546875,
+                  0.1123046875,
+                  0.1650390625
+                ],
+                [
+                  0.048828125,
+                  0.095703125,
+                  0.1435546875
+                ],
+                [
+                  0.0419921875,
+                  0.080078125,
+                  0.1162109375
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.15631509237582067,
+                  0.4789334439196265,
+                  0.6090420030909957,
+                  0.7224856482716374
+                ],
+                [
+                  0.19075564094184277,
+                  0.5170354688918882,
+                  0.6164286210572322,
+                  0.7366988117315137
+                ],
+                [
+                  0.19010014128270739,
+                  0.48224651856211326,
+                  0.556857769878246,
+                  0.6938462380164295
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                82,
+                106,
+                79
+              ]
+            },
+            {
+              "seed": 12149,
+              "risk_by_method_by_age": [
+                [
+                  0.1328125,
+                  0.2822265625,
+                  0.400390625
+                ],
+                [
+                  0.0771484375,
+                  0.1650390625,
+                  0.2353515625
+                ],
+                [
+                  0.052734375,
+                  0.1142578125,
+                  0.181640625
+                ],
+                [
+                  0.0517578125,
+                  0.1103515625,
+                  0.17578125
+                ],
+                [
+                  0.046875,
+                  0.103515625,
+                  0.1611328125
+                ],
+                [
+                  0.041015625,
+                  0.0908203125,
+                  0.1435546875
+                ],
+                [
+                  0.0341796875,
+                  0.0751953125,
+                  0.1181640625
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.12942241536815371,
+                  0.43474078851812153,
+                  0.5650407200781827,
+                  0.6590285133667448
+                ],
+                [
+                  0.16816496703317574,
+                  0.4812424690533077,
+                  0.5859136330435591,
+                  0.7068725957318726
+                ],
+                [
+                  0.2426959213674789,
+                  0.55506494783828,
+                  0.6321610948504087,
+                  0.7655999532076576
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                79,
+                95,
+                84
+              ]
+            },
+            {
+              "seed": 19381,
+              "risk_by_method_by_age": [
+                [
+                  0.1337890625,
+                  0.287109375,
+                  0.4150390625
+                ],
+                [
+                  0.083984375,
+                  0.16796875,
+                  0.248046875
+                ],
+                [
+                  0.0556640625,
+                  0.111328125,
+                  0.1826171875
+                ],
+                [
+                  0.0517578125,
+                  0.1044921875,
+                  0.1708984375
+                ],
+                [
+                  0.0400390625,
+                  0.087890625,
+                  0.1484375
+                ],
+                [
+                  0.0322265625,
+                  0.0751953125,
+                  0.12890625
+                ],
+                [
+                  0.0244140625,
+                  0.05859375,
+                  0.095703125
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.15890223905066303,
+                  0.4861085708097282,
+                  0.5968550444609941,
+                  0.6783662184834046
+                ],
+                [
+                  0.154155818168987,
+                  0.4687263849576338,
+                  0.5854892208428797,
+                  0.7014611953389831
+                ],
+                [
+                  0.22419122066136407,
+                  0.5415800448262033,
+                  0.6250813362425357,
+                  0.7796909758462648
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                86,
+                95,
+                95
+              ]
+            },
+            {
+              "seed": 27397,
+              "risk_by_method_by_age": [
+                [
+                  0.134765625,
+                  0.2822265625,
+                  0.408203125
+                ],
+                [
+                  0.0830078125,
+                  0.1767578125,
+                  0.25
+                ],
+                [
+                  0.0537109375,
+                  0.1279296875,
+                  0.19140625
+                ],
+                [
+                  0.0498046875,
+                  0.12109375,
+                  0.185546875
+                ],
+                [
+                  0.0478515625,
+                  0.11328125,
+                  0.16796875
+                ],
+                [
+                  0.0390625,
+                  0.09765625,
+                  0.1416015625
+                ],
+                [
+                  0.0283203125,
+                  0.0693359375,
+                  0.10546875
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.15347527621561627,
+                  0.48050086909663897,
+                  0.6145864860325109,
+                  0.7086234480119137
+                ],
+                [
+                  0.191512992353776,
+                  0.5011718872289039,
+                  0.5883976823294388,
+                  0.7089738627602129
+                ],
+                [
+                  0.20569936564951535,
+                  0.5190223628748172,
+                  0.6164525541364062,
+                  0.7656831591341857
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                85,
+                105,
+                92
+              ]
+            }
+          ]
+        },
+        "classification": "Randomized Sobol quadrature diagnostics, no interval enclosure or ranking certificate"
+      }
+    },
+    "stable": {
+      "profile_verified_against_norm_10_formula_max_roundoff": 2.220446049250313e-16,
+      "certificate_inputs": "Frozen model and registered direction decimals as exact rationals; normalization squared exact",
+      "displayed_probability_bounds_identical_on_saved_dyadics": true,
+      "rigorous_bounds": {
+        "checked_first_packet_conditions": {
+          "state_gap_at_lambda_squared_upper": 0.0547910911,
+          "whitened_length_squared_at_state_threshold_upper": 2.603862423,
+          "history_gap_standard_deviation_upper": 0.031,
+          "conditional_full_mean_map_norm_upper": 0.2,
+          "v1a_midpoint_displacement_strict_lower": 0.35625
+        },
+        "first_packet_probability_certificate": {
+          "saturation_radius_at_least_0p34": {
+            "radius_minimum": 0.34,
+            "grid_accepted_cells_before_sign_reflection": 589,
+            "decoder_probability_lower_down": 0.1143919857,
+            "history_no_alarm_and_bf_guard_probability_lower_down": 0.5890006482,
+            "current_innovation_probability_lower_down": 0.0229012851,
+            "strict_first_packet_risk_lower_down": 0.00154301882
+          },
+          "saturation_radius_at_least_0p24": {
+            "radius_minimum": 0.24,
+            "grid_accepted_cells_before_sign_reflection": 17,
+            "decoder_probability_lower_down": 0.0051348971,
+            "history_no_alarm_and_bf_guard_probability_lower_down": 0.4927607533,
+            "current_innovation_probability_lower_down": 0.0013064928,
+            "strict_first_packet_risk_lower_down": 3.30578e-06
+          },
+          "v0_decoder_probability_lower_down": 0.2056011966,
+          "v0_first_packet_risk_lower_down": 0.05140029915
+        },
+        "saturation_upper_bound_all_radii": {
+          "1": {
+            "squared_beta_norm_cap": 0.133,
+            "unconditional_risk_upper_up": 0.875465093
+          },
+          "2": {
+            "squared_beta_norm_cap": 0.133,
+            "unconditional_risk_upper_up": 0.984491057
+          },
+          "3": {
+            "squared_beta_norm_cap": 0.133,
+            "unconditional_risk_upper_up": 0.998068596
+          }
+        },
+        "saturation_ellipse_upper_bound": {
+          "1": {
+            "state_shift_second_moment_upper_up": 0.369290258,
+            "coefficient_upper_up": 3.038463
+          },
+          "2": {
+            "state_shift_second_moment_upper_up": 0.265090075,
+            "coefficient_upper_up": 5.612808
+          },
+          "3": {
+            "state_shift_second_moment_upper_up": 0.168336438,
+            "coefficient_upper_up": 7.6642495
+          }
+        },
+        "v0_upper_bound": {
+          "1": {
+            "squared_beta_norm_cap": 0.079,
+            "unconditional_risk_upper_up": 0.924039925
+          },
+          "2": {
+            "squared_beta_norm_cap": 0.079,
+            "unconditional_risk_upper_up": 0.994230067
+          },
+          "3": {
+            "squared_beta_norm_cap": 0.079,
+            "unconditional_risk_upper_up": 0.999561716
+          }
+        },
+        "health_budget_radius_certificate": {
+          "radius": 0.24,
+          "nominal_32_round_mse_lower_down": 0.2312756476,
+          "nominal_2pct_cap_upper_up": 0.2311989022,
+          "margin_lower_down": 7.67454e-05,
+          "isotropic_standard_deviation_lower": 0.182,
+          "at_most_2pct_implies_radius_strictly_above_0p24": true
+        }
+      },
+      "nominal_v0_mse": 0.22666559033630546,
+      "nominal_cost_numerical_evaluation": {
+        "sat_nominal_matched": {
+          "radius": 0.3421682609936338,
+          "nominal_mse": 0.22639670702074263,
+          "pct_over_nominal_v0": -0.11862555545545383
+        },
+        "anchor@0.1%": {
+          "radius": 0.32625182645263384,
+          "nominal_mse": 0.22689225592664172,
+          "pct_over_nominal_v0": 0.09999999999998899
+        },
+        "anchor@0.5%": {
+          "radius": 0.3031030357037125,
+          "nominal_mse": 0.22779891828798698,
+          "pct_over_nominal_v0": 0.5000000000000115
+        },
+        "anchor@1%": {
+          "radius": 0.28067060252224535,
+          "nominal_mse": 0.2289322462396685,
+          "pct_over_nominal_v0": 1.0000000000000009
+        },
+        "anchor@2%": {
+          "radius": 0.24733155927294456,
+          "nominal_mse": 0.23119890214303057,
+          "pct_over_nominal_v0": 1.9999999999995577
+        },
+        "zero_risk_boundary": {
+          "radius": 0.15811388300841897,
+          "nominal_mse": 0.24222648599508806,
+          "pct_over_nominal_v0": 6.8651336251324135
+        }
+      },
+      "v1a_match_mse_approximate_95_interval": [
+        0.22635182185574,
+        0.22644159218574614
+      ],
+      "matched_radius_approximate_95_range": [
+        0.3405949961523605,
+        0.3437720908033671
+      ],
+      "archive_regression": {
+        "saved_complete_inputs": 12,
+        "maximum_absolute_log_bf_error": 5.684341886080802e-14,
+        "maximum_absolute_paired_output_error": 1.5251688800788088e-14,
+        "maximum_absolute_active_posterior_error": 6.439293542825908e-15,
+        "first_three_event_indicators_match": true
+      },
+      "numerical_integral": {
+        "methods": [
+          "V0",
+          "V1a",
+          "sat_nominal_matched",
+          "anchor@0.1%",
+          "anchor@0.5%",
+          "anchor@1%",
+          "anchor@2%"
+        ],
+        "nodes_per_replication": [
+          512,
+          1024
+        ],
+        "dimension": 60,
+        "checkpoint_dimensions_including_watermarks": [
+          48,
+          54,
+          60
+        ],
+        "score_columns": [
+          "frozen_active_probability",
+          "equal_odds_mixed_start_work",
+          "equal_odds_fixed_start_work",
+          "equal_odds_fixed_a0"
+        ],
+        "replications": {
+          "nodes_power_9": [
+            {
+              "seed": 8539,
+              "risk_by_method_by_age": [
+                [
+                  0.498046875,
+                  0.630859375,
+                  0.66796875
+                ],
+                [
+                  0.421875,
+                  0.517578125,
+                  0.55859375
+                ],
+                [
+                  0.236328125,
+                  0.359375,
+                  0.40625
+                ],
+                [
+                  0.2265625,
+                  0.341796875,
+                  0.390625
+                ],
+                [
+                  0.205078125,
+                  0.3125,
+                  0.359375
+                ],
+                [
+                  0.17578125,
+                  0.26953125,
+                  0.318359375
+                ],
+                [
+                  0.14453125,
+                  0.21875,
+                  0.26171875
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.19253885328932263,
+                  0.5118981249656392,
+                  0.6749609185516668,
+                  0.7768526073351807
+                ],
+                [
+                  0.23187199753516904,
+                  0.547039182722235,
+                  0.6953245748675089,
+                  0.7925662762380756
+                ],
+                [
+                  0.2485970704880107,
+                  0.5608627662780413,
+                  0.7048373598232681,
+                  0.827178643782356
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                216,
+                111,
+                58
+              ]
+            },
+            {
+              "seed": 12149,
+              "risk_by_method_by_age": [
+                [
+                  0.498046875,
+                  0.626953125,
+                  0.669921875
+                ],
+                [
+                  0.40234375,
+                  0.509765625,
+                  0.53515625
+                ],
+                [
+                  0.248046875,
+                  0.3671875,
+                  0.412109375
+                ],
+                [
+                  0.232421875,
+                  0.34765625,
+                  0.38671875
+                ],
+                [
+                  0.201171875,
+                  0.302734375,
+                  0.337890625
+                ],
+                [
+                  0.181640625,
+                  0.27734375,
+                  0.310546875
+                ],
+                [
+                  0.138671875,
+                  0.21875,
+                  0.251953125
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.1830350504963445,
+                  0.4930933454511924,
+                  0.6587397574547693,
+                  0.7764661368226923
+                ],
+                [
+                  0.2026039402273537,
+                  0.5092722455537652,
+                  0.657821094629816,
+                  0.7900371388251369
+                ],
+                [
+                  0.21198518995073803,
+                  0.5010913700453382,
+                  0.6429259694534613,
+                  0.7892151694802326
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                206,
+                105,
+                51
+              ]
+            },
+            {
+              "seed": 19381,
+              "risk_by_method_by_age": [
+                [
+                  0.50390625,
+                  0.640625,
+                  0.6875
+                ],
+                [
+                  0.421875,
+                  0.53125,
+                  0.564453125
+                ],
+                [
+                  0.240234375,
+                  0.361328125,
+                  0.400390625
+                ],
+                [
+                  0.22265625,
+                  0.33984375,
+                  0.37890625
+                ],
+                [
+                  0.19921875,
+                  0.30859375,
+                  0.345703125
+                ],
+                [
+                  0.1796875,
+                  0.28515625,
+                  0.3203125
+                ],
+                [
+                  0.13671875,
+                  0.224609375,
+                  0.25390625
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.19224209531943157,
+                  0.5032137243161646,
+                  0.6651031431753,
+                  0.7741959608072619
+                ],
+                [
+                  0.23578080179157174,
+                  0.5582619148167665,
+                  0.7060055334475727,
+                  0.8140699398556047
+                ],
+                [
+                  0.2760938931036519,
+                  0.5623859447267412,
+                  0.6757403872818472,
+                  0.803231367003493
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                216,
+                121,
+                46
+              ]
+            },
+            {
+              "seed": 27397,
+              "risk_by_method_by_age": [
+                [
+                  0.51171875,
+                  0.64453125,
+                  0.693359375
+                ],
+                [
+                  0.416015625,
+                  0.50390625,
+                  0.53515625
+                ],
+                [
+                  0.251953125,
+                  0.3671875,
+                  0.404296875
+                ],
+                [
+                  0.228515625,
+                  0.341796875,
+                  0.380859375
+                ],
+                [
+                  0.19921875,
+                  0.310546875,
+                  0.349609375
+                ],
+                [
+                  0.171875,
+                  0.265625,
+                  0.3046875
+                ],
+                [
+                  0.146484375,
+                  0.232421875,
+                  0.263671875
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.16830174084326624,
+                  0.49309225398999995,
+                  0.6626184072566536,
+                  0.7796567579361193
+                ],
+                [
+                  0.22408824182239354,
+                  0.547868477812154,
+                  0.713989944598375,
+                  0.8401287376282143
+                ],
+                [
+                  0.24299224460543647,
+                  0.5545488519881747,
+                  0.6865349696940366,
+                  0.8051794080950283
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                213,
+                99,
+                39
+              ]
+            }
+          ],
+          "nodes_power_10": [
+            {
+              "seed": 8539,
+              "risk_by_method_by_age": [
+                [
+                  0.5029296875,
+                  0.6416015625,
+                  0.67578125
+                ],
+                [
+                  0.4091796875,
+                  0.5107421875,
+                  0.541015625
+                ],
+                [
+                  0.240234375,
+                  0.353515625,
+                  0.40234375
+                ],
+                [
+                  0.2265625,
+                  0.33203125,
+                  0.384765625
+                ],
+                [
+                  0.2041015625,
+                  0.3046875,
+                  0.353515625
+                ],
+                [
+                  0.1728515625,
+                  0.2646484375,
+                  0.3115234375
+                ],
+                [
+                  0.1416015625,
+                  0.2109375,
+                  0.2548828125
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.1803732707230677,
+                  0.5017129900644351,
+                  0.6683153857945856,
+                  0.7741933888648458
+                ],
+                [
+                  0.22538935499388596,
+                  0.5411728277957687,
+                  0.697496259417795,
+                  0.8094000691973969
+                ],
+                [
+                  0.25955287175680936,
+                  0.5659252785576793,
+                  0.7125926364663878,
+                  0.8279178086893116
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                419,
+                220,
+                101
+              ]
+            },
+            {
+              "seed": 12149,
+              "risk_by_method_by_age": [
+                [
+                  0.5087890625,
+                  0.63671875,
+                  0.685546875
+                ],
+                [
+                  0.404296875,
+                  0.5029296875,
+                  0.5322265625
+                ],
+                [
+                  0.2431640625,
+                  0.3642578125,
+                  0.4111328125
+                ],
+                [
+                  0.23046875,
+                  0.3466796875,
+                  0.3916015625
+                ],
+                [
+                  0.2021484375,
+                  0.30078125,
+                  0.34375
+                ],
+                [
+                  0.1767578125,
+                  0.2685546875,
+                  0.310546875
+                ],
+                [
+                  0.138671875,
+                  0.2177734375,
+                  0.2548828125
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.17828433533198482,
+                  0.486358311331437,
+                  0.6509114056376007,
+                  0.7636203963877352
+                ],
+                [
+                  0.22668458549011195,
+                  0.5406126498343546,
+                  0.6824020101208386,
+                  0.8149471379393052
+                ],
+                [
+                  0.22464574618617297,
+                  0.5237464671565805,
+                  0.6620160644530544,
+                  0.8107848317351375
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                414,
+                218,
+                100
+              ]
+            },
+            {
+              "seed": 19381,
+              "risk_by_method_by_age": [
+                [
+                  0.5078125,
+                  0.6435546875,
+                  0.6875
+                ],
+                [
+                  0.41796875,
+                  0.53125,
+                  0.5634765625
+                ],
+                [
+                  0.2509765625,
+                  0.369140625,
+                  0.4150390625
+                ],
+                [
+                  0.2353515625,
+                  0.3505859375,
+                  0.3974609375
+                ],
+                [
+                  0.208984375,
+                  0.314453125,
+                  0.357421875
+                ],
+                [
+                  0.185546875,
+                  0.2890625,
+                  0.3291015625
+                ],
+                [
+                  0.142578125,
+                  0.228515625,
+                  0.2646484375
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.18957173922297213,
+                  0.5046174394030899,
+                  0.667605704252105,
+                  0.7723658172676185
+                ],
+                [
+                  0.22690367175921677,
+                  0.5429071418950553,
+                  0.6868471687822305,
+                  0.8014088191030181
+                ],
+                [
+                  0.24386877148028377,
+                  0.5419109104071275,
+                  0.6716716479521855,
+                  0.8133906587054525
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                428,
+                234,
+                93
+              ]
+            },
+            {
+              "seed": 27397,
+              "risk_by_method_by_age": [
+                [
+                  0.509765625,
+                  0.6396484375,
+                  0.685546875
+                ],
+                [
+                  0.4140625,
+                  0.505859375,
+                  0.5390625
+                ],
+                [
+                  0.2431640625,
+                  0.3564453125,
+                  0.404296875
+                ],
+                [
+                  0.2275390625,
+                  0.3359375,
+                  0.3828125
+                ],
+                [
+                  0.201171875,
+                  0.3037109375,
+                  0.34765625
+                ],
+                [
+                  0.17578125,
+                  0.2646484375,
+                  0.3076171875
+                ],
+                [
+                  0.146484375,
+                  0.2255859375,
+                  0.2578125
+                ]
+              ],
+              "v1a_score_mean_at_strict_event": [
+                [
+                  0.17045285255976353,
+                  0.49331035666254686,
+                  0.669072688715128,
+                  0.7794183063209957
+                ],
+                [
+                  0.22980761730797677,
+                  0.5541342694156263,
+                  0.709995013303594,
+                  0.8217187372021163
+                ],
+                [
+                  0.24580903397614698,
+                  0.5523341341097489,
+                  0.6965138845102028,
+                  0.7993603458955896
+                ]
+              ],
+              "v1a_strict_event_counts_at_age": [
+                424,
+                205,
+                96
+              ]
+            }
+          ]
+        },
+        "classification": "Randomized Sobol quadrature diagnostics, no interval enclosure or ranking certificate"
+      }
+    }
+  }
+}
