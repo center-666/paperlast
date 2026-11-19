@@ -1,0 +1,89 @@
+\section{Verification on two frozen models}
+\label{sec:evidence}
+
+\subsection{Evaluation protocol and certified operating points}
+
+Both models use a five-node cycle and two-dimensional states. Nodes are indexed from zero. Receiver 1 uses the target link \(0\to1\) and trusted measurements from nodes 1 and 2. The matrices and data are identified in \ref{app:reproduce}. The unstable and stable examples differ in the plant matrix \(A\) and the associated common gains. Both use \(N=32\), the registered ten-packet A0 template starting at \(s=7\), coded energy 10, \(D=0.1\) and \(\eta=20\). The conditional likelihood-ratio calibration gives a nominal event false-alarm bound of \(0.05\).
+
+In each model the state gap covariance is positive definite at every update. The first-packet sufficient ceilings for \(D\) in \eqref{eq:region} are approximately \(0.933871\) and \(0.920396\). The base squared innovation lengths are below \(8\log 20\) in both cases. This verifies the conditions at \(D=0.1\), with \(r_\star=0.1581138830\ldots\). Theorem~\ref{thm:boundary} therefore applies to the 32-update monitoring horizon, as well as the first-packet and first-three-packet prefixes that include \(s\).
+
+\begin{table}[htbp]
+\centering
+\caption{Nominal mean-square costs and the minimum cost of zero pre-alarm risk. The percentages are relative to V0.}
+\label{tab:critical}
+\begin{tabular}{lrrr}
+\toprule
+Plant & V0 & \(J_N(r_\star)\) & Increase (\%) \\
+\midrule
+Unstable & 0.227711176953 & 0.243811601333 & 7.070546 \\
+Stable   & 0.226665590336 & 0.242226485995 & 6.865134 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The two values in Table~\ref{tab:critical} use rational conditional covariance recursions and a ball-arithmetic integral. An independent batch covariance calculation and nonnegative tail integral give the same displayed values. In both cases a healthy MSE increase of at most \(2\%\) excludes every zero-risk radius in \eqref{eq:sat}. This conclusion uses the converse in Theorem~\ref{thm:boundary}. With only \eqref{eq:diam}, failure to meet a budget inside the certified safe interval would leave larger radii undecided.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Frozen saturation radii and deterministic enclosures of strict first-packet risk, in percent. The two nominal-match radii use a historical point estimate of V1a's healthy cost.}
+\label{tab:cert}
+\begin{tabular}{lrrrr}
+\toprule
+Cost point & \multicolumn{2}{c}{Unstable} & \multicolumn{2}{c}{Stable}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & Radius & Risk interval & Radius & Risk interval\\
+\midrule
+\(0.1\%\) & 0.329784 & [0.9062, 7.5011] & 0.326252 & [3.4398, 38.2156]\\
+\(0.5\%\) & 0.306555 & [0.6726, 6.7628] & 0.303103 & [2.6762, 35.0549]\\
+\(1.0\%\) & 0.284020 & [0.4664, 6.0162] & 0.280671 & [1.9610, 31.8273]\\
+\(2.0\%\) & 0.250501 & [0.2164, 4.8585] & 0.247332 & [0.9970, 26.7390]\\
+Nominal match & 0.341577 & [1.0289, 7.8618] & 0.342168 & [3.9639, 40.2862]\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The lower bounds in Table~\ref{tab:cert} include noise regions where a displacement crossing occurs before an alarm. The upper bounds allow every possible displacement crossing, including some that would already have been alarmed. The resulting outer enclosures are computed as described in \ref{app:cert}. The positive lower bounds certify a nontrivial risk at the reported fixed radii.
+
+\subsection{Archived paired evidence and the matching limit}
+
+The held-out archive was generated with independent physical, watermark and candidate onset draws. Conditioning it on the prescribed onset \(7\) and end index \(17\) yields 670 and 681 records. In each record the methods share the input and the original alarm. The first-packet column in Table~\ref{tab:counts} requires the first crossing at \(7\) and a strictly later alarm. The three-packet column accepts a first crossing through \(9\), still strictly before the alarm. The recount applies the same sentinel and tie conventions as \eqref{eq:risk}.
+
+\begin{table}[htbp]
+\centering
+\caption{Archived event counts on the onset-7 subset. Denominators are 670 for the unstable model and 681 for the stable model.}
+\label{tab:counts}
+\begin{tabular}{lrrrr}
+\toprule
+Receiver/operating point & \multicolumn{2}{c}{Unstable} & \multicolumn{2}{c}{Stable}\\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & First & First three & First & First three\\
+\midrule
+V1a           & 49 & 168 & 263 & 360\\
+Saturation \(0.1\%\) & 35 & 123 & 150 & 253\\
+Saturation \(0.5\%\) & 30 & 109 & 127 & 221\\
+Saturation \(1.0\%\) & 26 & 103 & 114 & 205\\
+Saturation \(2.0\%\) & 21 & 80  & 96  & 164\\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+At the fixed \(0.1\%\) point the estimated three-packet differences, V1a minus saturation, are \(6.72\) and \(15.71\) percentage points. Bonferroni-controlled paired intervals are \([0.77,12.47]\) and \([8.01,22.99]\) percentage points, under the registered synthetic sampling model. These are comparisons at specified radii. They use discordant pairs rather than an independence assumption between methods.
+
+The exact equal-cost comparison remains unresolved. For V1a the archived healthy conditional scores yield the following cost and corresponding matching-radius intervals, respectively.
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Plant & Healthy cost & Matching radius \\
+\midrule
+Unstable & $[0.227493927,\,0.229964382]$ & $[0.284441204,\,0.343889259]$ \\
+Stable   & $[0.226356948,\,0.228825678]$ & $[0.282562253,\,0.343587431]$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The held-out outcome files cover the four fixed cost points. Matched-radius evidence comes from the historical point comparisons at the old nominal matches. The repeated Sobol quadrature reproduces those estimates, with scramble variability reported as a numerical diagnostic. The statistical protocol appears in \ref{app:archive}.
+
+\subsection{Scope of the findings}
+
+The certified cost is for a paired estimation displacement before the first alarm. Large errors that both trajectories share are outside this event. The examples share a sensor structure and differ in dynamics, so they establish two parameter checks of the theorem. They do not establish a network-wide theorem over arbitrary disturbed links, watermarks or disturbances. In particular, changing the trusted information, recoupling the detector to the estimator, or changing the prefix Bayes-factor law can change the support test and the healthy cost. Both receiver classes here are pre-existing.

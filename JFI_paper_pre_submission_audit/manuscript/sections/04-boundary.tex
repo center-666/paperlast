@@ -1,0 +1,65 @@
+\section{The zero-risk boundary and its healthy cost}
+\label{sec:theory}
+
+Set \(r_\star=c/2\). The two projection images in \eqref{eq:sat} have the same center, giving the standard geometric bound
+\begin{equation}
+ \|\Pi_r(g_k+h_k)-\Pi_r(g_k)\|\le\min(2r,\|h_k\|).
+ \label{eq:diam}
+\end{equation}
+Consider three conditions on the laws and maps in \eqref{eq:risk}.
+\begin{enumerate}
+ \item Conditional on \(W\), \(h_k\) is deterministic for each \(k\). On \(\{h_k\ne0\}\), the conditional law of \(g_k\) gives zero probability to \(\operatorname{span}(h_k)\).
+ \item The maps \(g_k,h_k,B_k^a\) are continuous on the support of the joint finite input law.
+ \item At some index in the monitoring horizon, a single point in that support has strictly unalarmed history. At that point \(g_k\) and \(g_k+h_k\) point in opposite directions and both have length greater than \(r_\star\).
+\end{enumerate}
+The first condition holds for a conditional Gaussian gap of rank at least two. The last condition is a sufficient joint support test. Its use keeps the alarm and the displacement in the same realization.
+
+\begin{theorem}[Exact boundary within the saturation class]
+\label{thm:boundary}
+With the shared center in \eqref{eq:sat} and Conditions 1--3,
+\begin{equation}
+ R_N(r)=0\quad\Longleftrightarrow\quad 0\le r\le r_\star .
+ \label{eq:equiv}
+\end{equation}
+The non-concentration condition in Item 1 suffices for zero risk at equality even without Items 2 and 3.
+\end{theorem}
+
+The proof in \ref{app:proof} examines equality in \eqref{eq:diam}. For the converse, both opposite projected radii exceed \(c/2\) at the same strictly unalarmed support point whenever \(r>r_\star\). Continuity then yields a positive-probability neighborhood for each such \(r\). Its probability may depend on \(r\).
+
+\begin{proposition}[First-packet sufficient condition]
+\label{prop:prefix}
+Suppose the first affected packet is at \(s<N\) and \(\eta>1\). Condition on the full old observations and the current trusted measurements, and denote the nominal innovation covariance of the current target by \(V\succ0\). Let \(L\) be its regression gain to the full state conditional mean. Assume a fixed affine Gaussian nominal model, with legal joint support allowing the centered history and the terminal innovation at a watermark support point. Assume the working mixture has the nominal trusted marginal and unit-covariance shifted Gaussian conditional components after whitening. Then a first-packet displacement \(d\) in the decoded-template support that satisfies
+\begin{equation}
+ \|Ld\|^2>D,\qquad d^\top V^{-1}d<8\log\eta
+ \label{eq:check}
+\end{equation}
+implies Condition 3. The support requirement is satisfied in the frozen models by noise independent of the watermarks and nondegenerate target innovations.
+\end{proposition}
+
+The factor \(8\) follows from evaluating the normalized Gaussian likelihood envelope at half of the first target shift. The assumptions used in this calculation are specified in \ref{app:proof}. The check requires only a nonzero effective state displacement in the tested direction of \(L\). For a fixed first coded template entry \(a\ne0\) and a full-support watermark of the form in Section~\ref{sec:model}, the support contains the ray \(d=\gamma a,\ \gamma\ge\lambda\). Thus one verifiable parameter region is
+\begin{equation}
+ \lambda^2a^\top V^{-1}a<8\log\eta,\qquad
+ 0<D< 8\log\eta\,\frac{\|La\|^2}{a^\top V^{-1}a}.
+ \label{eq:region}
+\end{equation}
+These are sufficient inequalities for the registered perturbation law. The abstract converse can also follow from other compatible support points. For instance, a bounded decoded law with all \(\|h_k\|<c\) fails the converse regardless of the detector. This case and the rank-one issue at equality are detailed in \ref{app:proof}.
+
+\begin{corollary}[Minimum nominal cost of zero risk]
+\label{cor:cost}
+Under Theorem~\ref{thm:boundary}, let \(P_{F,k}\) and \(P_{T,k}\) be the deterministic full and trusted conditional state covariances in the nominal linear Gaussian model. Then
+\begin{align}
+ J_N(r) &= \frac1N \sum_{k=0}^{N-1}
+   \left[\tr P_{F,k}
+   +\E \big(\|Z_k\|-r\big)_+^2\right],
+       \quad Z_k\sim\mathcal N(0,P_{T,k}-P_{F,k}),\label{eq:cost}\\
+ J_{\mathrm{zero}}(D)&=J_N(\sqrt D/2).
+ \label{eq:zero-cost}
+\end{align}
+For \(\epsilon\ge0\), a radius in this class attains zero strict pre-alarm risk and healthy MSE at most \((1+\epsilon)J_{\mathrm{V0}}\) if and only if
+\begin{equation}
+ J_N(\sqrt D/2)\le (1+\epsilon)J_{\mathrm{V0}}.
+ \label{eq:budget}
+\end{equation}
+\end{corollary}
+
+The cost is continuous, convex and nonincreasing in \(r\). If any gap covariance is nonzero, the cost decreases strictly for every finite radius. If the support condition for the converse is unavailable, a verified diameter condition including equality still gives a sufficient budget test. If equality is unavailable as well, the right endpoint of the strict safety interval may only be an infimum of these certified costs. All statements concern the class \eqref{eq:sat}.

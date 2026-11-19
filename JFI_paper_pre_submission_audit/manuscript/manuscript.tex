@@ -1,0 +1,67 @@
+\documentclass[preprint,11pt]{elsarticle}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx,placeins}
+\usepackage[a4paper,margin=26mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prb}{\mathbb{P}}
+\newcommand{\R}{\mathbb{R}}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\supp}{supp}
+\hypersetup{pdftitle={An Exact Pre-Alarm Safety-Accuracy Boundary for Constant-Radius State Saturation}}
+\makeatletter
+\let\ps@pprintTitle\ps@plain
+\makeatother
+
+\begin{document}
+\begin{frontmatter}
+\title{An Exact Pre-Alarm Safety--Accuracy Boundary for Constant-Radius State Saturation\tnoteref{review}}
+\tnotetext[review]{Pre-submission manuscript for internal review.}
+\begin{abstract}
+State saturation caps the change that an impaired measurement can induce in an estimate. A cap alone leaves open whether a larger radius creates a dangerous estimation displacement before the first alarm. We analyze this question for a fixed finite-duration measurement perturbation, a common trusted conditional mean and a Gaussian mixture Bayes-factor monitor. A joint support condition gives an exact zero-risk boundary within the constant-radius saturation class. Conditional non-concentration resolves equality at the critical radius. A strictly unalarmed support point with two opposite estimate offsets proves positive risk for every larger radius. A first-packet condition tests this support requirement using the innovation covariance and its gain to the state. Nominal conditional covariances then convert the critical radius into a minimum healthy mean-square error. In two frozen five-node Gaussian examples, the minimum nominal increases over the common-gain reference are \(7.070546\%\) and \(6.865134\%\). Deterministic first-packet enclosures and archived paired comparisons quantify positive risk above the boundary. The result concerns the specified saturation class and fixed perturbations.
+\end{abstract}
+\begin{keyword}
+Distributed state estimation \sep finite-horizon safety \sep state saturation \sep Bayes factor \sep multiplicative watermarking
+\end{keyword}
+\end{frontmatter}
+
+\section{Introduction}
+
+An alarm can arrive after a corrupted measurement has changed a state estimate. This timing matters when the estimate is used during the monitoring window. A bound on the distance between two estimator outputs controls one part of the problem. The data that attain a large displacement must also survive the actual detector up to that time.
+
+We study a prescribed constant-radius saturation around a trusted estimate. The two outputs are coupled through the same physical noise and watermarks. The safety event compares the first crossing of a displacement threshold with the first alarm on the affected received stream. A strict ordering excludes same-round alarms and includes alarms that occur before the first affected packet. The healthy cost is the nominal mean-square error over a fixed horizon.
+
+The analysis establishes when the usual diameter limit is a sharp zero-risk boundary. The converse uses a joint support point under the fixed perturbation law, with both a state displacement in a specified direction and strict survival of the Bayes-factor test. The critical radius yields an exact healthy-error budget test within the saturation class. Two frozen examples support the analysis with certified costs, deterministic first-packet risk bounds and paired counts from previously recorded data. The detector, watermark and estimation procedures are specified inputs to the analysis.
+
+\section{Related work}
+
+Model-consistent faults and attacks have been linked to innovation and residual statistics since the generalized likelihood-ratio work of Willsky and Jones \cite{willsky}. Zhou et al.\ \cite{zhou} use a multiplicative watermark of the form \(\lambda I+\beta\beta^\top\) and analyze residual Kullback--Leibler divergence. Baba and Chattopadhyay \cite{baba} use conditional likelihoods and an onset mixture for quickest detection in correlated distributed tracking. These works motivate the fixed watermark and prefix evidence. Our performance variable additionally depends on two estimation paths and the time of their first separation beyond a prescribed level.
+
+Innovation saturation has established robustness results \cite{he}. Conditional on a trusted history, the radial clipping of an ideal conditional-mean increment has the same one-step form as Ruckdeschel's clipped estimator \cite[Theorem 3.2]{ruck}. This equivalence identifies the saturation map as an existing estimator form. The guaranteed quantities differ. For example, He et al.\ bound errors relative to the physical state under bounded noise and sparse compromised measurements. Li and Mo \cite{limo} compare a secure estimator with nominal or oracle Kalman estimates under sparse corruption. Zhang et al.\ \cite{lee} characterize trade-offs between nominal and adversarial mean-square risks of estimators.
+
+Detector-constrained reachable sets and energy gains already relate detectability to estimation or performance displacement \cite{murguia,gallo}. Joint detection and estimation also has established decision and stopping-risk formulations \cite{sihag,yilmaz}. The boundary studied here concerns the probability of a \emph{strict} first-passage order under one fixed template and one detector. A reachable displacement bound alone does not give its probability under the joint law. The contribution is the support condition that establishes sharpness for this event and connects it to the nominal cost of a fixed-radius class.
+
+\input{sections/03-system}
+\input{sections/04-boundary}
+\input{sections/05-evidence}
+
+\section{Conclusion}
+
+A common trusted center and conditional non-concentration give a zero pre-alarm risk guarantee at the diameter threshold. A compatible unalarmed support point makes that threshold exact. In the two examples the healthy MSE budget of \(2\%\) is below the minimum required for zero risk in the fixed-radius class. The archived comparisons resolve some fixed operating points. Performance ordering at exactly equal nominal cost remains open for these data. The boundary depends on the stated information, support and stopping assumptions, and finite horizons with a changed monitoring rule require separate verification.
+
+\section*{Data and code availability}
+
+The model, synthetic records, receivers and input manifests are available in the
+\href{https://github.com/center-666/paperlast/tree/b1509be0265ecd0512befe999847fa5908087872}{frozen research archive}.
+The accompanying pre-submission audit provides a read-only batch-covariance and archived-event check. The arithmetic and evidence scope are described in \ref{app:cert} and \ref{app:archive}. Code locations are listed in \ref{app:reproduce}.
+
+\appendix
+\input{sections/appendices}
+\input{references}
+\end{document}

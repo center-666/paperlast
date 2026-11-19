@@ -1,0 +1,162 @@
+{
+  "baseline": "b1509be0265ecd0512befe999847fa5908087872",
+  "verified_inputs": 72,
+  "new_synthetic_paths": 0,
+  "models": {
+    "unstable": {
+      "v0_batched_covariance_mean": 0.22771117695278076,
+      "critical_mse_batched_covariance": 0.2438116013333341,
+      "critical_pct_check_only": 7.070546380730347,
+      "min_conditional_gap_eigenvalue": 0.02616431187859758,
+      "local_common_g_det": 0.06806493611951762,
+      "plant_spectral_radius": 1.0919258240356726,
+      "first_packet_bounds_from_batched_moments": {
+        "minimum_base_whitened_square": 0.19428090449905042,
+        "sufficient_strict_inequality_D_ceiling": 0.9338705713274903,
+        "innovation_min_eigenvalue": 0.6299045235349227
+      },
+      "frozen_cost_points": {
+        "sat_nominal_matched": {
+          "radius": 0.34157653174344843,
+          "ordinary_float_audit": 0.2275618909770482,
+          "absolute_diff_from_saved_interval_midpoint": 1.482147737874584e-14
+        },
+        "anchor@0.1%": {
+          "radius": 0.32978413207169066,
+          "ordinary_float_audit": 0.22793888812974716,
+          "absolute_diff_from_saved_interval_midpoint": 1.4349632593280148e-14
+        },
+        "anchor@0.5%": {
+          "radius": 0.3065551879646441,
+          "ordinary_float_audit": 0.22884973283755722,
+          "absolute_diff_from_saved_interval_midpoint": 1.326716514427062e-14
+        },
+        "anchor@1%": {
+          "radius": 0.284020083047555,
+          "ordinary_float_audit": 0.2299882887223199,
+          "absolute_diff_from_saved_interval_midpoint": 1.2073675392798577e-14
+        },
+        "anchor@2%": {
+          "radius": 0.25050124320626643,
+          "ordinary_float_audit": 0.23226540049184569,
+          "absolute_diff_from_saved_interval_midpoint": 1.0019762797242038e-14
+        }
+      },
+      "saved_sobol_point_estimates_inside_first_packet_enclosures": {
+        "sat_nominal_matched": 0.05615234375,
+        "anchor@0.1%": 0.0537109375,
+        "anchor@0.5%": 0.04736328125,
+        "anchor@1%": 0.040283203125,
+        "anchor@2%": 0.0322265625
+      },
+      "holdout_recount": {
+        "selected_paths": 670,
+        "method_event_counts": {
+          "V1a": {
+            "first": 49,
+            "third": 168,
+            "finite_same_round_pairs": 4
+          },
+          "anchor@0.1%": {
+            "first": 35,
+            "third": 123,
+            "finite_same_round_pairs": 53
+          },
+          "anchor@0.5%": {
+            "first": 30,
+            "third": 109,
+            "finite_same_round_pairs": 43
+          },
+          "anchor@1%": {
+            "first": 26,
+            "third": 103,
+            "finite_same_round_pairs": 43
+          },
+          "anchor@2%": {
+            "first": 21,
+            "third": 80,
+            "finite_same_round_pairs": 38
+          }
+        }
+      }
+    },
+    "stable": {
+      "v0_batched_covariance_mean": 0.2266655903363054,
+      "critical_mse_batched_covariance": 0.24222648599508814,
+      "critical_pct_check_only": 6.86513362513248,
+      "min_conditional_gap_eigenvalue": 0.02616431187859758,
+      "local_common_g_det": 0.06744481776057958,
+      "plant_spectral_radius": 0.9047722557505167,
+      "first_packet_bounds_from_batched_moments": {
+        "minimum_base_whitened_square": 1.4266846318673898,
+        "sufficient_strict_inequality_D_ceiling": 0.9203964841146277,
+        "innovation_min_eigenvalue": 0.6294811960369855
+      },
+      "frozen_cost_points": {
+        "sat_nominal_matched": {
+          "radius": 0.3421682609936338,
+          "ordinary_float_audit": 0.22639670702074263,
+          "absolute_diff_from_saved_interval_midpoint": 5.551115123125783e-17
+        },
+        "anchor@0.1%": {
+          "radius": 0.32625182645263384,
+          "ordinary_float_audit": 0.22689225592664172,
+          "absolute_diff_from_saved_interval_midpoint": 5.551115123125783e-17
+        },
+        "anchor@0.5%": {
+          "radius": 0.3031030357037125,
+          "ordinary_float_audit": 0.22779891828798698,
+          "absolute_diff_from_saved_interval_midpoint": 5.551115123125783e-17
+        },
+        "anchor@1%": {
+          "radius": 0.28067060252224535,
+          "ordinary_float_audit": 0.22893224623966854,
+          "absolute_diff_from_saved_interval_midpoint": 5.551115123125783e-17
+        },
+        "anchor@2%": {
+          "radius": 0.24733155927294456,
+          "ordinary_float_audit": 0.23119890214303063,
+          "absolute_diff_from_saved_interval_midpoint": 8.326672684688674e-17
+        }
+      },
+      "saved_sobol_point_estimates_inside_first_packet_enclosures": {
+        "sat_nominal_matched": 0.244384765625,
+        "anchor@0.1%": 0.22998046875,
+        "anchor@0.5%": 0.2041015625,
+        "anchor@1%": 0.177734375,
+        "anchor@2%": 0.142333984375
+      },
+      "holdout_recount": {
+        "selected_paths": 681,
+        "method_event_counts": {
+          "V1a": {
+            "first": 263,
+            "third": 360,
+            "finite_same_round_pairs": 15
+          },
+          "anchor@0.1%": {
+            "first": 150,
+            "third": 253,
+            "finite_same_round_pairs": 73
+          },
+          "anchor@0.5%": {
+            "first": 127,
+            "third": 221,
+            "finite_same_round_pairs": 70
+          },
+          "anchor@1%": {
+            "first": 114,
+            "third": 205,
+            "finite_same_round_pairs": 63
+          },
+          "anchor@2%": {
+            "first": 96,
+            "third": 164,
+            "finite_same_round_pairs": 57
+          }
+        }
+      }
+    }
+  },
+  "notes": "Batch covariance / positive tail integrals are independent floating-point checks."
+}

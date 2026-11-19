@@ -1,0 +1,91 @@
+\section{Proof details and scope of the first-packet test}
+\label{app:proof}
+
+\subsection{Critical equality and the open-neighborhood argument}
+
+The two outputs in \eqref{eq:sat} differ only by their projected increments. The distance between them is at most \(2r\) and also at most \(\|h_k\|\) by nonexpansiveness. At \(r=c/2\), attaining \(c\) forces both projected increments to have length \(r\) and to be antiparallel. If \(h_k=0\) this is impossible. Otherwise projection preserves the direction of each nonzero increment, so \(g_k\) belongs to the line spanned by \(h_k\). Condition on \(W\), apply the non-concentration requirement, and integrate. Each such event has zero probability. Taking a union over the finite horizon proves the claim at the critical point.
+
+For \(r>c/2\), let the two opposite lengths at the support point of Condition 3 be \(a_0,a_1>c/2\). The projected distance there is \(\min(a_0,r)+\min(a_1,r)>c\). The strict threshold and strict unalarmed prefix define a relatively open subset of the support containing this point, hence a set of positive probability. This establishes Theorem~\ref{thm:boundary}. Bounded watermarks can keep \(\|h_k\|<c\) throughout a finite horizon, in which case nonexpansiveness gives zero risk for all \(r\). Conversely, if \(g_k=Ue_1\) and \(h_k=be_1\) with \(b>c\), then \(U\in[r_\star-b,-r_\star]\) attains the diameter at \(r_\star\). A positive mass of unalarmed outcomes on this interval invalidates equality safety. These cases identify distinct failures of the support and non-concentration conditions.
+
+\subsection{Conditional law, joint support and the likelihood envelope}
+
+Let \(\mathcal H_s\) comprise the old full received prefix and current trusted measurements. The old target prefix is healthy under the true fixed-template law. Conditional on \(W\), subtract the nominal affine regression of the healthy current target on \(\mathcal H_s\). The resulting innovation has conditional mean zero and covariance \(V\). At the mean of the history the trusted and the full-old-plus-current-trusted state means coincide. At a joint support point with healthy terminal innovation \(-d/2\), the two full-mean increments relative to that center are \(-Ld/2,Ld/2\). Independence of the Gaussian physical vectors and \(W\), the mean's presence in the support of a Gaussian history, and \(V\succ0\) justify the point in the frozen model. If a displacement is specified by a limit point of the watermark image, the strict inequalities in \eqref{eq:check} allow a nearby actual support value by continuity.
+
+For a prefix, whiten the nominal target observations given the trusted observations, in time-ordered blocks. Under each fixed working template parameter the conditional whitened innovation vector has a shifted unit-covariance Gaussian density. Under their normalized mixture its density is bounded by the height of the standard Gaussian at zero. The ratio to the nominal standard Gaussian density is bounded by \(\exp(\|z\|^2/2)\). In particular, the Bayes factor at the centered unaffected prefixes is at most one. At the chosen first-packet support point, the affected vector has earlier blocks zero and final squared length \(d^\top V^{-1}d/4\). Thus \eqref{eq:check} implies a strictly unalarmed prefix and both lengths exceeding \(c/2\). Nonzero nominal means can be subtracted. Independence here provides joint support; the abstract theorem only uses the actual joint support. The derivation also uses common trusted marginals under the working mixture and absence of dependence of the alarm on repaired estimates.
+
+\subsection{Nominal MSE identity}
+
+Given \(\mathcal F_k\), the conditional expectation of \(X_k-\mu_k^0\) is zero. Expanding the squared error in \eqref{eq:sat} gives
+\[
+ \E_0\|X_k-\widehat X_k^0(r)\|^2
+ =\tr P_{F,k}+\E_0\|\mu_k^0-\widehat X_k^0(r)\|^2 .
+\]
+The second norm is the distance from the full mean to the translated ball, namely \((\|g_k\|-r)_+\). By the tower property the conditional mean gap has zero mean and covariance \(P_{T,k}-P_{F,k}\). The gap is Gaussian under the stated deterministic affine information model. For any fixed \(x\ge0\), \((x-r)_+^2\) is convex in \(r\) and differentiable with derivative \(-2(x-r)_+\). Dominated convergence gives the derivative of \eqref{eq:cost}. If a gap covariance is nonzero, its Gaussian norm has unbounded support and the expected derivative is strictly negative for finite \(r\). Minimization over \([0,r_\star]\) now gives \eqref{eq:zero-cost} and \eqref{eq:budget}.
+
+\section{Deterministic numerical enclosures}
+\label{app:cert}
+
+\subsection{Healthy costs}
+
+The nominal covariances use decimal model entries interpreted exactly as rationals. The trace of the common-gain reference covariance serves as the V0 denominator. For the two-dimensional gap, let \(\lambda_-\le\lambda_+\) be the covariance eigenvalues and \(v(\theta)=\lambda_-+(\lambda_+-\lambda_-)\sin^2\theta\). Conditional on direction, the standard Gaussian radius has a Rayleigh distribution. Its truncated second moment is
+\[
+ f(v,r)=2v e^{-r^2/(2v)}-r\sqrt{2\pi v}\,
+             \operatorname{erfc}\!\left(r/\sqrt{2v}\right).
+\]
+One obtains this expression by integrating \(2u\exp(- (r+u)^2/(2v))\) for \(u\ge0\). The expectation is \(2/\pi\) times the integral of \(f(v(\theta),r)\) on \([0,\pi/2]\). The rational recursions and certified angle integrals give the respective critical MSE enclosures
+\begin{align*}
+ \text{Unstable:}\quad &[0.24381160133333157,\,0.24381160133333163],\\
+ \text{Stable:}\quad &[0.24222648599508800,\,0.24222648599508806].
+\end{align*}
+The independent floating-point check forms the entire finite joint state covariance, applies a Schur complement to each measurement prefix, and integrates the nonnegative radial tail before averaging the directions. This check uses a different covariance and integration calculation from the certificate.
+
+\subsection{First-packet risk lower and upper bounds}
+
+With \(V=C_V C_V^\top\), write \(g_s=g_H+LC_V U\) and \(\mu=C_V^{-1}d_s\), where \(U\) is a standard Gaussian independent of the old and trusted data conditional on the legal watermark. The residual of this conditional split, \(g_H\), has covariance \(P_{T,s}-P_{H,s}\), with \(P_{H,s}\) the state covariance given \(\mathcal H_s\). Earlier false alarms have probability at most \(1/\eta\) even after conditioning on \(U\). For the current alarm, write the Bayes factor as a marginal history likelihood ratio \(B_H\) times the current conditional ratio. The density-peak inequality gives \(B_s\le B_H e^{\|U+\mu\|^2/2}\), with nominal \(\E_0[B_H\mid W]=1\). The history is actually unaffected by the template at the first packet. A union bound therefore yields
+\[
+ \Prb(\tau_A\le s\mid W,U)\le \eta^{-1}\big(1+e^{\|U+\mu\|^2/2}\big).
+\]
+This bound retains the possibility of earlier and same-round alarms. It does not use independence of the danger and alarm events.
+
+For a box in two watermark and two terminal-innovation coordinates, let \(a\) be a certified radius such that all points in the box are dangerous whenever \(\|g_H\|\le a\). Set \(\sigma_H^2=\lambda_{\max}(P_{T,s}-P_{H,s})\). The conditional risk on this box is at least
+\[
+ \left[1-e^{-a^2/(2\sigma_H^2)}
+     -\eta^{-1}\big(1+e^{\|U+\mu\|^2/2}\big)\right]_+.
+\]
+The Rayleigh bound follows by representing \(g_H\) as a linear image of a two-dimensional standard Gaussian. Possible boxes for the upper bound use instead the two Gaussian coordinates of the entire healthy gap \(g_s\). Any point with an output displacement beyond \(c\) is included. The radius and displacement tests include
+\[
+ \|\Pi_r(u)-\Pi_r(v)\|
+ \le \frac{2r}{\max(r,\|u\|)+\max(r,\|v\|)}\,\|u-v\|.
+\]
+When both points are outside, squaring reduces the inequality to
+\((\|u\|-\|v\|)^2(1+\cos\theta)\ge0\). When one point is inside, the squared inequality is affine in \(\cos\theta\) and holds at its endpoints \(1\) and \(-1\) since the inside length is at most \(r\) and the outside length at least \(r\). Inside both, the inequality is equality.
+
+Each truncated integration uses a Cartesian mesh of step \(1/16\). The half-grid for the first watermark coordinate uses sign symmetry. The watermark cutoffs are \(2.75\) and the two standard Gaussian cutoffs \(3.5\), giving \(48{,}570{,}368\) candidate cell pairs. Cell masses are enclosed by Gaussian CDF differences. Their omitted joint mass is at most \(0.001131346363\), charged completely to the upper bound. State projection distances have a \(10^{-8}\) binary64 midpoint margin after interval propagation of the box coordinates. The code checks coordinate and radius ranges. The nonnegative summation margin is \(10^{-7}\). These margins enclose rounding under correctly rounded IEEE~754 binary64 operations, including the square root, and the stated ball-arithmetic library. The calculations produce outer enclosures, with analytic relaxations for alarms and for partially classified boxes.
+
+\section{Statistical evidence and cost matching}
+\label{app:archive}
+
+All methods share archived inputs in the held-out comparisons. For a contrast, let \(p_+\) and \(p_-\) be the two marginal probabilities of a discordant outcome in one record. The risk contrast is \(p_+-p_-\). Single-method probabilities and these discordant probabilities have binomial counts across records. The 52 reported binomial intervals share a Bonferroni error budget of \(0.025\); differences use the corresponding outward endpoint subtraction. The full archive includes an unobserved-event sentinel and the strict comparison excludes ties.
+
+The healthy V1a score is the time average of \(\|\widehat X_k^{\rm V1a}-\mu_k^0\|^2\), plus the deterministic full-information covariance trace average for the MSE. For each model there are 6144 saved scores from two independent registered families. The lower mean interval uses a mixture of nonnegative products for a nonnegative mean. The upper interval uses bounded products after clipping the scores at \(2.6\), then adds a deterministic upper bound for the excess moment. The latter follows from a rank-two Gaussian quadratic envelope with at most \(32(10+1)\) terms. Each MSE endpoint has error probability at most \(0.00625\). The complete health family therefore has budget \(0.025\), and together with the risk family the total error budget is \(0.05\) under the registered sampling law. Radius-endpoint inclusions use the monotonicity of \(J_N\) and certified sign checks. The intervals describe statistics of this recorded score implementation; the critical zero-risk costs themselves were obtained deterministically.
+
+The historical deterministic-input Sobol rerun uses four fixed scrambles with nested sizes 512 and 1024. Its three-packet point estimates, V1a and nominal-match saturation respectively, are \(24.19\%,18.63\%\) and \(54.39\%,40.82\%\). Variation across scrambles is an integration diagnostic. The archived count intervals and the deterministic first-packet enclosures have separate meanings.
+
+\section{Frozen model and reproduction index}
+\label{app:reproduce}
+
+The model in Section~\ref{sec:evidence} uses \(X_0\sim\mathcal N(0,I_2)\), process covariance \(I_2\), and independent measurement covariances \(0.5I_2\). The two plant matrices are
+\[
+ A_{\rm u}=\begin{bmatrix}1.08&0.05\\0.01&1.05\end{bmatrix},
+ \qquad
+ A_{\rm s}=\begin{bmatrix}0.80&0.05\\0.01&0.90\end{bmatrix}.
+\]
+The retained model file lists all observations, neighbor sets and common gains. The watermark uses \(\lambda=0.5\) and independent \(\beta_k\sim\mathcal N(0,0.5I_2)\). The supplied working prior and sequence of starts are defined in the original registration. Case results use the original energy-normalized observation template in the archive.
+
+\begin{itemize}
+ \item \href{https://github.com/center-666/paperlast/tree/b1509be0265ecd0512befe999847fa5908087872/common_g_reference_revision_20261115/inputs}{Model and common gains}.
+ \item \href{https://github.com/center-666/paperlast/tree/b1509be0265ecd0512befe999847fa5908087872/JFI_secure_estimation_accuracy_safety_frontier}{Receiver and archived counts}.
+ \item \href{https://github.com/center-666/paperlast/tree/b1509be0265ecd0512befe999847fa5908087872/JFI_A0_safety_accuracy_theorem_review}{Health, first-packet certificates and archived confidence coverage}.
+ \item \href{https://github.com/center-666/paperlast/tree/b1509be0265ecd0512befe999847fa5908087872/JFI_A0_direct_joint_risk_feasibility}{Fixed quadrature and paired-output recurrence audit}.
+\end{itemize}
+File digests and the independent presubmission check accompany the manuscript. All evaluations are offline and use existing records or the frozen analytic integrals.

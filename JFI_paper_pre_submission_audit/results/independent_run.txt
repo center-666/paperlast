@@ -1,0 +1,2 @@
+﻿unstable: 7.070546380730% independent check; 670 archived paths
+stable: 6.865133625132% independent check; 681 archived paths

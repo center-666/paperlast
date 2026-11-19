@@ -1,0 +1,8 @@
+﻿Two pdflatex passes in TeX Live 2025 (elsarticle 3.4c).
+PDF: 10 A4 pages. All pages rendered at 96 DPI and visually checked.
+Section 3 through 5, Appendices A through D and 11 references present.
+Final log: no undefined references or citations, and no overfull or underfull box warnings.
+Frozen health-cost test suite: 5 tests passed.
+Common evidence lock: 72 files verified before and after the independent calculation.
+Frozen analytical and archived-data results: all JSON entries reproduced. New synthetic paths: 0.
+PDF SHA-256: 204b7e655d44b635f21683ab348b259c918cadbc6b58f09f67d03b9f00e27c06
