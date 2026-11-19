@@ -1,0 +1,21 @@
+Python 3.10.18; NumPy 2.2.5; SciPy 1.15.3
+
+> python -B -X utf8 -m unittest discover -v
+test_actual_mse_expansion_and_conditional_risk_scope (test_theory.FrozenDataTests) ... ok
+test_early_error_gaps_and_numeric_quadrature (test_theory.FrozenDataTests) ... ok
+test_fixed_v0_lower_bound_uses_only_first_crossing_decoder_strata (test_theory.FrozenDataTests) ... ok
+test_nominal_only_match_is_replayed_on_twelve_records_each (test_theory.FrozenDataTests) ... ok
+test_saved_models_match_energy_and_renormalize (test_theory.FrozenDataTests) ... ok
+test_distinct_mixture_means_strictly_lose_label_information (test_theory.GaussianIdentityTests) ... ok
+test_even_rule_error_agrees_with_direct_density_overlap (test_theory.GaussianIdentityTests) ... ok
+test_identical_mean_components_have_zero_label_loss (test_theory.GaussianIdentityTests) ... ok
+test_watermark_second_moment_against_isotropic_formula (test_theory.GaussianIdentityTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 5.486s
+
+OK
+
+> python -B -X utf8 run_theory.py
+unstable: first-three equal-prior reference errors [0.301562, 0.232572, 0.179909]; nominal matching radius 0.34157653 on saved inputs
+stable: first-three equal-prior reference errors [0.162436, 0.087035, 0.062752]; nominal matching radius 0.34216826 on saved inputs

@@ -1,0 +1,35 @@
+{
+  "baseline": "c050b2033589868145878ff2047e733d47e68582",
+  "original_inputs_reverified": 29,
+  "additional_inputs_reverified": 9,
+  "tests_passed": 9,
+  "repeated_json_byte_identical": true,
+  "replayed_complete_paths_per_model": 12,
+  "saved_decoder_histories_per_model": 128,
+  "new_physical_paths": 0,
+  "literature": {
+    "updated_local_catalog_records": [
+      "SRA04",
+      "SRA05",
+      "SRA06"
+    ],
+    "local_pdf_count": 146,
+    "catalog_record_count": 208,
+    "new_local_pdfs": 0,
+    "export_and_check_completed": true
+  },
+  "sha256": {
+    "01_\u7edf\u8ba1\u4e00\u81f4\u6027\u4e0e\u524d\u7f00\u8fa8\u8bc6.md": "620e0496655039e907fa178736bc1fe8cbc143f50d4c7bdbf50b5e3170a977e5",
+    "02_\u8bef\u5dee\u4f20\u64ad\u4e0e\u540d\u4e49\u7b49\u6210\u672c.md": "8cd2226b8489e5334bc51e4a4798c801dc511bd21954055817f1ac161bb4e543",
+    "03_\u8bba\u6587\u6280\u672f\u7ed3\u6784\u4e0e\u5b9a\u7406\u5bf9\u7167.md": "0781aaa8040266a6057b0d6d0057b30bef5e1a9fd7c86b055cbd70757f2fd2c7",
+    "bridge_and_cost.py": "7746ec645c6723586e16c94641b80571a3aa7f3b15d89d42d520b3f02338fb4e",
+    "dependency_lock.json": "5d0c69cb8e4298f921dda98013be2c0bfe014ec694534a00d5802609355de25d",
+    "early_experiment.py": "486b16f76dc5cb76b9d9462e2102ec84efbdb2e0d02696384b1beaff3ec47755",
+    "README.md": "9454ad5c26b7800515a00764260bd571f54866df46ab240a77392bf561ab2e9a",
+    "requirements.txt": "5aa65b59186a3f663b85bd03ae40d3f9008f507f00c1b0e90930db32fabb4cee",
+    "results/results.json": "6d1dc491e5f0358e70de3991d9825375a1283a86e67510774c12cfbada6e5936",
+    "results/test_log.txt": "60e4c818c80c11df8c3de063bed87993b7572a0774f1218cdeaf910077579412",
+    "run_theory.py": "67f0aa7cdaf217225b3e3ccd26222d774a5e74d9f65abcad7528089d66aa8ef1",
+    "test_theory.py": "562df8551e0838ed17e0d97dfe33eb3434b8c4e4658c773271dfd83feb689e1a"
+  }
+}
