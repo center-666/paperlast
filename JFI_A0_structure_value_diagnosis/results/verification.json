@@ -1,0 +1,28 @@
+{
+  "baseline": "67ef5aba1549bacf5852a54ba4bc162b4efd9aed",
+  "previous_offline_dependencies_verified": 5,
+  "frozen_receiver_and_data_files_verified": 29,
+  "tests_passed": 6,
+  "replayed_complete_a0_paths": 24,
+  "saved_primary_a0_outcomes_analyzed": {
+    "unstable": 670,
+    "stable": 681
+  },
+  "new_physical_inputs": 0,
+  "repeated_outputs_and_figures_byte_identical": true,
+  "sha256": {
+    "archive_analysis.py": "c9333dde545775b284cb08fab68468d16f95c90cd4ca2bca539ed9941f04f547",
+    "dependency_lock.json": "c176a4e857fb322bc6e81030f7fad7bf151940cfe45d64b5fae2b73f0f22d9b8",
+    "figures.py": "bd10494520f8725ada4e4ef952250289b5f0aba140bf303397c983b176f71fdc",
+    "identification_replay.py": "55269000863a9b119bbb512144246db469c0958a46a741d734cfe2e63079fe75",
+    "README.md": "4fbd3281048b8b98c11b9a9d3049e2a32e75149697fd5a3088020c18099e9746",
+    "requirements.txt": "af6fa71eb106310049f6f95070e8c0abfa2168135a4a9e2b285736d58968bf40",
+    "results/diagnostics.json": "f3cd2425095d16cca18c2a188ddd3ac0411a2acacaf7124b69e51667fa4f54e4",
+    "results/replay_error_decomposition.png": "8212ca31cce5019920a5233d33fdec50766b536aeffc78e7bda8bf44ab2bf77a",
+    "results/replay_information_value.png": "f7a7f6177f483979a8f415ec216a16bbd86cc499df320383e2a0ae36f0c5f476",
+    "results/saved_outcome_frontier.png": "e3d27f79bf3567e0557e988df90a22f5bbde0fbcf8eb881c0c2ed814a87f29e6",
+    "results/test_log.txt": "f310341b18fe7048a8e0b78265b88ec27f1535546438f263a6dc9d8ee6dafd9c",
+    "run_diagnosis.py": "e6401a700978a219baddcb8b34d8e502ef9c057d1ae74bfb2b79118881143d1b",
+    "test_diagnosis.py": "5c450bc5a402241f5a8448fa64ec6964e2ec2030f17f43aedef7e4d248fc49bb"
+  }
+}

@@ -1,0 +1,18 @@
+Python 3.10.18; NumPy 2.2.5; SciPy 1.15.3; Matplotlib 3.10.8
+
+> python -B -X utf8 -m unittest discover -v
+test_fixed_history_and_propagated_labels_are_scored_independently (test_diagnosis.A0DiagnosisTests) ... ok
+test_frozen_cohorts_and_saturation_costs (test_diagnosis.A0DiagnosisTests) ... ok
+test_label_risk_relief_preserves_new_discordant_events_and_common_alarms (test_diagnosis.A0DiagnosisTests) ... ok
+test_original_replay_and_label_inactive_healthy_result (test_diagnosis.A0DiagnosisTests) ... ok
+test_path_level_mse_intervals_are_family_adjusted (test_diagnosis.A0DiagnosisTests) ... ok
+test_three_squares_and_each_signed_cross_reconstruct_total (test_diagnosis.A0DiagnosisTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.113s
+
+OK
+
+> python -B -X utf8 run_diagnosis.py
+unstable: 670 archived outcomes; strict pre-alarm counts in 12 complete replays: V1a 5, anchor@2% 4, activity-label diagnostic 2, true-onset diagnostic 1
+stable: 681 archived outcomes; strict pre-alarm counts in 12 complete replays: V1a 8, anchor@2% 4, activity-label diagnostic 2, true-onset diagnostic 1
