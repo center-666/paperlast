@@ -1,0 +1,10 @@
+test_box_mass_and_midpoint_projection (test_health_cost.HealthCostChecks) ... ok
+test_critical_cost_contains_expected_values (test_health_cost.HealthCostChecks) ... ok
+test_decreasing_and_convex_at_interior_points (test_health_cost.HealthCostChecks) ... ok
+test_frozen_inputs (test_health_cost.HealthCostChecks) ... ok
+test_probability_and_binomial_endpoints (test_health_cost.HealthCostChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.507s
+
+OK

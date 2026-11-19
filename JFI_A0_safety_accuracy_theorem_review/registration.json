@@ -1,0 +1,22 @@
+{
+  "baseline": "e9ec9e22f04ea10c0bd3a14b11c60b31ccf1cda8",
+  "template": "The same registered and archived ordinary A0, E=10, start index 7, length 10",
+  "health_horizon": 32,
+  "risk_horizon": [7, 8, 9],
+  "danger_squared": "1/10",
+  "bf_threshold": 20,
+  "radii": "Load the four frozen cost points and the earlier nominal match without changes",
+  "certificate": {
+    "beta_box": "[-2.75, 2.75]^2; sign reflection used",
+    "standard_box": "[-3.5, 3.5]^2",
+    "beta_mesh_per_unit": 16,
+    "standard_mesh_per_unit": 16,
+    "arithmetic_precision_bits": 96
+  },
+  "statistics": {
+    "health_clip": 2.6,
+    "health_family_error": 0.025,
+    "risk_family_error": 0.025,
+    "sample_usage": "Archived health integrands and archived onset-7 holdout outcomes only. No new samples. Sobol reproduction uses the exact original inputs, seeds and node counts."
+  }
+}

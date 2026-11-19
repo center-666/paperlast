@@ -1,0 +1,276 @@
+{
+  "baseline": "e9ec9e22f04ea10c0bd3a14b11c60b31ccf1cda8",
+  "tree": "080ab24662448287bd5b5b4e7e7a040d13a8859b",
+  "files": {
+    "JFI_A0_direct_joint_risk_feasibility/01_联合事件与严格界.md": {
+      "sha256": "9cc2801fd8d944449c0d70b40536463a6b6233ef96d49f248fdd3ca6baed3222",
+      "normalize_CRLF": true,
+      "remote_git_blob": "d81664e0cb0e7348ec1424ae0ddf923d15cf14f3"
+    },
+    "JFI_A0_direct_joint_risk_feasibility/02_数值比较与文献定位.md": {
+      "sha256": "94e7e03b12a85bf0304c904509389c3a041841796a83acad84e23275d7301456",
+      "normalize_CRLF": true,
+      "remote_git_blob": "94ade791218d2e4187fcae30dcb9917c703ba3c1"
+    },
+    "JFI_A0_direct_joint_risk_feasibility/README.md": {
+      "sha256": "d2ca0cc48fa52c0e99dd1ec835818f3929b057de902341d5badcc8f3ffdb7c5e",
+      "normalize_CRLF": true,
+      "remote_git_blob": "28f70c6bdf131d32d03eac3baeb89f331aa61598"
+    },
+    "JFI_A0_direct_joint_risk_feasibility/dependency_lock.json": {
+      "sha256": "24bd208a68081a3ca6d0fbdd60c93f0f0e299c0758c8b95faaa94d401d976b40",
+      "normalize_CRLF": true,
+      "remote_git_blob": "a43f3ab974362e2104df13cd7e1ff5a665609b4e"
+    },
+    "JFI_A0_direct_joint_risk_feasibility/exact_bounds.py": {
+      "sha256": "56c950de456bbdee0cd24e90dba7a58e77f4f06fbab4a23a9bf55cca404cc6bc",
+      "normalize_CRLF": true,
+      "remote_git_blob": "94da043321ebb5540b971b435251f4b12a7d2221"
+    },
+    "JFI_A0_direct_joint_risk_feasibility/joint_integral.py": {
+      "sha256": "2d63a4bf7c9bd5f1d4de083b0d7c4b66d5cdb7ca714e3004573b8142d916cf12",
+      "normalize_CRLF": true,
+      "remote_git_blob": "cbb0884a7172e5bf0249041655504347b0e5fc84"
+    },
+    "JFI_A0_direct_joint_risk_feasibility/requirements.txt": {
+      "sha256": "b67a7ea5f00b752e5d846eb4e53dfb25eb782b2da874e3d2130f70a5a2f2435c",
+      "normalize_CRLF": true,
+      "remote_git_blob": "3d95ba095799a13d9d2cc74ab67893c9ed16215f"
+    },
+    "JFI_A0_direct_joint_risk_feasibility/results/results.json": {
+      "sha256": "d1296bc9c1bd7953e49477a1458ed735fb1bcc9b81662c233cf4bc510a6883f6",
+      "normalize_CRLF": true,
+      "remote_git_blob": "f2ab0e2354bd048ac87d1013f57fe74668b99d0e"
+    },
+    "JFI_A0_direct_joint_risk_feasibility/results/test_log.txt": {
+      "sha256": "041b0d057eb4c4aa54958be16a359e7305ae8267ed82ff4b66e2350a9bcdfe8e",
+      "normalize_CRLF": true,
+      "remote_git_blob": "22b886fc21d449fd415759fd49c711062d9ee085"
+    },
+    "JFI_A0_direct_joint_risk_feasibility/run_joint_analysis.py": {
+      "sha256": "8b11815759fe8012f848dba4eb5b6736cb33c5e564233ebb61663edbdaba91aa",
+      "normalize_CRLF": true,
+      "remote_git_blob": "917c0b55d66ad0dbbd12c190cb916f522cbaf53e"
+    },
+    "JFI_A0_direct_joint_risk_feasibility/test_joint_analysis.py": {
+      "sha256": "30fcb186c4512500cf25596cc00c0be3c3610ee098eee5dc131cee6c56bbb04a",
+      "normalize_CRLF": true,
+      "remote_git_blob": "c3b1122506009b07b9032e327d15233119f1ac58"
+    },
+    "JFI_A0_early_identifiability_and_safety_theory/results/results.json": {
+      "sha256": "6d1dc491e5f0358e70de3991d9825375a1283a86e67510774c12cfbada6e5936",
+      "normalize_CRLF": true,
+      "remote_git_blob": "717584d702ee00ae20687693f73b67cef0621124"
+    },
+    "JFI_V11_soft_weight_reconstruction_20261118/analytical_weight.py": {
+      "sha256": "594cfcaa19a2b7d079fed8872975e0d6beac805045c243152c9496ad9da110ec",
+      "normalize_CRLF": true,
+      "remote_git_blob": "e279895d2da59a2dace292db83291ec58efae91c"
+    },
+    "JFI_V11_soft_weight_reconstruction_20261118/phase1_results/ablation.json": {
+      "sha256": "0415344fb5ea950c8fb80fa0e45c9e4f5ee776790028d194b9b22dd72b535f65",
+      "normalize_CRLF": true,
+      "remote_git_blob": "2e6d5271fe326a1307170032e7b588b1f61d29bc"
+    },
+    "JFI_V11_soft_weight_reconstruction_20261118/phase1_results/stable_step_logs.npz": {
+      "sha256": "d79064bf2ba28971e2d37d8b40fd2196bba0d7854cc9e719c11801f9014fdccf",
+      "normalize_CRLF": false,
+      "remote_git_blob": "d83464c4176c1c334753a9d638b5c5c051047565"
+    },
+    "JFI_V11_soft_weight_reconstruction_20261118/phase1_results/unstable_step_logs.npz": {
+      "sha256": "8b378e3a304d65060f26d4d62b5b4262a23e7e2f05cc131426bca11ec6284cd1",
+      "normalize_CRLF": false,
+      "remote_git_blob": "43e5325698993b0b8b1129970a9d875682726bb0"
+    },
+    "JFI_V11_soft_weight_reconstruction_20261118/validate_v11.py": {
+      "sha256": "98c27e0e3abbfd94ed5c4aa90decffb2ef80f95e9e8d2589ab9a2e0db07a490b",
+      "normalize_CRLF": true,
+      "remote_git_blob": "5ff5227ad46128d19338084fbb098ea808077387"
+    },
+    "JFI_V11_soft_weight_reconstruction_20261118/weight_experiment.py": {
+      "sha256": "2246a3bf93091649e62ff0d8831de6a13eb7b5c709e81ec49d68224d07c2e72a",
+      "normalize_CRLF": true,
+      "remote_git_blob": "9a69916a02854cd87323bb0f48b5219a3970f926"
+    },
+    "JFI_V12_budget_and_risk_aware_compensation_20261118/budget_policy.py": {
+      "sha256": "0cef3937cd2536485837797fe6c9fca7fee8e0afae69296d75b065f8d4db4a81",
+      "normalize_CRLF": true,
+      "remote_git_blob": "79e66948bc255291525a56005cc0599f1ce87c44"
+    },
+    "JFI_V12_budget_and_risk_aware_compensation_20261118/nominal_audit.py": {
+      "sha256": "36963ef8f5143e04d0e4f1905cf2141f2e4134b5a7d021f5af952f2b8a428301",
+      "normalize_CRLF": true,
+      "remote_git_blob": "edefac31448b7e3d21422ff2b47217cc50654a5e"
+    },
+    "JFI_V12_budget_and_risk_aware_compensation_20261118/receiver_experiment.py": {
+      "sha256": "959ae159a3ff11d8b3bf03e0377411a543194795a986a58bafedcde5ea068a41",
+      "normalize_CRLF": true,
+      "remote_git_blob": "876d3660eb0ccf75c48ecb1323fd0d5a1bbdb6f2"
+    },
+    "JFI_V12_budget_and_risk_aware_compensation_20261118/registration.json": {
+      "sha256": "793a6aecfcca9c986bb0e2ab36ae802320a022c6ec491fe0e816b012addf3d0b",
+      "normalize_CRLF": true,
+      "remote_git_blob": "d416210adff1efcd8008dc40a6197c3944d3df5f"
+    },
+    "JFI_V12_budget_and_risk_aware_compensation_20261118/results/nominal_audit.json": {
+      "sha256": "c6b1863b3aed44afa6779a85d266a0abc03e930e400932fa088052ba0ab37f60",
+      "normalize_CRLF": true,
+      "remote_git_blob": "38c7eb51ec88080c290741a83c7ef16dc9854ddb"
+    },
+    "JFI_V12_budget_and_risk_aware_compensation_20261118/results/stable_bounded_health_scores.npy": {
+      "sha256": "37557d6c11b6b41cd52602fda665567497d407a260b7cf36c07eed2d0a42ae44",
+      "normalize_CRLF": false,
+      "remote_git_blob": "5b1a8870f1f82c398d86522952cac05c7dd2eec9"
+    },
+    "JFI_V12_budget_and_risk_aware_compensation_20261118/results/unstable_bounded_health_scores.npy": {
+      "sha256": "71f053212f310321307071b1e236343cc9f69ad0a4843014c2d0953e46bde7c2",
+      "normalize_CRLF": false,
+      "remote_git_blob": "bec3271b1c602f07f534b8798eeaab429eba279a"
+    },
+    "JFI_V12_budget_and_risk_aware_compensation_20261118/shared.py": {
+      "sha256": "70131658e01eec3778ecc7bcb642545e2f8c41b3104bccc02ab71b9d7cb6ed81",
+      "normalize_CRLF": true,
+      "remote_git_blob": "c656d50788a1bb61e82d12aa30e793ab4e124193"
+    },
+    "JFI_V13_pre_alarm_risk_aware_accommodation/batched_observer.py": {
+      "sha256": "eeb174f41018191ef9af454c4897b08ad3e5606eb5842d675fd854fee8bcd891",
+      "normalize_CRLF": true,
+      "remote_git_blob": "9fdeecaf1c385c9346a63a89a48f18b08726c52f"
+    },
+    "JFI_V13_pre_alarm_risk_aware_accommodation/inputs.py": {
+      "sha256": "0aadb33415ec57c2caea5a641fd3c0cc15cb84c7c95b47d216f1ece581db5d02",
+      "normalize_CRLF": true,
+      "remote_git_blob": "6ed3557b79501d868e47e95558f9a56367402b5a"
+    },
+    "JFI_V13_pre_alarm_risk_aware_accommodation/replay.py": {
+      "sha256": "819d0e7f3c1ad75a6e4867eb43d3dbc9d8d6ecdbe66c64be4ea6967313cbfd99",
+      "normalize_CRLF": true,
+      "remote_git_blob": "ee7d694dce8281898534190d879de8f025eccbdb"
+    },
+    "JFI_V14_dual_direction_accommodation/dual_receiver.py": {
+      "sha256": "2a9bb0b3fa734a1a538dd67f6adef101340dbf48ceec2b789849a67940acdaf0",
+      "normalize_CRLF": true,
+      "remote_git_blob": "3d805e7c136d508167291a8ba44139212751f686"
+    },
+    "JFI_V14_dual_direction_accommodation/registration.json": {
+      "sha256": "05c479b8a2dd50d588d6626310d6fbbdd21d1035c3ffb065b210b539a150a38c",
+      "normalize_CRLF": true,
+      "remote_git_blob": "d445c52e8b68edb0738fffdf76dcba75918dd5bc"
+    },
+    "JFI_V14_dual_direction_accommodation/trusted_prediction.py": {
+      "sha256": "2544f995635d2a89008a4b525fd45bd5276be04a6b19b46d97eca0e924ab6c63",
+      "normalize_CRLF": true,
+      "remote_git_blob": "a71574ab001d4ecdd3f01a0bbe0820b862420fa4"
+    },
+    "JFI_V14_dual_direction_accommodation/v14_inputs.py": {
+      "sha256": "91784d0a917ec24a5a44e36a9a7e9c81e0c8e0767b87b2d47d7148e463b2192c",
+      "normalize_CRLF": true,
+      "remote_git_blob": "5312a8736b276c280ac70cd036044cb5e0a14b09"
+    },
+    "JFI_defensive_offline_validation/frozen_inputs_sha256.json": {
+      "sha256": "7e40c9b68db975477988f27016c3ec61f693e4ce1de5bd9c3f974f011dcee17d",
+      "normalize_CRLF": true,
+      "remote_git_blob": "e76eb9b0d6b38f2bc98ca1e006600529dc6455d6"
+    },
+    "JFI_defensive_offline_validation/onset_diagnostics.py": {
+      "sha256": "12d59395678f3d2a3b98651d851c4325e996a039c60b78a9efad7530fc03c237",
+      "normalize_CRLF": true,
+      "remote_git_blob": "85930750f9408f78e9063311216fd42508d8cfea"
+    },
+    "JFI_defensive_offline_validation/paired_analysis.py": {
+      "sha256": "9efbd28e21946b763f0f6125ac9e1e2219bed17a58fef7606aff1be250ff937b",
+      "normalize_CRLF": true,
+      "remote_git_blob": "aa0cb014d9f5d733f1593ab55c933910bcd9723f"
+    },
+    "JFI_defensive_offline_validation/replay_evaluator.py": {
+      "sha256": "7a056a5745f8bfcdda3b69af10d65d250bab258dcf544592bed1fbe0c38d585b",
+      "normalize_CRLF": true,
+      "remote_git_blob": "43865bbcc7cc91a816a2518d0faa104bdaffa5a1"
+    },
+    "JFI_defensive_offline_validation/risk_metrics.py": {
+      "sha256": "6267492c05a50f7e94db2b536b06825c58509e30c2ba49290499d3b59d1658a7",
+      "normalize_CRLF": true,
+      "remote_git_blob": "d7d00a6594683ccff2b3bb84a12c5594f4b7522a"
+    },
+    "JFI_reconstruction_attack_aware_soft_accommodation_V1/accommodation.py": {
+      "sha256": "93ee5df1d634b5ac34a42289b2216489e6bb08ee336d71cd66bf3774ec2a1dda",
+      "normalize_CRLF": true,
+      "remote_git_blob": "7b95346df34a371632e81e707da9bf95e4e7be56"
+    },
+    "JFI_reconstruction_attack_aware_soft_accommodation_V1/registration.json": {
+      "sha256": "1e327f04291ea6f1735fc9a98816c228e0a0bc42da25f9811fecac41c8d47c6b",
+      "normalize_CRLF": true,
+      "remote_git_blob": "2c1294a88a11c54c312931662e0c6ae17324fbab"
+    },
+    "JFI_reconstruction_attack_aware_soft_accommodation_V1/run_validation.py": {
+      "sha256": "56b0b6aabfabe38c8c06dbe9779ec791b4ff675262dc70039704112fab0d38bc",
+      "normalize_CRLF": true,
+      "remote_git_blob": "4719539e573165480ae9db7a85132a8d5a94e5aa"
+    },
+    "JFI_secure_estimation_accuracy_safety_frontier/experiment.py": {
+      "sha256": "cae76a13c36ca9c8fbfdcee095edb52c8f1b6b738c2fb103c15a50bd53b75c40",
+      "normalize_CRLF": true,
+      "remote_git_blob": "284bca4a1387549d86c012bd29a5aac2fa7d81e1"
+    },
+    "JFI_secure_estimation_accuracy_safety_frontier/frontier.py": {
+      "sha256": "1baef235ccb61c731c237a962def141a9c853695b4b11f997304ffbb72053c04",
+      "normalize_CRLF": true,
+      "remote_git_blob": "f248d33d65fe2ac7f1924592e87deda65fc8ae5b"
+    },
+    "JFI_secure_estimation_accuracy_safety_frontier/frozen_inputs.py": {
+      "sha256": "a95c3ce8545a69405aee5457de088dcb3a5e237a692184a93a9a0b145b439e51",
+      "normalize_CRLF": true,
+      "remote_git_blob": "8d9e49ec57ae919893d3e35d2fa9d0da364c123f"
+    },
+    "JFI_secure_estimation_accuracy_safety_frontier/receiver.py": {
+      "sha256": "7665e1e57d3b3b002994815c6c19e622038a05294f51d60439f1df994111be70",
+      "normalize_CRLF": true,
+      "remote_git_blob": "6e26689ee844260339997786a48b9f7690301708"
+    },
+    "JFI_secure_estimation_accuracy_safety_frontier/registration.json": {
+      "sha256": "0dc469e3f982de8c1a1b3dc644dd1759cebc0099fe1434c99d8cc61bcc702cf6",
+      "normalize_CRLF": true,
+      "remote_git_blob": "d8c27adfe4f19b4c01558cdd06004462d5150eed"
+    },
+    "JFI_secure_estimation_accuracy_safety_frontier/results/comparison.json": {
+      "sha256": "54f0dffcb6d9ad8e3f57cf41db39c47637a6025a7e0c8ebdd8cb0f1ff699057d",
+      "normalize_CRLF": true,
+      "remote_git_blob": "0b63eab65d41c6bd956a3d4833611558e844b16e"
+    },
+    "JFI_secure_estimation_accuracy_safety_frontier/results/frontier.json": {
+      "sha256": "34bd96cbf4d6eaa47c5f13a6efc0c4fc0165babf6f97149138189bd3a9a1cb11",
+      "normalize_CRLF": true,
+      "remote_git_blob": "7e89fdd008299c2f8c273d1c2fa2b160c820ffda"
+    },
+    "JFI_secure_estimation_accuracy_safety_frontier/results/stable_paired.npz": {
+      "sha256": "8f66ec25bfea881a98af6cc14f67b13ec42ae229f78a17df2705689d0d92c90d",
+      "normalize_CRLF": false,
+      "remote_git_blob": "acfa044cac4a9d16b03f219592d415143220b4a1"
+    },
+    "JFI_secure_estimation_accuracy_safety_frontier/results/unstable_paired.npz": {
+      "sha256": "43a11f0727c1fd9bd54bd6665ed34f850e0c4ae76768fc5fba992d5aa9b98b45",
+      "normalize_CRLF": false,
+      "remote_git_blob": "99f8fa37806b082588c1d41076691230791197cd"
+    },
+    "attack_gain_switch_audit_20261115/registration.json": {
+      "sha256": "667905eed453a595513c19dbc1ea5598289a1bdea4bd172f7976c8267429468f",
+      "normalize_CRLF": true,
+      "remote_git_blob": "e453af7d3d639f4fe3349a561aa82c920f954cb0"
+    },
+    "attack_gain_switch_audit_20261115/screen_arrays.npz": {
+      "sha256": "47b45c0367c78732fdb7aa81ba8f3cc481a1ac7c473848f233c7a47a7e1a6b3f",
+      "normalize_CRLF": false,
+      "remote_git_blob": "d1c39fcf53778047f12c16e3ded3b8239421e4ef"
+    },
+    "common_g_reference_revision_20261115/common_g_reference.py": {
+      "sha256": "95b667539e8d1341ae142ca4a1f9586b10cd85e9f4e1e9c62154bac0f789e8f4",
+      "normalize_CRLF": true,
+      "remote_git_blob": "dbd94ebff73002b882e8ec0800750a188c627e56"
+    },
+    "common_g_reference_revision_20261115/inputs/five_node_aggregate_model.json": {
+      "sha256": "dbe91a198a0a17efe5fe3c81a553234af327b94c1b966b6356920e32ec85c11e",
+      "normalize_CRLF": true,
+      "remote_git_blob": "88496c6d0102338a5f996c57a3196a14368997f0"
+    }
+  }
+}
