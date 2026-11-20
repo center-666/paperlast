@@ -1,0 +1,28 @@
+{
+  "baseline": "5b8364895d47c7df437d78d68cb5a979377cc503",
+  "scope": "Read-only early calibration of V1a using the original A0 stored record, original BF and Gaussian decoder. No new watermarks, controllers, or physical trajectories.",
+  "models": ["unstable", "stable"],
+  "evaluation": {
+    "onset": 7,
+    "packet_ages": [1, 2, 3],
+    "physical_indices_inclusive": [16, 27],
+    "target": 0,
+    "receiver": 1,
+    "healthy": 2,
+    "window_length": 10,
+    "bf": 20
+  },
+  "conditional_integral": {
+    "kind": "Unscrambled Sobol deterministic quadrature of whitened Gaussian sufficient scores; no generated sensor records",
+    "powers": [11, 13, 15],
+    "batch": 2048,
+    "rank_eigen_rtol": 1e-13,
+    "eigen_tie_policy": "Decreasing eigenvalue, canonical sign at largest absolute coordinate",
+    "normals": "Node transform uses plus 2^(-p-1) to stay inside the unit cube at every level"
+  },
+  "common_resource": "For hypothetical comparisons, equal normal coded energy, encoder operator bound and identical decoder gain or peak law, plus common communication length and healthy-estimation cost. No candidate is selected.",
+  "previous_inputs": {
+    "JFI_watermark_assisted_fusion_feasibility_20261119/replay_helpers_sha256.json": "67382affdef63972e374af2698cd5430539d2c1521e230b8e15e8e3abe47e0bb",
+    "JFI_watermark_assisted_fusion_feasibility_20261119/replay_results.json": "fb93e1dab07e5b678ad1084f1ae43c8a7d7bc4140e582bda4cbd009108369f40"
+  }
+}
