@@ -1,0 +1,36 @@
+{
+    "date":  "2026-11-20",
+    "timezone":  "Asia/Shanghai",
+    "base_commit":  "6a0e4985a4640181fea69511bd2d37ef81735fe8",
+    "request":  "这些是最新呃呃结果，请你做好记录上传，然后仔细审阅结合，然后结合之前几轮的对话给出你的建议",
+    "attachments":  [
+                        {
+                            "attachment_id":  "ad26285f-c57a-469c-a104-c6492f24c598",
+                            "archived_file":  "inputs/01_review_6a0e498_and_modal_recovery.txt",
+                            "bytes":  22051,
+                            "sha256":  "fb32992a0e5d145fc1fd50a157bea30b4428238efc518c3c5ae67d84b861b26b",
+                            "verified_byte_identical":  true
+                        },
+                        {
+                            "attachment_id":  "8db6c750-fbd9-4991-b805-a5cadb415395",
+                            "archived_file":  "inputs/02_scalar_temporal_coupling.txt",
+                            "bytes":  22002,
+                            "sha256":  "fc655b326f66fee17dd9d75e7bc49e420381bdc0fb36717c135233f1d3523bf3",
+                            "verified_byte_identical":  true
+                        },
+                        {
+                            "attachment_id":  "475a1c96-1fd8-4527-8798-ec3bad113e1e",
+                            "archived_file":  "inputs/03_T1_two_dimensional_uniform_inverse.txt",
+                            "bytes":  20609,
+                            "sha256":  "ad86815f78ae8ac3b60c8e8df1eb21ae405ef0f7fc69a1243111c8eee8bff211",
+                            "verified_byte_identical":  true
+                        },
+                        {
+                            "attachment_id":  "8f4af080-ca78-45d9-af11-7a642650dddd",
+                            "archived_file":  "inputs/04_T2_unknown_onset_and_T3_compensation.txt",
+                            "bytes":  20581,
+                            "sha256":  "097990405778e953788557476b49101c8828f5df5225f2874cd216631213c5ae",
+                            "verified_byte_identical":  true
+                        }
+                    ]
+}

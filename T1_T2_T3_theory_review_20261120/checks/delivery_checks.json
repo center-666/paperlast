@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "date": "2026-11-20",
+  "perspective": "reviewer",
+  "verified_original_attachments": 4,
+  "relative_links": 12,
+  "existing_sources_unchanged": {
+    "common_g_reference_revision_20261115/common_g_reference.py": "429c77e8b2d4286682324bd2b21a4baeb13648f9689f8349688a4d4a157c0dea",
+    "common_g_reference_revision_20261115/inputs/five_node_aggregate_model.json": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+    "JFI_reconstruction_attack_aware_soft_accommodation_V1/accommodation.py": "f51bb9e27c30050179e07d0b01632a04fbf8dc26526f8787afb4f6eeafb61398",
+    "B1_three_hypothesis_feasibility_20261120/registration.json": "65c326b3ac960259427e44a97bc8f0628a76ed04d3ea48e3a3189b07263ab7d8"
+  },
+  "physical_paths_generated": 0,
+  "deterministic_algebra_points": 1440,
+  "scope": "Formula and archive checks, not efficacy or novelty certification"
+}

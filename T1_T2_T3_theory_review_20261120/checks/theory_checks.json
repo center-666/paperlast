@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "scope": "Mathematical review and deterministic formula checks; no new physical experiment",
+  "constants": {
+    "lambda_": 0.5,
+    "ratio": 1.0769230769230769,
+    "threshold": 0.15,
+    "delta": 0.17865858414315994,
+    "B_squared": 0.28532593102559434,
+    "pmax": 0.6259385330288448,
+    "C2": 10.345846779293181,
+    "C1": 6.208296678654457,
+    "Cx": 9.193815899851463,
+    "C": 15.169236764951776,
+    "sigma_min_lower": 0.06592289483611202,
+    "rowwise_Frobenius_bound_squared": 230.10574403116462,
+    "scalar_half_shift_variance_bound": 27.85202535630569,
+    "scalar_jitter_variance_bound": 48.43536158482705
+  },
+  "deterministic_grid": {
+    "points": 1440,
+    "branches": {
+      "schur_difference": 662,
+      "difference_u": 778
+    },
+    "left_inverse_max_error": 1.7514197150946334e-12,
+    "max_observed_frobenius": 11.0477519744144,
+    "minimum_observed_singular": 0.10875332536708149,
+    "condition_number_diagnostic": [
+      {
+        "a": 1.0,
+        "largest": 2.4402698336889013,
+        "smallest": 0.5562578357920029,
+        "condition": 4.386940150181313
+      },
+      {
+        "a": 10.0,
+        "largest": 142.3692502406033,
+        "smallest": 1.3982652616976352,
+        "condition": 101.81848476143406
+      },
+      {
+        "a": 100.0,
+        "largest": 14143.083609915806,
+        "smallest": 1.4140578413530935,
+        "condition": 10001.771636429294
+      },
+      {
+        "a": 1000.0,
+        "largest": 1414214.5103602828,
+        "smallest": 1.4142120055430232,
+        "condition": 1000001.7711752197
+      }
+    ],
+    "interpretation": "Finite deterministic grid only; analytic bounds proved separately"
+  },
+  "exact_boundary_and_compensation": {
+    "onset_duration_pairs": 130,
+    "max_bad_blocks_even_duration": 2,
+    "max_bad_blocks_odd_duration": 1,
+    "block_recursion_exact": [
+      "341/1260",
+      "617/3780"
+    ],
+    "projection_counterexample": {
+      "true_state": 0,
+      "raw": 10,
+      "nominal_healthy_mean": 10,
+      "perfect_candidate": 0,
+      "budget": 1,
+      "projected": 9,
+      "candidate_squared_error": 0,
+      "projected_squared_error": 81,
+      "raw_squared_error": 100
+    }
+  },
+  "regional_noise_and_gain": {
+    "K": [
+      [
+        0.13254327079205022,
+        0.0
+      ],
+      [
+        0.019167338540752275,
+        0.0
+      ]
+    ],
+    "G": [
+      [
+        0.14579759787125526,
+        0.009583669270376132
+      ],
+      [
+        0.021084072394827496,
+        0.3288233502933646
+      ]
+    ],
+    "det_G": 0.0477395918200462,
+    "explicit_normalized_noise_covariance": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.5,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.9245562130177514,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.46237244897959173
+      ]
+    ],
+    "noise_spectral_bound": 1.0
+  }
+}
