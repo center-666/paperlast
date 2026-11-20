@@ -1,0 +1,47 @@
+{
+    "client_date":  "2026-11-20",
+    "timezone":  "Asia/Shanghai",
+    "repository":  "https://github.com/center-666/paperlast",
+    "base_commit":  "db3bbd77bc2bd34291cedce70fdaf01bb6113313",
+    "attachments":  [
+                        {
+                            "attachment_id":  "3a22a1cf-487f-42de-9f14-30dfdc341544",
+                            "archived_file":  "inputs/01_pollution_information_layer.txt",
+                            "bytes":  12481,
+                            "sha256":  "aae076f1d12160c79bd57d18898c97db5e517402f7e89cb665da74deb5250c5d",
+                            "verified_byte_identical":  true
+                        },
+                        {
+                            "attachment_id":  "68a79bb0-ae0f-444c-bafb-424a812a0898",
+                            "archived_file":  "inputs/02_active_information_watermark_B.txt",
+                            "bytes":  24653,
+                            "sha256":  "a2fcfdcf5f2713015beafc9e162bf16fd1c94ad293b9b8fa44c88c85e0839ca4",
+                            "verified_byte_identical":  true
+                        },
+                        {
+                            "attachment_id":  "cf25c0a2-3673-4a64-a5b3-8d35a5459218",
+                            "archived_file":  "inputs/03_B1_fourth_harmonic_policy.txt",
+                            "bytes":  16059,
+                            "sha256":  "ba719b8ea88bc17796f69893f411d29b8bdcf298b97520ce8ef081c9eb4bb6d6",
+                            "verified_byte_identical":  true
+                        },
+                        {
+                            "attachment_id":  "07c807cf-f6e6-4649-9ec1-3db723950d7f",
+                            "archived_file":  "inputs/04_three_hypotheses_and_state_risk.txt",
+                            "bytes":  21486,
+                            "sha256":  "e7357a66ceaa57c05dd3f99e33f4a0545c520a13bba710c907a152d405672333",
+                            "verified_byte_identical":  true
+                        },
+                        {
+                            "attachment_id":  "7455bc58-187a-4162-9586-4ef083cb60f2",
+                            "archived_file":  "inputs/05_equal_current_injection_boundary.txt",
+                            "bytes":  14720,
+                            "sha256":  "3bf03b699f9108bc6ac5c6ecb3837991ec4c48ac2a94d83ffdf37f79a929f3d8",
+                            "verified_byte_identical":  true
+                        }
+                    ],
+    "conversation_record":  {
+                                "archived_file":  "00_user_message.md",
+                                "provenance":  "Manual transcription of supplied conversation body, with Markdown and LaTeX formatting normalized; not byte-exact message export."
+                            }
+}
