@@ -1,0 +1,43 @@
+{
+  "arithmetic": "Python standard-library exact Fractions",
+  "physical_paths_generated": 0,
+  "scope": "Algebra checks only; no frozen-system or estimator-performance claim",
+  "checks": [
+    {
+      "check": "fourth_harmonic_and_norm",
+      "response": [
+        "-55/192",
+        "-673/10080"
+      ]
+    },
+    {
+      "check": "fourth_harmonic_and_norm",
+      "response": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "check": "fourth_harmonic_and_norm",
+      "response": [
+        "11",
+        "19/2"
+      ]
+    },
+    {
+      "check": "Q_task_product_expansion",
+      "status": "exact"
+    },
+    {
+      "check": "equal_H_positive_example",
+      "E_beta_squared_unit_direction": "19/2",
+      "fourth_order_gain_coefficient_pi_half_g_sigma2_one": "19/128"
+    },
+    {
+      "check": "finite_hypothesis_total_variance",
+      "before": "26/9",
+      "after": "65/27",
+      "information": "13/27"
+    }
+  ]
+}

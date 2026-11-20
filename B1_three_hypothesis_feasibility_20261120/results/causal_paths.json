@@ -1,0 +1,5762 @@
+[
+  {
+    "path_id": 16,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2418880266664287,
+    "support_mse": 0.33187845904084895,
+    "missing_mode_mse": 0.16389252589306447,
+    "mean_coding_energy": 553.0561131013278
+  },
+  {
+    "path_id": 16,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.3122218074748419,
+    "support_mse": 0.3267357127364768,
+    "missing_mode_mse": 0.22503541678964287,
+    "mean_coding_energy": 553.0561131013278
+  },
+  {
+    "path_id": 16,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.3134467759730927,
+    "support_mse": 0.3140414657400389,
+    "missing_mode_mse": 0.2264907470625903,
+    "mean_coding_energy": 553.0561131013278
+  },
+  {
+    "path_id": 16,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.20498692399257656,
+    "support_mse": 0.2749814722873654,
+    "missing_mode_mse": 0.13338623240610206,
+    "mean_coding_energy": 553.0561131013278
+  },
+  {
+    "path_id": 16,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2543544018641253,
+    "support_mse": 0.2897385478870923,
+    "missing_mode_mse": 0.17359467319799465,
+    "mean_coding_energy": 553.0561131013278
+  },
+  {
+    "path_id": 16,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.4055850889294331,
+    "support_mse": 0.4124031288283444,
+    "missing_mode_mse": 0.2997988079331703,
+    "mean_coding_energy": 553.0561131013278
+  },
+  {
+    "path_id": 16,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.224576797830052,
+    "support_mse": 0.30187950936722524,
+    "missing_mode_mse": 0.14675088930357677,
+    "mean_coding_energy": 553.0561131013278
+  },
+  {
+    "path_id": 16,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3122167404329875,
+    "support_mse": 0.3753752937544596,
+    "missing_mode_mse": 0.22336004163754183,
+    "mean_coding_energy": 553.0561131013278
+  },
+  {
+    "path_id": 16,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.554923940767611,
+    "support_mse": 0.755254943912539,
+    "missing_mode_mse": 0.4243385025849033,
+    "mean_coding_energy": 553.0561131013278
+  },
+  {
+    "path_id": 16,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.24138439141689647,
+    "support_mse": 0.32987774960286176,
+    "missing_mode_mse": 0.16337510251570075,
+    "mean_coding_energy": 553.3926447225751
+  },
+  {
+    "path_id": 16,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.31405650249714623,
+    "support_mse": 0.32483465923677635,
+    "missing_mode_mse": 0.22658216907451334,
+    "mean_coding_energy": 553.3926447225751
+  },
+  {
+    "path_id": 16,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.3134467759730927,
+    "support_mse": 0.3140414657400389,
+    "missing_mode_mse": 0.2264907470625903,
+    "mean_coding_energy": 553.3926447225751
+  },
+  {
+    "path_id": 16,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2107139719737839,
+    "support_mse": 0.2933840891667627,
+    "missing_mode_mse": 0.13944574999276638,
+    "mean_coding_energy": 553.3926447225751
+  },
+  {
+    "path_id": 16,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2547343632239625,
+    "support_mse": 0.2968328003265919,
+    "missing_mode_mse": 0.17448113508474397,
+    "mean_coding_energy": 553.3926447225751
+  },
+  {
+    "path_id": 16,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.4081610181859883,
+    "support_mse": 0.42084996423364485,
+    "missing_mode_mse": 0.30043640066726673,
+    "mean_coding_energy": 553.3926447225751
+  },
+  {
+    "path_id": 16,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.23041146277878233,
+    "support_mse": 0.3205352240533221,
+    "missing_mode_mse": 0.1528616367014221,
+    "mean_coding_energy": 553.3926447225751
+  },
+  {
+    "path_id": 16,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.31110241119965604,
+    "support_mse": 0.3785425217742824,
+    "missing_mode_mse": 0.22295610882701322,
+    "mean_coding_energy": 553.3926447225751
+  },
+  {
+    "path_id": 16,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.5573617722338725,
+    "support_mse": 0.7631048139582702,
+    "missing_mode_mse": 0.42504787745539796,
+    "mean_coding_energy": 553.3926447225751
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.24139357569536463,
+    "support_mse": 0.32990012235842403,
+    "missing_mode_mse": 0.16338302817597875,
+    "mean_coding_energy": 553.387493677836
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.31404195424386516,
+    "support_mse": 0.3248550778628449,
+    "missing_mode_mse": 0.2265699576346159,
+    "mean_coding_energy": 553.387493677836
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.3134467759730927,
+    "support_mse": 0.3140414657400389,
+    "missing_mode_mse": 0.2264907470625903,
+    "mean_coding_energy": 553.387493677836
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.21059181782626984,
+    "support_mse": 0.2929922287876333,
+    "missing_mode_mse": 0.1393159765124638,
+    "mean_coding_energy": 553.3869697625757
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2547178973573153,
+    "support_mse": 0.2966765604859761,
+    "missing_mode_mse": 0.17445463597505273,
+    "mean_coding_energy": 553.3869697625757
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.40811281377312275,
+    "support_mse": 0.4206595916341028,
+    "missing_mode_mse": 0.30042629736316884,
+    "mean_coding_energy": 553.3869697625757
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2302862277152478,
+    "support_mse": 0.3201340258095932,
+    "missing_mode_mse": 0.15272936629518064,
+    "mean_coding_energy": 553.3874869072008
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.31111209025627656,
+    "support_mse": 0.3784506417232508,
+    "missing_mode_mse": 0.22295189330525794,
+    "mean_coding_energy": 553.3874869072008
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.557320024496982,
+    "support_mse": 0.7629446081519138,
+    "missing_mode_mse": 0.42503704301842715,
+    "mean_coding_energy": 553.3874869072008
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.24139357569536463,
+    "support_mse": 0.32990012235842403,
+    "missing_mode_mse": 0.16338302817597875,
+    "mean_coding_energy": 553.387493677836
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.31404195424386516,
+    "support_mse": 0.3248550778628449,
+    "missing_mode_mse": 0.2265699576346159,
+    "mean_coding_energy": 553.387493677836
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.3134467759730927,
+    "support_mse": 0.3140414657400389,
+    "missing_mode_mse": 0.2264907470625903,
+    "mean_coding_energy": 553.387493677836
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.21059181782626984,
+    "support_mse": 0.2929922287876333,
+    "missing_mode_mse": 0.1393159765124638,
+    "mean_coding_energy": 553.3869697625757
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2547178973573153,
+    "support_mse": 0.2966765604859761,
+    "missing_mode_mse": 0.17445463597505273,
+    "mean_coding_energy": 553.3869697625757
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.40811281377312275,
+    "support_mse": 0.4206595916341028,
+    "missing_mode_mse": 0.30042629736316884,
+    "mean_coding_energy": 553.3869697625757
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2302862277152478,
+    "support_mse": 0.3201340258095932,
+    "missing_mode_mse": 0.15272936629518064,
+    "mean_coding_energy": 553.3874869072008
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.31111209025627656,
+    "support_mse": 0.3784506417232508,
+    "missing_mode_mse": 0.22295189330525794,
+    "mean_coding_energy": 553.3874869072008
+  },
+  {
+    "path_id": 16,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.557320024496982,
+    "support_mse": 0.7629446081519138,
+    "missing_mode_mse": 0.42503704301842715,
+    "mean_coding_energy": 553.3874869072008
+  },
+  {
+    "path_id": 17,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.44212981633961584,
+    "support_mse": 0.6209387200159628,
+    "missing_mode_mse": 0.3398657364200771,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.37373713358055727,
+    "support_mse": 0.3758085243852599,
+    "missing_mode_mse": 0.2806029131047279,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.36478339770153734,
+    "support_mse": 0.36990959958658515,
+    "missing_mode_mse": 0.2691277881293388,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.42239266746056686,
+    "support_mse": 0.5616724204948941,
+    "missing_mode_mse": 0.31487574064237644,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.35827442603147575,
+    "support_mse": 0.35411084883776084,
+    "missing_mode_mse": 0.25947589583971253,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.36814313897881445,
+    "support_mse": 0.44183622446385745,
+    "missing_mode_mse": 0.24959882271493494,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.40937434644350834,
+    "support_mse": 0.5546590235571764,
+    "missing_mode_mse": 0.30931571355099324,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.34394501076331746,
+    "support_mse": 0.36267830036234733,
+    "missing_mode_mse": 0.2532518351693977,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.35304004947180245,
+    "support_mse": 0.43487252103166957,
+    "missing_mode_mse": 0.24551872199909872,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.4418390668874652,
+    "support_mse": 0.6196304154581515,
+    "missing_mode_mse": 0.33963055591109836,
+    "mean_coding_energy": 305.35989584901927
+  },
+  {
+    "path_id": 17,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.37341876920624073,
+    "support_mse": 0.3733342983990001,
+    "missing_mode_mse": 0.2802006256272939,
+    "mean_coding_energy": 305.35989584901927
+  },
+  {
+    "path_id": 17,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.36478339770153734,
+    "support_mse": 0.36990959958658515,
+    "missing_mode_mse": 0.2691277881293388,
+    "mean_coding_energy": 305.35989584901927
+  },
+  {
+    "path_id": 17,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.42202264851794524,
+    "support_mse": 0.5604851665851635,
+    "missing_mode_mse": 0.3145104001156596,
+    "mean_coding_energy": 305.35989584901927
+  },
+  {
+    "path_id": 17,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.35798010955158477,
+    "support_mse": 0.3532373503176197,
+    "missing_mode_mse": 0.2591954664746514,
+    "mean_coding_energy": 305.35989584901927
+  },
+  {
+    "path_id": 17,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.36883783266034303,
+    "support_mse": 0.44398863341969264,
+    "missing_mode_mse": 0.24996196969747023,
+    "mean_coding_energy": 305.35989584901927
+  },
+  {
+    "path_id": 17,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.4098499057590267,
+    "support_mse": 0.5558127032035997,
+    "missing_mode_mse": 0.3097889467234352,
+    "mean_coding_energy": 305.35989584901927
+  },
+  {
+    "path_id": 17,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3443062451679578,
+    "support_mse": 0.3634515487398845,
+    "missing_mode_mse": 0.2536389806492156,
+    "mean_coding_energy": 305.35989584901927
+  },
+  {
+    "path_id": 17,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3543119472405135,
+    "support_mse": 0.43883675872509426,
+    "missing_mode_mse": 0.2464990891118624,
+    "mean_coding_energy": 305.35989584901927
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.44212981633961584,
+    "support_mse": 0.6209387200159628,
+    "missing_mode_mse": 0.3398657364200771,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.37373713358055727,
+    "support_mse": 0.3758085243852599,
+    "missing_mode_mse": 0.2806029131047279,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.36478339770153734,
+    "support_mse": 0.36990959958658515,
+    "missing_mode_mse": 0.2691277881293388,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.42239266746056686,
+    "support_mse": 0.5616724204948941,
+    "missing_mode_mse": 0.31487574064237644,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.35827442603147575,
+    "support_mse": 0.35411084883776084,
+    "missing_mode_mse": 0.25947589583971253,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.36814313897881445,
+    "support_mse": 0.44183622446385745,
+    "missing_mode_mse": 0.24959882271493494,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.40937434644350834,
+    "support_mse": 0.5546590235571764,
+    "missing_mode_mse": 0.30931571355099324,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.34394501076331746,
+    "support_mse": 0.36267830036234733,
+    "missing_mode_mse": 0.2532518351693977,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.35304004947180245,
+    "support_mse": 0.43487252103166957,
+    "missing_mode_mse": 0.24551872199909872,
+    "mean_coding_energy": 305.32258024310477
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.4418572207396327,
+    "support_mse": 0.6196839215351265,
+    "missing_mode_mse": 0.3396477654451411,
+    "mean_coding_energy": 305.3594019090656
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.37343012091681427,
+    "support_mse": 0.37338199315449194,
+    "missing_mode_mse": 0.28021325482794457,
+    "mean_coding_energy": 305.3594019090656
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.36478339770153734,
+    "support_mse": 0.36990959958658515,
+    "missing_mode_mse": 0.2691277881293388,
+    "mean_coding_energy": 305.3594019090656
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.4220736130368976,
+    "support_mse": 0.560648303942857,
+    "missing_mode_mse": 0.3145625152971166,
+    "mean_coding_energy": 305.35874887635305
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.35802155695129145,
+    "support_mse": 0.35335898368188134,
+    "missing_mode_mse": 0.2592380141858165,
+    "mean_coding_energy": 305.35874887635305
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.3688626638276972,
+    "support_mse": 0.4440657695033939,
+    "missing_mode_mse": 0.24999406621578382,
+    "mean_coding_energy": 305.35874887635305
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.40982206248147984,
+    "support_mse": 0.5557582388107574,
+    "missing_mode_mse": 0.309765035872494,
+    "mean_coding_energy": 305.35941204713276
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3442797682329757,
+    "support_mse": 0.3634015006851744,
+    "missing_mode_mse": 0.2536164424698686,
+    "mean_coding_energy": 305.35941204713276
+  },
+  {
+    "path_id": 17,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3542810448892695,
+    "support_mse": 0.43874101427734835,
+    "missing_mode_mse": 0.24647141179846105,
+    "mean_coding_energy": 305.35941204713276
+  },
+  {
+    "path_id": 18,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2484810146574778,
+    "support_mse": 0.19578422373008011,
+    "missing_mode_mse": 0.17538744744385132,
+    "mean_coding_energy": 19.503862757596227
+  },
+  {
+    "path_id": 18,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.3710118256898315,
+    "support_mse": 0.24036418446228253,
+    "missing_mode_mse": 0.29606137204052896,
+    "mean_coding_energy": 19.503862757596227
+  },
+  {
+    "path_id": 18,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.36499534156746916,
+    "support_mse": 0.21248341324570022,
+    "missing_mode_mse": 0.2986765190991995,
+    "mean_coding_energy": 19.503862757596227
+  },
+  {
+    "path_id": 18,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.23327348216235705,
+    "support_mse": 0.1469039538206059,
+    "missing_mode_mse": 0.16944332019498745,
+    "mean_coding_energy": 19.503862757596227
+  },
+  {
+    "path_id": 18,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.36002919604760625,
+    "support_mse": 0.1884884563016208,
+    "missing_mode_mse": 0.29754098844109056,
+    "mean_coding_energy": 19.503862757596227
+  },
+  {
+    "path_id": 18,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.5797045385368274,
+    "support_mse": 0.36803579700562006,
+    "missing_mode_mse": 0.5100527349501882,
+    "mean_coding_energy": 19.503862757596227
+  },
+  {
+    "path_id": 18,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.24180816891366308,
+    "support_mse": 0.14955891919838432,
+    "missing_mode_mse": 0.17418938735682044,
+    "mean_coding_energy": 19.503862757596227
+  },
+  {
+    "path_id": 18,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3695006378120492,
+    "support_mse": 0.20077565892486288,
+    "missing_mode_mse": 0.3030848889179629,
+    "mean_coding_energy": 19.503862757596227
+  },
+  {
+    "path_id": 18,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.5809748509472565,
+    "support_mse": 0.5341166890592701,
+    "missing_mode_mse": 0.5074025103323861,
+    "mean_coding_energy": 19.503862757596227
+  },
+  {
+    "path_id": 18,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.24909841610746747,
+    "support_mse": 0.19775991658478959,
+    "missing_mode_mse": 0.17546720742902194,
+    "mean_coding_energy": 19.47196454912635
+  },
+  {
+    "path_id": 18,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.3712756703824306,
+    "support_mse": 0.24186463819848605,
+    "missing_mode_mse": 0.29560816004070445,
+    "mean_coding_energy": 19.47196454912635
+  },
+  {
+    "path_id": 18,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.36499534156746916,
+    "support_mse": 0.21248341324570022,
+    "missing_mode_mse": 0.2986765190991995,
+    "mean_coding_energy": 19.47196454912635
+  },
+  {
+    "path_id": 18,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.23342600728528778,
+    "support_mse": 0.14758125129123498,
+    "missing_mode_mse": 0.1693979961981243,
+    "mean_coding_energy": 19.47196454912635
+  },
+  {
+    "path_id": 18,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3610819376648652,
+    "support_mse": 0.19171474324571086,
+    "missing_mode_mse": 0.2983798476740365,
+    "mean_coding_energy": 19.47196454912635
+  },
+  {
+    "path_id": 18,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.5822673439799457,
+    "support_mse": 0.37488976248452743,
+    "missing_mode_mse": 0.5123459643341923,
+    "mean_coding_energy": 19.47196454912635
+  },
+  {
+    "path_id": 18,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.24193964273193683,
+    "support_mse": 0.1512672224247611,
+    "missing_mode_mse": 0.17429122804245253,
+    "mean_coding_energy": 19.47196454912635
+  },
+  {
+    "path_id": 18,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3686386430727929,
+    "support_mse": 0.2002324358113267,
+    "missing_mode_mse": 0.30219749532659446,
+    "mean_coding_energy": 19.47196454912635
+  },
+  {
+    "path_id": 18,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.580944737829366,
+    "support_mse": 0.5339410133742934,
+    "missing_mode_mse": 0.5075207271869185,
+    "mean_coding_energy": 19.47196454912635
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2484810146574778,
+    "support_mse": 0.19578422373008011,
+    "missing_mode_mse": 0.17538744744385132,
+    "mean_coding_energy": 19.503862757596227
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.3710118256898315,
+    "support_mse": 0.24036418446228253,
+    "missing_mode_mse": 0.29606137204052896,
+    "mean_coding_energy": 19.503862757596227
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.36499534156746916,
+    "support_mse": 0.21248341324570022,
+    "missing_mode_mse": 0.2986765190991995,
+    "mean_coding_energy": 19.503862757596227
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.23328467879029866,
+    "support_mse": 0.14703898709628868,
+    "missing_mode_mse": 0.16945044523377606,
+    "mean_coding_energy": 19.484096819446787
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3599494038216775,
+    "support_mse": 0.18849230450929227,
+    "missing_mode_mse": 0.29745712494379417,
+    "mean_coding_energy": 19.484096819446787
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.5792260784306879,
+    "support_mse": 0.3670393724810145,
+    "missing_mode_mse": 0.5095487742499915,
+    "mean_coding_energy": 19.484096819446787
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.24179710874383456,
+    "support_mse": 0.14985815914941358,
+    "missing_mode_mse": 0.17417536012664112,
+    "mean_coding_energy": 19.483512388017836
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.369309815855913,
+    "support_mse": 0.20063240445813252,
+    "missing_mode_mse": 0.30288686377174445,
+    "mean_coding_energy": 19.483512388017836
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.5804803987291824,
+    "support_mse": 0.532873483814764,
+    "missing_mode_mse": 0.5068898024480334,
+    "mean_coding_energy": 19.483512388017836
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2491064587628877,
+    "support_mse": 0.19778565277926263,
+    "missing_mode_mse": 0.17548383453166747,
+    "mean_coding_energy": 19.47380617358497
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.37124025878497,
+    "support_mse": 0.24177442468506136,
+    "missing_mode_mse": 0.2955839342499564,
+    "mean_coding_energy": 19.47380617358497
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.36499534156746916,
+    "support_mse": 0.21248341324570022,
+    "missing_mode_mse": 0.2986765190991995,
+    "mean_coding_energy": 19.47380617358497
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2334326675574838,
+    "support_mse": 0.14758882978613463,
+    "missing_mode_mse": 0.16939691645005375,
+    "mean_coding_energy": 19.474285195064855
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.36115725016231615,
+    "support_mse": 0.19188963687863797,
+    "missing_mode_mse": 0.2984455986230828,
+    "mean_coding_energy": 19.474285195064855
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.5824635431235666,
+    "support_mse": 0.3753866478268379,
+    "missing_mode_mse": 0.5125281569317107,
+    "mean_coding_energy": 19.474285195064855
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.24194506617188793,
+    "support_mse": 0.15128639409300088,
+    "missing_mode_mse": 0.17429778693359518,
+    "mean_coding_energy": 19.473843196561948
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3686298953161983,
+    "support_mse": 0.20022838262757153,
+    "missing_mode_mse": 0.30218964580862095,
+    "mean_coding_energy": 19.473843196561948
+  },
+  {
+    "path_id": 18,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.580993705389296,
+    "support_mse": 0.5340640591508458,
+    "missing_mode_mse": 0.5075717139962534,
+    "mean_coding_energy": 19.473843196561948
+  },
+  {
+    "path_id": 19,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.20378810916631585,
+    "support_mse": 0.10571173236488632,
+    "missing_mode_mse": 0.15862693888281854,
+    "mean_coding_energy": 37.43704311551744
+  },
+  {
+    "path_id": 19,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.4176719639957469,
+    "support_mse": 0.20309513392766337,
+    "missing_mode_mse": 0.37827971515871384,
+    "mean_coding_energy": 37.43704311551744
+  },
+  {
+    "path_id": 19,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4190943804622055,
+    "support_mse": 0.20676608329449464,
+    "missing_mode_mse": 0.3791457916006142,
+    "mean_coding_energy": 37.43704311551744
+  },
+  {
+    "path_id": 19,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.20908915861922167,
+    "support_mse": 0.1276440849379262,
+    "missing_mode_mse": 0.15937335716404763,
+    "mean_coding_energy": 37.43704311551744
+  },
+  {
+    "path_id": 19,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.4325217913194973,
+    "support_mse": 0.25179545474926257,
+    "missing_mode_mse": 0.3856242963200426,
+    "mean_coding_energy": 37.43704311551744
+  },
+  {
+    "path_id": 19,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.6989268066766259,
+    "support_mse": 0.6257018006087957,
+    "missing_mode_mse": 0.614411547078126,
+    "mean_coding_energy": 37.43704311551744
+  },
+  {
+    "path_id": 19,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.20872607138102128,
+    "support_mse": 0.1271819328853868,
+    "missing_mode_mse": 0.16237508057916938,
+    "mean_coding_energy": 37.43704311551744
+  },
+  {
+    "path_id": 19,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.4326892936997623,
+    "support_mse": 0.36455487607095716,
+    "missing_mode_mse": 0.38948771213854094,
+    "mean_coding_energy": 37.43704311551744
+  },
+  {
+    "path_id": 19,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.7016640939513865,
+    "support_mse": 0.8674758143429336,
+    "missing_mode_mse": 0.6225358525170355,
+    "mean_coding_energy": 37.43704311551744
+  },
+  {
+    "path_id": 19,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2035646824208096,
+    "support_mse": 0.10499677983206804,
+    "missing_mode_mse": 0.15843566176538193,
+    "mean_coding_energy": 37.4701690868752
+  },
+  {
+    "path_id": 19,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.4172347740452844,
+    "support_mse": 0.2018955239736,
+    "missing_mode_mse": 0.37792217110742565,
+    "mean_coding_energy": 37.4701690868752
+  },
+  {
+    "path_id": 19,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4190943804622055,
+    "support_mse": 0.20676608329449464,
+    "missing_mode_mse": 0.3791457916006142,
+    "mean_coding_energy": 37.4701690868752
+  },
+  {
+    "path_id": 19,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.20911977406525634,
+    "support_mse": 0.1279660379586058,
+    "missing_mode_mse": 0.1598347730020316,
+    "mean_coding_energy": 37.4701690868752
+  },
+  {
+    "path_id": 19,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.43217974115348207,
+    "support_mse": 0.25189876307048353,
+    "missing_mode_mse": 0.38578866282267377,
+    "mean_coding_energy": 37.4701690868752
+  },
+  {
+    "path_id": 19,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.6965777081061897,
+    "support_mse": 0.6203526456635976,
+    "missing_mode_mse": 0.61357460756745,
+    "mean_coding_energy": 37.4701690868752
+  },
+  {
+    "path_id": 19,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.209263499699893,
+    "support_mse": 0.12857491655000636,
+    "missing_mode_mse": 0.16314039450900453,
+    "mean_coding_energy": 37.4701690868752
+  },
+  {
+    "path_id": 19,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.4328260861190021,
+    "support_mse": 0.36500672377351623,
+    "missing_mode_mse": 0.38995892383206565,
+    "mean_coding_energy": 37.4701690868752
+  },
+  {
+    "path_id": 19,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.7001978172437318,
+    "support_mse": 0.8643007918515693,
+    "missing_mode_mse": 0.6218935989371931,
+    "mean_coding_energy": 37.4701690868752
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.20356825341058193,
+    "support_mse": 0.10500820643368178,
+    "missing_mode_mse": 0.15844049359720924,
+    "mean_coding_energy": 37.448293371391244
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.41726356557181604,
+    "support_mse": 0.20194145182080794,
+    "missing_mode_mse": 0.37794696288140806,
+    "mean_coding_energy": 37.448293371391244
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4190943804622055,
+    "support_mse": 0.20676608329449464,
+    "missing_mode_mse": 0.3791457916006142,
+    "mean_coding_energy": 37.448293371391244
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.20954484160198839,
+    "support_mse": 0.1290786206553191,
+    "missing_mode_mse": 0.16002718627489804,
+    "mean_coding_energy": 37.448285624194604
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.43267901773536377,
+    "support_mse": 0.2529640047323791,
+    "missing_mode_mse": 0.3860378641344079,
+    "mean_coding_energy": 37.448285624194604
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.697244449207632,
+    "support_mse": 0.6226175979337996,
+    "missing_mode_mse": 0.6137256353816334,
+    "mean_coding_energy": 37.448285624194604
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2092219910589843,
+    "support_mse": 0.12873448753190367,
+    "missing_mode_mse": 0.1630549047771757,
+    "mean_coding_energy": 37.44829332398287
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.43283936315827537,
+    "support_mse": 0.3655590367754178,
+    "missing_mode_mse": 0.3898842192569567,
+    "mean_coding_energy": 37.44829332398287
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.700193563457171,
+    "support_mse": 0.8642908961521298,
+    "missing_mode_mse": 0.6218911930001939,
+    "mean_coding_energy": 37.44829332398287
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2035642103830423,
+    "support_mse": 0.1049952693559579,
+    "missing_mode_mse": 0.15843525413734327,
+    "mean_coding_energy": 37.47047359430526
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.41723352906907596,
+    "support_mse": 0.20189318846442433,
+    "missing_mode_mse": 0.37792120954926656,
+    "mean_coding_energy": 37.47047359430526
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4190943804622055,
+    "support_mse": 0.20676608329449464,
+    "missing_mode_mse": 0.3791457916006142,
+    "mean_coding_energy": 37.47047359430526
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.20911181485132868,
+    "support_mse": 0.12794354151926085,
+    "missing_mode_mse": 0.15983074272659614,
+    "mean_coding_energy": 37.470467788401685
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.4321700563676636,
+    "support_mse": 0.25187365219259555,
+    "missing_mode_mse": 0.385783355230814,
+    "mean_coding_energy": 37.470467788401685
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.696564601225836,
+    "support_mse": 0.620308823090667,
+    "missing_mode_mse": 0.6135698940375258,
+    "mean_coding_energy": 37.470467788401685
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.20926495351690028,
+    "support_mse": 0.12857520231139657,
+    "missing_mode_mse": 0.16314296267147205,
+    "mean_coding_energy": 37.470473565916876
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.432825786125675,
+    "support_mse": 0.36499981511138424,
+    "missing_mode_mse": 0.3899605535173556,
+    "mean_coding_energy": 37.470473565916876
+  },
+  {
+    "path_id": 19,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.700193846433564,
+    "support_mse": 0.8642916918836479,
+    "missing_mode_mse": 0.62189126917766,
+    "mean_coding_energy": 37.470473565916876
+  },
+  {
+    "path_id": 20,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.3367773309690597,
+    "support_mse": 0.4391745684550428,
+    "missing_mode_mse": 0.2739598383853784,
+    "mean_coding_energy": 27.627733241192136
+  },
+  {
+    "path_id": 20,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.442130407156312,
+    "support_mse": 0.6191421589453866,
+    "missing_mode_mse": 0.39029131882533896,
+    "mean_coding_energy": 27.627733241192136
+  },
+  {
+    "path_id": 20,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4399908939689417,
+    "support_mse": 0.6115703030013103,
+    "missing_mode_mse": 0.3870052616638096,
+    "mean_coding_energy": 27.627733241192136
+  },
+  {
+    "path_id": 20,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.331280039635803,
+    "support_mse": 0.42171519190128287,
+    "missing_mode_mse": 0.2646784936659564,
+    "mean_coding_energy": 27.627733241192136
+  },
+  {
+    "path_id": 20,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.42802373800185123,
+    "support_mse": 0.5837780823205995,
+    "missing_mode_mse": 0.3713232305634313,
+    "mean_coding_energy": 27.627733241192136
+  },
+  {
+    "path_id": 20,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.42595017317046513,
+    "support_mse": 0.6661436036060098,
+    "missing_mode_mse": 0.33462224799243473,
+    "mean_coding_energy": 27.627733241192136
+  },
+  {
+    "path_id": 20,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.3437090901484552,
+    "support_mse": 0.48011635694257865,
+    "missing_mode_mse": 0.2789978064629589,
+    "mean_coding_energy": 27.627733241192136
+  },
+  {
+    "path_id": 20,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.456644719213799,
+    "support_mse": 0.7059546080904595,
+    "missing_mode_mse": 0.4025401032767214,
+    "mean_coding_energy": 27.627733241192136
+  },
+  {
+    "path_id": 20,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.4737161730421269,
+    "support_mse": 0.7898649340209571,
+    "missing_mode_mse": 0.38503003703125593,
+    "mean_coding_energy": 27.627733241192136
+  },
+  {
+    "path_id": 20,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.33718865445945867,
+    "support_mse": 0.4404219732280503,
+    "missing_mode_mse": 0.274279960150744,
+    "mean_coding_energy": 27.640783901304186
+  },
+  {
+    "path_id": 20,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.44266064240066055,
+    "support_mse": 0.6200873312323206,
+    "missing_mode_mse": 0.39071911174114793,
+    "mean_coding_energy": 27.640783901304186
+  },
+  {
+    "path_id": 20,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4399908939689417,
+    "support_mse": 0.6115703030013103,
+    "missing_mode_mse": 0.3870052616638096,
+    "mean_coding_energy": 27.640783901304186
+  },
+  {
+    "path_id": 20,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.33176742060336345,
+    "support_mse": 0.42328223179763186,
+    "missing_mode_mse": 0.26534917743232345,
+    "mean_coding_energy": 27.640783901304186
+  },
+  {
+    "path_id": 20,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.4276448184375144,
+    "support_mse": 0.584294527783644,
+    "missing_mode_mse": 0.3710641219638764,
+    "mean_coding_energy": 27.640783901304186
+  },
+  {
+    "path_id": 20,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.42523973889329236,
+    "support_mse": 0.6657005621171287,
+    "missing_mode_mse": 0.3362402273638042,
+    "mean_coding_energy": 27.640783901304186
+  },
+  {
+    "path_id": 20,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.345360883658399,
+    "support_mse": 0.48520944839623076,
+    "missing_mode_mse": 0.28088783941515927,
+    "mean_coding_energy": 27.640783901304186
+  },
+  {
+    "path_id": 20,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.45842897508844527,
+    "support_mse": 0.7090897715588258,
+    "missing_mode_mse": 0.404512047981326,
+    "mean_coding_energy": 27.640783901304186
+  },
+  {
+    "path_id": 20,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.4729505303957062,
+    "support_mse": 0.7885896182930281,
+    "missing_mode_mse": 0.38591692954730095,
+    "mean_coding_energy": 27.640783901304186
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.3367763356341491,
+    "support_mse": 0.4391629162288845,
+    "missing_mode_mse": 0.27398751178520897,
+    "mean_coding_energy": 27.624689605290467
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.4421258097205114,
+    "support_mse": 0.6190954384758534,
+    "missing_mode_mse": 0.3903149081375869,
+    "mean_coding_energy": 27.624689605290467
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4399908939689417,
+    "support_mse": 0.6115703030013103,
+    "missing_mode_mse": 0.3870052616638096,
+    "mean_coding_energy": 27.624689605290467
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.33122304573797967,
+    "support_mse": 0.4215411502323677,
+    "missing_mode_mse": 0.26470942510191703,
+    "mean_coding_energy": 27.624689605290467
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.4280060763606759,
+    "support_mse": 0.5844637495055354,
+    "missing_mode_mse": 0.371421780628178,
+    "mean_coding_energy": 27.624689605290467
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.4260226080124917,
+    "support_mse": 0.6666705267498944,
+    "missing_mode_mse": 0.33515661873813396,
+    "mean_coding_energy": 27.624689605290467
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.3447547002994208,
+    "support_mse": 0.4832918389035693,
+    "missing_mode_mse": 0.28016370728467177,
+    "mean_coding_energy": 27.624689605290467
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.4587261790556022,
+    "support_mse": 0.709605161927518,
+    "missing_mode_mse": 0.40478479847149573,
+    "mean_coding_energy": 27.624689605290467
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.4737161730421269,
+    "support_mse": 0.7898649340209571,
+    "missing_mode_mse": 0.38503003703125593,
+    "mean_coding_energy": 27.624689605290467
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.33718729174136397,
+    "support_mse": 0.44041930566504117,
+    "missing_mode_mse": 0.274278218159877,
+    "mean_coding_energy": 27.640953270792455
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.442646500459196,
+    "support_mse": 0.6200689652401363,
+    "missing_mode_mse": 0.3907045601797603,
+    "mean_coding_energy": 27.640953270792455
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4399908939689417,
+    "support_mse": 0.6115703030013103,
+    "missing_mode_mse": 0.3870052616638096,
+    "mean_coding_energy": 27.640953270792455
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.33173066674511714,
+    "support_mse": 0.42316481431413433,
+    "missing_mode_mse": 0.26531161209206355,
+    "mean_coding_energy": 27.64092286632455
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.427637218960888,
+    "support_mse": 0.5842627748455569,
+    "missing_mode_mse": 0.37105756502735787,
+    "mean_coding_energy": 27.64092286632455
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.4252419453434456,
+    "support_mse": 0.6656615114404547,
+    "missing_mode_mse": 0.3362264871994488,
+    "mean_coding_energy": 27.64092286632455
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.3453446450358546,
+    "support_mse": 0.48515641112512975,
+    "missing_mode_mse": 0.2808716473557212,
+    "mean_coding_energy": 27.64095277743282
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.4584544096948414,
+    "support_mse": 0.709105930424501,
+    "missing_mode_mse": 0.40453924687479614,
+    "mean_coding_energy": 27.64095277743282
+  },
+  {
+    "path_id": 20,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.47294848308345194,
+    "support_mse": 0.7885484656135986,
+    "missing_mode_mse": 0.3858996647066118,
+    "mean_coding_energy": 27.64095277743282
+  },
+  {
+    "path_id": 21,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.24210512706201917,
+    "support_mse": 0.0732307754176867,
+    "missing_mode_mse": 0.12899751013726274,
+    "mean_coding_energy": 776.842639455962
+  },
+  {
+    "path_id": 21,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.38238557223420927,
+    "support_mse": 0.10480542730451217,
+    "missing_mode_mse": 0.2657359757257992,
+    "mean_coding_energy": 776.842639455962
+  },
+  {
+    "path_id": 21,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.3827076862918465,
+    "support_mse": 0.10569750299258704,
+    "missing_mode_mse": 0.26603941494567596,
+    "mean_coding_energy": 776.842639455962
+  },
+  {
+    "path_id": 21,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.24761845411320993,
+    "support_mse": 0.09095268117126182,
+    "missing_mode_mse": 0.13380428352163065,
+    "mean_coding_energy": 776.842639455962
+  },
+  {
+    "path_id": 21,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3922604491974907,
+    "support_mse": 0.1304097860018341,
+    "missing_mode_mse": 0.2748308229291781,
+    "mean_coding_energy": 776.842639455962
+  },
+  {
+    "path_id": 21,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.5659656105510767,
+    "support_mse": 0.5748235386755036,
+    "missing_mode_mse": 0.4006208173009215,
+    "mean_coding_energy": 776.842639455962
+  },
+  {
+    "path_id": 21,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.24176547601720363,
+    "support_mse": 0.05727356152500681,
+    "missing_mode_mse": 0.12863954582050513,
+    "mean_coding_energy": 776.842639455962
+  },
+  {
+    "path_id": 21,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3815699430460526,
+    "support_mse": 0.09739112787851262,
+    "missing_mode_mse": 0.26489631249742507,
+    "mean_coding_energy": 776.842639455962
+  },
+  {
+    "path_id": 21,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.5824023319498208,
+    "support_mse": 0.5330007883259541,
+    "missing_mode_mse": 0.40746469848535094,
+    "mean_coding_energy": 776.842639455962
+  },
+  {
+    "path_id": 21,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.24211935709978552,
+    "support_mse": 0.0732761458004485,
+    "missing_mode_mse": 0.1290105821734342,
+    "mean_coding_energy": 776.8800469110238
+  },
+  {
+    "path_id": 21,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.3824084679445014,
+    "support_mse": 0.10486796974213553,
+    "missing_mode_mse": 0.26575883898333325,
+    "mean_coding_energy": 776.8800469110238
+  },
+  {
+    "path_id": 21,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.3827076862918465,
+    "support_mse": 0.10569750299258704,
+    "missing_mode_mse": 0.26603941494567596,
+    "mean_coding_energy": 776.8800469110238
+  },
+  {
+    "path_id": 21,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.24741339604293117,
+    "support_mse": 0.09029758800494661,
+    "missing_mode_mse": 0.13358571104938738,
+    "mean_coding_energy": 776.8800469110238
+  },
+  {
+    "path_id": 21,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.39207634039679384,
+    "support_mse": 0.12984732185170894,
+    "missing_mode_mse": 0.2746311493794868,
+    "mean_coding_energy": 776.8800469110238
+  },
+  {
+    "path_id": 21,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.5645223084257442,
+    "support_mse": 0.570492878473169,
+    "missing_mode_mse": 0.3989943980488907,
+    "mean_coding_energy": 776.8800469110238
+  },
+  {
+    "path_id": 21,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.24179302799598915,
+    "support_mse": 0.05734700687139477,
+    "missing_mode_mse": 0.12866728213827916,
+    "mean_coding_energy": 776.8800469110238
+  },
+  {
+    "path_id": 21,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3815983241605496,
+    "support_mse": 0.09744717834033287,
+    "missing_mode_mse": 0.26492516202382477,
+    "mean_coding_energy": 776.8800469110238
+  },
+  {
+    "path_id": 21,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.5814428495168629,
+    "support_mse": 0.5301476062598858,
+    "missing_mode_mse": 0.4063851384484503,
+    "mean_coding_energy": 776.8800469110238
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.24212150837633598,
+    "support_mse": 0.07328300198973096,
+    "missing_mode_mse": 0.12901252725659937,
+    "mean_coding_energy": 776.8829964469546
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.3824117897388981,
+    "support_mse": 0.10487680513719458,
+    "missing_mode_mse": 0.2657621595550808,
+    "mean_coding_energy": 776.8829964469546
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.3827076862918465,
+    "support_mse": 0.10569750299258704,
+    "missing_mode_mse": 0.26603941494567596,
+    "mean_coding_energy": 776.8829964469546
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.24739441397234913,
+    "support_mse": 0.09023693946714101,
+    "missing_mode_mse": 0.13356604109273432,
+    "mean_coding_energy": 776.8850506887989
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3920561684809694,
+    "support_mse": 0.12978698225228036,
+    "missing_mode_mse": 0.27461016019432116,
+    "mean_coding_energy": 776.8850506887989
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.5638866929835467,
+    "support_mse": 0.5686067858955463,
+    "missing_mode_mse": 0.3983461700176488,
+    "mean_coding_energy": 776.8850506887989
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.24179564407599005,
+    "support_mse": 0.05735446481299052,
+    "missing_mode_mse": 0.12866990942296902,
+    "mean_coding_energy": 776.8851376848556
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.381601525713493,
+    "support_mse": 0.09745446540873637,
+    "missing_mode_mse": 0.2649283941992503,
+    "mean_coding_energy": 776.8851376848556
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.5808565143569626,
+    "support_mse": 0.5284218033548285,
+    "missing_mode_mse": 0.4057870573981517,
+    "mean_coding_energy": 776.8851376848556
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.24212150837633598,
+    "support_mse": 0.07328300198973096,
+    "missing_mode_mse": 0.12901252725659937,
+    "mean_coding_energy": 776.8829964469546
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.3824117897388981,
+    "support_mse": 0.10487680513719458,
+    "missing_mode_mse": 0.2657621595550808,
+    "mean_coding_energy": 776.8829964469546
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.3827076862918465,
+    "support_mse": 0.10569750299258704,
+    "missing_mode_mse": 0.26603941494567596,
+    "mean_coding_energy": 776.8829964469546
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.24740084268697324,
+    "support_mse": 0.09025753991934253,
+    "missing_mode_mse": 0.1335720839060428,
+    "mean_coding_energy": 776.8795103509287
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.39206933348121586,
+    "support_mse": 0.12982404899819977,
+    "missing_mode_mse": 0.2746229995496666,
+    "mean_coding_energy": 776.8795103509287
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.5648296603036498,
+    "support_mse": 0.5713894786603319,
+    "missing_mode_mse": 0.3992518342194701,
+    "mean_coding_energy": 776.8795103509287
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.24179502768399505,
+    "support_mse": 0.05735249238630711,
+    "missing_mode_mse": 0.1286693048244464,
+    "mean_coding_energy": 776.8796050014759
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3816000237964174,
+    "support_mse": 0.09745002042995429,
+    "missing_mode_mse": 0.2649269228259147,
+    "mean_coding_energy": 776.8796050014759
+  },
+  {
+    "path_id": 21,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.5817063308980023,
+    "support_mse": 0.5309095642032038,
+    "missing_mode_mse": 0.40660431997806923,
+    "mean_coding_energy": 776.8796050014759
+  },
+  {
+    "path_id": 22,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2501102107410846,
+    "support_mse": 0.29756127040164904,
+    "missing_mode_mse": 0.20388751257872445,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.2697328955233021,
+    "support_mse": 0.4200130952481409,
+    "missing_mode_mse": 0.222854041589976,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.2707441827264495,
+    "support_mse": 0.42344532544723845,
+    "missing_mode_mse": 0.2245738630061184,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.250538429418272,
+    "support_mse": 0.2996083045181315,
+    "missing_mode_mse": 0.20677688451525086,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2781203654895657,
+    "support_mse": 0.44793231125334065,
+    "missing_mode_mse": 0.234217002648406,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.546332804142954,
+    "support_mse": 1.3061291422457755,
+    "missing_mode_mse": 0.40694952962056363,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.25036519636418536,
+    "support_mse": 0.2784465540482839,
+    "missing_mode_mse": 0.2051202139737736,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.27285634638945594,
+    "support_mse": 0.27937174318597663,
+    "missing_mode_mse": 0.22722353677317528,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.516314734946792,
+    "support_mse": 1.0732619097419998,
+    "missing_mode_mse": 0.38223743446691194,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2501141164568228,
+    "support_mse": 0.2975737686920114,
+    "missing_mode_mse": 0.20389069927719672,
+    "mean_coding_energy": 43.82733344613923
+  },
+  {
+    "path_id": 22,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.2697447413757377,
+    "support_mse": 0.42005091316414084,
+    "missing_mode_mse": 0.2228650901630751,
+    "mean_coding_energy": 43.82733344613923
+  },
+  {
+    "path_id": 22,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.2707441827264495,
+    "support_mse": 0.42344532544723845,
+    "missing_mode_mse": 0.2245738630061184,
+    "mean_coding_energy": 43.82733344613923
+  },
+  {
+    "path_id": 22,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2505015557725593,
+    "support_mse": 0.29948821016841665,
+    "missing_mode_mse": 0.20673900289385266,
+    "mean_coding_energy": 43.82733344613923
+  },
+  {
+    "path_id": 22,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.27804287802428085,
+    "support_mse": 0.44768194494147007,
+    "missing_mode_mse": 0.23413922437974924,
+    "mean_coding_energy": 43.82733344613923
+  },
+  {
+    "path_id": 22,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.5462100607625672,
+    "support_mse": 1.3057376786566564,
+    "missing_mode_mse": 0.4068421858416549,
+    "mean_coding_energy": 43.82733344613923
+  },
+  {
+    "path_id": 22,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2503839951687507,
+    "support_mse": 0.2784931137959723,
+    "missing_mode_mse": 0.2051371419618504,
+    "mean_coding_energy": 43.82733344613923
+  },
+  {
+    "path_id": 22,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.27290272631652734,
+    "support_mse": 0.27948997483920096,
+    "missing_mode_mse": 0.2272683500769958,
+    "mean_coding_energy": 43.82733344613923
+  },
+  {
+    "path_id": 22,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.5163792143099863,
+    "support_mse": 1.0734681676210402,
+    "missing_mode_mse": 0.382313716501553,
+    "mean_coding_energy": 43.82733344613923
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2501102107410846,
+    "support_mse": 0.29756127040164904,
+    "missing_mode_mse": 0.20388751257872445,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.2697328955233021,
+    "support_mse": 0.4200130952481409,
+    "missing_mode_mse": 0.222854041589976,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.2707441827264495,
+    "support_mse": 0.42344532544723845,
+    "missing_mode_mse": 0.2245738630061184,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.250538429418272,
+    "support_mse": 0.2996083045181315,
+    "missing_mode_mse": 0.20677688451525086,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2781203654895657,
+    "support_mse": 0.44793231125334065,
+    "missing_mode_mse": 0.234217002648406,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.546332804142954,
+    "support_mse": 1.3061291422457755,
+    "missing_mode_mse": 0.40694952962056363,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.25036519636418536,
+    "support_mse": 0.2784465540482839,
+    "missing_mode_mse": 0.2051202139737736,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.27285634638945594,
+    "support_mse": 0.27937174318597663,
+    "missing_mode_mse": 0.22722353677317528,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.516314734946792,
+    "support_mse": 1.0732619097419998,
+    "missing_mode_mse": 0.38223743446691194,
+    "mean_coding_energy": 43.82747711108439
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2501138664922456,
+    "support_mse": 0.2975729688053644,
+    "missing_mode_mse": 0.20389049661240466,
+    "mean_coding_energy": 43.82732663642233
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.26974395995252437,
+    "support_mse": 0.4200484119808198,
+    "missing_mode_mse": 0.22286436505422036,
+    "mean_coding_energy": 43.82732663642233
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.2707441827264495,
+    "support_mse": 0.42344532544723845,
+    "missing_mode_mse": 0.2245738630061184,
+    "mean_coding_energy": 43.82732663642233
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2505040160047815,
+    "support_mse": 0.29949621800087955,
+    "missing_mode_mse": 0.20674150229583005,
+    "mean_coding_energy": 43.8273256796729
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2780482689138124,
+    "support_mse": 0.4476993816168665,
+    "missing_mode_mse": 0.23414464497079096,
+    "mean_coding_energy": 43.8273256796729
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.5462186753309011,
+    "support_mse": 1.3057651375531247,
+    "missing_mode_mse": 0.4068504189029211,
+    "mean_coding_energy": 43.8273256796729
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.25038281745625146,
+    "support_mse": 0.27849020991878926,
+    "missing_mode_mse": 0.20513606600826992,
+    "mean_coding_energy": 43.82732660064113
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.2728999429764587,
+    "support_mse": 0.2794829938820076,
+    "missing_mode_mse": 0.22726566392077613,
+    "mean_coding_energy": 43.82732660064113
+  },
+  {
+    "path_id": 22,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.5163751663333268,
+    "support_mse": 1.0734552200754197,
+    "missing_mode_mse": 0.38230947361179485,
+    "mean_coding_energy": 43.82732660064113
+  },
+  {
+    "path_id": 23,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.18590721798678458,
+    "support_mse": 0.21227686246253286,
+    "missing_mode_mse": 0.0990160495554839,
+    "mean_coding_energy": 110.83899985130978
+  },
+  {
+    "path_id": 23,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.20986515554968124,
+    "support_mse": 0.1991664884576856,
+    "missing_mode_mse": 0.09970817947678608,
+    "mean_coding_energy": 110.83899985130978
+  },
+  {
+    "path_id": 23,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.21031671794757267,
+    "support_mse": 0.20060434732210375,
+    "missing_mode_mse": 0.10146984513861369,
+    "mean_coding_energy": 110.83899985130978
+  },
+  {
+    "path_id": 23,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.19222191515567447,
+    "support_mse": 0.2260600189120598,
+    "missing_mode_mse": 0.10766713651404904,
+    "mean_coding_energy": 110.83899985130978
+  },
+  {
+    "path_id": 23,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.22268576100781995,
+    "support_mse": 0.21071873648860068,
+    "missing_mode_mse": 0.11702284266785515,
+    "mean_coding_energy": 110.83899985130978
+  },
+  {
+    "path_id": 23,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.2639715377055528,
+    "support_mse": 0.3328131350579091,
+    "missing_mode_mse": 0.1250733558581446,
+    "mean_coding_energy": 110.83899985130978
+  },
+  {
+    "path_id": 23,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.1894508136378777,
+    "support_mse": 0.14900939902992374,
+    "missing_mode_mse": 0.10400085269613946,
+    "mean_coding_energy": 110.83899985130978
+  },
+  {
+    "path_id": 23,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.21294703886189648,
+    "support_mse": 0.13600615667371807,
+    "missing_mode_mse": 0.10615215361681211,
+    "mean_coding_energy": 110.83899985130978
+  },
+  {
+    "path_id": 23,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.28211460172585706,
+    "support_mse": 0.2822763683035005,
+    "missing_mode_mse": 0.13917382405353446,
+    "mean_coding_energy": 110.83899985130978
+  },
+  {
+    "path_id": 23,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.18604919999597702,
+    "support_mse": 0.21273120494152753,
+    "missing_mode_mse": 0.09921118481325489,
+    "mean_coding_energy": 110.91499516721697
+  },
+  {
+    "path_id": 23,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.21001791205442472,
+    "support_mse": 0.19965566193107245,
+    "missing_mode_mse": 0.09991382963302675,
+    "mean_coding_energy": 110.91499516721697
+  },
+  {
+    "path_id": 23,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.21031671794757267,
+    "support_mse": 0.20060434732210375,
+    "missing_mode_mse": 0.10146984513861369,
+    "mean_coding_energy": 110.91499516721697
+  },
+  {
+    "path_id": 23,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.19065066946146436,
+    "support_mse": 0.2208265319424759,
+    "missing_mode_mse": 0.10617369234147628,
+    "mean_coding_energy": 110.91499516721697
+  },
+  {
+    "path_id": 23,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2211008432004012,
+    "support_mse": 0.20527088801740517,
+    "missing_mode_mse": 0.11556874806029231,
+    "mean_coding_energy": 110.91499516721697
+  },
+  {
+    "path_id": 23,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.2614495876405669,
+    "support_mse": 0.3248209506067097,
+    "missing_mode_mse": 0.12254706044996165,
+    "mean_coding_energy": 110.91499516721697
+  },
+  {
+    "path_id": 23,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.1893657523506998,
+    "support_mse": 0.1486425337712593,
+    "missing_mode_mse": 0.10397234648616491,
+    "mean_coding_energy": 110.91499516721697
+  },
+  {
+    "path_id": 23,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.2127375805210977,
+    "support_mse": 0.13525370637190087,
+    "missing_mode_mse": 0.10606947342058733,
+    "mean_coding_energy": 110.91499516721697
+  },
+  {
+    "path_id": 23,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.2817035571979203,
+    "support_mse": 0.28101124253733,
+    "missing_mode_mse": 0.13871691274990397,
+    "mean_coding_energy": 110.91499516721697
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.1859410960596698,
+    "support_mse": 0.21238527229715043,
+    "missing_mode_mse": 0.0990547319088802,
+    "mean_coding_energy": 110.87889250924584
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.20989991819613785,
+    "support_mse": 0.1992777580783005,
+    "missing_mode_mse": 0.09974973205179491,
+    "mean_coding_energy": 110.87889250924584
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.21031671794757267,
+    "support_mse": 0.20060434732210375,
+    "missing_mode_mse": 0.10146984513861369,
+    "mean_coding_energy": 110.87889250924584
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.19071469702840327,
+    "support_mse": 0.2210394270313812,
+    "missing_mode_mse": 0.10623543254737505,
+    "mean_coding_energy": 110.91250690774964
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2211632584430502,
+    "support_mse": 0.20548567810787527,
+    "missing_mode_mse": 0.1156279451906628,
+    "mean_coding_energy": 110.91250690774964
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.26154742621928945,
+    "support_mse": 0.32513084630833566,
+    "missing_mode_mse": 0.1226424160634166,
+    "mean_coding_energy": 110.91250690774964
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.1893641110108842,
+    "support_mse": 0.14864128899857476,
+    "missing_mode_mse": 0.10396999023443373,
+    "mean_coding_energy": 110.91277199415381
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.21273747708521668,
+    "support_mse": 0.1352567447021528,
+    "missing_mode_mse": 0.10606797185639119,
+    "mean_coding_energy": 110.91277199415381
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.2817070645329173,
+    "support_mse": 0.2810219099265089,
+    "missing_mode_mse": 0.1387208498568776,
+    "mean_coding_energy": 110.91277199415381
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.18604669068893553,
+    "support_mse": 0.2127231751584604,
+    "missing_mode_mse": 0.0992079813560974,
+    "mean_coding_energy": 110.9127679529102
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.21001531395965808,
+    "support_mse": 0.19964734415291968,
+    "missing_mode_mse": 0.09991044995886911,
+    "mean_coding_energy": 110.9127679529102
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.21031671794757267,
+    "support_mse": 0.20060434732210375,
+    "missing_mode_mse": 0.10146984513861369,
+    "mean_coding_energy": 110.9127679529102
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.19071469702840327,
+    "support_mse": 0.2210394270313812,
+    "missing_mode_mse": 0.10623543254737505,
+    "mean_coding_energy": 110.91250690774964
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2211632584430502,
+    "support_mse": 0.20548567810787527,
+    "missing_mode_mse": 0.1156279451906628,
+    "mean_coding_energy": 110.91250690774964
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.26154742621928945,
+    "support_mse": 0.32513084630833566,
+    "missing_mode_mse": 0.1226424160634166,
+    "mean_coding_energy": 110.91250690774964
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.1893641110108842,
+    "support_mse": 0.14864128899857476,
+    "missing_mode_mse": 0.10396999023443373,
+    "mean_coding_energy": 110.91277199415381
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.21273747708521668,
+    "support_mse": 0.1352567447021528,
+    "missing_mode_mse": 0.10606797185639119,
+    "mean_coding_energy": 110.91277199415381
+  },
+  {
+    "path_id": 23,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.2817070645329173,
+    "support_mse": 0.2810219099265089,
+    "missing_mode_mse": 0.1387208498568776,
+    "mean_coding_energy": 110.91277199415381
+  },
+  {
+    "path_id": 24,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2755247436855425,
+    "support_mse": 0.16752389531494485,
+    "missing_mode_mse": 0.22167538377396492,
+    "mean_coding_energy": 272.5412052645578
+  },
+  {
+    "path_id": 24,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.4785197683206626,
+    "support_mse": 0.3422923047165781,
+    "missing_mode_mse": 0.4280576877289549,
+    "mean_coding_energy": 272.5412052645578
+  },
+  {
+    "path_id": 24,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4752192522265707,
+    "support_mse": 0.33481286596132237,
+    "missing_mode_mse": 0.42334040450592436,
+    "mean_coding_energy": 272.5412052645578
+  },
+  {
+    "path_id": 24,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.28745598521445065,
+    "support_mse": 0.19916728846250506,
+    "missing_mode_mse": 0.220816147566041,
+    "mean_coding_energy": 272.5412052645578
+  },
+  {
+    "path_id": 24,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.4832039825744608,
+    "support_mse": 0.3560444772825645,
+    "missing_mode_mse": 0.4146223403411592,
+    "mean_coding_energy": 272.5412052645578
+  },
+  {
+    "path_id": 24,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.42405938094655393,
+    "support_mse": 0.4732529927068315,
+    "missing_mode_mse": 0.28815603277751756,
+    "mean_coding_energy": 272.5412052645578
+  },
+  {
+    "path_id": 24,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.28850438071753454,
+    "support_mse": 0.3040332952170769,
+    "missing_mode_mse": 0.22153517509952897,
+    "mean_coding_energy": 272.5412052645578
+  },
+  {
+    "path_id": 24,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.49540652321813755,
+    "support_mse": 0.5136102044383242,
+    "missing_mode_mse": 0.42655716183002007,
+    "mean_coding_energy": 272.5412052645578
+  },
+  {
+    "path_id": 24,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.42972035334826225,
+    "support_mse": 0.5568925601516415,
+    "missing_mode_mse": 0.29431309325986926,
+    "mean_coding_energy": 272.5412052645578
+  },
+  {
+    "path_id": 24,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2755118248199353,
+    "support_mse": 0.1674825549449203,
+    "missing_mode_mse": 0.22167609764704946,
+    "mean_coding_energy": 272.65905243257527
+  },
+  {
+    "path_id": 24,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.47856711706501226,
+    "support_mse": 0.3423794726383072,
+    "missing_mode_mse": 0.42813522304060775,
+    "mean_coding_energy": 272.65905243257527
+  },
+  {
+    "path_id": 24,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4752192522265707,
+    "support_mse": 0.33481286596132237,
+    "missing_mode_mse": 0.42334040450592436,
+    "mean_coding_energy": 272.65905243257527
+  },
+  {
+    "path_id": 24,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.28735049002698787,
+    "support_mse": 0.1988393557786598,
+    "missing_mode_mse": 0.2208892529572709,
+    "mean_coding_energy": 272.65905243257527
+  },
+  {
+    "path_id": 24,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.48253680631345897,
+    "support_mse": 0.35421091470577215,
+    "missing_mode_mse": 0.4141982699852491,
+    "mean_coding_energy": 272.65905243257527
+  },
+  {
+    "path_id": 24,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.4237530528419806,
+    "support_mse": 0.47252522303062133,
+    "missing_mode_mse": 0.2877466432159109,
+    "mean_coding_energy": 272.65905243257527
+  },
+  {
+    "path_id": 24,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2883940378432338,
+    "support_mse": 0.30368196302315564,
+    "missing_mode_mse": 0.2215977393277287,
+    "mean_coding_energy": 272.65905243257527
+  },
+  {
+    "path_id": 24,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.4947257911161499,
+    "support_mse": 0.5116274411105882,
+    "missing_mode_mse": 0.4261136203550139,
+    "mean_coding_energy": 272.65905243257527
+  },
+  {
+    "path_id": 24,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.42938528226277284,
+    "support_mse": 0.5560039245072197,
+    "missing_mode_mse": 0.2938891654830754,
+    "mean_coding_energy": 272.65905243257527
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2755113257427557,
+    "support_mse": 0.1674809578979401,
+    "missing_mode_mse": 0.22167626456470801,
+    "mean_coding_energy": 272.6598389855809
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.47857137061524985,
+    "support_mse": 0.3423890515435831,
+    "missing_mode_mse": 0.42814058209443695,
+    "mean_coding_energy": 272.6598389855809
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4752192522265707,
+    "support_mse": 0.33481286596132237,
+    "missing_mode_mse": 0.42334040450592436,
+    "mean_coding_energy": 272.6598389855809
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2873462515965426,
+    "support_mse": 0.1988260610902952,
+    "missing_mode_mse": 0.22089458143689952,
+    "mean_coding_energy": 272.65973590355077
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.48249220664908404,
+    "support_mse": 0.35409065076906093,
+    "missing_mode_mse": 0.41416583754670006,
+    "mean_coding_energy": 272.65973590355077
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.4237197810534574,
+    "support_mse": 0.4724385495681959,
+    "missing_mode_mse": 0.28771341408964973,
+    "mean_coding_energy": 272.65973590355077
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.28838948702681255,
+    "support_mse": 0.3036673391762217,
+    "missing_mode_mse": 0.22160165244335572,
+    "mean_coding_energy": 272.65983843742015
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.4946835078696517,
+    "support_mse": 0.5115058847930741,
+    "missing_mode_mse": 0.42608223718692306,
+    "mean_coding_energy": 272.65983843742015
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.4293535555564453,
+    "support_mse": 0.5559153992170793,
+    "missing_mode_mse": 0.29385740943690586,
+    "mean_coding_energy": 272.65983843742015
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2755113257427557,
+    "support_mse": 0.1674809578979401,
+    "missing_mode_mse": 0.22167626456470801,
+    "mean_coding_energy": 272.6598389855809
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.47857137061524985,
+    "support_mse": 0.3423890515435831,
+    "missing_mode_mse": 0.42814058209443695,
+    "mean_coding_energy": 272.6598389855809
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4752192522265707,
+    "support_mse": 0.33481286596132237,
+    "missing_mode_mse": 0.42334040450592436,
+    "mean_coding_energy": 272.6598389855809
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2873462515965426,
+    "support_mse": 0.1988260610902952,
+    "missing_mode_mse": 0.22089458143689952,
+    "mean_coding_energy": 272.65973590355077
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.48249220664908404,
+    "support_mse": 0.35409065076906093,
+    "missing_mode_mse": 0.41416583754670006,
+    "mean_coding_energy": 272.65973590355077
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.4237197810534574,
+    "support_mse": 0.4724385495681959,
+    "missing_mode_mse": 0.28771341408964973,
+    "mean_coding_energy": 272.65973590355077
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.28838948702681255,
+    "support_mse": 0.3036673391762217,
+    "missing_mode_mse": 0.22160165244335572,
+    "mean_coding_energy": 272.65983843742015
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.4946835078696517,
+    "support_mse": 0.5115058847930741,
+    "missing_mode_mse": 0.42608223718692306,
+    "mean_coding_energy": 272.65983843742015
+  },
+  {
+    "path_id": 24,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.4293535555564453,
+    "support_mse": 0.5559153992170793,
+    "missing_mode_mse": 0.29385740943690586,
+    "mean_coding_energy": 272.65983843742015
+  },
+  {
+    "path_id": 25,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.22545438546546237,
+    "support_mse": 0.24733970203246675,
+    "missing_mode_mse": 0.12792514718729292,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.350174446227434,
+    "support_mse": 0.3965668500733315,
+    "missing_mode_mse": 0.2593486295785674,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.34370639981781326,
+    "support_mse": 0.3766364476129345,
+    "missing_mode_mse": 0.2544760069170437,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2128341474555657,
+    "support_mse": 0.2056985777863461,
+    "missing_mode_mse": 0.1177886726364385,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3314112571250908,
+    "support_mse": 0.33467587446068,
+    "missing_mode_mse": 0.24273166544645436,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.30748742316059957,
+    "support_mse": 0.26573464871781827,
+    "missing_mode_mse": 0.19362157324974524,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.21846278872788896,
+    "support_mse": 0.22753767782909354,
+    "missing_mode_mse": 0.12202856324579492,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3363499746189108,
+    "support_mse": 0.3788695209193366,
+    "missing_mode_mse": 0.2461859744080407,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.31781363875225577,
+    "support_mse": 0.2922008795037585,
+    "missing_mode_mse": 0.20221996959704486,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.22557548742698666,
+    "support_mse": 0.24772722753729864,
+    "missing_mode_mse": 0.12806121143131624,
+    "mean_coding_energy": 5.678467620550958
+  },
+  {
+    "path_id": 25,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.3504583776184633,
+    "support_mse": 0.39744288297644675,
+    "missing_mode_mse": 0.2596489474809256,
+    "mean_coding_energy": 5.678467620550958
+  },
+  {
+    "path_id": 25,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.34370639981781326,
+    "support_mse": 0.3766364476129345,
+    "missing_mode_mse": 0.2544760069170437,
+    "mean_coding_energy": 5.678467620550958
+  },
+  {
+    "path_id": 25,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.212702232674663,
+    "support_mse": 0.2052759165949703,
+    "missing_mode_mse": 0.11764148405451505,
+    "mean_coding_energy": 5.678467620550958
+  },
+  {
+    "path_id": 25,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.33118236591409606,
+    "support_mse": 0.3339823140418573,
+    "missing_mode_mse": 0.24248237706487352,
+    "mean_coding_energy": 5.678467620550958
+  },
+  {
+    "path_id": 25,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.30702949215570136,
+    "support_mse": 0.2642552114467912,
+    "missing_mode_mse": 0.1931659709661213,
+    "mean_coding_energy": 5.678467620550958
+  },
+  {
+    "path_id": 25,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.21832029727613878,
+    "support_mse": 0.22707755408979108,
+    "missing_mode_mse": 0.12186612601258176,
+    "mean_coding_energy": 5.678467620550958
+  },
+  {
+    "path_id": 25,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.336114558749408,
+    "support_mse": 0.3781161380610541,
+    "missing_mode_mse": 0.24592472113590105,
+    "mean_coding_energy": 5.678467620550958
+  },
+  {
+    "path_id": 25,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3173424996671398,
+    "support_mse": 0.2906288563913665,
+    "missing_mode_mse": 0.20174760910615497,
+    "mean_coding_energy": 5.678467620550958
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.22545438546546237,
+    "support_mse": 0.24733970203246675,
+    "missing_mode_mse": 0.12792514718729292,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.350174446227434,
+    "support_mse": 0.3965668500733315,
+    "missing_mode_mse": 0.2593486295785674,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.34370639981781326,
+    "support_mse": 0.3766364476129345,
+    "missing_mode_mse": 0.2544760069170437,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2128341474555657,
+    "support_mse": 0.2056985777863461,
+    "missing_mode_mse": 0.1177886726364385,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3314112571250908,
+    "support_mse": 0.33467587446068,
+    "missing_mode_mse": 0.24273166544645436,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.30748742316059957,
+    "support_mse": 0.26573464871781827,
+    "missing_mode_mse": 0.19362157324974524,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.21846278872788896,
+    "support_mse": 0.22753767782909354,
+    "missing_mode_mse": 0.12202856324579492,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3363499746189108,
+    "support_mse": 0.3788695209193366,
+    "missing_mode_mse": 0.2461859744080407,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.31781363875225577,
+    "support_mse": 0.2922008795037585,
+    "missing_mode_mse": 0.20221996959704486,
+    "mean_coding_energy": 5.682956823228852
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2255694852711423,
+    "support_mse": 0.2477080206989662,
+    "missing_mode_mse": 0.12805472973531073,
+    "mean_coding_energy": 5.678558061552405
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.35044460978196995,
+    "support_mse": 0.3974004320376795,
+    "missing_mode_mse": 0.2596345975692636,
+    "mean_coding_energy": 5.678558061552405
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.34370639981781326,
+    "support_mse": 0.3766364476129345,
+    "missing_mode_mse": 0.2544760069170437,
+    "mean_coding_energy": 5.678558061552405
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.21271032894621283,
+    "support_mse": 0.20530156927856966,
+    "missing_mode_mse": 0.11765031088407937,
+    "mean_coding_energy": 5.678587841531948
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3311936294332544,
+    "support_mse": 0.33401557040390584,
+    "missing_mode_mse": 0.24249454568084347,
+    "mean_coding_energy": 5.678587841531948
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.3070512525873078,
+    "support_mse": 0.26432555464636576,
+    "missing_mode_mse": 0.19318756668500042,
+    "mean_coding_energy": 5.678587841531948
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.21832482854973737,
+    "support_mse": 0.22709262538623665,
+    "missing_mode_mse": 0.12187145103708263,
+    "mean_coding_energy": 5.678560632332269
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3361232414673093,
+    "support_mse": 0.37814346042926616,
+    "missing_mode_mse": 0.24593435497222493,
+    "mean_coding_energy": 5.678560632332269
+  },
+  {
+    "path_id": 25,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3173629548494971,
+    "support_mse": 0.29069714095350496,
+    "missing_mode_mse": 0.20176812716565037,
+    "mean_coding_energy": 5.678560632332269
+  },
+  {
+    "path_id": 26,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.26687207738056606,
+    "support_mse": 0.2018759201417139,
+    "missing_mode_mse": 0.18609903800247146,
+    "mean_coding_energy": 158.48343468992084
+  },
+  {
+    "path_id": 26,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.4888792575342339,
+    "support_mse": 0.30172876091771955,
+    "missing_mode_mse": 0.4236373041841982,
+    "mean_coding_energy": 158.48343468992084
+  },
+  {
+    "path_id": 26,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4862537321654334,
+    "support_mse": 0.29744534479096274,
+    "missing_mode_mse": 0.42086443912421123,
+    "mean_coding_energy": 158.48343468992084
+  },
+  {
+    "path_id": 26,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.277152193345114,
+    "support_mse": 0.22624463663045763,
+    "missing_mode_mse": 0.1862732279338368,
+    "mean_coding_energy": 158.48343468992084
+  },
+  {
+    "path_id": 26,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.48536310724826315,
+    "support_mse": 0.30637152006202484,
+    "missing_mode_mse": 0.40769197533561014,
+    "mean_coding_energy": 158.48343468992084
+  },
+  {
+    "path_id": 26,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.4937534074971279,
+    "support_mse": 0.44820512939613055,
+    "missing_mode_mse": 0.35437606596648785,
+    "mean_coding_energy": 158.48343468992084
+  },
+  {
+    "path_id": 26,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2778608964637515,
+    "support_mse": 0.24743294488318646,
+    "missing_mode_mse": 0.1758602707478369,
+    "mean_coding_energy": 158.48343468992084
+  },
+  {
+    "path_id": 26,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.47482202814500457,
+    "support_mse": 0.3069224836779719,
+    "missing_mode_mse": 0.3869147537441408,
+    "mean_coding_energy": 158.48343468992084
+  },
+  {
+    "path_id": 26,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.4747995799642649,
+    "support_mse": 0.41241096981840136,
+    "missing_mode_mse": 0.3426752562010853,
+    "mean_coding_energy": 158.48343468992084
+  },
+  {
+    "path_id": 26,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.26685811613616417,
+    "support_mse": 0.20183124415963122,
+    "missing_mode_mse": 0.18607995946030711,
+    "mean_coding_energy": 158.55301667591993
+  },
+  {
+    "path_id": 26,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.4888059214836607,
+    "support_mse": 0.3015774866621447,
+    "missing_mode_mse": 0.423565129585706,
+    "mean_coding_energy": 158.55301667591993
+  },
+  {
+    "path_id": 26,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4862537321654334,
+    "support_mse": 0.29744534479096274,
+    "missing_mode_mse": 0.42086443912421123,
+    "mean_coding_energy": 158.55301667591993
+  },
+  {
+    "path_id": 26,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.27720076487404277,
+    "support_mse": 0.22648039634860076,
+    "missing_mode_mse": 0.18618725376632064,
+    "mean_coding_energy": 158.55301667591993
+  },
+  {
+    "path_id": 26,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.4854670377432074,
+    "support_mse": 0.3069111957356988,
+    "missing_mode_mse": 0.4076341411223974,
+    "mean_coding_energy": 158.55301667591993
+  },
+  {
+    "path_id": 26,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.4941892607298832,
+    "support_mse": 0.44949775067376035,
+    "missing_mode_mse": 0.3545067275795133,
+    "mean_coding_energy": 158.55301667591993
+  },
+  {
+    "path_id": 26,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.27809254537862915,
+    "support_mse": 0.24829934637238824,
+    "missing_mode_mse": 0.17579343960509852,
+    "mean_coding_energy": 158.55301667591993
+  },
+  {
+    "path_id": 26,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.4748714821427328,
+    "support_mse": 0.3075765144309353,
+    "missing_mode_mse": 0.38664788126549354,
+    "mean_coding_energy": 158.55301667591993
+  },
+  {
+    "path_id": 26,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.47506849007928037,
+    "support_mse": 0.41326357749376796,
+    "missing_mode_mse": 0.3426804822491646,
+    "mean_coding_energy": 158.55301667591993
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2668576743241442,
+    "support_mse": 0.20182983036116645,
+    "missing_mode_mse": 0.18607895635082955,
+    "mean_coding_energy": 158.55242758531065
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.48880196858924585,
+    "support_mse": 0.30156539430646623,
+    "missing_mode_mse": 0.42356062643413495,
+    "mean_coding_energy": 158.55242758531065
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4862537321654334,
+    "support_mse": 0.29744534479096274,
+    "missing_mode_mse": 0.42086443912421123,
+    "mean_coding_energy": 158.55242758531065
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2771882887779409,
+    "support_mse": 0.22644820245985522,
+    "missing_mode_mse": 0.18618617716547858,
+    "mean_coding_energy": 158.55187201429743
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.4854702718035006,
+    "support_mse": 0.3069129652218317,
+    "missing_mode_mse": 0.40765056890038553,
+    "mean_coding_energy": 158.55187201429743
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.49419778638302236,
+    "support_mse": 0.4495205883318218,
+    "missing_mode_mse": 0.3545208459579691,
+    "mean_coding_energy": 158.55187201429743
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2780873681952338,
+    "support_mse": 0.24829116569927018,
+    "missing_mode_mse": 0.1757949294262568,
+    "mean_coding_energy": 158.55243763779126
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.47486109222402967,
+    "support_mse": 0.307556316264827,
+    "missing_mode_mse": 0.3866451106185277,
+    "mean_coding_energy": 158.55243763779126
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.4750627311388014,
+    "support_mse": 0.4132473869960571,
+    "missing_mode_mse": 0.3426791446227134,
+    "mean_coding_energy": 158.55243763779126
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2668576743241442,
+    "support_mse": 0.20182983036116645,
+    "missing_mode_mse": 0.18607895635082955,
+    "mean_coding_energy": 158.55242758531065
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.48880196858924585,
+    "support_mse": 0.30156539430646623,
+    "missing_mode_mse": 0.42356062643413495,
+    "mean_coding_energy": 158.55242758531065
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.4862537321654334,
+    "support_mse": 0.29744534479096274,
+    "missing_mode_mse": 0.42086443912421123,
+    "mean_coding_energy": 158.55242758531065
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2771882887779409,
+    "support_mse": 0.22644820245985522,
+    "missing_mode_mse": 0.18618617716547858,
+    "mean_coding_energy": 158.55187201429743
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.4854702718035006,
+    "support_mse": 0.3069129652218317,
+    "missing_mode_mse": 0.40765056890038553,
+    "mean_coding_energy": 158.55187201429743
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.49419778638302236,
+    "support_mse": 0.4495205883318218,
+    "missing_mode_mse": 0.3545208459579691,
+    "mean_coding_energy": 158.55187201429743
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2780873681952338,
+    "support_mse": 0.24829116569927018,
+    "missing_mode_mse": 0.1757949294262568,
+    "mean_coding_energy": 158.55243763779126
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.47486109222402967,
+    "support_mse": 0.307556316264827,
+    "missing_mode_mse": 0.3866451106185277,
+    "mean_coding_energy": 158.55243763779126
+  },
+  {
+    "path_id": 26,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.4750627311388014,
+    "support_mse": 0.4132473869960571,
+    "missing_mode_mse": 0.3426791446227134,
+    "mean_coding_energy": 158.55243763779126
+  },
+  {
+    "path_id": 27,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2533646829587419,
+    "support_mse": 0.22506252529056897,
+    "missing_mode_mse": 0.17599456714661446,
+    "mean_coding_energy": 30.949771587516466
+  },
+  {
+    "path_id": 27,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.23965767796464188,
+    "support_mse": 0.18747208790557734,
+    "missing_mode_mse": 0.1643725481519247,
+    "mean_coding_energy": 30.949771587516466
+  },
+  {
+    "path_id": 27,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.24014402941286947,
+    "support_mse": 0.18929125812618403,
+    "missing_mode_mse": 0.1647775949805549,
+    "mean_coding_energy": 30.949771587516466
+  },
+  {
+    "path_id": 27,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2616957148782342,
+    "support_mse": 0.2516858175965396,
+    "missing_mode_mse": 0.18368117049758387,
+    "mean_coding_energy": 30.949771587516466
+  },
+  {
+    "path_id": 27,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.24284561322557865,
+    "support_mse": 0.2009018826400386,
+    "missing_mode_mse": 0.16519915159880383,
+    "mean_coding_energy": 30.949771587516466
+  },
+  {
+    "path_id": 27,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.2839411862301087,
+    "support_mse": 0.323647602244982,
+    "missing_mode_mse": 0.16763179750405305,
+    "mean_coding_energy": 30.949771587516466
+  },
+  {
+    "path_id": 27,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.25301449023123174,
+    "support_mse": 0.22744238310266676,
+    "missing_mode_mse": 0.17537790947094895,
+    "mean_coding_energy": 30.949771587516466
+  },
+  {
+    "path_id": 27,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.2399969689439758,
+    "support_mse": 0.210342744556191,
+    "missing_mode_mse": 0.1626418628724719,
+    "mean_coding_energy": 30.949771587516466
+  },
+  {
+    "path_id": 27,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3323872075235642,
+    "support_mse": 0.34102793264493253,
+    "missing_mode_mse": 0.1679439188309786,
+    "mean_coding_energy": 30.949771587516466
+  },
+  {
+    "path_id": 27,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.25335577101469653,
+    "support_mse": 0.22503399858854012,
+    "missing_mode_mse": 0.17601371009722905,
+    "mean_coding_energy": 30.89859978509227
+  },
+  {
+    "path_id": 27,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.23963853108329872,
+    "support_mse": 0.18739752372969196,
+    "missing_mode_mse": 0.16436803864879862,
+    "mean_coding_energy": 30.89859978509227
+  },
+  {
+    "path_id": 27,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.24014402941286947,
+    "support_mse": 0.18929125812618403,
+    "missing_mode_mse": 0.1647775949805549,
+    "mean_coding_energy": 30.89859978509227
+  },
+  {
+    "path_id": 27,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.26102227128243916,
+    "support_mse": 0.24953617315228382,
+    "missing_mode_mse": 0.1828881206231072,
+    "mean_coding_energy": 30.89859978509227
+  },
+  {
+    "path_id": 27,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.24240313230655983,
+    "support_mse": 0.1990974611351945,
+    "missing_mode_mse": 0.1645948062861551,
+    "mean_coding_energy": 30.89859978509227
+  },
+  {
+    "path_id": 27,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.28447047474239134,
+    "support_mse": 0.3253257242870858,
+    "missing_mode_mse": 0.16729068830879423,
+    "mean_coding_energy": 30.89859978509227
+  },
+  {
+    "path_id": 27,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2519319301415956,
+    "support_mse": 0.2240472095619234,
+    "missing_mode_mse": 0.17342302484602398,
+    "mean_coding_energy": 30.89859978509227
+  },
+  {
+    "path_id": 27,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.24048429584969333,
+    "support_mse": 0.21159459570021352,
+    "missing_mode_mse": 0.1615492754551081,
+    "mean_coding_energy": 30.89859978509227
+  },
+  {
+    "path_id": 27,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3304851620785928,
+    "support_mse": 0.33538461915729534,
+    "missing_mode_mse": 0.16633242718753447,
+    "mean_coding_energy": 30.89859978509227
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.25337917876808647,
+    "support_mse": 0.22510890706182046,
+    "missing_mode_mse": 0.17600648724208198,
+    "mean_coding_energy": 30.916883880342624
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.23966578844840097,
+    "support_mse": 0.18749966539417817,
+    "missing_mode_mse": 0.16437844686548675,
+    "mean_coding_energy": 30.916883880342624
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.24014402941286947,
+    "support_mse": 0.18929125812618403,
+    "missing_mode_mse": 0.1647775949805549,
+    "mean_coding_energy": 30.916883880342624
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2607182070168338,
+    "support_mse": 0.24853540977379787,
+    "missing_mode_mse": 0.1820589548333576,
+    "mean_coding_energy": 30.916519891446615
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.24261092176691101,
+    "support_mse": 0.2000755339003545,
+    "missing_mode_mse": 0.1638986551681943,
+    "mean_coding_energy": 30.916519891446615
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.2811856658798315,
+    "support_mse": 0.31457422666235557,
+    "missing_mode_mse": 0.16522676115398244,
+    "mean_coding_energy": 30.916519891446615
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2519133890704376,
+    "support_mse": 0.22391885937333994,
+    "missing_mode_mse": 0.1734599547342295,
+    "mean_coding_energy": 30.916886635022497
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.2404487145924989,
+    "support_mse": 0.2114195239533704,
+    "missing_mode_mse": 0.16168149413509472,
+    "mean_coding_energy": 30.916886635022497
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3305110081055078,
+    "support_mse": 0.33545497180065864,
+    "missing_mode_mse": 0.16635037470119726,
+    "mean_coding_energy": 30.916886635022497
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.25335540799267264,
+    "support_mse": 0.22503283676651228,
+    "missing_mode_mse": 0.17601349229399488,
+    "mean_coding_energy": 30.89923235126298
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.23963831128995589,
+    "support_mse": 0.1873967634089671,
+    "missing_mode_mse": 0.16436790840850118,
+    "mean_coding_energy": 30.89923235126298
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.24014402941286947,
+    "support_mse": 0.18929125812618403,
+    "missing_mode_mse": 0.1647775949805549,
+    "mean_coding_energy": 30.89923235126298
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.26103011291551864,
+    "support_mse": 0.24956130623410422,
+    "missing_mode_mse": 0.18289604500491138,
+    "mean_coding_energy": 30.898583799565838
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.24240117366462657,
+    "support_mse": 0.19909481477464838,
+    "missing_mode_mse": 0.16459344342208426,
+    "mean_coding_energy": 30.898583799565838
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.2844827323338051,
+    "support_mse": 0.32536952124983853,
+    "missing_mode_mse": 0.16729660735830454,
+    "mean_coding_energy": 30.898583799565838
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.25195910946792865,
+    "support_mse": 0.22413442995372307,
+    "missing_mode_mse": 0.17346529001646188,
+    "mean_coding_energy": 30.899234128180773
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.24046791611484014,
+    "support_mse": 0.21155139027013972,
+    "missing_mode_mse": 0.16155882831189414,
+    "mean_coding_energy": 30.899234128180773
+  },
+  {
+    "path_id": 27,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3305150275345844,
+    "support_mse": 0.3354669785334309,
+    "missing_mode_mse": 0.16635369702674738,
+    "mean_coding_energy": 30.899234128180773
+  },
+  {
+    "path_id": 28,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2953953500924096,
+    "support_mse": 0.2993956262233032,
+    "missing_mode_mse": 0.24363871171637724,
+    "mean_coding_energy": 116.1104298963967
+  },
+  {
+    "path_id": 28,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.7296885218214479,
+    "support_mse": 0.37515956736710726,
+    "missing_mode_mse": 0.6906867091260982,
+    "mean_coding_energy": 116.1104298963967
+  },
+  {
+    "path_id": 28,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.7226645664307294,
+    "support_mse": 0.35249796943098377,
+    "missing_mode_mse": 0.6850985749568773,
+    "mean_coding_energy": 116.1104298963967
+  },
+  {
+    "path_id": 28,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.29117390790095865,
+    "support_mse": 0.2944752387945842,
+    "missing_mode_mse": 0.24172301031075225,
+    "mean_coding_energy": 116.1104298963967
+  },
+  {
+    "path_id": 28,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.7250096365097533,
+    "support_mse": 0.3669291461373382,
+    "missing_mode_mse": 0.6878946413317613,
+    "mean_coding_energy": 116.1104298963967
+  },
+  {
+    "path_id": 28,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.8916724391002947,
+    "support_mse": 0.7930481070842427,
+    "missing_mode_mse": 0.7941468348731688,
+    "mean_coding_energy": 116.1104298963967
+  },
+  {
+    "path_id": 28,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.29262928579247494,
+    "support_mse": 0.2997618011051326,
+    "missing_mode_mse": 0.24200872014860894,
+    "mean_coding_energy": 116.1104298963967
+  },
+  {
+    "path_id": 28,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.7250234722131197,
+    "support_mse": 0.3517428982974951,
+    "missing_mode_mse": 0.6869182541193519,
+    "mean_coding_energy": 116.1104298963967
+  },
+  {
+    "path_id": 28,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.8848667276380859,
+    "support_mse": 0.7681216416007863,
+    "missing_mode_mse": 0.7875254362309763,
+    "mean_coding_energy": 116.1104298963967
+  },
+  {
+    "path_id": 28,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.29925383767100877,
+    "support_mse": 0.31174278648169707,
+    "missing_mode_mse": 0.24747125572235304,
+    "mean_coding_energy": 116.31719828510523
+  },
+  {
+    "path_id": 28,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.7371893594247994,
+    "support_mse": 0.397907991692425,
+    "missing_mode_mse": 0.6982087810975973,
+    "mean_coding_energy": 116.31719828510523
+  },
+  {
+    "path_id": 28,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.7226645664307294,
+    "support_mse": 0.35249796943098377,
+    "missing_mode_mse": 0.6850985749568773,
+    "mean_coding_energy": 116.31719828510523
+  },
+  {
+    "path_id": 28,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.29142038293764083,
+    "support_mse": 0.2953545627929378,
+    "missing_mode_mse": 0.24199020110042535,
+    "mean_coding_energy": 116.31719828510523
+  },
+  {
+    "path_id": 28,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.7253848164718244,
+    "support_mse": 0.36817210063575156,
+    "missing_mode_mse": 0.6882791361847731,
+    "mean_coding_energy": 116.31719828510523
+  },
+  {
+    "path_id": 28,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.8740973699363968,
+    "support_mse": 0.7397192946852849,
+    "missing_mode_mse": 0.7794372359538639,
+    "mean_coding_energy": 116.31719828510523
+  },
+  {
+    "path_id": 28,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2926014450262451,
+    "support_mse": 0.29971066233358823,
+    "missing_mode_mse": 0.24198939016545018,
+    "mean_coding_energy": 116.31719828510523
+  },
+  {
+    "path_id": 28,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.7250407622608971,
+    "support_mse": 0.3517477844754334,
+    "missing_mode_mse": 0.6869151886573275,
+    "mean_coding_energy": 116.31719828510523
+  },
+  {
+    "path_id": 28,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.8675355143373324,
+    "support_mse": 0.7151346057272899,
+    "missing_mode_mse": 0.7726978021141452,
+    "mean_coding_energy": 116.31719828510523
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2993183372794311,
+    "support_mse": 0.31194918522838655,
+    "missing_mode_mse": 0.24753971319875168,
+    "mean_coding_energy": 116.3305793679015
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.737259654038339,
+    "support_mse": 0.3981273002375661,
+    "missing_mode_mse": 0.6982841075954962,
+    "mean_coding_energy": 116.3305793679015
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.7226645664307294,
+    "support_mse": 0.35249796943098377,
+    "missing_mode_mse": 0.6850985749568773,
+    "mean_coding_energy": 116.3305793679015
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2910789528631085,
+    "support_mse": 0.2943129360560106,
+    "missing_mode_mse": 0.24164689647509538,
+    "mean_coding_energy": 116.33054060865189
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.7248719220492326,
+    "support_mse": 0.3666152902369292,
+    "missing_mode_mse": 0.68776101683566,
+    "mean_coding_energy": 116.33054060865189
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.8733139707033988,
+    "support_mse": 0.7372902235768088,
+    "missing_mode_mse": 0.7786087656989045,
+    "mean_coding_energy": 116.33054060865189
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.29272586568382064,
+    "support_mse": 0.30013498390377646,
+    "missing_mode_mse": 0.24212285230330668,
+    "mean_coding_energy": 116.33057948753377
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.7251452024075542,
+    "support_mse": 0.3520995995764252,
+    "missing_mode_mse": 0.6870298250356763,
+    "mean_coding_energy": 116.33057948753377
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.8675535007361626,
+    "support_mse": 0.715188412384919,
+    "missing_mode_mse": 0.7727006905263242,
+    "mean_coding_energy": 116.33057948753377
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.29924284535704343,
+    "support_mse": 0.31170761107701167,
+    "missing_mode_mse": 0.24745948442715143,
+    "mean_coding_energy": 116.31587930373072
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.7371733781212333,
+    "support_mse": 0.3978590463825417,
+    "missing_mode_mse": 0.6981918712381346,
+    "mean_coding_energy": 116.31587930373072
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.7226645664307294,
+    "support_mse": 0.35249796943098377,
+    "missing_mode_mse": 0.6850985749568773,
+    "mean_coding_energy": 116.31587930373072
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2914573684244564,
+    "support_mse": 0.2954671040383056,
+    "missing_mode_mse": 0.2420273097191967,
+    "mean_coding_energy": 116.31585020132624
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.7254403527794988,
+    "support_mse": 0.3683404020877648,
+    "missing_mode_mse": 0.6883351349174035,
+    "mean_coding_energy": 116.31585020132624
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.8742022756666274,
+    "support_mse": 0.7400431262152106,
+    "missing_mode_mse": 0.7795405626102941,
+    "mean_coding_energy": 116.31585020132624
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2925871706497014,
+    "support_mse": 0.2996624346539463,
+    "missing_mode_mse": 0.24197418968804146,
+    "mean_coding_energy": 116.31587944567391
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.7250284137030775,
+    "support_mse": 0.3517070106056265,
+    "missing_mode_mse": 0.6869018568727897,
+    "mean_coding_energy": 116.31587944567391
+  },
+  {
+    "path_id": 28,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.8675491928776836,
+    "support_mse": 0.7151763498764045,
+    "missing_mode_mse": 0.7727082882124142,
+    "mean_coding_energy": 116.31587944567391
+  },
+  {
+    "path_id": 29,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.1815131726651244,
+    "support_mse": 0.12619801205687103,
+    "missing_mode_mse": 0.11489835062493886,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.3979620047936384,
+    "support_mse": 0.25148227425137765,
+    "missing_mode_mse": 0.3076405810797481,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.32699415200781945,
+    "support_mse": 0.1717278556051763,
+    "missing_mode_mse": 0.2472499652372564,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.17720209599150571,
+    "support_mse": 0.12431824903823434,
+    "missing_mode_mse": 0.12491452545718285,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.32898769224416047,
+    "support_mse": 0.17621255360411442,
+    "missing_mode_mse": 0.2507871059851958,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.36416049719871374,
+    "support_mse": 0.41917319959885324,
+    "missing_mode_mse": 0.24633181161311596,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.177736722789068,
+    "support_mse": 0.12745969123892573,
+    "missing_mode_mse": 0.12324016885089836,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3253472076399158,
+    "support_mse": 0.15633233567211038,
+    "missing_mode_mse": 0.24461252068275308,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.34681139146125994,
+    "support_mse": 0.37446315923651746,
+    "missing_mode_mse": 0.228510312242059,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.18460822996814719,
+    "support_mse": 0.13242542805012603,
+    "missing_mode_mse": 0.11625878727639732,
+    "mean_coding_energy": 233.6413463883934
+  },
+  {
+    "path_id": 29,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.4072437782470274,
+    "support_mse": 0.26505381626619406,
+    "missing_mode_mse": 0.31501018658741786,
+    "mean_coding_energy": 233.6413463883934
+  },
+  {
+    "path_id": 29,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.32699415200781945,
+    "support_mse": 0.1717278556051763,
+    "missing_mode_mse": 0.2472499652372564,
+    "mean_coding_energy": 233.6413463883934
+  },
+  {
+    "path_id": 29,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.17724088160674778,
+    "support_mse": 0.12446385499200144,
+    "missing_mode_mse": 0.12493888378662432,
+    "mean_coding_energy": 233.6413463883934
+  },
+  {
+    "path_id": 29,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3287502382884541,
+    "support_mse": 0.17547226537583857,
+    "missing_mode_mse": 0.25054201702852014,
+    "mean_coding_energy": 233.6413463883934
+  },
+  {
+    "path_id": 29,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.36448917599084296,
+    "support_mse": 0.41994845232821676,
+    "missing_mode_mse": 0.24598457773984211,
+    "mean_coding_energy": 233.6413463883934
+  },
+  {
+    "path_id": 29,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.17770694857492336,
+    "support_mse": 0.12743167607141295,
+    "missing_mode_mse": 0.12318567358004438,
+    "mean_coding_energy": 233.6413463883934
+  },
+  {
+    "path_id": 29,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.32536120191299145,
+    "support_mse": 0.15642157847621535,
+    "missing_mode_mse": 0.2446078609774823,
+    "mean_coding_energy": 233.6413463883934
+  },
+  {
+    "path_id": 29,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3475111485328982,
+    "support_mse": 0.37655279260711605,
+    "missing_mode_mse": 0.22870484862929014,
+    "mean_coding_energy": 233.6413463883934
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.1815131726651244,
+    "support_mse": 0.12619801205687103,
+    "missing_mode_mse": 0.11489835062493886,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.3979620047936384,
+    "support_mse": 0.25148227425137765,
+    "missing_mode_mse": 0.3076405810797481,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.32699415200781945,
+    "support_mse": 0.1717278556051763,
+    "missing_mode_mse": 0.2472499652372564,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.17720209599150571,
+    "support_mse": 0.12431824903823434,
+    "missing_mode_mse": 0.12491452545718285,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.32898769224416047,
+    "support_mse": 0.17621255360411442,
+    "missing_mode_mse": 0.2507871059851958,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.36416049719871374,
+    "support_mse": 0.41917319959885324,
+    "missing_mode_mse": 0.24633181161311596,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.177736722789068,
+    "support_mse": 0.12745969123892573,
+    "missing_mode_mse": 0.12324016885089836,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3253472076399158,
+    "support_mse": 0.15633233567211038,
+    "missing_mode_mse": 0.24461252068275308,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.34681139146125994,
+    "support_mse": 0.37446315923651746,
+    "missing_mode_mse": 0.228510312242059,
+    "mean_coding_energy": 233.94083868741455
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.18455088591355712,
+    "support_mse": 0.13231309437526734,
+    "missing_mode_mse": 0.1162305959828718,
+    "mean_coding_energy": 233.64637518557947
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.40708896699224173,
+    "support_mse": 0.2648403003125904,
+    "missing_mode_mse": 0.3148885003868606,
+    "mean_coding_energy": 233.64637518557947
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.32699415200781945,
+    "support_mse": 0.1717278556051763,
+    "missing_mode_mse": 0.2472499652372564,
+    "mean_coding_energy": 233.64637518557947
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.17724411614173313,
+    "support_mse": 0.12447391830298804,
+    "missing_mode_mse": 0.12494240873027362,
+    "mean_coding_energy": 233.6594114303362
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3287289442979219,
+    "support_mse": 0.17539423331048282,
+    "missing_mode_mse": 0.25052090906675806,
+    "mean_coding_energy": 233.6594114303362
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.3644130208304066,
+    "support_mse": 0.41973028727086276,
+    "missing_mode_mse": 0.24594545479784108,
+    "mean_coding_energy": 233.6594114303362
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.17770484630001276,
+    "support_mse": 0.12742705456231204,
+    "missing_mode_mse": 0.1231845525907058,
+    "mean_coding_energy": 233.6507506943268
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.325366161334919,
+    "support_mse": 0.156424266703662,
+    "missing_mode_mse": 0.24461359675538435,
+    "mean_coding_energy": 233.6507506943268
+  },
+  {
+    "path_id": 29,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3474856591814516,
+    "support_mse": 0.3764838758944916,
+    "missing_mode_mse": 0.2286940803352286,
+    "mean_coding_energy": 233.6507506943268
+  },
+  {
+    "path_id": 30,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.20042191650490432,
+    "support_mse": 0.13582735153303857,
+    "missing_mode_mse": 0.14098427998172672,
+    "mean_coding_energy": 651.9268094635684
+  },
+  {
+    "path_id": 30,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.2901198270952339,
+    "support_mse": 0.29339775970072357,
+    "missing_mode_mse": 0.22935671214956732,
+    "mean_coding_energy": 651.9268094635684
+  },
+  {
+    "path_id": 30,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.2846728563992149,
+    "support_mse": 0.2738473644793584,
+    "missing_mode_mse": 0.22400734023608554,
+    "mean_coding_energy": 651.9268094635684
+  },
+  {
+    "path_id": 30,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.24623096293804356,
+    "support_mse": 0.22315130609618478,
+    "missing_mode_mse": 0.19486147220793848,
+    "mean_coding_energy": 651.9268094635684
+  },
+  {
+    "path_id": 30,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.27857907578066865,
+    "support_mse": 0.17730889143117876,
+    "missing_mode_mse": 0.22775945365635125,
+    "mean_coding_energy": 651.9268094635684
+  },
+  {
+    "path_id": 30,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.2882605422000257,
+    "support_mse": 0.1770754193857072,
+    "missing_mode_mse": 0.2350558128169619,
+    "mean_coding_energy": 651.9268094635684
+  },
+  {
+    "path_id": 30,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2459812400004657,
+    "support_mse": 0.2535707359520286,
+    "missing_mode_mse": 0.20255131994673192,
+    "mean_coding_energy": 651.9268094635684
+  },
+  {
+    "path_id": 30,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.2972227303757943,
+    "support_mse": 0.2596571521639509,
+    "missing_mode_mse": 0.2552189493641539,
+    "mean_coding_energy": 651.9268094635684
+  },
+  {
+    "path_id": 30,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3010143942520606,
+    "support_mse": 0.24798690612113808,
+    "missing_mode_mse": 0.25760726997729655,
+    "mean_coding_energy": 651.9268094635684
+  },
+  {
+    "path_id": 30,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.20077787883011672,
+    "support_mse": 0.13696642033776985,
+    "missing_mode_mse": 0.1414615855438283,
+    "mean_coding_energy": 652.0371529810469
+  },
+  {
+    "path_id": 30,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.29552093656750594,
+    "support_mse": 0.312728970597187,
+    "missing_mode_mse": 0.23449296690838828,
+    "mean_coding_energy": 652.0371529810469
+  },
+  {
+    "path_id": 30,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.2846728563992149,
+    "support_mse": 0.2738473644793584,
+    "missing_mode_mse": 0.22400734023608554,
+    "mean_coding_energy": 652.0371529810469
+  },
+  {
+    "path_id": 30,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2332813977705709,
+    "support_mse": 0.1890739342086515,
+    "missing_mode_mse": 0.18096666799290495,
+    "mean_coding_energy": 652.0371529810469
+  },
+  {
+    "path_id": 30,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2744206818819387,
+    "support_mse": 0.17990757960836462,
+    "missing_mode_mse": 0.22206840749751627,
+    "mean_coding_energy": 652.0371529810469
+  },
+  {
+    "path_id": 30,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.2901493870876741,
+    "support_mse": 0.18068684728538426,
+    "missing_mode_mse": 0.2358872338726566,
+    "mean_coding_energy": 652.0371529810469
+  },
+  {
+    "path_id": 30,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.23516672694875984,
+    "support_mse": 0.2230090561320978,
+    "missing_mode_mse": 0.19117668985635844,
+    "mean_coding_energy": 652.0371529810469
+  },
+  {
+    "path_id": 30,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.2927067463633857,
+    "support_mse": 0.2627780428428865,
+    "missing_mode_mse": 0.24949407455933217,
+    "mean_coding_energy": 652.0371529810469
+  },
+  {
+    "path_id": 30,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3003567203915476,
+    "support_mse": 0.2442637705044735,
+    "missing_mode_mse": 0.2569595727407924,
+    "mean_coding_energy": 652.0371529810469
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.200782176362527,
+    "support_mse": 0.13698017219630773,
+    "missing_mode_mse": 0.14146661919795123,
+    "mean_coding_energy": 652.0380536828488
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.29556169412160627,
+    "support_mse": 0.3128742854752402,
+    "missing_mode_mse": 0.23453128359648684,
+    "mean_coding_energy": 652.0380536828488
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.2846728563992149,
+    "support_mse": 0.2738473644793584,
+    "missing_mode_mse": 0.22400734023608554,
+    "mean_coding_energy": 652.0380536828488
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.23322081151870588,
+    "support_mse": 0.1889212010937877,
+    "missing_mode_mse": 0.18089473073064827,
+    "mean_coding_energy": 652.0390205699339
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2744185658069409,
+    "support_mse": 0.17997873530393485,
+    "missing_mode_mse": 0.22205191613158726,
+    "mean_coding_energy": 652.0390205699339
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.2901740952425602,
+    "support_mse": 0.18076092450539832,
+    "missing_mode_mse": 0.23589801270351152,
+    "mean_coding_energy": 652.0390205699339
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.23511632238582109,
+    "support_mse": 0.22286858233888016,
+    "missing_mode_mse": 0.19112396644230598,
+    "mean_coding_energy": 652.0380526491756
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.2926708144735643,
+    "support_mse": 0.26273461127504094,
+    "missing_mode_mse": 0.24945371527110122,
+    "mean_coding_energy": 652.0380526491756
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3003411777368754,
+    "support_mse": 0.2442080966391455,
+    "missing_mode_mse": 0.2569494055765775,
+    "mean_coding_energy": 652.0380526491756
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.200782176362527,
+    "support_mse": 0.13698017219630773,
+    "missing_mode_mse": 0.14146661919795123,
+    "mean_coding_energy": 652.0380536828488
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.29556169412160627,
+    "support_mse": 0.3128742854752402,
+    "missing_mode_mse": 0.23453128359648684,
+    "mean_coding_energy": 652.0380536828488
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.2846728563992149,
+    "support_mse": 0.2738473644793584,
+    "missing_mode_mse": 0.22400734023608554,
+    "mean_coding_energy": 652.0380536828488
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.23322081151870588,
+    "support_mse": 0.1889212010937877,
+    "missing_mode_mse": 0.18089473073064827,
+    "mean_coding_energy": 652.0390205699339
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.2744185658069409,
+    "support_mse": 0.17997873530393485,
+    "missing_mode_mse": 0.22205191613158726,
+    "mean_coding_energy": 652.0390205699339
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.2901740952425602,
+    "support_mse": 0.18076092450539832,
+    "missing_mode_mse": 0.23589801270351152,
+    "mean_coding_energy": 652.0390205699339
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.23511632238582109,
+    "support_mse": 0.22286858233888016,
+    "missing_mode_mse": 0.19112396644230598,
+    "mean_coding_energy": 652.0380526491756
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.2926708144735643,
+    "support_mse": 0.26273461127504094,
+    "missing_mode_mse": 0.24945371527110122,
+    "mean_coding_energy": 652.0380526491756
+  },
+  {
+    "path_id": 30,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3003411777368754,
+    "support_mse": 0.2442080966391455,
+    "missing_mode_mse": 0.2569494055765775,
+    "mean_coding_energy": 652.0380526491756
+  },
+  {
+    "path_id": 31,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2954713579456487,
+    "support_mse": 0.44677558241174903,
+    "missing_mode_mse": 0.1913744119676153,
+    "mean_coding_energy": 63.044429047164726
+  },
+  {
+    "path_id": 31,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.3102056777526987,
+    "support_mse": 0.44662803448710237,
+    "missing_mode_mse": 0.2011267550347735,
+    "mean_coding_energy": 63.044429047164726
+  },
+  {
+    "path_id": 31,
+    "policy": "uniform",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.310511172540165,
+    "support_mse": 0.4465170274350151,
+    "missing_mode_mse": 0.1900951880307383,
+    "mean_coding_energy": 63.044429047164726
+  },
+  {
+    "path_id": 31,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.29421528195698055,
+    "support_mse": 0.4421407613504337,
+    "missing_mode_mse": 0.17798369952563622,
+    "mean_coding_energy": 63.044429047164726
+  },
+  {
+    "path_id": 31,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3123845957485618,
+    "support_mse": 0.4522431990406397,
+    "missing_mode_mse": 0.1868874664244991,
+    "mean_coding_energy": 63.044429047164726
+  },
+  {
+    "path_id": 31,
+    "policy": "uniform",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.39853197786534045,
+    "support_mse": 0.6648156154486186,
+    "missing_mode_mse": 0.239459326533213,
+    "mean_coding_energy": 63.044429047164726
+  },
+  {
+    "path_id": 31,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.29373958596819666,
+    "support_mse": 0.42539236901853983,
+    "missing_mode_mse": 0.18100718030211788,
+    "mean_coding_energy": 63.044429047164726
+  },
+  {
+    "path_id": 31,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3117068987857313,
+    "support_mse": 0.4269053645729174,
+    "missing_mode_mse": 0.1905443887979611,
+    "mean_coding_energy": 63.044429047164726
+  },
+  {
+    "path_id": 31,
+    "policy": "uniform",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3851783804133513,
+    "support_mse": 0.6185253295494422,
+    "missing_mode_mse": 0.23674274312426857,
+    "mean_coding_energy": 63.044429047164726
+  },
+  {
+    "path_id": 31,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.29474442331317685,
+    "support_mse": 0.44452135778680396,
+    "missing_mode_mse": 0.18971405939947822,
+    "mean_coding_energy": 62.77782793887866
+  },
+  {
+    "path_id": 31,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.30978876301446256,
+    "support_mse": 0.445139129229716,
+    "missing_mode_mse": 0.2000518559655355,
+    "mean_coding_energy": 62.77782793887866
+  },
+  {
+    "path_id": 31,
+    "policy": "development_fixed",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.310511172540165,
+    "support_mse": 0.4465170274350151,
+    "missing_mode_mse": 0.1900951880307383,
+    "mean_coding_energy": 62.77782793887866
+  },
+  {
+    "path_id": 31,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.29424792739541544,
+    "support_mse": 0.4422384318560414,
+    "missing_mode_mse": 0.17789613647993324,
+    "mean_coding_energy": 62.77782793887866
+  },
+  {
+    "path_id": 31,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3124303153070961,
+    "support_mse": 0.4523773003608576,
+    "missing_mode_mse": 0.18680015238943537,
+    "mean_coding_energy": 62.77782793887866
+  },
+  {
+    "path_id": 31,
+    "policy": "development_fixed",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.4003326479608992,
+    "support_mse": 0.6702508998825263,
+    "missing_mode_mse": 0.23924306258783995,
+    "mean_coding_energy": 62.77782793887866
+  },
+  {
+    "path_id": 31,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.2937547043090591,
+    "support_mse": 0.4254295838559624,
+    "missing_mode_mse": 0.1808070400475369,
+    "mean_coding_energy": 62.77782793887866
+  },
+  {
+    "path_id": 31,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3117530073410314,
+    "support_mse": 0.42702126872681256,
+    "missing_mode_mse": 0.19035265516911176,
+    "mean_coding_energy": 62.77782793887866
+  },
+  {
+    "path_id": 31,
+    "policy": "development_fixed",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.3866814264279792,
+    "support_mse": 0.6231285049443611,
+    "missing_mode_mse": 0.23641683567316618,
+    "mean_coding_energy": 62.77782793887866
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.29569295317476674,
+    "support_mse": 0.44748749544176436,
+    "missing_mode_mse": 0.19155532151658378,
+    "mean_coding_energy": 63.036989945948044
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.31043793470948,
+    "support_mse": 0.44737174128094825,
+    "missing_mode_mse": 0.2013214945376116,
+    "mean_coding_energy": 63.036989945948044
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.310511172540165,
+    "support_mse": 0.4465170274350151,
+    "missing_mode_mse": 0.1900951880307383,
+    "mean_coding_energy": 63.036989945948044
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2942552005436023,
+    "support_mse": 0.4422609556257549,
+    "missing_mode_mse": 0.17790245804844856,
+    "mean_coding_energy": 62.7823432139006
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3124430008286353,
+    "support_mse": 0.4524183636861238,
+    "missing_mode_mse": 0.18681025080326052,
+    "mean_coding_energy": 62.7823432139006
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.4003083201801036,
+    "support_mse": 0.6701753634935136,
+    "missing_mode_mse": 0.23925175403212764,
+    "mean_coding_energy": 62.7823432139006
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.29373851004891705,
+    "support_mse": 0.42538225396407847,
+    "missing_mode_mse": 0.18079144193751528,
+    "mean_coding_energy": 62.78123762810402
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3117427131688603,
+    "support_mse": 0.426992353699053,
+    "missing_mode_mse": 0.19034232784580368,
+    "mean_coding_energy": 62.78123762810402
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.38665264821698764,
+    "support_mse": 0.6230364889300952,
+    "missing_mode_mse": 0.23641345565628968,
+    "mean_coding_energy": 62.78123762810402
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "bayes",
+    "full_mse": 0.2947449069361467,
+    "support_mse": 0.4445220941101642,
+    "missing_mode_mse": 0.18972273261907327,
+    "mean_coding_energy": 62.78099446208292
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "common",
+    "full_mse": 0.3097849683285375,
+    "support_mse": 0.4451284256429777,
+    "missing_mode_mse": 0.20005111204894993,
+    "mean_coding_energy": 62.78099446208292
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0.02",
+    "true_h": 0,
+    "method": "raw",
+    "full_mse": 0.310511172540165,
+    "support_mse": 0.4465170274350151,
+    "missing_mode_mse": 0.1900951880307383,
+    "mean_coding_energy": 62.78099446208292
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "bayes",
+    "full_mse": 0.2942586765184462,
+    "support_mse": 0.4422717664595056,
+    "missing_mode_mse": 0.17790456067177413,
+    "mean_coding_energy": 62.782204707876076
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "common",
+    "full_mse": 0.3124487409382785,
+    "support_mse": 0.45243681346680054,
+    "missing_mode_mse": 0.18681398411653244,
+    "mean_coding_energy": 62.782204707876076
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0.02",
+    "true_h": 1,
+    "method": "raw",
+    "full_mse": 0.4003167101394375,
+    "support_mse": 0.6702038143311241,
+    "missing_mode_mse": 0.2392586347434558,
+    "mean_coding_energy": 62.782204707876076
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "bayes",
+    "full_mse": 0.29373367764767316,
+    "support_mse": 0.4253683139493134,
+    "missing_mode_mse": 0.18078515696143102,
+    "mean_coding_energy": 62.78109873994102
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "common",
+    "full_mse": 0.3117405208128764,
+    "support_mse": 0.4269864754656254,
+    "missing_mode_mse": 0.19033840948488984,
+    "mean_coding_energy": 62.78109873994102
+  },
+  {
+    "path_id": 31,
+    "policy": "adaptive_health_0.02",
+    "true_h": 2,
+    "method": "raw",
+    "full_mse": 0.38665265817360894,
+    "support_mse": 0.6230365214573967,
+    "missing_mode_mse": 0.23641346046298803,
+    "mean_coding_energy": 62.78109873994102
+  }
+]

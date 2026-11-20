@@ -1,0 +1,22 @@
+{
+    "client_date":  "2026-11-20",
+    "timezone":  "Asia/Shanghai",
+    "base_commit":  "02327fdd8eafddc095b55401c7234e013203e38e",
+    "request":  "那边已经有新的理论结果了，你看看",
+    "attachments":  [
+                        {
+                            "attachment_id":  "0cad4487-4c5b-4b54-aebb-c407433f427a",
+                            "archived_file":  "inputs/01_response_and_adaptive_value.txt",
+                            "bytes":  19698,
+                            "sha256":  "d5327fb0d8e76bd43ccdd8ff2c545c3e5b6235d6e850a12e9686b8b5fb79732e",
+                            "verified_byte_identical":  true
+                        },
+                        {
+                            "attachment_id":  "c819cec3-3a84-4c7c-b686-46543f44c74b",
+                            "archived_file":  "inputs/02_history_hessian_and_information_projection.txt",
+                            "bytes":  23232,
+                            "sha256":  "e97549208fb1ab886b518f91a789c24acb9845b6520e60ef0d742f54f10cd53b",
+                            "verified_byte_identical":  true
+                        }
+                    ]
+}

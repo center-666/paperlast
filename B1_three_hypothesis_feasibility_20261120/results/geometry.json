@@ -1,0 +1,89 @@
+{
+  "unstable": {
+    "local_observability_rank": 2,
+    "trusted_remaining_observability_rank": 2,
+    "actual_aggregate_observability_rank": 2,
+    "full_F_spectral_radius": 0.11619553173173833,
+    "discard_F_spectral_radius": 0.4094034570472844,
+    "known_onset_noiseless_augmented_state_attack": {
+      "identity": {
+        "rank": 4,
+        "singular_values": [
+          4.820713464448652,
+          4.3732110626210945,
+          1.9307342679954027,
+          1.7604299961249417
+        ],
+        "state_null_projection": 0.0
+      },
+      "Gaussian": {
+        "rank": 4,
+        "singular_values": [
+          5.064526288734081,
+          4.737892893600878,
+          3.262843238239108,
+          2.197444383701531
+        ],
+        "state_null_projection": 0.0
+      }
+    }
+  },
+  "stable": {
+    "local_observability_rank": 2,
+    "trusted_remaining_observability_rank": 2,
+    "actual_aggregate_observability_rank": 2,
+    "full_F_spectral_radius": 0.09128808622765744,
+    "discard_F_spectral_radius": 0.31765233903828893,
+    "known_onset_noiseless_augmented_state_attack": {
+      "identity": {
+        "rank": 4,
+        "singular_values": [
+          3.771533500278438,
+          3.0171611670570226,
+          1.490476925777008,
+          1.2309635111257988
+        ],
+        "state_null_projection": 0.0
+      },
+      "Gaussian": {
+        "rank": 4,
+        "singular_values": [
+          3.7362946147906535,
+          3.191239817998486,
+          1.9602073574685637,
+          1.61696893291732
+        ],
+        "state_null_projection": 0.0
+      }
+    }
+  },
+  "regional_missing_unstable_mode": {
+    "local_observability_rank": 1,
+    "trusted_remaining_observability_rank": 1,
+    "actual_aggregate_observability_rank": 2,
+    "full_F_spectral_radius": 0.7556297761720597,
+    "discard_F_spectral_radius": 1.12,
+    "known_onset_noiseless_augmented_state_attack": {
+      "identity": {
+        "rank": 3,
+        "singular_values": [
+          4.141534829327763,
+          3.406388716862479,
+          1.703579087094958,
+          3.7221257801293454e-16
+        ],
+        "state_null_projection": 0.7071067811865477
+      },
+      "Gaussian": {
+        "rank": 4,
+        "singular_values": [
+          5.021354010026014,
+          3.853189767523186,
+          2.5946526753074015,
+          1.3112435180389392
+        ],
+        "state_null_projection": 0.0
+      }
+    }
+  }
+}

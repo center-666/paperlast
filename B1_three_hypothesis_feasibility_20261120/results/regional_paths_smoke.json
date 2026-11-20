@@ -1,0 +1,98 @@
+[
+  {
+    "path_id": 16,
+    "true_h": 0,
+    "method": "bayes",
+    "total_mse": 0.2418880266664287,
+    "last_eight_mse": 0.2442744160221405,
+    "last_eight_missing_mode_mse": 0.12970157185102354
+  },
+  {
+    "path_id": 16,
+    "true_h": 0,
+    "method": "common",
+    "total_mse": 0.3122218074748419,
+    "last_eight_mse": 0.30272671537778184,
+    "last_eight_missing_mode_mse": 0.17844246755381393
+  },
+  {
+    "path_id": 16,
+    "true_h": 0,
+    "method": "raw",
+    "total_mse": 0.3134467759730927,
+    "last_eight_mse": 0.3029243916993841,
+    "last_eight_missing_mode_mse": 0.17851271831838406
+  },
+  {
+    "path_id": 16,
+    "true_h": 0,
+    "method": "discard",
+    "total_mse": 64.02000722988694,
+    "last_eight_mse": 213.7637032399964,
+    "last_eight_missing_mode_mse": 213.69799329699185
+  },
+  {
+    "path_id": 16,
+    "true_h": 1,
+    "method": "bayes",
+    "total_mse": 0.20498692399257656,
+    "last_eight_mse": 0.2433135328900519,
+    "last_eight_missing_mode_mse": 0.13008146966330075
+  },
+  {
+    "path_id": 16,
+    "true_h": 1,
+    "method": "common",
+    "total_mse": 0.2543544018641253,
+    "last_eight_mse": 0.3012905338299888,
+    "last_eight_missing_mode_mse": 0.17867620901852
+  },
+  {
+    "path_id": 16,
+    "true_h": 1,
+    "method": "raw",
+    "total_mse": 0.4055850889294331,
+    "last_eight_mse": 0.30558292934167386,
+    "last_eight_missing_mode_mse": 0.1800086703674343
+  },
+  {
+    "path_id": 16,
+    "true_h": 1,
+    "method": "discard",
+    "total_mse": 64.02000722988694,
+    "last_eight_mse": 213.7637032399964,
+    "last_eight_missing_mode_mse": 213.69799329699185
+  },
+  {
+    "path_id": 16,
+    "true_h": 2,
+    "method": "bayes",
+    "total_mse": 0.224576797830052,
+    "last_eight_mse": 0.24546999158376204,
+    "last_eight_missing_mode_mse": 0.1297592839266988
+  },
+  {
+    "path_id": 16,
+    "true_h": 2,
+    "method": "common",
+    "total_mse": 0.3122167404329875,
+    "last_eight_mse": 0.30313313974203526,
+    "last_eight_missing_mode_mse": 0.17860289689360712
+  },
+  {
+    "path_id": 16,
+    "true_h": 2,
+    "method": "raw",
+    "total_mse": 0.554923940767611,
+    "last_eight_mse": 0.31442675563530487,
+    "last_eight_missing_mode_mse": 0.18625810167200538
+  },
+  {
+    "path_id": 16,
+    "true_h": 2,
+    "method": "discard",
+    "total_mse": 64.02000722988694,
+    "last_eight_mse": 213.7637032399964,
+    "last_eight_missing_mode_mse": 213.69799329699185
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "frozen_hashes_before": {
+    "common_g_reference_revision_20261115/common_g_reference.py": "429c77e8b2d4286682324bd2b21a4baeb13648f9689f8349688a4d4a157c0dea",
+    "common_g_reference_revision_20261115/inputs/five_node_aggregate_model.json": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+    "JFI_reconstruction_attack_aware_soft_accommodation_V1/accommodation.py": "f51bb9e27c30050179e07d0b01632a04fbf8dc26526f8787afb4f6eeafb61398",
+    "attack_gain_switch_audit_20261115/screen_arrays.npz": "47b45c0367c78732fdb7aa81ba8f3cc481a1ac7c473848f233c7a47a7e1a6b3f"
+  },
+  "frozen_hashes_after": {
+    "common_g_reference_revision_20261115/common_g_reference.py": "429c77e8b2d4286682324bd2b21a4baeb13648f9689f8349688a4d4a157c0dea",
+    "common_g_reference_revision_20261115/inputs/five_node_aggregate_model.json": "5440c1d97ea60c314f7b8d962257e02ef3be47ed15188771de225619b3d45ec1",
+    "JFI_reconstruction_attack_aware_soft_accommodation_V1/accommodation.py": "f51bb9e27c30050179e07d0b01632a04fbf8dc26526f8787afb4f6eeafb61398",
+    "attack_gain_switch_audit_20261115/screen_arrays.npz": "47b45c0367c78732fdb7aa81ba8f3cc481a1ac7c473848f233c7a47a7e1a6b3f"
+  },
+  "registration_sha256": "65c326b3ac960259427e44a97bc8f0628a76ed04d3ea48e3a3189b07263ab7d8",
+  "script_sha256": "26cc695117c5907121f5526f338b6153134a2818105c4de65c5614252e6b596c",
+  "numpy": "2.5.4",
+  "history_comparisons": 18,
+  "newly_generated_regional_physical_paths": 2,
+  "inferential_status": "development and evaluation diagnostic; path SE descriptive, not simultaneous certification"
+}

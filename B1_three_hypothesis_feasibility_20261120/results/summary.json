@@ -1,0 +1,708 @@
+{
+  "one_step": {
+    "unstable": {
+      "development_fixed_v": [
+        -0.24188056517288356,
+        -0.5490845036892285
+      ],
+      "comparisons": {
+        "uniform": {
+          "information_gain": 0.0,
+          "dispersion_change": 0.0,
+          "predicted_mixture_bayes_change": 0.0,
+          "true_conditional_bayes_change": 0.0,
+          "true_conditional_common_change": 0.0,
+          "healthy_common_change": 0.0,
+          "uniform_true_bayes": 0.23187193859899688,
+          "uniform_true_common": 0.23436084531592238,
+          "histories": 144,
+          "active_histories": 0,
+          "max_abs_dispersion_change": 0.0,
+          "by_true_candidate": {
+            "0": {
+              "information_gain": 0.0,
+              "true_conditional_bayes_change": 0.0,
+              "true_conditional_common_change": 0.0,
+              "healthy_common_change": 0.0
+            },
+            "1": {
+              "information_gain": 0.0,
+              "true_conditional_bayes_change": 0.0,
+              "true_conditional_common_change": 0.0,
+              "healthy_common_change": 0.0
+            },
+            "2": {
+              "information_gain": 0.0,
+              "true_conditional_bayes_change": 0.0,
+              "true_conditional_common_change": 0.0,
+              "healthy_common_change": 0.0
+            }
+          },
+          "true_conditional_bayes_change_paired_path_se": 0.0,
+          "true_conditional_common_change_paired_path_se": 0.0
+        },
+        "information_health_0": {
+          "information_gain": 7.311802723690167e-05,
+          "dispersion_change": -1.6896542645749846e-21,
+          "predicted_mixture_bayes_change": -7.48680406459697e-05,
+          "true_conditional_bayes_change": -8.429307957462563e-05,
+          "true_conditional_common_change": -8.529458891471822e-05,
+          "healthy_common_change": -0.00010512177052644003,
+          "uniform_true_bayes": 0.23187193859899688,
+          "uniform_true_common": 0.23436084531592238,
+          "histories": 144,
+          "active_histories": 140,
+          "max_abs_dispersion_change": 1.3552527156068805e-20,
+          "by_true_candidate": {
+            "0": {
+              "information_gain": 7.311033997462641e-05,
+              "true_conditional_bayes_change": -6.436386206820177e-05,
+              "true_conditional_common_change": -5.65166256713157e-05,
+              "healthy_common_change": -5.65166256713157e-05
+            },
+            "1": {
+              "information_gain": 7.095949648076749e-05,
+              "true_conditional_bayes_change": -0.0001097137880348694,
+              "true_conditional_common_change": -0.00012344652631123113,
+              "healthy_common_change": -0.00015607570849336566
+            },
+            "2": {
+              "information_gain": 7.528424525531112e-05,
+              "true_conditional_bayes_change": -7.880158862080572e-05,
+              "true_conditional_common_change": -7.592061476160781e-05,
+              "healthy_common_change": -0.00010277297741463871
+            }
+          },
+          "true_conditional_bayes_change_paired_path_se": 3.947501380915488e-06,
+          "true_conditional_common_change_paired_path_se": 4.680493574850198e-06
+        },
+        "information_health_0.02": {
+          "information_gain": 7.3791419748639e-05,
+          "dispersion_change": -1.6425968786164123e-21,
+          "predicted_mixture_bayes_change": -7.552692137058681e-05,
+          "true_conditional_bayes_change": -8.445804299645406e-05,
+          "true_conditional_common_change": -8.525603868366452e-05,
+          "healthy_common_change": -0.00010508322029538633,
+          "uniform_true_bayes": 0.23187193859899688,
+          "uniform_true_common": 0.23436084531592238,
+          "histories": 144,
+          "active_histories": 144,
+          "max_abs_dispersion_change": 1.3552527156068805e-20,
+          "by_true_candidate": {
+            "0": {
+              "information_gain": 7.51305175098384e-05,
+              "true_conditional_bayes_change": -6.485875233368707e-05,
+              "true_conditional_common_change": -5.640097497815463e-05,
+              "healthy_common_change": -5.640097497815463e-05
+            },
+            "1": {
+              "information_gain": 7.095949648076749e-05,
+              "true_conditional_bayes_change": -0.0001097137880348694,
+              "true_conditional_common_change": -0.00012344652631123113,
+              "healthy_common_change": -0.00015607570849336566
+            },
+            "2": {
+              "information_gain": 7.528424525531112e-05,
+              "true_conditional_bayes_change": -7.880158862080572e-05,
+              "true_conditional_common_change": -7.592061476160781e-05,
+              "healthy_common_change": -0.00010277297741463871
+            }
+          },
+          "true_conditional_bayes_change_paired_path_se": 3.96181689227284e-06,
+          "true_conditional_common_change_paired_path_se": 4.685544678136709e-06
+        },
+        "development_fixed": {
+          "information_gain": 7.318079061167385e-05,
+          "dispersion_change": -2.699660084174398e-07,
+          "predicted_mixture_bayes_change": -7.516680767171382e-05,
+          "true_conditional_bayes_change": -8.402406486028149e-05,
+          "true_conditional_common_change": -8.477913918806058e-05,
+          "healthy_common_change": -9.922853891043499e-05,
+          "uniform_true_bayes": 0.23187193859899688,
+          "uniform_true_common": 0.23436084531592238,
+          "histories": 144,
+          "active_histories": 144,
+          "max_abs_dispersion_change": 5.705278996063245e-06,
+          "by_true_candidate": {
+            "0": {
+              "information_gain": 7.472539654400906e-05,
+              "true_conditional_bayes_change": -6.38832088489886e-05,
+              "true_conditional_common_change": -5.513889790141291e-05,
+              "healthy_common_change": -5.513889790141291e-05
+            },
+            "1": {
+              "information_gain": 6.989710350756015e-05,
+              "true_conditional_bayes_change": -0.00011007936675496897,
+              "true_conditional_common_change": -0.00012414457191998305,
+              "healthy_common_change": -0.00014577441954651265
+            },
+            "2": {
+              "information_gain": 7.491987178345233e-05,
+              "true_conditional_bayes_change": -7.810961897688691e-05,
+              "true_conditional_common_change": -7.505394774278582e-05,
+              "healthy_common_change": -9.677229928337941e-05
+            }
+          },
+          "true_conditional_bayes_change_paired_path_se": 3.826324004368548e-06,
+          "true_conditional_common_change_paired_path_se": 4.483707710729098e-06
+        }
+      }
+    },
+    "stable": {
+      "development_fixed_v": [
+        -0.2567667620638029,
+        -0.5422829795404521
+      ],
+      "comparisons": {
+        "uniform": {
+          "information_gain": 0.0,
+          "dispersion_change": 0.0,
+          "predicted_mixture_bayes_change": 0.0,
+          "true_conditional_bayes_change": 0.0,
+          "true_conditional_common_change": 0.0,
+          "healthy_common_change": 0.0,
+          "uniform_true_bayes": 0.23367480840566068,
+          "uniform_true_common": 0.2360037843532362,
+          "histories": 144,
+          "active_histories": 0,
+          "max_abs_dispersion_change": 0.0,
+          "by_true_candidate": {
+            "0": {
+              "information_gain": 0.0,
+              "true_conditional_bayes_change": 0.0,
+              "true_conditional_common_change": 0.0,
+              "healthy_common_change": 0.0
+            },
+            "1": {
+              "information_gain": 0.0,
+              "true_conditional_bayes_change": 0.0,
+              "true_conditional_common_change": 0.0,
+              "healthy_common_change": 0.0
+            },
+            "2": {
+              "information_gain": 0.0,
+              "true_conditional_bayes_change": 0.0,
+              "true_conditional_common_change": 0.0,
+              "healthy_common_change": 0.0
+            }
+          },
+          "true_conditional_bayes_change_paired_path_se": 0.0,
+          "true_conditional_common_change_paired_path_se": 0.0
+        },
+        "information_health_0": {
+          "information_gain": 7.181856028773619e-05,
+          "dispersion_change": -7.441684426354839e-21,
+          "predicted_mixture_bayes_change": -7.362238871400605e-05,
+          "true_conditional_bayes_change": -7.05692007360244e-05,
+          "true_conditional_common_change": -6.580800747103086e-05,
+          "healthy_common_change": -0.00033826874933792425,
+          "uniform_true_bayes": 0.23367480840566068,
+          "uniform_true_common": 0.2360037843532362,
+          "histories": 144,
+          "active_histories": 135,
+          "max_abs_dispersion_change": 5.421010862427522e-20,
+          "by_true_candidate": {
+            "0": {
+              "information_gain": 6.956173246551536e-05,
+              "true_conditional_bayes_change": -6.94482496372991e-05,
+              "true_conditional_common_change": -6.36727795380139e-05,
+              "healthy_common_change": -6.36727795380139e-05
+            },
+            "1": {
+              "information_gain": 6.89811113842046e-05,
+              "true_conditional_bayes_change": -7.16390325588626e-05,
+              "true_conditional_common_change": -6.624826210759234e-05,
+              "healthy_common_change": -0.0006095177775857822
+            },
+            "2": {
+              "information_gain": 7.691283701348864e-05,
+              "true_conditional_bayes_change": -7.062032001191151e-05,
+              "true_conditional_common_change": -6.75029807674864e-05,
+              "healthy_common_change": -0.0003416156908899767
+            }
+          },
+          "true_conditional_bayes_change_paired_path_se": 4.054276687553749e-06,
+          "true_conditional_common_change_paired_path_se": 5.076803130178878e-06
+        },
+        "information_health_0.02": {
+          "information_gain": 7.238110731334943e-05,
+          "dispersion_change": -7.450507686222071e-21,
+          "predicted_mixture_bayes_change": -7.416775569966418e-05,
+          "true_conditional_bayes_change": -7.068709545426631e-05,
+          "true_conditional_common_change": -6.574231924953258e-05,
+          "healthy_common_change": -0.00033820306111642597,
+          "uniform_true_bayes": 0.23367480840566068,
+          "uniform_true_common": 0.2360037843532362,
+          "histories": 144,
+          "active_histories": 140,
+          "max_abs_dispersion_change": 5.421010862427522e-20,
+          "by_true_candidate": {
+            "0": {
+              "information_gain": 7.124937354235508e-05,
+              "true_conditional_bayes_change": -6.980193379202482e-05,
+              "true_conditional_common_change": -6.347571487351902e-05,
+              "healthy_common_change": -6.347571487351902e-05
+            },
+            "1": {
+              "information_gain": 6.89811113842046e-05,
+              "true_conditional_bayes_change": -7.16390325588626e-05,
+              "true_conditional_common_change": -6.624826210759234e-05,
+              "healthy_common_change": -0.0006095177775857822
+            },
+            "2": {
+              "information_gain": 7.691283701348864e-05,
+              "true_conditional_bayes_change": -7.062032001191151e-05,
+              "true_conditional_common_change": -6.75029807674864e-05,
+              "healthy_common_change": -0.0003416156908899767
+            }
+          },
+          "true_conditional_bayes_change_paired_path_se": 4.0420639725556765e-06,
+          "true_conditional_common_change_paired_path_se": 5.064061417348713e-06
+        },
+        "development_fixed": {
+          "information_gain": 7.142125035146958e-05,
+          "dispersion_change": -1.717209362245404e-06,
+          "predicted_mixture_bayes_change": -7.479999487857357e-05,
+          "true_conditional_bayes_change": -7.082832300743934e-05,
+          "true_conditional_common_change": -6.571741641551109e-05,
+          "healthy_common_change": -0.0003561648146732973,
+          "uniform_true_bayes": 0.23367480840566068,
+          "uniform_true_common": 0.2360037843532362,
+          "histories": 144,
+          "active_histories": 144,
+          "max_abs_dispersion_change": 2.067077003893873e-05,
+          "by_true_candidate": {
+            "0": {
+              "information_gain": 6.887715321695206e-05,
+              "true_conditional_bayes_change": -7.025484173184817e-05,
+              "true_conditional_common_change": -6.387682636676471e-05,
+              "healthy_common_change": -6.387682636676471e-05
+            },
+            "1": {
+              "information_gain": 7.037378114544382e-05,
+              "true_conditional_bayes_change": -7.089058527485169e-05,
+              "true_conditional_common_change": -6.502288911455789e-05,
+              "healthy_common_change": -0.0006866952781423901
+            },
+            "2": {
+              "information_gain": 7.501281669201289e-05,
+              "true_conditional_bayes_change": -7.133954201561818e-05,
+              "true_conditional_common_change": -6.825253376521068e-05,
+              "healthy_common_change": -0.0003179223395107373
+            }
+          },
+          "true_conditional_bayes_change_paired_path_se": 4.194310107924813e-06,
+          "true_conditional_common_change_paired_path_se": 5.238126539468272e-06
+        }
+      }
+    },
+    "regional_missing_unstable_mode": {
+      "development_fixed_v": [
+        -0.3299371283946898,
+        -0.5011401912705327
+      ],
+      "comparisons": {
+        "uniform": {
+          "information_gain": 0.0,
+          "dispersion_change": 0.0,
+          "predicted_mixture_bayes_change": 0.0,
+          "true_conditional_bayes_change": 0.0,
+          "true_conditional_common_change": 0.0,
+          "healthy_common_change": 0.0,
+          "uniform_true_bayes": 0.26985581755262045,
+          "uniform_true_common": 0.38389268744861504,
+          "histories": 144,
+          "active_histories": 0,
+          "max_abs_dispersion_change": 0.0,
+          "by_true_candidate": {
+            "0": {
+              "information_gain": 0.0,
+              "true_conditional_bayes_change": 0.0,
+              "true_conditional_common_change": 0.0,
+              "healthy_common_change": 0.0
+            },
+            "1": {
+              "information_gain": 0.0,
+              "true_conditional_bayes_change": 0.0,
+              "true_conditional_common_change": 0.0,
+              "healthy_common_change": 0.0
+            },
+            "2": {
+              "information_gain": 0.0,
+              "true_conditional_bayes_change": 0.0,
+              "true_conditional_common_change": 0.0,
+              "healthy_common_change": 0.0
+            }
+          },
+          "true_conditional_bayes_change_paired_path_se": 0.0,
+          "true_conditional_common_change_paired_path_se": 0.0
+        },
+        "information_health_0": {
+          "information_gain": 0.00012630696905753316,
+          "dispersion_change": 1.222315600273914e-20,
+          "predicted_mixture_bayes_change": -0.00012644634728284138,
+          "true_conditional_bayes_change": -0.0001465209254549103,
+          "true_conditional_common_change": -3.8514210820290686e-05,
+          "healthy_common_change": -0.0003354005895607126,
+          "uniform_true_bayes": 0.26985581755262045,
+          "uniform_true_common": 0.38389268744861504,
+          "histories": 144,
+          "active_histories": 76,
+          "max_abs_dispersion_change": 2.168404344971009e-19,
+          "by_true_candidate": {
+            "0": {
+              "information_gain": 0.00010706940317551686,
+              "true_conditional_bayes_change": -8.268058681860962e-05,
+              "true_conditional_common_change": -0.0002702937539632879,
+              "healthy_common_change": -0.0002702937539632879
+            },
+            "1": {
+              "information_gain": 0.0001405498069975725,
+              "true_conditional_bayes_change": -0.00027457831534987695,
+              "true_conditional_common_change": 7.233779642815828e-05,
+              "healthy_common_change": -0.0004161703001506244
+            },
+            "2": {
+              "information_gain": 0.00013130169699951006,
+              "true_conditional_bayes_change": -8.230387419624431e-05,
+              "true_conditional_common_change": 8.241332507425759e-05,
+              "healthy_common_change": -0.00031973771456822556
+            }
+          },
+          "true_conditional_bayes_change_paired_path_se": 3.771225532588857e-05,
+          "true_conditional_common_change_paired_path_se": 2.019475205040559e-05
+        },
+        "information_health_0.02": {
+          "information_gain": 0.00022113232311107237,
+          "dispersion_change": 1.742226187950577e-20,
+          "predicted_mixture_bayes_change": -0.00022126322716020452,
+          "true_conditional_bayes_change": -0.00025536929356077256,
+          "true_conditional_common_change": -0.0002997984066276241,
+          "healthy_common_change": 6.728686250142421e-05,
+          "uniform_true_bayes": 0.26985581755262045,
+          "uniform_true_common": 0.38389268744861504,
+          "histories": 144,
+          "active_histories": 144,
+          "max_abs_dispersion_change": 2.168404344971009e-19,
+          "by_true_candidate": {
+            "0": {
+              "information_gain": 0.00021717596325941394,
+              "true_conditional_bayes_change": -0.0001728393511351881,
+              "true_conditional_common_change": 8.227774894835808e-05,
+              "healthy_common_change": 8.227774894835808e-05
+            },
+            "1": {
+              "information_gain": 0.00022988842991083917,
+              "true_conditional_bayes_change": -0.00043549357314708845,
+              "true_conditional_common_change": -0.0007355487856601604,
+              "healthy_common_change": 2.7613542703743417e-05
+            },
+            "2": {
+              "information_gain": 0.00021633257616296406,
+              "true_conditional_bayes_change": -0.00015777495640004107,
+              "true_conditional_common_change": -0.0002461241831710699,
+              "healthy_common_change": 9.196929585217106e-05
+            }
+          },
+          "true_conditional_bayes_change_paired_path_se": 2.3776234463105476e-05,
+          "true_conditional_common_change_paired_path_se": 9.116203563034513e-05
+        },
+        "development_fixed": {
+          "information_gain": 0.00022324238325869392,
+          "dispersion_change": 4.133219726449706e-06,
+          "predicted_mixture_bayes_change": -0.0002192146732484584,
+          "true_conditional_bayes_change": -0.00025254863308649567,
+          "true_conditional_common_change": -0.00029742498720624326,
+          "healthy_common_change": 3.825095459452587e-06,
+          "uniform_true_bayes": 0.26985581755262045,
+          "uniform_true_common": 0.38389268744861504,
+          "histories": 144,
+          "active_histories": 144,
+          "max_abs_dispersion_change": 6.017891773237526e-05,
+          "by_true_candidate": {
+            "0": {
+              "information_gain": 0.0002206275876242144,
+              "true_conditional_bayes_change": -0.00017277826718059365,
+              "true_conditional_common_change": 8.297263680114447e-05,
+              "healthy_common_change": 8.297263680114447e-05
+            },
+            "1": {
+              "information_gain": 0.00022957440017176491,
+              "true_conditional_bayes_change": -0.00042806058905684976,
+              "true_conditional_common_change": -0.0007304264625391932,
+              "healthy_common_change": -7.293663043653262e-05
+            },
+            "2": {
+              "information_gain": 0.00021952516198010236,
+              "true_conditional_bayes_change": -0.00015680704302204366,
+              "true_conditional_common_change": -0.000244821135880681,
+              "healthy_common_change": 1.4392800137458938e-06
+            }
+          },
+          "true_conditional_bayes_change_paired_path_se": 2.3885490352261978e-05,
+          "true_conditional_common_change_paired_path_se": 9.117599249186083e-05
+        }
+      }
+    }
+  },
+  "regional_gaussian_watermark_replay": {
+    "0": {
+      "raw": {
+        "total_mse": 0.3722653461024832,
+        "last_eight_mse": 0.48136938473004603,
+        "last_eight_missing_mode_mse": 0.3834229597521834
+      },
+      "discard": {
+        "total_mse": 99.56472498942694,
+        "last_eight_mse": 333.3564126790144,
+        "last_eight_missing_mode_mse": 333.2445806098955
+      },
+      "common": {
+        "total_mse": 0.3789977464196546,
+        "last_eight_mse": 0.48164633452630035,
+        "last_eight_missing_mode_mse": 0.3836733286246429
+      },
+      "bayes": {
+        "total_mse": 0.25907528376794914,
+        "last_eight_mse": 0.2832452815726645,
+        "last_eight_missing_mode_mse": 0.1862139590246859
+      }
+    },
+    "1": {
+      "raw": {
+        "total_mse": 0.4566529095556572,
+        "last_eight_mse": 0.4857202147943165,
+        "last_eight_missing_mode_mse": 0.38800404536514876
+      },
+      "discard": {
+        "total_mse": 99.56472498942694,
+        "last_eight_mse": 333.3564126790144,
+        "last_eight_missing_mode_mse": 333.2445806098955
+      },
+      "common": {
+        "total_mse": 0.36962844308849807,
+        "last_eight_mse": 0.4824428048107919,
+        "last_eight_missing_mode_mse": 0.3845427798252168
+      },
+      "bayes": {
+        "total_mse": 0.2587100850149084,
+        "last_eight_mse": 0.2840703493587333,
+        "last_eight_missing_mode_mse": 0.18707051241267697
+      }
+    },
+    "2": {
+      "raw": {
+        "total_mse": 0.4698589031347349,
+        "last_eight_mse": 0.4900812354647228,
+        "last_eight_missing_mode_mse": 0.39263073171553875
+      },
+      "discard": {
+        "total_mse": 99.56472498942694,
+        "last_eight_mse": 333.3564126790144,
+        "last_eight_missing_mode_mse": 333.2445806098955
+      },
+      "common": {
+        "total_mse": 0.3742653458849944,
+        "last_eight_mse": 0.48235824945931904,
+        "last_eight_missing_mode_mse": 0.38447835871364633
+      },
+      "bayes": {
+        "total_mse": 0.25985658446416116,
+        "last_eight_mse": 0.28378699419544035,
+        "last_eight_missing_mode_mse": 0.18678290472260897
+      }
+    }
+  },
+  "quadrature_refinement": [
+    {
+      "model": "unstable",
+      "true_h": 0,
+      "tick": 8,
+      "coarse_gI": [
+        0.0004511178732486383,
+        -0.0003592852997880783
+      ],
+      "refined_gI": [
+        0.0004586470680015647,
+        -0.00036811052685890817
+      ],
+      "chosen_v": [
+        -0.24436904007820917,
+        -0.5479815437140694
+      ],
+      "coarse_gain": 8.664247156375037e-05,
+      "refined_gain": 8.963863102331642e-05,
+      "refined_healthy_change": -7.661850232638692e-05,
+      "gI_error": 1.160057785109012e-05
+    },
+    {
+      "model": "unstable",
+      "true_h": 1,
+      "tick": 8,
+      "coarse_gI": [
+        0.0004683308125892224,
+        -0.0003627307950044989
+      ],
+      "refined_gI": [
+        0.00047507155093246364,
+        -0.00037044779637275023
+      ],
+      "chosen_v": [
+        -0.2405229671311072,
+        -0.5496805456648872
+      ],
+      "coarse_gain": 8.674174468464902e-05,
+      "refined_gain": 8.936232782067531e-05,
+      "refined_healthy_change": -0.00013842690872618586,
+      "gI_error": 1.0246446385437037e-05
+    },
+    {
+      "model": "unstable",
+      "true_h": 2,
+      "tick": 8,
+      "coarse_gI": [
+        0.0004511178732486383,
+        -0.0003592852997880783
+      ],
+      "refined_gI": [
+        0.0004586470680015647,
+        -0.00036811052685890817
+      ],
+      "chosen_v": [
+        -0.24436904007820917,
+        -0.5479815437140694
+      ],
+      "coarse_gain": 8.664247156375037e-05,
+      "refined_gain": 8.963863102331642e-05,
+      "refined_healthy_change": -7.661850232638692e-05,
+      "gI_error": 1.160057785109012e-05
+    },
+    {
+      "model": "stable",
+      "true_h": 0,
+      "tick": 8,
+      "coarse_gI": [
+        0.0019206047727161873,
+        -0.0010098027474303446
+      ],
+      "refined_gI": [
+        0.001915484364683569,
+        -0.001006493161070472
+      ],
+      "chosen_v": [
+        -0.25108500052574306,
+        -0.5449369894868465
+      ],
+      "coarse_gain": 6.804381879304991e-05,
+      "refined_gain": 6.75259604192163e-05,
+      "refined_healthy_change": -2.1032822911017294e-05,
+      "gI_error": 6.096879553833739e-06
+    },
+    {
+      "model": "stable",
+      "true_h": 1,
+      "tick": 8,
+      "coarse_gI": [
+        0.0011271521350498341,
+        -0.000710484291011395
+      ],
+      "refined_gI": [
+        0.001117710938437803,
+        -0.0006969942528243217
+      ],
+      "chosen_v": [
+        -0.26385555341722494,
+        -0.5388694154717726
+      ],
+      "coarse_gain": 8.545290422020654e-05,
+      "refined_gain": 8.067464738463481e-05,
+      "refined_healthy_change": -0.0001249194810712232,
+      "gI_error": 1.6465640702861343e-05
+    },
+    {
+      "model": "stable",
+      "true_h": 2,
+      "tick": 8,
+      "coarse_gI": [
+        0.0019206047727161873,
+        -0.0010098027474303446
+      ],
+      "refined_gI": [
+        0.001915484364683569,
+        -0.001006493161070472
+      ],
+      "chosen_v": [
+        -0.25108500052574306,
+        -0.5449369894868465
+      ],
+      "coarse_gain": 6.804381879304991e-05,
+      "refined_gain": 6.75259604192163e-05,
+      "refined_healthy_change": -2.1032822911017294e-05,
+      "gI_error": 6.096879553833739e-06
+    },
+    {
+      "model": "regional_missing_unstable_mode",
+      "true_h": 0,
+      "tick": 8,
+      "coarse_gI": [
+        -0.0016855124839788296,
+        0.0005569322760985305
+      ],
+      "refined_gI": [
+        -0.0016927809161243349,
+        0.0005619001477478257
+      ],
+      "chosen_v": [
+        -0.3276398047198754,
+        -0.5026451614838462
+      ],
+      "coarse_gain": 0.00027230166724862394,
+      "refined_gain": 0.000272186018290006,
+      "refined_healthy_change": -0.000910581887026466,
+      "gI_error": 8.803968115440101e-06
+    },
+    {
+      "model": "regional_missing_unstable_mode",
+      "true_h": 1,
+      "tick": 8,
+      "coarse_gI": [
+        -0.001673446298350783,
+        0.0005434054833949089
+      ],
+      "refined_gI": [
+        -0.0016801630237691214,
+        0.0005481087536696859
+      ],
+      "chosen_v": [
+        -0.328912711616262,
+        -0.5018131406581913
+      ],
+      "coarse_gain": 0.0002777297474614704,
+      "refined_gain": 0.0002775788010040478,
+      "refined_healthy_change": -0.0010518053861417536,
+      "gI_error": 8.199704361923878e-06
+    },
+    {
+      "model": "regional_missing_unstable_mode",
+      "true_h": 2,
+      "tick": 8,
+      "coarse_gI": [
+        -0.0016855124839788296,
+        0.0005569322760985305
+      ],
+      "refined_gI": [
+        -0.0016927809161243349,
+        0.0005619001477478257
+      ],
+      "chosen_v": [
+        -0.3276398047198754,
+        -0.5026451614838462
+      ],
+      "coarse_gain": 0.00027230166724862394,
+      "refined_gain": 0.000272186018290006,
+      "refined_healthy_change": -0.000910581887026466,
+      "gI_error": 8.803968115440101e-06
+    }
+  ],
+  "disclaimer": "Finite known-waveform candidates; one-step comparisons share historical policy. No full adaptive-loop, unknown-amplitude or V1a superiority claim."
+}

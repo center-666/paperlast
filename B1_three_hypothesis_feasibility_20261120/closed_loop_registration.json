@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-20",
+  "stage": "Exploratory causal follow-up after the registered one-step mechanism screen",
+  "trigger": "One-step information gains survived selected high-order integration checks, but common-G conditional gains can differ in sign from ideal Bayes gains. User requested experiments and regional-observability relevance.",
+  "model": "regional_missing_unstable_mode",
+  "physical_path_ids": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
+  "additional_physical_paths": 0,
+  "active_design_ticks": [7, 8, 9],
+  "policies": ["uniform", "development_fixed", "adaptive_health_0", "adaptive_health_0.02"],
+  "candidate_model": "Same favorable finite bank with known ordinary waveform and onsets 7/8. Each world maintains its own bank. True hypothesis is used for attack generation and scoring only.",
+  "fixed_policy": "Use development_fixed_v already frozen in results/summary.json; do not refit on closed-loop paths",
+  "sampler": "Same original radial variables and base uniform angle quantiles across all policies; invert actual policy CDF on [0,pi). No post-observation choice of current watermark.",
+  "quadrature": "Same coarse grid 8 radial x 32 angles x 11^2 Gaussian nodes; this causal run is a numerical feasibility diagnostic, not a new high-accuracy certificate",
+  "outputs": ["common-G finite-bank mean compensation", "ideal finite-bank Bayes", "unmodified raw common-G"],
+  "healthy_comparison": "Actually run each policy's own healthy world; never reuse an attacked-world correction or policy for the healthy counterfactual",
+  "metrics": ["full-horizon state MSE", "attack-window state MSE", "missing-mode MSE", "healthy state MSE", "paired path SE", "realized coding energy", "step policy timing"],
+  "resource_scope": "Same radial/spectral law and conditional expected coding energy; realized energy differs. Assumes ideal synchronized authenticated policy feedback; feedback cost and cryptographic security are not validated.",
+  "limits": ["not a full unknown-parameter defender", "16 exploratory evaluation paths", "adaptive only at first three candidate times", "does not test all-onset robustness or long-run safety"],
+  "registered_before_causal_run": true
+}

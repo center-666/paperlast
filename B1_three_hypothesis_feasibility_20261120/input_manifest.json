@@ -1,0 +1,19 @@
+{
+    "date":  "2026-11-20",
+    "timezone":  "Asia/Shanghai",
+    "request":  "你看看这几轮的结果，评估下，你看你这边是否要结合我之前提的建议改进下，然后是否可以做一做实验",
+    "attachments":  [
+                        {
+                            "attachment_id":  "42c01a21-8716-4a9b-ae41-791c22a04c70",
+                            "archived_file":  "inputs/01_triad_information_and_adaptation.txt",
+                            "sha256":  "ea52af816e4766d2696dc72550bcddc0375535d32831937dd59772588304e052",
+                            "bytes":  26292
+                        },
+                        {
+                            "attachment_id":  "0746e59f-29aa-459e-b6b6-878f78f2f0ff",
+                            "archived_file":  "inputs/02_A0_matrix_example_and_B1R.txt",
+                            "sha256":  "5246ca703a02e1ab4a7f1f56fe1a1c86e766e9438c77075732ab3407d618c5f5",
+                            "bytes":  20810
+                        }
+                    ]
+}

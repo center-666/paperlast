@@ -1,0 +1,362 @@
+[
+  {
+    "model": "unstable",
+    "true_h": 0,
+    "chosen_coarse_v": [
+      -0.24436904007820917,
+      -0.5479815437140694
+    ],
+    "stages": [
+      {
+        "grid": [
+          16,
+          64,
+          31
+        ],
+        "info_gain": 8.927637191006324e-05,
+        "conditional_actual_bayes_change": -7.621695944119356e-05,
+        "conditional_actual_common_change": -7.719379089776571e-05,
+        "mixture_identity_sensitivity_error": 3.892234302408071e-07,
+        "gI": [
+          0.00045784709435121293,
+          -0.00036709270442916497
+        ]
+      },
+      {
+        "grid": [
+          24,
+          96,
+          41
+        ],
+        "info_gain": 8.93427267506865e-05,
+        "conditional_actual_bayes_change": -7.61060753836118e-05,
+        "conditional_actual_common_change": -7.70617572947291e-05,
+        "mixture_identity_sensitivity_error": 7.716191861519781e-08,
+        "gI": [
+          0.00045799687818565984,
+          -0.00036728058917391104
+        ]
+      }
+    ]
+  },
+  {
+    "model": "unstable",
+    "true_h": 1,
+    "chosen_coarse_v": [
+      -0.2405229671311072,
+      -0.5496805456648872
+    ],
+    "stages": [
+      {
+        "grid": [
+          16,
+          64,
+          31
+        ],
+        "info_gain": 8.902557960133415e-05,
+        "conditional_actual_bayes_change": -6.806791820340522e-05,
+        "conditional_actual_common_change": -5.091874792273982e-05,
+        "mixture_identity_sensitivity_error": 3.0551603315583803e-07,
+        "gI": [
+          0.00047437418346582257,
+          -0.00036953002492244694
+        ]
+      },
+      {
+        "grid": [
+          24,
+          96,
+          41
+        ],
+        "info_gain": 8.908187348322086e-05,
+        "conditional_actual_bayes_change": -6.807136838493313e-05,
+        "conditional_actual_common_change": -5.092408769593795e-05,
+        "mixture_identity_sensitivity_error": 3.954361730872317e-08,
+        "gI": [
+          0.0004744836435539226,
+          -0.0003696803332200765
+        ]
+      }
+    ]
+  },
+  {
+    "model": "unstable",
+    "true_h": 2,
+    "chosen_coarse_v": [
+      -0.24436904007820917,
+      -0.5479815437140694
+    ],
+    "stages": [
+      {
+        "grid": [
+          16,
+          64,
+          31
+        ],
+        "info_gain": 8.927637191006324e-05,
+        "conditional_actual_bayes_change": -0.00010500728265857311,
+        "conditional_actual_common_change": -9.729451479140572e-05,
+        "mixture_identity_sensitivity_error": 3.892234302408071e-07,
+        "gI": [
+          0.00045784709435121293,
+          -0.00036709270442916497
+        ]
+      },
+      {
+        "grid": [
+          24,
+          96,
+          41
+        ],
+        "info_gain": 8.93427267506865e-05,
+        "conditional_actual_bayes_change": -0.00010503480402687353,
+        "conditional_actual_common_change": -9.732503353343123e-05,
+        "mixture_identity_sensitivity_error": 7.716191861519781e-08,
+        "gI": [
+          0.00045799687818565984,
+          -0.00036728058917391104
+        ]
+      }
+    ]
+  },
+  {
+    "model": "stable",
+    "true_h": 0,
+    "chosen_coarse_v": [
+      -0.25108500052574306,
+      -0.5449369894868465
+    ],
+    "stages": [
+      {
+        "grid": [
+          16,
+          64,
+          31
+        ],
+        "info_gain": 6.663163886087625e-05,
+        "conditional_actual_bayes_change": -5.9400487892625925e-05,
+        "conditional_actual_common_change": -1.9760302815616427e-05,
+        "mixture_identity_sensitivity_error": 1.1034726721143936e-06,
+        "gI": [
+          0.0019140008536152144,
+          -0.0010041684722345927
+        ]
+      },
+      {
+        "grid": [
+          24,
+          96,
+          41
+        ],
+        "info_gain": 6.685123025689286e-05,
+        "conditional_actual_bayes_change": -5.9400661724417944e-05,
+        "conditional_actual_common_change": -1.978355828624358e-05,
+        "mixture_identity_sensitivity_error": 4.931690210798433e-07,
+        "gI": [
+          0.00191437891431693,
+          -0.0010047456339497514
+        ]
+      }
+    ]
+  },
+  {
+    "model": "stable",
+    "true_h": 1,
+    "chosen_coarse_v": [
+      -0.26385555341722494,
+      -0.5388694154717726
+    ],
+    "stages": [
+      {
+        "grid": [
+          16,
+          64,
+          31
+        ],
+        "info_gain": 8.075838629422534e-05,
+        "conditional_actual_bayes_change": -5.954908084256441e-05,
+        "conditional_actual_common_change": -5.147440435310931e-05,
+        "mixture_identity_sensitivity_error": 2.578502799229455e-06,
+        "gI": [
+          0.0011176571052721874,
+          -0.0006971232910066501
+        ]
+      },
+      {
+        "grid": [
+          24,
+          96,
+          41
+        ],
+        "info_gain": 8.055290931887249e-05,
+        "conditional_actual_bayes_change": -5.9875453152818585e-05,
+        "conditional_actual_common_change": -5.184429100906636e-05,
+        "mixture_identity_sensitivity_error": 7.931943524709558e-07,
+        "gI": [
+          0.0011172710609218775,
+          -0.0006965529544608687
+        ]
+      }
+    ]
+  },
+  {
+    "model": "stable",
+    "true_h": 2,
+    "chosen_coarse_v": [
+      -0.25108500052574306,
+      -0.5449369894868465
+    ],
+    "stages": [
+      {
+        "grid": [
+          16,
+          64,
+          31
+        ],
+        "info_gain": 6.663163886087625e-05,
+        "conditional_actual_bayes_change": -7.436013724589369e-05,
+        "conditional_actual_common_change": -0.00013010731517537649,
+        "mixture_identity_sensitivity_error": 1.1034726721143936e-06,
+        "gI": [
+          0.0019140008536152144,
+          -0.0010041684722345927
+        ]
+      },
+      {
+        "grid": [
+          24,
+          96,
+          41
+        ],
+        "info_gain": 6.685123025689286e-05,
+        "conditional_actual_bayes_change": -7.371440514534466e-05,
+        "conditional_actual_common_change": -0.00012932927036248557,
+        "mixture_identity_sensitivity_error": 4.931690210798433e-07,
+        "gI": [
+          0.00191437891431693,
+          -0.0010047456339497514
+        ]
+      }
+    ]
+  },
+  {
+    "model": "regional_missing_unstable_mode",
+    "true_h": 0,
+    "chosen_coarse_v": [
+      -0.3276398047198754,
+      -0.5026451614838462
+    ],
+    "stages": [
+      {
+        "grid": [
+          16,
+          64,
+          31
+        ],
+        "info_gain": 0.00027211169524685115,
+        "conditional_actual_bayes_change": -0.0002922955182163623,
+        "conditional_actual_common_change": -0.0009107628489407542,
+        "mixture_identity_sensitivity_error": 2.437602822810737e-07,
+        "gI": [
+          -0.0016921566182244887,
+          0.0005616410747300861
+        ]
+      },
+      {
+        "grid": [
+          24,
+          96,
+          41
+        ],
+        "info_gain": 0.0002721011221583738,
+        "conditional_actual_bayes_change": -0.0002922831672225357,
+        "conditional_actual_common_change": -0.0009107522441743314,
+        "mixture_identity_sensitivity_error": 6.633054745898584e-08,
+        "gI": [
+          -0.00169228983704152,
+          0.000561748945808591
+        ]
+      }
+    ]
+  },
+  {
+    "model": "regional_missing_unstable_mode",
+    "true_h": 1,
+    "chosen_coarse_v": [
+      -0.328912711616262,
+      -0.5018131406581913
+    ],
+    "stages": [
+      {
+        "grid": [
+          16,
+          64,
+          31
+        ],
+        "info_gain": 0.0002775202839773062,
+        "conditional_actual_bayes_change": -0.00031559533533901524,
+        "conditional_actual_common_change": 0.00026203796114278576,
+        "mixture_identity_sensitivity_error": 2.0500955769390915e-07,
+        "gI": [
+          -0.0016796085239865707,
+          0.0005478619187618448
+        ]
+      },
+      {
+        "grid": [
+          24,
+          96,
+          41
+        ],
+        "info_gain": 0.0002775096081545473,
+        "conditional_actual_bayes_change": -0.0003156339792887244,
+        "conditional_actual_common_change": 0.00026200815132003375,
+        "mixture_identity_sensitivity_error": 5.1191292974824595e-08,
+        "gI": [
+          -0.001679715953914602,
+          0.0005479536080540704
+        ]
+      }
+    ]
+  },
+  {
+    "model": "regional_missing_unstable_mode",
+    "true_h": 2,
+    "chosen_coarse_v": [
+      -0.3276398047198754,
+      -0.5026451614838462
+    ],
+    "stages": [
+      {
+        "grid": [
+          16,
+          64,
+          31
+        ],
+        "info_gain": 0.00027211169524685115,
+        "conditional_actual_bayes_change": -0.00010372821819620631,
+        "conditional_actual_common_change": 0.00045265113333679884,
+        "mixture_identity_sensitivity_error": 2.437602822810737e-07,
+        "gI": [
+          -0.0016921566182244887,
+          0.0005616410747300861
+        ]
+      },
+      {
+        "grid": [
+          24,
+          96,
+          41
+        ],
+        "info_gain": 0.0002721011221583738,
+        "conditional_actual_bayes_change": -0.000103708799236737,
+        "conditional_actual_common_change": 0.00045264941065729626,
+        "mixture_identity_sensitivity_error": 6.633054745898584e-08,
+        "gI": [
+          -0.00169228983704152,
+          0.000561748945808591
+        ]
+      }
+    ]
+  }
+]
