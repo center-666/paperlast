@@ -1,0 +1,27 @@
+{
+  "base_commit": "ea62f758c8d179f3aa198c4d706f69442fed765e",
+  "rule": "Reuse original decoder, 32-tick V1a common-G branches and raw BF. Candidate output blending never feeds back into either branch.",
+  "models": ["unstable", "stable"],
+  "event": {"name": "saved ordinary A0", "onset": 7, "stop_exclusive": 17, "bf_threshold": 20, "danger_squared": 0.1},
+  "healthy_calibration_inclusive_ranges": [[0, 15], [28, 79]],
+  "healthy_check_inclusive_ranges": [[80, 127]],
+  "paired_a0_inclusive_ranges": [[16, 27]],
+  "healthy_cost_increase_limits": [0.005, 0.02],
+  "cost_matching_tolerance_percentage_points_on_healthy_check": 0.10,
+  "methods": ["V0", "V1a", "state_saturation", "innovation_clipping", "residual_score", "posterior_mean_score", "posterior_second_moment_score"],
+  "score_definition": {
+    "fusion_segment": "Trusted conditional mean to unchanged V1a common-G output",
+    "residual_score": "Squared projection of current trusted innovation times G on segment direction",
+    "posterior_mean_score": "Squared projection of the conditional mean prefix state displacement on the segment direction",
+    "posterior_second_moment_score": "Posterior mean score plus the projected prefix state-displacement covariance",
+    "weight": "Segment length squared divided by segment length squared plus scaled score. Scale selected only to match healthy calibration cost"
+  },
+  "healthy_calibration_cost": "Average conditional nominal true-state MSE across complete frames and calibration paths, measured relative to V0 on those paths",
+  "calibration_numeric_conventions": {
+    "score_scale": "first target crossing of log grid 2**j, j=-24..60, from 0; root within bracket",
+    "clip_bracket": "0 to maximum healthy innovation norm",
+    "state_saturation_bracket": "0 to maximum healthy full-minus-trusted norm"
+  },
+  "evidence_rule": "A directional positive screen requires covariance vs both residual and mean ablation to have lower first-three-tick state MSE, no additional strict first-three pre-alarm events, and matched healthy check costs on both models at a common budget. These archival sizes cannot certify superiority.",
+  "new_synthetic_paths": 0
+}

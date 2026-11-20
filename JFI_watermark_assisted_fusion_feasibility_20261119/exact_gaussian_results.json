@@ -1,0 +1,74 @@
+{
+  "information_increases_and_mse_worsens": [
+    {
+      "encoding_energy": "5/4",
+      "min_decoder_scale": "1",
+      "max_decoder_scale": "2",
+      "conditional_information": "1",
+      "nuisance_parameter_variance": "1/2",
+      "immediate_G_effect_second_moment": "1/4",
+      "projected_posterior_correction_error": "1/8",
+      "model_fused_mse": "3/8",
+      "healthy_mse_of_the_same_fusion_rule": "5/16"
+    },
+    {
+      "encoding_energy": "5/4",
+      "min_decoder_scale": "1",
+      "max_decoder_scale": "2",
+      "conditional_information": "4",
+      "nuisance_parameter_variance": "1/5",
+      "immediate_G_effect_second_moment": "1",
+      "projected_posterior_correction_error": "1/5",
+      "model_fused_mse": "9/20",
+      "healthy_mse_of_the_same_fusion_rule": "41/100"
+    }
+  ],
+  "same_information_different_mse": [
+    {
+      "encoding_energy": "5/4",
+      "min_decoder_scale": "1",
+      "max_decoder_scale": "2",
+      "conditional_information": "5/2",
+      "nuisance_parameter_variance": "2/7",
+      "immediate_G_effect_second_moment": "1/4",
+      "projected_posterior_correction_error": "1/14",
+      "model_fused_mse": "25/56",
+      "healthy_mse_of_the_same_fusion_rule": "167/392"
+    },
+    {
+      "encoding_energy": "5/4",
+      "min_decoder_scale": "1",
+      "max_decoder_scale": "2",
+      "conditional_information": "5/2",
+      "nuisance_parameter_variance": "2/7",
+      "immediate_G_effect_second_moment": "1/16",
+      "projected_posterior_correction_error": "1/56",
+      "model_fused_mse": "11/28",
+      "healthy_mse_of_the_same_fusion_rule": "19/49"
+    }
+  ],
+  "same_immediate_effect_and_smaller_posterior_error": [
+    {
+      "encoding_energy": "5/4",
+      "min_decoder_scale": "1",
+      "max_decoder_scale": "2",
+      "conditional_information": "52/25",
+      "nuisance_parameter_variance": "25/77",
+      "immediate_G_effect_second_moment": "36/625",
+      "projected_posterior_correction_error": "36/1925",
+      "model_fused_mse": "2069/7700",
+      "healthy_mse_of_the_same_fusion_rule": "155713/592900"
+    },
+    {
+      "encoding_energy": "5/4",
+      "min_decoder_scale": "1",
+      "max_decoder_scale": "2",
+      "conditional_information": "73/25",
+      "nuisance_parameter_variance": "25/98",
+      "immediate_G_effect_second_moment": "36/625",
+      "projected_posterior_correction_error": "18/1225",
+      "model_fused_mse": "1297/4900",
+      "healthy_mse_of_the_same_fusion_rule": "62653/240100"
+    }
+  ]
+}
