@@ -1,0 +1,23 @@
+{
+  "baseline": "230d76f0b87090561a447558419931fe15e86b08",
+  "scope": "Analytic direction-moment restrictions for the frozen 2D common-G replay and finite numerical evaluation of the induced first-to-third-prefix moment maps. No candidate encoding, receiver, attack, or new measurement path.",
+  "models": ["unstable", "stable"],
+  "first_packet": 7,
+  "audited_packet_ages": [1, 2, 3],
+  "resources": {
+    "normal_y_independent_of_watermark": true,
+    "same_original_peak_gain_law": true,
+    "same_encoder_norm": true,
+    "same_energy_every_tick": true,
+    "common_radial_axis_joint_marginal_over_time_or_common_weighted_axis_moment": true
+  },
+  "moment_subclasses": {
+    "angular_independent_of_radial": "The 4-theta mode remains after the 2-theta mean vanishes.",
+    "angular_dependent_on_radial": "Discussed only as a scope counterexample for an overly general no-freedom claim; no draw, codebook, or optimization."
+  },
+  "frozen": {
+    "JFI_A0_watermark_calibration_audit_20261120/registration.json": "1228df46fdb58a602643006b712e9ce1546d010e241510170a58c528ac0aae66",
+    "JFI_A0_watermark_calibration_audit_20261120/early_calibration_results.json": "9287d8446c637f2e1a1b3766c9616c07926b43a6cc1d6f3579fdd23d1db82ab3",
+    "JFI_watermark_assisted_fusion_feasibility_20261119/replay_helpers_sha256.json": "67382affdef63972e374af2698cd5430539d2c1521e230b8e15e8e3abe47e0bb"
+  }
+}

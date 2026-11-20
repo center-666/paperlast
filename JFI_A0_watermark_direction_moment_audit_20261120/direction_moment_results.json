@@ -1,0 +1,329 @@
+{
+  "baseline": "230d76f0b87090561a447558419931fe15e86b08",
+  "frozen_input_count": 37,
+  "new_watermarks_or_paths": 0,
+  "resource_rank": [
+    {
+      "model": "unstable",
+      "tick0_orientation_vector": [
+        "0",
+        "0"
+      ],
+      "tick1_tick2_orientation_vectors": [
+        [
+          "663/10000",
+          "633/5000"
+        ],
+        [
+          "22223517/100000000",
+          "20562447/50000000"
+        ]
+      ],
+      "determinant_exact": "-4345839/5000000000",
+      "determinant": -0.0008691678
+    },
+    {
+      "model": "stable",
+      "tick0_orientation_vector": [
+        "0",
+        "0"
+      ],
+      "tick1_tick2_orientation_vectors": [
+        [
+          "-419/2500",
+          "53/500"
+        ],
+        [
+          "-203667/500000",
+          "132781/500000"
+        ]
+      ],
+      "determinant_exact": "-415871/312500000",
+      "determinant": -0.0013307872
+    }
+  ],
+  "algebra": {
+    "matrix_identity": "Formal 2x2 fourth-moment operator verified",
+    "isotropic_oracle_bias_average": "spectral-projector identity verified",
+    "original_Gaussian_trace_map_coefficients": [
+      "5/4",
+      "1/4"
+    ]
+  },
+  "numerical": {
+    "unstable": {
+      "gain_gram": [
+        [
+          0.07314638119503476,
+          8.400097569125733e-05
+        ],
+        [
+          8.400097569125733e-05,
+          0.06333659313596242
+        ]
+      ],
+      "registered_packet_results": [
+        {
+          "packet_age": 1,
+          "absolute_tick": 7,
+          "current_noise_precision_diagonal_block": [
+            [
+              1.5107010866367383,
+              -0.0002699863692138382
+            ],
+            [
+              -0.00026998636921383816,
+              1.587541230615507
+            ]
+          ],
+          "raw_common_g_current": {
+            "baseline_diagonal_second_moment": 0.06410839256181106,
+            "absolute_variation_upper": 0.0012586465899637152,
+            "percent_of_baseline": 1.9633101683998277,
+            "condition_number": 1.1549078894402112
+          },
+          "current_information_part": {
+            "baseline_diagonal_second_moment": 1.3688667671527726,
+            "absolute_variation_upper": 0.009857786143165324,
+            "percent_of_baseline": 0.7201421189930272,
+            "condition_number": 1.0508651844767163
+          },
+          "expected_full_prefix_squared_distance_baseline": 1.3688667671527726,
+          "diagonal_only_baseline": 1.3688667671527726,
+          "prefix_upper_change_with_independent_ticks": 0.009857786143165324,
+          "prefix_upper_change_percent_of_baseline": 0.7201421189930272,
+          "true_start_encoded_prior_covariance": [
+            [
+              0.2481818321568898,
+              -0.087417101248402
+            ],
+            [
+              -0.087417101248402,
+              0.3092559107519851
+            ]
+          ],
+          "prior_covariance_condition_number": 1.995019571882566
+        },
+        {
+          "packet_age": 2,
+          "absolute_tick": 8,
+          "current_noise_precision_diagonal_block": [
+            [
+              1.5107010866367374,
+              -0.00026998636921387
+            ],
+            [
+              -0.00026998636921387,
+              1.587541230615507
+            ]
+          ],
+          "raw_common_g_current": {
+            "baseline_diagonal_second_moment": 0.07288441599821878,
+            "absolute_variation_upper": 0.0014301853125688294,
+            "percent_of_baseline": 1.9622648998158696,
+            "condition_number": 1.1549078894402112
+          },
+          "current_information_part": {
+            "baseline_diagonal_second_moment": 1.555129794023785,
+            "absolute_variation_upper": 0.011201286420524264,
+            "percent_of_baseline": 0.7202798418221897,
+            "condition_number": 1.050865184476717
+          },
+          "expected_full_prefix_squared_distance_baseline": 2.909197722811652,
+          "diagonal_only_baseline": 2.9697587132316188,
+          "prefix_upper_change_with_independent_ticks": 0.01898943764532902,
+          "prefix_upper_change_percent_of_baseline": 0.6527379523374678,
+          "true_start_encoded_prior_covariance": [
+            [
+              0.2481818321568898,
+              -0.087417101248402
+            ],
+            [
+              -0.087417101248402,
+              0.3092559107519851
+            ]
+          ],
+          "prior_covariance_condition_number": 1.995019571882566
+        },
+        {
+          "packet_age": 3,
+          "absolute_tick": 9,
+          "current_noise_precision_diagonal_block": [
+            [
+              1.5107010866367374,
+              -0.0002699863692138703
+            ],
+            [
+              -0.0002699863692138703,
+              1.5875412306155077
+            ]
+          ],
+          "raw_common_g_current": {
+            "baseline_diagonal_second_moment": 0.08299152388154331,
+            "absolute_variation_upper": 0.0016276963304609816,
+            "percent_of_baseline": 1.9612802058969891,
+            "condition_number": 1.1549078894402112
+          },
+          "current_information_part": {
+            "baseline_diagonal_second_moment": 1.7695771428986138,
+            "absolute_variation_upper": 0.012748203077531236,
+            "percent_of_baseline": 0.720409569522883,
+            "condition_number": 1.0508651844767174
+          },
+          "expected_full_prefix_squared_distance_baseline": 4.661672057471296,
+          "diagonal_only_baseline": 4.79201914674759,
+          "prefix_upper_change_with_independent_ticks": 0.029340217442332166,
+          "prefix_upper_change_percent_of_baseline": 0.6293925673151628,
+          "true_start_encoded_prior_covariance": [
+            [
+              0.2481818321568898,
+              -0.087417101248402
+            ],
+            [
+              -0.087417101248402,
+              0.3092559107519851
+            ]
+          ],
+          "prior_covariance_condition_number": 1.995019571882566
+        }
+      ]
+    },
+    "stable": {
+      "gain_gram": [
+        [
+          0.07220460961112969,
+          7.48809103446205e-05
+        ],
+        [
+          7.48809103446205e-05,
+          0.0629988732631741
+        ]
+      ],
+      "registered_packet_results": [
+        {
+          "packet_age": 1,
+          "absolute_tick": 7,
+          "current_noise_precision_diagonal_block": [
+            [
+              1.5138329592554371,
+              -0.00024164880043356105
+            ],
+            [
+              -0.00024164880043356105,
+              1.5886090239489352
+            ]
+          ],
+          "raw_common_g_current": {
+            "baseline_diagonal_second_moment": 0.46435817710418603,
+            "absolute_variation_upper": 0.008656222120869512,
+            "percent_of_baseline": 1.8641261310075634,
+            "condition_number": 1.1461461608351275
+          },
+          "current_information_part": {
+            "baseline_diagonal_second_moment": 10.050286391257579,
+            "absolute_variation_upper": 0.07030465373422512,
+            "percent_of_baseline": 0.6995288591515251,
+            "condition_number": 1.0493962458900232
+          },
+          "expected_full_prefix_squared_distance_baseline": 10.050286391257579,
+          "diagonal_only_baseline": 10.050286391257579,
+          "prefix_upper_change_with_independent_ticks": 0.07030465373422512,
+          "prefix_upper_change_percent_of_baseline": 0.6995288591515251,
+          "true_start_encoded_prior_covariance": [
+            [
+              1.8403201945889232,
+              -0.18075889129337078
+            ],
+            [
+              -0.18075889129337078,
+              1.0644701294134093
+            ]
+          ],
+          "prior_covariance_condition_number": 1.8355361568480986
+        },
+        {
+          "packet_age": 2,
+          "absolute_tick": 8,
+          "current_noise_precision_diagonal_block": [
+            [
+              1.5138329592554371,
+              -0.00024164880043356355
+            ],
+            [
+              -0.00024164880043356355,
+              1.5886090239489352
+            ]
+          ],
+          "raw_common_g_current": {
+            "baseline_diagonal_second_moment": 0.29114825984677895,
+            "absolute_variation_upper": 0.005431433131960786,
+            "percent_of_baseline": 1.8655214133236304,
+            "condition_number": 1.1461461608351275
+          },
+          "current_information_part": {
+            "baseline_diagonal_second_moment": 6.307888495360004,
+            "absolute_variation_upper": 0.044113358032076916,
+            "percent_of_baseline": 0.6993363637376612,
+            "condition_number": 1.0493962458900232
+          },
+          "expected_full_prefix_squared_distance_baseline": 16.3009602173719,
+          "diagonal_only_baseline": 16.556416981074502,
+          "prefix_upper_change_with_independent_ticks": 0.11221252003287091,
+          "prefix_upper_change_percent_of_baseline": 0.6883798165048354,
+          "true_start_encoded_prior_covariance": [
+            [
+              1.8403201945889232,
+              -0.18075889129337078
+            ],
+            [
+              -0.18075889129337078,
+              1.0644701294134093
+            ]
+          ],
+          "prior_covariance_condition_number": 1.8355361568480986
+        },
+        {
+          "packet_age": 3,
+          "absolute_tick": 9,
+          "current_noise_precision_diagonal_block": [
+            [
+              1.5138329592554371,
+              -0.00024164880043356363
+            ],
+            [
+              -0.00024164880043356366,
+              1.5886090239489352
+            ]
+          ],
+          "raw_common_g_current": {
+            "baseline_diagonal_second_moment": 0.1824524548576985,
+            "absolute_variation_upper": 0.00340682977292172,
+            "percent_of_baseline": 1.8672424964513819,
+            "condition_number": 1.1461461608351275
+          },
+          "current_information_part": {
+            "baseline_diagonal_second_moment": 3.957923535181493,
+            "absolute_variation_upper": 0.02766980608541167,
+            "percent_of_baseline": 0.6990990563475566,
+            "condition_number": 1.0493962458900232
+          },
+          "expected_full_prefix_squared_distance_baseline": 20.222787469041606,
+          "diagonal_only_baseline": 20.64005695205273,
+          "prefix_upper_change_with_independent_ticks": 0.13846155373775543,
+          "prefix_upper_change_percent_of_baseline": 0.6846808529720328,
+          "true_start_encoded_prior_covariance": [
+            [
+              1.8403201945889232,
+              -0.18075889129337078
+            ],
+            [
+              -0.18075889129337078,
+              1.0644701294134093
+            ]
+          ],
+          "prior_covariance_condition_number": 1.8355361568480986
+        }
+      ]
+    }
+  }
+}
