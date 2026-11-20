@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-20",
+  "baseline": "61dc8df18926e83850a64f7eb357009104f8e0dc",
+  "scope": "Original JFI revision decision first; a bounded Gaussian timing identifiability check second. No change to original draft, code, datasets, detector, estimator or baselines.",
+  "private_review_attached_sha256": "7d102ac814cf740fa6049a506cb89fb12b54e36959467704d45c7828e3d3ad2a",
+  "local_retained_manuscript_tex_sha256": "0d59143f19ee62cdbb95f8207e47ec9cc481bedcda10b3a24398cd5bfa36b609",
+  "local_retained_manuscript_pdf_sha256": "f2cc8355eb28613abdf018cb3b33aa7dd4dbe64e7706ca3d376456f7e2a1685d",
+  "check_original_review_source": "Use the optional local arguments in verify_review_audit.py; do not copy the private decision letter.",
+  "baseline_dependency_text_normalization": "CRLF to LF; original attachment/TeX/PDF hashes above use raw bytes",
+  "published_dependencies": {
+    "common_g_reference_revision_20261115/reviewer_status_update.json": "317025b756615b7085265bd73d08648284963a632ecc8a0ecd32b363983df5ca",
+    "jfi_reviewer_driven_research_20261115/04_直接近邻定理对照.md": "cabaca1a6ecd06189e6c0956dcd466d26a19cfbfa502637ba26341354ba76dd4",
+    "common_g_reference_revision_20261115/historical_source_audit.md": "0ef76ab9e89ee4066a8785403124b6f64715ae8022a9cd6a5845007b3677e8d6",
+    "JFI_paper_pre_submission_audit/01_独立数学审稿.md": "e30a19bbdbd95d8acc9a6bf9ab90fe3ddecd5d5d8d5bc962cbb0274d3906947d",
+    "JFI_paper_pre_submission_audit/02_近邻排重表.md": "549729c599a22175b09d588ae4a47c1f66af0a388c59a56141de9d624d49922d",
+    "JFI_paper_pre_submission_audit/03_实验与认证审计.md": "ce72a288477a169fd66401ccc3581eccf07eb80c08621c053947375e80bc1bb5",
+    "JFI_paper_pre_submission_audit/05_最终投稿判断.md": "da5566ba199c126971d222a9d7c7bc1fb2f73c876d59d33aac7389405540a7f9",
+    "JFI_A0_watermark_calibration_audit_20261120/early_calibration_results.json": "9287d8446c637f2e1a1b3766c9616c07926b43a6cc1d6f3579fdd23d1db82ab3",
+    "JFI_A0_watermark_direction_moment_audit_20261120/direction_moment_results.json": "d0af00fc004038f49d2b1a716731b5b17ee802ffc36b814bb039ba4ae56d54d4"
+  },
+  "review_counts_original": [4, 3, 6, 6, 5, 5],
+  "publication_status": "Original method submission remains on hold; preserve the separate conditional saturation analysis; Group D closed"
+}

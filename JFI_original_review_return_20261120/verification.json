@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-20",
+  "base": "61dc8df18926e83850a64f7eb357009104f8e0dc",
+  "public_check": {
+    "review_items": 29,
+    "reviewer_item_counts": [
+      4,
+      3,
+      6,
+      6,
+      5,
+      5
+    ],
+    "statuses": {
+      "当前无法关闭": 5,
+      "已有可采用证据": 9,
+      "仍需明确补充": 15
+    },
+    "frozen_dependencies": 9,
+    "exact_scalar_mean_squared_distances": {
+      "nonzero_cross": {
+        "frechet_contrast_positive": "15",
+        "independent_abstraction": "29/2",
+        "frechet_contrast_negative": "14"
+      },
+      "zero_cross_all_equal": "10"
+    }
+  },
+  "local_original_source_check": {
+    "review_items": 29,
+    "reviewer_item_counts": [
+      4,
+      3,
+      6,
+      6,
+      5,
+      5
+    ],
+    "statuses": {
+      "当前无法关闭": 5,
+      "已有可采用证据": 9,
+      "仍需明确补充": 15
+    },
+    "frozen_dependencies": 9,
+    "exact_scalar_mean_squared_distances": {
+      "nonzero_cross": {
+        "frechet_contrast_positive": "15",
+        "independent_abstraction": "29/2",
+        "frechet_contrast_negative": "14"
+      },
+      "zero_cross_all_equal": "10"
+    },
+    "checked_private_review_body_count": 29,
+    "verified_retained_tex_anchors": 10,
+    "retained_pdf_hash_verified": true
+  },
+  "formulas": "Original retained PDF 9, FPN07 3, FPN08 8, INTRO06 4 visually checked. FPN11 3 and INTRO06 5–6 verified against native text.",
+  "originals_not_rewritten": true,
+  "new_physical_paths": 0,
+  "new_watermarks": 0
+}
