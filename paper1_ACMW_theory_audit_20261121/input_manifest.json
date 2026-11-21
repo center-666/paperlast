@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "baseline": "b07e127452c61c701202f558e24bd89797990a1a",
+  "files": [
+    {
+      "path": "inputs/01_BSCW_suggestions.txt",
+      "attachment_id": "8c9ff895-a43f-4228-8f9e-96cf88a94086",
+      "bytes": 10803,
+      "sha256": "9ffe6acfc471feebf7911c6d36f698b26a99b1ccbdda63ce578170e2c5e347a5"
+    },
+    {
+      "path": "inputs/02_ACMW_paper1_revision.txt",
+      "attachment_id": "8b925fce-435e-4b3d-a28a-67950571adae",
+      "bytes": 20767,
+      "sha256": "7c324a78e19478dfc26bff90d4e5ae39abaa1b0881eb7e6fcce17072aab51505"
+    },
+    {
+      "path": "source_snapshots/ACMW/README.md",
+      "commit": "501d78fff4c46da23a56a6311478e5f1f7c4d14c",
+      "remote_path": "paper1_revision_angular_coupled_watermark/README.md",
+      "bytes": 13031,
+      "sha256": "f3b2b038a4802d5ae48fa3f9713bd8c5fa1a519a62f1eb105fb26b13fa999281"
+    },
+    {
+      "path": "source_snapshots/ACMW/results.json",
+      "commit": "501d78fff4c46da23a56a6311478e5f1f7c4d14c",
+      "remote_path": "paper1_revision_angular_coupled_watermark/results.json",
+      "bytes": 8176,
+      "sha256": "42266c7bec3aca641b8da55781ab51f13462405a4e13de0bb6f7c60cc9a48457"
+    },
+    {
+      "path": "source_snapshots/ACMW/reproduce.py",
+      "commit": "501d78fff4c46da23a56a6311478e5f1f7c4d14c",
+      "remote_path": "paper1_revision_angular_coupled_watermark/reproduce.py",
+      "bytes": 5972,
+      "sha256": "19b27cda71a5ef80b73d7189ea958d970a09aff8da1cee08cb170f17cdda8f22"
+    },
+    {
+      "path": "source_snapshots/BSCW/README.md",
+      "commit": "c9649a62b7757def403af23f782ac2770009455c",
+      "remote_path": "LC_TCW_BSCW_task_risk_frontier_20261121/README.md",
+      "bytes": 13353,
+      "sha256": "79f9f2a87b79064a5ea524f563a46a1a8902d5bb3c9d1ab1917f1c431fd58f1e"
+    },
+    {
+      "path": "source_snapshots/BSCW/results.json",
+      "commit": "c9649a62b7757def403af23f782ac2770009455c",
+      "remote_path": "LC_TCW_BSCW_task_risk_frontier_20261121/results.json",
+      "bytes": 3941,
+      "sha256": "5b82b6841a92739c5eb9786b72a39f6ebffc008539eb70c3e97cb24ca69a0bfa"
+    },
+    {
+      "path": "source_snapshots/BSCW/risk_frontier.py",
+      "commit": "c9649a62b7757def403af23f782ac2770009455c",
+      "remote_path": "LC_TCW_BSCW_task_risk_frontier_20261121/risk_frontier.py",
+      "bytes": 8574,
+      "sha256": "e7503f31151105ca0cdf3ab58d87a52b7c1e77eff07fe8e1044cfd90c8e2aa3c"
+    }
+  ]
+}

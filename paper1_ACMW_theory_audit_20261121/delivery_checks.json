@@ -1,0 +1,22 @@
+{
+  "sources_verified": [
+    "inputs/01_BSCW_suggestions.txt",
+    "inputs/02_ACMW_paper1_revision.txt",
+    "source_snapshots/ACMW/README.md",
+    "source_snapshots/ACMW/results.json",
+    "source_snapshots/ACMW/reproduce.py",
+    "source_snapshots/BSCW/README.md",
+    "source_snapshots/BSCW/results.json",
+    "source_snapshots/BSCW/risk_frontier.py"
+  ],
+  "protected_inputs": [
+    "common_g_reference_revision_20261115/common_g_reference.py",
+    "common_g_reference_revision_20261115/inputs/five_node_aggregate_model.json",
+    "B1_three_hypothesis_feasibility_20261120/registration.json"
+  ],
+  "links_verified": true,
+  "bscw_original_table_rounded_match": true,
+  "bscw_noise_variant_only_expected_changes": true,
+  "syntax_checked": true,
+  "python": "3.11.18"
+}

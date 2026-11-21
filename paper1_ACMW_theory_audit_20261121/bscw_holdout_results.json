@@ -1,0 +1,348 @@
+{
+  "scope": "Exploratory two-tap diagnostic, 3 repetitions, independent calibration and evaluation; E=10 uses I+A^TA, not original ten-tap E=10.",
+  "sigma_diag": [
+    1.0,
+    0.5,
+    0.9245562130177514,
+    0.46237244897959173
+  ],
+  "state_prior": 1.0,
+  "baseline_health": 0.19369489714133045,
+  "calibration_health_target": 0.19756879508415706,
+  "energy_gram": [
+    [
+      2.0816,
+      0.0
+    ],
+    [
+      0.0,
+      2.2544000000000004
+    ]
+  ],
+  "rows": [
+    {
+      "scheme": "iid",
+      "family": "contrast",
+      "replicate": 0,
+      "regularizer": 24.968647419929248,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.9200480687099213,
+        "risk_pair_oracle": 3.051721462075612
+      },
+      "evaluation": {
+        "health": 0.19761455787980595,
+        "health_relative_increment": 0.02023626226774322,
+        "risk_fixed": 2.9144079072695646,
+        "risk_pair_oracle": 3.0475074354717573
+      }
+    },
+    {
+      "scheme": "iid",
+      "family": "joint_prior",
+      "replicate": 0,
+      "regularizer": 29.72944730155618,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.7135271055101358,
+        "risk_pair_oracle": 2.847977483026296
+      },
+      "evaluation": {
+        "health": 0.19759044954707944,
+        "health_relative_increment": 0.020111796765128975,
+        "risk_fixed": 2.7145632385836427,
+        "risk_pair_oracle": 2.850774151906345
+      }
+    },
+    {
+      "scheme": "iid",
+      "family": "contrast",
+      "replicate": 1,
+      "regularizer": 24.91040112314629,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.911135688905941,
+        "risk_pair_oracle": 3.0440685526249665
+      },
+      "evaluation": {
+        "health": 0.1975531981844862,
+        "health_relative_increment": 0.019919476971768102,
+        "risk_fixed": 2.905555032254791,
+        "risk_pair_oracle": 3.038405192840284
+      }
+    },
+    {
+      "scheme": "iid",
+      "family": "joint_prior",
+      "replicate": 1,
+      "regularizer": 29.630986085288512,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.7077724693249494,
+        "risk_pair_oracle": 2.843702911066882
+      },
+      "evaluation": {
+        "health": 0.19755198462922216,
+        "health_relative_increment": 0.01991321167886717,
+        "risk_fixed": 2.7032982012609197,
+        "risk_pair_oracle": 2.8390648166936248
+      }
+    },
+    {
+      "scheme": "iid",
+      "family": "contrast",
+      "replicate": 2,
+      "regularizer": 24.905727432358063,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.920872762085961,
+        "risk_pair_oracle": 3.053896088458447
+      },
+      "evaluation": {
+        "health": 0.19759347440930838,
+        "health_relative_increment": 0.02012741339867774,
+        "risk_fixed": 2.901063950792489,
+        "risk_pair_oracle": 3.0338214265130192
+      }
+    },
+    {
+      "scheme": "iid",
+      "family": "joint_prior",
+      "replicate": 2,
+      "regularizer": 29.67501013103125,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.7156049343750577,
+        "risk_pair_oracle": 2.8516468062422105
+      },
+      "evaluation": {
+        "health": 0.19757566675160043,
+        "health_relative_increment": 0.020035476760331683,
+        "risk_fixed": 2.6995849015148083,
+        "risk_pair_oracle": 2.835593493578651
+      }
+    },
+    {
+      "scheme": "bscw035",
+      "family": "contrast",
+      "replicate": 0,
+      "regularizer": 25.345773608411832,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.714572756506424,
+        "risk_pair_oracle": 2.845790506354957
+      },
+      "evaluation": {
+        "health": 0.197655382563726,
+        "health_relative_increment": 0.020447030256588228,
+        "risk_fixed": 2.7198679854904846,
+        "risk_pair_oracle": 2.8536871125185015
+      }
+    },
+    {
+      "scheme": "bscw035",
+      "family": "joint_prior",
+      "replicate": 0,
+      "regularizer": 28.669235638765514,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.564154504505568,
+        "risk_pair_oracle": 2.696509528096926
+      },
+      "evaluation": {
+        "health": 0.19764480351115823,
+        "health_relative_increment": 0.02039241316174545,
+        "risk_fixed": 2.5688677245839275,
+        "risk_pair_oracle": 2.70388640817673
+      }
+    },
+    {
+      "scheme": "bscw035",
+      "family": "contrast",
+      "replicate": 1,
+      "regularizer": 25.087801253513856,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.705807555960142,
+        "risk_pair_oracle": 2.836276654950127
+      },
+      "evaluation": {
+        "health": 0.197653143650715,
+        "health_relative_increment": 0.020435471289139917,
+        "risk_fixed": 2.7126609677015736,
+        "risk_pair_oracle": 2.8433156820869367
+      }
+    },
+    {
+      "scheme": "bscw035",
+      "family": "joint_prior",
+      "replicate": 1,
+      "regularizer": 28.41014159618257,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.556173529411493,
+        "risk_pair_oracle": 2.687978087693411
+      },
+      "evaluation": {
+        "health": 0.19764324669843364,
+        "health_relative_increment": 0.02038437571343077,
+        "risk_fixed": 2.56226635267788,
+        "risk_pair_oracle": 2.6942810170533886
+      }
+    },
+    {
+      "scheme": "bscw035",
+      "family": "contrast",
+      "replicate": 2,
+      "regularizer": 25.59321311984891,
+      "calibration": {
+        "health": 0.19756879508415717,
+        "health_relative_increment": 0.020000000000000684,
+        "risk_fixed": 2.72846222307054,
+        "risk_pair_oracle": 2.8608652895977453
+      },
+      "evaluation": {
+        "health": 0.19751664202223718,
+        "health_relative_increment": 0.019730746329977844,
+        "risk_fixed": 2.7189776997008144,
+        "risk_pair_oracle": 2.852081767817997
+      }
+    },
+    {
+      "scheme": "bscw035",
+      "family": "joint_prior",
+      "replicate": 2,
+      "regularizer": 28.927569930702347,
+      "calibration": {
+        "health": 0.197568795084157,
+        "health_relative_increment": 0.019999999999999796,
+        "risk_fixed": 2.5772384505081014,
+        "risk_pair_oracle": 2.7107696380874375
+      },
+      "evaluation": {
+        "health": 0.19752205283656585,
+        "health_relative_increment": 0.019758681058298144,
+        "risk_fixed": 2.568818042709319,
+        "risk_pair_oracle": 2.7030548749611234
+      }
+    },
+    {
+      "scheme": "LC_TCW",
+      "family": "contrast",
+      "replicate": 0,
+      "regularizer": 23.209989685853003,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.6886838629518914,
+        "risk_pair_oracle": 2.7306312479797805
+      },
+      "evaluation": {
+        "health": 0.1974691332390209,
+        "health_relative_increment": 0.01948546994986944,
+        "risk_fixed": 2.680153862145881,
+        "risk_pair_oracle": 2.722051516982231
+      }
+    },
+    {
+      "scheme": "LC_TCW",
+      "family": "joint_prior",
+      "replicate": 0,
+      "regularizer": 26.49265946813843,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.5409652214562133,
+        "risk_pair_oracle": 2.585931785209871
+      },
+      "evaluation": {
+        "health": 0.19748107932725936,
+        "health_relative_increment": 0.01954714471990604,
+        "risk_fixed": 2.533836161213358,
+        "risk_pair_oracle": 2.5787642271280595
+      }
+    },
+    {
+      "scheme": "LC_TCW",
+      "family": "contrast",
+      "replicate": 1,
+      "regularizer": 23.0027141221288,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.68038106647962,
+        "risk_pair_oracle": 2.721979060301917
+      },
+      "evaluation": {
+        "health": 0.19764207737160128,
+        "health_relative_increment": 0.020378338761246395,
+        "risk_fixed": 2.6963616087142652,
+        "risk_pair_oracle": 2.7376018496697383
+      }
+    },
+    {
+      "scheme": "LC_TCW",
+      "family": "joint_prior",
+      "replicate": 1,
+      "regularizer": 26.288105639649096,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.5330354860088082,
+        "risk_pair_oracle": 2.577696430861188
+      },
+      "evaluation": {
+        "health": 0.1976378554239763,
+        "health_relative_increment": 0.020356541864749556,
+        "risk_fixed": 2.547100243587677,
+        "risk_pair_oracle": 2.5913791255395076
+      }
+    },
+    {
+      "scheme": "LC_TCW",
+      "family": "contrast",
+      "replicate": 2,
+      "regularizer": 23.400569164512977,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.7043851841358304,
+        "risk_pair_oracle": 2.746505052642465
+      },
+      "evaluation": {
+        "health": 0.1975314602113804,
+        "health_relative_increment": 0.01980724906372,
+        "risk_fixed": 2.7052086566685287,
+        "risk_pair_oracle": 2.7471980368304556
+      }
+    },
+    {
+      "scheme": "LC_TCW",
+      "family": "joint_prior",
+      "replicate": 2,
+      "regularizer": 26.708172130646357,
+      "calibration": {
+        "health": 0.19756879508415706,
+        "health_relative_increment": 0.020000000000000018,
+        "risk_fixed": 2.5556265473691826,
+        "risk_pair_oracle": 2.6007869672441584
+      },
+      "evaluation": {
+        "health": 0.19753761702576947,
+        "health_relative_increment": 0.019839035210283074,
+        "risk_fixed": 2.5564851992776756,
+        "risk_pair_oracle": 2.6014919523777387
+      }
+    }
+  ]
+}

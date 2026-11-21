@@ -1,0 +1,7 @@
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.py text eol=lf
+*.txt text eol=lf
+inputs/*.txt -text whitespace=cr-at-eol
+source_snapshots/** -text whitespace=-blank-at-eol

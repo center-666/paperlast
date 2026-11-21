@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "role": "Reviewer and research collaborator on substantive revision of Paper 1",
+  "authorization": [
+    "Initial wording forbade experiments; user then explicitly said 可以做实验.",
+    "User additionally authorized long theoretical derivation, verification and experiments.",
+    "Prior continuing authorization covers archiving dialogue, suggestions, code and results to center-666/paperlast."
+  ],
+  "scope": "Audit ACMW formulas; reproduce provided code in isolated directory; test adverse geometry; connect to unchanged original common-G on frozen supplementary models.",
+  "not_a_claim": "No replacement of original manuscript or 50-node model, no proof of universal KL/power/secure-state advantage, no novelty clearance.",
+  "experiments": {
+    "source_reproduction": "Run exact supplied ACMW 700-case code without modification, in an isolated results directory; compare with supplied JSON.",
+    "information": "Compute angular MI with beta-weighted Gauss-Jacobi rules of orders 64/128/256 and compare with original plain Legendre order 600.",
+    "analytical_geometry": "H=I2, A=1.04 I2 or 1.04 J, L=2, process and measurement covariances I2, coded energy 10, kappa 2, rho .7; identical settings except dynamics. Exact opposite covariance signs are proved analytically.",
+    "moment_and_power_validation": "20 batches of 5000 watermark trajectories per condition, IID and ACMW, lengths 2, m=2, paired nominal Gaussian noises; verify covariances and single-window nominal chi-square .05 false alarm; report power as sample fraction with batch SE.",
+    "state_bridge": "Frozen unstable/stable supplementary five-node common-G and separately registered regional model; 32 output times, prior B1-registered A0 replay (onset 7/duration10/coded energy10, ordinary direction (-1.89,.42)); exact moments, then 20x5000 paired physical-noise paths per model as diagnostic cross-check; no gating, new compensation, or state truth access in decisions.",
+    "design_diagnostic": "For supplementary models, kappa grid 0,.5,1,2,4 with rho .7; report single internal-window covariance KL surrogate and whole-horizon original common-G contamination MSE. Include IID and do not infer optimum from grid.",
+    "same_zeta_information": "Compare mixed rho=.7 kappa2 with pure tilt rho1, kappa root matching c1; verify same covariance metrics and lower MI analytically and numerically."
+  },
+  "frozen": ["Existing models, attacks, seeds, gains, healthy detector calibration and old results remain unchanged.", "No main manuscript rewrite or branch merge.", "No claimed BSCW risk validation under original ten-tap energy or globally optimal estimator; separate local diagnostic reruns are labeled below."],
+  "libraries": {"python": "3.11.18", "numpy": "2.4.6", "scipy": "1.17.1"},
+  "seed_base": 202611219000,
+  "post_audit_scope_amendment": {
+    "reason": "Source review revealed first/third BSCW noise variances do not match the previously derived four-observation regional model, and diffuse-state projection is not joint finite-prior optimum.",
+    "source_BSCW_reproduction": "Run provided BSCW 15x50000 code unchanged in an isolated copy to verify published rounded table values.",
+    "noise_sensitivity": "Rerun provided BSCW 15x50000 code changing Sigma to diag(1,.5,1/1.04^2,.58/1.12^2), and update descriptive metadata; retain local parameter-norm energy and qualify this as sensitivity, not original ten-tap validation.",
+    "heldout_diagnostic": "IID, BSCW-.35 and full LC-TCW; both contrast-ridge and joint-finite-prior-ridge families; 3 repeats, each 50000 calibration and 50000 separate evaluation watermark pairs, corrected Sigma, Px1, exact two-tap energy Gram I+A^TA, E10. Alpha and estimators fixed before this heldout run; no claim of optimality or original ten-tap equivalence."
+  }
+}

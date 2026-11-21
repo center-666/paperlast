@@ -1,0 +1,312 @@
+{
+  "status": "first-paper revision; analytic covariance calculation; exploratory numerical evidence",
+  "source_alignment": {
+    "paper": "Secure Distributed State Estimation Against Stealthy False Data Injection Attacks via Multiplicative Watermarking",
+    "measurement_dimension": "m",
+    "state_dimension": "n",
+    "watermark": "M_k=lambda I_m+beta_k beta_k^T"
+  },
+  "settings": {
+    "window_length_L": 5,
+    "energy": 10,
+    "process_covariance": "I_n",
+    "measurement_covariance": "I_m",
+    "A": "random orthogonal similarity of diag(linspace(1.03,1.09,n))",
+    "H": "Gaussian m-by-n, retained if extended observability matrix has full column rank",
+    "attack": "DeltaY=H_{0,s}xi, normalized to energy 10; parity projection is zero",
+    "rho": 0.7,
+    "kappa": [
+      0,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "cases_per_dimension": 100,
+    "metric": "Gaussian-equivalent KL from exact attacked residual covariance; for zero-mean non-Gaussian residual this is a lower bound on actual KL"
+  },
+  "results": [
+    {
+      "n": 2,
+      "m": 2,
+      "mean_gaussian_equivalent_KL": {
+        "iid": 0.32246674,
+        "kappa_0_5": 0.33394325,
+        "kappa_1": 0.34498374,
+        "kappa_2": 0.36464946,
+        "kappa_4": 0.39143881
+      },
+      "relative_increase_percent": {
+        "kappa_0_5": 3.5589747953540973,
+        "kappa_1": 6.982735645852967,
+        "kappa_2": 13.081262272195882,
+        "kappa_4": 21.388894246891965
+      },
+      "paired_95ci_difference_vs_iid": {
+        "kappa_0_5": [
+          0.01092701,
+          0.01202601
+        ],
+        "kappa_1": [
+          0.02146604,
+          0.02356795
+        ],
+        "kappa_2": [
+          0.04029936,
+          0.04406608
+        ],
+        "kappa_4": [
+          0.06605979,
+          0.07188435
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "m": 2,
+      "mean_gaussian_equivalent_KL": {
+        "iid": 0.16349424,
+        "kappa_0_5": 0.17182492,
+        "kappa_1": 0.17996214,
+        "kappa_2": 0.19464671,
+        "kappa_4": 0.21493155
+      },
+      "relative_increase_percent": {
+        "kappa_0_5": 5.095396632933347,
+        "kappa_1": 10.07246493821432,
+        "kappa_2": 19.054169737111227,
+        "kappa_4": 31.46123679953494
+      },
+      "paired_95ci_difference_vs_iid": {
+        "kappa_0_5": [
+          0.00783795,
+          0.00882343
+        ],
+        "kappa_1": [
+          0.0155148,
+          0.017421
+        ],
+        "kappa_2": [
+          0.02941539,
+          0.03288956
+        ],
+        "kappa_4": [
+          0.04869064,
+          0.05418399
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "m": 3,
+      "mean_gaussian_equivalent_KL": {
+        "iid": 0.2522142,
+        "kappa_0_5": 0.26078064,
+        "kappa_1": 0.26848246,
+        "kappa_2": 0.28115392,
+        "kappa_4": 0.29721726
+      },
+      "relative_increase_percent": {
+        "kappa_0_5": 3.3964939325382915,
+        "kappa_1": 6.4501760804903,
+        "kappa_2": 11.474262749678644,
+        "kappa_4": 17.843190430990784
+      },
+      "paired_95ci_difference_vs_iid": {
+        "kappa_0_5": [
+          0.00814996,
+          0.00898291
+        ],
+        "kappa_1": [
+          0.01548557,
+          0.01705094
+        ],
+        "kappa_2": [
+          0.02757085,
+          0.03030858
+        ],
+        "kappa_4": [
+          0.04291837,
+          0.04708775
+        ]
+      }
+    },
+    {
+      "n": 4,
+      "m": 4,
+      "mean_gaussian_equivalent_KL": {
+        "iid": 0.35759444,
+        "kappa_0_5": 0.36527815,
+        "kappa_1": 0.372041,
+        "kappa_2": 0.38302946,
+        "kappa_4": 0.39723636
+      },
+      "relative_increase_percent": {
+        "kappa_0_5": 2.1487218872866087,
+        "kappa_1": 4.039928585019381,
+        "kappa_2": 7.112811932981944,
+        "kappa_4": 11.085720460306936
+      },
+      "paired_95ci_difference_vs_iid": {
+        "kappa_0_5": [
+          0.00738888,
+          0.00797853
+        ],
+        "kappa_1": [
+          0.01389465,
+          0.01499846
+        ],
+        "kappa_2": [
+          0.02447039,
+          0.02639963
+        ],
+        "kappa_4": [
+          0.03815315,
+          0.04113068
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "m": 2,
+      "mean_gaussian_equivalent_KL": {
+        "iid": 0.08072755,
+        "kappa_0_5": 0.08606819,
+        "kappa_1": 0.09138343,
+        "kappa_2": 0.10097024,
+        "kappa_4": 0.11348953
+      },
+      "relative_increase_percent": {
+        "kappa_0_5": 6.615634935037673,
+        "kappa_1": 13.199806014179805,
+        "kappa_2": 25.07531815346806,
+        "kappa_4": 40.58339439262062
+      },
+      "paired_95ci_difference_vs_iid": {
+        "kappa_0_5": [
+          0.00491708,
+          0.0057642
+        ],
+        "kappa_1": [
+          0.00981745,
+          0.01149432
+        ],
+        "kappa_2": [
+          0.01867479,
+          0.0218106
+        ],
+        "kappa_4": [
+          0.03028349,
+          0.03524048
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "m": 3,
+      "mean_gaussian_equivalent_KL": {
+        "iid": 0.15318977,
+        "kappa_0_5": 0.15952735,
+        "kappa_1": 0.16525572,
+        "kappa_2": 0.1747339,
+        "kappa_4": 0.18683118
+      },
+      "relative_increase_percent": {
+        "kappa_0_5": 4.137077821841495,
+        "kappa_1": 7.876472430241255,
+        "kappa_2": 14.06368715091093,
+        "kappa_4": 21.960611338472535
+      },
+      "paired_95ci_difference_vs_iid": {
+        "kappa_0_5": [
+          0.00597157,
+          0.00670358
+        ],
+        "kappa_1": [
+          0.01137574,
+          0.01275615
+        ],
+        "kappa_2": [
+          0.02033094,
+          0.02275731
+        ],
+        "kappa_4": [
+          0.03178382,
+          0.03549899
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "m": 4,
+      "mean_gaussian_equivalent_KL": {
+        "iid": 0.20415261,
+        "kappa_0_5": 0.20987214,
+        "kappa_1": 0.21492278,
+        "kappa_2": 0.22315606,
+        "kappa_4": 0.23383812
+      },
+      "relative_increase_percent": {
+        "kappa_0_5": 2.8015953359596946,
+        "kappa_1": 5.27554852225498,
+        "kappa_2": 9.308453122397008,
+        "kappa_4": 14.540842754839133
+      },
+      "paired_95ci_difference_vs_iid": {
+        "kappa_0_5": [
+          0.00543631,
+          0.00600275
+        ],
+        "kappa_1": [
+          0.01024026,
+          0.01130008
+        ],
+        "kappa_2": [
+          0.01807797,
+          0.01992893
+        ],
+        "kappa_4": [
+          0.02825823,
+          0.03111279
+        ]
+      }
+    }
+  ],
+  "leakage_and_direction_stats": {
+    "m2": {
+      "iid_E_cos2": 0.5,
+      "coupled_E_cos2": 0.3437635119,
+      "MI_per_step_exact_nats": 0.1008321421,
+      "window_L5_total_correlation_exact_nats": 0.4033285684
+    },
+    "m3": {
+      "iid_E_cos2": 0.3333333333,
+      "coupled_E_cos2": 0.2354047281,
+      "MI_per_step_exact_nats": 0.0594393078,
+      "window_L5_total_correlation_exact_nats": 0.2377572312
+    },
+    "m4": {
+      "iid_E_cos2": 0.25,
+      "coupled_E_cos2": 0.1830182328,
+      "MI_per_step_exact_nats": 0.0402029256,
+      "window_L5_total_correlation_exact_nats": 0.1608117024
+    }
+  },
+  "validation": {
+    "exact_covariance_vs_200000_path_MC_relative_error": [
+      0.0114023,
+      0.0098148,
+      0.0110042
+    ],
+    "cases": "(n,m,kappa)=(2,2,2),(4,3,2),(6,4,4)",
+    "note": "cross-check only; no physical sensor-network Monte Carlo, no detector threshold calibration, no closed-loop estimation RMSE yet"
+  },
+  "limitations": [
+    "A,H ensembles are generic observability-valid systems, not the frozen 50-node network.",
+    "Attack family is the fixed virtual-state parity-null attack, normalized to energy 10.",
+    "rho=0.7 and kappa=2 are candidates, not globally optimal parameters.",
+    "The Gaussian-equivalent KL is a lower bound on actual KL, not the exact non-Gaussian KL.",
+    "The mutual-information bound quantifies watermark dependence, not cryptographic secrecy or a fully adaptive attacker guarantee.",
+    "The uniform covariance lower bound retains O(sigma_beta^4) KL growth but is more conservative than the iid-specific constant."
+  ]
+}

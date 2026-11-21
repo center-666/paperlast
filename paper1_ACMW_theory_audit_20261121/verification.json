@@ -1,0 +1,16 @@
+{
+  "direct_risk_checks": [
+    {
+      "joint_prior": false,
+      "absolute_health_error": 5.551115123125783e-17,
+      "absolute_fixed_risk_error": 0.0
+    },
+    {
+      "joint_prior": true,
+      "absolute_health_error": 0.0,
+      "absolute_fixed_risk_error": 4.440892098500626e-16
+    }
+  ],
+  "information_quadrature": "passed",
+  "adverse_geometry": "passed"
+}
