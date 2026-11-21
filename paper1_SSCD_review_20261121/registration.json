@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "role": "Reviewer/collaborator; substantive revision of Paper 1 only",
+  "authorization": "User explicitly requested upload of code and review/progression of the attached SSCD advice; prior authorization covers experiments and ongoing research archiving.",
+  "baseline": "fbc003d741dee46ef206659ac5fd32e293c71501",
+  "scope": [
+    "Archive attachment and original branch source byte-exact; do not merge or overwrite the source branch.",
+    "Reproduce source endpoint failure; correct the signed-KL identity in review, without silently rewriting original proof.",
+    "Implement a numerically validated compact signed-Watson domain theta in [-20,20], with explicit domain checks and dependence-budget boundaries; do not claim arbitrary endpoint support.",
+    "Distinguish finite-template optimization from the continuous energy sphere. For effective parameter dimension two, supply analytical angular discretization bounds and outer interval bounds.",
+    "Benchmark aligned expansion, rotating expansion, a combined conflicting family (IID fallback), and three existing supplementary common-G models. Include IID explicitly.",
+    "No original 50-node network, no new manuscript rewrite, no causal adaptive attacker, no claim that covariance KL proxy is detection probability or final closed-loop performance."
+  ],
+  "numerics": {
+    "watermark_lambda": 0.5,
+    "watermark_coordinate_variance": 0.5,
+    "theta_cap": 20.0,
+    "quadrature_orders": [128, 256, 512],
+    "tested_measurement_dimensions": [2, 3, 4, 6, 10],
+    "dependence_budget_per_step": 0.1,
+    "state_risk_budget": "same worst fixed-attack contamination MSE as IID; final continuum checks additionally require energy-normalized Q(zeta)-Q(IID) to be nonpositive in every registered parameter direction",
+    "coded_energy": 10.0,
+    "supplementary_horizon": 32,
+    "supplementary_attack_support": [7, 17],
+    "continuous_angle_points": 256,
+    "outer_target_gap": 0.0005,
+    "outer_evaluation_cap": 1500,
+    "health_calibration_samples": 100000,
+    "heldout_detection_batches": 20,
+    "heldout_detection_batch_size": 5000,
+    "calibration_seed_base": 202611280000,
+    "evaluation_seed_base": 202611290000
+  },
+  "libraries": {"python": "3.11.18", "numpy": "2.4.6", "scipy": "1.17.1"},
+  "limits": "Analytical optimization bounds use floating-point evaluated norms/moments and explicit padding, not formal outward-rounded interval arithmetic. A nonzero remaining gap is reported if search cap is reached.",
+  "verification_extension": {
+    "heldout_directions": "After freezing policies, evaluate 32 energy-normalized directions with 3000 independent watermark/noise samples per scheme; compare IID/selected. Initial phase (j+.5)pi/32 accidentally lies on the 256-angle optimization grid; preserve initial results and correct phase to (8j+.5)pi/256, with unchanged policies, thresholds and seeds. Report finite-direction profile only, no continuum TPR guarantee or retuning.",
+    "onset_sensitivity": "For the three supplementary models, keep selected theta fixed and duration10; check exact-moment state risk at every valid onset 0..22 in the same 32-output horizon. Do not adjust selected policy after inspection."
+    ,"phase_state_audit": "Without reselecting theta, separately contract the state-risk polynomial over attack times7..16, post-support times17..31, and each output time. Report worst expected contamination MSE, not expected sample-path peak or event-danger probability."
+  }
+}

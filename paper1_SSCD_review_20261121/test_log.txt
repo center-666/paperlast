@@ -1,0 +1,11 @@
+test_compact_domain_and_iid (__main__.SignedDesignTests.test_compact_domain_and_iid) ... ok
+test_general_measurement_dimension_finite_api (__main__.SignedDesignTests.test_general_measurement_dimension_finite_api) ... ok
+test_m3_measurements_p2_continuum (__main__.SignedDesignTests.test_m3_measurements_p2_continuum) ... ok
+test_p3_not_silently_called_continuum (__main__.SignedDesignTests.test_p3_not_silently_called_continuum) ... ok
+test_psd_checks (__main__.SignedDesignTests.test_psd_checks) ... ok
+test_signed_sampler_stationary_marginals_and_memory (__main__.SignedDesignTests.test_signed_sampler_stationary_marginals_and_memory) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.130s
+
+OK

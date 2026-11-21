@@ -9,5 +9,6 @@
 - [2026-11-21：完整对话导出补档、续记及 T3 健康预算离线审阅](2026-11-21_T3_health_budget_review/README.md)
 - [2026-11-21：LC-TCW、标量风险界及同预算复算](2026-11-21_LC_TCW_review/README.md)
 - [2026-11-21：第一篇论文 ACMW 深化审阅、检测反例与共 G 状态风险复核](../paper1_ACMW_theory_audit_20261121/README.md)
+- [2026-11-21：SSCD 建议审阅、可运行有符号设计及连续二维方向界](../paper1_SSCD_review_20261121/README.md)
 
 后续讨论按日期追加，保留原文和修订关系，避免把待证意见改写成已证贡献。

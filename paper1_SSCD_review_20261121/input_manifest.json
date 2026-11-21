@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "baseline": "fbc003d741dee46ef206659ac5fd32e293c71501",
+  "files": [
+    {
+      "path": "inputs/01_SSCD_advice.txt",
+      "attachment_id": "758e4be7-085a-4f64-bd9e-820e542f08a5",
+      "bytes": 12619,
+      "sha256": "9baeca69093a3bfc4c94fa394b0b0b9a5d2d85ff371f5374301e436215225cbd"
+    },
+    {
+      "path": "source_snapshot/README.md",
+      "commit": "548a031874b2867c863a66771d929ed8d4c2b719",
+      "remote_path": "paper1_system_aware_signed_acmw_20261121/README.md",
+      "bytes": 10038,
+      "sha256": "7a00dd277c1b92c1a3f1674395f71727dff37a05c8f1947e50e78f1c317f2046"
+    },
+    {
+      "path": "source_snapshot/sscd.py",
+      "commit": "548a031874b2867c863a66771d929ed8d4c2b719",
+      "remote_path": "paper1_system_aware_signed_acmw_20261121/sscd.py",
+      "bytes": 9612,
+      "sha256": "98ca8d0e906471dd5836fc75a48555b4fed38ecd7820eba27324f5045fb75302"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "source_bytes_verified": true,
+  "protected_previous_models_and_code_unchanged": true,
+  "document_links_verified": true,
+  "syntax_checked": true,
+  "regression_tests_passed": true,
+  "numerical_result_consistency_passed": true,
+  "analytic_bounds_are_outward_rounded": false,
+  "continuous_attack_parameter_dimension": 2,
+  "original_50_node_validated": false,
+  "python": "3.11.18"
+}
