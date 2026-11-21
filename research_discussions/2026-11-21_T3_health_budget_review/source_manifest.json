@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "source": {
+    "attachment_id": "4d216160-63e0-44dc-88f6-6f4523fc262a",
+    "attachment_name": "Pasted text.txt",
+    "archive_path": "dialogue.txt",
+    "bytes": 93159,
+    "sha256": "47a8f8789cf71796964b60f86faaf98007e3f7b3ae67859fcac2161abcc329af",
+    "scope": "The complete supplied plaintext export, including the recorded disconnects; messages and tool outputs missing from that export cannot be reconstructed. Referenced attachments archived separately remain at their prior locations."
+  },
+  "visible_continuation": "continuation.md",
+  "prior_archives": [
+    {
+      "commit": "02327fdd8eafddc095b55401c7234e013203e38e",
+      "entry": "../2026-11-20_B1_review/README.md"
+    },
+    {
+      "commit": "6a0e4985a4640181fea69511bd2d37ef81735fe8",
+      "entry": "../2026-11-20_B1_new_theory_review/README.md"
+    },
+    {
+      "commit": "6a0e4985a4640181fea69511bd2d37ef81735fe8",
+      "entry": "../../B1_three_hypothesis_feasibility_20261120/README.md"
+    },
+    {
+      "commit": "c14f5c2b2c55bfc41832af04d65332954bedccda",
+      "entry": "../../T1_T2_T3_theory_review_20261120/README.md"
+    }
+  ]
+}
