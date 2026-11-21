@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "baseline_commit": "e32bfe98fc7f10523a815b3b349e9a8016393b9e",
+  "prior_dialogue": "../2026-11-21_T3_health_budget_review/README.md",
+  "current_dialogue": "dialogue.md",
+  "originals": [
+    {
+      "attachment_id": "467abab6-cd75-4780-a542-34ca2eb9acea",
+      "file": "inputs/01_LC_TCW_proposal.txt",
+      "bytes": 17225,
+      "sha256": "5174a6c973728d9b5b387bffc01f2a16ce0622e287b6e00584ffc7f0798b5742"
+    },
+    {
+      "attachment_id": "8db6b168-6b50-438c-8fae-8eba901d5b17",
+      "file": "inputs/02_soft_threshold_and_information_bounds.txt",
+      "bytes": 21208,
+      "sha256": "a969d158788fd44a703a7c7cf42a9d1208eb04ad64bd92831b94aca3800da037"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "distribution": {
+    "delta": 0.17865858414315983,
+    "smaller_squared_amplitude_cap": 0.2853259310255943,
+    "bin_entropy_nats": 2.676944844014735,
+    "lc_mi_exact_nats": 5.6726771175687265,
+    "lc_mi_input_upper_nats": 6.365824298128672,
+    "lc_vs_iid_tv": 0.9948591554186776,
+    "iid_near_probability": 0.3237719494214246,
+    "hard_gap_kl_floor_nats": 0.3912249069029905,
+    "hard_gap_kl_floor_bits": 0.5644182330611908,
+    "lc_left_inverse_row_bounds": [
+      12.249996789656207,
+      7.7912547986851814,
+      14.237455051814544
+    ],
+    "lc_left_inverse_frobenius_bound": 20.333991222508722,
+    "lc_min_singular_lower": 0.049178736680728447,
+    "van_trees_coefficient_lower": 0.00449485340704235
+  },
+  "scalar": [
+    {
+      "midpoints_per_axis": 128,
+      "mean_gain_squared_coupled": 2.5466694105015386,
+      "mean_noise_variance": 0.24022531477799863,
+      "difference_noise_variance": 0.9623724489795917,
+      "healthy_increment_budget": 0.004804506295559972,
+      "conservative_threshold": 3.1630860042205313,
+      "quadrature_threshold": 2.511313302704366,
+      "conservative_risk_upper": 463.75566435302085,
+      "iid_ridge_lambda": 19.285839739139192,
+      "coupled_ridge_lambda": 21.20466424105689,
+      "rows": [
+        {
+          "nuisance_bound": 0.0,
+          "coupled_soft": 0.24502982107353563,
+          "iid_ridge": 0.24502982107353233,
+          "coupled_ridge": 0.24502982107352855
+        },
+        {
+          "nuisance_bound": 1.0,
+          "coupled_soft": 1.2596023784247175,
+          "iid_ridge": 1.2495966816356705,
+          "coupled_ridge": 1.1659443820285826
+        },
+        {
+          "nuisance_bound": 3.1622776601683795,
+          "coupled_soft": 5.956766818344407,
+          "iid_ridge": 10.290698426694917,
+          "coupled_ridge": 9.454175430624069
+        },
+        {
+          "nuisance_bound": 8.0,
+          "coupled_soft": 14.34314571789864,
+          "iid_ridge": 64.53730889705038,
+          "coupled_ridge": 59.183561722196984
+        },
+        {
+          "nuisance_bound": 16.0,
+          "coupled_soft": 18.4609889542713,
+          "iid_ridge": 257.41414612498096,
+          "coupled_ridge": 235.99915742556735
+        }
+      ]
+    },
+    {
+      "midpoints_per_axis": 256,
+      "mean_gain_squared_coupled": 2.5468905442137353,
+      "mean_noise_variance": 0.24022531477799863,
+      "difference_noise_variance": 0.9623724489795917,
+      "healthy_increment_budget": 0.004804506295559972,
+      "conservative_threshold": 3.1630860042205313,
+      "quadrature_threshold": 2.511338421565597,
+      "conservative_risk_upper": 463.75566435302085,
+      "iid_ridge_lambda": 19.57175197347533,
+      "coupled_ridge_lambda": 21.340294135385193,
+      "rows": [
+        {
+          "nuisance_bound": 0.0,
+          "coupled_soft": 0.24502982107334598,
+          "iid_ridge": 0.2450298210735197,
+          "coupled_ridge": 0.24502982107352675
+        },
+        {
+          "nuisance_bound": 1.0,
+          "coupled_soft": 1.2592076884609609,
+          "iid_ridge": 1.2507666971683284,
+          "coupled_ridge": 1.1665942850773645
+        },
+        {
+          "nuisance_bound": 3.1622776601683795,
+          "coupled_soft": 5.956393117892759,
+          "iid_ridge": 10.302398582021608,
+          "coupled_ridge": 9.460674461111905
+        },
+        {
+          "nuisance_bound": 8.0,
+          "coupled_soft": 14.342908732918188,
+          "iid_ridge": 64.61218989114127,
+          "coupled_ridge": 59.225155517319145
+        },
+        {
+          "nuisance_bound": 16.0,
+          "coupled_soft": 18.462063853170065,
+          "iid_ridge": 257.7136701013445,
+          "coupled_ridge": 236.165532606056
+        }
+      ]
+    },
+    {
+      "midpoints_per_axis": 512,
+      "mean_gain_squared_coupled": 2.546870448217008,
+      "mean_noise_variance": 0.24022531477799863,
+      "difference_noise_variance": 0.9623724489795917,
+      "healthy_increment_budget": 0.004804506295559972,
+      "conservative_threshold": 3.1630860042205313,
+      "quadrature_threshold": 2.5113361389230704,
+      "conservative_risk_upper": 463.75566435302085,
+      "iid_ridge_lambda": 19.703583747847006,
+      "coupled_ridge_lambda": 21.396794758504257,
+      "rows": [
+        {
+          "nuisance_bound": 0.0,
+          "coupled_soft": 0.24502982107351362,
+          "iid_ridge": 0.24502982107355317,
+          "coupled_ridge": 0.24502982107354082
+        },
+        {
+          "nuisance_bound": 1.0,
+          "coupled_soft": 1.2590558012624389,
+          "iid_ridge": 1.2511822963380366,
+          "coupled_ridge": 1.1668275678814661
+        },
+        {
+          "nuisance_bound": 3.1622776601683795,
+          "coupled_soft": 5.956243331235997,
+          "iid_ridge": 10.30655457371839,
+          "coupled_ridge": 9.463007289152795
+        },
+        {
+          "nuisance_bound": 8.0,
+          "coupled_soft": 14.3427459640013,
+          "iid_ridge": 64.6387882380005,
+          "coupled_ridge": 59.24008561678077
+        },
+        {
+          "nuisance_bound": 16.0,
+          "coupled_soft": 18.46189066791923,
+          "iid_ridge": 257.82006348878133,
+          "coupled_ridge": 236.22525300390242
+        }
+      ]
+    }
+  ]
+}
