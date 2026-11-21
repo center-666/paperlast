@@ -1,0 +1,49 @@
+{
+  "scope": "Noiseless algebra only; no system simulation or risk comparison.",
+  "scalar": {
+    "c0": 0.5507655221338108,
+    "c1": 1.1616518484657328,
+    "state": 2.0,
+    "nuisance": 3.0,
+    "Y0": 3.652296566401432,
+    "Y1": 5.484955545397199,
+    "recovered_nuisance": 3.000000000000001,
+    "recovered_state": 1.9999999999999984
+  },
+  "two_coordinate_examples": [
+    {
+      "p0": 0.76,
+      "p1": 0.78,
+      "D": -0.5814410584954223,
+      "h_difference": 0.39073743047367104,
+      "branch": "first_difference",
+      "target": [
+        2.0,
+        0.3,
+        -0.4
+      ],
+      "recovered": [
+        1.9999999999999998,
+        0.3,
+        -0.4
+      ]
+    },
+    {
+      "p0": 0.500001,
+      "p1": 0.500004,
+      "D": -0.001977294617096175,
+      "h_difference": 0.6108811346903207,
+      "branch": "schur_difference",
+      "target": [
+        2.0,
+        0.3,
+        -0.4
+      ],
+      "recovered": [
+        1.9999999999999998,
+        0.3,
+        -0.40000000000000013
+      ]
+    }
+  ]
+}

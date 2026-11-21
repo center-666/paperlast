@@ -2,6 +2,8 @@
 
 补充问答：[最初攻击是否保留，水印怎样帮助安全状态估计](attack_to_estimation_followup.md)。
 
+用户随后明确回复“授权”；先前待推送的 `d215175`、`b480723` 已推送并核对远端为 `b480723`。后续详细问答：[两拍水印的工作机制与代数例子](two_frame_mechanism_explanation.md)。
+
 此前要求：以审核者和合作者身份给出看法和试验，并记录、上传对话和结果。[此前对话与试验](../2026-11-21_T3_health_budget_review/README.md)。
 
 **用户：** 本轮正文在两份粘贴附件中：[LC-TCW 机制](inputs/01_LC_TCW_proposal.txt)及[依赖下界、软阈值和 TCW-TSE](inputs/02_soft_threshold_and_information_bounds.txt)。两份原文逐字节保存。

@@ -4,6 +4,8 @@
 
 [两份原始材料及本轮对话](dialogue.md) · [来源与哈希](source_manifest.json) · [复算脚本](audit.py) · [完整结果](results.json) · [上轮 T3 审阅](../2026-11-21_T3_health_budget_review/README.md)。
 
+[两拍机制详细讲解](two_frame_mechanism_explanation.md)将编码、两条互补消元方程、健康收缩、时间延迟和共 G 补偿逐步连接；[无噪代数示例](mechanism_example.py)及[数值](mechanism_example.json)用于解释方程，不是性能实验。
+
 ## 哪些结论可以保留
 
 ## 当前成果层级
