@@ -1,0 +1,108 @@
+{
+  "archive": "historical50_source_bundle.zip",
+  "bytes": 224193,
+  "sha256": "6430f671e861b7de108aeae5d14c479aaac4ba54e8f0238a51be91e8d67ecab6",
+  "scope": "New portable archive of recovered historical source and explicitly regenerated defaults; not an original old-run ZIP.",
+  "members": [
+    {
+      "path": "paper1_original50_source_20261121/.gitattributes",
+      "bytes": 138,
+      "sha256": "14c4805a810791461ab403b8e7c0ad12da80822e9543179b70f131368d27d37b"
+    },
+    {
+      "path": "paper1_original50_source_20261121/build_bundle.py",
+      "bytes": 2492,
+      "sha256": "43368054a1491dfb313a4781feab8d3ae2896c77bd63a4ee0bb3ee742be57668"
+    },
+    {
+      "path": "paper1_original50_source_20261121/completeness.md",
+      "bytes": 3045,
+      "sha256": "e54162e6688ec40a5199a4c034949e21d8f0514cdda06e7be97c9af98f9d9153"
+    },
+    {
+      "path": "paper1_original50_source_20261121/configuration_snapshot.json",
+      "bytes": 54686,
+      "sha256": "c25437077cb73ac2332160e55f6183550bb8fc5318d93bb32c183a11d661b50d"
+    },
+    {
+      "path": "paper1_original50_source_20261121/dialogue.md",
+      "bytes": 2729,
+      "sha256": "1b2529f75da9528e312059d378d1e09256cb64122f634eb0c4fed4724a1dd16a"
+    },
+    {
+      "path": "paper1_original50_source_20261121/extract_config.py",
+      "bytes": 7790,
+      "sha256": "6eaf12954e92b22989607238da865108e3677acc1771b7f1fd338d659d601571"
+    },
+    {
+      "path": "paper1_original50_source_20261121/gain_interface_audit.json",
+      "bytes": 42639,
+      "sha256": "d9f266baaa443c3281c7b6c161f415ff2bbdcb6b42accd1bbf973a0c5fe3c8fc"
+    },
+    {
+      "path": "paper1_original50_source_20261121/initial_stacked_gains_regenerated.npz",
+      "bytes": 68322,
+      "sha256": "90f594867f2486e67efc93b5f2352f5705e9aa4d95df94a70aaaae331b99867d"
+    },
+    {
+      "path": "paper1_original50_source_20261121/parity_matrices_regenerated.npz",
+      "bytes": 145778,
+      "sha256": "5279091b2588cf306f61f0c657381425972e1e5bf0b1f09681651f169db55e21"
+    },
+    {
+      "path": "paper1_original50_source_20261121/parity_verification.json",
+      "bytes": 16541,
+      "sha256": "21f68b0d459338aa72b287bffd81d92145d0f644bcbba16da13e38e013f71f1d"
+    },
+    {
+      "path": "paper1_original50_source_20261121/README.md",
+      "bytes": 6569,
+      "sha256": "e9472caa73e3654320583c7ce0e53de33f830d3f849a8017b33217870d788b8e"
+    },
+    {
+      "path": "paper1_original50_source_20261121/remote_source_index.json",
+      "bytes": 809,
+      "sha256": "87d9bb90a0ba6d12ce145a2db11d77fd1b10b2764ae569466616cae5f90f5610"
+    },
+    {
+      "path": "paper1_original50_source_20261121/requirements.txt",
+      "bytes": 32,
+      "sha256": "80dfbfc982ebdf4cee539ef427c75376abb78c2c90546fb63846a35b3241d460"
+    },
+    {
+      "path": "paper1_original50_source_20261121/run_legacy.py",
+      "bytes": 2183,
+      "sha256": "6f68fe88ff383a1536eb58cdc7a99d039c740b64e127e662c6068477b7a37e86"
+    },
+    {
+      "path": "paper1_original50_source_20261121/source/simulation_arbitrary_attack_solver.py",
+      "bytes": 32970,
+      "sha256": "1a6250a0d52e68c6dcae0085ba18ff1ab7c1a1f423ed7805beb539f0540e2cb3"
+    },
+    {
+      "path": "paper1_original50_source_20261121/source/simulation_revised_detection_metrics_complete_v2.py",
+      "bytes": 68652,
+      "sha256": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a"
+    },
+    {
+      "path": "paper1_original50_source_20261121/source/simulation_revised_detection_metrics_direction_fixed.py",
+      "bytes": 45744,
+      "sha256": "6cc7c06d45d2d6664ab8cb5c63169049f4c2fc4ff56c7659797d2742bcc5177a"
+    },
+    {
+      "path": "paper1_original50_source_20261121/source_manifest.json",
+      "bytes": 1827,
+      "sha256": "27e12015bfde9e5772db7826b4aac1bda3ab7415b958c0f122aaa05dfe9bf4b4"
+    },
+    {
+      "path": "paper1_original50_source_20261121/verification.json",
+      "bytes": 562,
+      "sha256": "b95d258a158a9102a8952ddbb0af60a39030d4426ca164c9eb687ba30ecb2bcb"
+    },
+    {
+      "path": "paper1_original50_source_20261121/verify_package.py",
+      "bytes": 3504,
+      "sha256": "802f94d8150352eaa123d4cec71f8de9259c3ae12e0e0f98953b554bab1845fc"
+    }
+  ]
+}

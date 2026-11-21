@@ -1,0 +1,1116 @@
+{
+  "unstable": {
+    "max_abs_ZO": 9.604855167124058e-16,
+    "min_theta_eigenvalue": 0.7566856510146738,
+    "senders": [
+      {
+        "sender": 0,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 1,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 2,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 3,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 4,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 5,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 6,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 7,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 8,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 9,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 10,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 11,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 12,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 13,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 14,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 15,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 16,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 17,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 18,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 19,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 20,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 21,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 22,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 23,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 24,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 25,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 26,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 27,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 28,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 29,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 30,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 31,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 32,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 33,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 34,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 35,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 36,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 37,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 38,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 39,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 40,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 41,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 42,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 43,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 44,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 45,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 46,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 47,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 48,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 49,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      }
+    ],
+    "legacy_theta_diagonal_regularizer": 1e-08
+  },
+  "stable": {
+    "max_abs_ZO": 7.715691581866452e-16,
+    "min_theta_eigenvalue": 0.7921733762533812,
+    "senders": [
+      {
+        "sender": 0,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 1,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 2,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 3,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 4,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 5,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 6,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 7,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 8,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 9,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 10,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 11,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 12,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 13,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 14,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 15,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 16,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 17,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 18,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 19,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 20,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 21,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 22,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 23,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 24,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 25,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 26,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 27,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 28,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 29,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 30,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 31,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 32,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 33,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 34,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 35,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 36,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 37,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 38,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 39,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 40,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 41,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 42,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 43,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 44,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 45,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 46,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 47,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 48,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      },
+      {
+        "sender": 49,
+        "parity_shape": [
+          8,
+          10
+        ],
+        "theta_shape": [
+          8,
+          8
+        ]
+      }
+    ],
+    "legacy_theta_diagonal_regularizer": 1e-08
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "source_files": [
+    "simulation_arbitrary_attack_solver.py",
+    "simulation_revised_detection_metrics_direction_fixed.py",
+    "simulation_revised_detection_metrics_complete_v2.py"
+  ],
+  "sha256_and_git_blob_verified": true,
+  "matches_historical_hashes": true,
+  "configs_regenerated": true,
+  "graph_nodes": 50,
+  "graph_edges": 298,
+  "parity_arrays": 200,
+  "initial_stack_gain_arrays": 100,
+  "common_G_available": false,
+  "launcher_dry_run_verified": true,
+  "legacy_MC_executed": false,
+  "legacy_arbitrary_attack_optimization_executed": false
+}

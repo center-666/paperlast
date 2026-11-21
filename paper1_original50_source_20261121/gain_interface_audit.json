@@ -1,0 +1,2428 @@
+{
+  "unstable": {
+    "status": "derived first update k=1, no isolation; NOT recovered stored gains or common-G",
+    "P0": [
+      [
+        5.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "nodes": [
+      {
+        "receiver": 0,
+        "stack_sender_order": [
+          1,
+          3,
+          4,
+          9,
+          20,
+          40,
+          42,
+          0
+        ],
+        "self_block_index": 7,
+        "gain_shape": [
+          2,
+          16
+        ],
+        "maximum_neighbor_block_difference": 0.029519204594892146
+      },
+      {
+        "receiver": 1,
+        "stack_sender_order": [
+          0,
+          4,
+          5,
+          6,
+          11,
+          13,
+          21,
+          22,
+          23,
+          25,
+          29,
+          33,
+          34,
+          39,
+          40,
+          42,
+          44,
+          47,
+          1
+        ],
+        "self_block_index": 18,
+        "gain_shape": [
+          2,
+          38
+        ],
+        "maximum_neighbor_block_difference": 0.01394257630960345
+      },
+      {
+        "receiver": 2,
+        "stack_sender_order": [
+          3,
+          7,
+          10,
+          14,
+          15,
+          18,
+          19,
+          27,
+          30,
+          31,
+          32,
+          37,
+          38,
+          41,
+          46,
+          48,
+          49,
+          2
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.020352515613571615
+      },
+      {
+        "receiver": 3,
+        "stack_sender_order": [
+          0,
+          2,
+          9,
+          12,
+          20,
+          36,
+          3
+        ],
+        "self_block_index": 6,
+        "gain_shape": [
+          2,
+          14
+        ],
+        "maximum_neighbor_block_difference": 0.03469848187629367
+      },
+      {
+        "receiver": 4,
+        "stack_sender_order": [
+          0,
+          1,
+          11,
+          20,
+          25,
+          33,
+          34,
+          39,
+          40,
+          42,
+          4
+        ],
+        "self_block_index": 10,
+        "gain_shape": [
+          2,
+          22
+        ],
+        "maximum_neighbor_block_difference": 0.021926743777828682
+      },
+      {
+        "receiver": 5,
+        "stack_sender_order": [
+          1,
+          8,
+          17,
+          21,
+          22,
+          23,
+          28,
+          29,
+          34,
+          39,
+          45,
+          47,
+          5
+        ],
+        "self_block_index": 12,
+        "gain_shape": [
+          2,
+          26
+        ],
+        "maximum_neighbor_block_difference": 0.02081861445628617
+      },
+      {
+        "receiver": 6,
+        "stack_sender_order": [
+          1,
+          13,
+          21,
+          22,
+          23,
+          29,
+          33,
+          34,
+          39,
+          44,
+          47,
+          6
+        ],
+        "self_block_index": 11,
+        "gain_shape": [
+          2,
+          24
+        ],
+        "maximum_neighbor_block_difference": 0.02146093414504514
+      },
+      {
+        "receiver": 7,
+        "stack_sender_order": [
+          2,
+          10,
+          14,
+          15,
+          17,
+          18,
+          19,
+          24,
+          27,
+          31,
+          32,
+          37,
+          38,
+          40,
+          46,
+          7
+        ],
+        "self_block_index": 15,
+        "gain_shape": [
+          2,
+          32
+        ],
+        "maximum_neighbor_block_difference": 0.020579975440768478
+      },
+      {
+        "receiver": 8,
+        "stack_sender_order": [
+          5,
+          17,
+          21,
+          28,
+          29,
+          45,
+          47,
+          8
+        ],
+        "self_block_index": 7,
+        "gain_shape": [
+          2,
+          16
+        ],
+        "maximum_neighbor_block_difference": 0.04400070443207483
+      },
+      {
+        "receiver": 9,
+        "stack_sender_order": [
+          0,
+          3,
+          20,
+          9
+        ],
+        "self_block_index": 3,
+        "gain_shape": [
+          2,
+          8
+        ],
+        "maximum_neighbor_block_difference": 0.0401155550032427
+      },
+      {
+        "receiver": 10,
+        "stack_sender_order": [
+          2,
+          7,
+          14,
+          15,
+          18,
+          19,
+          27,
+          30,
+          31,
+          32,
+          38,
+          41,
+          43,
+          46,
+          48,
+          49,
+          10
+        ],
+        "self_block_index": 16,
+        "gain_shape": [
+          2,
+          34
+        ],
+        "maximum_neighbor_block_difference": 0.018641594211990072
+      },
+      {
+        "receiver": 11,
+        "stack_sender_order": [
+          1,
+          4,
+          13,
+          21,
+          22,
+          23,
+          25,
+          29,
+          33,
+          34,
+          39,
+          40,
+          42,
+          44,
+          11
+        ],
+        "self_block_index": 14,
+        "gain_shape": [
+          2,
+          30
+        ],
+        "maximum_neighbor_block_difference": 0.01691917343555317
+      },
+      {
+        "receiver": 12,
+        "stack_sender_order": [
+          3,
+          14,
+          18,
+          19,
+          30,
+          36,
+          37,
+          38,
+          43,
+          46,
+          48,
+          12
+        ],
+        "self_block_index": 11,
+        "gain_shape": [
+          2,
+          24
+        ],
+        "maximum_neighbor_block_difference": 0.028247580479302283
+      },
+      {
+        "receiver": 13,
+        "stack_sender_order": [
+          1,
+          6,
+          11,
+          21,
+          22,
+          23,
+          25,
+          29,
+          33,
+          34,
+          39,
+          44,
+          47,
+          13
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.017931557038800464
+      },
+      {
+        "receiver": 14,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          12,
+          15,
+          18,
+          19,
+          27,
+          30,
+          31,
+          32,
+          36,
+          37,
+          38,
+          43,
+          46,
+          48,
+          49,
+          14
+        ],
+        "self_block_index": 18,
+        "gain_shape": [
+          2,
+          38
+        ],
+        "maximum_neighbor_block_difference": 0.015725205168650457
+      },
+      {
+        "receiver": 15,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          14,
+          16,
+          18,
+          19,
+          27,
+          30,
+          31,
+          32,
+          38,
+          41,
+          43,
+          46,
+          48,
+          49,
+          15
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.017207408150962486
+      },
+      {
+        "receiver": 16,
+        "stack_sender_order": [
+          15,
+          26,
+          31,
+          41,
+          16
+        ],
+        "self_block_index": 4,
+        "gain_shape": [
+          2,
+          10
+        ],
+        "maximum_neighbor_block_difference": 0.04955341203925641
+      },
+      {
+        "receiver": 17,
+        "stack_sender_order": [
+          5,
+          7,
+          8,
+          21,
+          27,
+          28,
+          29,
+          31,
+          34,
+          45,
+          17
+        ],
+        "self_block_index": 10,
+        "gain_shape": [
+          2,
+          22
+        ],
+        "maximum_neighbor_block_difference": 0.03147704030212471
+      },
+      {
+        "receiver": 18,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          12,
+          14,
+          15,
+          19,
+          27,
+          30,
+          31,
+          32,
+          36,
+          37,
+          38,
+          43,
+          46,
+          48,
+          49,
+          18
+        ],
+        "self_block_index": 18,
+        "gain_shape": [
+          2,
+          38
+        ],
+        "maximum_neighbor_block_difference": 0.015725205168656036
+      },
+      {
+        "receiver": 19,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          12,
+          14,
+          15,
+          18,
+          27,
+          30,
+          32,
+          36,
+          37,
+          38,
+          43,
+          46,
+          48,
+          49,
+          19
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.016625431405297108
+      },
+      {
+        "receiver": 20,
+        "stack_sender_order": [
+          0,
+          3,
+          4,
+          9,
+          40,
+          20
+        ],
+        "self_block_index": 5,
+        "gain_shape": [
+          2,
+          12
+        ],
+        "maximum_neighbor_block_difference": 0.03143811715538742
+      },
+      {
+        "receiver": 21,
+        "stack_sender_order": [
+          1,
+          5,
+          6,
+          8,
+          11,
+          13,
+          17,
+          22,
+          23,
+          25,
+          29,
+          33,
+          34,
+          39,
+          42,
+          44,
+          47,
+          21
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.014595321214756932
+      },
+      {
+        "receiver": 22,
+        "stack_sender_order": [
+          1,
+          5,
+          6,
+          11,
+          13,
+          21,
+          23,
+          25,
+          29,
+          33,
+          34,
+          39,
+          44,
+          47,
+          22
+        ],
+        "self_block_index": 14,
+        "gain_shape": [
+          2,
+          30
+        ],
+        "maximum_neighbor_block_difference": 0.01775172141594042
+      },
+      {
+        "receiver": 23,
+        "stack_sender_order": [
+          1,
+          5,
+          6,
+          11,
+          13,
+          21,
+          22,
+          25,
+          29,
+          33,
+          34,
+          39,
+          42,
+          44,
+          47,
+          23
+        ],
+        "self_block_index": 15,
+        "gain_shape": [
+          2,
+          32
+        ],
+        "maximum_neighbor_block_difference": 0.016755940533364724
+      },
+      {
+        "receiver": 24,
+        "stack_sender_order": [
+          7,
+          25,
+          27,
+          36,
+          37,
+          38,
+          40,
+          42,
+          46,
+          24
+        ],
+        "self_block_index": 9,
+        "gain_shape": [
+          2,
+          20
+        ],
+        "maximum_neighbor_block_difference": 0.029725616788015247
+      },
+      {
+        "receiver": 25,
+        "stack_sender_order": [
+          1,
+          4,
+          11,
+          13,
+          21,
+          22,
+          23,
+          24,
+          29,
+          33,
+          34,
+          39,
+          40,
+          42,
+          25
+        ],
+        "self_block_index": 14,
+        "gain_shape": [
+          2,
+          30
+        ],
+        "maximum_neighbor_block_difference": 0.01726269666128169
+      },
+      {
+        "receiver": 26,
+        "stack_sender_order": [
+          16,
+          28,
+          35,
+          26
+        ],
+        "self_block_index": 3,
+        "gain_shape": [
+          2,
+          8
+        ],
+        "maximum_neighbor_block_difference": 0.07885133756623772
+      },
+      {
+        "receiver": 27,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          14,
+          15,
+          17,
+          18,
+          19,
+          24,
+          31,
+          32,
+          37,
+          38,
+          41,
+          46,
+          27
+        ],
+        "self_block_index": 15,
+        "gain_shape": [
+          2,
+          32
+        ],
+        "maximum_neighbor_block_difference": 0.021149219119177068
+      },
+      {
+        "receiver": 28,
+        "stack_sender_order": [
+          5,
+          8,
+          17,
+          26,
+          35,
+          45,
+          28
+        ],
+        "self_block_index": 6,
+        "gain_shape": [
+          2,
+          14
+        ],
+        "maximum_neighbor_block_difference": 0.0467440925309379
+      },
+      {
+        "receiver": 29,
+        "stack_sender_order": [
+          1,
+          5,
+          6,
+          8,
+          11,
+          13,
+          17,
+          21,
+          22,
+          23,
+          25,
+          34,
+          39,
+          42,
+          45,
+          47,
+          29
+        ],
+        "self_block_index": 16,
+        "gain_shape": [
+          2,
+          34
+        ],
+        "maximum_neighbor_block_difference": 0.01576747461968892
+      },
+      {
+        "receiver": 30,
+        "stack_sender_order": [
+          2,
+          10,
+          12,
+          14,
+          15,
+          18,
+          19,
+          32,
+          38,
+          43,
+          46,
+          48,
+          49,
+          30
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.01814763366720856
+      },
+      {
+        "receiver": 31,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          14,
+          15,
+          16,
+          17,
+          18,
+          27,
+          32,
+          37,
+          41,
+          31
+        ],
+        "self_block_index": 12,
+        "gain_shape": [
+          2,
+          26
+        ],
+        "maximum_neighbor_block_difference": 0.026261967846076838
+      },
+      {
+        "receiver": 32,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          14,
+          15,
+          18,
+          19,
+          27,
+          30,
+          31,
+          41,
+          43,
+          48,
+          49,
+          32
+        ],
+        "self_block_index": 14,
+        "gain_shape": [
+          2,
+          30
+        ],
+        "maximum_neighbor_block_difference": 0.021268271902465795
+      },
+      {
+        "receiver": 33,
+        "stack_sender_order": [
+          1,
+          4,
+          6,
+          11,
+          13,
+          21,
+          22,
+          23,
+          25,
+          34,
+          39,
+          42,
+          44,
+          33
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.017856766602859474
+      },
+      {
+        "receiver": 34,
+        "stack_sender_order": [
+          1,
+          4,
+          5,
+          6,
+          11,
+          13,
+          17,
+          21,
+          22,
+          23,
+          25,
+          29,
+          33,
+          39,
+          40,
+          42,
+          47,
+          34
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.014413404738550867
+      },
+      {
+        "receiver": 35,
+        "stack_sender_order": [
+          26,
+          28,
+          35
+        ],
+        "self_block_index": 2,
+        "gain_shape": [
+          2,
+          6
+        ],
+        "maximum_neighbor_block_difference": 0.11129265561756402
+      },
+      {
+        "receiver": 36,
+        "stack_sender_order": [
+          3,
+          12,
+          14,
+          18,
+          19,
+          24,
+          37,
+          38,
+          43,
+          46,
+          48,
+          36
+        ],
+        "self_block_index": 11,
+        "gain_shape": [
+          2,
+          24
+        ],
+        "maximum_neighbor_block_difference": 0.028202955143752657
+      },
+      {
+        "receiver": 37,
+        "stack_sender_order": [
+          2,
+          7,
+          12,
+          14,
+          18,
+          19,
+          24,
+          27,
+          31,
+          36,
+          38,
+          40,
+          46,
+          37
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.02065614604746616
+      },
+      {
+        "receiver": 38,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          12,
+          14,
+          15,
+          18,
+          19,
+          24,
+          27,
+          30,
+          36,
+          37,
+          43,
+          46,
+          48,
+          38
+        ],
+        "self_block_index": 16,
+        "gain_shape": [
+          2,
+          34
+        ],
+        "maximum_neighbor_block_difference": 0.017521364148100245
+      },
+      {
+        "receiver": 39,
+        "stack_sender_order": [
+          1,
+          4,
+          5,
+          6,
+          11,
+          13,
+          21,
+          22,
+          23,
+          25,
+          29,
+          33,
+          34,
+          40,
+          42,
+          44,
+          47,
+          39
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.014501138137302118
+      },
+      {
+        "receiver": 40,
+        "stack_sender_order": [
+          0,
+          1,
+          4,
+          7,
+          11,
+          20,
+          24,
+          25,
+          34,
+          37,
+          39,
+          42,
+          46,
+          40
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.018179492750428697
+      },
+      {
+        "receiver": 41,
+        "stack_sender_order": [
+          2,
+          10,
+          15,
+          16,
+          27,
+          31,
+          32,
+          41
+        ],
+        "self_block_index": 7,
+        "gain_shape": [
+          2,
+          16
+        ],
+        "maximum_neighbor_block_difference": 0.03694308995656416
+      },
+      {
+        "receiver": 42,
+        "stack_sender_order": [
+          0,
+          1,
+          4,
+          11,
+          21,
+          23,
+          24,
+          25,
+          29,
+          33,
+          34,
+          39,
+          40,
+          42
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.017591736912052458
+      },
+      {
+        "receiver": 43,
+        "stack_sender_order": [
+          10,
+          12,
+          14,
+          15,
+          18,
+          19,
+          30,
+          32,
+          36,
+          38,
+          46,
+          48,
+          43
+        ],
+        "self_block_index": 12,
+        "gain_shape": [
+          2,
+          26
+        ],
+        "maximum_neighbor_block_difference": 0.02314823624110967
+      },
+      {
+        "receiver": 44,
+        "stack_sender_order": [
+          1,
+          6,
+          11,
+          13,
+          21,
+          22,
+          23,
+          33,
+          39,
+          44
+        ],
+        "self_block_index": 9,
+        "gain_shape": [
+          2,
+          20
+        ],
+        "maximum_neighbor_block_difference": 0.02557297199288529
+      },
+      {
+        "receiver": 45,
+        "stack_sender_order": [
+          5,
+          8,
+          17,
+          28,
+          29,
+          47,
+          45
+        ],
+        "self_block_index": 6,
+        "gain_shape": [
+          2,
+          14
+        ],
+        "maximum_neighbor_block_difference": 0.048705076311156975
+      },
+      {
+        "receiver": 46,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          12,
+          14,
+          15,
+          18,
+          19,
+          24,
+          27,
+          30,
+          36,
+          37,
+          38,
+          40,
+          43,
+          48,
+          46
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.016360284420952505
+      },
+      {
+        "receiver": 47,
+        "stack_sender_order": [
+          1,
+          5,
+          6,
+          8,
+          13,
+          21,
+          22,
+          23,
+          29,
+          34,
+          39,
+          45,
+          47
+        ],
+        "self_block_index": 12,
+        "gain_shape": [
+          2,
+          26
+        ],
+        "maximum_neighbor_block_difference": 0.021800665109707736
+      },
+      {
+        "receiver": 48,
+        "stack_sender_order": [
+          2,
+          10,
+          12,
+          14,
+          15,
+          18,
+          19,
+          30,
+          32,
+          36,
+          38,
+          43,
+          46,
+          48
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.017777763864199072
+      },
+      {
+        "receiver": 49,
+        "stack_sender_order": [
+          2,
+          10,
+          14,
+          15,
+          18,
+          19,
+          30,
+          32,
+          49
+        ],
+        "self_block_index": 8,
+        "gain_shape": [
+          2,
+          18
+        ],
+        "maximum_neighbor_block_difference": 0.023679203780526462
+      }
+    ],
+    "common_G_equality_violations": 50,
+    "maximum_neighbor_block_difference": 0.11129265561756402
+  },
+  "stable": {
+    "status": "derived first update k=1, no isolation; NOT recovered stored gains or common-G",
+    "P0": [
+      [
+        5.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "nodes": [
+      {
+        "receiver": 0,
+        "stack_sender_order": [
+          1,
+          3,
+          4,
+          9,
+          20,
+          40,
+          42,
+          0
+        ],
+        "self_block_index": 7,
+        "gain_shape": [
+          2,
+          16
+        ],
+        "maximum_neighbor_block_difference": 0.02947851985342987
+      },
+      {
+        "receiver": 1,
+        "stack_sender_order": [
+          0,
+          4,
+          5,
+          6,
+          11,
+          13,
+          21,
+          22,
+          23,
+          25,
+          29,
+          33,
+          34,
+          39,
+          40,
+          42,
+          44,
+          47,
+          1
+        ],
+        "self_block_index": 18,
+        "gain_shape": [
+          2,
+          38
+        ],
+        "maximum_neighbor_block_difference": 0.013936626270708515
+      },
+      {
+        "receiver": 2,
+        "stack_sender_order": [
+          3,
+          7,
+          10,
+          14,
+          15,
+          18,
+          19,
+          27,
+          30,
+          31,
+          32,
+          37,
+          38,
+          41,
+          46,
+          48,
+          49,
+          2
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.02034212864005817
+      },
+      {
+        "receiver": 3,
+        "stack_sender_order": [
+          0,
+          2,
+          9,
+          12,
+          20,
+          36,
+          3
+        ],
+        "self_block_index": 6,
+        "gain_shape": [
+          2,
+          14
+        ],
+        "maximum_neighbor_block_difference": 0.03466310006009353
+      },
+      {
+        "receiver": 4,
+        "stack_sender_order": [
+          0,
+          1,
+          11,
+          20,
+          25,
+          33,
+          34,
+          39,
+          40,
+          42,
+          4
+        ],
+        "self_block_index": 10,
+        "gain_shape": [
+          2,
+          22
+        ],
+        "maximum_neighbor_block_difference": 0.021914332363172858
+      },
+      {
+        "receiver": 5,
+        "stack_sender_order": [
+          1,
+          8,
+          17,
+          21,
+          22,
+          23,
+          28,
+          29,
+          34,
+          39,
+          45,
+          47,
+          5
+        ],
+        "self_block_index": 12,
+        "gain_shape": [
+          2,
+          26
+        ],
+        "maximum_neighbor_block_difference": 0.020799243434240645
+      },
+      {
+        "receiver": 6,
+        "stack_sender_order": [
+          1,
+          13,
+          21,
+          22,
+          23,
+          29,
+          33,
+          34,
+          39,
+          44,
+          47,
+          6
+        ],
+        "self_block_index": 11,
+        "gain_shape": [
+          2,
+          24
+        ],
+        "maximum_neighbor_block_difference": 0.02144069522666498
+      },
+      {
+        "receiver": 7,
+        "stack_sender_order": [
+          2,
+          10,
+          14,
+          15,
+          17,
+          18,
+          19,
+          24,
+          27,
+          31,
+          32,
+          37,
+          38,
+          40,
+          46,
+          7
+        ],
+        "self_block_index": 15,
+        "gain_shape": [
+          2,
+          32
+        ],
+        "maximum_neighbor_block_difference": 0.020568412699192656
+      },
+      {
+        "receiver": 8,
+        "stack_sender_order": [
+          5,
+          17,
+          21,
+          28,
+          29,
+          45,
+          47,
+          8
+        ],
+        "self_block_index": 7,
+        "gain_shape": [
+          2,
+          16
+        ],
+        "maximum_neighbor_block_difference": 0.04393014311248738
+      },
+      {
+        "receiver": 9,
+        "stack_sender_order": [
+          0,
+          3,
+          20,
+          9
+        ],
+        "self_block_index": 3,
+        "gain_shape": [
+          2,
+          8
+        ],
+        "maximum_neighbor_block_difference": 0.04002687706101752
+      },
+      {
+        "receiver": 10,
+        "stack_sender_order": [
+          2,
+          7,
+          14,
+          15,
+          18,
+          19,
+          27,
+          30,
+          31,
+          32,
+          38,
+          41,
+          43,
+          46,
+          48,
+          49,
+          10
+        ],
+        "self_block_index": 16,
+        "gain_shape": [
+          2,
+          34
+        ],
+        "maximum_neighbor_block_difference": 0.01863214601926443
+      },
+      {
+        "receiver": 11,
+        "stack_sender_order": [
+          1,
+          4,
+          13,
+          21,
+          22,
+          23,
+          25,
+          29,
+          33,
+          34,
+          39,
+          40,
+          42,
+          44,
+          11
+        ],
+        "self_block_index": 14,
+        "gain_shape": [
+          2,
+          30
+        ],
+        "maximum_neighbor_block_difference": 0.016906578186168003
+      },
+      {
+        "receiver": 12,
+        "stack_sender_order": [
+          3,
+          14,
+          18,
+          19,
+          30,
+          36,
+          37,
+          38,
+          43,
+          46,
+          48,
+          12
+        ],
+        "self_block_index": 11,
+        "gain_shape": [
+          2,
+          24
+        ],
+        "maximum_neighbor_block_difference": 0.028227000417117867
+      },
+      {
+        "receiver": 13,
+        "stack_sender_order": [
+          1,
+          6,
+          11,
+          21,
+          22,
+          23,
+          25,
+          29,
+          33,
+          34,
+          39,
+          44,
+          47,
+          13
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.017917493089432874
+      },
+      {
+        "receiver": 14,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          12,
+          15,
+          18,
+          19,
+          27,
+          30,
+          31,
+          32,
+          36,
+          37,
+          38,
+          43,
+          46,
+          48,
+          49,
+          14
+        ],
+        "self_block_index": 18,
+        "gain_shape": [
+          2,
+          38
+        ],
+        "maximum_neighbor_block_difference": 0.0157183674843057
+      },
+      {
+        "receiver": 15,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          14,
+          16,
+          18,
+          19,
+          27,
+          30,
+          31,
+          32,
+          38,
+          41,
+          43,
+          46,
+          48,
+          49,
+          15
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.017199276354491057
+      },
+      {
+        "receiver": 16,
+        "stack_sender_order": [
+          15,
+          26,
+          31,
+          41,
+          16
+        ],
+        "self_block_index": 4,
+        "gain_shape": [
+          2,
+          10
+        ],
+        "maximum_neighbor_block_difference": 0.049480590037527486
+      },
+      {
+        "receiver": 17,
+        "stack_sender_order": [
+          5,
+          7,
+          8,
+          21,
+          27,
+          28,
+          29,
+          31,
+          34,
+          45,
+          17
+        ],
+        "self_block_index": 10,
+        "gain_shape": [
+          2,
+          22
+        ],
+        "maximum_neighbor_block_difference": 0.031444887242793776
+      },
+      {
+        "receiver": 18,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          12,
+          14,
+          15,
+          19,
+          27,
+          30,
+          31,
+          32,
+          36,
+          37,
+          38,
+          43,
+          46,
+          48,
+          49,
+          18
+        ],
+        "self_block_index": 18,
+        "gain_shape": [
+          2,
+          38
+        ],
+        "maximum_neighbor_block_difference": 0.015718367484306862
+      },
+      {
+        "receiver": 19,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          12,
+          14,
+          15,
+          18,
+          27,
+          30,
+          32,
+          36,
+          37,
+          38,
+          43,
+          46,
+          48,
+          49,
+          19
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.016617754030518864
+      },
+      {
+        "receiver": 20,
+        "stack_sender_order": [
+          0,
+          3,
+          4,
+          9,
+          40,
+          20
+        ],
+        "self_block_index": 5,
+        "gain_shape": [
+          2,
+          12
+        ],
+        "maximum_neighbor_block_difference": 0.03138328980996904
+      },
+      {
+        "receiver": 21,
+        "stack_sender_order": [
+          1,
+          5,
+          6,
+          8,
+          11,
+          13,
+          17,
+          22,
+          23,
+          25,
+          29,
+          33,
+          34,
+          39,
+          42,
+          44,
+          47,
+          21
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.014586552839915494
+      },
+      {
+        "receiver": 22,
+        "stack_sender_order": [
+          1,
+          5,
+          6,
+          11,
+          13,
+          21,
+          23,
+          25,
+          29,
+          33,
+          34,
+          39,
+          44,
+          47,
+          22
+        ],
+        "self_block_index": 14,
+        "gain_shape": [
+          2,
+          30
+        ],
+        "maximum_neighbor_block_difference": 0.017738690083505353
+      },
+      {
+        "receiver": 23,
+        "stack_sender_order": [
+          1,
+          5,
+          6,
+          11,
+          13,
+          21,
+          22,
+          25,
+          29,
+          33,
+          34,
+          39,
+          42,
+          44,
+          47,
+          23
+        ],
+        "self_block_index": 15,
+        "gain_shape": [
+          2,
+          32
+        ],
+        "maximum_neighbor_block_difference": 0.016744346939807194
+      },
+      {
+        "receiver": 24,
+        "stack_sender_order": [
+          7,
+          25,
+          27,
+          36,
+          37,
+          38,
+          40,
+          42,
+          46,
+          24
+        ],
+        "self_block_index": 9,
+        "gain_shape": [
+          2,
+          20
+        ],
+        "maximum_neighbor_block_difference": 0.02969886320028302
+      },
+      {
+        "receiver": 25,
+        "stack_sender_order": [
+          1,
+          4,
+          11,
+          13,
+          21,
+          22,
+          23,
+          24,
+          29,
+          33,
+          34,
+          39,
+          40,
+          42,
+          25
+        ],
+        "self_block_index": 14,
+        "gain_shape": [
+          2,
+          30
+        ],
+        "maximum_neighbor_block_difference": 0.017249567711949916
+      },
+      {
+        "receiver": 26,
+        "stack_sender_order": [
+          16,
+          28,
+          35,
+          26
+        ],
+        "self_block_index": 3,
+        "gain_shape": [
+          2,
+          8
+        ],
+        "maximum_neighbor_block_difference": 0.07867872747112777
+      },
+      {
+        "receiver": 27,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          14,
+          15,
+          17,
+          18,
+          19,
+          24,
+          31,
+          32,
+          37,
+          38,
+          41,
+          46,
+          27
+        ],
+        "self_block_index": 15,
+        "gain_shape": [
+          2,
+          32
+        ],
+        "maximum_neighbor_block_difference": 0.021137017157091823
+      },
+      {
+        "receiver": 28,
+        "stack_sender_order": [
+          5,
+          8,
+          17,
+          26,
+          35,
+          45,
+          28
+        ],
+        "self_block_index": 6,
+        "gain_shape": [
+          2,
+          14
+        ],
+        "maximum_neighbor_block_difference": 0.04668447509329
+      },
+      {
+        "receiver": 29,
+        "stack_sender_order": [
+          1,
+          5,
+          6,
+          8,
+          11,
+          13,
+          17,
+          21,
+          22,
+          23,
+          25,
+          34,
+          39,
+          42,
+          45,
+          47,
+          29
+        ],
+        "self_block_index": 16,
+        "gain_shape": [
+          2,
+          34
+        ],
+        "maximum_neighbor_block_difference": 0.01575718538913969
+      },
+      {
+        "receiver": 30,
+        "stack_sender_order": [
+          2,
+          10,
+          12,
+          14,
+          15,
+          18,
+          19,
+          32,
+          38,
+          43,
+          46,
+          48,
+          49,
+          30
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.01813520008146535
+      },
+      {
+        "receiver": 31,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          14,
+          15,
+          16,
+          17,
+          18,
+          27,
+          32,
+          37,
+          41,
+          31
+        ],
+        "self_block_index": 12,
+        "gain_shape": [
+          2,
+          26
+        ],
+        "maximum_neighbor_block_difference": 0.026242592184224575
+      },
+      {
+        "receiver": 32,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          14,
+          15,
+          18,
+          19,
+          27,
+          30,
+          31,
+          41,
+          43,
+          48,
+          49,
+          32
+        ],
+        "self_block_index": 14,
+        "gain_shape": [
+          2,
+          30
+        ],
+        "maximum_neighbor_block_difference": 0.021255909370199114
+      },
+      {
+        "receiver": 33,
+        "stack_sender_order": [
+          1,
+          4,
+          6,
+          11,
+          13,
+          21,
+          22,
+          23,
+          25,
+          34,
+          39,
+          42,
+          44,
+          33
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.01784279810936901
+      },
+      {
+        "receiver": 34,
+        "stack_sender_order": [
+          1,
+          4,
+          5,
+          6,
+          11,
+          13,
+          17,
+          21,
+          22,
+          23,
+          25,
+          29,
+          33,
+          39,
+          40,
+          42,
+          47,
+          34
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.01440484981217681
+      },
+      {
+        "receiver": 35,
+        "stack_sender_order": [
+          26,
+          28,
+          35
+        ],
+        "self_block_index": 2,
+        "gain_shape": [
+          2,
+          6
+        ],
+        "maximum_neighbor_block_difference": 0.11097301944047588
+      },
+      {
+        "receiver": 36,
+        "stack_sender_order": [
+          3,
+          12,
+          14,
+          18,
+          19,
+          24,
+          37,
+          38,
+          43,
+          46,
+          48,
+          36
+        ],
+        "self_block_index": 11,
+        "gain_shape": [
+          2,
+          24
+        ],
+        "maximum_neighbor_block_difference": 0.028182549762850766
+      },
+      {
+        "receiver": 37,
+        "stack_sender_order": [
+          2,
+          7,
+          12,
+          14,
+          18,
+          19,
+          24,
+          27,
+          31,
+          36,
+          38,
+          40,
+          46,
+          37
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.020644373264752373
+      },
+      {
+        "receiver": 38,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          12,
+          14,
+          15,
+          18,
+          19,
+          24,
+          27,
+          30,
+          36,
+          37,
+          43,
+          46,
+          48,
+          38
+        ],
+        "self_block_index": 16,
+        "gain_shape": [
+          2,
+          34
+        ],
+        "maximum_neighbor_block_difference": 0.017512907855317058
+      },
+      {
+        "receiver": 39,
+        "stack_sender_order": [
+          1,
+          4,
+          5,
+          6,
+          11,
+          13,
+          21,
+          22,
+          23,
+          25,
+          29,
+          33,
+          34,
+          40,
+          42,
+          44,
+          47,
+          39
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.014492498100293337
+      },
+      {
+        "receiver": 40,
+        "stack_sender_order": [
+          0,
+          1,
+          4,
+          7,
+          11,
+          20,
+          24,
+          25,
+          34,
+          37,
+          39,
+          42,
+          46,
+          40
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.018170961088847384
+      },
+      {
+        "receiver": 41,
+        "stack_sender_order": [
+          2,
+          10,
+          15,
+          16,
+          27,
+          31,
+          32,
+          41
+        ],
+        "self_block_index": 7,
+        "gain_shape": [
+          2,
+          16
+        ],
+        "maximum_neighbor_block_difference": 0.036904737070533405
+      },
+      {
+        "receiver": 42,
+        "stack_sender_order": [
+          0,
+          1,
+          4,
+          11,
+          21,
+          23,
+          24,
+          25,
+          29,
+          33,
+          34,
+          39,
+          40,
+          42
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.017583747000376636
+      },
+      {
+        "receiver": 43,
+        "stack_sender_order": [
+          10,
+          12,
+          14,
+          15,
+          18,
+          19,
+          30,
+          32,
+          36,
+          38,
+          46,
+          48,
+          43
+        ],
+        "self_block_index": 12,
+        "gain_shape": [
+          2,
+          26
+        ],
+        "maximum_neighbor_block_difference": 0.023132488774610646
+      },
+      {
+        "receiver": 44,
+        "stack_sender_order": [
+          1,
+          6,
+          11,
+          13,
+          21,
+          22,
+          23,
+          33,
+          39,
+          44
+        ],
+        "self_block_index": 9,
+        "gain_shape": [
+          2,
+          20
+        ],
+        "maximum_neighbor_block_difference": 0.025544431820519495
+      },
+      {
+        "receiver": 45,
+        "stack_sender_order": [
+          5,
+          8,
+          17,
+          28,
+          29,
+          47,
+          45
+        ],
+        "self_block_index": 6,
+        "gain_shape": [
+          2,
+          14
+        ],
+        "maximum_neighbor_block_difference": 0.04861878999144456
+      },
+      {
+        "receiver": 46,
+        "stack_sender_order": [
+          2,
+          7,
+          10,
+          12,
+          14,
+          15,
+          18,
+          19,
+          24,
+          27,
+          30,
+          36,
+          37,
+          38,
+          40,
+          43,
+          48,
+          46
+        ],
+        "self_block_index": 17,
+        "gain_shape": [
+          2,
+          36
+        ],
+        "maximum_neighbor_block_difference": 0.01635292119492141
+      },
+      {
+        "receiver": 47,
+        "stack_sender_order": [
+          1,
+          5,
+          6,
+          8,
+          13,
+          21,
+          22,
+          23,
+          29,
+          34,
+          39,
+          45,
+          47
+        ],
+        "self_block_index": 12,
+        "gain_shape": [
+          2,
+          26
+        ],
+        "maximum_neighbor_block_difference": 0.021780703543278806
+      },
+      {
+        "receiver": 48,
+        "stack_sender_order": [
+          2,
+          10,
+          12,
+          14,
+          15,
+          18,
+          19,
+          30,
+          32,
+          36,
+          38,
+          43,
+          46,
+          48
+        ],
+        "self_block_index": 13,
+        "gain_shape": [
+          2,
+          28
+        ],
+        "maximum_neighbor_block_difference": 0.017765684409719013
+      },
+      {
+        "receiver": 49,
+        "stack_sender_order": [
+          2,
+          10,
+          14,
+          15,
+          18,
+          19,
+          30,
+          32,
+          49
+        ],
+        "self_block_index": 8,
+        "gain_shape": [
+          2,
+          18
+        ],
+        "maximum_neighbor_block_difference": 0.023650244167353222
+      }
+    ],
+    "common_G_equality_violations": 50,
+    "maximum_neighbor_block_difference": 0.11097301944047588
+  }
+}
