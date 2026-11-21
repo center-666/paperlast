@@ -1,0 +1,166 @@
+{
+  "status": "exploratory two-sample diagnostic; not full A0 validation",
+  "settings": {
+    "Px": 1,
+    "healthy_budget_fraction": 0.02,
+    "local_block_attack_energy": 10,
+    "replicates": 15,
+    "pairs_per_replicate": 50000,
+    "sigma_diag": [
+      0.5,
+      0.5,
+      0.5,
+      0.46237244897959173
+    ],
+    "third_variance": "provisional assumption; verify against frozen full model",
+    "healthy_baseline": 0.19369489714133045,
+    "health_target": 0.19756879508415706
+  },
+  "schemes": [
+    {
+      "name": "iid Gaussian",
+      "alpha": 0,
+      "MI_nats": 0,
+      "TV": 0,
+      "delta": null,
+      "lambda_mean": 26.96306,
+      "fixed": {
+        "mean": 6.102327,
+        "sd": 0.021466
+      },
+      "adaptive": {
+        "mean": 6.285011,
+        "sd": 0.022123
+      }
+    },
+    {
+      "name": "BSCW",
+      "alpha": 0.25,
+      "MI_nats": 0.693147,
+      "TV": 0.5,
+      "delta": 0.050768,
+      "lambda_mean": 26.975564,
+      "fixed": {
+        "mean": 5.763284,
+        "sd": 0.02481
+      },
+      "adaptive": {
+        "mean": 5.946836,
+        "sd": 0.026217
+      }
+    },
+    {
+      "name": "BSCW",
+      "alpha": 0.3,
+      "MI_nats": 0.916291,
+      "TV": 0.6,
+      "delta": 0.074238,
+      "lambda_mean": 26.933449,
+      "fixed": {
+        "mean": 5.737063,
+        "sd": 0.023992
+      },
+      "adaptive": {
+        "mean": 5.920864,
+        "sd": 0.025524
+      }
+    },
+    {
+      "name": "BSCW",
+      "alpha": 0.35,
+      "MI_nats": 1.203973,
+      "TV": 0.7,
+      "delta": 0.102952,
+      "lambda_mean": 26.925916,
+      "fixed": {
+        "mean": 5.716365,
+        "sd": 0.018351
+      },
+      "adaptive": {
+        "mean": 5.899534,
+        "sd": 0.019458
+      }
+    },
+    {
+      "name": "BSCW",
+      "alpha": 0.4,
+      "MI_nats": 1.609438,
+      "TV": 0.8,
+      "delta": 0.137499,
+      "lambda_mean": 26.948412,
+      "fixed": {
+        "mean": 5.703129,
+        "sd": 0.023247
+      },
+      "adaptive": {
+        "mean": 5.887286,
+        "sd": 0.024329
+      }
+    },
+    {
+      "name": "BSCW",
+      "alpha": 0.45,
+      "MI_nats": 2.302585,
+      "TV": 0.9,
+      "delta": 0.178659,
+      "lambda_mean": 26.939062,
+      "fixed": {
+        "mean": 5.690719,
+        "sd": 0.02598
+      },
+      "adaptive": {
+        "mean": 5.875068,
+        "sd": 0.027848
+      }
+    },
+    {
+      "name": "full LC-TCW",
+      "alpha": null,
+      "MI_nats": 5.672677,
+      "TV": 0.994859,
+      "delta": null,
+      "lambda_mean": 24.418542,
+      "fixed": {
+        "mean": 5.675183,
+        "sd": 0.016787
+      },
+      "adaptive": {
+        "mean": 5.733139,
+        "sd": 0.01699
+      }
+    }
+  ],
+  "eigenvalue_diagnostic": {
+    "iid": {
+      "pairs": 100000,
+      "lambda_min_p01": 0.0003178,
+      "lambda_min_p05": 0.0035767,
+      "lambda_min_median": 0.213861
+    },
+    "BSCW_alpha_035": {
+      "pairs": 100000,
+      "lambda_min_p01": 0.0304448,
+      "lambda_min_p05": 0.0551651,
+      "lambda_min_median": 0.336677
+    },
+    "BSCW_alpha_040": {
+      "pairs": 100000,
+      "lambda_min_p01": 0.0405859,
+      "lambda_min_p05": 0.0660238,
+      "lambda_min_median": 0.33865
+    },
+    "full_LC_TCW": {
+      "pairs": 100000,
+      "lambda_min_p01": 0.0591316,
+      "lambda_min_p05": 0.0942118,
+      "lambda_min_median": 0.620708
+    }
+  },
+  "confidence_note": "SD is across 15 independent Monte Carlo replications, not a standard error or a certified integration bound. Approximate mean 95% t intervals can be reconstructed from mean, SD and n=15.",
+  "caveats": [
+    "local two-time attack energy 10 is not proven equivalent to archived ten-step coding-domain energy 10",
+    "third noise variance provisionally set to 0.5",
+    "not includes unknown onset, finite A0 template, original BF, boundary blocks, or recursive Co-G output",
+    "BSCW finite MI/TV describe watermark pair dependence, not cryptographic or attacker-conditional secrecy"
+  ]
+}
