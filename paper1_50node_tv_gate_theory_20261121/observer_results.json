@@ -1,0 +1,52 @@
+{
+  "models": [
+    {
+      "model": "unstable",
+      "uniform_F_bound_r": 0.753574813804177,
+      "uniform_F_bound_squared": 0.567875,
+      "source_theta_min": 0.760182801934664,
+      "startup_plugin_lower_bounds_by_residual_count": {
+        "2": 43.894604346860916,
+        "3": 37.623946583023645,
+        "4": 31.35328881918637
+      },
+      "forced_alarm_k5": true,
+      "fixed_known_candidates_drop": {
+        "no_gate_healthy_network_mse": 0.0720430073882098,
+        "static_drop_healthy_network_mse": 0.07268000109059301,
+        "network_relative_cost": 0.008841853296749802,
+        "no_gate_healthy_affected_mse": 0.06151637539356677,
+        "static_drop_healthy_affected_mse": 0.06788631241739888,
+        "affected_relative_cost": 0.10354864022918786,
+        "network_relative_cost_post20": 0.010848428729654636,
+        "affected_relative_cost_post20": 0.13217768144534814,
+        "attack_effect_on_static_drop_exactly_zero": true,
+        "scope": "Fixed preconfigured candidate-edge set, no unknown-location claim."
+      }
+    },
+    {
+      "model": "stable",
+      "uniform_F_bound_r": 0.6790066273608822,
+      "uniform_F_bound_squared": 0.46105,
+      "source_theta_min": 0.7963183303133808,
+      "startup_plugin_lower_bounds_by_residual_count": {
+        "2": 44.05714443590617,
+        "3": 37.76326665934815,
+        "4": 31.46938888279012
+      },
+      "forced_alarm_k5": true,
+      "fixed_known_candidates_drop": {
+        "no_gate_healthy_network_mse": 0.07201921623268405,
+        "static_drop_healthy_network_mse": 0.07265572370028346,
+        "network_relative_cost": 0.008838022695816905,
+        "no_gate_healthy_affected_mse": 0.061507917393638596,
+        "static_drop_healthy_affected_mse": 0.06787299206963264,
+        "affected_relative_cost": 0.10348382689107827,
+        "network_relative_cost_post20": 0.010844621761056716,
+        "affected_relative_cost_post20": 0.1321012809543718,
+        "attack_effect_on_static_drop_exactly_zero": true,
+        "scope": "Fixed preconfigured candidate-edge set, no unknown-location claim."
+      }
+    }
+  ]
+}

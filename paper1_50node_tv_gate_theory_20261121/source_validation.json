@@ -1,0 +1,54 @@
+{
+  "scope": "Original 50-node run_single_simulation body, only returned diagnostics extended; no source file modification, no original main or MC wrapper.",
+  "rows": [
+    {
+      "model": "unstable",
+      "attack": false,
+      "source_seed": 202611310000,
+      "source_seconds": 3.3177198000485078,
+      "estimator_max_abs_error": 1.862645149230957e-09,
+      "covariance_max_abs_error": 1.1391582122044497e-13,
+      "score_max_abs_error": 5.059789032202389e-09,
+      "score_error_within5_of_threshold": 4.175461754130083e-09,
+      "all_gate_decisions_equal": true,
+      "paired_bias_identity_max_error": 0.0
+    },
+    {
+      "model": "unstable",
+      "attack": true,
+      "source_seed": 202611310001,
+      "source_seconds": 8.252509200014174,
+      "estimator_max_abs_error": 4.656612873077393e-10,
+      "covariance_max_abs_error": 1.1391582122044497e-13,
+      "score_max_abs_error": 0.00020817900076508522,
+      "score_error_within5_of_threshold": 1.3627854400510842e-09,
+      "all_gate_decisions_equal": true,
+      "paired_bias_identity_max_error": 3.4928235554797997e-11
+    },
+    {
+      "model": "stable",
+      "attack": false,
+      "source_seed": 202611310100,
+      "source_seconds": 10.545201200060546,
+      "estimator_max_abs_error": 2.717825964282383e-13,
+      "covariance_max_abs_error": 1.677512295739092e-13,
+      "score_max_abs_error": 1.5133281294765766e-09,
+      "score_error_within5_of_threshold": 1.5133281294765766e-09,
+      "all_gate_decisions_equal": true,
+      "paired_bias_identity_max_error": 0.0
+    },
+    {
+      "model": "stable",
+      "attack": true,
+      "source_seed": 202611310101,
+      "source_seconds": 9.984839600045234,
+      "estimator_max_abs_error": 2.327027459614328e-13,
+      "covariance_max_abs_error": 1.677512295739092e-13,
+      "score_max_abs_error": 5.1867004913219716e-08,
+      "score_error_within5_of_threshold": 2.4990782776512788e-09,
+      "all_gate_decisions_equal": true,
+      "paired_bias_identity_max_error": 8.756884106730922e-15
+    }
+  ],
+  "elapsed_seconds": 32.982251000008546
+}

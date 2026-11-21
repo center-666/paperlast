@@ -1,0 +1,65 @@
+{
+  "scope": "Deterministic fixed-subset Gaussian design checks, not data-gated covariance or watermarked security performance.",
+  "models": {
+    "unstable": {
+      "information_loss_identity": "J_stacked-J_aggregate=2 sum_j (H_j-H_mean)^T(H_j-H_mean) >= 0",
+      "minimum_information_gap_eigenvalue": 0.02799868596768995,
+      "maximum_information_gap_identity_absolute_error": 2.6423307986078726e-14,
+      "trace_relative_information_loss_range": [
+        0.0035620293790857667,
+        0.015656692508092335
+      ],
+      "additional_local_only_designs_checked": 50,
+      "maximum_local_only_F_norm": 0.278814680012199,
+      "general_analytic_F_bound": 0.549364398267832,
+      "fixed_baseline_healthy_covariance": {
+        "network_mse_post20": 0.05973623225663737,
+        "affected_mse_post20": 0.0490054780285893,
+        "network_mse_all150": 0.07268644753792648
+      },
+      "fixed_drop_known_six_healthy_covariance": {
+        "network_mse_post20": 0.060375605641471146,
+        "affected_mse_post20": 0.05539921187692707,
+        "network_mse_all150": 0.07332183514852277
+      },
+      "fixed_drop_known_six_relative_healthy_cost_network_post20": 0.010703276063460443,
+      "fixed_drop_known_six_relative_healthy_cost_affected_post20": 0.13046977818699634,
+      "warning": "Known-six fixed dropping rejects every registered attack; this candidate-support knowledge does not model unknown attack locations."
+    },
+    "stable": {
+      "information_loss_identity": "J_stacked-J_aggregate=2 sum_j (H_j-H_mean)^T(H_j-H_mean) >= 0",
+      "minimum_information_gap_eigenvalue": 0.02799868596768995,
+      "maximum_information_gap_identity_absolute_error": 2.6423307986078726e-14,
+      "trace_relative_information_loss_range": [
+        0.0035620293790857667,
+        0.015656692508092335
+      ],
+      "additional_local_only_designs_checked": 50,
+      "maximum_local_only_F_norm": 0.25908288370836563,
+      "general_analytic_F_bound": 0.49118033988749893,
+      "fixed_baseline_healthy_covariance": {
+        "network_mse_post20": 0.059712142033801104,
+        "affected_mse_post20": 0.04899707351302838,
+        "network_mse_all150": 0.07265987779099585
+      },
+      "fixed_drop_known_six_healthy_covariance": {
+        "network_mse_post20": 0.0603510291182763,
+        "affected_mse_post20": 0.05538594435778039,
+        "network_mse_all150": 0.0732947333045336
+      },
+      "fixed_drop_known_six_relative_healthy_cost_network_post20": 0.010699450107040986,
+      "fixed_drop_known_six_relative_healthy_cost_affected_post20": 0.13039290689582095,
+      "warning": "Known-six fixed dropping rejects every registered attack; this candidate-support knowledge does not model unknown attack locations."
+    }
+  },
+  "future_calibration_rank_rule": {
+    "threshold": 487.0,
+    "calibration_paths": 512,
+    "one_based_rank": 488,
+    "alarm_rule": "fresh_path_max > threshold",
+    "marginal_path_fwer_bound": 0.04873294346978557,
+    "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set.",
+    "enumerated_fresh_rank_placements": 513,
+    "strict_exceedance_placements": 25
+  }
+}

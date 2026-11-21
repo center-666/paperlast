@@ -1,0 +1,257 @@
+{
+  "status": "PASS",
+  "scope": "Small engineering acceptance only; no 1,000-path common-G experiment.",
+  "seed": 2026112107,
+  "models": {
+    "unstable": {
+      "independent_aggregate_gain": {
+        "local_rows_checked": 57,
+        "maximum_gain_block_difference": 0.0,
+        "maximum_independent_one_step_update_difference": 4.440892098500626e-16,
+        "global_mask_node_mapping_checks": 3200
+      },
+      "all_64_global_masks_aggregate_vs_literal": {
+        "masks_checked": 64,
+        "nodes": 50,
+        "maximum_state_absolute_difference": 1.3969838619232178e-09,
+        "maximum_state_scaled_difference": 8.357322263695369e-16,
+        "scaled_pass_tolerance": 2e-12,
+        "node17_both_incident_bits_checked": true,
+        "all_rows_from_local_lookup": true
+      },
+      "deterministic_switching_schedule": {
+        "physical_paths": 4,
+        "global_masks_visited": 64,
+        "maximum_scaled_update_difference": 6.730042014259457e-16,
+        "schedule": "mask(b,k)=(17*b+13*k) mod 64; exogenous compatibility check only"
+      },
+      "healthy_roundtrip_transparency_gate_independent": {
+        "wm_on_and_gate_on_tested_separately": true,
+        "physical_paths": 16,
+        "maximum_roundtrip_measurement_error": 8.149072527885437e-10,
+        "maximum_scaled_measurement_error": 7.048019078952232e-14,
+        "maximum_score_difference": 2.4409061438745994e-09,
+        "maximum_gate_disagreements": 0,
+        "maximum_state_difference": 6.984919309616089e-10,
+        "maximum_scaled_state_difference": 1.0651492909689085e-14,
+        "minimum_active_M_eigenvalue": 0.49999999999999933,
+        "startup_k5_gate_fraction_both": 1.0,
+        "scaled_state_pass_tolerance": 5e-13,
+        "absolute_score_pass_tolerance": 5e-07,
+        "warning": "This verifies ideal roundtrip transparency, not SSCD-vs-IID detector power."
+      },
+      "six_individual_attack_edges_gate_off": {
+        "paths_per_edge": 8,
+        "edges": [
+          {
+            "edge_index": 0,
+            "receiver": 0,
+            "sender": 1,
+            "max_single_receiver_bias_minus_recursive_F_G_prediction": 6.002552816836041e-11,
+            "max_unaffected_receiver_bias": 0.0,
+            "max_full_paired_recursion_residual": 6.063033772903693e-11,
+            "max_absolute_error_F_process_measurement_forcing_residual": 6.546658215533796e-10,
+            "encoded_domain_source_attack_energy": 13309182.757391298
+          },
+          {
+            "edge_index": 1,
+            "receiver": 2,
+            "sender": 3,
+            "max_single_receiver_bias_minus_recursive_F_G_prediction": 2.069890347447187e-11,
+            "max_unaffected_receiver_bias": 0.0,
+            "max_full_paired_recursion_residual": 2.051904341424972e-11,
+            "max_absolute_error_F_process_measurement_forcing_residual": 5.664211044642542e-10,
+            "encoded_domain_source_attack_energy": 7975801.940769642
+          },
+          {
+            "edge_index": 2,
+            "receiver": 15,
+            "sender": 16,
+            "max_single_receiver_bias_minus_recursive_F_G_prediction": 1.513067053175689e-11,
+            "max_unaffected_receiver_bias": 0.0,
+            "max_full_paired_recursion_residual": 1.5084504928900486e-11,
+            "max_absolute_error_F_process_measurement_forcing_residual": 3.745344433897513e-10,
+            "encoded_domain_source_attack_energy": 8070926.6660209615
+          },
+          {
+            "edge_index": 3,
+            "receiver": 17,
+            "sender": 31,
+            "max_single_receiver_bias_minus_recursive_F_G_prediction": 2.3063643876664042e-11,
+            "max_unaffected_receiver_bias": 0.0,
+            "max_full_paired_recursion_residual": 2.2870624231258185e-11,
+            "max_absolute_error_F_process_measurement_forcing_residual": 3.887857050188792e-10,
+            "encoded_domain_source_attack_energy": 14105851.785969995
+          },
+          {
+            "edge_index": 4,
+            "receiver": 14,
+            "sender": 49,
+            "max_single_receiver_bias_minus_recursive_F_G_prediction": 3.0898517652409506e-11,
+            "max_unaffected_receiver_bias": 0.0,
+            "max_full_paired_recursion_residual": 3.0708045020438255e-11,
+            "max_absolute_error_F_process_measurement_forcing_residual": 8.385710181801898e-10,
+            "encoded_domain_source_attack_energy": 7385702.822692236
+          },
+          {
+            "edge_index": 5,
+            "receiver": 17,
+            "sender": 34,
+            "max_single_receiver_bias_minus_recursive_F_G_prediction": 2.082751467835378e-11,
+            "max_unaffected_receiver_bias": 0.0,
+            "max_full_paired_recursion_residual": 2.0237914303827624e-11,
+            "max_absolute_error_F_process_measurement_forcing_residual": 2.8664243201248496e-10,
+            "encoded_domain_source_attack_energy": 8159374.820156735
+          }
+        ],
+        "attack": "original dominant virtual-state waveform on one edge; IID M=.5I+beta beta prime, q=.5; no E=10 replacement",
+        "absolute_pass_tolerance": 2e-08,
+        "note": "For actual data-dependent gates the full paired identity includes mode-mismatch forcing; checked next."
+      },
+      "actual_attack_raw_plugin42_gate_check": {
+        "paths": 16,
+        "threshold": 42.0,
+        "attack_active_interval": [
+          50,
+          110
+        ],
+        "all_six_edges_gate_at_k5_fraction": 1.0,
+        "gate_disagreements_from_k117": 0,
+        "paired_identity_packet_model": "ideal sender packets y; actual floating encode/decode checked separately above",
+        "maximum_full_paired_identity_residual": 6.041853475857728e-11,
+        "maximum_mode_mismatch_forcing_from_k117": 0.0,
+        "maximum_attack_forcing_from_k117": 0.0,
+        "max_state_contamination_norm_at_k116": 0.18241447976419636,
+        "max_state_contamination_norm_at_k117": 0.00689709447960977,
+        "note": "Raw plugin threshold42 has forced k=5 startup alarm; this is preserved and explicitly exposed."
+      }
+    },
+    "stable": {
+      "independent_aggregate_gain": {
+        "local_rows_checked": 57,
+        "maximum_gain_block_difference": 0.0,
+        "maximum_independent_one_step_update_difference": 4.440892098500626e-16,
+        "global_mask_node_mapping_checks": 3200
+      },
+      "all_64_global_masks_aggregate_vs_literal": {
+        "masks_checked": 64,
+        "nodes": 50,
+        "maximum_state_absolute_difference": 7.105427357601002e-15,
+        "maximum_state_scaled_difference": 1.2626673998716996e-15,
+        "scaled_pass_tolerance": 2e-12,
+        "node17_both_incident_bits_checked": true,
+        "all_rows_from_local_lookup": true
+      },
+      "deterministic_switching_schedule": {
+        "physical_paths": 4,
+        "global_masks_visited": 64,
+        "maximum_scaled_update_difference": 8.800844088771002e-16,
+        "schedule": "mask(b,k)=(17*b+13*k) mod 64; exogenous compatibility check only"
+      },
+      "healthy_roundtrip_transparency_gate_independent": {
+        "wm_on_and_gate_on_tested_separately": true,
+        "physical_paths": 16,
+        "maximum_roundtrip_measurement_error": 1.0658141036401503e-14,
+        "maximum_scaled_measurement_error": 6.870954729482664e-15,
+        "maximum_score_difference": 1.971400820366398e-09,
+        "maximum_gate_disagreements": 0,
+        "maximum_state_difference": 7.105427357601002e-15,
+        "maximum_scaled_state_difference": 1.2826214629247336e-15,
+        "minimum_active_M_eigenvalue": 0.49999999999999933,
+        "startup_k5_gate_fraction_both": 1.0,
+        "scaled_state_pass_tolerance": 5e-13,
+        "absolute_score_pass_tolerance": 5e-07,
+        "warning": "This verifies ideal roundtrip transparency, not SSCD-vs-IID detector power."
+      },
+      "six_individual_attack_edges_gate_off": {
+        "paths_per_edge": 8,
+        "edges": [
+          {
+            "edge_index": 0,
+            "receiver": 0,
+            "sender": 1,
+            "max_single_receiver_bias_minus_recursive_F_G_prediction": 3.219646771412954e-15,
+            "max_unaffected_receiver_bias": 0.0,
+            "max_full_paired_recursion_residual": 3.3306690738754696e-15,
+            "max_absolute_error_F_process_measurement_forcing_residual": 2.67841304690819e-15,
+            "encoded_domain_source_attack_energy": 4381.382886661402
+          },
+          {
+            "edge_index": 1,
+            "receiver": 2,
+            "sender": 3,
+            "max_single_receiver_bias_minus_recursive_F_G_prediction": 3.361894096443052e-15,
+            "max_unaffected_receiver_bias": 0.0,
+            "max_full_paired_recursion_residual": 3.346281585159261e-15,
+            "max_absolute_error_F_process_measurement_forcing_residual": 4.496403249731884e-15,
+            "encoded_domain_source_attack_energy": 4485.818610045015
+          },
+          {
+            "edge_index": 2,
+            "receiver": 15,
+            "sender": 16,
+            "max_single_receiver_bias_minus_recursive_F_G_prediction": 3.774758283725532e-15,
+            "max_unaffected_receiver_bias": 0.0,
+            "max_full_paired_recursion_residual": 3.774758283725532e-15,
+            "max_absolute_error_F_process_measurement_forcing_residual": 4.6351811278100286e-15,
+            "encoded_domain_source_attack_energy": 4710.242276869267
+          },
+          {
+            "edge_index": 3,
+            "receiver": 17,
+            "sender": 31,
+            "max_single_receiver_bias_minus_recursive_F_G_prediction": 2.1649348980190553e-15,
+            "max_unaffected_receiver_bias": 0.0,
+            "max_full_paired_recursion_residual": 2.0816681711721685e-15,
+            "max_absolute_error_F_process_measurement_forcing_residual": 3.774758283725532e-15,
+            "encoded_domain_source_attack_energy": 3928.253051921398
+          },
+          {
+            "edge_index": 4,
+            "receiver": 14,
+            "sender": 49,
+            "max_single_receiver_bias_minus_recursive_F_G_prediction": 3.4416913763379853e-15,
+            "max_unaffected_receiver_bias": 0.0,
+            "max_full_paired_recursion_residual": 3.6637359812630166e-15,
+            "max_absolute_error_F_process_measurement_forcing_residual": 4.551914400963142e-15,
+            "encoded_domain_source_attack_energy": 2741.873155339923
+          },
+          {
+            "edge_index": 5,
+            "receiver": 17,
+            "sender": 34,
+            "max_single_receiver_bias_minus_recursive_F_G_prediction": 2.6367796834847468e-15,
+            "max_unaffected_receiver_bias": 0.0,
+            "max_full_paired_recursion_residual": 2.6367796834847468e-15,
+            "max_absolute_error_F_process_measurement_forcing_residual": 3.885780586188048e-15,
+            "encoded_domain_source_attack_energy": 4819.999902298927
+          }
+        ],
+        "attack": "original dominant virtual-state waveform on one edge; IID M=.5I+beta beta prime, q=.5; no E=10 replacement",
+        "absolute_pass_tolerance": 2e-08,
+        "note": "For actual data-dependent gates the full paired identity includes mode-mismatch forcing; checked next."
+      },
+      "actual_attack_raw_plugin42_gate_check": {
+        "paths": 16,
+        "threshold": 42.0,
+        "attack_active_interval": [
+          50,
+          110
+        ],
+        "all_six_edges_gate_at_k5_fraction": 1.0,
+        "gate_disagreements_from_k117": 0,
+        "paired_identity_packet_model": "ideal sender packets y; actual floating encode/decode checked separately above",
+        "maximum_full_paired_identity_residual": 3.2612801348363973e-15,
+        "maximum_mode_mismatch_forcing_from_k117": 0.0,
+        "maximum_attack_forcing_from_k117": 0.0,
+        "max_state_contamination_norm_at_k116": 0.13778715839858022,
+        "max_state_contamination_norm_at_k117": 0.0045995915425608505,
+        "note": "Raw plugin threshold42 has forced k=5 startup alarm; this is preserved and explicitly exposed."
+      }
+    }
+  },
+  "input_hashes": {
+    "gain_table_sha256": "57108c5f23138d5621138e4060e118144d34088b70bce1d9d3fc4a2914cd224e",
+    "physical_configuration_sha256": "c25437077cb73ac2332160e55f6183550bb8fc5318d93bb32c183a11d661b50d"
+  }
+}

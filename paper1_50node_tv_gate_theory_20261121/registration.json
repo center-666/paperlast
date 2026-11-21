@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "baseline": "049bdc6f657c6746678df5138c9b0c02f29dedbc",
+  "role": "Reviewer and research collaborator; continue Paper 1 theory and verification",
+  "authorization": "User first asked to continue theoretical work, then explicitly authorized long theoretical progression and experimental validation. Prior instructions require archiving and uploading discussion and results.",
+  "source": {
+    "file": "../paper1_original50_source_20261121/source/simulation_revised_detection_metrics_complete_v2.py",
+    "sha256": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a",
+    "nodes": 50,
+    "edges": 298,
+    "horizon": 150,
+    "attack_interval": [50,110],
+    "attack_links_receiver_sender": [[0,1],[2,3],[15,16],[17,31],[14,49],[17,34]],
+    "state_models": ["unstable","stable"],
+    "original_magnitudes": {"unstable":6.0,"stable":10.0},
+    "coded_energy": "Compute from original magnitude, actual H and 60-tap waveform; do NOT substitute E=10",
+    "lambda": 0.5,
+    "coordinate_variance_q": 0.5,
+    "parity_order": 4,
+    "residual_buffer": 4,
+    "legacy_plugin_score_threshold": 42.0
+  },
+  "phases": [
+    "Derive deterministic time-varying stacked-KF response and multistream Q polynomial; keep source covariance update and all mean cross-source terms.",
+    "Prove actual same-tick gate paired recursion, healthy invariance, uniform observer/Riccati contraction and post-stop coalescence/recovery, with scope conditions.",
+    "Validate an information-form algebraic replay against the original run_single_simulation function body with only return-value instrumentation; never call legacy main or arbitrary-attack optimizer.",
+    "Use isolated physical/radial/direction RNG streams; pair initial active-window M across kernels to test first-attacked-packet invariance.",
+    "Evaluate IID, theta=-1.315236976827179 and theta=+1.315236976827179 plus a predata moment-design selection, with gates off / legacy42 / independently calibrated score threshold.",
+    "Diagnose complete raw residual-buffer support rather than assume independent residuals; 4x8 residual coordinates from 8x2 packets require effective-support analysis.",
+    "Keep all recovered source, old artifacts and manuscripts unchanged."
+  ],
+  "validation_sizes": {
+    "original_function_paths": 4,
+    "healthy_calibration_paths_per_model": 512,
+    "paired_evaluation_paths_per_model": 1024,
+    "batch_size": 64,
+    "calibration_path_max_target_fwer": 0.05,
+    "score_evaluation_times": [20,149],
+    "calibration_decision_times": [4,149],
+    "primary_attack_score_times": [57,109],
+    "gate_coalescence_from":117,
+    "watermark_information_per_step_nats":0.1
+  },
+  "design": {
+    "parameters": "one common signed zeta/theta, independently generated chains per source",
+    "effective_attack_parameter_dimension":2,
+    "attack_robustness_set": "same common virtual-state parameter shared by six source attacks, generalized exact-energy shell at the original fixed waveform's aggregate coded energy; original dominant-mode attacks reported separately",
+    "detector_objective": "minimum across the six links of a trace-Jensen lower bound for first fully attacked joint-buffer marginal KL on effective support, not the actual plugin-score distribution",
+    "state_constraint": "no-gate 150-time network mean contamination Q(zeta)-Q(IID) numerically nonpositive on the registered effective parameter space",
+    "search": "include IID; finite signed grid and boundary refinement, disclose absence of whole-dimensional actual-power guarantee"
+  },
+  "metrics": ["network expected MSE","affected-receiver expected MSE","legacy mean of per-path network RMSE","attack/after-support/recovery phases","per-link alarms and first eligible alarm delays","healthy path-wise false-alarm event","gate and Riccati-path disagreement","gain-mismatch forcing","same initial attack tick identity","unaffected45 identity","post117 gate equality"],
+  "theory_driven_additions_before_calibration": [
+    "The n=2,d=8 plugin covariance rank/epsilon artifact analytically forces startup alarms at k5 under threshold42. Calibrated variant therefore uses max score across all actual decision times k4..149; retain legacy42 and its source-valid times20..149 separately.",
+    "Add always-reject-the-six-preconfigured-candidate-edges as a known-candidate/oracle baseline. Source already monitors only those six. Report its global AND affected-node healthy MSE cost against an untuned 2% reference; do not swap primary metric after observing it. This is not a baseline for unknown attack locations."
+  ],
+  "environment": {"python":"3.14.9","numpy":"2.5.4","scipy":"1.18.1","networkx":"3.7","matplotlib":"3.11.2"},
+  "limits": "Historical engine is stacked KF, NOT the paper common-G. New information-form replay is algebraically equivalent in exact arithmetic and independently checked numerically. Calibration is empirical with independent validation, not a guaranteed 5% FWER certificate. Moment design does not certify endogenous gated-loop superiority.",
+  "seeds": {"source_validation":202611310000,"calibration":202612010000,"evaluation_physical":202612020000,"evaluation_watermark":202612030000}
+}

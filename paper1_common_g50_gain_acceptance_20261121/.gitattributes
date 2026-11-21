@@ -1,0 +1,9 @@
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+physical_configuration.json -text
+user_input_common_g.txt -text
+*.npz binary
+.gitattributes text eol=lf
+.gitignore text eol=lf

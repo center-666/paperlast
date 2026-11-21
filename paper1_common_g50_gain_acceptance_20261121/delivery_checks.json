@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "new_simulations": 0,
+  "physical_config_matches_git_049bdc6": true,
+  "source_and_assumption_checks": true,
+  "rational_checks_verified": 228,
+  "acceptance_input_hashes_match": true,
+  "legacy_saved_statistics_read_back": true,
+  "relative_markdown_links_checked": 39,
+  "folders": {
+    "paper1_50node_tv_gate_theory_20261121": {
+      "file_count": 28,
+      "total_bytes": 3743768
+    },
+    "paper1_common_g50_gain_acceptance_20261121": {
+      "file_count": 21,
+      "total_bytes": 952783
+    }
+  },
+  "limits": "No common-G SSCD efficacy validation; no conditional-MMSE or floating-instruction certificate."
+}

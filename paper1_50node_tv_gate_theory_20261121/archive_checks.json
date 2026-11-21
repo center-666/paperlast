@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "new_physical_paths": 0,
+  "models": {
+    "unstable": {
+      "paths": 1024,
+      "calibration_paths": 512,
+      "saved_arrays": 215,
+      "scalar_summaries_verified": 197,
+      "paired_comparisons_verified": 30,
+      "delay_tables_verified": 18
+    },
+    "stable": {
+      "paths": 1024,
+      "calibration_paths": 512,
+      "saved_arrays": 215,
+      "scalar_summaries_verified": 197,
+      "paired_comparisons_verified": 30,
+      "delay_tables_verified": 18
+    }
+  },
+  "source_sha256": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a"
+}

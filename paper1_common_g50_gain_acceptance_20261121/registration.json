@@ -1,0 +1,75 @@
+{
+  "research_batch_date": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "baseline_commit": "049bdc6f657c6746678df5138c9b0c02f29dedbc",
+  "role": "Independent reviewer and research collaborator on revision of Paper 1",
+  "latest_user_input": "user_input_common_g.txt",
+  "scope": "Freeze NEW aggregate-observation nominal common-G gains; implement runner; pass three engineering acceptances before common-G SSCD efficacy experiments.",
+  "latest_user_bound": "Do not launch new 1000-path common-G Monte Carlo at this stage.",
+  "prior_phase": "The sibling paper1_50node_tv_gate_theory_20261121 study had already completed legacy stacked-KF 512 calibration and 1024 evaluation paths per model before the latest input arrived. Preserve that estimator identity.",
+  "physical_configuration_sha256": "c25437077cb73ac2332160e55f6183550bb8fc5318d93bb32c183a11d661b50d",
+  "source_physical_configuration": "049bdc6:paper1_original50_source_20261121/configuration_snapshot.json",
+  "mode_counts": {
+    "baseline_local_gains_per_dynamics": 50,
+    "registered_local_gain_modes_per_dynamics": 57,
+    "joint_global_masks_per_dynamics": 64,
+    "distinct_local_mode_matrices_both_dynamics": 114,
+    "exact_coefficient_semantics": ["literal_decimal", "parsed_IEEE_binary"],
+    "rational_Sylvester_checks": 228
+  },
+  "gain_protocol": {
+    "nominal_model": "C=[H_i; sum retained H_j], V=blockdiag(R_i,sum retained R_j)",
+    "current_mode_lookup_only": true,
+    "recursive_P_determines_future_gain": false,
+    "local_measurement_always_retained": true,
+    "same_G_for_all_retained_neighbors_of_one_receiver": true,
+    "single_global_G_for_all_50_nodes": false,
+    "empty_neighbor_set": "Drop aggregate block; use local H_i,R_i only; G=0",
+    "posterior_iteration_initial_P": "5 I",
+    "posterior_iteration_stopping_Frobenius_step": 1e-14,
+    "independent_check": "Dual scipy.linalg.solve_discrete_are"
+  },
+  "acceptance_seeds": {
+    "base": 2026112107,
+    "physical_streams": "Explicitly generated once and reused across compared runs",
+    "watermark_streams": "Independent of physical stream, indexed in verify_acceptance.py"
+  },
+  "final_acceptance_sizes_per_model": {
+    "static_global_mask_compatibility_paths": 64,
+    "time_varying_exogenous_mask_paths": 4,
+    "healthy_roundtrip_paths": 16,
+    "individual_attack_paths_per_edge": 8,
+    "individual_attack_edges": 6,
+    "actual_raw42_gate_attack_paths": 16,
+    "total_distinct_final_test_physical_paths": 148,
+    "note": "Engineering fixtures; repeated development runs reuse registered seeds and do not become independent efficacy trials. One earlier single-path smoke run was diagnostic only."
+  },
+  "detector": {
+    "identity": "Recovered raw parity s=4 and four residual plugin-Gaussian-KL score",
+    "compatibility_threshold": 42.0,
+    "chi_square_replacement": false,
+    "non_latched_gate_reads_unpruned_raw_packets": true,
+    "startup_k5_forced_alarm": "Retain and disclose, not silently repair",
+    "post_attack_raw_buffer_coalescence_from": 117,
+    "marginal_rank_calibration_helper": "Future optional rule only, not activated or retroactively substituted"
+  },
+  "attack": {
+    "links_receiver_sender": [[0,1],[2,3],[15,16],[17,31],[14,49],[17,34]],
+    "interval_half_open": [50,110],
+    "original_virtual_state_magnitude_unstable_stable": [6,10],
+    "replace_with_coded_E10": false,
+    "decoded_channel_offset": "M_sender,k a_edge,k"
+  },
+  "additional_deterministic_checks": [
+    "Information loss identity of raw neighbor-sum compression vs full stacking",
+    "100 additional local-only DARE edge cases, not part of the 114-row registered table",
+    "True healthy covariance recursion under fixed baseline and fixed-known-six-dropping protocols, initial true error covariance I",
+    "513 deterministic held-out rank placements for the future calibration rule; these are not physical simulation paths"
+  ],
+  "claim_limits": [
+    "New gain design, not recovered historical gains",
+    "Mode DARE P is not the true covariance or conditional MMSE after data-dependent selection",
+    "Rational certificate covers exact coefficient real models, not every floating-point instruction",
+    "No new 1000-path common-G MC; no common-G SSCD detection-estimation superiority claim"
+  ]
+}

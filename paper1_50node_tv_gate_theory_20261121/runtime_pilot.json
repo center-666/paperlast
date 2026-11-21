@@ -1,0 +1,14 @@
+[
+  {
+    "model": "unstable",
+    "paths": 16,
+    "seconds": 0.2557931001065299,
+    "identity_error": 6.105534133826751e-11
+  },
+  {
+    "model": "stable",
+    "paths": 16,
+    "seconds": 0.26252430002205074,
+    "identity_error": 5.486930354514641e-15
+  }
+]

@@ -1,0 +1,7 @@
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.txt text eol=lf
+*.npz binary
+.gitattributes text eol=lf
+.gitignore text eol=lf
