@@ -276,20 +276,20 @@
     "m2": {
       "iid_E_cos2": 0.5,
       "coupled_E_cos2": 0.3437635119,
-      "MI_per_step_nats": 0.1008321421,
-      "window_L5_total_correlation_nats": 0.4033285684
+      "MI_per_step_exact_nats": 0.1008321421,
+      "window_L5_total_correlation_exact_nats": 0.4033285684
     },
     "m3": {
       "iid_E_cos2": 0.3333333333,
       "coupled_E_cos2": 0.2354047281,
-      "MI_per_step_nats": 0.0594393078,
-      "window_L5_total_correlation_nats": 0.2377572312
+      "MI_per_step_exact_nats": 0.0594393078,
+      "window_L5_total_correlation_exact_nats": 0.2377572312
     },
     "m4": {
       "iid_E_cos2": 0.25,
       "coupled_E_cos2": 0.1830182328,
-      "MI_per_step_nats": 0.0402029256,
-      "window_L5_total_correlation_nats": 0.1608117024
+      "MI_per_step_exact_nats": 0.0402029256,
+      "window_L5_total_correlation_exact_nats": 0.1608117024
     }
   },
   "validation": {
