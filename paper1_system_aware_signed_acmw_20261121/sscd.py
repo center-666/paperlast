@@ -173,6 +173,7 @@ def optimize_signed_zeta(
     attack_energy: float,
     dependence_budget: float,
     state_risk_budget: float,
+    watermark_variance: float,
     grid_size: int = 2001,
 ):
     """Robust one-dimensional screen.
@@ -185,6 +186,10 @@ def optimize_signed_zeta(
     if not attack_templates:
         raise ValueError("at least one nonzero, parity-effective attack template is required")
     L = attack_templates[0][0].shape[0]
+    if any(np.asarray(d).shape[0] != L for d, _, _ in attack_templates):
+        raise ValueError('all attack templates must use the same window length')
+    if watermark_variance <= 0:
+        raise ValueError('watermark_variance must be positive')
     candidates = []
     zlo = -1.0/(m-1.0) + 1e-5
     zhi = 1.0 - 1e-5
@@ -197,7 +202,7 @@ def optimize_signed_zeta(
         risk = _worst_energy_risk(Q, energy_gram, attack_energy)
         detections = []
         for d, Z, Theta in attack_templates:
-            C = parity_covariance(d, Z, zeta, q=1.0)
+            C = parity_covariance(d, Z, zeta, q=watermark_variance)
             detections.append(gaussian_covariance_kl_proxy(Theta, C))
         det = float(min(detections))
         feasible = info <= dependence_budget and risk <= state_risk_budget
