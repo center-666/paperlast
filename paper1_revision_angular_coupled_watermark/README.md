@@ -83,7 +83,7 @@ I_m(\kappa,\rho)=
 \]
 由于 \(M_k\) 只保留方向的投影 \(u_ku_k^\top\) 和半径，且转移核对 \(u\mapsto-u\) 不变，
 \[
-I(M_k;M_{k+1})\le I_m(\kappa,\rho).
+I(M_k;M_{k+1})= I_m(\kappa,\rho).
 \]
 矩阵序列本身是平稳 Markov 过程，因此长度 \(L\) 窗口相对 iid 边缘乘积分布的总相关为
 \[
