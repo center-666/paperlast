@@ -1,0 +1,331 @@
+{
+  "kind": "paper1_commonG_final_risk_bound_audit",
+  "note": "Independent pilot for source-frozen 50-node common-G; not a final efficacy study",
+  "n_calibration": 512,
+  "n_paths": 64,
+  "seed": 2026112411,
+  "models": {
+    "unstable": {
+      "threshold": 60.16061656354446,
+      "policies": {
+        "iid": {
+          "c_spectral_max": 0.0968185374696248,
+          "exact_recurrence_max_abs": 1.1751845293031908e-10,
+          "paired_identity_max_abs": 5.551115123125783e-17,
+          "J_healthy": {
+            "mean": 0.07255469248117946,
+            "path_se": 0.0018050991244921812,
+            "n_paths": 64
+          },
+          "J_attacked": {
+            "mean": 0.07444206637390988,
+            "path_se": 0.0018272408937720281,
+            "n_paths": 64
+          },
+          "J_pair_bias": {
+            "mean": 0.001849984238788366,
+            "path_se": 8.09975200296465e-05,
+            "n_paths": 64
+          },
+          "J_pair_bias_bound": {
+            "mean": 0.002188641036179927,
+            "path_se": 9.40289870343362e-05,
+            "n_paths": 64
+          },
+          "J_attacked_bound": {
+            "mean": 0.09952160691141371,
+            "path_se": 0.0022853690188399936,
+            "n_paths": 64
+          },
+          "U_selection": {
+            "mean": 0.0002447990598337796,
+            "path_se": 2.341360835756615e-06,
+            "n_paths": 64
+          },
+          "U_attack_forcing": {
+            "mean": 0.001541142683764353,
+            "path_se": 7.678961063279823e-05,
+            "n_paths": 64
+          },
+          "U_selection_attack_cross": {
+            "mean": -5.86808507742279e-07,
+            "path_se": 2.424390335767294e-06,
+            "n_paths": 64
+          },
+          "U_total": {
+            "mean": 0.0017853549350903904,
+            "path_se": 7.670290068960468e-05,
+            "n_paths": 64
+          },
+          "bound_to_attacked_mse_ratio": 1.3369001125188218
+        },
+        "negative": {
+          "c_spectral_max": 0.0968185374696248,
+          "exact_recurrence_max_abs": 1.1751845293031908e-10,
+          "paired_identity_max_abs": 2.220446049250313e-16,
+          "J_healthy": {
+            "mean": 0.07255469248117946,
+            "path_se": 0.0018050991244921812,
+            "n_paths": 64
+          },
+          "J_attacked": {
+            "mean": 0.0743894590787662,
+            "path_se": 0.001819426501563477,
+            "n_paths": 64
+          },
+          "J_pair_bias": {
+            "mean": 0.0018121362105609378,
+            "path_se": 8.147283535766468e-05,
+            "n_paths": 64
+          },
+          "J_pair_bias_bound": {
+            "mean": 0.0021469319224498157,
+            "path_se": 9.499995529044068e-05,
+            "n_paths": 64
+          },
+          "J_attacked_bound": {
+            "mean": 0.09925093047780634,
+            "path_se": 0.002270239014534795,
+            "n_paths": 64
+          },
+          "U_selection": {
+            "mean": 0.0002446584724415858,
+            "path_se": 2.4270717017883884e-06,
+            "n_paths": 64
+          },
+          "U_attack_forcing": {
+            "mean": 0.0015057807649102874,
+            "path_se": 7.745737956468268e-05,
+            "n_paths": 64
+          },
+          "U_selection_attack_cross": {
+            "mean": 8.920406813176284e-07,
+            "path_se": 2.0213681587719525e-06,
+            "n_paths": 64
+          },
+          "U_total": {
+            "mean": 0.0017513312780331907,
+            "path_se": 7.749495518332741e-05,
+            "n_paths": 64
+          },
+          "bound_to_attacked_mse_ratio": 1.3342069119324542
+        },
+        "positive": {
+          "c_spectral_max": 0.0968185374696248,
+          "exact_recurrence_max_abs": 1.1751845293031908e-10,
+          "paired_identity_max_abs": 5.551115123125783e-17,
+          "J_healthy": {
+            "mean": 0.07255469248117946,
+            "path_se": 0.0018050991244921812,
+            "n_paths": 64
+          },
+          "J_attacked": {
+            "mean": 0.07494881304808279,
+            "path_se": 0.0018365571244170562,
+            "n_paths": 64
+          },
+          "J_pair_bias": {
+            "mean": 0.002332688899641122,
+            "path_se": 0.00012482573986339655,
+            "n_paths": 64
+          },
+          "J_pair_bias_bound": {
+            "mean": 0.00275931957936552,
+            "path_se": 0.00014592118738704848,
+            "n_paths": 64
+          },
+          "J_attacked_bound": {
+            "mean": 0.10305294076454893,
+            "path_se": 0.002454982451146557,
+            "n_paths": 64
+          },
+          "U_selection": {
+            "mean": 0.0002428794715016167,
+            "path_se": 2.3798857365120625e-06,
+            "n_paths": 64
+          },
+          "U_attack_forcing": {
+            "mean": 0.0020070375029523904,
+            "path_se": 0.0001193163483459679,
+            "n_paths": 64
+          },
+          "U_selection_attack_cross": {
+            "mean": 9.614231795724333e-07,
+            "path_se": 3.096505778790627e-06,
+            "n_paths": 64
+          },
+          "U_total": {
+            "mean": 0.00225087839763358,
+            "path_se": 0.00011903327577665841,
+            "n_paths": 64
+          },
+          "bound_to_attacked_mse_ratio": 1.3749776223732346
+        }
+      }
+    },
+    "stable": {
+      "threshold": 60.714175788718954,
+      "policies": {
+        "iid": {
+          "c_spectral_max": 0.09042885824673076,
+          "exact_recurrence_max_abs": 4.839878497975292e-15,
+          "paired_identity_max_abs": 4.440892098500626e-16,
+          "J_healthy": {
+            "mean": 0.07404294088185742,
+            "path_se": 0.002433377560934831,
+            "n_paths": 64
+          },
+          "J_attacked": {
+            "mean": 0.0785833176119979,
+            "path_se": 0.002444890644374646,
+            "n_paths": 64
+          },
+          "J_pair_bias": {
+            "mean": 0.004528746331110567,
+            "path_se": 0.00010172204759878146,
+            "n_paths": 64
+          },
+          "J_pair_bias_bound": {
+            "mean": 0.0053129934345199446,
+            "path_se": 0.00011823162182181191,
+            "n_paths": 64
+          },
+          "J_attacked_bound": {
+            "mean": 0.11862849240341326,
+            "path_se": 0.00309343868127858,
+            "n_paths": 64
+          },
+          "U_selection": {
+            "mean": 0.00016215197852134086,
+            "path_se": 2.3916398429451088e-06,
+            "n_paths": 64
+          },
+          "U_attack_forcing": {
+            "mean": 0.004230677898365285,
+            "path_se": 9.937754359842685e-05,
+            "n_paths": 64
+          },
+          "U_selection_attack_cross": {
+            "mean": 2.71405509230105e-06,
+            "path_se": 5.578660159529584e-06,
+            "n_paths": 64
+          },
+          "U_total": {
+            "mean": 0.004395543931978928,
+            "path_se": 9.781534539273329e-05,
+            "n_paths": 64
+          },
+          "bound_to_attacked_mse_ratio": 1.5095887525280731
+        },
+        "negative": {
+          "c_spectral_max": 0.09042885824673076,
+          "exact_recurrence_max_abs": 4.839878497975292e-15,
+          "paired_identity_max_abs": 4.440892098500626e-16,
+          "J_healthy": {
+            "mean": 0.07404294088185742,
+            "path_se": 0.002433377560934831,
+            "n_paths": 64
+          },
+          "J_attacked": {
+            "mean": 0.07786295250221917,
+            "path_se": 0.00243480854933351,
+            "n_paths": 64
+          },
+          "J_pair_bias": {
+            "mean": 0.0038150388720794275,
+            "path_se": 8.541954239875109e-05,
+            "n_paths": 64
+          },
+          "J_pair_bias_bound": {
+            "mean": 0.004487690970296651,
+            "path_se": 9.971032416923205e-05,
+            "n_paths": 64
+          },
+          "J_attacked_bound": {
+            "mean": 0.11459794472079356,
+            "path_se": 0.002970448994787615,
+            "n_paths": 64
+          },
+          "U_selection": {
+            "mean": 0.00017072772853528822,
+            "path_se": 2.4477032735234526e-06,
+            "n_paths": 64
+          },
+          "U_attack_forcing": {
+            "mean": 0.0035423620718707713,
+            "path_se": 8.362655494097687e-05,
+            "n_paths": 64
+          },
+          "U_selection_attack_cross": {
+            "mean": -3.3482410212218147e-07,
+            "path_se": 3.7541829497025633e-06,
+            "n_paths": 64
+          },
+          "U_total": {
+            "mean": 0.0037127549763039374,
+            "path_se": 8.249231168066002e-05,
+            "n_paths": 64
+          },
+          "bound_to_attacked_mse_ratio": 1.4717903834628852
+        },
+        "positive": {
+          "c_spectral_max": 0.09042885824673076,
+          "exact_recurrence_max_abs": 4.839878497975292e-15,
+          "paired_identity_max_abs": 4.440892098500626e-16,
+          "J_healthy": {
+            "mean": 0.07404294088185742,
+            "path_se": 0.002433377560934831,
+            "n_paths": 64
+          },
+          "J_attacked": {
+            "mean": 0.07923837912170638,
+            "path_se": 0.002429620098824312,
+            "n_paths": 64
+          },
+          "J_pair_bias": {
+            "mean": 0.005169085453699064,
+            "path_se": 0.0001212083552708646,
+            "n_paths": 64
+          },
+          "J_pair_bias_bound": {
+            "mean": 0.00604936242881568,
+            "path_se": 0.0001406268463348835,
+            "n_paths": 64
+          },
+          "J_attacked_bound": {
+            "mean": 0.12189751948279501,
+            "path_se": 0.003028821926125726,
+            "n_paths": 64
+          },
+          "U_selection": {
+            "mean": 0.00015035225749106571,
+            "path_se": 2.3608173052486955e-06,
+            "n_paths": 64
+          },
+          "U_attack_forcing": {
+            "mean": 0.004850119439033546,
+            "path_se": 0.0001171054906972305,
+            "n_paths": 64
+          },
+          "U_selection_attack_cross": {
+            "mean": 4.284782856325985e-06,
+            "path_se": 4.636296215808916e-06,
+            "n_paths": 64
+          },
+          "U_total": {
+            "mean": 0.005004756479380937,
+            "path_se": 0.00011634335496529398,
+            "n_paths": 64
+          },
+          "bound_to_attacked_mse_ratio": 1.5383646262572612
+        }
+      }
+    }
+  },
+  "hashes": {
+    "gain_table.json": "57108c5f23138d5621138e4060e118144d34088b70bce1d9d3fc4a2914cd224e",
+    "physical_configuration.json": "c25437077cb73ac2332160e55f6183550bb8fc5318d93bb32c183a11d661b50d",
+    "run_common_g_50.py": "22ea30c33321da57aac0bf56b987221b529fc5020ada74b6cc789615f42d096c",
+    "replay.py": "05e68f702ccea35d4bd5d4c1396c4acd9dbc79f4c6659150b1e283f279ddbabb"
+  }
+}

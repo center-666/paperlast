@@ -10,6 +10,7 @@ repository contents; without them --dry-run checks only local script readiness.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -100,6 +101,7 @@ def run(*, n_calibration, n_evaluation, seed):
            "attack": "original six registered source/receiver FDI links, k in [50,110)",
            "gate": "raw parity s4 four-residual plugin-KL, source unpruned windows",
            "models": {}}
+    path_archive = {}
 
     for model_i, label in enumerate(["unstable", "stable"]):
         model = load_common_g(label)
@@ -139,6 +141,13 @@ def run(*, n_calibration, n_evaluation, seed):
                                gate_override=g_n, threshold=threshold),
         }
         losses = {key: metric_paths(world, physical) for key, world in worlds.items()}
+        for world_name, metrics in losses.items():
+            for metric_name, values in metrics.items():
+                path_archive[f"{label}_{world_name}__{metric_name}"] = np.asarray(values, dtype=float)
+        for policy, world in natural.items():
+            path_archive[f"{label}_{policy}__gates"] = np.asarray(world.gates, dtype=np.uint8)
+            path_archive[f"{label}_{policy}__masks"] = np.asarray(world.masks, dtype=np.int64)
+            path_archive[f"{label}_{policy}__scores"] = np.asarray(world.scores, dtype=float)
         attribution = {}
         for name in losses["ii"]:
             decomp = shapley_attribution(*(losses[key][name] for key in ["ii", "ni", "in", "nn"]))
@@ -178,7 +187,29 @@ def run(*, n_calibration, n_evaluation, seed):
 
     output_path = HERE / "crossover_results.json"
     output_path.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n",encoding="utf-8")
+    path_output = HERE / "crossover_paths.npz"
+    np.savez_compressed(path_output, **path_archive)
+    source_dir = ROOT / "paper1_common_g50_gain_acceptance_20261121"
+    manifest = {
+        "source_commit_reference": "99ee54f29d4d471d121ca1b80f6f083f46e7ff03 or compatible later local tree",
+        "calibration_paths_per_model": n_calibration,
+        "evaluation_paths_per_model": n_evaluation,
+        "seed": seed,
+        "path_array_file": path_output.name,
+        "array_keys": sorted(path_archive),
+        "input_hashes": {
+            "gain_table.json": hashlib.sha256((source_dir / "gain_table.json").read_bytes()).hexdigest(),
+            "physical_configuration.json": hashlib.sha256((source_dir / "physical_configuration.json").read_bytes()).hexdigest(),
+            "run_common_g_50.py": hashlib.sha256((source_dir / "run_common_g_50.py").read_bytes()).hexdigest(),
+            "causal_gate_ablation.py": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        },
+        "gate_array_semantics": "uint8 [paths,time,registered_edges]; scores float [paths,time,registered_edges]; masks int [paths,time]",
+        "audit_note": "Arrays permit independent reconstruction of all four world losses and pathwise Shapley identities without rerunning physical generation."
+    }
+    (HERE / "crossover_path_manifest.json").write_text(
+        json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print("Output:", output_path)
+    print("Path arrays:", path_output)
     return out
 
 

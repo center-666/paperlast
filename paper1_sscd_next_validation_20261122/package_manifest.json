@@ -14,5 +14,9 @@
     "paper1_sscd_next_validation_20261122/paper1_screening_summary_99ee.json"
   ],
   "executed_command": "causal_gate_ablation.py --execute --calibration 512 --paths 128 --seed 2026112317",
-  "result_file": "crossover_results.json"
+  "result_file": "crossover_results.json",
+  "path_level_audit_files": [
+    "crossover_paths.npz",
+    "crossover_path_manifest.json"
+  ]
 }

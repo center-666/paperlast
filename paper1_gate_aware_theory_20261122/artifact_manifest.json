@@ -1,0 +1,49 @@
+{
+  "scope": "Gate-aware theory package, executed pilot and exact downloaded source zip; no bytecode.",
+  "files": {
+    ".gitattributes": {
+      "bytes": 97,
+      "sha256": "6d49852a7cbb845b01fe6ec05b053d5aa7d62eba9d5eae80076e4de668f8bb8a"
+    },
+    ".gitignore": {
+      "bytes": 13,
+      "sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b"
+    },
+    "dev_selection.py": {
+      "bytes": 5881,
+      "sha256": "204de969164e1e201d5ef45039e41665dcfd3921f948e95b44b679276c243705"
+    },
+    "dialogue.md": {
+      "bytes": 1402,
+      "sha256": "aad1669d797981d678a1afea02191901e2e1a864993d635f2628fde075f3a8ab"
+    },
+    "gate_risk_bound_paths.npz": {
+      "bytes": 40877,
+      "sha256": "acbb1d20fc29a811491621adccaa421739a2921f7a6f7dbf067c5ddbe706d5e6"
+    },
+    "gate_risk_bound_results.json": {
+      "bytes": 11146,
+      "sha256": "a5708397a4115ebb2c940bd543a69fc57b3b32fdf46568d3b6cb9d2cfd9912ad"
+    },
+    "gate_stability_bound.py": {
+      "bytes": 8780,
+      "sha256": "a40c0c2d79f03f3314917fb6923713a59156f6cfbeccc4ddfaa6bc13ea62d77f"
+    },
+    "package_manifest.json": {
+      "bytes": 621,
+      "sha256": "76a053b17e3b967847a94c0aedc11344b85f3a9ad4df17adb1ea68568c7a0b5b"
+    },
+    "README.md": {
+      "bytes": 9908,
+      "sha256": "67a65fbe98dec18a357807aecf401d21ddcd35219acb3dfefb3c98aa4bc35a04"
+    },
+    "source_package.zip": {
+      "bytes": 10852,
+      "sha256": "652eb72f9b68b9cc61afbdb6c0e1040e8bad160da24d0689e9baef5df516bd0d"
+    },
+    "verify_gate_bound.py": {
+      "bytes": 2437,
+      "sha256": "85f2ee1a84e7d3e65a15fbd142234ee9df586a2233c447e043233ce9db07df91"
+    }
+  }
+}

@@ -61,6 +61,6 @@ python paper1_sscd_next_validation_20261122/causal_gate_ablation.py --execute --
 
 执行后生成 `crossover_results.json`，保留每模型配对样本标准误与近似95%置信区间。此实验应属于下一轮**独立筛查**，不计入既有128条样本或论文正式多路径功效结论。若再次挑选耦合参数，应另立开发集与完全冻结的评估集。
 
-在本次会话中先完成了静态代码编译、Shapley恒等式单元测试和已有结果的独立算术审计，随后按登记命令实际运行了新的 50 节点共 G 反事实筛查。执行结果见 [crossover_results.json](crossover_results.json)，解释见 [CROSSOVER_RESULTS.md](CROSSOVER_RESULTS.md)。原下载压缩包按字节保存在 [source_package.zip](source_package.zip)，哈希和成员清单见 [package_manifest.json](package_manifest.json)。
+在本次会话中先完成了静态代码编译、Shapley恒等式单元测试和已有结果的独立算术审计，随后按登记命令实际运行了新的 50 节点共 G 反事实筛查。执行结果见 [crossover_results.json](crossover_results.json)，解释见 [CROSSOVER_RESULTS.md](CROSSOVER_RESULTS.md)。原下载压缩包按字节保存在 [source_package.zip](source_package.zip)，哈希和成员清单见 [package_manifest.json](package_manifest.json)。当前目录还保存了每条路径的四世界损失、iid/负耦合门控、掩码和原始分数：见 [crossover_paths.npz](crossover_paths.npz) 与 [crossover_path_manifest.json](crossover_path_manifest.json)。
 
 本次执行使用 512 条健康校准路径、128 条独立评估路径、种子 `2026112317`。它仍属于小样本筛查，不计入前一轮 128 条样本，也不是最终论文功效实验。

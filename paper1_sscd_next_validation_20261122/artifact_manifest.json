@@ -1,5 +1,5 @@
 {
-  "scope": "Executed crossover package and exact downloaded source zip; no bytecode.",
+  "scope": "Executed crossover package, path-level audit arrays and exact downloaded source zip; no bytecode.",
   "files": {
     ".gitattributes": {
       "bytes": 97,
@@ -10,32 +10,40 @@
       "sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b"
     },
     "causal_gate_ablation.py": {
-      "bytes": 9810,
-      "sha256": "43e887af2230872a97d4759c2fea10bde384758914d08727897ca9fbacf3414a"
+      "bytes": 11867,
+      "sha256": "afbbce6c482ae397304efb8bc5550d47ffe358330e3657f73186be3fa4ea67b6"
+    },
+    "crossover_path_manifest.json": {
+      "bytes": 3129,
+      "sha256": "49340c9ce6904b87f5c2c3d1950ccf8cd3bf62de247fb49134167cf26b8d002e"
+    },
+    "crossover_paths.npz": {
+      "bytes": 3430706,
+      "sha256": "05d42e918e29ad1336bbbb2a06472ad2e62bb89fbd47d57c70e3bafdae65e6eb"
     },
     "crossover_results.json": {
-      "bytes": 31603,
-      "sha256": "333c512b6a0bb70e9405c04ad283e45aca76a1b3f195dfebe53772de2c4f5510"
+      "bytes": 32631,
+      "sha256": "3cfe461da48743bf1ff6c57d45fd804dd39ff6830cf8226e23cfc854f1cb3884"
     },
     "CROSSOVER_RESULTS.md": {
       "bytes": 2655,
       "sha256": "66baa68cefd16b64f3a89b9ae27efdf7623e70e921d9be29031649a929d17802"
     },
     "dialogue.md": {
-      "bytes": 1359,
-      "sha256": "7034d2dc3e226f3cc357bba6ee613d133a3b7033c7ab221435d4d5e5cada2645"
+      "bytes": 1709,
+      "sha256": "89f0dbcc0f96dbc7e23240f359e80d122ab6f85f29805f54a9967a1318203c44"
     },
     "package_manifest.json": {
-      "bytes": 962,
-      "sha256": "b5b8703fe1a46b93148ccb2b2f2a9d96dab6cb8e050b8e17439832b21b7f086b"
+      "bytes": 1059,
+      "sha256": "bd6c635d26e323308ae2f8a61845b72fcbab80ef78a8e2c4c2e112fc60a53701"
     },
     "paper1_screening_summary_99ee.json": {
       "bytes": 1583,
       "sha256": "6079c67228a292388382cbf2951c9602599a9854325fd86a837e71f802d14f78"
     },
     "README.md": {
-      "bytes": 5147,
-      "sha256": "572fdeec2f650489a68f7191bd1db13bd7181f77bfcdedf81c82e6de721a7b3a"
+      "bytes": 5364,
+      "sha256": "fd129a2fba90c7728bfe38acb07b2aed1c922c4dd3051defb3f17965905f047c"
     },
     "screening_audit.py": {
       "bytes": 2893,
@@ -54,8 +62,8 @@
       "sha256": "bc42477d42b9026185e1d0dbafe977b943a18261df15621d08d3c26074f1032e"
     },
     "verify_crossover.py": {
-      "bytes": 2049,
-      "sha256": "762ab9c0dd42d2287ed50b1928f44db0bd09f0da59722336c7a0c9e22054b9f4"
+      "bytes": 3598,
+      "sha256": "7dbe4d0761e153e892a9d8c1298e866acae1b78ccfd92e58a09b43ddc3fe481c"
     }
   }
 }

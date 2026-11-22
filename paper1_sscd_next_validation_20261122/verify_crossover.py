@@ -32,8 +32,30 @@ def main():
     manifest = json.loads((HERE / 'package_manifest.json').read_text(encoding='utf-8'))
     assert package_hash == manifest['source_zip_sha256']
     assert package_hash == 'a9797b3797ebe2e1f7234d3ba3b74fb065163d24fe9f8cd681cf64fa616e50ab'
+    arrays = np.load(HERE / 'crossover_paths.npz', allow_pickle=False)
+    path_manifest = json.loads((HERE / 'crossover_path_manifest.json').read_text(encoding='utf-8'))
+    assert set(arrays.files) == set(path_manifest['array_keys'])
+    for model in ['unstable', 'stable']:
+        loss_names = ['network_post20', 'network_attack', 'network_post_attack',
+                      'affected_post20', 'affected_attack', 'affected_post_attack']
+        for world in ['ii', 'ni', 'in', 'nn']:
+            for metric in loss_names:
+                assert arrays[f'{model}_{world}__{metric}'].shape == (128,)
+        for policy in ['iid', 'negative']:
+            assert arrays[f'{model}_{policy}__gates'].shape == (128, 150, 6)
+            assert arrays[f'{model}_{policy}__masks'].shape == (128, 150)
+            assert arrays[f'{model}_{policy}__scores'].shape == (128, 150, 6)
+        for metric in loss_names:
+            total = arrays[f'{model}_nn__{metric}'] - arrays[f'{model}_ii__{metric}']
+            direct = .5 * ((arrays[f'{model}_ni__{metric}'] - arrays[f'{model}_ii__{metric}'])
+                           + (arrays[f'{model}_nn__{metric}'] - arrays[f'{model}_in__{metric}']))
+            gate = .5 * ((arrays[f'{model}_in__{metric}'] - arrays[f'{model}_ii__{metric}'])
+                         + (arrays[f'{model}_nn__{metric}'] - arrays[f'{model}_ni__{metric}']))
+            np.testing.assert_allclose(total, direct + gate, rtol=1e-11, atol=1e-11)
+            checked += 1
     print(json.dumps({'status': 'PASS', 'models': 2,
                       'shapley_metrics_checked': checked,
+                      'path_level_arrays': len(arrays.files),
                       'calibration_paths_per_model': 512,
                       'evaluation_paths_per_model': 128,
                       'source_package_sha256': package_hash}, indent=2))

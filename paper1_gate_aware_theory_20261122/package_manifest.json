@@ -1,0 +1,16 @@
+{
+  "package": "paper1_gate_aware_theory_20261122.zip",
+  "source_zip_sha256": "652eb72f9b68b9cc61afbdb6c0e1040e8bad160da24d0689e9baef5df516bd0d",
+  "source_zip_bytes": 10852,
+  "downloaded_from": "C:/Users/zhongxin/Downloads",
+  "members": [
+    "paper1_gate_aware_theory_20261122/README.md",
+    "paper1_gate_aware_theory_20261122/gate_stability_bound.py",
+    "paper1_gate_aware_theory_20261122/dev_selection.py"
+  ],
+  "executed_command": "gate_stability_bound.py --execute --calibration 512 --paths 64 --seed 2026112411",
+  "result_files": [
+    "gate_risk_bound_results.json",
+    "gate_risk_bound_paths.npz"
+  ]
+}
