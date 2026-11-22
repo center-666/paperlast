@@ -50,8 +50,8 @@
       "sha256": "68f9ef06e5f7c1696e68ac850b045716a225f90d1dd60625f659238bb8f10669"
     },
     "dialogue.md": {
-      "bytes": 5253,
-      "sha256": "8ff6ede5cf36dde2f3c803937c90b3ef1704a14ee2cd759a9d8bbbb72f3dfb0d"
+      "bytes": 5919,
+      "sha256": "9d508560cf1f265f7c6a076bec11f88a311ce7c81f0397b3108a8c25b7f35232"
     },
     "execution_notes.md": {
       "bytes": 2927,
@@ -69,6 +69,10 @@
       "bytes": 5520,
       "sha256": "07f59e3560e839d5ec4e993ffb83b44904f78fa0bff05a795e8b43bcac8b5642"
     },
+    "OBSERVABILITY_SCOPE.md": {
+      "bytes": 3694,
+      "sha256": "c6b18ea4f69b1fe1f77db5adbbdfa98637d6ad07a6bcb92c108aa4aeb6a1ebc2"
+    },
     "physical_configuration.json": {
       "bytes": 54686,
       "sha256": "c25437077cb73ac2332160e55f6183550bb8fc5318d93bb32c183a11d661b50d"
@@ -78,8 +82,8 @@
       "sha256": "a90306bf5cec4561b932f3dc2559ba0aa298c2096fad0f5e2690b2429694c8e6"
     },
     "README.md": {
-      "bytes": 8091,
-      "sha256": "5738f33e1cf142228df432d1d19f460c39dc3207fdd4279d59eca45b61c901c7"
+      "bytes": 8436,
+      "sha256": "62d8c3ad4f5caf9a29b4650b89781931d4ebcc55c1482a6140d059c2694788c4"
     },
     "registration.json": {
       "bytes": 5158,
@@ -106,8 +110,8 @@
       "sha256": "e9b5dc900919b3f6ef8dcaceb7140dfc9b6806dc42f0792478d3a9c753d1018d"
     },
     "WATERMARK_EFFECTS.md": {
-      "bytes": 4466,
-      "sha256": "7052930cdcfe6cc8a5d02b1b5d7511e6a4ba2ec7a2e8d493379d2fe33c072152"
+      "bytes": 4465,
+      "sha256": "c7b0acaa4e7ffe1fa84cc40fe2ea235ad0bf48ef4be16b02290db8199d0101d1"
     }
   }
 }
