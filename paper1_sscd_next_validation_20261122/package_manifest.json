@@ -1,0 +1,18 @@
+{
+  "package": "paper1_sscd_next_validation_20261122.zip",
+  "source_zip_sha256": "a9797b3797ebe2e1f7234d3ba3b74fb065163d24fe9f8cd681cf64fa616e50ab",
+  "source_zip_bytes": 11456,
+  "downloaded_from": "C:/Users/zhongxin/Downloads",
+  "archive_scope": "Exact downloaded package bytes plus extracted executable files and new crossover_results.json.",
+  "members": [
+    "paper1_sscd_next_validation_20261122/",
+    "paper1_sscd_next_validation_20261122/screening_audit_results.json",
+    "paper1_sscd_next_validation_20261122/screening_audit.py",
+    "paper1_sscd_next_validation_20261122/test_crossover.py",
+    "paper1_sscd_next_validation_20261122/README.md",
+    "paper1_sscd_next_validation_20261122/causal_gate_ablation.py",
+    "paper1_sscd_next_validation_20261122/paper1_screening_summary_99ee.json"
+  ],
+  "executed_command": "causal_gate_ablation.py --execute --calibration 512 --paths 128 --seed 2026112317",
+  "result_file": "crossover_results.json"
+}

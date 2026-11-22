@@ -1,0 +1,31 @@
+{
+  "source_commit":"99ee54f29d4d471d121ca1b80f6f083f46e7ff03",
+  "path":"paper1_common_g50_gain_acceptance_20261121/common_g_small_results.json",
+  "note":"Extract of reported model-level and paired statistics; run against full source for granular details.",
+  "models":{
+    "unstable":{
+      "healthy":{"network_mse_post20":0.05974788556361178},
+      "iid":{"network_mse_post20":0.06211446479289414},
+      "negative":{"network_mse_post20":0.06182526016898951},
+      "oracle":{"network_mse_post20":0.06040319228496667},
+      "negative_minus_iid_paired":{
+        "network_mse_post20":{"mean":-0.000289204623904628,"se":0.00006655230220593792},
+        "affected_mse_post20":{"mean":-0.002892046239046279,"se":0.0006655230220593803},
+        "eligible_tpr":{"mean":0.0030955188679245276,"se":0.0008450731492857807}
+      },
+      "negative_minus_iid_no_gate":{"mean":-1.5984938901751145,"se":1.9561021796748397}
+    },
+    "stable":{
+      "healthy":{"network_mse_post20":0.05981508120232834},
+      "iid":{"network_mse_post20":0.0651304346574473},
+      "negative":{"network_mse_post20":0.06440376120946907},
+      "oracle":{"network_mse_post20":0.060476665402602936},
+      "negative_minus_iid_paired":{
+        "network_mse_post20":{"mean":-0.0007266734479782293,"se":0.00008234093751516263},
+        "affected_mse_post20":{"mean":-0.007266734479782294,"se":0.0008234093751516271},
+        "eligible_tpr":{"mean":0.0416175314465409,"se":0.004686769310218529}
+      },
+      "negative_minus_iid_no_gate":{"mean":0.0003396314078549089,"se":0.00037642080025543904}
+    }
+  }
+}

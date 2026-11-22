@@ -1,0 +1,104 @@
+{
+  "source": "99ee54f, verified extracted aggregate metrics",
+  "interpretation": "conditional-on-realized-calibration, paired path-level intervals; no full calibration uncertainty or fresh attack shapes",
+  "models": {
+    "unstable": {
+      "closed_loop_iid_mse": 0.06211446479289414,
+      "closed_loop_negative_mse": 0.06182526016898951,
+      "relative_negative_reduction_percent": 0.4655994781069343,
+      "paired_network_mse": {
+        "difference": -0.000289204623904628,
+        "path_se": 6.655230220593792e-05,
+        "t_stat": -4.345523961135406,
+        "conditional_95ci": [
+          -0.0004208996195891858,
+          -0.0001575096282200702
+        ],
+        "two_sided_pathwise_p_value": 2.8183048423419565e-05
+      },
+      "paired_affected_mse": {
+        "difference": -0.002892046239046279,
+        "path_se": 0.0006655230220593803,
+        "t_stat": -4.345523961135398,
+        "conditional_95ci": [
+          -0.004208996195891859,
+          -0.001575096282200699
+        ],
+        "two_sided_pathwise_p_value": 2.818304842342042e-05
+      },
+      "paired_eligible_TPR": {
+        "difference": 0.0030955188679245276,
+        "path_se": 0.0008450731492857807,
+        "t_stat": 3.663018841079883,
+        "conditional_95ci": [
+          0.0014232716118649637,
+          0.004767766123984092
+        ],
+        "two_sided_pathwise_p_value": 0.0003645844815115321
+      },
+      "static_known_six_oracle": 0.06040319228496667,
+      "negative_above_oracle_abs": 0.0014220678840228401,
+      "negative_above_oracle_percent": 2.3542925965135852,
+      "oracle_healthy_cost_percent": 1.0967864639447322,
+      "no_gate_paired": {
+        "difference": -1.5984938901751145,
+        "path_se": 1.9561021796748397,
+        "t_stat": -0.8171832263081625,
+        "conditional_95ci": [
+          -5.469267095190519,
+          2.27227931484029
+        ],
+        "two_sided_pathwise_p_value": 0.4153540872520496
+      }
+    },
+    "stable": {
+      "closed_loop_iid_mse": 0.0651304346574473,
+      "closed_loop_negative_mse": 0.06440376120946907,
+      "relative_negative_reduction_percent": 1.1157202493736833,
+      "paired_network_mse": {
+        "difference": -0.0007266734479782293,
+        "path_se": 8.234093751516263e-05,
+        "t_stat": -8.8251782152033,
+        "conditional_95ci": [
+          -0.0008896113036389802,
+          -0.0005637355923174785
+        ],
+        "two_sided_pathwise_p_value": 7.323033914818524e-15
+      },
+      "paired_affected_mse": {
+        "difference": -0.007266734479782294,
+        "path_se": 0.0008234093751516271,
+        "t_stat": -8.825178215203293,
+        "conditional_95ci": [
+          -0.008896113036389805,
+          -0.005637355923174783
+        ],
+        "two_sided_pathwise_p_value": 7.323033914818778e-15
+      },
+      "paired_eligible_TPR": {
+        "difference": 0.0416175314465409,
+        "path_se": 0.004686769310218529,
+        "t_stat": 8.879790894721978,
+        "conditional_95ci": [
+          0.03234326078083466,
+          0.05089180211224714
+        ],
+        "two_sided_pathwise_p_value": 5.410723335060296e-15
+      },
+      "static_known_six_oracle": 0.060476665402602936,
+      "negative_above_oracle_abs": 0.003927095806866135,
+      "negative_above_oracle_percent": 6.49357199297087,
+      "oracle_healthy_cost_percent": 1.1060491551231788,
+      "no_gate_paired": {
+        "difference": 0.0003396314078549089,
+        "path_se": 0.00037642080025543904,
+        "t_stat": 0.9022652510818613,
+        "conditional_95ci": [
+          -0.0004052374249590349,
+          0.0010845002406688526
+        ],
+        "two_sided_pathwise_p_value": 0.36862401559535474
+      }
+    }
+  }
+}

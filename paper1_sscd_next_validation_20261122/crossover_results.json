@@ -1,0 +1,1028 @@
+{
+  "kind": "paper1_common_G_50node_counterfactual_gate_ablation",
+  "source": "frozen 99ee54f or later compatible repository contents",
+  "calibration_paths": 512,
+  "evaluation_paths": 128,
+  "seed": 2026112317,
+  "estimator": "original lookup common-G, unchanged",
+  "attack": "original six registered source/receiver FDI links, k in [50,110)",
+  "gate": "raw parity s4 four-residual plugin-KL, source unpruned windows",
+  "models": {
+    "unstable": {
+      "cutoff": {
+        "threshold": 60.50242372392472,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "healthy_path_any_alarm": {
+        "mean": 0.0390625,
+        "paired_path_se": 0.017191973290465488,
+        "paths": 128,
+        "normal_approx_95ci": [
+          0.005366232350687644,
+          0.07275876764931236
+        ]
+      },
+      "natural": {
+        "iid": {
+          "network_post20": {
+            "mean": 0.06228250215753349,
+            "paired_path_se": 0.00019538010173304009,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.061899557158136734,
+              0.06266544715693025
+            ]
+          },
+          "network_attack": {
+            "mean": 0.06522921001106066,
+            "paired_path_se": 0.000328651751473345,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.0645850525781729,
+              0.06587336744394842
+            ]
+          },
+          "network_post_attack": {
+            "mean": 0.060070283762807826,
+            "paired_path_se": 0.00029777369499028655,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.05948664732062686,
+              0.06065392020498879
+            ]
+          },
+          "affected_post20": {
+            "mean": 0.07294277049185806,
+            "paired_path_se": 0.0007557962486471189,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.0714614098445097,
+              0.07442413113920641
+            ]
+          },
+          "affected_attack": {
+            "mean": 0.09971634407344207,
+            "paired_path_se": 0.0015892136192337894,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.09660148537974385,
+              0.10283120276714029
+            ]
+          },
+          "affected_post_attack": {
+            "mean": 0.05069787221031494,
+            "paired_path_se": 0.00039305562739136635,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.04992748318062786,
+              0.05146826124000201
+            ]
+          }
+        },
+        "negative": {
+          "network_post20": {
+            "mean": 0.06212415290657683,
+            "paired_path_se": 0.00019213949279379383,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.061747559500700995,
+              0.06250074631245267
+            ]
+          },
+          "network_attack": {
+            "mean": 0.06488611996732123,
+            "paired_path_se": 0.00032283887771537574,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.06425335576699909,
+              0.06551888416764337
+            ]
+          },
+          "network_post_attack": {
+            "mean": 0.060070283762807826,
+            "paired_path_se": 0.00029777369499028655,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.05948664732062686,
+              0.06065392020498879
+            ]
+          },
+          "affected_post20": {
+            "mean": 0.07135927798229144,
+            "paired_path_se": 0.0007512499348981812,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.06988682810989101,
+              0.07283172785469187
+            ]
+          },
+          "affected_attack": {
+            "mean": 0.09628544363604771,
+            "paired_path_se": 0.001556561833370312,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.0932345824426419,
+              0.09933630482945352
+            ]
+          },
+          "affected_post_attack": {
+            "mean": 0.05069787221031494,
+            "paired_path_se": 0.00039305562739136635,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.04992748318062786,
+              0.05146826124000201
+            ]
+          }
+        }
+      },
+      "static_known_six": {
+        "network_post20": {
+          "mean": 0.06058637403790153,
+          "paired_path_se": 0.00018002825547233436,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.06023351865717575,
+            0.060939229418627304
+          ]
+        },
+        "network_attack": {
+          "mean": 0.060893765425671244,
+          "paired_path_se": 0.0002760788976692065,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.0603526507862396,
+            0.061434880065102886
+          ]
+        },
+        "network_post_attack": {
+          "mean": 0.0606055370233856,
+          "paired_path_se": 0.00030245134479817376,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.06001273238758118,
+            0.06119834165919002
+          ]
+        },
+        "affected_post20": {
+          "mean": 0.05598148929553842,
+          "paired_path_se": 0.0002685815473868476,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.055455069462660204,
+            0.05650790912841664
+          ]
+        },
+        "affected_attack": {
+          "mean": 0.056361898219547804,
+          "paired_path_se": 0.0003804670310331841,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.055616182838722765,
+            0.05710761360037284
+          ]
+        },
+        "affected_post_attack": {
+          "mean": 0.05605040481609273,
+          "paired_path_se": 0.00043803342457003673,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.05519185930393546,
+            0.05690895032825
+          ]
+        }
+      },
+      "static_minus_negative": {
+        "network_post20": {
+          "mean": -0.0015377788686753023,
+          "paired_path_se": 6.736137944967696e-05,
+          "paths": 128,
+          "normal_approx_95ci": [
+            -0.0016698071723966691,
+            -0.0014057505649539355
+          ]
+        },
+        "network_attack": {
+          "mean": -0.00399235454164999,
+          "paired_path_se": 0.00014675969823031124,
+          "paths": 128,
+          "normal_approx_95ci": [
+            -0.0042800035501814,
+            -0.0037047055331185796
+          ]
+        },
+        "network_post_attack": {
+          "mean": 0.0005352532605777806,
+          "paired_path_se": 1.7204929948809388e-05,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.0005015315978781141,
+            0.000568974923277447
+          ]
+        },
+        "affected_post20": {
+          "mean": -0.015377788686753012,
+          "paired_path_se": 0.0006736137944967704,
+          "paths": 128,
+          "normal_approx_95ci": [
+            -0.016698071723966684,
+            -0.014057505649539342
+          ]
+        },
+        "affected_attack": {
+          "mean": -0.03992354541649991,
+          "paired_path_se": 0.0014675969823031122,
+          "paths": 128,
+          "normal_approx_95ci": [
+            -0.04280003550181401,
+            -0.03704705533118581
+          ]
+        },
+        "affected_post_attack": {
+          "mean": 0.005352532605777806,
+          "paired_path_se": 0.00017204929948809482,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.00501531597878114,
+            0.005689749232774472
+          ]
+        }
+      },
+      "detection": {
+        "iid": {
+          "eligible_tpr": {
+            "mean": 0.9890182783018869,
+            "paired_path_se": 0.000872006423371353,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.9873091457120791,
+              0.9907274108916948
+            ]
+          },
+          "restricted_mean_first_alarm_lag": {
+            "mean": 0.37630208333333337,
+            "paired_path_se": 0.03469604680347743,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.3082978315985176,
+              0.44430633506814915
+            ]
+          },
+          "path_any_alarm": {
+            "mean": 1.0,
+            "paired_path_se": 0.0,
+            "paths": 128,
+            "normal_approx_95ci": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "negative": {
+          "eligible_tpr": {
+            "mean": 0.9910819575471699,
+            "paired_path_se": 0.0007687757231122655,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.9895751571298699,
+              0.9925887579644699
+            ]
+          },
+          "restricted_mean_first_alarm_lag": {
+            "mean": 0.3372395833333333,
+            "paired_path_se": 0.03657659595615296,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.26554945525927354,
+              0.4089297114073931
+            ]
+          },
+          "path_any_alarm": {
+            "mean": 1.0,
+            "paired_path_se": 0.0,
+            "paths": 128,
+            "normal_approx_95ci": [
+              1.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "gate_fraction_attack_window": {
+        "iid": {
+          "mean": 0.925,
+          "paired_path_se": 0.001592364899167496,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.9218789647976318,
+            0.9281210352023683
+          ]
+        },
+        "negative": {
+          "mean": 0.9293402777777778,
+          "paired_path_se": 0.0016241659057944344,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.9261569126024207,
+            0.932523642953135
+          ]
+        }
+      },
+      "shapley_counterfactual_attribution": {
+        "network_post20": {
+          "total": {
+            "mean": -0.00015834925095666312,
+            "paired_path_se": 6.391106146573617e-05,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.00028361493142950596,
+              -3.308357048382025e-05
+            ]
+          },
+          "direct_watermark_at_fixed_gate": {
+            "mean": -1.7196658789234295e-05,
+            "paired_path_se": 5.853641902257856e-05,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.00013192804007348827,
+              9.753472249501968e-05
+            ]
+          },
+          "gate_schedule_effect": {
+            "mean": -0.00014115259216742883,
+            "paired_path_se": 9.678676254788042e-05,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.0003308546467612744,
+              4.854946242641679e-05
+            ]
+          }
+        },
+        "network_attack": {
+          "total": {
+            "mean": -0.00034309004373943536,
+            "paired_path_se": 0.00013847396650909516,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.0006144990180972619,
+              -7.168106938160884e-05
+            ]
+          },
+          "direct_watermark_at_fixed_gate": {
+            "mean": -3.725942737667503e-05,
+            "paired_path_se": 0.00012682890788225353,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.0002858440868258919,
+              0.00021132523207254188
+            ]
+          },
+          "gate_schedule_effect": {
+            "mean": -0.0003058306163627603,
+            "paired_path_se": 0.0002097046521870743,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.0007168517346494258,
+              0.00010519050192390528
+            ]
+          }
+        },
+        "network_post_attack": {
+          "total": {
+            "mean": 0.0,
+            "paired_path_se": 0.0,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "direct_watermark_at_fixed_gate": {
+            "mean": 0.0,
+            "paired_path_se": 0.0,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "gate_schedule_effect": {
+            "mean": 0.0,
+            "paired_path_se": 0.0,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "affected_post20": {
+          "total": {
+            "mean": -0.001583492509566623,
+            "paired_path_se": 0.000639110614657362,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.0028361493142950523,
+              -0.0003308357048381935
+            ]
+          },
+          "direct_watermark_at_fixed_gate": {
+            "mean": -0.00017196658789234306,
+            "paired_path_se": 0.0005853641902257861,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.0013192804007348838,
+              0.0009753472249501977
+            ]
+          },
+          "gate_schedule_effect": {
+            "mean": -0.0014115259216742801,
+            "paired_path_se": 0.0009678676254788044,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.0033085464676127366,
+              0.0004854946242641763
+            ]
+          }
+        },
+        "affected_attack": {
+          "total": {
+            "mean": -0.0034309004373943523,
+            "paired_path_se": 0.0013847396650909507,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.006144990180972616,
+              -0.0007168106938160888
+            ]
+          },
+          "direct_watermark_at_fixed_gate": {
+            "mean": -0.00037259427376674405,
+            "paired_path_se": 0.0012682890788225363,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.002858440868258915,
+              0.002113252320725427
+            ]
+          },
+          "gate_schedule_effect": {
+            "mean": -0.003058306163627609,
+            "paired_path_se": 0.0020970465218707428,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.007168517346494265,
+              0.0010519050192390467
+            ]
+          }
+        },
+        "affected_post_attack": {
+          "total": {
+            "mean": 0.0,
+            "paired_path_se": 0.0,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "direct_watermark_at_fixed_gate": {
+            "mean": 0.0,
+            "paired_path_se": 0.0,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "gate_schedule_effect": {
+            "mean": 0.0,
+            "paired_path_se": 0.0,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "limitations": [
+        "This is a gate-intervention decomposition for fixed realized attacks and physical paths, not a theorem about all attackers.",
+        "The same random calibration cutoff is used for both watermark laws within each dynamics.",
+        "Conditional 95% path intervals do not account for new calibration repetitions.",
+        "The registered six known attack candidates make static-known-six deletion a strong oracle baseline.",
+        "The on-policy SSCD parameter optimization is not repeated on these evaluation paths."
+      ]
+    },
+    "stable": {
+      "cutoff": {
+        "threshold": 60.26160259275596,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "healthy_path_any_alarm": {
+        "mean": 0.0625,
+        "paired_path_se": 0.021479481144483458,
+        "paths": 128,
+        "normal_approx_95ci": [
+          0.02040021695681242,
+          0.10459978304318758
+        ]
+      },
+      "natural": {
+        "iid": {
+          "network_post20": {
+            "mean": 0.06484055825746533,
+            "paired_path_se": 0.00021781520596733772,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.06441364045376935,
+              0.06526747606116132
+            ]
+          },
+          "network_attack": {
+            "mean": 0.07093572943378626,
+            "paired_path_se": 0.000343418184918723,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.07026262979134557,
+              0.07160882907622695
+            ]
+          },
+          "network_post_attack": {
+            "mean": 0.059796412051557085,
+            "paired_path_se": 0.0003502912614170112,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.059109841179179744,
+              0.06048298292393443
+            ]
+          },
+          "affected_post20": {
+            "mean": 0.1004869273209652,
+            "paired_path_se": 0.0009641834999451558,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.0985971276610727,
+              0.1023767269808577
+            ]
+          },
+          "affected_attack": {
+            "mean": 0.16077319125375594,
+            "paired_path_se": 0.0020117617517724992,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.15683013822028186,
+              0.16471624428723003
+            ]
+          },
+          "affected_post_attack": {
+            "mean": 0.04910690335163788,
+            "paired_path_se": 0.00045754874261710285,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.04821010781610836,
+              0.0500036988871674
+            ]
+          }
+        },
+        "negative": {
+          "network_post20": {
+            "mean": 0.06425284485809246,
+            "paired_path_se": 0.00020250871856641897,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.06385592776970228,
+              0.06464976194648264
+            ]
+          },
+          "network_attack": {
+            "mean": 0.06965883436834266,
+            "paired_path_se": 0.00033395756164193897,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.06900427754752446,
+              0.07031339118916087
+            ]
+          },
+          "network_post_attack": {
+            "mean": 0.05980168610176064,
+            "paired_path_se": 0.0003507090297144215,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.059114296403520374,
+              0.06048907580000091
+            ]
+          },
+          "affected_post20": {
+            "mean": 0.09460979332723651,
+            "paired_path_se": 0.0007932461603679787,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.09305503085291528,
+              0.09616455580155775
+            ]
+          },
+          "affected_attack": {
+            "mean": 0.1480042405993201,
+            "paired_path_se": 0.001723443261199367,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.14462629180736936,
+              0.15138218939127085
+            ]
+          },
+          "affected_post_attack": {
+            "mean": 0.04915964385367341,
+            "paired_path_se": 0.0004598295506409137,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.04825837793441722,
+              0.0500609097729296
+            ]
+          }
+        }
+      },
+      "static_known_six": {
+        "network_post20": {
+          "mean": 0.06033336575741906,
+          "paired_path_se": 0.0001922123258140576,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.0599566295988235,
+            0.060710101916014614
+          ]
+        },
+        "network_attack": {
+          "mean": 0.06042766149941429,
+          "paired_path_se": 0.000275595085724943,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.0598874951313934,
+            0.060967827867435175
+          ]
+        },
+        "network_post_attack": {
+          "mean": 0.06042578241267909,
+          "paired_path_se": 0.0003519242137223201,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.05973601095378334,
+            0.061115553871574836
+          ]
+        },
+        "affected_post20": {
+          "mean": 0.055415002320502414,
+          "paired_path_se": 0.00027709585552379297,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.05487189444367578,
+            0.05595811019732905
+          ]
+        },
+        "affected_attack": {
+          "mean": 0.05569251191003627,
+          "paired_path_se": 0.00039848685168677127,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.054911477680730195,
+            0.05647354613934234
+          ]
+        },
+        "affected_post_attack": {
+          "mean": 0.05540060696285787,
+          "paired_path_se": 0.0005012032283058784,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.05441824863537835,
+            0.056382965290337386
+          ]
+        }
+      },
+      "static_minus_negative": {
+        "network_post20": {
+          "mean": -0.003919479100673409,
+          "paired_path_se": 7.768056892963618e-05,
+          "paths": 128,
+          "normal_approx_95ci": [
+            -0.004071733015775496,
+            -0.003767225185571322
+          ]
+        },
+        "network_attack": {
+          "mean": -0.00923117286892838,
+          "paired_path_se": 0.00016563904030775974,
+          "paths": 128,
+          "normal_approx_95ci": [
+            -0.009555825387931588,
+            -0.008906520349925172
+          ]
+        },
+        "network_post_attack": {
+          "mean": 0.0006240963109184449,
+          "paired_path_se": 1.9468179156351125e-05,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.0005859386797719968,
+            0.0006622539420648931
+          ]
+        },
+        "affected_post20": {
+          "mean": -0.03919479100673409,
+          "paired_path_se": 0.0007768056892963612,
+          "paths": 128,
+          "normal_approx_95ci": [
+            -0.04071733015775496,
+            -0.037672251855713226
+          ]
+        },
+        "affected_attack": {
+          "mean": -0.0923117286892838,
+          "paired_path_se": 0.0016563904030775971,
+          "paths": 128,
+          "normal_approx_95ci": [
+            -0.0955582538793159,
+            -0.08906520349925172
+          ]
+        },
+        "affected_post_attack": {
+          "mean": 0.006240963109184459,
+          "paired_path_se": 0.00019468179156351129,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.005859386797719976,
+            0.006622539420648941
+          ]
+        }
+      },
+      "detection": {
+        "iid": {
+          "eligible_tpr": {
+            "mean": 0.6897847877358492,
+            "paired_path_se": 0.0048474410314980065,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.6802838033141131,
+              0.6992857721575853
+            ]
+          },
+          "restricted_mean_first_alarm_lag": {
+            "mean": 0.33072916666666663,
+            "paired_path_se": 0.042317116831622203,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.2477876176766871,
+              0.41367071565664615
+            ]
+          },
+          "path_any_alarm": {
+            "mean": 1.0,
+            "paired_path_se": 0.0,
+            "paths": 128,
+            "normal_approx_95ci": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "negative": {
+          "eligible_tpr": {
+            "mean": 0.7207154088050314,
+            "paired_path_se": 0.004668857828971134,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.7115644474602479,
+              0.7298663701498148
+            ]
+          },
+          "restricted_mean_first_alarm_lag": {
+            "mean": 0.2513020833333333,
+            "paired_path_se": 0.04378615607559752,
+            "paths": 128,
+            "normal_approx_95ci": [
+              0.16548121742516217,
+              0.33712294924150443
+            ]
+          },
+          "path_any_alarm": {
+            "mean": 1.0,
+            "paired_path_se": 0.0,
+            "paths": 128,
+            "normal_approx_95ci": [
+              1.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "gate_fraction_attack_window": {
+        "iid": {
+          "mean": 0.6900390625,
+          "paired_path_se": 0.0043273294766142485,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.6815574967258361,
+            0.698520628274164
+          ]
+        },
+        "negative": {
+          "mean": 0.7197048611111111,
+          "paired_path_se": 0.004125502670173841,
+          "paths": 128,
+          "normal_approx_95ci": [
+            0.7116188758775703,
+            0.7277908463446519
+          ]
+        }
+      },
+      "shapley_counterfactual_attribution": {
+        "network_post20": {
+          "total": {
+            "mean": -0.0005877133993728703,
+            "paired_path_se": 9.138990916149185e-05,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.0007668376213293943,
+              -0.00040858917741634626
+            ]
+          },
+          "direct_watermark_at_fixed_gate": {
+            "mean": -2.4693878953971105e-05,
+            "paired_path_se": 8.455948424283619e-05,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.00019043046806993004,
+              0.00014104271016198783
+            ]
+          },
+          "gate_schedule_effect": {
+            "mean": -0.0005630195204188993,
+            "paired_path_se": 0.00012435651385971414,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.000806758287583939,
+              -0.0003192807532538596
+            ]
+          }
+        },
+        "network_attack": {
+          "total": {
+            "mean": -0.001276895065443588,
+            "paired_path_se": 0.0001978832930516372,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.0016647463198247968,
+              -0.0008890438110623791
+            ]
+          },
+          "direct_watermark_at_fixed_gate": {
+            "mean": -5.352689614528599e-05,
+            "paired_path_se": 0.00018321256658734226,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.0004126235266564768,
+              0.00030556973436590484
+            ]
+          },
+          "gate_schedule_effect": {
+            "mean": -0.001223368169298302,
+            "paired_path_se": 0.00026957085747528084,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.0017517270499498524,
+              -0.0006950092886467516
+            ]
+          }
+        },
+        "network_post_attack": {
+          "total": {
+            "mean": 5.274050203553165e-06,
+            "paired_path_se": 3.1436880747936163e-06,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -8.875784230423228e-07,
+              1.1435678830148653e-05
+            ]
+          },
+          "direct_watermark_at_fixed_gate": {
+            "mean": 3.523761752424444e-08,
+            "paired_path_se": 2.3960760476267255e-07,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -4.343932878105937e-07,
+              5.048685228590826e-07
+            ]
+          },
+          "gate_schedule_effect": {
+            "mean": 5.2388125860289205e-06,
+            "paired_path_se": 3.1161591869108902e-06,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -8.688594203164244e-07,
+              1.1346484592374265e-05
+            ]
+          }
+        },
+        "affected_post20": {
+          "total": {
+            "mean": -0.005877133993728698,
+            "paired_path_se": 0.0009138990916149174,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.007668376213293936,
+              -0.00408589177416346
+            ]
+          },
+          "direct_watermark_at_fixed_gate": {
+            "mean": -0.0002469387895397046,
+            "paired_path_se": 0.0008455948424283614,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.0019043046806992928,
+              0.0014104271016198836
+            ]
+          },
+          "gate_schedule_effect": {
+            "mean": -0.005630195204188992,
+            "paired_path_se": 0.00124356513859714,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.008067582875839387,
+              -0.003192807532538598
+            ]
+          }
+        },
+        "affected_attack": {
+          "total": {
+            "mean": -0.012768950654435868,
+            "paired_path_se": 0.0019788329305163712,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.016647463198247954,
+              -0.00889043811062378
+            ]
+          },
+          "direct_watermark_at_fixed_gate": {
+            "mean": -0.000535268961452862,
+            "paired_path_se": 0.0018321256658734226,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.00412623526656477,
+              0.003055697343659046
+            ]
+          },
+          "gate_schedule_effect": {
+            "mean": -0.012233681692983008,
+            "paired_path_se": 0.0026957085747528102,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -0.017517270499498513,
+              -0.0069500928864675
+            ]
+          }
+        },
+        "affected_post_attack": {
+          "total": {
+            "mean": 5.274050203552596e-05,
+            "paired_path_se": 3.143688074793676e-05,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -8.875784230430092e-06,
+              0.00011435678830148201
+            ]
+          },
+          "direct_watermark_at_fixed_gate": {
+            "mean": 3.523761752471065e-07,
+            "paired_path_se": 2.3960760476267153e-06,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -4.343932878101255e-06,
+              5.048685228595468e-06
+            ]
+          },
+          "gate_schedule_effect": {
+            "mean": 5.238812586027885e-05,
+            "paired_path_se": 3.116159186910911e-05,
+            "paths": 128,
+            "normal_approx_95ci": [
+              -8.688594203175008e-06,
+              0.00011346484592373271
+            ]
+          }
+        }
+      },
+      "limitations": [
+        "This is a gate-intervention decomposition for fixed realized attacks and physical paths, not a theorem about all attackers.",
+        "The same random calibration cutoff is used for both watermark laws within each dynamics.",
+        "Conditional 95% path intervals do not account for new calibration repetitions.",
+        "The registered six known attack candidates make static-known-six deletion a strong oracle baseline.",
+        "The on-policy SSCD parameter optimization is not repeated on these evaluation paths."
+      ]
+    }
+  }
+}
