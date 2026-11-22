@@ -1,0 +1,55 @@
+{
+  "research_date": "2026-11-22",
+  "paper": "First JFI paper: temporal multiplicative watermark for secure distributed state estimation",
+  "source_baseline_commit": "b9fc33c324fd539c6e223d0da9950dfd00645895",
+  "source_package_sha256": "21a8752cf8cbbd7729c0115af929101e8471cbd763ed0eeeb78661bb15d7e38f",
+  "protocol_version": "SSCD v2 boundary-safe development and independent locked test",
+  "physical_model": "Recovered 50-node common-G mode-lookup estimator, frozen 049bdc6 physical configuration",
+  "detector": "Recovered parity s=4 / four-residual plugin-Gaussian-KL detector; original gate rule retained",
+  "attack_support": "Six original registered directed links only; no unknown-support claim",
+  "attack_duration": 60,
+  "development": {
+    "split": "development",
+    "seed": 2026112701,
+    "calibration_paths_per_dynamics": 512,
+    "paths_per_scenario": 256,
+    "angles_degrees": [0, -45, 45],
+    "attack_onsets": [50, 65],
+    "scenario_count": 12,
+    "candidates": {
+      "neg_boundary_requested": -1.315236976827179,
+      "neg_boundary_projected": -1.3152369768257723,
+      "neg_weak": -0.6,
+      "iid": 0.0,
+      "pos_weak": 0.6,
+      "pos_boundary_projected": 1.3152369768257723
+    },
+    "adjacent_direction_MI_budget_nats": 0.1,
+    "selector": "paired final common-G network MSE; simultaneous one-sided paired-difference t UCB and iid-baseline t LCB; Bonferroni 48 numerator + 12 denominator bounds",
+    "selector_selected": "iid"
+  },
+  "final_test": {
+    "split": "final_test",
+    "seed_base": 2026112241,
+    "calibration_paths_per_dynamics": 512,
+    "independent_healthy_test_paths_per_dynamics": 512,
+    "test_paths_per_scenario_and_dynamics": 512,
+    "scenario_count": 12,
+    "threshold_rule": "Path maximum over all six registered links and k=4..149; one-based rank488; strict score > threshold",
+    "parameter_lock_sha256": "Read from locked_selection.json and final_test_manifest.json; never changed using final-test outcomes",
+    "locked_theta": 0.0,
+    "candidate_outcomes": "Descriptive only; final-test comparisons do not update the selected parameter"
+  },
+  "metrics": [
+    "Network and affected-five-node MSE over post20, attack interval, post-attack interval and all150",
+    "Eligible TPR, path-any alarm, first-alarm delay with right censoring",
+    "Independent held-out healthy path FWER",
+    "Known-six static deletion oracle MSE and healthy cost"
+  ],
+  "claim_limits": [
+    "The selector may correctly return iid when simultaneous scenario-wise evidence is insufficient",
+    "Final held-out candidate comparisons are not used to change the lock",
+    "T intervals are approximate for potentially skewed path-MSE losses",
+    "No claim of unknown attack support, unknown edge location, or oracle superiority"
+  ]
+}

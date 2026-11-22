@@ -1,0 +1,26 @@
+{
+  "package": "paper1_sscd_dev_protocol_20261122.zip",
+  "source_zip_sha256": "21a8752cf8cbbd7729c0115af929101e8471cbd763ed0eeeb78661bb15d7e38f",
+  "source_zip_bytes": 14566,
+  "downloaded_from": "C:/Users/zhongxin/Downloads",
+  "members": [
+    "paper1_sscd_dev_protocol_20261122/",
+    "paper1_sscd_dev_protocol_20261122/test_protocol.py",
+    "paper1_sscd_dev_protocol_20261122/README.md",
+    "paper1_sscd_dev_protocol_20261122/run_development.py",
+    "paper1_sscd_dev_protocol_20261122/selector_v2.py",
+    "paper1_sscd_dev_protocol_20261122/requirements.txt"
+  ],
+  "development_outputs": [
+    "development_losses.json",
+    "locked_selection.json",
+    "development_manifest.json"
+  ],
+  "final_test_outputs": [
+    "final_test_results.json",
+    "final_test_paths.npz",
+    "final_test_manifest.json",
+    "final_test_analysis.json"
+  ],
+  "archive_note": "source_package.zip is the exact downloaded archive; extracted and authored text files use LF for stable Git blob hashes."
+}

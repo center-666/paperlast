@@ -1,0 +1,11 @@
+# Execution and provenance notes
+
+1. The downloaded `paper1_sscd_dev_protocol_20261122.zip` is preserved byte-for-byte as `source_package.zip`; SHA-256 is recorded in `package_manifest.json`.
+2. The active `mypaper` Python environment did not include `mpmath`. The declared `mpmath 1.3.0` package was available in the local verification environment; tests ran with the active NumPy/SciPy already imported and only that package path appended. No network install was needed.
+3. Before physical simulation, the selector was corrected to bound the relative risk using a simultaneous paired-difference upper bound and positive iid-baseline lower bound. It uses Bonferroni across 48 numerator and 12 denominator bounds. Student-t approximation under skewed MSE paths remains an explicit statistical limitation.
+4. The development run used seed `2026112701`, 512 healthy calibration paths per model, and 256 paths in each of 12 scenarios. It produced `locked_selection.json` with `selected=iid`.
+5. A global duplicate-path-ID guard was added to the selector after the development run. It does not change scores or selection. `verify_v2_experiment.py` removes exactly this post-run guard in memory and reproduces the selector source hash recorded at execution; it also recomputes the lock from unchanged development JSON and gets the same full result.
+6. Final testing used independent calibration/test streams derived from `TEST_SEED=2026112241`: 512 health calibration paths per model, 512 independent healthy FWER paths per model, and 512 test paths per scenario/model. No development IDs overlap with either final split.
+7. The deterministic final runner was executed twice with the same frozen seeds: the second run added calibration path-max arrays so rank488 could be verified directly. It did not add a new random sample or change any reported test path.
+8. The locked choice stayed iid throughout final testing. Alternative-policy final results are held-out descriptive comparisons only and did not feed back into selection.
+9. The path-stratified intervals give equal weight to each of the six fixed stress scenarios per model and estimate path variation within those strata. They are unadjusted descriptive 95% intervals across the pre-registered alternative candidates, not a new selection guarantee.
