@@ -20,38 +20,46 @@ sys.path.insert(0, str(ROOT / 'paper1_50node_tv_gate_theory_20261121'))
 sys.path.append(r'C:\Users\zhongxin\shixidoc\DeepRobotics_M20\lidar_m20\.verify-venv\Lib\site-packages')
 
 from selector_v2 import REFERENCE_COMMIT
-from run_development import rotated_raw_attack, decoded_for_scenario, SCENARIO_ANGLES, SCENARIO_STARTS
+from run_development import (rotated_raw_attack, decoded_for_scenario,
+                             protocol_windows, SCENARIO_ANGLES, SCENARIO_STARTS)
 from run_common_g_50 import load_common_g, physical_paths, run_common_g
 from replay import attack_watermarks
 from calibration_rule import path_fwer_cutoff
 
 CALIBRATION_PATHS = 512
 TEST_PATHS = 512
-TEST_SEED = 2026112241
+TEST_SEED = 2026112243
 
 
-def metrics(world, physical, receiver_ids, threshold):
+def metrics(world, physical, receiver_ids, threshold, onset, duration=60):
     sq = np.sum((world.post - physical.x[:, :, None, :]) ** 2, axis=-1)
     net = sq.mean(axis=2)
     affected = sq[:, :, receiver_ids].mean(axis=2)
     alarms = world.scores > threshold
-    eligible = alarms[:, 57:110]
+    windows = protocol_windows(onset,duration)
+    attack_start,stop=windows['attack']
+    eligible_start,_=windows['eligible_score']
+    eligible = alarms[:, eligible_start:stop]
+    if not eligible.shape[1]:
+        raise ValueError('No fully attack-eligible score times remain before attack stop.')
     first = np.argmax(eligible, axis=1)
     detected = eligible.any(axis=1)
     censored_delay = np.where(detected, first, eligible.shape[1])
+    delay_from_onset = np.where(detected, first + windows['eligible_offset_from_onset'], duration)
     return {
         'network_all150': net.mean(axis=1),
         'network_post20': net[:, 20:].mean(axis=1),
-        'network_attack': net[:, 50:110].mean(axis=1),
-        'network_post_attack': net[:, 110:].mean(axis=1),
+        'network_attack': net[:, attack_start:stop].mean(axis=1),
+        'network_post_attack': net[:, windows['post_attack'][0]:windows['post_attack'][1]].mean(axis=1),
         'affected_all150': affected.mean(axis=1),
         'affected_post20': affected[:, 20:].mean(axis=1),
-        'affected_attack': affected[:, 50:110].mean(axis=1),
-        'affected_post_attack': affected[:, 110:].mean(axis=1),
+        'affected_attack': affected[:, attack_start:stop].mean(axis=1),
+        'affected_post_attack': affected[:, windows['post_attack'][0]:windows['post_attack'][1]].mean(axis=1),
         'eligible_tpr': eligible.mean(axis=(1, 2)),
         'eligible_first_alarm_delay': censored_delay.mean(axis=1),
+        'first_alarm_delay_from_attack_onset': delay_from_onset.mean(axis=1),
         'path_any_eligible_alarm': detected.any(axis=1).astype(float),
-        'attack_gate_fraction': world.gates[:, 50:110].mean(axis=(1, 2)),
+        'attack_gate_fraction': world.gates[:, attack_start:stop].mean(axis=(1, 2)),
     }
 
 
@@ -178,7 +186,7 @@ def main():
                         direction_seed=scenario_seed + 300 + 1000 * policy_index,
                         watermark_generator=attack_watermarks)
                     world = run_common_g(model, physical, delta, gate_on=True, threshold=threshold)
-                    values = metrics(world, physical, receiver_ids, threshold)
+                    values = metrics(world, physical, receiver_ids, threshold, onset)
                     path_metrics[policy] = values
                     natural_metrics[policy] = {key: summarize(arr) for key, arr in values.items()}
                     for metric, arr in values.items():
@@ -196,7 +204,7 @@ def main():
                 permanent[:, 1:, :] = True
                 oracle = run_common_g(model, physical, iid_delta,
                                       gate_override=permanent, threshold=threshold)
-                oracle_metrics = metrics(oracle, physical, receiver_ids, threshold)
+                oracle_metrics = metrics(oracle, physical, receiver_ids, threshold, onset)
                 path_metrics['oracle_static_six'] = oracle_metrics
                 for metric, arr in oracle_metrics.items():
                     path_arrays[f'{scenario}_oracle_static_six__{metric}'] = np.asarray(arr)
@@ -211,6 +219,8 @@ def main():
                                                      'network_attack', 'eligible_tpr']}
                 scenario_rec = {
                     'angle_degrees': angle, 'attack_onset': onset,
+                    'attack_interval_half_open': [onset, onset + 60],
+                    'eligible_score_interval_half_open': [onset + 7, onset + 60],
                     'attack_scale_to_equal_raw_joint_energy': attack_scale,
                     'scenario_seed': scenario_seed,
                     'path_ids': [f'test_{TEST_SEED}_{scenario}_{k}' for k in range(TEST_PATHS)],

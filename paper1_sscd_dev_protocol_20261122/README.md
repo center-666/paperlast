@@ -77,12 +77,14 @@ python paper1_sscd_dev_protocol_20261122/verify_v2_experiment.py
 
 `run_final_evaluation.py` 会检查锁定文件与开发损失哈希，并写入 `final_test_results.json` 和逐路径 `final_test_paths.npz`；不会选择参数。终验报告是描述性比较，不能用来改写该次锁定结果。
 
+最终评估按各攻击起点移动窗口：攻击 `[t0,t0+60)`，完全攻击 eligible 分数 `[t0+7,t0+60)`，攻击后 `[t0+60,150)`。首次 eligible 报警同时记录从攻击起点与 eligible 窗口起点计的删失延迟，避免起点65沿用起点50的统计窗口。
+
 本轮已实际执行开发、锁定和独立终验；下载的原始包字节保存在 `source_package.zip`，哈希与文件清单见 `package_manifest.json`、`artifact_manifest.json`。
 
 要运行简短工程烟测：
 
 ```bash
-python paper1_sscd_dev_protocol_20261122/run_development.py --execute --single-scenario-smoke --calibration 512 --paths 64 --seed 2026112701
+python paper1_sscd_dev_protocol_20261122/run_development.py --execute --single-scenario-smoke --calibration 512 --paths 64 --seed 2026112702
 ```
 
 烟测写出 `development_losses.json` 和 `development_manifest.json`，`split=smoke`，**不会生成可用的参数锁定文件**。
@@ -90,7 +92,7 @@ python paper1_sscd_dev_protocol_20261122/run_development.py --execute --single-s
 要执行真正的全新独立开发集（需要显式同意运行和充分计算资源）：
 
 ```bash
-python paper1_sscd_dev_protocol_20261122/run_development.py --execute --calibration 512 --paths 256 --seed 2026112701 --budget 0.1
+python paper1_sscd_dev_protocol_20261122/run_development.py --execute --calibration 512 --paths 256 --seed 2026112702 --budget 0.1
 ```
 
 运行后生成：

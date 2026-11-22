@@ -29,8 +29,23 @@ REQUESTED={
   'pos_boundary':1.315236976827179,
 }
 ATTACK_DURATION=60
+PARITY_ORDER=4
+SCORE_WINDOW=4
 SCENARIO_ANGLES=(0.,-45.,45.)
 SCENARIO_STARTS=(50,65)
+
+
+def protocol_windows(onset,duration=ATTACK_DURATION,parity_order=PARITY_ORDER,score_window=SCORE_WINDOW):
+    """Half-open attack, fully attack-eligible score, and post-attack windows."""
+    if onset<0 or duration<=0 or onset+duration>150:
+        raise ValueError('attack interval must fit the 150-step horizon')
+    stop=onset+duration
+    eligible_start=onset+parity_order+score_window-1
+    if eligible_start>=stop:
+        raise ValueError('attack too short for a fully attack-eligible score window')
+    return {'attack':(onset,stop),'eligible_score':(eligible_start,stop),
+            'post_attack':(stop,150),'eligible_offset_from_onset':eligible_start-onset,
+            'eligible_delay_censor':stop-eligible_start}
 
 
 def sha256(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -106,6 +121,17 @@ def path_losses(world,physical,affected):
             'affected_post20':sq[:,20:,affected].mean(axis=(1,2))}
 
 
+def scenario_rng_seeds(seed, model_i, angle_i, onset_i, policy_i):
+    """Namespace independent streams by scenario and policy; pair only intended inputs."""
+    scenario_index=model_i*6+angle_i*2+onset_i
+    return {
+        'physical':seed+1_000_000+1_000*scenario_index,
+        'radial':seed+10_000_000+10_000*scenario_index,
+        'initial':seed+20_000_000+10_000*scenario_index,
+        'direction':seed+30_000_000+100_000*scenario_index+10_000*policy_i,
+    }
+
+
 def run(*, ncal=512, ndev=256, seed=2026112701, budget=.1,
         angle_set=SCENARIO_ANGLES, onset_set=SCENARIO_STARTS, smoke_only=False):
     hashes=validate_fixtures()
@@ -126,6 +152,7 @@ def run(*, ncal=512, ndev=256, seed=2026112701, budget=.1,
       'watermark_variance':.5,'attack_links':'original six registered',
       'attack_duration':ATTACK_DURATION,
       'scenario_angles_deg':angle_set,'scenario_start_times':onset_set,
+      'rng_stream_policy':'Distinct nonoverlapping physical, radial, initial-direction and transition-direction seed namespaces; radial/initial shared across candidate policies only within a scenario.',
       'candidate_requested':REQUESTED,'candidate_adjustment':audit,
       'fixture_sha256':hashes,
       'development_runner_sha256':sha256(__file__),
@@ -144,14 +171,15 @@ def run(*, ncal=512, ndev=256, seed=2026112701, budget=.1,
             raw_attack,scale=rotated_raw_attack(model,angle)
             for oi,onset in enumerate(onset_set):
                 scen=f'{label}__rot{angle:+.0f}__onset{onset}'
-                ss=10000*mi+1000*ai+100*oi
-                phys=physical_paths(model,ndev,seed+ss+10)
+                streams=scenario_rng_seeds(seed,mi,ai,oi,0)
+                phys=physical_paths(model,ndev,streams['physical'])
                 path_ids=[f'dev_{seed}_{scen}_{k}' for k in range(ndev)]
                 losses={};affected_losses={}
                 # Pre-register common radii and initial directions across all policies.
                 for pi,(policy,theta) in enumerate(candidates.items()):
+                    streams=scenario_rng_seeds(seed,mi,ai,oi,pi)
                     delta=decoded_for_scenario(model,ndev,theta,raw_attack,onset,
-                            seed+ss+20,seed+ss+30,seed+ss+40+pi*1000,attack_watermarks)
+                            streams['radial'],streams['initial'],streams['direction'],attack_watermarks)
                     world=run_common_g(model,phys,delta,gate_on=True,threshold=cutoff['threshold'])
                     loss=path_losses(world,phys,np.asarray(model.receiver_ids,int))
                     losses[policy]=loss['network_post20'].tolist()
@@ -183,7 +211,7 @@ def main():
     ap.add_argument('--execute',action='store_true')
     ap.add_argument('--calibration',type=int,default=512)
     ap.add_argument('--paths',type=int,default=256)
-    ap.add_argument('--seed',type=int,default=2026112701)
+    ap.add_argument('--seed',type=int,default=2026112702)
     ap.add_argument('--budget',type=float,default=.1)
     ap.add_argument('--single-scenario-smoke',action='store_true',
       help='Execute only original-angle and original-onset development smoke (not parameter lock).')

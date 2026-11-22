@@ -1,7 +1,7 @@
 {
   "source_commit": "b9fc33c324fd539c6e223d0da9950dfd00645895",
   "split": "development",
-  "seed": 2026112701,
+  "seed": 2026112702,
   "calibration_paths": 512,
   "development_paths": 256,
   "watermark_variance": 0.5,
@@ -16,6 +16,7 @@
     50,
     65
   ],
+  "rng_stream_policy": "Distinct nonoverlapping physical, radial, initial-direction and transition-direction seed namespaces; radial/initial shared across candidate policies only within a scenario.",
   "candidate_requested": {
     "neg_boundary": -1.315236976827179,
     "neg06": -0.6,
@@ -70,12 +71,12 @@
     "run_common_g_50.py": "22ea30c33321da57aac0bf56b987221b529fc5020ada74b6cc789615f42d096c",
     "replay.py": "05e68f702ccea35d4bd5d4c1396c4acd9dbc79f4c6659150b1e283f279ddbabb"
   },
-  "development_runner_sha256": "9d2a4846e2c0bdd12478f21ffa2fbd13cc91a18f590c18b7883baa0fe1795ff1",
-  "development_selector_sha256": "451401582d6953c9a3af5fa6208a346f82d5c4b388efa07eb55f8a88b1819122",
+  "development_runner_sha256": "57f6baf3326df3db475277b6d9677852848796fe27d64da7d82dac437e94852c",
+  "development_selector_sha256": "edb861a41bdfb12b8c2096d8ef749f23a1a02454090c4de3755ea0c3c3b6a749",
   "split_policy": "New scenario-specific physical streams; prior 99ee54f, afde075 and b9fc33c test paths are not read or reused.",
   "note": "No earlier screening/test path is reused. Angle/onset variants are stress scenarios, not unknown attack support.",
   "unstable_threshold": {
-    "threshold": 60.36504801874509,
+    "threshold": 59.60938278556723,
     "calibration_paths": 512,
     "one_based_rank": 488,
     "alarm_rule": "fresh_path_max > threshold",
@@ -85,35 +86,35 @@
   "unstable__rot+0__onset50": {
     "attack_scale": 1.0,
     "raw_joint_coded_energy": 59006840.79300086,
-    "calibration_threshold": 60.36504801874509
+    "calibration_threshold": 59.60938278556723
   },
   "unstable__rot+0__onset65": {
     "attack_scale": 1.0,
     "raw_joint_coded_energy": 59006840.79300086,
-    "calibration_threshold": 60.36504801874509
+    "calibration_threshold": 59.60938278556723
   },
   "unstable__rot-45__onset50": {
     "attack_scale": 4.474315288136433,
     "raw_joint_coded_energy": 59006840.793000884,
-    "calibration_threshold": 60.36504801874509
+    "calibration_threshold": 59.60938278556723
   },
   "unstable__rot-45__onset65": {
     "attack_scale": 4.474315288136433,
     "raw_joint_coded_energy": 59006840.793000884,
-    "calibration_threshold": 60.36504801874509
+    "calibration_threshold": 59.60938278556723
   },
   "unstable__rot+45__onset50": {
     "attack_scale": 0.832657303483458,
     "raw_joint_coded_energy": 59006840.79300086,
-    "calibration_threshold": 60.36504801874509
+    "calibration_threshold": 59.60938278556723
   },
   "unstable__rot+45__onset65": {
     "attack_scale": 0.832657303483458,
     "raw_joint_coded_energy": 59006840.79300086,
-    "calibration_threshold": 60.36504801874509
+    "calibration_threshold": 59.60938278556723
   },
   "stable_threshold": {
-    "threshold": 60.2539517660941,
+    "threshold": 60.86391409593018,
     "calibration_paths": 512,
     "one_based_rank": 488,
     "alarm_rule": "fresh_path_max > threshold",
@@ -123,35 +124,35 @@
   "stable__rot+0__onset50": {
     "attack_scale": 1.0,
     "raw_joint_coded_energy": 25067.56988313593,
-    "calibration_threshold": 60.2539517660941
+    "calibration_threshold": 60.86391409593018
   },
   "stable__rot+0__onset65": {
     "attack_scale": 1.0,
     "raw_joint_coded_energy": 25067.56988313593,
-    "calibration_threshold": 60.2539517660941
+    "calibration_threshold": 60.86391409593018
   },
   "stable__rot-45__onset50": {
     "attack_scale": 1.3042456250879424,
     "raw_joint_coded_energy": 25067.569883135933,
-    "calibration_threshold": 60.2539517660941
+    "calibration_threshold": 60.86391409593018
   },
   "stable__rot-45__onset65": {
     "attack_scale": 1.3042456250879424,
     "raw_joint_coded_energy": 25067.569883135933,
-    "calibration_threshold": 60.2539517660941
+    "calibration_threshold": 60.86391409593018
   },
   "stable__rot+45__onset50": {
     "attack_scale": 1.193116836651774,
     "raw_joint_coded_energy": 25067.569883135926,
-    "calibration_threshold": 60.2539517660941
+    "calibration_threshold": 60.86391409593018
   },
   "stable__rot+45__onset65": {
     "attack_scale": 1.193116836651774,
     "raw_joint_coded_energy": 25067.569883135926,
-    "calibration_threshold": 60.2539517660941
+    "calibration_threshold": 60.86391409593018
   },
-  "development_sha256": "f1f541af5b38570c55ce0c6cbdf205afc1183918758ea66701c27ff4f2aebdfd",
-  "lock_sha256": "8a801b063194fa351e17f60781d541a28307a14232cb34bf069591d01282eec9",
+  "development_sha256": "79b471544a1149ffe24695549f53ae9a4fd1c3e2955ef4b7e90b81582570b1a7",
+  "lock_sha256": "69c6eab3254ac010ac03de1bda836ad5088fb87a258cc208d7440202140e526d",
   "selected": "iid",
-  "archive_note": "JSON/text line endings normalized to LF after the completed run; parsed data and locked decision are unchanged and revalidated."
+  "archive_note": "Primary JSON/text artifacts normalized to LF after execution; parsed data and locked choice revalidated."
 }

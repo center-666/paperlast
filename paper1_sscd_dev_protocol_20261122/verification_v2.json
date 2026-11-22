@@ -9,10 +9,10 @@
   "final_test_paths_per_scenario": 512,
   "final_test_path_ids_globally_unique_and_disjoint_from_development": true,
   "locked_choice_recomputed_from_unchanged_development_data": true,
-  "selector_hash_at_development_run": "451401582d6953c9a3af5fa6208a346f82d5c4b388efa07eb55f8a88b1819122",
-  "selector_hash_current": "643d140466efef7dfb692a38b3d5ff43ecdb1ec40139d3171d7b305dff101fd0",
-  "selector_change_note": "Only a post-run global cross-scenario path-ID uniqueness guard was added; selector decision code matches the recorded development hash.",
+  "selector_hash_at_development_run": "edb861a41bdfb12b8c2096d8ef749f23a1a02454090c4de3755ea0c3c3b6a749",
+  "selector_hash_current": "edb861a41bdfb12b8c2096d8ef749f23a1a02454090c4de3755ea0c3c3b6a749",
+  "selector_change_note": "selector unchanged since development run",
   "candidate_world_records_checked": 60,
-  "path_level_final_arrays": 874,
+  "path_level_final_arrays": 946,
   "frozen_source_hashes_match": true
 }

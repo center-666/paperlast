@@ -1,0 +1,157 @@
+{
+  "source_commit": "b9fc33c324fd539c6e223d0da9950dfd00645895",
+  "split": "development",
+  "seed": 2026112701,
+  "calibration_paths": 512,
+  "development_paths": 256,
+  "watermark_variance": 0.5,
+  "attack_links": "original six registered",
+  "attack_duration": 60,
+  "scenario_angles_deg": [
+    0.0,
+    -45.0,
+    45.0
+  ],
+  "scenario_start_times": [
+    50,
+    65
+  ],
+  "candidate_requested": {
+    "neg_boundary": -1.315236976827179,
+    "neg06": -0.6,
+    "iid": 0.0,
+    "pos06": 0.6,
+    "pos_boundary": 1.315236976827179
+  },
+  "candidate_adjustment": {
+    "neg_boundary": {
+      "status": "feasible",
+      "theta_requested": -1.315236976827179,
+      "theta_used": -1.3152369768257723,
+      "MI_nats": "0.099999999999815003709711097784565248990116968023553432820897347273711821244225255",
+      "MI_requested_nats": "0.10000000000001284408047068660673905843395405935701077184994661415518823626796273",
+      "adjusted": true,
+      "adjustment_reason": "rounding-only exceedance projected inward"
+    },
+    "neg06": {
+      "status": "feasible",
+      "theta_requested": -0.6,
+      "theta_used": -0.6,
+      "MI_nats": "0.022126539460220673898706258184674419568850018421777135567664836917983672255766876",
+      "adjusted": false
+    },
+    "iid": {
+      "status": "feasible",
+      "theta_requested": 0.0,
+      "theta_used": 0.0,
+      "MI_nats": "0.0",
+      "adjusted": false
+    },
+    "pos06": {
+      "status": "feasible",
+      "theta_requested": 0.6,
+      "theta_used": 0.6,
+      "MI_nats": "0.022126539460220673898706258184674419568850018421777135567664836917983672255766875",
+      "adjusted": false
+    },
+    "pos_boundary": {
+      "status": "feasible",
+      "theta_requested": 1.315236976827179,
+      "theta_used": 1.3152369768257723,
+      "MI_nats": "0.099999999999815003709711097784565248990116968023553432820897347273711821244225254",
+      "MI_requested_nats": "0.10000000000001284408047068660673905843395405935701077184994661415518823626796273",
+      "adjusted": true,
+      "adjustment_reason": "rounding-only exceedance projected inward"
+    }
+  },
+  "fixture_sha256": {
+    "gain_table.json": "57108c5f23138d5621138e4060e118144d34088b70bce1d9d3fc4a2914cd224e",
+    "physical_configuration.json": "c25437077cb73ac2332160e55f6183550bb8fc5318d93bb32c183a11d661b50d",
+    "run_common_g_50.py": "22ea30c33321da57aac0bf56b987221b529fc5020ada74b6cc789615f42d096c",
+    "replay.py": "05e68f702ccea35d4bd5d4c1396c4acd9dbc79f4c6659150b1e283f279ddbabb"
+  },
+  "development_runner_sha256": "9d2a4846e2c0bdd12478f21ffa2fbd13cc91a18f590c18b7883baa0fe1795ff1",
+  "development_selector_sha256": "451401582d6953c9a3af5fa6208a346f82d5c4b388efa07eb55f8a88b1819122",
+  "split_policy": "New scenario-specific physical streams; prior 99ee54f, afde075 and b9fc33c test paths are not read or reused.",
+  "note": "No earlier screening/test path is reused. Angle/onset variants are stress scenarios, not unknown attack support.",
+  "unstable_threshold": {
+    "threshold": 60.36504801874509,
+    "calibration_paths": 512,
+    "one_based_rank": 488,
+    "alarm_rule": "fresh_path_max > threshold",
+    "marginal_path_fwer_bound": 0.04873294346978557,
+    "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+  },
+  "unstable__rot+0__onset50": {
+    "attack_scale": 1.0,
+    "raw_joint_coded_energy": 59006840.79300086,
+    "calibration_threshold": 60.36504801874509
+  },
+  "unstable__rot+0__onset65": {
+    "attack_scale": 1.0,
+    "raw_joint_coded_energy": 59006840.79300086,
+    "calibration_threshold": 60.36504801874509
+  },
+  "unstable__rot-45__onset50": {
+    "attack_scale": 4.474315288136433,
+    "raw_joint_coded_energy": 59006840.793000884,
+    "calibration_threshold": 60.36504801874509
+  },
+  "unstable__rot-45__onset65": {
+    "attack_scale": 4.474315288136433,
+    "raw_joint_coded_energy": 59006840.793000884,
+    "calibration_threshold": 60.36504801874509
+  },
+  "unstable__rot+45__onset50": {
+    "attack_scale": 0.832657303483458,
+    "raw_joint_coded_energy": 59006840.79300086,
+    "calibration_threshold": 60.36504801874509
+  },
+  "unstable__rot+45__onset65": {
+    "attack_scale": 0.832657303483458,
+    "raw_joint_coded_energy": 59006840.79300086,
+    "calibration_threshold": 60.36504801874509
+  },
+  "stable_threshold": {
+    "threshold": 60.2539517660941,
+    "calibration_paths": 512,
+    "one_based_rank": 488,
+    "alarm_rule": "fresh_path_max > threshold",
+    "marginal_path_fwer_bound": 0.04873294346978557,
+    "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+  },
+  "stable__rot+0__onset50": {
+    "attack_scale": 1.0,
+    "raw_joint_coded_energy": 25067.56988313593,
+    "calibration_threshold": 60.2539517660941
+  },
+  "stable__rot+0__onset65": {
+    "attack_scale": 1.0,
+    "raw_joint_coded_energy": 25067.56988313593,
+    "calibration_threshold": 60.2539517660941
+  },
+  "stable__rot-45__onset50": {
+    "attack_scale": 1.3042456250879424,
+    "raw_joint_coded_energy": 25067.569883135933,
+    "calibration_threshold": 60.2539517660941
+  },
+  "stable__rot-45__onset65": {
+    "attack_scale": 1.3042456250879424,
+    "raw_joint_coded_energy": 25067.569883135933,
+    "calibration_threshold": 60.2539517660941
+  },
+  "stable__rot+45__onset50": {
+    "attack_scale": 1.193116836651774,
+    "raw_joint_coded_energy": 25067.569883135926,
+    "calibration_threshold": 60.2539517660941
+  },
+  "stable__rot+45__onset65": {
+    "attack_scale": 1.193116836651774,
+    "raw_joint_coded_energy": 25067.569883135926,
+    "calibration_threshold": 60.2539517660941
+  },
+  "development_sha256": "f1f541af5b38570c55ce0c6cbdf205afc1183918758ea66701c27ff4f2aebdfd",
+  "lock_sha256": "8a801b063194fa351e17f60781d541a28307a14232cb34bf069591d01282eec9",
+  "selected": "iid",
+  "archive_note": "JSON/text line endings normalized to LF after the completed run; parsed data and locked decision are unchanged and revalidated."
+}

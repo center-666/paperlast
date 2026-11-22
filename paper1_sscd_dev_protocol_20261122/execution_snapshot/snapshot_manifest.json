@@ -1,0 +1,37 @@
+{
+  "status": "Historical e48c65f snapshot; superseded ratio confidence rule and onset65 timing summaries; retained for provenance, not authoritative results",
+  "files": {
+    "selector_v2.py": {
+      "bytes": 10359,
+      "sha256": "643d140466efef7dfb692a38b3d5ff43ecdb1ec40139d3171d7b305dff101fd0"
+    },
+    "run_development.py": {
+      "bytes": 10343,
+      "sha256": "9d2a4846e2c0bdd12478f21ffa2fbd13cc91a18f590c18b7883baa0fe1795ff1"
+    },
+    "run_final_evaluation.py": {
+      "bytes": 15211,
+      "sha256": "a760346a8fe90b305d56af05609e42598beb5fad922478ba590b8de5026ed8e4"
+    },
+    "locked_selection.json": {
+      "bytes": 30080,
+      "sha256": "8a801b063194fa351e17f60781d541a28307a14232cb34bf069591d01282eec9"
+    },
+    "development_manifest.json": {
+      "bytes": 6006,
+      "sha256": "50be5481ed6a45c755a8d1d7dda0ee3ec6c08ea0a263d11a0cf7f6af8cd9621e"
+    },
+    "final_test_results.json": {
+      "bytes": 804124,
+      "sha256": "3d8e8802c8e5233c3add3ee5b60a4b7fea22a160717e7622e4c6c7be0855ae2b"
+    },
+    "final_test_manifest.json": {
+      "bytes": 54279,
+      "sha256": "03773b83f6fa60ba2baab663ca26f296b364b59da1b0195b1195de9b97b79829"
+    },
+    "selector_at_development_run.py": {
+      "bytes": 10166,
+      "sha256": "451401582d6953c9a3af5fa6208a346f82d5c4b388efa07eb55f8a88b1819122"
+    }
+  }
+}

@@ -10,7 +10,7 @@
   "attack_duration": 60,
   "development": {
     "split": "development",
-    "seed": 2026112701,
+    "seed": 2026112702,
     "calibration_paths_per_dynamics": 512,
     "paths_per_scenario": 256,
     "angles_degrees": [0, -45, 45],
@@ -25,19 +25,18 @@
       "pos_boundary_projected": 1.3152369768257723
     },
     "adjacent_direction_MI_budget_nats": 0.1,
-    "selector": "paired final common-G network MSE; simultaneous one-sided paired-difference t UCB and iid-baseline t LCB; Bonferroni 48 numerator + 12 denominator bounds",
-    "selector_selected": "iid"
+    "selector": "paired final common-G network MSE; simultaneous one-sided paired-difference t UCB and two-sided iid-baseline endpoints; Bonferroni 48 numerator + 24 denominator endpoint bounds; if numerator UCB is negative, divide by baseline upper endpoint",
+    "selection_output": "locked_selection.json"
   },
   "final_test": {
     "split": "final_test",
-    "seed_base": 2026112241,
+    "seed_base": 2026112243,
     "calibration_paths_per_dynamics": 512,
     "independent_healthy_test_paths_per_dynamics": 512,
     "test_paths_per_scenario_and_dynamics": 512,
     "scenario_count": 12,
     "threshold_rule": "Path maximum over all six registered links and k=4..149; one-based rank488; strict score > threshold",
     "parameter_lock_sha256": "Read from locked_selection.json and final_test_manifest.json; never changed using final-test outcomes",
-    "locked_theta": 0.0,
     "candidate_outcomes": "Descriptive only; final-test comparisons do not update the selected parameter"
   },
   "metrics": [

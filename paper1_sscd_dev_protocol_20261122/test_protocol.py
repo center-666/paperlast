@@ -4,7 +4,7 @@ from types import SimpleNamespace
 import numpy as np
 from selector_v2 import (REFERENCE_COMMIT, information, project_theta,
                          select_from_development)
-from run_development import rotated_raw_attack,decoded_for_scenario
+from run_development import rotated_raw_attack,decoded_for_scenario,scenario_rng_seeds,protocol_windows
 
 
 def test_mi_projection():
@@ -74,7 +74,50 @@ def test_select_guards():
     except ValueError:pass
     else:raise AssertionError('Cross-scenario path reuse was accepted')
 
+
+def test_seed_namespaces():
+    rows=[];calibration=[]
+    for model_i in range(2):
+        calibration.append(2026112702+100_000*model_i)
+        for angle_i in range(3):
+            for onset_i in range(2):
+                for policy_i in range(5):
+                    rows.append((model_i,angle_i,onset_i,policy_i,
+                                 scenario_rng_seeds(2026112702,model_i,angle_i,onset_i,policy_i)))
+    for kind in ['physical','radial','initial']:
+        by_scenario={}
+        for model_i,angle_i,onset_i,policy_i,streams in rows:
+            by_scenario.setdefault((model_i,angle_i,onset_i),set()).add(streams[kind])
+        assert len(by_scenario)==12 and all(len(v)==1 for v in by_scenario.values()),kind
+        assert len({next(iter(v)) for v in by_scenario.values()})==12,kind
+    directions=[entry[4]['direction'] for entry in rows]
+    assert len(directions)==60 and len(set(directions))==60
+    # Radial/initial seeds intentionally repeat five times within one paired scenario.
+    unique_across_namespaces=[]
+    for kind in ['physical','radial','initial','direction']:
+        unique_across_namespaces.extend(set(entry[4][kind] for entry in rows))
+    unique_across_namespaces.extend(calibration)
+    assert len(unique_across_namespaces)==len(set(unique_across_namespaces))
+    assert max(unique_across_namespaces)<2**32
+
+
+def test_onset_specific_windows():
+    expected={50:((50,110),(57,110),(110,150)),
+              65:((65,125),(72,125),(125,150))}
+    for onset,want in expected.items():
+        got=protocol_windows(onset)
+        assert (got['attack'],got['eligible_score'],got['post_attack'])==want
+        scores=np.zeros((1,150,1))
+        scores[0,onset+6,0]=1.0   # before all attack-affected scores
+        scores[0,onset+7,0]=1.0   # first fully eligible score
+        scores[0,onset+59,0]=1.0  # final in-support score
+        scores[0,onset+60,0]=1.0 # after support
+        alarms=scores[0,:,0]>0
+        start,stop=got['eligible_score']
+        assert alarms[start:stop].sum()==2
+        assert alarms[stop]  # Present in raw score, excluded by half-open window.
+
 if __name__=='__main__':
-    test_mi_projection();test_rotation_and_shift();test_select_guards()
-    print(json.dumps({'status':'PASS','tests':3,
+    test_mi_projection();test_rotation_and_shift();test_select_guards();test_seed_namespaces();test_onset_specific_windows()
+    print(json.dumps({'status':'PASS','tests':5,
                       'note':'SYNTHETIC ONLY, no physical 50-node evaluation'},indent=2))

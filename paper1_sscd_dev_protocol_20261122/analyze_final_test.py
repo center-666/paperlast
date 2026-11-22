@@ -49,7 +49,8 @@ def main():
             metrics[policy] = {
                 key: stratified_difference(model, policy, key)
                 for key in ['network_post20', 'affected_post20', 'network_attack',
-                            'eligible_tpr', 'eligible_first_alarm_delay']}
+                                    'eligible_tpr', 'eligible_first_alarm_delay',
+                                    'first_alarm_delay_from_attack_onset']}
         out['models'][model] = {
             'threshold': RESULT['models'][model]['threshold'],
             'independent_healthy_test': RESULT['models'][model]['independent_healthy_test'],

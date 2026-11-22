@@ -107,17 +107,17 @@ def select_from_development(data: dict, *, budget: float=0.1,
     # Simultaneous bounds cover every alternative/scenario numerator and each
     # scenario's iid denominator. Student-t calibration is approximate.
     numerator_bounds=(len(names)-1)*len(scenarios)
-    denominator_bounds=len(scenarios)
+    denominator_bounds=2*len(scenarios)
     tests=numerator_bounds+denominator_bounds
-    baseline_lcb={}
+    baseline_intervals={}
     for scenario,rec in scenarios.items():
         ref=np.asarray(rec['losses']['iid'],float)
         n=len(ref);mean=float(ref.mean());se=float(ref.std(ddof=1)/np.sqrt(n))
         q=student_t.ppf(1-alpha/tests,n-1)
-        lower=mean-q*se
+        lower=mean-q*se;upper=mean+q*se
         if lower<=0:
             raise ValueError(f'{scenario}: simultaneous iid baseline lower bound is not positive')
-        baseline_lcb[scenario]=lower
+        baseline_intervals[scenario]=(lower,upper)
     report={}; selected='iid'; best=float('inf')
     for policy in sorted(names):
         admissible=project_theta(float(theta[policy]),budget,m)
@@ -133,13 +133,13 @@ def select_from_development(data: dict, *, budget: float=0.1,
             n=len(paired);avg=paired.mean();se=paired.std(ddof=1)/math.sqrt(n)
             q=student_t.ppf(1-alpha/tests,n-1) if tests else 0.
             upper_abs=avg+q*se
-            # A ratio UCB uses simultaneous numerator and positive denominator
-            # bounds; dividing by the observed iid mean understates uncertainty.
-            relative_upper=upper_abs/baseline_lcb[scenario]
+            lower_baseline,upper_baseline=baseline_intervals[scenario]
+            relative_upper=ratio_upper_bound(upper_abs,lower_baseline,upper_baseline)
             stats.append({'scenario':scenario,'n':n,'mean_abs_diff':float(avg),
                 'se_abs':float(se),'numerator_upper_abs':float(upper_abs),
                 'mean_relative':float(avg/base),
-                'simultaneous_baseline_lower':float(baseline_lcb[scenario]),
+                'simultaneous_baseline_lower':float(lower_baseline),
+                'simultaneous_baseline_upper':float(upper_baseline),
                 'simultaneous_relative_upper_t_approx':float(relative_upper),
                 'baseline_mean':float(base)})
         worst=max(s['simultaneous_relative_upper_t_approx'] for s in stats)
@@ -149,14 +149,28 @@ def select_from_development(data: dict, *, budget: float=0.1,
     return {'selected':selected, 'theta_locked':report[selected]['theta_used'],
       'MI_locked_nats':report[selected]['MI_nats'],'info_budget_nats_per_step':budget,
       'selector':'one-sided paired Bonferroni-UCB, development-only',
-      'interval_method':'simultaneous one-sided paired-difference Student-t UCB and positive iid-baseline Student-t LCB; Bonferroni; approximate under skewed path losses',
+      'interval_method':'simultaneous paired-difference Student-t UCB and two-sided iid-baseline endpoints, each one-sided Bonferroni; use numerator/lower if numerator nonnegative, numerator/upper otherwise; approximate under skewed path losses',
       'alpha':alpha,'familywise_bounds':tests,
       'alternative_numerator_bounds':numerator_bounds,
-      'iid_denominator_lower_bounds':denominator_bounds,
+      'iid_denominator_lower_bounds':len(scenarios),
+      'iid_denominator_upper_bounds':len(scenarios),
       'minimum_relative_gain':min_relative_gain,
       'source_commit':expected_source,'scenarios':list(scenarios),
       'candidate_audit':report,'status':'DEVELOPMENT_CHOICE_ONLY_NOT_FINAL_TEST',
       'source_sha256':hashlib.sha256(json.dumps(data,sort_keys=True).encode()).hexdigest()}
+
+
+def ratio_upper_bound(numerator_upper,baseline_lower,baseline_upper):
+    """Supremum of D/B for D<=numerator_upper and 0<L<=B<=U.
+
+    Negative numerator bounds use the UPPER denominator. Using the lower
+    endpoint there would produce a smaller, invalid claimed upper bound.
+    """
+    if not all(np.isfinite(x) for x in [numerator_upper,baseline_lower,baseline_upper]):
+        raise ValueError('Finite numerator and denominator bounds required')
+    if not 0<baseline_lower<=baseline_upper:
+        raise ValueError('Strictly positive ordered denominator endpoints required')
+    return numerator_upper/(baseline_lower if numerator_upper>=0 else baseline_upper)
 
 
 def self_test():
@@ -164,18 +178,20 @@ def self_test():
     assert bound['status']=='feasible' and bound['adjusted']
     assert float(bound['MI_nats']) < 0.1
     assert project_theta(-2,0.1)['status']=='over_budget'
+    assert np.isclose(ratio_upper_bound(1.,2.,4.),.5)
+    assert np.isclose(ratio_upper_bound(-1.,2.,4.),-.25)
     rng=np.random.default_rng(227)
     n=256;ids=[f'fresh_{i}' for i in range(n)]
     base=.065+rng.normal(size=n)*.002
-    def scenario(benefit):
-        return {'path_ids':ids,'losses':{k: (base+shift+rng.normal(size=n)*.00002).tolist()
+    def scenario(benefit,prefix):
+        return {'path_ids':[prefix+'_'+i for i in ids],'losses':{k: (base+shift+rng.normal(size=n)*.00002).tolist()
             for k,shift in [('iid',0),('negative',benefit),('positive',+.0004)]}}
     data={'source_commit':REFERENCE_COMMIT,'split':'development',
       'theta':{'iid':0,'negative':-1.315236976827179,'positive':1.315236976827179},
-      'scenarios':{'s1':scenario(-.0007),'s2':scenario(-.0009)}}
+      'scenarios':{'s1':scenario(-.0007,'s1'),'s2':scenario(-.0009,'s2')}}
     result=select_from_development(data)
     assert result['selected']=='negative',result
-    data['scenarios']['s2']=scenario(.0004)
+    data['scenarios']['s2']=scenario(.0004,'s2')
     result2=select_from_development(data)
     assert result2['selected']=='iid'
     print(json.dumps({'result':'PASS','boundary_projection':bound,
