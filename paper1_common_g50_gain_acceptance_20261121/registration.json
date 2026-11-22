@@ -6,6 +6,15 @@
   "latest_user_input": "user_input_common_g.txt",
   "scope": "Freeze NEW aggregate-observation nominal common-G gains; implement runner; pass three engineering acceptances before common-G SSCD efficacy experiments.",
   "latest_user_bound": "Do not launch new 1000-path common-G Monte Carlo at this stage.",
+  "watermark_effect_phase": {
+    "deterministic_bridge": "Exact no-gate common-G state-risk polynomial Q_Gamma(zeta) for the recovered six-link attack family, with source means retained and independent source covariances summed.",
+    "screening_calibration_paths_per_model": 512,
+    "screening_evaluation_paths_per_model": 128,
+    "screening_threshold": "Per-dynamics finite-sample path-max rank rule, one-based rank488, strict score > threshold",
+    "screening_policies": ["iid", "negative theta=-1.315236976827179", "positive theta=+1.315236976827179", "static known-six edge drop"],
+    "screening_results": ["common_g_watermark_risk.json", "common_g_small_results.json", "common_g_small_paths.npz"],
+    "claim_boundary": "Directionally consistent deterministic and closed-loop screening evidence; not final common-G Monte Carlo power or unknown-location guarantee."
+  },
   "prior_phase": "The sibling paper1_50node_tv_gate_theory_20261121 study had already completed legacy stacked-KF 512 calibration and 1024 evaluation paths per model before the latest input arrived. Preserve that estimator identity.",
   "physical_configuration_sha256": "c25437077cb73ac2332160e55f6183550bb8fc5318d93bb32c183a11d661b50d",
   "source_physical_configuration": "049bdc6:paper1_original50_source_20261121/configuration_snapshot.json",

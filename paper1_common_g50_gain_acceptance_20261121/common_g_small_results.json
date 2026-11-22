@@ -1,0 +1,1205 @@
+{
+  "status": "PASS",
+  "scope": "Small held-out common-G screening; no final efficacy claim.",
+  "calibration_paths_per_model": 512,
+  "evaluation_paths_per_model": 128,
+  "threshold_rule": "calibration path maximum over k=4..149 and all six links; strict score > threshold",
+  "models": {
+    "unstable": {
+      "calibration": {
+        "threshold": 60.01785828583004,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "calibration_minimum_maximum": 48.13269970276086,
+      "calibration_maximum_maximum": 64.88701691442483,
+      "healthy": {
+        "network_mse_all150": {
+          "mean": 0.07428526286057505,
+          "path_se": 0.0012734935342111774,
+          "paths": 128
+        },
+        "network_mse_post20": {
+          "mean": 0.05974788556361178,
+          "path_se": 0.000164466304815921,
+          "paths": 128
+        },
+        "affected_mse_post20": {
+          "mean": 0.04896112593783994,
+          "path_se": 0.0002172323437095425,
+          "paths": 128
+        },
+        "attack_network_mse": {
+          "mean": 0.05947160691154212,
+          "path_se": 0.00025637132653076524,
+          "paths": 128
+        },
+        "after_support_network_mse": {
+          "mean": 0.06004748759824949,
+          "path_se": 0.0003058002203814528,
+          "paths": 128
+        },
+        "after_buffer_recovery_network_mse": {
+          "mean": 0.059930705515016905,
+          "path_se": 0.0003204825697178309,
+          "paths": 128
+        },
+        "eligible_tpr_full_window": {
+          "mean": 0.0,
+          "path_se": 0.0,
+          "paths": 128
+        },
+        "path_alarm_full_window": {
+          "mean": 0.0,
+          "path_se": 0.0,
+          "paths": 128
+        },
+        "path_alarm_any_decision": {
+          "mean": 0.046875,
+          "path_se": 0.018756150566017486,
+          "paths": 128
+        },
+        "gate_fraction_attack_window": {
+          "mean": 0.0,
+          "path_se": 0.0,
+          "paths": 128
+        }
+      },
+      "static_known_six": {
+        "gated": {
+          "network_mse_all150": {
+            "mean": 0.07493817374090894,
+            "path_se": 0.001273587359202437,
+            "paths": 128
+          },
+          "network_mse_post20": {
+            "mean": 0.06040319228496667,
+            "path_se": 0.00016667342234372599,
+            "paths": 128
+          },
+          "affected_mse_post20": {
+            "mean": 0.05551419315138886,
+            "path_se": 0.0002501105053719783,
+            "paths": 128
+          },
+          "attack_network_mse": {
+            "mean": 0.0601137370425527,
+            "path_se": 0.0002592174842364517,
+            "paths": 128
+          },
+          "after_support_network_mse": {
+            "mean": 0.06070061225593407,
+            "path_se": 0.0003111268463552615,
+            "paths": 128
+          },
+          "after_buffer_recovery_network_mse": {
+            "mean": 0.06058356788376519,
+            "path_se": 0.0003250258848519123,
+            "paths": 128
+          },
+          "eligible_tpr_full_window": {
+            "mean": 0.0,
+            "path_se": 0.0,
+            "paths": 128
+          },
+          "path_alarm_full_window": {
+            "mean": 0.0,
+            "path_se": 0.0,
+            "paths": 128
+          },
+          "path_alarm_any_decision": {
+            "mean": 0.046875,
+            "path_se": 0.018756150566017486,
+            "paths": 128
+          },
+          "gate_fraction_attack_window": {
+            "mean": 1.0,
+            "path_se": 0.0,
+            "paths": 128
+          }
+        },
+        "attacked_with_iid_watermark": {
+          "network_mse_all150": {
+            "mean": 0.07493817374090894,
+            "path_se": 0.001273587359202437,
+            "paths": 128
+          },
+          "network_mse_post20": {
+            "mean": 0.06040319228496667,
+            "path_se": 0.00016667342234372599,
+            "paths": 128
+          },
+          "affected_mse_post20": {
+            "mean": 0.05551419315138886,
+            "path_se": 0.0002501105053719783,
+            "paths": 128
+          },
+          "attack_network_mse": {
+            "mean": 0.0601137370425527,
+            "path_se": 0.0002592174842364517,
+            "paths": 128
+          },
+          "after_support_network_mse": {
+            "mean": 0.06070061225593407,
+            "path_se": 0.0003111268463552615,
+            "paths": 128
+          },
+          "after_buffer_recovery_network_mse": {
+            "mean": 0.06058356788376519,
+            "path_se": 0.0003250258848519123,
+            "paths": 128
+          },
+          "eligible_tpr_full_window": {
+            "mean": 0.9888463050314467,
+            "path_se": 0.0008809342676798864,
+            "paths": 128
+          },
+          "path_alarm_full_window": {
+            "mean": 1.0,
+            "path_se": 0.0,
+            "paths": 128
+          },
+          "path_alarm_any_decision": {
+            "mean": 1.0,
+            "path_se": 0.0,
+            "paths": 128
+          },
+          "gate_fraction_attack_window": {
+            "mean": 1.0,
+            "path_se": 0.0,
+            "paths": 128
+          }
+        },
+        "attack_minus_healthy": {
+          "network_mse_post20": {
+            "mean": 0.0,
+            "path_se": 0.0,
+            "paths": 128
+          },
+          "affected_mse_post20": {
+            "mean": 0.0,
+            "path_se": 0.0,
+            "paths": 128
+          },
+          "attack_network_mse": {
+            "mean": 0.0,
+            "path_se": 0.0,
+            "paths": 128
+          }
+        },
+        "scope": "Oracle/known-candidate support baseline; all six registered links removed from k=1 onward."
+      },
+      "policies": {
+        "iid": {
+          "theta": 0.0,
+          "zeta": 0.0,
+          "gated": {
+            "network_mse_all150": {
+              "mean": 0.07633629819261976,
+              "path_se": 0.0012723991304367222,
+              "paths": 128
+            },
+            "network_mse_post20": {
+              "mean": 0.06211446479289414,
+              "path_se": 0.00017412347774504466,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.07262691823066353,
+              "path_se": 0.0006926352904048153,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.06452276123174491,
+              "path_se": 0.0002773923707483512,
+              "paths": 128
+            },
+            "after_support_network_mse": {
+              "mean": 0.060162138613112946,
+              "path_se": 0.0003070958106446971,
+              "paths": 128
+            },
+            "after_buffer_recovery_network_mse": {
+              "mean": 0.05993087255913353,
+              "path_se": 0.0003204538452297579,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.9888463050314467,
+              "path_se": 0.0008809342676798864,
+              "paths": 128
+            },
+            "path_alarm_full_window": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "path_alarm_any_decision": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "gate_fraction_attack_window": {
+              "mean": 0.9230902777777779,
+              "path_se": 0.0016799054755550517,
+              "paths": 128
+            }
+          },
+          "no_gate": {
+            "network_mse_all150": {
+              "mean": 86.65346980086838,
+              "path_se": 2.137279713719363,
+              "paths": 128
+            },
+            "network_mse_post20": {
+              "mean": 99.95880718838163,
+              "path_se": 2.4660279655443444,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 999.0395541541182,
+              "path_se": 24.660297999654553,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 216.46408059947845,
+              "path_se": 5.341649926919305,
+              "paths": 128
+            },
+            "after_support_network_mse": {
+              "mean": 0.12507673290642055,
+              "path_se": 0.005391798864481031,
+              "paths": 128
+            },
+            "after_buffer_recovery_network_mse": {
+              "mean": 0.059930705514958105,
+              "path_se": 0.0003204825697192315,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.9888463050314467,
+              "path_se": 0.0008809342676798864,
+              "paths": 128
+            },
+            "path_alarm_full_window": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "path_alarm_any_decision": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "gate_fraction_attack_window": {
+              "mean": 0.0,
+              "path_se": 0.0,
+              "paths": 128
+            }
+          }
+        },
+        "negative": {
+          "theta": -1.315236976827179,
+          "zeta": -0.3122270913392132,
+          "gated": {
+            "network_mse_all150": {
+              "mean": 0.07608565418523575,
+              "path_se": 0.0012712564683705814,
+              "paths": 128
+            },
+            "network_mse_post20": {
+              "mean": 0.06182526016898951,
+              "path_se": 0.00017494313968175314,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.06973487199161724,
+              "path_se": 0.0005960630040669113,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.0638961512132849,
+              "path_se": 0.0002847387720525013,
+              "paths": 128
+            },
+            "after_support_network_mse": {
+              "mean": 0.060162138613112946,
+              "path_se": 0.0003070958106446971,
+              "paths": 128
+            },
+            "after_buffer_recovery_network_mse": {
+              "mean": 0.05993087255913353,
+              "path_se": 0.0003204538452297579,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.9919418238993711,
+              "path_se": 0.0007551820748504715,
+              "paths": 128
+            },
+            "path_alarm_full_window": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "path_alarm_any_decision": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "gate_fraction_attack_window": {
+              "mean": 0.9312065972222221,
+              "path_se": 0.001498847584746013,
+              "paths": 128
+            }
+          },
+          "no_gate": {
+            "network_mse_all150": {
+              "mean": 85.26810842938328,
+              "path_se": 1.9967808616128775,
+              "paths": 128
+            },
+            "network_mse_post20": {
+              "mean": 98.3603132982065,
+              "path_se": 2.303953780519241,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 983.054615252367,
+              "path_se": 23.03949863247154,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 212.99714261866222,
+              "path_se": 4.989767158221257,
+              "paths": 128
+            },
+            "after_support_network_mse": {
+              "mean": 0.13037856106173074,
+              "path_se": 0.006454270953364987,
+              "paths": 128
+            },
+            "after_buffer_recovery_network_mse": {
+              "mean": 0.05993070551500529,
+              "path_se": 0.00032048256972002216,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.9919418238993711,
+              "path_se": 0.0007551820748504715,
+              "paths": 128
+            },
+            "path_alarm_full_window": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "path_alarm_any_decision": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "gate_fraction_attack_window": {
+              "mean": 0.0,
+              "path_se": 0.0,
+              "paths": 128
+            }
+          },
+          "paired_gated_minus_iid": {
+            "network_mse_post20": {
+              "mean": -0.000289204623904628,
+              "path_se": 6.655230220593792e-05,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": -0.002892046239046279,
+              "path_se": 0.0006655230220593803,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": -0.0006266100184600279,
+              "path_se": 0.00014419665477953235,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.0030955188679245276,
+              "path_se": 0.0008450731492857807,
+              "paths": 128
+            }
+          },
+          "paired_no_gate_minus_iid": {
+            "network_mse_post20": {
+              "mean": -1.5984938901751145,
+              "path_se": 1.9561021796748397,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": -15.984938901751171,
+              "path_se": 19.561021796748403,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": -3.4669379808162892,
+              "path_se": 4.236167074225753,
+              "paths": 128
+            }
+          }
+        },
+        "positive": {
+          "theta": 1.315236976827179,
+          "zeta": 0.31222709133921356,
+          "gated": {
+            "network_mse_all150": {
+              "mean": 0.07658579148194111,
+              "path_se": 0.001265483336596056,
+              "paths": 128
+            },
+            "network_mse_post20": {
+              "mean": 0.062402341665187995,
+              "path_se": 0.00019766972413047163,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.07550568695360213,
+              "path_se": 0.001002007356312474,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.06514649445504829,
+              "path_se": 0.0003373691154680652,
+              "paths": 128
+            },
+            "after_support_network_mse": {
+              "mean": 0.060162138613112946,
+              "path_se": 0.0003070958106446971,
+              "paths": 128
+            },
+            "after_buffer_recovery_network_mse": {
+              "mean": 0.05993087255913353,
+              "path_se": 0.0003204538452297579,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.9841047562893083,
+              "path_se": 0.0011799201349785595,
+              "paths": 128
+            },
+            "path_alarm_full_window": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "path_alarm_any_decision": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "gate_fraction_attack_window": {
+              "mean": 0.9192491319444445,
+              "path_se": 0.0020181042204195122,
+              "paths": 128
+            }
+          },
+          "no_gate": {
+            "network_mse_all150": {
+              "mean": 85.21348524394523,
+              "path_se": 1.9696909067194466,
+              "paths": 128
+            },
+            "network_mse_post20": {
+              "mean": 98.29728654577802,
+              "path_se": 2.272559120289349,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 982.4243477280818,
+              "path_se": 22.725555536815126,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 212.86515051039135,
+              "path_se": 4.922503877277561,
+              "paths": 128
+            },
+            "after_support_network_mse": {
+              "mean": 0.12352977807533425,
+              "path_se": 0.004946871534188929,
+              "paths": 128
+            },
+            "after_buffer_recovery_network_mse": {
+              "mean": 0.059930705514991967,
+              "path_se": 0.00032048256971990946,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.9841047562893083,
+              "path_se": 0.0011799201349785595,
+              "paths": 128
+            },
+            "path_alarm_full_window": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "path_alarm_any_decision": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "gate_fraction_attack_window": {
+              "mean": 0.0,
+              "path_se": 0.0,
+              "paths": 128
+            }
+          },
+          "paired_gated_minus_iid": {
+            "network_mse_post20": {
+              "mean": 0.000287876872293861,
+              "path_se": 9.204856278621255e-05,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.002878768722938612,
+              "path_se": 0.0009204856278621258,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.0006237332233033653,
+              "path_se": 0.00019943855270346047,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": -0.004741548742138364,
+              "path_se": 0.001169400926283861,
+              "paths": 128
+            }
+          },
+          "paired_no_gate_minus_iid": {
+            "network_mse_post20": {
+              "mean": -1.6615206426036166,
+              "path_se": 2.2772334422750005,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": -16.615206426036174,
+              "path_se": 22.772334422750006,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": -3.5989300890871117,
+              "path_se": 4.932243802605641,
+              "paths": 128
+            }
+          }
+        }
+      },
+      "deterministic_risk_reference": "common_g_watermark_risk.json",
+      "limits": [
+        "128 paired paths are a screening sample, not a definitive power study.",
+        "The threshold is calibrated independently per dynamics; the rank rule is marginal over calibration and fresh path.",
+        "Raw plugin score remains the recovered compatibility statistic; no chi-square replacement."
+      ]
+    },
+    "stable": {
+      "calibration": {
+        "threshold": 61.07274954343761,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "calibration_minimum_maximum": 49.47559807565562,
+      "calibration_maximum_maximum": 71.11644735879133,
+      "healthy": {
+        "network_mse_all150": {
+          "mean": 0.0745255818709027,
+          "path_se": 0.001251145561334287,
+          "paths": 128
+        },
+        "network_mse_post20": {
+          "mean": 0.05981508120232834,
+          "path_se": 0.00018914484505561368,
+          "paths": 128
+        },
+        "affected_mse_post20": {
+          "mean": 0.049140750323262844,
+          "path_se": 0.00024115212260036786,
+          "paths": 128
+        },
+        "attack_network_mse": {
+          "mean": 0.05988054656065491,
+          "path_se": 0.0002713917480241055,
+          "paths": 128
+        },
+        "after_support_network_mse": {
+          "mean": 0.059734394521950465,
+          "path_se": 0.0003233180786960556,
+          "paths": 128
+        },
+        "after_buffer_recovery_network_mse": {
+          "mean": 0.05979909305903956,
+          "path_se": 0.00034646306990875964,
+          "paths": 128
+        },
+        "eligible_tpr_full_window": {
+          "mean": 0.0,
+          "path_se": 0.0,
+          "paths": 128
+        },
+        "path_alarm_full_window": {
+          "mean": 0.0,
+          "path_se": 0.0,
+          "paths": 128
+        },
+        "path_alarm_any_decision": {
+          "mean": 0.046875,
+          "path_se": 0.018756150566017486,
+          "paths": 128
+        },
+        "gate_fraction_attack_window": {
+          "mean": 0.0,
+          "path_se": 0.0,
+          "paths": 128
+        }
+      },
+      "static_known_six": {
+        "gated": {
+          "network_mse_all150": {
+            "mean": 0.07518061661752691,
+            "path_se": 0.001250698442341779,
+            "paths": 128
+          },
+          "network_mse_post20": {
+            "mean": 0.060476665402602936,
+            "path_se": 0.0001909724348126856,
+            "paths": 128
+          },
+          "affected_mse_post20": {
+            "mean": 0.055756592326008686,
+            "path_se": 0.00025477826371340565,
+            "paths": 128
+          },
+          "attack_network_mse": {
+            "mean": 0.06052834761709628,
+            "path_se": 0.0002738849144488311,
+            "paths": 128
+          },
+          "after_support_network_mse": {
+            "mean": 0.06039045269346764,
+            "path_se": 0.0003255647576861275,
+            "paths": 128
+          },
+          "after_buffer_recovery_network_mse": {
+            "mean": 0.06045448537725888,
+            "path_se": 0.00035060663229604733,
+            "paths": 128
+          },
+          "eligible_tpr_full_window": {
+            "mean": 0.0,
+            "path_se": 0.0,
+            "paths": 128
+          },
+          "path_alarm_full_window": {
+            "mean": 0.0,
+            "path_se": 0.0,
+            "paths": 128
+          },
+          "path_alarm_any_decision": {
+            "mean": 0.046875,
+            "path_se": 0.018756150566017486,
+            "paths": 128
+          },
+          "gate_fraction_attack_window": {
+            "mean": 1.0,
+            "path_se": 0.0,
+            "paths": 128
+          }
+        },
+        "attacked_with_iid_watermark": {
+          "network_mse_all150": {
+            "mean": 0.07518061661752691,
+            "path_se": 0.001250698442341779,
+            "paths": 128
+          },
+          "network_mse_post20": {
+            "mean": 0.060476665402602936,
+            "path_se": 0.0001909724348126856,
+            "paths": 128
+          },
+          "affected_mse_post20": {
+            "mean": 0.055756592326008686,
+            "path_se": 0.00025477826371340565,
+            "paths": 128
+          },
+          "attack_network_mse": {
+            "mean": 0.06052834761709628,
+            "path_se": 0.0002738849144488311,
+            "paths": 128
+          },
+          "after_support_network_mse": {
+            "mean": 0.06039045269346764,
+            "path_se": 0.0003255647576861275,
+            "paths": 128
+          },
+          "after_buffer_recovery_network_mse": {
+            "mean": 0.06045448537725888,
+            "path_se": 0.00035060663229604733,
+            "paths": 128
+          },
+          "eligible_tpr_full_window": {
+            "mean": 0.677132468553459,
+            "path_se": 0.0046712493163842414,
+            "paths": 128
+          },
+          "path_alarm_full_window": {
+            "mean": 1.0,
+            "path_se": 0.0,
+            "paths": 128
+          },
+          "path_alarm_any_decision": {
+            "mean": 1.0,
+            "path_se": 0.0,
+            "paths": 128
+          },
+          "gate_fraction_attack_window": {
+            "mean": 1.0,
+            "path_se": 0.0,
+            "paths": 128
+          }
+        },
+        "attack_minus_healthy": {
+          "network_mse_post20": {
+            "mean": 0.0,
+            "path_se": 0.0,
+            "paths": 128
+          },
+          "affected_mse_post20": {
+            "mean": 0.0,
+            "path_se": 0.0,
+            "paths": 128
+          },
+          "attack_network_mse": {
+            "mean": 0.0,
+            "path_se": 0.0,
+            "paths": 128
+          }
+        },
+        "scope": "Oracle/known-candidate support baseline; all six registered links removed from k=1 onward."
+      },
+      "policies": {
+        "iid": {
+          "theta": 0.0,
+          "zeta": 0.0,
+          "gated": {
+            "network_mse_all150": {
+              "mean": 0.0791322215320058,
+              "path_se": 0.0012485108150670826,
+              "paths": 128
+            },
+            "network_mse_post20": {
+              "mean": 0.0651304346574473,
+              "path_se": 0.00020670620674939557,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.10229428487445241,
+              "path_se": 0.0009130419355236666,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.0713827013890325,
+              "path_se": 0.00034200310485912953,
+              "paths": 128
+            },
+            "after_support_network_mse": {
+              "mean": 0.0597560610085207,
+              "path_se": 0.0003235254712871737,
+              "paths": 128
+            },
+            "after_buffer_recovery_network_mse": {
+              "mean": 0.05979909345095809,
+              "path_se": 0.0003464631596807776,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.677132468553459,
+              "path_se": 0.0046712493163842414,
+              "paths": 128
+            },
+            "path_alarm_full_window": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "path_alarm_any_decision": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "gate_fraction_attack_window": {
+              "mean": 0.6784722222222223,
+              "path_se": 0.004422316311807624,
+              "paths": 128
+            }
+          },
+          "no_gate": {
+            "network_mse_all150": {
+              "mean": 0.10547269948170049,
+              "path_se": 0.0012935268512570112,
+              "paths": 128
+            },
+            "network_mse_post20": {
+              "mean": 0.0955233392712749,
+              "path_se": 0.0004693071041962971,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.40622333101272823,
+              "path_se": 0.00427009330760141,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.13724807404581424,
+              "path_se": 0.0009492048629943081,
+              "paths": 128
+            },
+            "after_support_network_mse": {
+              "mean": 0.05973494201828777,
+              "path_se": 0.0003233378484847638,
+              "paths": 128
+            },
+            "after_buffer_recovery_network_mse": {
+              "mean": 0.05979909305903952,
+              "path_se": 0.0003464630699087598,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.677132468553459,
+              "path_se": 0.0046712493163842414,
+              "paths": 128
+            },
+            "path_alarm_full_window": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "path_alarm_any_decision": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "gate_fraction_attack_window": {
+              "mean": 0.0,
+              "path_se": 0.0,
+              "paths": 128
+            }
+          }
+        },
+        "negative": {
+          "theta": -1.315236976827179,
+          "zeta": -0.3122270913392132,
+          "gated": {
+            "network_mse_all150": {
+              "mean": 0.07850243787709132,
+              "path_se": 0.0012570939220298226,
+              "paths": 128
+            },
+            "network_mse_post20": {
+              "mean": 0.06440376120946907,
+              "path_se": 0.00021235599778063905,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.09502755039467012,
+              "path_se": 0.0009416125981346003,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.0698113586747548,
+              "path_se": 0.00036275937798802737,
+              "paths": 128
+            },
+            "after_support_network_mse": {
+              "mean": 0.05975138637400803,
+              "path_se": 0.0003232838645266035,
+              "paths": 128
+            },
+            "after_buffer_recovery_network_mse": {
+              "mean": 0.059799093474906445,
+              "path_se": 0.0003464631693286433,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.71875,
+              "path_se": 0.004903731641698513,
+              "paths": 128
+            },
+            "path_alarm_full_window": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "path_alarm_any_decision": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "gate_fraction_attack_window": {
+              "mean": 0.7171875,
+              "path_se": 0.004639868085145341,
+              "paths": 128
+            }
+          },
+          "no_gate": {
+            "network_mse_all150": {
+              "mean": 0.10576704670184141,
+              "path_se": 0.0013117143309620358,
+              "paths": 128
+            },
+            "network_mse_post20": {
+              "mean": 0.0958629706791298,
+              "path_se": 0.000486577411744938,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.4096196450912774,
+              "path_se": 0.004531330553140894,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.13798378954818227,
+              "path_se": 0.0009748317372346371,
+              "paths": 128
+            },
+            "after_support_network_mse": {
+              "mean": 0.05973517084026413,
+              "path_se": 0.00032333682985040863,
+              "paths": 128
+            },
+            "after_buffer_recovery_network_mse": {
+              "mean": 0.05979909305903952,
+              "path_se": 0.00034646306990875937,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.71875,
+              "path_se": 0.004903731641698513,
+              "paths": 128
+            },
+            "path_alarm_full_window": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "path_alarm_any_decision": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "gate_fraction_attack_window": {
+              "mean": 0.0,
+              "path_se": 0.0,
+              "paths": 128
+            }
+          },
+          "paired_gated_minus_iid": {
+            "network_mse_post20": {
+              "mean": -0.0007266734479782293,
+              "path_se": 8.234093751516263e-05,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": -0.007266734479782294,
+              "path_se": 0.0008234093751516271,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": -0.0015713427142777215,
+              "path_se": 0.00017844833592004603,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.0416175314465409,
+              "path_se": 0.004686769310218529,
+              "paths": 128
+            }
+          },
+          "paired_no_gate_minus_iid": {
+            "network_mse_post20": {
+              "mean": 0.0003396314078549089,
+              "path_se": 0.00037642080025543904,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.0033963140785490753,
+              "path_se": 0.00376420800255439,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.0007357155023680555,
+              "path_se": 0.0008155863673044986,
+              "paths": 128
+            }
+          }
+        },
+        "positive": {
+          "theta": 1.315236976827179,
+          "zeta": 0.31222709133921356,
+          "gated": {
+            "network_mse_all150": {
+              "mean": 0.07986860959209788,
+              "path_se": 0.0012554597769391942,
+              "paths": 128
+            },
+            "network_mse_post20": {
+              "mean": 0.0659801131883228,
+              "path_se": 0.000206557093657257,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.11079107018320739,
+              "path_se": 0.000972727811959836,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.0732304663931922,
+              "path_se": 0.00035893452123418287,
+              "paths": 128
+            },
+            "after_support_network_mse": {
+              "mean": 0.05974586872762652,
+              "path_se": 0.00032333386739289295,
+              "paths": 128
+            },
+            "after_buffer_recovery_network_mse": {
+              "mean": 0.059799091957947734,
+              "path_se": 0.00034646306268814654,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.6363502358490565,
+              "path_se": 0.004416016104293819,
+              "paths": 128
+            },
+            "path_alarm_full_window": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "path_alarm_any_decision": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "gate_fraction_attack_window": {
+              "mean": 0.6400824652777778,
+              "path_se": 0.004132198723969236,
+              "paths": 128
+            }
+          },
+          "no_gate": {
+            "network_mse_all150": {
+              "mean": 0.10583669745753,
+              "path_se": 0.0013257468713455778,
+              "paths": 128
+            },
+            "network_mse_post20": {
+              "mean": 0.09594333693569354,
+              "path_se": 0.0005142890694022963,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.4104233076569148,
+              "path_se": 0.0046356259061522955,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.13815796008431303,
+              "path_se": 0.0010124658441263684,
+              "paths": 128
+            },
+            "after_support_network_mse": {
+              "mean": 0.05973510536990026,
+              "path_se": 0.000323336531086025,
+              "paths": 128
+            },
+            "after_buffer_recovery_network_mse": {
+              "mean": 0.05979909305903951,
+              "path_se": 0.00034646306990875585,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": 0.6363502358490565,
+              "path_se": 0.004416016104293819,
+              "paths": 128
+            },
+            "path_alarm_full_window": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "path_alarm_any_decision": {
+              "mean": 1.0,
+              "path_se": 0.0,
+              "paths": 128
+            },
+            "gate_fraction_attack_window": {
+              "mean": 0.0,
+              "path_se": 0.0,
+              "paths": 128
+            }
+          },
+          "paired_gated_minus_iid": {
+            "network_mse_post20": {
+              "mean": 0.000849678530875497,
+              "path_se": 0.00010491324530575485,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.008496785308754968,
+              "path_se": 0.0010491324530575482,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.0018477650041596849,
+              "path_se": 0.0002270709743130069,
+              "paths": 128
+            },
+            "eligible_tpr_full_window": {
+              "mean": -0.04078223270440252,
+              "path_se": 0.004897920993357602,
+              "paths": 128
+            }
+          },
+          "paired_no_gate_minus_iid": {
+            "network_mse_post20": {
+              "mean": 0.00041999766441865375,
+              "path_se": 0.0004234582350821596,
+              "paths": 128
+            },
+            "affected_mse_post20": {
+              "mean": 0.004199976644186551,
+              "path_se": 0.004234582350821596,
+              "paths": 128
+            },
+            "attack_network_mse": {
+              "mean": 0.0009098860384987612,
+              "path_se": 0.0009174951030489382,
+              "paths": 128
+            }
+          }
+        }
+      },
+      "deterministic_risk_reference": "common_g_watermark_risk.json",
+      "limits": [
+        "128 paired paths are a screening sample, not a definitive power study.",
+        "The threshold is calibrated independently per dynamics; the rank rule is marginal over calibration and fresh path.",
+        "Raw plugin score remains the recovered compatibility statistic; no chi-square replacement."
+      ]
+    }
+  }
+}

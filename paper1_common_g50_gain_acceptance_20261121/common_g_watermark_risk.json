@@ -1,0 +1,219 @@
+{
+  "status": "PASS",
+  "source": "gain_table.json + physical_configuration.json",
+  "generic_moment_identity_check": {
+    "max_absolute_difference": 2.842170943040401e-14,
+    "tested_zeta_values": 3,
+    "pass_tolerance": 1e-11
+  },
+  "models": {
+    "unstable": {
+      "model": "unstable",
+      "scope": "Exact no-gate common-G moment bridge; source chains independent, source means summed before squaring.",
+      "horizon": [
+        20,
+        150
+      ],
+      "evaluation_window": [
+        20,
+        150
+      ],
+      "attack_interval": [
+        50,
+        110
+      ],
+      "watermark": {
+        "lambda": 0.5,
+        "coordinate_variance_q": 0.5,
+        "zeta_by_policy": {
+          "iid": 0.0,
+          "negative": -0.3122270913392132,
+          "positive": 0.31222709133921356
+        },
+        "mutual_information_nats_per_step": {
+          "iid": 0.0,
+          "negative": 0.10000000000001191,
+          "positive": 0.10000000000001208
+        }
+      },
+      "historical_attack_energy": 59006840.79300076,
+      "risk_matrix_by_policy": {
+        "iid": [
+          [
+            1.8289470898474993,
+            2.032668169668288
+          ],
+          [
+            2.032668169668288,
+            2.2854283184208293
+          ]
+        ],
+        "negative": [
+          [
+            1.8253581662913942,
+            2.028682438098678
+          ],
+          [
+            2.028682438098678,
+            2.280945188100444
+          ]
+        ],
+        "positive": [
+          [
+            1.8326070823401002,
+            2.0367325876887596
+          ],
+          [
+            2.0367325876887596,
+            2.28999970678793
+          ]
+        ]
+      },
+      "historical_direction_risk": {
+        "iid": 99.75506599005844,
+        "negative": 99.55936862662284,
+        "positive": 99.95463370400444
+      },
+      "historical_direction_relative_to_iid": {
+        "iid": 0.0,
+        "negative": -0.0019617786975861806,
+        "positive": 0.0020005772334998895
+      },
+      "energy_normalized_worst_direction_risk": {
+        "iid": 101.13954627072144,
+        "negative": 100.93961306617165,
+        "positive": 101.34349039751616
+      },
+      "energy_normalized_worst_direction_relative_to_iid": {
+        "iid": 0.0,
+        "negative": -0.001976805432907791,
+        "positive": 0.002016462741970537
+      },
+      "iid_directional_first_derivative": 0.6329136445274629,
+      "iid_worst_direction_first_derivative_diagnostic": 0.6494332677807906,
+      "Q_first_derivative_matrix": [
+        [
+          0.011607240282613597,
+          0.012890213683135851
+        ],
+        [
+          0.012890213683135851,
+          0.014498456539268312
+        ]
+      ],
+      "claims_supported": [
+        "The sign of each reported no-gate risk change is a deterministic moment result for the declared attack family.",
+        "The mean response is zeta-invariant; zeta changes only the within-source covariance cross-time terms."
+      ],
+      "claims_not_supported": [
+        "Non-Gaussian plugin-KL detection power.",
+        "Endogenous gate probability or final gated MSE.",
+        "Unknown attack locations or arbitrary attack directions beyond the energy-normalized 2D shell."
+      ]
+    },
+    "stable": {
+      "model": "stable",
+      "scope": "Exact no-gate common-G moment bridge; source chains independent, source means summed before squaring.",
+      "horizon": [
+        20,
+        150
+      ],
+      "evaluation_window": [
+        20,
+        150
+      ],
+      "attack_interval": [
+        50,
+        110
+      ],
+      "watermark": {
+        "lambda": 0.5,
+        "coordinate_variance_q": 0.5,
+        "zeta_by_policy": {
+          "iid": 0.0,
+          "negative": -0.3122270913392132,
+          "positive": 0.31222709133921356
+        },
+        "mutual_information_nats_per_step": {
+          "iid": 0.0,
+          "negative": 0.10000000000001191,
+          "positive": 0.10000000000001208
+        }
+      },
+      "historical_attack_energy": 25067.56988313591,
+      "risk_matrix_by_policy": {
+        "iid": [
+          [
+            0.0001799397528759114,
+            0.00010697338610765863
+          ],
+          [
+            0.00010697338610765863,
+            0.00029171323940376865
+          ]
+        ],
+        "negative": [
+          [
+            0.00017960251243646686,
+            0.00010675988950527124
+          ],
+          [
+            0.00010675988950527124,
+            0.0002911340728388463
+          ]
+        ],
+        "positive": [
+          [
+            0.00018028326862665542,
+            0.00010719092459795879
+          ],
+          [
+            0.00010719092459795879,
+            0.00029230298766598554
+          ]
+        ]
+      },
+      "historical_direction_risk": {
+        "iid": 0.035649971278370725,
+        "negative": 0.03557964557889522,
+        "positive": 0.035721597639439356
+      },
+      "historical_direction_relative_to_iid": {
+        "iid": 0.0,
+        "negative": -0.0019726719813143445,
+        "positive": 0.0020091562068687008
+      },
+      "energy_normalized_worst_direction_risk": {
+        "iid": 0.04221071888183077,
+        "negative": 0.04213285455177997,
+        "positive": 0.04229002004287683
+      },
+      "energy_normalized_worst_direction_relative_to_iid": {
+        "iid": 0.0,
+        "negative": -0.00184465775787368,
+        "positive": 0.00187869723962919
+      },
+      "iid_directional_first_derivative": 0.00022730184330684846,
+      "iid_worst_direction_first_derivative_diagnostic": 0.0002521137665910107,
+      "Q_first_derivative_matrix": [
+        [
+          1.0900655703038728e-06,
+          6.90195568544939e-07
+        ],
+        [
+          6.90195568544939e-07,
+          1.8717375790649154e-06
+        ]
+      ],
+      "claims_supported": [
+        "The sign of each reported no-gate risk change is a deterministic moment result for the declared attack family.",
+        "The mean response is zeta-invariant; zeta changes only the within-source covariance cross-time terms."
+      ],
+      "claims_not_supported": [
+        "Non-Gaussian plugin-KL detection power.",
+        "Endogenous gate probability or final gated MSE.",
+        "Unknown attack locations or arbitrary attack directions beyond the energy-normalized 2D shell."
+      ]
+    }
+  }
+}

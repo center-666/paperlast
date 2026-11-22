@@ -25,6 +25,26 @@
       "bytes": 9044,
       "sha256": "5e36a1d18bf94b2bf4fd0f71f88f11e0cf6ca88a2aacf9d92ee1b4cd8cee1493"
     },
+    "common_g_small_paths.npz": {
+      "bytes": 119699,
+      "sha256": "bf28df3c6bc66d50174bb94998d40e86bd47e57e3b20454e325f4382a9a8b9c9"
+    },
+    "common_g_small_results.json": {
+      "bytes": 38378,
+      "sha256": "0a0bd6035481fd0acf46b2dd21f2fad95aabc1181501f715004bfc386b0cd5ac"
+    },
+    "common_g_small_validation.py": {
+      "bytes": 8181,
+      "sha256": "b0e7bd551766666c501057696e727ea8e26dcaa8711440bd59a157b0c11d25f8"
+    },
+    "common_g_watermark_risk.json": {
+      "bytes": 6318,
+      "sha256": "d7e5d879849ce62decdbe157ad5f8a1ef57047e986a18ffc4f8157483c96ac1e"
+    },
+    "common_g_watermark_risk.py": {
+      "bytes": 10303,
+      "sha256": "516464aadc5cf12a40c37a6dac03900cc064d05ac651ec4b7bb64c602f945543"
+    },
     "design_common_g.py": {
       "bytes": 7659,
       "sha256": "68f9ef06e5f7c1696e68ac850b045716a225f90d1dd60625f659238bb8f10669"
@@ -58,20 +78,20 @@
       "sha256": "a90306bf5cec4561b932f3dc2559ba0aa298c2096fad0f5e2690b2429694c8e6"
     },
     "README.md": {
-      "bytes": 7485,
-      "sha256": "dc33a6737ee09aa6d0476943de4569b181aa7d9b1b24209b58215c932d64f3af"
+      "bytes": 8091,
+      "sha256": "5738f33e1cf142228df432d1d19f460c39dc3207fdd4279d59eca45b61c901c7"
     },
     "registration.json": {
-      "bytes": 4277,
-      "sha256": "e59c195970a335fd8828c2de9c5d94de0bda81173ff02aca742aa422f44ef0b7"
+      "bytes": 5158,
+      "sha256": "5b59c7a5fd874d996b373935b930d7be384fda63f87f8ed77688003cf1a48d1b"
     },
     "run_common_g_50.py": {
       "bytes": 10618,
       "sha256": "22ea30c33321da57aac0bf56b987221b529fc5020ada74b6cc789615f42d096c"
     },
     "THEORY.md": {
-      "bytes": 17755,
-      "sha256": "72520620c31d820c074e146af411959aa43795f7706e8cc2d02cc58364099bdd"
+      "bytes": 19959,
+      "sha256": "25b04f7ec652b25a64b52963f54f701d1109e2a405edbdafdd6d711aaf0c05db"
     },
     "user_input_common_g.txt": {
       "bytes": 9425,
@@ -82,8 +102,12 @@
       "sha256": "fcae7ef6d1329dc52e2d098ec36e57b590e4e91ad24fd57f7bd8cc9c4d64d225"
     },
     "verify_delivery.py": {
-      "bytes": 5048,
-      "sha256": "207516c16580a93800148913a8f8af31c8e076209686ee04ca3a6c5432a16e4a"
+      "bytes": 6211,
+      "sha256": "e9b5dc900919b3f6ef8dcaceb7140dfc9b6806dc42f0792478d3a9c753d1018d"
+    },
+    "WATERMARK_EFFECTS.md": {
+      "bytes": 4466,
+      "sha256": "7052930cdcfe6cc8a5d02b1b5d7511e6a4ba2ec7a2e8d493379d2fe33c072152"
     }
   }
 }

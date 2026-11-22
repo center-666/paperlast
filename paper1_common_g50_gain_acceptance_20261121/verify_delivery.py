@@ -65,6 +65,21 @@ def main():
         assert rowset['modes'] == 57 and rowset['all_modes_strictly_certified']
         for row in rowset['rows']:
             assert Fraction(row['D11']) > 0 and Fraction(row['D22']) > 0 and Fraction(row['det_D']) > 0
+    risk = json.loads((HERE / 'common_g_watermark_risk.json').read_text(encoding='utf-8'))
+    assert risk['status'] == 'PASS'
+    assert risk['generic_moment_identity_check']['max_absolute_difference'] < 1e-11
+    for model in risk['models'].values():
+        iid = model['historical_direction_risk']['iid']
+        assert model['historical_direction_risk']['negative'] < iid < model['historical_direction_risk']['positive']
+    screening = json.loads((HERE / 'common_g_small_results.json').read_text(encoding='utf-8'))
+    assert screening['calibration_paths_per_model'] == 512
+    assert screening['evaluation_paths_per_model'] == 128
+    for model in screening['models'].values():
+        assert model['policies']['negative']['paired_gated_minus_iid']['network_mse_post20']['mean'] < 0
+        assert model['policies']['positive']['paired_gated_minus_iid']['network_mse_post20']['mean'] > 0
+        assert model['static_known_six']['attack_minus_healthy']['network_mse_post20']['mean'] == 0
+    paths = np.load(HERE / 'common_g_small_paths.npz', allow_pickle=False)
+    assert len(paths.files) > 20 and all(np.all(np.isfinite(paths[k])) for k in paths.files)
     subprocess.run([sys.executable, str(FOLDERS[0] / 'verify_archive.py')], check=True, capture_output=True)
     checked_links = 0
     for folder in FOLDERS:

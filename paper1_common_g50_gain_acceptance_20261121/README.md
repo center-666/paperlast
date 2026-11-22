@@ -19,6 +19,8 @@
 
 详见 [acceptance_results.json](acceptance_results.json)、[rational_certificate.json](rational_certificate.json) 和 [可运行程序](run_common_g_50.py)。理想代数一致不等于浮点逐比特相等。不稳定对象的状态值较大时，应看绝对误差及按 `1+|state|` 缩放后的误差：全掩码更新最大缩放误差约 10^-15；健康测试无门控分歧；六边单独注入的绝对误差递推残差最大约 8.4×10^-10。
 
+新水印的实际效应单独记录在 [WATERMARK_EFFECTS.md](WATERMARK_EFFECTS.md)。确定性无门控矩计算显示，原始攻击方向下负耦合相对 iid 的污染风险下降约 0.196%/0.197%，正耦合上升约 0.200%/0.201%。512 条健康路径校准、128 条配对评估的闭环筛查中，负耦合在两种动力学下同时降低门控后网络 MSE并提高 eligible TPR；这仍是筛查证据，不替代最终功效实验。
+
 ## 独立重算与附件的关系
 
 没有拿到附件所用计算程序或其实际增益数组，本目录依据附件公式独立重算。
@@ -62,6 +64,8 @@ python paper1_common_g50_gain_acceptance_20261121/design_common_g.py
 python paper1_common_g50_gain_acceptance_20261121/certify_common_g.py
 python paper1_common_g50_gain_acceptance_20261121/verify_acceptance.py
 python paper1_common_g50_gain_acceptance_20261121/nominal_theory_checks.py
+python paper1_common_g50_gain_acceptance_20261121/common_g_watermark_risk.py
+python paper1_common_g50_gain_acceptance_20261121/common_g_small_validation.py
 python paper1_common_g50_gain_acceptance_20261121/verify_delivery.py
 
 # 只有 4 条路径的兼容烟测：水印和门控是独立开关。
