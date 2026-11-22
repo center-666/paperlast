@@ -9,3 +9,5 @@
 superseded_first_run_seed_collisions/** -text
 superseded_seed_and_timing_audit/** -text
 execution_snapshot/** -text
+*.py -text
+*.json text eol=lf

@@ -81,6 +81,8 @@ def select_from_development(data: dict, *, budget: float=0.1,
     Development JSON schema: {source_commit, split:'development', theta: {name:float},
        scenarios:{name:{path_ids:[str], losses:{policy:[float]}}}}.
     The samples must be independent *across paths*, paired *within a scenario*.
+    theta must contain the parameters actually used to generate each loss.
+    Perform near-boundary projection BEFORE simulation, never on stored losses.
     """
     if data.get('split')!='development':
         raise ValueError('This selector rejects non-development data')
@@ -123,6 +125,8 @@ def select_from_development(data: dict, *, budget: float=0.1,
         admissible=project_theta(float(theta[policy]),budget,m)
         if admissible['status']!='feasible':
             report[policy]={'feasible':False,**admissible};continue
+        if admissible['adjusted']:
+            raise ValueError(f'{policy}: project theta before generating development losses; stored losses cannot be relabeled with a different theta')
         stats=[]
         for scenario,rec in scenarios.items():
             x=np.asarray(rec['losses'][policy],float)
@@ -187,7 +191,8 @@ def self_test():
         return {'path_ids':[prefix+'_'+i for i in ids],'losses':{k: (base+shift+rng.normal(size=n)*.00002).tolist()
             for k,shift in [('iid',0),('negative',benefit),('positive',+.0004)]}}
     data={'source_commit':REFERENCE_COMMIT,'split':'development',
-      'theta':{'iid':0,'negative':-1.315236976827179,'positive':1.315236976827179},
+      'theta':{'iid':0,'negative':project_theta(-1.315236976827179,.1)['theta_used'],
+               'positive':project_theta(1.315236976827179,.1)['theta_used']},
       'scenarios':{'s1':scenario(-.0007,'s1'),'s2':scenario(-.0009,'s2')}}
     result=select_from_development(data)
     assert result['selected']=='negative',result

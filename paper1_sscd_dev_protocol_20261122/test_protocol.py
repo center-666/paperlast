@@ -3,7 +3,7 @@ import json
 from types import SimpleNamespace
 import numpy as np
 from selector_v2 import (REFERENCE_COMMIT, information, project_theta,
-                         select_from_development)
+                         select_from_development,ratio_upper_bound)
 from run_development import rotated_raw_attack,decoded_for_scenario,scenario_rng_seeds,protocol_windows
 
 
@@ -50,11 +50,16 @@ def test_select_guards():
         'neg':(a-.001+rng.normal(size=250)*.0001).tolist(),
         'pos':(a+.001+rng.normal(size=250)*.0001).tolist()}}
     src={'source_commit':REFERENCE_COMMIT,'split':'development',
-         'theta':{'iid':0.,'neg':-1.315236976827179,'pos':1.315236976827179},
+         'theta':{'iid':0.,'neg':project_theta(-1.315236976827179,.1)['theta_used'],
+                  'pos':project_theta(1.315236976827179,.1)['theta_used']},
          'scenarios':{'unstable':rec}}
     out=select_from_development(src)
     assert out['selected']=='neg'
-    assert out['candidate_audit']['neg']['adjusted']
+    assert not out['candidate_audit']['neg']['adjusted']
+    historical_raw={**src,'theta':{**src['theta'],'neg':-1.315236976827179}}
+    try:select_from_development(historical_raw)
+    except ValueError:pass
+    else:raise AssertionError('Historical losses were relabeled with projected theta')
     assert all(s['simultaneous_baseline_lower']>0
                for s in out['candidate_audit']['neg']['per_scenario'])
     assert all(s['simultaneous_relative_upper_t_approx']<0
@@ -117,7 +122,39 @@ def test_onset_specific_windows():
         assert alarms[start:stop].sum()==2
         assert alarms[stop]  # Present in raw score, excluded by half-open window.
 
+
+def test_sign_safe_ratio_bound():
+    for upper in [-2.,-.1,0.,.1,2.]:
+        bound=ratio_upper_bound(upper,.5,3.)
+        for numerator in np.linspace(upper-4,upper,31):
+            for denominator in np.linspace(.5,3.,37):
+                assert numerator/denominator<=bound+1e-14
+    assert ratio_upper_bound(-1.,2.,4.)==-.25
+    assert ratio_upper_bound(1.,2.,4.)==.5
+
+
+def test_metric_implementation_tracks_onset():
+    from run_final_evaluation import metrics
+    for onset in [50,65]:
+        physical=SimpleNamespace(x=np.zeros((4,150,2)))
+        post=np.zeros((4,150,2,2))
+        post[:,onset:onset+60,:,0]=1.
+        scores=np.zeros((4,150,1))
+        scores[0,onset+6,0]=1.    # partial-window alarm excluded from eligible
+        scores[1,onset+7,0]=1.    # first eligible alarm
+        scores[2,onset+59,0]=1.   # last eligible alarm
+        scores[3,onset+60,0]=1.   # post-support alarm excluded
+        world=SimpleNamespace(post=post,scores=scores,gates=scores>.5)
+        got=metrics(world,physical,np.array([1]),.5,onset)
+        np.testing.assert_allclose(got['network_attack'],1.)
+        np.testing.assert_allclose(got['network_post_attack'],0.)
+        np.testing.assert_allclose(got['affected_attack'],1.)
+        np.testing.assert_allclose(got['eligible_tpr'],[0.,1/53,1/53,0.])
+        np.testing.assert_allclose(got['eligible_first_alarm_delay'],[53.,0.,52.,53.])
+        np.testing.assert_allclose(got['first_alarm_delay_from_attack_onset'],[60.,7.,59.,60.])
+
 if __name__=='__main__':
     test_mi_projection();test_rotation_and_shift();test_select_guards();test_seed_namespaces();test_onset_specific_windows()
-    print(json.dumps({'status':'PASS','tests':5,
+    test_sign_safe_ratio_bound();test_metric_implementation_tracks_onset()
+    print(json.dumps({'status':'PASS','tests':7,
                       'note':'SYNTHETIC ONLY, no physical 50-node evaluation'},indent=2))

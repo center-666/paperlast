@@ -963,8 +963,11 @@
     "run_common_g_50.py": "22ea30c33321da57aac0bf56b987221b529fc5020ada74b6cc789615f42d096c",
     "replay.py": "05e68f702ccea35d4bd5d4c1396c4acd9dbc79f4c6659150b1e283f279ddbabb"
   },
-  "run_final_evaluation_sha256": "4c8e339a09ec74d652e4f07fb270db18da3e31fa69dddc42efe6ba74ff0fa6c2",
+  "run_final_evaluation_sha256": "91abc6194e27ef35e9e5ea201809fb8baa53ab175521cc845099950b076f0c89",
   "locked_selection_sha256": "69c6eab3254ac010ac03de1bda836ad5088fb87a258cc208d7440202140e526d",
   "warning": "The lock remains iid; comparisons with alternatives are held-out descriptive checks, not permission to retune.",
-  "development_manifest_sha256": "20d980fc26a7ccfb97ad6a8e1eeed71d52fb6ad57e85f24379beb40654c12151"
+  "development_manifest_sha256": "2e7bf94f359f66aee5639b001f6c3a7ed7df9d05364ffc3e7e6934c86dca2361",
+  "final_test_results_sha256": "f982f7adf2301a9a984e357e4cb2ef453dfa4c5c5a5cc4e0c3c3594a2a06f3ab",
+  "development_calibration_sha256": "c5f3d5a06eb104534b55d816ddedec42f42c50655ec0c73266a778209c6e3b6e",
+  "development_losses_sha256": "79b471544a1149ffe24695549f53ae9a4fd1c3e2955ef4b7e90b81582570b1a7"
 }

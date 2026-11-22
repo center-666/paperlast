@@ -71,8 +71,8 @@
     "run_common_g_50.py": "22ea30c33321da57aac0bf56b987221b529fc5020ada74b6cc789615f42d096c",
     "replay.py": "05e68f702ccea35d4bd5d4c1396c4acd9dbc79f4c6659150b1e283f279ddbabb"
   },
-  "development_runner_sha256": "57f6baf3326df3db475277b6d9677852848796fe27d64da7d82dac437e94852c",
-  "development_selector_sha256": "edb861a41bdfb12b8c2096d8ef749f23a1a02454090c4de3755ea0c3c3b6a749",
+  "development_runner_sha256": "b84080bbc0ea1da25f5bfc2b1c4b45b2e71041561a4a6b06d04b8c1f4eca1647",
+  "development_selector_sha256": "f1ebf68f71fe79ef036fddb94ec7d8643606e9dc788da3bcda5d23ea05cb8af2",
   "split_policy": "New scenario-specific physical streams; prior 99ee54f, afde075 and b9fc33c test paths are not read or reused.",
   "note": "No earlier screening/test path is reused. Angle/onset variants are stress scenarios, not unknown attack support.",
   "unstable_threshold": {
@@ -83,6 +83,7 @@
     "marginal_path_fwer_bound": 0.04873294346978557,
     "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
   },
+  "unstable_calibration_path_ids_sha256": "306ff888ff966b15510621203c66c897b15d6ad24e3212bb291e13273389bdb8",
   "unstable__rot+0__onset50": {
     "attack_scale": 1.0,
     "raw_joint_coded_energy": 59006840.79300086,
@@ -121,6 +122,7 @@
     "marginal_path_fwer_bound": 0.04873294346978557,
     "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
   },
+  "stable_calibration_path_ids_sha256": "9965762e303b6bd7aeaa0961899329531ee574136fceb22a72485452b46fd772",
   "stable__rot+0__onset50": {
     "attack_scale": 1.0,
     "raw_joint_coded_energy": 25067.56988313593,
@@ -151,8 +153,9 @@
     "raw_joint_coded_energy": 25067.569883135926,
     "calibration_threshold": 60.86391409593018
   },
+  "development_calibration_sha256": "c5f3d5a06eb104534b55d816ddedec42f42c50655ec0c73266a778209c6e3b6e",
   "development_sha256": "79b471544a1149ffe24695549f53ae9a4fd1c3e2955ef4b7e90b81582570b1a7",
   "lock_sha256": "69c6eab3254ac010ac03de1bda836ad5088fb87a258cc208d7440202140e526d",
   "selected": "iid",
-  "archive_note": "Primary JSON/text artifacts normalized to LF after execution; parsed data and locked choice revalidated."
+  "archive_note": "Primary JSON artifacts use canonical LF serialization; numeric/path content is unchanged and lock was recomputed."
 }

@@ -161,12 +161,22 @@ def run(*, ncal=512, ndev=256, seed=2026112701, budget=.1,
       'note':'No earlier screening/test path is reused. Angle/onset variants are stress scenarios, not unknown attack support.'}
     all_losses={'source_commit':REFERENCE_COMMIT,'split':('smoke' if smoke_only else 'development'),
                 'theta':candidates,'scenarios':{}}
+    calibration_records={}
     for mi,label in enumerate(('unstable','stable')):
         model=load_common_g(label)
         physical_cal=physical_paths(model,ncal,seed+100000*mi)
         cal_world=run_common_g(model,physical_cal,gate_on=False)
-        cutoff=path_fwer_cutoff(np.max(cal_world.scores[:,4:],axis=(1,2)),.05)
+        calibration_max=np.max(cal_world.scores[:,4:],axis=(1,2))
+        calibration_ids=[f'cal_{seed}_{label}_{k}' for k in range(ncal)]
+        calibration_records[label]={'path_ids':calibration_ids,
+                                    'path_maxima':calibration_max.tolist(),
+                                    'physical_seed':seed+100000*mi,
+                                    'decision_times':[4,149],
+                                    'monitored_edges':6}
+        cutoff=path_fwer_cutoff(calibration_max,.05)
         manifest[f'{label}_threshold']=cutoff
+        manifest[f'{label}_calibration_path_ids_sha256']=hashlib.sha256(
+            json.dumps(calibration_ids,separators=(',',':')).encode()).hexdigest()
         for ai,angle in enumerate(angle_set):
             raw_attack,scale=rotated_raw_attack(model,angle)
             for oi,onset in enumerate(onset_set):
@@ -189,6 +199,10 @@ def run(*, ncal=512, ndev=256, seed=2026112701, budget=.1,
                 manifest[scen]={'attack_scale':scale,'raw_joint_coded_energy':float(np.sum(raw_attack**2)),
                                 'calibration_threshold':cutoff['threshold']}
                 print('Completed development-only scenario',scen,flush=True)
+    (THIS/'development_calibration.json').write_text(
+        json.dumps({'split':'development_calibration','seed':seed,
+                    'paths_per_dynamics':ncal,'models':calibration_records},indent=2)+'\n',encoding='utf8')
+    manifest['development_calibration_sha256']=sha256(THIS/'development_calibration.json')
     (THIS/'development_losses.json').write_text(json.dumps(all_losses,indent=2)+'\n',encoding='utf8')
     manifest['development_sha256']=sha256(THIS/'development_losses.json')
     if smoke_only:

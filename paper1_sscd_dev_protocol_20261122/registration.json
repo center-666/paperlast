@@ -12,9 +12,18 @@
     "split": "development",
     "seed": 2026112702,
     "calibration_paths_per_dynamics": 512,
+    "calibration_path_maxima_and_ids_saved": true,
+    "calibration_rank488_threshold_recomputed_from_saved_maxima": true,
     "paths_per_scenario": 256,
-    "angles_degrees": [0, -45, 45],
-    "attack_onsets": [50, 65],
+    "angles_degrees": [
+      0,
+      -45,
+      45
+    ],
+    "attack_onsets": [
+      50,
+      65
+    ],
     "scenario_count": 12,
     "candidates": {
       "neg_boundary_requested": -1.315236976827179,
@@ -26,16 +35,19 @@
     },
     "adjacent_direction_MI_budget_nats": 0.1,
     "selector": "paired final common-G network MSE; simultaneous one-sided paired-difference t UCB and two-sided iid-baseline endpoints; Bonferroni 48 numerator + 24 denominator endpoint bounds; if numerator UCB is negative, divide by baseline upper endpoint",
-    "selection_output": "locked_selection.json"
+    "selection_output": "locked_selection.json",
+    "rng_stream_namespaces": "physical, radial, initial-direction and transition-direction seeds are nonoverlapping by scenario and policy; radial and initial-direction streams are shared only across policies within a scenario"
   },
   "final_test": {
     "split": "final_test",
     "seed_base": 2026112243,
     "calibration_paths_per_dynamics": 512,
+    "calibration_path_maxima_and_ids_saved": true,
     "independent_healthy_test_paths_per_dynamics": 512,
     "test_paths_per_scenario_and_dynamics": 512,
     "scenario_count": 12,
     "threshold_rule": "Path maximum over all six registered links and k=4..149; one-based rank488; strict score > threshold",
+    "window_rule": "For onset t0 and 60-step attack: attack [t0,t0+60), fully attack-eligible score [t0+7,t0+60), post-attack [t0+60,150)",
     "parameter_lock_sha256": "Read from locked_selection.json and final_test_manifest.json; never changed using final-test outcomes",
     "candidate_outcomes": "Descriptive only; final-test comparisons do not update the selected parameter"
   },

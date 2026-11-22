@@ -2,7 +2,7 @@
 
 日期：2026-11-22。**只用于第一篇论文**（原50节点、原六条通信攻击、原插件式奇偶检测器、新共 G 模式查表），不是量化事件审计第二篇论文。原始项目：[center-666/paperlast](https://github.com/center-666/paperlast/tree/b9fc33c324fd539c6e223d0da9950dfd00645895)。
 
-本地执行结果与研究边界见 [V2_RESULTS.md](V2_RESULTS.md)，参数和数据划分登记于 [registration.json](registration.json)。v2 修正了同时分子/分母置信界，但12场景开发集按保守规则锁定为 iid；独立终验虽显示负耦合候选方向一致，终验后没有修改锁定选择。
+本地执行结果与研究边界见 [V2_RESULTS.md](V2_RESULTS.md)，参数和数据划分登记于 [registration.json](registration.json)。v2 修正了同时分子/分母置信界、跨场景转移随机流碰撞与起点相关评分窗口；12场景开发集按保守规则锁定为 iid。独立终验显示负耦合候选方向一致，但稳定模型经验健康 FWER 为7.42%，需独立校准重复确认；终验后没有修改锁定选择。
 
 ## 1. 审阅结论与新阻断缺陷
 
@@ -89,15 +89,18 @@ python paper1_sscd_dev_protocol_20261122/run_development.py --execute --single-s
 
 烟测写出 `development_losses.json` 和 `development_manifest.json`，`split=smoke`，**不会生成可用的参数锁定文件**。
 
-要执行真正的全新独立开发集（需要显式同意运行和充分计算资源）：
+要执行真正的全新独立开发集（会启动真实共 G 路径仿真）：
 
 ```bash
 python paper1_sscd_dev_protocol_20261122/run_development.py --execute --calibration 512 --paths 256 --seed 2026112702 --budget 0.1
 ```
 
+该命令会启动真实共 G 开发仿真；本轮已执行并另行完成锁定后的独立终验。
+
 运行后生成：
 
 - `development_losses.json`：每个开发场景每个候选的路径级全网最终共 G MSE；
+- `development_calibration.json`：每个动力学512条健康校准路径的完整路径最大分数和路径ID，可直接复算rank488阈值；
 - `locked_selection.json`：最终锁定的一个全局 θ、MI预算、Bonferroni 约束及完整候选审计；
 - `development_manifest.json`：模型源文件哈希、场景注册、校准阈值、测试种子、脚本选择条件。
 

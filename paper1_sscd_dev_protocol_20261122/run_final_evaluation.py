@@ -160,9 +160,9 @@ def main():
                 'two_sided_exact_binomial_95ci': healthy_fwer_ci,
                 'network_mse_post20': summarize(healthy_sq.mean(axis=2)[:, 20:].mean(axis=1)),
                 'affected_mse_post20': summarize(healthy_sq[:, 20:, receiver_ids].mean(axis=2).mean(axis=1)),
-                'path_ids': [f'healthy_test_{TEST_SEED}_{label}_{k}' for k in range(TEST_PATHS)],
+                'path_ids': [f'healthy_test_{healthy_seed}_{label}_{k}' for k in range(TEST_PATHS)],
             },
-            'calibration_path_ids': [f'cal_{TEST_SEED}_{label}_{k}' for k in range(CALIBRATION_PATHS)],
+            'calibration_path_ids': [f'cal_{calibration_seed + 100_000 * model_index}_{label}_{k}' for k in range(CALIBRATION_PATHS)],
             'scenarios': {}}
         path_arrays[f'{label}_calibration_path_max'] = calibration_path_max
         path_arrays[f'{label}_independent_healthy_test_path_max'] = healthy_path_max
@@ -223,7 +223,7 @@ def main():
                     'eligible_score_interval_half_open': [onset + 7, onset + 60],
                     'attack_scale_to_equal_raw_joint_energy': attack_scale,
                     'scenario_seed': scenario_seed,
-                    'path_ids': [f'test_{TEST_SEED}_{scenario}_{k}' for k in range(TEST_PATHS)],
+                    'path_ids': [f'test_{scenario_seed}_{scenario}_{k}' for k in range(TEST_PATHS)],
                     'candidates': natural_metrics,
                     'paired_minus_iid': paired,
                     'oracle_static_six': {key: summarize(arr) for key, arr in oracle_metrics.items()},
