@@ -1,0 +1,67 @@
+{
+  "stage": "D1-B-B0",
+  "status": "draft_pending_manual_review",
+  "upstream_d1a_commit": "f17de565cc178d9c7c157ecaadf61e84b12e4ef6",
+  "scope": "definition_and_deterministic_audit_only",
+  "random_paths_generated": false,
+  "candidate_weights": [0.0, 0.2, 0.4, 0.6, 0.8, 0.9, 1.0],
+  "health_interval": {"start_inclusive": 20, "stop_exclusive": 150},
+  "horizon": 60,
+  "scenario_factors": {
+    "dynamics": ["stable", "unstable"],
+    "topologies": ["U", "R"],
+    "target_links": {"U": [[35, 26]], "R": [[35, 26], [1, 26]]},
+    "watermarks": ["negative_primary", "iid_auxiliary"]
+  },
+  "alarm_policy": {
+    "weight_formula": "q_rk(q)=1-g_rk+g_rk*q",
+    "isolated_alarm": "one-packet reduction",
+    "consecutive_alarm": "q applied on every alarm packet in the run",
+    "recovery": "q=1 on the first non-alarm packet",
+    "post_alarm_hold": 0,
+    "cooldown": 0,
+    "hysteresis": false,
+    "h1_candidate_feedback": false
+  },
+  "scope_of_other_alarm_edges": {
+    "target_link_only": true,
+    "other_edges": "retain_frozen_binary_H1_gates_in_both_paired_runs",
+    "target_q_equals_1": "target_link_full_acceptance_only",
+    "extension_requires": "new_registration_with_marginal_value_and_mode_tables_for_each_added_edge"
+  },
+  "weighted_mode_table": {
+    "required": true,
+    "key": "candidate_q_and_actual_H1_binary_gate_mask",
+    "recompute": ["C", "V", "DARE", "K", "G", "F", "Omega"],
+    "d1a_local_matrices_are": "screening_only_with_other_complementary_links_at_weight_one"
+  },
+  "health_loss": {
+    "primary": "node_26_missing_block_mse_over_k20_to_149",
+    "secondary": ["node_26_full_state_mse", "network_mse", "effective_weight"],
+    "baseline": "same_path_q_equals_1"
+  },
+  "budget": {
+    "uniform": 0.05,
+    "value_formula": "0.05-0.04*max(kappa,0)/(1+max(kappa,0))",
+    "comparison_variable": "Z=J_switch-(1+epsilon)*J_baseline"
+  },
+  "simultaneous_inference": {
+    "method": "one_sided_bonferroni_paired_t",
+    "alpha": 0.05,
+    "family_size": 84,
+    "unit": "independent_path",
+    "bootstrap": "secondary_sensitivity_only"
+  },
+  "switch_safety": {
+    "primary_certificate": "P=I",
+    "condition": "spectral_norm(F_s(q))<1",
+    "fallback": "separate_registered_common_lyapunov_sdp",
+    "no_certificate_claim": "fixed_mode_or_finite_window_only"
+  },
+  "comparison_target": "health_attack_pareto_not_A_L_dominance",
+  "execution_boundary": {
+    "B1": "independent_healthy_calibration_and_holdout_paths_after_review",
+    "B2": "independent_attack_paths_after_B1_freezes_feasible_sets",
+    "D1C": "frozen"
+  }
+}

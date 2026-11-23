@@ -1,0 +1,415 @@
+{
+  "status": "PASS_deterministic_B0_definition_audit",
+  "scope": "No healthy paths, no H1 score generation, no attack Monte Carlo",
+  "registration": {
+    "stage": "D1-B-B0",
+    "status": "draft_pending_manual_review",
+    "upstream_d1a_commit": "f17de565cc178d9c7c157ecaadf61e84b12e4ef6",
+    "scope": "definition_and_deterministic_audit_only",
+    "random_paths_generated": false,
+    "candidate_weights": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "health_interval": {
+      "start_inclusive": 20,
+      "stop_exclusive": 150
+    },
+    "horizon": 60,
+    "scenario_factors": {
+      "dynamics": [
+        "stable",
+        "unstable"
+      ],
+      "topologies": [
+        "U",
+        "R"
+      ],
+      "target_links": {
+        "U": [
+          [
+            35,
+            26
+          ]
+        ],
+        "R": [
+          [
+            35,
+            26
+          ],
+          [
+            1,
+            26
+          ]
+        ]
+      },
+      "watermarks": [
+        "negative_primary",
+        "iid_auxiliary"
+      ]
+    },
+    "alarm_policy": {
+      "weight_formula": "q_rk(q)=1-g_rk+g_rk*q",
+      "isolated_alarm": "one-packet reduction",
+      "consecutive_alarm": "q applied on every alarm packet in the run",
+      "recovery": "q=1 on the first non-alarm packet",
+      "post_alarm_hold": 0,
+      "cooldown": 0,
+      "hysteresis": false,
+      "h1_candidate_feedback": false
+    },
+    "scope_of_other_alarm_edges": {
+      "target_link_only": true,
+      "other_edges": "retain_frozen_binary_H1_gates_in_both_paired_runs",
+      "target_q_equals_1": "target_link_full_acceptance_only",
+      "extension_requires": "new_registration_with_marginal_value_and_mode_tables_for_each_added_edge"
+    },
+    "weighted_mode_table": {
+      "required": true,
+      "key": "candidate_q_and_actual_H1_binary_gate_mask",
+      "recompute": [
+        "C",
+        "V",
+        "DARE",
+        "K",
+        "G",
+        "F",
+        "Omega"
+      ],
+      "d1a_local_matrices_are": "screening_only_with_other_complementary_links_at_weight_one"
+    },
+    "health_loss": {
+      "primary": "node_26_missing_block_mse_over_k20_to_149",
+      "secondary": [
+        "node_26_full_state_mse",
+        "network_mse",
+        "effective_weight"
+      ],
+      "baseline": "same_path_q_equals_1"
+    },
+    "budget": {
+      "uniform": 0.05,
+      "value_formula": "0.05-0.04*max(kappa,0)/(1+max(kappa,0))",
+      "comparison_variable": "Z=J_switch-(1+epsilon)*J_baseline"
+    },
+    "simultaneous_inference": {
+      "method": "one_sided_bonferroni_paired_t",
+      "alpha": 0.05,
+      "family_size": 84,
+      "unit": "independent_path",
+      "bootstrap": "secondary_sensitivity_only"
+    },
+    "switch_safety": {
+      "primary_certificate": "P=I",
+      "condition": "spectral_norm(F_s(q))<1",
+      "fallback": "separate_registered_common_lyapunov_sdp",
+      "no_certificate_claim": "fixed_mode_or_finite_window_only"
+    },
+    "comparison_target": "health_attack_pareto_not_A_L_dominance",
+    "execution_boundary": {
+      "B1": "independent_healthy_calibration_and_holdout_paths_after_review",
+      "B2": "independent_attack_paths_after_B1_freezes_feasible_sets",
+      "D1C": "frozen"
+    }
+  },
+  "source_sha256": {
+    "D1A_link_value.json": "9b008e209071bc1c86c8cf5de8754100078c1be86e54f3bcb9dfd965c97f3634",
+    "gain_tables.npz": "7b79f4971ff7ef1f7a0749ac7a9ecbc0bc4aaa845838c65dc17ef990230ac1cb",
+    "covariance_traces.npz": "82af927de5e4265f493ef27eb35b30abaeb4f7f3c38a5073fd9a4b8b00b6fc6f",
+    "B0_REGISTRATION.json": "ad008110622b9afe98d32234e9211dc4fb6b87546a5f8811803f0d931338c624"
+  },
+  "deterministic_scenarios_checked": 6,
+  "results": [
+    {
+      "model": "U_unstable",
+      "target_edge": 35,
+      "kappa_L60": 18431.03111010247,
+      "value_budget_epsilon": 0.010002170135226064,
+      "switch_safety_P_equals_I": {
+        "0.0": false,
+        "0.2": true,
+        "0.4": true,
+        "0.6": true,
+        "0.8": true,
+        "0.9": true,
+        "1.0": true
+      },
+      "fixed_weight_risk": {
+        "0.0": 2172919.181060903,
+        "0.2": 904.7059552074713,
+        "0.4": 364.3687919003162,
+        "0.6": 218.8124966770771,
+        "0.8": 153.69183044556425,
+        "0.9": 133.4414119942045,
+        "1.0": 117.88821145543325
+      },
+      "fixed_weight_relative_delta": {
+        "0.0": 18431.03111010247,
+        "0.2": 6.674269920953733,
+        "0.4": 2.0907992190386313,
+        "0.6": 0.856101589596146,
+        "0.8": 0.3037082211028877,
+        "0.9": 0.13193177118181046,
+        "1.0": 0.0
+      },
+      "fixed_value_budget_safe_weights": [
+        1.0
+      ],
+      "fixed_uniform_5pct_safe_weights": [
+        1.0
+      ],
+      "q09_fixed_relative_delta_percent": 13.193177118181046,
+      "three_single_alarm_positions": 34220,
+      "three_single_alarm_switched_relative_delta_percent": {
+        "minimum": 0.5744597958522002,
+        "mean": 0.6346549426875869,
+        "maximum": 0.6518419048861634
+      }
+    },
+    {
+      "model": "U_stable",
+      "target_edge": 35,
+      "kappa_L60": 12.466129083216078,
+      "value_budget_epsilon": 0.01297041560739643,
+      "switch_safety_P_equals_I": {
+        "0.0": true,
+        "0.2": true,
+        "0.4": true,
+        "0.6": true,
+        "0.8": true,
+        "0.9": true,
+        "1.0": true
+      },
+      "fixed_weight_risk": {
+        "0.0": 1487.1015154051174,
+        "0.2": 548.1780015209565,
+        "0.4": 291.8888399024411,
+        "0.6": 191.91223063197572,
+        "0.8": 140.63225171179687,
+        "0.9": 123.73473959397407,
+        "1.0": 110.4327387785551
+      },
+      "fixed_weight_relative_delta": {
+        "0.0": 12.466129083216078,
+        "0.2": 3.9639084168706957,
+        "0.4": 1.6431368372358182,
+        "0.6": 0.737820077221904,
+        "0.8": 0.2734652175366126,
+        "0.9": 0.12045341773233242,
+        "1.0": 0.0
+      },
+      "fixed_value_budget_safe_weights": [
+        1.0
+      ],
+      "fixed_uniform_5pct_safe_weights": [
+        1.0
+      ],
+      "q09_fixed_relative_delta_percent": 12.045341773233243,
+      "three_single_alarm_positions": 34220,
+      "three_single_alarm_switched_relative_delta_percent": {
+        "minimum": 0.5293820945721173,
+        "mean": 0.5802045314503542,
+        "maximum": 0.5953812563926686
+      }
+    },
+    {
+      "model": "R_unstable",
+      "target_edge": 35,
+      "kappa_L60": 1.2083557527351805,
+      "value_budget_epsilon": 0.028113023660457613,
+      "switch_safety_P_equals_I": {
+        "0.0": true,
+        "0.2": true,
+        "0.4": true,
+        "0.6": true,
+        "0.8": true,
+        "0.9": true,
+        "1.0": true
+      },
+      "fixed_weight_risk": {
+        "0.0": 58.044016811634705,
+        "0.2": 44.93469818889231,
+        "0.4": 36.857435894157874,
+        "0.6": 31.737667973251313,
+        "0.8": 28.434575463082947,
+        "0.9": 27.244830899588262,
+        "1.0": 26.28381624642792
+      },
+      "fixed_weight_relative_delta": {
+        "0.0": 1.2083557527351805,
+        "0.2": 0.709595660219182,
+        "0.4": 0.4022863175040858,
+        "0.6": 0.20749847266050586,
+        "0.8": 0.08182827016024512,
+        "0.9": 0.036562980206152895,
+        "1.0": 0.0
+      },
+      "fixed_value_budget_safe_weights": [
+        1.0
+      ],
+      "fixed_uniform_5pct_safe_weights": [
+        0.9,
+        1.0
+      ],
+      "q09_fixed_relative_delta_percent": 3.6562980206152895,
+      "three_single_alarm_positions": 34220,
+      "three_single_alarm_switched_relative_delta_percent": {
+        "minimum": 0.1800005902095947,
+        "mean": 0.18237930581683953,
+        "maximum": 0.18279321441072582
+      }
+    },
+    {
+      "model": "R_unstable",
+      "target_edge": 1,
+      "kappa_L60": 1.5152286034659055,
+      "value_budget_epsilon": 0.02590312703381365,
+      "switch_safety_P_equals_I": {
+        "0.0": true,
+        "0.2": true,
+        "0.4": true,
+        "0.6": true,
+        "0.8": true,
+        "0.9": true,
+        "1.0": true
+      },
+      "fixed_weight_risk": {
+        "0.0": 66.10980643125889,
+        "0.2": 49.19176976156305,
+        "0.4": 39.13942861221916,
+        "0.6": 32.89600755556045,
+        "0.8": 28.89848147628926,
+        "0.9": 27.455707553659114,
+        "1.0": 26.28381624642792
+      },
+      "fixed_weight_relative_delta": {
+        "0.0": 1.5152286034659055,
+        "0.2": 0.8715611652568734,
+        "0.4": 0.48910752705242655,
+        "0.6": 0.25156892161848465,
+        "0.8": 0.09947814295104813,
+        "0.9": 0.044586040940322445,
+        "1.0": 0.0
+      },
+      "fixed_value_budget_safe_weights": [
+        1.0
+      ],
+      "fixed_uniform_5pct_safe_weights": [
+        0.9,
+        1.0
+      ],
+      "q09_fixed_relative_delta_percent": 4.4586040940322444,
+      "three_single_alarm_positions": 34220,
+      "three_single_alarm_switched_relative_delta_percent": {
+        "minimum": 0.21933007389920434,
+        "mean": 0.2222669220595742,
+        "maximum": 0.2228588649402674
+      }
+    },
+    {
+      "model": "R_stable",
+      "target_edge": 35,
+      "kappa_L60": 1.1693109251468166,
+      "value_budget_epsilon": 0.028439034965581454,
+      "switch_safety_P_equals_I": {
+        "0.0": true,
+        "0.2": true,
+        "0.4": true,
+        "0.6": true,
+        "0.8": true,
+        "0.9": true,
+        "1.0": true
+      },
+      "fixed_weight_risk": {
+        "0.0": 56.55648366267402,
+        "0.2": 44.12669905354745,
+        "0.4": 36.35693757531361,
+        "0.6": 31.39148645719035,
+        "0.8": 28.172698571609335,
+        "0.9": 27.01068423680424,
+        "1.0": 26.071174494659022
+      },
+      "fixed_weight_relative_delta": {
+        "0.0": 1.1693109251468166,
+        "0.2": 0.6925474171708917,
+        "0.4": 0.3945262643522772,
+        "0.6": 0.20406874894036903,
+        "0.8": 0.08060718850164396,
+        "0.9": 0.03603634129861133,
+        "1.0": 0.0
+      },
+      "fixed_value_budget_safe_weights": [
+        1.0
+      ],
+      "fixed_uniform_5pct_safe_weights": [
+        0.9,
+        1.0
+      ],
+      "q09_fixed_relative_delta_percent": 3.603634129861133,
+      "three_single_alarm_positions": 34220,
+      "three_single_alarm_switched_relative_delta_percent": {
+        "minimum": 0.17774080052541663,
+        "mean": 0.1797981564753309,
+        "maximum": 0.18016067621895449
+      }
+    },
+    {
+      "model": "R_stable",
+      "target_edge": 1,
+      "kappa_L60": 1.4607286719582153,
+      "value_budget_epsilon": 0.02625534763577511,
+      "switch_safety_P_equals_I": {
+        "0.0": true,
+        "0.2": true,
+        "0.4": true,
+        "0.6": true,
+        "0.8": true,
+        "0.9": true,
+        "1.0": true
+      },
+      "fixed_weight_risk": {
+        "0.0": 64.15408659063465,
+        "0.2": 48.20958572104231,
+        "0.4": 38.568563123036824,
+        "0.6": 32.52124722562587,
+        "0.8": 28.62696689823244,
+        "0.9": 27.217474913490815,
+        "1.0": 26.071174494659022
+      },
+      "fixed_weight_relative_delta": {
+        "0.0": 1.4607286719582153,
+        "0.2": 0.8491528155326391,
+        "0.4": 0.4793565641217106,
+        "0.6": 0.24740246099338456,
+        "0.8": 0.09803134891743762,
+        "0.9": 0.04396811578498626,
+        "1.0": 0.0
+      },
+      "fixed_value_budget_safe_weights": [
+        1.0
+      ],
+      "fixed_uniform_5pct_safe_weights": [
+        0.9,
+        1.0
+      ],
+      "q09_fixed_relative_delta_percent": 4.3968115784986255,
+      "three_single_alarm_positions": 34220,
+      "three_single_alarm_switched_relative_delta_percent": {
+        "minimum": 0.2166926243727163,
+        "mean": 0.21924928283682824,
+        "maximum": 0.2197739270131338
+      }
+    }
+  ],
+  "interpretation": {
+    "fixed_weight_value_safe_set": "all six D1-A deterministic cases reduce to q=1",
+    "switching_sensitive_quantity": "three single alarm positions are deterministic occupancy sensitivity only",
+    "health_fwer": "separate from the paired health-risk confidence family",
+    "B_vs_D": "compare health-attack Pareto outcomes, not A_L dominance"
+  }
+}
