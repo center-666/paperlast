@@ -1,0 +1,153 @@
+{
+  "scope": "B1 healthy selection for track M; bit 6 is the target alarm",
+  "off_alarm_q": 1.0,
+  "other_six_edges": "frozen_binary_gates",
+  "registration_commit": "7868bab",
+  "B0_commit": "acbd7efb48243aa038dccd8c9b18152543a7405d",
+  "rows": [
+    {
+      "scene": 0,
+      "dynamics": "unstable",
+      "topology": "U",
+      "sender": 35,
+      "receiver": 26,
+      "watermark": "negative",
+      "A": 0.8,
+      "B": 1.0,
+      "C": 0.2,
+      "D": 1.0
+    },
+    {
+      "scene": 1,
+      "dynamics": "unstable",
+      "topology": "U",
+      "sender": 35,
+      "receiver": 26,
+      "watermark": "iid",
+      "A": 0.8,
+      "B": 1.0,
+      "C": 0.2,
+      "D": 1.0
+    },
+    {
+      "scene": 2,
+      "dynamics": "unstable",
+      "topology": "R",
+      "sender": 35,
+      "receiver": 26,
+      "watermark": "negative",
+      "A": 0.8,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    {
+      "scene": 3,
+      "dynamics": "unstable",
+      "topology": "R",
+      "sender": 35,
+      "receiver": 26,
+      "watermark": "iid",
+      "A": 0.8,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    {
+      "scene": 4,
+      "dynamics": "unstable",
+      "topology": "R",
+      "sender": 1,
+      "receiver": 26,
+      "watermark": "negative",
+      "A": 0.8,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    {
+      "scene": 5,
+      "dynamics": "unstable",
+      "topology": "R",
+      "sender": 1,
+      "receiver": 26,
+      "watermark": "iid",
+      "A": 0.8,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    {
+      "scene": 6,
+      "dynamics": "stable",
+      "topology": "U",
+      "sender": 35,
+      "receiver": 26,
+      "watermark": "negative",
+      "A": 0.8,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    {
+      "scene": 7,
+      "dynamics": "stable",
+      "topology": "U",
+      "sender": 35,
+      "receiver": 26,
+      "watermark": "iid",
+      "A": 0.8,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    {
+      "scene": 8,
+      "dynamics": "stable",
+      "topology": "R",
+      "sender": 35,
+      "receiver": 26,
+      "watermark": "negative",
+      "A": 0.8,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    {
+      "scene": 9,
+      "dynamics": "stable",
+      "topology": "R",
+      "sender": 35,
+      "receiver": 26,
+      "watermark": "iid",
+      "A": 0.8,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    {
+      "scene": 10,
+      "dynamics": "stable",
+      "topology": "R",
+      "sender": 1,
+      "receiver": 26,
+      "watermark": "negative",
+      "A": 0.8,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    {
+      "scene": 11,
+      "dynamics": "stable",
+      "topology": "R",
+      "sender": 1,
+      "receiver": 26,
+      "watermark": "iid",
+      "A": 0.8,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    }
+  ]
+}
