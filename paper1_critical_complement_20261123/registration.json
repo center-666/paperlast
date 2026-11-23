@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-23",
+  "source_commit": "ae885b6a9f9575bb0fbd7af89e489c07d251f198",
+  "source_archive_sha256_local": "98175a7224437b9f09273adc0371d04d4c2bea5a2d1661e759b4d14a8117b6f0",
+  "scope": "Exploratory defensive simulation in the archived 50-node, n=4, m=2 system",
+  "critical_edge_sender_receiver": [35, 26],
+  "old_six_edges": "Observed by the detector and healthy in this experiment",
+  "fixture": "Fixed exogenous additive packet errors in coded coordinates, declared before simulation, independent of physical state, watermark, plant dynamics and detector. Units are synthetic.",
+  "fixture_vector": [6.0, 0.0],
+  "stress_window_half_open": [50, 110],
+  "fixtures": {
+    "continuous": "Every packet in [50,110) is perturbed",
+    "burst": "First six samples in each consecutive ten-sample block of [50,110) are perturbed"
+  },
+  "seeding": "Deterministic child streams for each model. Separate streams for threshold calibration, healthy holdout and each fixture. Watermark candidates share physical trajectories, radial draws, initial angles and transition quantiles within each fixture.",
+  "root_seed": 34061123,
+  "paths_per_calibration_model": 512,
+  "paths_per_healthy_holdout_model": 512,
+  "paths_per_fixture_and_model": 512,
+  "theta_candidates": {"iid": 0.0, "negative": -1.3152369768257723, "positive": 1.3152369768257723},
+  "control_policies": ["candidate-specific all accept", "permanent reject critical edge", "reject the exact fixture samples", "clean all accept"],
+  "primary_loss": "Node 26 missing block squared Euclidean error, averaged over [50,110)",
+  "secondary": ["post-fault missing error", "network MSE", "maximum rejection run", "seven-sample contraction", "polluted packet accepts", "healthy complementary accepts", "held-out path FWER"],
+  "comparison": "Paired descriptive 95% intervals conditional on recorded calibration; no parameter choice or tuning"
+}

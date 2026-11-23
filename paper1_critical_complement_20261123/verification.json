@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "fixed_schedule_moments": {
+    "unstable": {
+      "continuous": {
+        "exact_window_expected_mse": 36215.31968434838,
+        "simulated_mean": 36899.55592466134,
+        "simulation_minus_exact_in_standard_errors": 0.3047145849929276
+      },
+      "burst": {
+        "exact_window_expected_mse": 8.689329901392675,
+        "simulated_mean": 8.80479144683477,
+        "simulation_minus_exact_in_standard_errors": 0.8794954448225322
+      }
+    },
+    "stable": {
+      "continuous": {
+        "exact_window_expected_mse": 24.78502525675195,
+        "simulated_mean": 25.797681000211295,
+        "simulation_minus_exact_in_standard_errors": 1.2559220361320647
+      },
+      "burst": {
+        "exact_window_expected_mse": 5.589519006445,
+        "simulated_mean": 5.632641165607598,
+        "simulation_minus_exact_in_standard_errors": 0.5834402550761292
+      }
+    }
+  },
+  "recomputed_summaries": 546,
+  "path_arrays": 528
+}
