@@ -18,3 +18,5 @@ C2 root=2026122401。每模型 EWMA gate calibration 2048条、可信参考校�
 B/C共用B的均值与中心协方差更新式，遗忘因子λ=0.5。A保留B既有当前样本包含式插件KL统计定义。因此A/B对比包含当前样本自包含和score definition的变化，不将其结果纯解释成单一self-inclusion效应；C再检验trusted-sample更新及恢复规则。所有检测器的最终门控阈值均由各自的七链路全时域路径最大分数独立校准，one-based rank 1947，严格大于阈值报警。固定阈值的另一个独立健康留出集评估FWER。
 
 C2只在negative watermarked attack作为主机制试验，连续/突发和稳定/不稳定均完整运行。C1三种水印全跑。C1/C2都不根据数据调λ、恢复连续拍数、残差窗口或阈值。
+
+C2 的 prequential 启动时刻、EWMA-B/C score 方程及 A/B/C 对照可解释边界由抽样前单独锁定于 [C2 startup addendum](REGISTRATION_C2_STARTUP.md)。
