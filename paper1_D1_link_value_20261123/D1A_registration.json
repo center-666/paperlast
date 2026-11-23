@@ -1,0 +1,124 @@
+{
+  "experiment": "D1-A deterministic finite-horizon link-value design and verification",
+  "frozen_upstream_commit": "5919036776ace8cf5263d4d6a2078184fd58039b",
+  "registration_commit": "0738004d9cbf7ea53e20023c04e03b5c691981aa",
+  "amendment_v1_commit": "4317c52e9fd763779f5d6178c2135b27abbee357",
+  "amendment_v2_commit": "53de623f4b631caa89622d729954d2da5f022f36",
+  "amendment_v3_commit": "771a9e9e584cb18242d8f9e08d0424083e3cd9b2",
+  "amendment_v3_rank_tolerance_clarification": "ea5a5f1a2cfd2cc489eec0107d8f3c3201fa8bc8",
+  "amendment_v3_covariance_tolerance": "37ba17cf3143094db680a54ed85c26d01fca016b",
+  "final_audit_amendment_commit": "37ba17cf3143094db680a54ed85c26d01fca016b",
+  "model": {
+    "nodes": 50,
+    "state_dimension": 4,
+    "measurement_dimension": 2,
+    "target_receiver": 26,
+    "missing_block_projector": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "weights": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "prediction_horizons": [
+    10,
+    20,
+    40,
+    60
+  ],
+  "primary_horizon": 60,
+  "initial_covariances": [
+    "Pplus_keep_fixed_point",
+    "zero"
+  ],
+  "dynamics": [
+    "unstable",
+    "stable"
+  ],
+  "topologies": {
+    "U": {
+      "receiver_26_neighbors": [
+        16,
+        28,
+        35
+      ],
+      "single_complementary_sender": 35
+    },
+    "R": {
+      "replacement": "undirected edge {16,26} -> {1,26}",
+      "receiver_26_neighbors": [
+        1,
+        28,
+        35
+      ],
+      "complementary_senders": [
+        1,
+        35
+      ],
+      "redesign_nodes": [
+        1,
+        16,
+        26
+      ]
+    }
+  },
+  "R_edge_candidate_order": "ascending node ID, exact directed attack-arc conflict in either orientation, undirected connectivity after replacing the lowest-ID same-mode neighbor",
+  "rank": {
+    "observability_matrix": "stack C_rem A^h for h=0..3",
+    "absolute_singular_value_tolerance": 1e-10,
+    "unobservable_projector_tolerance": 1e-08
+  },
+  "numerical_tolerances": {
+    "DARE_fixed_point_residual_Frobenius": 1e-08,
+    "covariance_minimum_eigenvalue_absolute": 1e-10,
+    "Omega_minimum_eigenvalue_absolute": 1e-10
+  },
+  "packet_attack": {
+    "delta_packet": "M_k a_k",
+    "injection_matrices": {
+      "S1": "I2",
+      "S35": "I2"
+    }
+  },
+  "noise_assumptions": [
+    "measurement noises independent across sensors",
+    "measurement noises independent across time",
+    "measurement noise independent of process noise"
+  ],
+  "pre_execution_hashes": {
+    "link_value_design.py": "5aef0649f5c0b56586c909054f9c326d232adb0fbeec8104b92ae58de09bf9e5",
+    "verify_link_value.py": "6011d00ca0edf3be3cd3dd59c6f359abab4f4d26e2a53789399388f5fbcc8fac",
+    "D1A_AUDIT_AMENDMENT.md": "a67bf551bf35655f3f7e23336c843504b25073ff98394b16bf5469cf9e8ac589",
+    ".gitattributes": "50ebd22e8bc57d10c68577ebf0d2fca7474db0b5554d016c1d51e779659c0f2c"
+  },
+  "scope": "deterministic only, no attack Monte Carlo, no D1-B or D1-C"
+}
