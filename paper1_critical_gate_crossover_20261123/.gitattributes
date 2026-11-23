@@ -1,0 +1,7 @@
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.npz binary
+.gitattributes text eol=lf
+.gitignore text eol=lf
+user_review.md -whitespace
