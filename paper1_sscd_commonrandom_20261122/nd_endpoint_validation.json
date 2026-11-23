@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "independent_quadrature": true,
+  "theta_range_checked": [
+    -6,
+    6
+  ],
+  "dimensions": [
+    2,
+    3,
+    4,
+    6,
+    10
+  ],
+  "rows": [
+    {
+      "m": 2,
+      "theta": -6.0,
+      "max_independent_quadrature_residual": 9.47454337207887e-11,
+      "max_inverse_residual": 3.215760990826766e-12,
+      "quantile_count": 13
+    },
+    {
+      "m": 2,
+      "theta": 6.0,
+      "max_independent_quadrature_residual": 9.999999828202988e-09,
+      "max_inverse_residual": 1.0000000050247593e-08,
+      "quantile_count": 13
+    },
+    {
+      "m": 3,
+      "theta": -6.0,
+      "max_independent_quadrature_residual": 5.27827781482415e-13,
+      "max_inverse_residual": 5.278555370580307e-13,
+      "quantile_count": 13
+    },
+    {
+      "m": 3,
+      "theta": 6.0,
+      "max_independent_quadrature_residual": 1.8030021919912542e-13,
+      "max_inverse_residual": 2.343035246365809e-13,
+      "quantile_count": 13
+    },
+    {
+      "m": 4,
+      "theta": -6.0,
+      "max_independent_quadrature_residual": 1.4478418464136666e-12,
+      "max_inverse_residual": 1.4477308241112041e-12,
+      "quantile_count": 13
+    },
+    {
+      "m": 4,
+      "theta": 6.0,
+      "max_independent_quadrature_residual": 1.8633983245308627e-12,
+      "max_inverse_residual": 1.8632873022284002e-12,
+      "quantile_count": 13
+    },
+    {
+      "m": 6,
+      "theta": -6.0,
+      "max_independent_quadrature_residual": 2.08603967433163e-13,
+      "max_inverse_residual": 6.391290716864366e-13,
+      "quantile_count": 13
+    },
+    {
+      "m": 6,
+      "theta": 6.0,
+      "max_independent_quadrature_residual": 6.084737748379698e-13,
+      "max_inverse_residual": 8.356688041708267e-13,
+      "quantile_count": 13
+    },
+    {
+      "m": 10,
+      "theta": -6.0,
+      "max_independent_quadrature_residual": 1.5300731601858297e-12,
+      "max_inverse_residual": 1.5300731601858297e-12,
+      "quantile_count": 13
+    },
+    {
+      "m": 10,
+      "theta": 6.0,
+      "max_independent_quadrature_residual": 4.0401015866109447e-13,
+      "max_inverse_residual": 1.3621326289126046e-12,
+      "quantile_count": 13
+    }
+  ],
+  "endpoint_precision_note": "For m=2, theta=+6, float64 quantile spacing near z=1 limits extreme-tail CDF residual to about 1e-8; registered 0.1-nat candidates are far inside this edge."
+}

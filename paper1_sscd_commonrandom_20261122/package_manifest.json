@@ -1,0 +1,36 @@
+{
+  "package": "paper1_sscd_commonrandom_20261122.zip",
+  "source_zip_sha256": "45abb096a214c9bc27706e981575ab529fdd0c4c8b1b1db76702dab7dc5364dc",
+  "source_zip_bytes": 31399,
+  "downloaded_from": "C:/Users/zhongxin/Downloads",
+  "source_baseline_reference": "32d27189a220ce28893bb68ac9b97cf85abeee8c",
+  "development_seed": 2026120302,
+  "final_test_seed": 2026120705,
+  "development_lock": "crn_locked_selection.json",
+  "development_selection": "neg_boundary",
+  "final_test_output": "crn_final_results.json",
+  "final_test_arrays": "crn_final_path_arrays.npz",
+  "final_path_ids_manifest": "crn_final_path_manifest.json",
+  "final_analysis": "v3_final_analysis.json",
+  "v3_verification": "verification_v3.json",
+  "nd_sampler_endpoint_check": "nd_endpoint_validation.json",
+  "real_50node_crn_variance_output": "crn_variance_50node_results.json",
+  "real_50node_crn_variance_paths": "crn_variance_50node_paths.npz",
+  "original_final_runner_sha256": "9f81d3726676daac3b26a9a5dd4f0bf7fb964488b4ac4b0a4245b4a5a6a186b5",
+  "note": "Current run_crn_final.py has post-run audit/overwrite metadata additions; exact executed runner is retained in source_package.zip and execution_snapshot/.",
+  "development_outputs": [
+    "crn_development_losses.json",
+    "crn_locked_selection.json",
+    "crn_development_manifest.json"
+  ],
+  "final_test_outputs": [
+    "crn_final_results.json",
+    "crn_final_path_arrays.npz",
+    "crn_final_path_manifest.json",
+    "v3_final_analysis.json"
+  ],
+  "crn_variance_outputs": [
+    "crn_variance_50node_results.json",
+    "crn_variance_50node_paths.npz"
+  ]
+}

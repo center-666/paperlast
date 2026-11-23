@@ -1,0 +1,12 @@
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.zip binary
+*.npz binary
+.zip binary
+.gitattributes text eol=lf
+.gitignore text eol=lf
+execution_snapshot/** -text
+user_v2_review_attachment.txt -text -whitespace
+user_proposal.md -whitespace

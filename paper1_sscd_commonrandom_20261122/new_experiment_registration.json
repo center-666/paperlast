@@ -1,0 +1,84 @@
+{
+  "research": "Paper 1 only: signed temporal watermark under 50-node common-G",
+  "registration_date": "2026-11-22",
+  "historical_source_commit": "32d27189a220ce28893bb68ac9b97cf85abeee8c",
+  "previous_v2_lock": "iid, never modified",
+  "new_method": "Signed Watson exact-law quantile CRN and design-selector v3",
+  "dev_seed": 2026120302,
+  "final_test_seed": 2026120705,
+  "scenario_count": 12,
+  "dynamics": [
+    "unstable",
+    "stable"
+  ],
+  "attack_angles_degrees": [
+    0,
+    -45,
+    45
+  ],
+  "attack_onsets": [
+    50,
+    65
+  ],
+  "registered_attack_support": "same six original links; NOT unknown support",
+  "attack_duration": 60,
+  "development_paths_per_scenario": 256,
+  "final_paths_per_scenario": 512,
+  "healthy_calibration_paths_per_model_per_split": 512,
+  "candidate_theta": {
+    "neg_boundary": -1.3152369768257723,
+    "neg06": -0.6,
+    "iid": 0,
+    "pos06": 0.6,
+    "pos_boundary": 1.3152369768257723
+  },
+  "objective": "Paired final common-G network MSE post20, equal scenario weights",
+  "information_budget": {
+    "quantity": "per-step adjacent watermark dependence",
+    "nats": 0.1
+  },
+  "selection_constraints": {
+    "every_scenario_relative_noninferiority_margin": 0.001,
+    "minimum_equal_weighted_average_relative_gain": 0.001,
+    "nominal_familywise_alpha_approximate": 0.05,
+    "allocation": "0.025 all scenario noninferiority bounds; 0.025 all candidate average-improvement bounds",
+    "fallback": "iid"
+  },
+  "randomness": "same physical, radial, initial angle, quantile and sign across theta per scenario; disjoint between scenarios and dev/test",
+  "detector": "original parity s4 / four residual plugin KL, calibrated max across six edges and times",
+  "strong_baseline": "static delete known-six oracle, plus iid and fixed negative watermark",
+  "test_policy": "lock before separate calibration and final test; all unselected candidate results descriptive only",
+  "status": "Executed: fresh CRN v3 development/independent final test and 8x512 paths/model real-50-node CRN variance audit",
+  "v3_development_selection": "neg_boundary, theta=-1.3152369768257723 under 0.1% per-scenario tolerance and 0.1% equal-weight average improvement",
+  "crn_variance_audit": {
+    "replicates": 8,
+    "paths_per_replicate_and_model": 512,
+    "models": [
+      "unstable",
+      "stable"
+    ],
+    "purpose": "Compare standard errors only under identical physical/radial/initial streams",
+    "not_a_watermark_MSE_gain": true,
+    "results_file": "crn_variance_50node_results.json"
+  },
+  "v3_final_test": "crn_final_results.json; independent from development; lock read-only; 12 total scenarios (6 per model) x 512 paths per scenario",
+  "evidence_files": [
+    "crn_final_results.json",
+    "crn_final_path_arrays.npz",
+    "crn_final_path_manifest.json",
+    "crn_variance_50node_results.json",
+    "crn_variance_50node_paths.npz",
+    "v3_final_analysis.json"
+  ],
+  "limitations": [
+    "Student-t risk bounds approximate",
+    "v3 epsilon/gamma proposed after prior v2 results, so this remains an exploratory new protocol",
+    "automatic selection chose the boundary-negative candidate, equal to the fixed-negative candidate",
+    "historical test informed research questions but is not training input",
+    "no cryptographic secrecy guarantee",
+    "not a high-dimensional physical validation; all 50 local H matrices in this physical experiment are full-rank 2x2",
+    "unknown attack support not implemented",
+    "known-six static-drop oracle remains stronger",
+    "stable-model held-out healthy path FWER was 6.64%"
+  ]
+}

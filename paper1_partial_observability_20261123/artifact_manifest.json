@@ -1,0 +1,97 @@
+{
+  "scope": "Exact delivered package bytes; excludes bytecode and this manifest. Original ZIP, executed snapshots and user attachment are preserved without line-ending conversion.",
+  "files": {
+    ".gitattributes": {
+      "bytes": 116,
+      "sha256": "179c54b487c9d3c2266007e0e415fbbcd1c17faa9afe2fa3c2a13343dde6943a"
+    },
+    ".gitignore": {
+      "bytes": 13,
+      "sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b"
+    },
+    "archive_visible_records.py": {
+      "bytes": 3153,
+      "sha256": "37f5dbac0a0cc4b331d8b37eb2ae77f740e8e1844e9c7dfac56cf76c8f69e216"
+    },
+    "audit_delivery.py": {
+      "bytes": 2339,
+      "sha256": "cb05989c650db13f3817a6d852d89c089accb28dcb6228dc10a0b157ba3592fc"
+    },
+    "audit_partial50.py": {
+      "bytes": 7941,
+      "sha256": "a49503375ddf733c9f68dd97d510291e3e7ce5e624d373255d1ec4fc8cb3c98c"
+    },
+    "continuation_public_updates.md": {
+      "bytes": 1632,
+      "sha256": "fad60908600cb3a47d2aa7bc98a7c454f557e923c1f6f9323fedc7d924e0a21e"
+    },
+    "conversation_manifest.json": {
+      "bytes": 555,
+      "sha256": "ba80007c92959926fd0cf1bec00c6d18b2756280650ace83618accd33b9b2bdf"
+    },
+    "derived_configuration.json": {
+      "bytes": 71761,
+      "sha256": "0169b8e225533c19f7ce55585335479abf19fd83eac6b220539192e4075a1926"
+    },
+    "dialogue.md": {
+      "bytes": 2350,
+      "sha256": "d47b9de88fefec3ec4c0de39f7e48a7ab3d79db417c390b73110acea4e63090e"
+    },
+    "modal_risk_validation.json": {
+      "bytes": 1097,
+      "sha256": "e0aa5fa447f3dc567ded26098d96967eff3deed2fd0ea35cdbe2bc2799c29280"
+    },
+    "partial50_analysis.json": {
+      "bytes": 8283,
+      "sha256": "54a1ee068329b6dfce085c3f8926074a80939fc5d715b2bec299cc6f582137b1"
+    },
+    "partial50_paths.npz": {
+      "bytes": 330220,
+      "sha256": "21da7e5ef3f7126c978d1affb974a5f4110e88642094c1410d0a38800ba85adc"
+    },
+    "partial50_results.json": {
+      "bytes": 45765,
+      "sha256": "3c9ebf9df830dd3b6e0385eafbecee57df5e46982d0eaabb1bb201dcf5eba87b"
+    },
+    "README.md": {
+      "bytes": 7124,
+      "sha256": "53a1923893c45a0e5b4141f26a412b4ee68a8f1be3f51eac6818c09a26985494"
+    },
+    "registration.json": {
+      "bytes": 2563,
+      "sha256": "6c32c1adafdb4777a43928b62b35583406260e8f9a537cb75f0a5b3619521d72"
+    },
+    "run_partial50.py": {
+      "bytes": 15685,
+      "sha256": "94b53739598ea46b2dc40595b338a6d368d3d5e398d1e2797e785582e17b026e"
+    },
+    "stable_gain_design.json": {
+      "bytes": 134218,
+      "sha256": "7de7f73ce9f5049ce9d6a68127b0a0fffda4a3c37b34aaa18bbe10d23c5c67e3"
+    },
+    "THEORY.md": {
+      "bytes": 6908,
+      "sha256": "c51f2fe53121d717adff4d33a82b7dffbe5d383caa2830a390a02e3808edee68"
+    },
+    "timing_oracle_paths.npz": {
+      "bytes": 41805,
+      "sha256": "95f2ef9d37d3b87c1e75b0cf03f9414aa5aada0ffebee46ec7fc990d2ea8fced"
+    },
+    "timing_oracle_results.json": {
+      "bytes": 538,
+      "sha256": "d34b06c721e7dda7de2f093b4e45f8cc1d834a0a80524599a72f593f7a6448ab"
+    },
+    "unstable_gain_design.json": {
+      "bytes": 134044,
+      "sha256": "440ac558bc1846bbed9311ddd49126ae2a709d927310b4eaf3a52f34cc83cd01"
+    },
+    "validate_modal_risk.py": {
+      "bytes": 2223,
+      "sha256": "070dca029d9afeb260f4e6e9b174710cbb0791bd962fdd4d7c6d3e511262d469"
+    },
+    "visible_dialogue.json": {
+      "bytes": 9557,
+      "sha256": "92184c4dbf5e1451e85effb21b4a8eb6adec4f4a8dc8e49df8fbdc42258ace20"
+    }
+  }
+}

@@ -1,0 +1,406 @@
+{
+  "status": "FRESH_DEVELOPMENT_DESIGN_ONLY_NOT_A_TEST",
+  "selection": "neg_boundary",
+  "theta_locked": -1.3152369768257723,
+  "dimension": 2,
+  "information_budget_per_step_nats": 0.1,
+  "noninferiority_margin_relative": 0.001,
+  "minimum_average_benefit_relative": 0.001,
+  "familywise_nominal_alpha": 0.05,
+  "safety_bound_count": 72,
+  "mean_bound_count": 4,
+  "per_bound_alpha_safety": 0.00034722222222222224,
+  "per_bound_alpha_mean": 0.00625,
+  "candidate_audit": {
+    "neg06": {
+      "feasible": true,
+      "theta": -0.6,
+      "zeta": -0.14833742694087523,
+      "MI_nats": 0.02212653946022031,
+      "average_relative": -0.00310964914411095,
+      "upper_mean_relative": -0.002704791038807836,
+      "aggregate_satterthwaite_df": 2379.916670808574,
+      "worst_upper_relative": 0.0006964287576869728,
+      "passes": true,
+      "scenarios": [
+        {
+          "scenario": "unstable__rot+0__onset50",
+          "estimated_relative": -0.0010411962512214897,
+          "upper_relative": 0.0006964287576869728,
+          "relative_se": 0.0005042160524031264,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot+0__onset65",
+          "estimated_relative": -0.0029317358932106036,
+          "upper_relative": -0.0009119548215846863,
+          "relative_se": 0.0005851161470192983,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot-45__onset50",
+          "estimated_relative": 7.607157726695726e-06,
+          "upper_relative": 0.0002698993047733892,
+          "relative_se": 7.580212817346662e-05,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot-45__onset65",
+          "estimated_relative": -0.00016011825250352091,
+          "upper_relative": 0.0002421150333781681,
+          "relative_se": 0.00011657392199203789,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot+45__onset50",
+          "estimated_relative": -0.002062658314127581,
+          "upper_relative": -0.0005280185571903168,
+          "relative_se": 0.00044506732281693383,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot+45__onset65",
+          "estimated_relative": -0.0020992265302415642,
+          "upper_relative": -0.00039625402560899053,
+          "relative_se": 0.000494239896427111,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+0__onset50",
+          "estimated_relative": -0.005105543948622107,
+          "upper_relative": -0.0029071663652461503,
+          "relative_se": 0.0006324069743179844,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+0__onset65",
+          "estimated_relative": -0.005548599956503046,
+          "upper_relative": -0.003039626461862219,
+          "relative_se": 0.0007217379509719268,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot-45__onset50",
+          "estimated_relative": -0.00522267978792502,
+          "upper_relative": -0.00283059929222345,
+          "relative_se": 0.0006886284481719113,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot-45__onset65",
+          "estimated_relative": -0.005651544143683542,
+          "upper_relative": -0.0032022310489873596,
+          "relative_se": 0.0007040532183136053,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+45__onset50",
+          "estimated_relative": -0.0041325863886680385,
+          "upper_relative": -0.0018065945467592025,
+          "relative_se": 0.0006726020829172017,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+45__onset65",
+          "estimated_relative": -0.0033675074203515826,
+          "upper_relative": -0.00124720060017215,
+          "relative_se": 0.0006133945093673147,
+          "n_paths": 256
+        }
+      ]
+    },
+    "neg_boundary": {
+      "feasible": true,
+      "theta": -1.3152369768257723,
+      "zeta": -0.3122270913389127,
+      "MI_nats": 0.09999999999981524,
+      "average_relative": -0.005812124564126272,
+      "upper_mean_relative": -0.005313875703875998,
+      "aggregate_satterthwaite_df": 2486.000415265433,
+      "worst_upper_relative": 0.0004537420244740967,
+      "passes": true,
+      "scenarios": [
+        {
+          "scenario": "unstable__rot+0__onset50",
+          "estimated_relative": -0.0025694903875537866,
+          "upper_relative": -0.00028792498585648515,
+          "relative_se": 0.0006632069087905159,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot+0__onset65",
+          "estimated_relative": -0.004930032058580243,
+          "upper_relative": -0.002413223327295106,
+          "relative_se": 0.0007247719567335095,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot-45__onset50",
+          "estimated_relative": -0.000251428485816315,
+          "upper_relative": 0.0004537420244740967,
+          "relative_se": 0.0002043588983080309,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot-45__onset65",
+          "estimated_relative": -0.00019836219351735288,
+          "upper_relative": 0.00022700554296333945,
+          "relative_se": 0.00012333118528341075,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot+45__onset50",
+          "estimated_relative": -0.0036579434878817184,
+          "upper_relative": -0.0015337509565617631,
+          "relative_se": 0.0006142700442404594,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot+45__onset65",
+          "estimated_relative": -0.00428673427686576,
+          "upper_relative": -0.0016929656642671257,
+          "relative_se": 0.0007495199239836392,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+0__onset50",
+          "estimated_relative": -0.008077201081850935,
+          "upper_relative": -0.005377782452014906,
+          "relative_se": 0.0007719846352777904,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+0__onset65",
+          "estimated_relative": -0.01010254943431623,
+          "upper_relative": -0.007209658951863415,
+          "relative_se": 0.0008206344167715127,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot-45__onset50",
+          "estimated_relative": -0.009356721529916652,
+          "upper_relative": -0.00640085796052742,
+          "relative_se": 0.0008420183419363673,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot-45__onset65",
+          "estimated_relative": -0.010143359892177479,
+          "upper_relative": -0.00701419651268422,
+          "relative_se": 0.0008898549426705113,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+45__onset50",
+          "estimated_relative": -0.008897697185928045,
+          "upper_relative": -0.0064080137068395744,
+          "relative_se": 0.0007084030206705886,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+45__onset65",
+          "estimated_relative": -0.007273974755110744,
+          "upper_relative": -0.0048277839244144525,
+          "relative_se": 0.0006990047536035442,
+          "n_paths": 256
+        }
+      ]
+    },
+    "pos06": {
+      "feasible": true,
+      "theta": 0.6,
+      "zeta": 0.14833742694087523,
+      "MI_nats": 0.02212653946022031,
+      "average_relative": 0.0035167463728179964,
+      "upper_mean_relative": 0.003951275472315894,
+      "aggregate_satterthwaite_df": 2399.560349433012,
+      "worst_upper_relative": 0.009823613392616226,
+      "passes": false,
+      "scenarios": [
+        {
+          "scenario": "unstable__rot+0__onset50",
+          "estimated_relative": 0.002487723545911263,
+          "upper_relative": 0.004482469640182887,
+          "relative_se": 0.0005713400320361797,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot+0__onset65",
+          "estimated_relative": 0.0011869089281218628,
+          "upper_relative": 0.003026445731817553,
+          "relative_se": 0.0005294932955545774,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot-45__onset50",
+          "estimated_relative": 8.31116082868299e-05,
+          "upper_relative": 0.0003620443510894505,
+          "relative_se": 8.043703890476605e-05,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot-45__onset65",
+          "estimated_relative": 1.5732553586957837e-05,
+          "upper_relative": 0.0001591027721523768,
+          "relative_se": 4.140109049596171e-05,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot+45__onset50",
+          "estimated_relative": 0.003387155547676083,
+          "upper_relative": 0.005275939567729938,
+          "relative_se": 0.0005390363558839775,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot+45__onset65",
+          "estimated_relative": 0.0012674516898970873,
+          "upper_relative": 0.0032807541862152657,
+          "relative_se": 0.0005792840597155776,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+0__onset50",
+          "estimated_relative": 0.007115463164483469,
+          "upper_relative": 0.009760095353475006,
+          "relative_se": 0.0007524800876666121,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+0__onset65",
+          "estimated_relative": 0.007300275523177823,
+          "upper_relative": 0.009823613392616226,
+          "relative_se": 0.0007153950601937738,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot-45__onset50",
+          "estimated_relative": 0.004562553964722156,
+          "upper_relative": 0.0072970644261559706,
+          "relative_se": 0.0007819647005840849,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot-45__onset65",
+          "estimated_relative": 0.0051102133696986785,
+          "upper_relative": 0.007555929153051578,
+          "relative_se": 0.0006959001722489559,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+45__onset50",
+          "estimated_relative": 0.004391605185249986,
+          "upper_relative": 0.006824418465677576,
+          "relative_se": 0.0006950882193276385,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+45__onset65",
+          "estimated_relative": 0.005292761393003757,
+          "upper_relative": 0.007662900528530448,
+          "relative_se": 0.0006735865271799657,
+          "n_paths": 256
+        }
+      ]
+    },
+    "pos_boundary": {
+      "feasible": true,
+      "theta": 1.3152369768257723,
+      "zeta": 0.3122270913389127,
+      "MI_nats": 0.09999999999981524,
+      "average_relative": 0.007823845422074262,
+      "upper_mean_relative": 0.008406303791111394,
+      "aggregate_satterthwaite_df": 2559.652845600891,
+      "worst_upper_relative": 0.0183588465561063,
+      "passes": false,
+      "scenarios": [
+        {
+          "scenario": "unstable__rot+0__onset50",
+          "estimated_relative": 0.0051834853487931504,
+          "upper_relative": 0.007877197482534681,
+          "relative_se": 0.0007685109126227915,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot+0__onset65",
+          "estimated_relative": 0.004819346962305032,
+          "upper_relative": 0.007641992102031536,
+          "relative_se": 0.0008062444268099919,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot-45__onset50",
+          "estimated_relative": 0.0007772494614983938,
+          "upper_relative": 0.0020661676372774624,
+          "relative_se": 0.0003710387186702422,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot-45__onset65",
+          "estimated_relative": 0.0002448948000900641,
+          "upper_relative": 0.0008830157166833795,
+          "relative_se": 0.00018392726696863634,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot+45__onset50",
+          "estimated_relative": 0.00667882214420106,
+          "upper_relative": 0.00931167306307928,
+          "relative_se": 0.0007480457768083086,
+          "n_paths": 256
+        },
+        {
+          "scenario": "unstable__rot+45__onset65",
+          "estimated_relative": 0.005734753297260296,
+          "upper_relative": 0.008493817883954048,
+          "relative_se": 0.0007858697637341221,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+0__onset50",
+          "estimated_relative": 0.014916213607565336,
+          "upper_relative": 0.0183588465561063,
+          "relative_se": 0.0009696781366370254,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+0__onset65",
+          "estimated_relative": 0.01247584717789941,
+          "upper_relative": 0.015917379428107975,
+          "relative_se": 0.0009722974045995706,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot-45__onset50",
+          "estimated_relative": 0.011222482993107094,
+          "upper_relative": 0.014655632237691308,
+          "relative_se": 0.0009723969502664762,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot-45__onset65",
+          "estimated_relative": 0.011938768337468531,
+          "upper_relative": 0.015305933557914469,
+          "relative_se": 0.000948358063448659,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+45__onset50",
+          "estimated_relative": 0.009335325854122448,
+          "upper_relative": 0.012403399767160645,
+          "relative_se": 0.000871685481055114,
+          "n_paths": 256
+        },
+        {
+          "scenario": "stable__rot+45__onset65",
+          "estimated_relative": 0.010558955080580348,
+          "upper_relative": 0.013604936315553297,
+          "relative_se": 0.0008602813798331858,
+          "n_paths": 256
+        }
+      ]
+    }
+  },
+  "data_sha256": "6440cd8ea4b264854fa6856007d7790362068a11e7fd0b979aa3f3cb1c4aa893",
+  "limitations": "Approximate Student-t/normal confidence bounds; only conditional on source scenarios; not an unknown-support security guarantee."
+}

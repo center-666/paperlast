@@ -1,0 +1,7 @@
+{
+  "status": "POSTHOC_STRONGER_INFORMATION_BASELINE",
+  "description": "Delete exactly the six known edges during the known attack interval [50,110), retain all outside. Uses extra attack-timing information, not a deployable detector and not used for selection.",
+  "main_result_sha256": "3c9ebf9df830dd3b6e0385eafbecee57df5e46982d0eaabb1bb201dcf5eba87b",
+  "script_sha256": "a49503375ddf733c9f68dd97d510291e3e7ce5e624d373255d1ec4fc8cb3c98c",
+  "path_archive_sha256": "95f2ef9d37d3b87c1e75b0cf03f9414aa5aada0ffebee46ec7fc990d2ea8fced"
+}

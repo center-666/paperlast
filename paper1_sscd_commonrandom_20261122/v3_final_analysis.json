@@ -1,0 +1,1262 @@
+{
+  "status": "PASS",
+  "development_selection": "neg_boundary",
+  "theta": -1.3152369768257723,
+  "v3_registration": "epsilon/gamma thresholds were proposed after review of old v2 results; this is a new exploratory v3 split, not retroactive confirmation.",
+  "development_scenarios": 12,
+  "final_scenarios": {
+    "unstable": {
+      "threshold": 60.59312705920252,
+      "heldout_healthy_fwer": 0.0390625,
+      "healthy_alarms": 20,
+      "healthy_fwer_exact_binomial_ci95": [
+        0.024020809593503667,
+        0.05968598191731193
+      ],
+      "candidate_equal_weight_means": {
+        "iid": {
+          "network_post20": 0.06158746404850881,
+          "affected_post20": 0.06774433779449142,
+          "network_attack": 0.06368550449445691,
+          "network_postattack": 0.059820163662736486,
+          "eligible_link_time_alarm_fraction": 0.9902998886268345,
+          "eligible_first_alarm_delay_from_onset": 7.0
+        },
+        "neg_boundary": {
+          "network_post20": 0.06142043256326898,
+          "affected_post20": 0.06607402294209308,
+          "network_attack": 0.06332360294310393,
+          "network_postattack": 0.059820163662736486,
+          "eligible_link_time_alarm_fraction": 0.9926604264937108,
+          "eligible_first_alarm_delay_from_onset": 7.0
+        },
+        "neg06": {
+          "network_post20": 0.061495961685552415,
+          "affected_post20": 0.06682931416492759,
+          "network_attack": 0.06348724937471807,
+          "network_postattack": 0.059820163662736486,
+          "eligible_link_time_alarm_fraction": 0.991467873755241,
+          "eligible_first_alarm_delay_from_onset": 7.0
+        },
+        "pos06": {
+          "network_post20": 0.0616778375999408,
+          "affected_post20": 0.06864807330881122,
+          "network_attack": 0.06388131385589288,
+          "network_postattack": 0.059820163662736486,
+          "eligible_link_time_alarm_fraction": 0.9889374099187632,
+          "eligible_first_alarm_delay_from_onset": 7.0
+        },
+        "pos_boundary": {
+          "network_post20": 0.06185087273396426,
+          "affected_post20": 0.07037842464904596,
+          "network_attack": 0.06425622331294373,
+          "network_postattack": 0.059820163662736486,
+          "eligible_link_time_alarm_fraction": 0.9867048283542977,
+          "eligible_first_alarm_delay_from_onset": 7.0
+        }
+      },
+      "paired_candidate_minus_iid": {
+        "neg_boundary": {
+          "network_post20": {
+            "equal_weight_scenario_mean": -0.00016703148523983293,
+            "stratified_se": 9.591818138946357e-06,
+            "satterthwaite_df": 2115.6683327966985,
+            "conditional_unadjusted_95ci": [
+              -0.0001858418645696272,
+              -0.00014822110591003866
+            ],
+            "scenarios_with_negative_mean": 5,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.00022672811900851988,
+              -0.00023363185396357345,
+              -2.528630555971058e-07,
+              1.2011794459551833e-06,
+              -0.0002498928927070028,
+              -0.00029288436215025963
+            ]
+          },
+          "affected_post20": {
+            "equal_weight_scenario_mean": -0.0016703148523983299,
+            "stratified_se": 9.591818138946362e-05,
+            "satterthwaite_df": 2115.6683327966994,
+            "conditional_unadjusted_95ci": [
+              -0.0018584186456962724,
+              -0.0014822110591003873
+            ],
+            "scenarios_with_negative_mean": 5,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.002267281190085203,
+              -0.002336318539635736,
+              -2.528630555970746e-06,
+              1.2011794459551684e-05,
+              -0.002498928927070026,
+              -0.0029288436215025955
+            ]
+          },
+          "network_attack": {
+            "equal_weight_scenario_mean": -0.00036190155135297145,
+            "stratified_se": 2.0782272634383777e-05,
+            "satterthwaite_df": 2115.6683327966985,
+            "conditional_unadjusted_95ci": [
+              -0.0004026573732341923,
+              -0.0003211457294717506
+            ],
+            "scenarios_with_negative_mean": 5,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.0004912442578517939,
+              -0.0005062023502544093,
+              -5.478699537936208e-07,
+              2.602555466236199e-06,
+              -0.0005414346008651724,
+              -0.0006345827846588954
+            ]
+          },
+          "eligible_link_time_alarm_fraction": {
+            "equal_weight_scenario_mean": 0.00236053786687631,
+            "stratified_se": 0.0001310927022461752,
+            "satterthwaite_df": 2016.6114948168852,
+            "conditional_unadjusted_95ci": [
+              0.0021034465879424535,
+              0.0026176291458101667
+            ],
+            "scenarios_with_negative_mean": 1,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0025181800314465403,
+              0.003273634040880502,
+              -1.8425707547169807e-05,
+              1.2283805031446538e-05,
+              0.003672857704402515,
+              0.0047046973270440245
+            ]
+          },
+          "eligible_first_alarm_delay_from_onset": {
+            "equal_weight_scenario_mean": 0.0,
+            "stratified_se": 0.0,
+            "satterthwaite_df": 1000000000.0,
+            "conditional_unadjusted_95ci": [
+              0.0,
+              0.0
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "neg06": {
+          "network_post20": {
+            "equal_weight_scenario_mean": -9.150236295638334e-05,
+            "stratified_se": 7.570098239916682e-06,
+            "satterthwaite_df": 2088.32839091538,
+            "conditional_unadjusted_95ci": [
+              -0.0001063480871460158,
+              -7.665663876675087e-05
+            ],
+            "scenarios_with_negative_mean": 6,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.00013691190072904902,
+              -0.0001256387326866008,
+              -4.367215504726458e-06,
+              -3.2358841012644526e-06,
+              -0.00010971890687311937,
+              -0.00016914153784353993
+            ]
+          },
+          "affected_post20": {
+            "equal_weight_scenario_mean": -0.0009150236295638343,
+            "stratified_se": 7.570098239916688e-05,
+            "satterthwaite_df": 2088.3283909153815,
+            "conditional_unadjusted_95ci": [
+              -0.0010634808714601591,
+              -0.0007665663876675094
+            ],
+            "scenarios_with_negative_mean": 6,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.0013691190072904974,
+              -0.0012563873268660061,
+              -4.3672155047265145e-05,
+              -3.235884101264518e-05,
+              -0.001097189068731192,
+              -0.0016914153784354
+            ]
+          },
+          "network_attack": {
+            "equal_weight_scenario_mean": -0.00019825511973883074,
+            "stratified_se": 1.640187951981949e-05,
+            "satterthwaite_df": 2088.3283909153806,
+            "conditional_unadjusted_95ci": [
+              -0.00023042085548303446,
+              -0.00016608938399462702
+            ],
+            "scenarios_with_negative_mean": 6,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.0002966424515796082,
+              -0.000272217254154301,
+              -9.462300260240715e-06,
+              -7.011082219406377e-06,
+              -0.00023772429822509168,
+              -0.0003664733319943365
+            ]
+          },
+          "eligible_link_time_alarm_fraction": {
+            "equal_weight_scenario_mean": 0.0011679851284067083,
+            "stratified_se": 9.525868433897077e-05,
+            "satterthwaite_df": 2024.7057922159759,
+            "conditional_unadjusted_95ci": [
+              0.0009811698612727418,
+              0.0013548003955406748
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0010072720125786161,
+              0.001756584119496855,
+              6.141902515723269e-06,
+              2.4567610062893076e-05,
+              0.0016030365566037732,
+              0.002610308569182389
+            ]
+          },
+          "eligible_first_alarm_delay_from_onset": {
+            "equal_weight_scenario_mean": 0.0,
+            "stratified_se": 0.0,
+            "satterthwaite_df": 1000000000.0,
+            "conditional_unadjusted_95ci": [
+              0.0,
+              0.0
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pos06": {
+          "network_post20": {
+            "equal_weight_scenario_mean": 9.037355143198126e-05,
+            "stratified_se": 8.090605541634888e-06,
+            "satterthwaite_df": 2091.256224228493,
+            "conditional_unadjusted_95ci": [
+              7.450707294329165e-05,
+              0.00010624002992067088
+            ],
+            "scenarios_with_negative_mean": 1,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.00014002976882358906,
+              0.00010622923167295312,
+              -3.533232040671801e-06,
+              4.79284625122787e-06,
+              0.00015413204420498957,
+              0.00014059064967979968
+            ]
+          },
+          "affected_post20": {
+            "equal_weight_scenario_mean": 0.0009037355143198121,
+            "stratified_se": 8.090605541634893e-05,
+            "satterthwaite_df": 2091.256224228493,
+            "conditional_unadjusted_95ci": [
+              0.0007450707294329158,
+              0.0010624002992067085
+            ],
+            "scenarios_with_negative_mean": 1,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0014002976882358854,
+              0.0010622923167295283,
+              -3.53323204067176e-05,
+              4.792846251227871e-05,
+              0.0015413204420498968,
+              0.0014059064967980016
+            ]
+          },
+          "network_attack": {
+            "equal_weight_scenario_mean": 0.00019580936143595972,
+            "stratified_se": 1.7529645340208942e-05,
+            "satterthwaite_df": 2091.256224228493,
+            "conditional_unadjusted_95ci": [
+              0.00016143199137713215,
+              0.00023018673149478728
+            ],
+            "scenarios_with_negative_mean": 1,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.00030339783245110854,
+              0.00023016333529139827,
+              -7.655336088122102e-06,
+              1.0384500210993734e-05,
+              0.00033395276244414535,
+              0.00030461307430623447
+            ]
+          },
+          "eligible_link_time_alarm_fraction": {
+            "equal_weight_scenario_mean": -0.0013624787080712783,
+            "stratified_se": 0.00010303806811314575,
+            "satterthwaite_df": 2006.4166622224907,
+            "conditional_unadjusted_95ci": [
+              -0.001564551509147463,
+              -0.0011604059069950936
+            ],
+            "scenarios_with_negative_mean": 4,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.001989976415094339,
+              -0.0017074488993710688,
+              0.0,
+              6.141902515723269e-06,
+              -0.0021742334905660373,
+              -0.002309355345911949
+            ]
+          },
+          "eligible_first_alarm_delay_from_onset": {
+            "equal_weight_scenario_mean": 0.0,
+            "stratified_se": 0.0,
+            "satterthwaite_df": 1000000000.0,
+            "conditional_unadjusted_95ci": [
+              0.0,
+              0.0
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pos_boundary": {
+          "network_post20": {
+            "equal_weight_scenario_mean": 0.0002634086854554532,
+            "stratified_se": 1.22520787695226e-05,
+            "satterthwaite_df": 2191.202946334717,
+            "conditional_unadjusted_95ci": [
+              0.0002393817806066527,
+              0.0002874355903042537
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0003501445032599687,
+              0.00035254992241009114,
+              7.249378580958708e-06,
+              1.0645118054340098e-05,
+              0.0004488549191233942,
+              0.0004110082713039665
+            ]
+          },
+          "affected_post20": {
+            "equal_weight_scenario_mean": 0.002634086854554532,
+            "stratified_se": 0.0001225207876952261,
+            "satterthwaite_df": 2191.202946334718,
+            "conditional_unadjusted_95ci": [
+              0.002393817806066527,
+              0.0028743559030425373
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.003501445032599684,
+              0.0035254992241009085,
+              7.249378580958754e-05,
+              0.00010645118054340065,
+              0.0044885491912339415,
+              0.004110082713039671
+            ]
+          },
+          "network_attack": {
+            "equal_weight_scenario_mean": 0.0005707188184868155,
+            "stratified_se": 2.6546170667298988e-05,
+            "satterthwaite_df": 2191.2029463347176,
+            "conditional_unadjusted_95ci": [
+              0.0005186605246477478,
+              0.0006227771123258833
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0007586464237299312,
+              0.000763858165221864,
+              1.57069869254107e-05,
+              2.3064422451070295e-05,
+              0.0009725189914340216,
+              0.0008905179211585953
+            ]
+          },
+          "eligible_link_time_alarm_fraction": {
+            "equal_weight_scenario_mean": -0.003595060272536687,
+            "stratified_se": 0.00016017803258437966,
+            "satterthwaite_df": 2015.0298054510852,
+            "conditional_unadjusted_95ci": [
+              -0.003909192134653247,
+              -0.003280928410420128
+            ],
+            "scenarios_with_negative_mean": 6,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.005030218160377357,
+              -0.004293189858490565,
+              -3.6851415094339614e-05,
+              -3.6851415094339614e-05,
+              -0.005810239779874213,
+              -0.006363011006289307
+            ]
+          },
+          "eligible_first_alarm_delay_from_onset": {
+            "equal_weight_scenario_mean": 0.0,
+            "stratified_se": 0.0,
+            "satterthwaite_df": 1000000000.0,
+            "conditional_unadjusted_95ci": [
+              0.0,
+              0.0
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "known_six_static_oracle_equal_weight_means": {
+        "network_post20": 0.06035279156894336,
+        "affected_post20": 0.05539761299883698,
+        "network_attack": 0.060336308105578974,
+        "network_postattack": 0.060312950580696585
+      },
+      "selected_candidate_vs_fixed_negative": "The v3 selector selected the boundary-negative candidate, equal to the previous fixed negative theta after MI-feasibility correction; this does not establish an optimizer advantage over that fixed candidate."
+    },
+    "stable": {
+      "threshold": 60.08224381704443,
+      "heldout_healthy_fwer": 0.06640625,
+      "healthy_alarms": 34,
+      "healthy_fwer_exact_binomial_ci95": [
+        0.04642313523921855,
+        0.09156269001226193
+      ],
+      "candidate_equal_weight_means": {
+        "iid": {
+          "network_post20": 0.0646928994513096,
+          "affected_post20": 0.09921615362758036,
+          "network_attack": 0.0705704284773135,
+          "network_postattack": 0.059594152639873166,
+          "eligible_link_time_alarm_fraction": 0.6531462919287212,
+          "eligible_first_alarm_delay_from_onset": 7.0
+        },
+        "neg_boundary": {
+          "network_post20": 0.06410721475681545,
+          "affected_post20": 0.0933593066826388,
+          "network_attack": 0.06930008403600295,
+          "network_postattack": 0.05959656389289755,
+          "eligible_link_time_alarm_fraction": 0.6887938941299789,
+          "eligible_first_alarm_delay_from_onset": 7.0
+        },
+        "neg06": {
+          "network_post20": 0.06441702362633787,
+          "affected_post20": 0.09645739537786317,
+          "network_attack": 0.06997155736761042,
+          "network_postattack": 0.05959636597472275,
+          "eligible_link_time_alarm_fraction": 0.6704439367138365,
+          "eligible_first_alarm_delay_from_onset": 7.0
+        },
+        "pos06": {
+          "network_post20": 0.06505471891528751,
+          "affected_post20": 0.10283434826735942,
+          "network_attack": 0.07135432986938912,
+          "network_postattack": 0.059594166957739454,
+          "eligible_link_time_alarm_fraction": 0.632741868121069,
+          "eligible_first_alarm_delay_from_onset": 7.0
+        },
+        "pos_boundary": {
+          "network_post20": 0.0654795035237034,
+          "affected_post20": 0.10708219435151815,
+          "network_attack": 0.07227539186555483,
+          "network_postattack": 0.05959250638389924,
+          "eligible_link_time_alarm_fraction": 0.6068547726677149,
+          "eligible_first_alarm_delay_from_onset": 7.0
+        }
+      },
+      "paired_candidate_minus_iid": {
+        "neg_boundary": {
+          "network_post20": {
+            "equal_weight_scenario_mean": -0.0005856846944941583,
+            "stratified_se": 1.4995896556706767e-05,
+            "satterthwaite_df": 3034.17954558043,
+            "conditional_unadjusted_95ci": [
+              -0.000615087840791688,
+              -0.0005562815481966287
+            ],
+            "scenarios_with_negative_mean": 6,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.0005958839502126531,
+              -0.0007058267409785237,
+              -0.000610513874055425,
+              -0.0005223824070056649,
+              -0.000548562849089369,
+              -0.0005309383456233144
+            ]
+          },
+          "affected_post20": {
+            "equal_weight_scenario_mean": -0.005856846944941585,
+            "stratified_se": 0.00014995896556706768,
+            "satterthwaite_df": 3034.179545580429,
+            "conditional_unadjusted_95ci": [
+              -0.006150878407916881,
+              -0.0055628154819662885
+            ],
+            "scenarios_with_negative_mean": 6,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.005958839502126533,
+              -0.007058267409785232,
+              -0.006105138740554258,
+              -0.005223824070056653,
+              -0.005485628490893686,
+              -0.005309383456233142
+            ]
+          },
+          "network_attack": {
+            "equal_weight_scenario_mean": -0.0012703444413105567,
+            "stratified_se": 3.248227533388311e-05,
+            "satterthwaite_df": 3034.144590127958,
+            "conditional_unadjusted_95ci": [
+              -0.0013340339376003022,
+              -0.0012066549450208113
+            ],
+            "scenarios_with_negative_mean": 6,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.001291900687129319,
+              -0.0015295705308661952,
+              -0.0013260152089756266,
+              -0.0011333054225526286,
+              -0.001190198861178372,
+              -0.0011510759371611981
+            ]
+          },
+          "eligible_link_time_alarm_fraction": {
+            "equal_weight_scenario_mean": 0.035647602201257865,
+            "stratified_se": 0.0008312232992090102,
+            "satterthwaite_df": 3059.6786183981417,
+            "conditional_unadjusted_95ci": [
+              0.03401778974577043,
+              0.0372774146567453
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.03506412146226416,
+              0.0372629225628931,
+              0.036016116352201255,
+              0.03409370086477987,
+              0.03788939661949685,
+              0.033559355345911944
+            ]
+          },
+          "eligible_first_alarm_delay_from_onset": {
+            "equal_weight_scenario_mean": 0.0,
+            "stratified_se": 0.0,
+            "satterthwaite_df": 1000000000.0,
+            "conditional_unadjusted_95ci": [
+              0.0,
+              0.0
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "neg06": {
+          "network_post20": {
+            "equal_weight_scenario_mean": -0.0002758758249717207,
+            "stratified_se": 1.2458277417927479e-05,
+            "satterthwaite_df": 3018.0135285379242,
+            "conditional_unadjusted_95ci": [
+              -0.00030030339655282473,
+              -0.00025144825339061663
+            ],
+            "scenarios_with_negative_mean": 6,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.0003121717020989583,
+              -0.0003346176744962609,
+              -0.0002711550209788721,
+              -0.00026340958616109453,
+              -0.00024401286984915272,
+              -0.00022988809624598552
+            ]
+          },
+          "affected_post20": {
+            "equal_weight_scenario_mean": -0.0027587582497172083,
+            "stratified_se": 0.00012458277417927479,
+            "satterthwaite_df": 3018.0135285379242,
+            "conditional_unadjusted_95ci": [
+              -0.003003033965528249,
+              -0.0025144825339061677
+            ],
+            "scenarios_with_negative_mean": 6,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.0031217170209895907,
+              -0.0033461767449626052,
+              -0.002711550209788724,
+              -0.0026340958616109444,
+              -0.0024401286984915204,
+              -0.0022988809624598615
+            ]
+          },
+          "network_attack": {
+            "equal_weight_scenario_mean": -0.0005988711097030892,
+            "stratified_se": 2.6990508139190234e-05,
+            "satterthwaite_df": 3018.368865662089,
+            "conditional_unadjusted_95ci": [
+              -0.0006517927549934229,
+              -0.0005459494644127555
+            ],
+            "scenarios_with_negative_mean": 6,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.0006771527537879889,
+              -0.0007258053084879725,
+              -0.0005896032041061768,
+              -0.0005725540946580224,
+              -0.0005293000840134997,
+              -0.0004988112131648754
+            ]
+          },
+          "eligible_link_time_alarm_fraction": {
+            "equal_weight_scenario_mean": 0.017297644785115304,
+            "stratified_se": 0.0006725055061568062,
+            "satterthwaite_df": 3062.3549790600678,
+            "conditional_unadjusted_95ci": [
+              0.01597903705084818,
+              0.018616252519382426
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.016712116745283025,
+              0.019279431996855355,
+              0.0166015625,
+              0.015968946540880505,
+              0.019733932783018868,
+              0.015489878144654084
+            ]
+          },
+          "eligible_first_alarm_delay_from_onset": {
+            "equal_weight_scenario_mean": 0.0,
+            "stratified_se": 0.0,
+            "satterthwaite_df": 1000000000.0,
+            "conditional_unadjusted_95ci": [
+              0.0,
+              0.0
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pos06": {
+          "network_post20": {
+            "equal_weight_scenario_mean": 0.0003618194639779041,
+            "stratified_se": 1.3525948615281643e-05,
+            "satterthwaite_df": 3033.317666872758,
+            "conditional_unadjusted_95ci": [
+              0.00033529850942613933,
+              0.00038834041852966886
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.00038751319214980147,
+              0.0003625748872365076,
+              0.00036851022795361465,
+              0.0003675351777013252,
+              0.0003364016516243486,
+              0.00034838164720182727
+            ]
+          },
+          "affected_post20": {
+            "equal_weight_scenario_mean": 0.0036181946397790404,
+            "stratified_se": 0.00013525948615281645,
+            "satterthwaite_df": 3033.3176668727574,
+            "conditional_unadjusted_95ci": [
+              0.0033529850942613927,
+              0.003883404185296688
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0038751319214980146,
+              0.0036257488723650767,
+              0.0036851022795361425,
+              0.003675351777013249,
+              0.0033640165162434886,
+              0.00348381647201827
+            ]
+          },
+          "network_attack": {
+            "equal_weight_scenario_mean": 0.0007839013920756282,
+            "stratified_se": 2.9286271948052738e-05,
+            "satterthwaite_df": 3032.7854978162563,
+            "conditional_unadjusted_95ci": [
+              0.0007264784368493363,
+              0.00084132434730192
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0008389817406748783,
+              0.0007856498483901644,
+              0.0007981024976291334,
+              0.000795695249928791,
+              0.00072927972485745,
+              0.0007556992909733514
+            ]
+          },
+          "eligible_link_time_alarm_fraction": {
+            "equal_weight_scenario_mean": -0.020404423807651992,
+            "stratified_se": 0.0007050845095478367,
+            "satterthwaite_df": 3047.4184330258117,
+            "conditional_unadjusted_95ci": [
+              -0.021786913141749548,
+              -0.019021934473554436
+            ],
+            "scenarios_with_negative_mean": 6,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.019248722484276733,
+              -0.020655218160377357,
+              -0.019555817610062892,
+              -0.02268818789308176,
+              -0.01869595125786163,
+              -0.02158264544025157
+            ]
+          },
+          "eligible_first_alarm_delay_from_onset": {
+            "equal_weight_scenario_mean": 0.0,
+            "stratified_se": 0.0,
+            "satterthwaite_df": 1000000000.0,
+            "conditional_unadjusted_95ci": [
+              0.0,
+              0.0
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "pos_boundary": {
+          "network_post20": {
+            "equal_weight_scenario_mean": 0.0007866040723937778,
+            "stratified_se": 1.732841996516709e-05,
+            "satterthwaite_df": 3015.6429017667624,
+            "conditional_unadjusted_95ci": [
+              0.0007526273564812809,
+              0.0008205807883062748
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0008554980958167609,
+              0.0007775331094842677,
+              0.0008005359817317601,
+              0.0008212023004704186,
+              0.0006943025847619216,
+              0.0007705523620975378
+            ]
+          },
+          "affected_post20": {
+            "equal_weight_scenario_mean": 0.007866040723937774,
+            "stratified_se": 0.0001732841996516709,
+            "satterthwaite_df": 3015.642901766763,
+            "conditional_unadjusted_95ci": [
+              0.007526273564812805,
+              0.008205807883062743
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.008554980958167606,
+              0.007775331094842679,
+              0.008005359817317589,
+              0.008212023004704186,
+              0.006943025847619212,
+              0.007705523620975379
+            ]
+          },
+          "network_attack": {
+            "equal_weight_scenario_mean": 0.0017049633882413363,
+            "stratified_se": 3.751771381404171e-05,
+            "satterthwaite_df": 3015.6629136793026,
+            "conditional_unadjusted_95ci": [
+              0.001631400495426412,
+              0.0017785262810562606
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.001852649316149841,
+              0.001686603033402429,
+              0.0017343236235259005,
+              0.0017808629593867756,
+              0.0015049211577144693,
+              0.0016704202392686012
+            ]
+          },
+          "eligible_link_time_alarm_fraction": {
+            "equal_weight_scenario_mean": -0.04629151926100628,
+            "stratified_se": 0.0008847290231073918,
+            "satterthwaite_df": 3061.6667861316105,
+            "conditional_unadjusted_95ci": [
+              -0.04802624206342496,
+              -0.0445567964585876
+            ],
+            "scenarios_with_negative_mean": 6,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              -0.046592472484276726,
+              -0.04807267099056603,
+              -0.04659861438679244,
+              -0.04788841391509433,
+              -0.04101562499999999,
+              -0.04758131878930817
+            ]
+          },
+          "eligible_first_alarm_delay_from_onset": {
+            "equal_weight_scenario_mean": 0.0,
+            "stratified_se": 0.0,
+            "satterthwaite_df": 1000000000.0,
+            "conditional_unadjusted_95ci": [
+              0.0,
+              0.0
+            ],
+            "scenarios_with_negative_mean": 0,
+            "scenario_count": 6,
+            "paths_per_scenario": 512,
+            "scenario_means": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "known_six_static_oracle_equal_weight_means": {
+        "network_post20": 0.06030518468366506,
+        "affected_post20": 0.05533900595113498,
+        "network_attack": 0.06032944850224168,
+        "network_postattack": 0.060213363407401466
+      },
+      "selected_candidate_vs_fixed_negative": "The v3 selector selected the boundary-negative candidate, equal to the previous fixed negative theta after MI-feasibility correction; this does not establish an optimizer advantage over that fixed candidate."
+    }
+  },
+  "crn_efficiency_50node": {
+    "unstable": {
+      "threshold": {
+        "threshold": 60.60528061000494,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "mean_crn_paired_se": {
+        "mean": 2.746194501439354e-05,
+        "path_se": 7.078313049997133e-07,
+        "paths": 8
+      },
+      "mean_independent_paired_se": {
+        "mean": 3.56106659125795e-05,
+        "path_se": 1.0267469059312048e-06,
+        "paths": 8
+      },
+      "mean_paired_se_ratio": 0.7771555004850645,
+      "mean_relative_se_reduction_percent": 22.284449951493546,
+      "mean_effective_sample_ratio_independent_over_crn": 1.7287840536920884,
+      "replication_mean_difference_crn_minus_independent": {
+        "mean": -6.728465385940079e-07,
+        "path_se": 1.142496593793903e-05,
+        "paths": 8
+      },
+      "replications": [
+        {
+          "replication": 0,
+          "seed_namespace_base": 2036120805,
+          "mean_difference_crn": -0.00024106247937383864,
+          "mean_difference_independent": -0.00024426688853118877,
+          "paired_path_se_crn": 2.667130719279026e-05,
+          "paired_path_se_independent": 3.420829912097165e-05,
+          "se_ratio_crn_over_independent": 0.7796735844267456,
+          "effective_sample_ratio_independent_over_crn": 1.645032032679085
+        },
+        {
+          "replication": 1,
+          "seed_namespace_base": 2036130805,
+          "mean_difference_crn": -0.00021251725619136777,
+          "mean_difference_independent": -0.0002748377322610538,
+          "paired_path_se_crn": 3.135695860419112e-05,
+          "paired_path_se_independent": 3.4870395626773085e-05,
+          "se_ratio_crn_over_independent": 0.8992429836418492,
+          "effective_sample_ratio_independent_over_crn": 1.2366473869777732
+        },
+        {
+          "replication": 2,
+          "seed_namespace_base": 2036140805,
+          "mean_difference_crn": -0.0002203230987862013,
+          "mean_difference_independent": -0.0001753438391204892,
+          "paired_path_se_crn": 2.8318213304879804e-05,
+          "paired_path_se_independent": 3.538328834094621e-05,
+          "se_ratio_crn_over_independent": 0.8003273475322935,
+          "effective_sample_ratio_independent_over_crn": 1.5612220831109713
+        },
+        {
+          "replication": 3,
+          "seed_namespace_base": 2036150805,
+          "mean_difference_crn": -0.00025108144513471517,
+          "mean_difference_independent": -0.0002541136975505319,
+          "paired_path_se_crn": 2.6723479490280476e-05,
+          "paired_path_se_independent": 4.0201893597930145e-05,
+          "se_ratio_crn_over_independent": 0.6647318595872403,
+          "effective_sample_ratio_independent_over_crn": 2.2631170226691104
+        },
+        {
+          "replication": 4,
+          "seed_namespace_base": 2036160805,
+          "mean_difference_crn": -0.00022626818211213135,
+          "mean_difference_independent": -0.00022307727435205428,
+          "paired_path_se_crn": 2.6316284947846707e-05,
+          "paired_path_se_independent": 3.397085293721019e-05,
+          "se_ratio_crn_over_independent": 0.7746724816267713,
+          "effective_sample_ratio_independent_over_crn": 1.6663404699945583
+        },
+        {
+          "replication": 5,
+          "seed_namespace_base": 2036170805,
+          "mean_difference_crn": -0.00020540482104272273,
+          "mean_difference_independent": -0.0001897623088154727,
+          "paired_path_se_crn": 2.907986215858286e-05,
+          "paired_path_se_independent": 3.174564667896078e-05,
+          "se_ratio_crn_over_independent": 0.9160267690453238,
+          "effective_sample_ratio_independent_over_crn": 1.191745908336019
+        },
+        {
+          "replication": 6,
+          "seed_namespace_base": 2036180805,
+          "mean_difference_crn": -0.00023250493899449373,
+          "mean_difference_independent": -0.00020419584701953725,
+          "paired_path_se_crn": 2.5952383016566547e-05,
+          "paired_path_se_independent": 3.476535135084528e-05,
+          "se_ratio_crn_over_independent": 0.7465013873917182,
+          "effective_sample_ratio_independent_over_crn": 1.7944805752638822
+        },
+        {
+          "replication": 7,
+          "seed_namespace_base": 2036190805,
+          "mean_difference_crn": -0.0002322439405326222,
+          "mean_difference_independent": -0.0002504258022090129,
+          "paired_path_se_crn": 2.5277071400010557e-05,
+          "paired_path_se_independent": 3.9739599646998634e-05,
+          "se_ratio_crn_over_independent": 0.6360675906285741,
+          "effective_sample_ratio_independent_over_crn": 2.471686950505307
+        }
+      ]
+    },
+    "stable": {
+      "threshold": {
+        "threshold": 61.18108740637656,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "mean_crn_paired_se": {
+        "mean": 4.0667671961068706e-05,
+        "path_se": 5.25268935346081e-07,
+        "paths": 8
+      },
+      "mean_independent_paired_se": {
+        "mean": 4.5474401007373485e-05,
+        "path_se": 3.947739311251711e-07,
+        "paths": 8
+      },
+      "mean_paired_se_ratio": 0.8943150115449678,
+      "mean_relative_se_reduction_percent": 10.568498845503216,
+      "mean_effective_sample_ratio_independent_over_crn": 1.2529003606996227,
+      "replication_mean_difference_crn_minus_independent": {
+        "mean": -5.5459949784770064e-05,
+        "path_se": 1.9979172985890247e-05,
+        "paths": 8
+      },
+      "replications": [
+        {
+          "replication": 0,
+          "seed_namespace_base": 2037120805,
+          "mean_difference_crn": -0.0006469150891077244,
+          "mean_difference_independent": -0.0005731318671028363,
+          "paired_path_se_crn": 4.108962324006401e-05,
+          "paired_path_se_independent": 4.531353180810658e-05,
+          "se_ratio_crn_over_independent": 0.906784830060699,
+          "effective_sample_ratio_independent_over_crn": 1.2161622198866961
+        },
+        {
+          "replication": 1,
+          "seed_namespace_base": 2037130805,
+          "mean_difference_crn": -0.0006336138197554689,
+          "mean_difference_independent": -0.0006387991715939545,
+          "paired_path_se_crn": 3.937189399233926e-05,
+          "paired_path_se_independent": 4.508272185152262e-05,
+          "se_ratio_crn_over_independent": 0.873325575195046,
+          "effective_sample_ratio_independent_over_crn": 1.3111357005260225
+        },
+        {
+          "replication": 2,
+          "seed_namespace_base": 2037140805,
+          "mean_difference_crn": -0.0006863724795050191,
+          "mean_difference_independent": -0.0006370958708650945,
+          "paired_path_se_crn": 3.9314267491021964e-05,
+          "paired_path_se_independent": 4.500792558742973e-05,
+          "se_ratio_crn_over_independent": 0.8734965448396949,
+          "effective_sample_ratio_independent_over_crn": 1.3106224930765855
+        },
+        {
+          "replication": 3,
+          "seed_namespace_base": 2037150805,
+          "mean_difference_crn": -0.0007197439220033941,
+          "mean_difference_independent": -0.00058788078451788,
+          "paired_path_se_crn": 3.8738455369653796e-05,
+          "paired_path_se_independent": 4.518715715110198e-05,
+          "se_ratio_crn_over_independent": 0.8572890575991696,
+          "effective_sample_ratio_independent_over_crn": 1.3606469080616228
+        },
+        {
+          "replication": 4,
+          "seed_namespace_base": 2037160805,
+          "mean_difference_crn": -0.0006905923477489635,
+          "mean_difference_independent": -0.0006332688883392298,
+          "paired_path_se_crn": 4.093800488958485e-05,
+          "paired_path_se_independent": 4.525679987145955e-05,
+          "se_ratio_crn_over_independent": 0.9045713573619625,
+          "effective_sample_ratio_independent_over_crn": 1.2221213637838362
+        },
+        {
+          "replication": 5,
+          "seed_namespace_base": 2037170805,
+          "mean_difference_crn": -0.0006726699247505832,
+          "mean_difference_independent": -0.0006730203101284356,
+          "paired_path_se_crn": 4.2175399053598795e-05,
+          "paired_path_se_independent": 4.512670022687883e-05,
+          "se_ratio_crn_over_independent": 0.93459966808027,
+          "effective_sample_ratio_independent_over_crn": 1.1448504392409922
+        },
+        {
+          "replication": 6,
+          "seed_namespace_base": 2037180805,
+          "mean_difference_crn": -0.0007256769887735451,
+          "mean_difference_independent": -0.000590086072854031,
+          "paired_path_se_crn": 4.3053834650119726e-05,
+          "paired_path_se_independent": 4.818900131286561e-05,
+          "se_ratio_crn_over_independent": 0.8934369560928235,
+          "effective_sample_ratio_independent_over_crn": 1.25277239390108
+        },
+        {
+          "replication": 7,
+          "seed_namespace_base": 2037190805,
+          "mean_difference_crn": -0.0006299806461337884,
+          "mean_difference_independent": -0.0006286026540988644,
+          "paired_path_se_crn": 4.065989700216723e-05,
+          "paired_path_se_independent": 4.463137024962299e-05,
+          "se_ratio_crn_over_independent": 0.911016103130078,
+          "effective_sample_ratio_independent_over_crn": 1.2048913671201467
+        }
+      ]
+    }
+  },
+  "high_dim_sampler_endpoint_validation": {
+    "status": "PASS",
+    "independent_quadrature": true,
+    "theta_range_checked": [
+      -6,
+      6
+    ],
+    "dimensions": [
+      2,
+      3,
+      4,
+      6,
+      10
+    ],
+    "rows": [
+      {
+        "m": 2,
+        "theta": -6.0,
+        "max_independent_quadrature_residual": 9.47454337207887e-11,
+        "max_inverse_residual": 3.215760990826766e-12,
+        "quantile_count": 13
+      },
+      {
+        "m": 2,
+        "theta": 6.0,
+        "max_independent_quadrature_residual": 9.999999828202988e-09,
+        "max_inverse_residual": 1.0000000050247593e-08,
+        "quantile_count": 13
+      },
+      {
+        "m": 3,
+        "theta": -6.0,
+        "max_independent_quadrature_residual": 5.27827781482415e-13,
+        "max_inverse_residual": 5.278555370580307e-13,
+        "quantile_count": 13
+      },
+      {
+        "m": 3,
+        "theta": 6.0,
+        "max_independent_quadrature_residual": 1.8030021919912542e-13,
+        "max_inverse_residual": 2.343035246365809e-13,
+        "quantile_count": 13
+      },
+      {
+        "m": 4,
+        "theta": -6.0,
+        "max_independent_quadrature_residual": 1.4478418464136666e-12,
+        "max_inverse_residual": 1.4477308241112041e-12,
+        "quantile_count": 13
+      },
+      {
+        "m": 4,
+        "theta": 6.0,
+        "max_independent_quadrature_residual": 1.8633983245308627e-12,
+        "max_inverse_residual": 1.8632873022284002e-12,
+        "quantile_count": 13
+      },
+      {
+        "m": 6,
+        "theta": -6.0,
+        "max_independent_quadrature_residual": 2.08603967433163e-13,
+        "max_inverse_residual": 6.391290716864366e-13,
+        "quantile_count": 13
+      },
+      {
+        "m": 6,
+        "theta": 6.0,
+        "max_independent_quadrature_residual": 6.084737748379698e-13,
+        "max_inverse_residual": 8.356688041708267e-13,
+        "quantile_count": 13
+      },
+      {
+        "m": 10,
+        "theta": -6.0,
+        "max_independent_quadrature_residual": 1.5300731601858297e-12,
+        "max_inverse_residual": 1.5300731601858297e-12,
+        "quantile_count": 13
+      },
+      {
+        "m": 10,
+        "theta": 6.0,
+        "max_independent_quadrature_residual": 4.0401015866109447e-13,
+        "max_inverse_residual": 1.3621326289126046e-12,
+        "quantile_count": 13
+      }
+    ],
+    "endpoint_precision_note": "For m=2, theta=+6, float64 quantile spacing near z=1 limits extreme-tail CDF residual to about 1e-8; registered 0.1-nat candidates are far inside this edge."
+  },
+  "provenance": {
+    "development_manifest_sha256": "9ea366110e34970050b362c1a9435c74c438083f2fab9414429792f897d263ed",
+    "lock_sha256": "9146eaf5f0b75cba8fce439cfedad0ada377f9720730d3b2e51aa098590c0b87",
+    "final_runner_sha256_recorded": "9f81d3726676daac3b26a9a5dd4f0bf7fb964488b4ac4b0a4245b4a5a6a186b5",
+    "final_runner_sha256_in_source_zip": "9f81d3726676daac3b26a9a5dd4f0bf7fb964488b4ac4b0a4245b4a5a6a186b5",
+    "path_array_count": 796
+  }
+}

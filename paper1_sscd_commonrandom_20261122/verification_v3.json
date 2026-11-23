@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "development_scenarios": 12,
+  "development_paths_per_scenario": 256,
+  "final_scenarios": 12,
+  "final_paths_per_scenario": 512,
+  "final_path_arrays": 796,
+  "calibration_rank488_verified": true,
+  "path_ids_reconstructed_and_unique": true,
+  "development_lock_recomputed_from_saved_paths": true,
+  "source_archive_runner_and_development_sources_match": true,
+  "v2_iid_lock_untouched": true,
+  "crn_se_reduced_all_16_model_replicates": true,
+  "crn_variance_path_arrays": 96,
+  "crn_variance_script_and_archive_hashes_match": true,
+  "all_crn_replication_standard_errors_recomputed_from_paths": true,
+  "numeric_seed_namespaces_disjoint_between_splits": true,
+  "source_package_sha256": "45abb096a214c9bc27706e981575ab529fdd0c4c8b1b1db76702dab7dc5364dc",
+  "final_path_manifest_unique": true,
+  "stable_healthy_fwer": 0.06640625
+}

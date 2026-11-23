@@ -1,0 +1,263 @@
+{
+  "status": "PASS",
+  "evidence": "Exploratory n=4,m=2 physical extension, original six directed attack supports",
+  "readback_path_arrays": 102,
+  "original_results_unmodified": true,
+  "models": {
+    "unstable": {
+      "iid_network_mse": 1.407141973374812,
+      "negative_network_mse": 1.4054451399482153,
+      "negative_relative_to_iid_percent": -0.12058722280362533,
+      "negative_minus_iid": {
+        "mean": -0.0016968334265966816,
+        "path_se": 0.00035209564217006514,
+        "n": 512,
+        "conditional_unadjusted_ci95": [
+          -0.002388566589111475,
+          -0.0010051002640818886
+        ]
+      },
+      "negative_minus_permanent_six_drop": {
+        "mean": -0.004086501444847757,
+        "path_se": 0.00047394584069859996,
+        "n": 512,
+        "conditional_unadjusted_ci95": [
+          -0.005017623605936088,
+          -0.0031553792837594255
+        ],
+        "descriptive_6_comparison_bonferroni_ci95": [
+          -0.005341780018228428,
+          -0.0028312228714670856
+        ]
+      },
+      "negative_minus_known_support_and_timing_oracle": {
+        "mean": 0.018430951715851313,
+        "path_se": 0.0004480152249131523,
+        "n": 512,
+        "conditional_unadjusted_ci95": [
+          0.017550773289120705,
+          0.01931113014258192
+        ]
+      },
+      "timing_oracle": {
+        "network_post20": {
+          "mean": 1.387014188232364,
+          "path_se": 0.0017040291722957243,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            1.3836664231731186,
+            1.3903619532916096
+          ]
+        },
+        "affected_post20": {
+          "mean": 1.5790574860578097,
+          "path_se": 0.0038486352281838125,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            1.5714963910060522,
+            1.5866185811095672
+          ]
+        },
+        "missing_block_post20": {
+          "mean": 0.9242291611858259,
+          "path_se": 0.001267378305393587,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            0.9217392479398417,
+            0.92671907443181
+          ]
+        },
+        "locally_observed_block_post20": {
+          "mean": 0.46278502704653807,
+          "path_se": 0.0004923946052986316,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            0.4618176601247858,
+            0.4637523939682903
+          ]
+        },
+        "network_attack": {
+          "mean": 1.4097651573187595,
+          "path_se": 0.002655857785637432,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            1.404547413373036,
+            1.414982901264483
+          ]
+        },
+        "accepted_attack_forcing_post20": {
+          "mean": 0.0,
+          "path_se": 0.0,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "eligible_link_time_alarm_fraction": {
+          "mean": 1.0,
+          "path_se": 0.0,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "permanent_drop_healthy_cost_percent": 3.0839047057463542,
+      "healthy_fwer": 0.04296875,
+      "attack_period_negative_minus_permanent": {
+        "mean": 0.034709658339100155,
+        "path_se": 0.0009701312991021127,
+        "n": 512,
+        "conditional_unadjusted_ci95": [
+          0.03280372168096238,
+          0.03661559499723793
+        ]
+      },
+      "missing_mode_negative_minus_iid": {
+        "mean": -0.0016736163889229207,
+        "path_se": 0.0003480970959848936,
+        "n": 512,
+        "conditional_unadjusted_ci95": [
+          -0.002357493938738042,
+          -0.0009897388391077993
+        ]
+      },
+      "retained_complementary_neighbor_minimum": 1,
+      "max_norm_F": 0.6428352045882496
+    },
+    "stable": {
+      "iid_network_mse": 1.360420193778116,
+      "negative_network_mse": 1.3546400919877821,
+      "negative_relative_to_iid_percent": -0.4248762122739058,
+      "negative_minus_iid": {
+        "mean": -0.0057801017903339105,
+        "path_se": 0.0004157968634800789,
+        "n": 512,
+        "conditional_unadjusted_ci95": [
+          -0.006596983469317837,
+          -0.004963220111349984
+        ]
+      },
+      "negative_minus_permanent_six_drop": {
+        "mean": 0.013742434656233551,
+        "path_se": 0.0005611975458269982,
+        "n": 512,
+        "conditional_unadjusted_ci95": [
+          0.012639896292572275,
+          0.014844973019894828
+        ],
+        "descriptive_6_comparison_bonferroni_ci95": [
+          0.01225606386400955,
+          0.015228805448457552
+        ]
+      },
+      "negative_minus_known_support_and_timing_oracle": {
+        "mean": 0.033292209948123486,
+        "path_se": 0.0005411734969001498,
+        "n": 512,
+        "conditional_unadjusted_ci95": [
+          0.03222901117584468,
+          0.03435540872040229
+        ]
+      },
+      "timing_oracle": {
+        "network_post20": {
+          "mean": 1.3213478820396585,
+          "path_se": 0.0018650269184750886,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            1.3176838180355126,
+            1.3250119460438043
+          ]
+        },
+        "affected_post20": {
+          "mean": 1.4952950207895401,
+          "path_se": 0.0038077755514205535,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            1.4878141993624507,
+            1.5027758422166295
+          ]
+        },
+        "missing_block_post20": {
+          "mean": 0.8719451985147608,
+          "path_se": 0.001373351034232314,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            0.8692470894206027,
+            0.874643307608919
+          ]
+        },
+        "locally_observed_block_post20": {
+          "mean": 0.44940268352489776,
+          "path_se": 0.0005455186955190775,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            0.4483309481005778,
+            0.45047441894921775
+          ]
+        },
+        "network_attack": {
+          "mean": 1.3418580662558877,
+          "path_se": 0.002851729762023035,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            1.336255508851985,
+            1.3474606236597904
+          ]
+        },
+        "accepted_attack_forcing_post20": {
+          "mean": 0.0,
+          "path_se": 0.0,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "eligible_link_time_alarm_fraction": {
+          "mean": 1.0,
+          "path_se": 0.0,
+          "n": 512,
+          "conditional_unadjusted_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "permanent_drop_healthy_cost_percent": 2.7912257032344012,
+      "healthy_fwer": 0.02734375,
+      "attack_period_negative_minus_permanent": {
+        "mean": 0.07065103262650549,
+        "path_se": 0.0011593751373808279,
+        "n": 512,
+        "conditional_unadjusted_ci95": [
+          0.06837330426446543,
+          0.07292876098854555
+        ]
+      },
+      "missing_mode_negative_minus_iid": {
+        "mean": -0.005699490753189904,
+        "path_se": 0.000412067913149045,
+        "n": 512,
+        "conditional_unadjusted_ci95": [
+          -0.0065090464721322665,
+          -0.004889935034247542
+        ]
+      },
+      "retained_complementary_neighbor_minimum": 1,
+      "max_norm_F": 0.6331403738744952
+    }
+  },
+  "intervals": "Conditional on the realized calibration; unadjusted approximate t intervals. Additional 6-comparison network-MSE Bonferroni intervals are descriptive.",
+  "independent_gain_max_abs_difference": 3.339550858072471e-13,
+  "independent_F_reconstruction_max_abs_difference": 0.0,
+  "sources": {
+    "paper1_50node_tv_gate_theory_20261121/source_model.py": "21c2b1e58a4b88db1f44e9ba41660168c577e001873a522e3dc17d70dd83b336",
+    "paper1_50node_tv_gate_theory_20261121/replay.py": "05e68f702ccea35d4bd5d4c1396c4acd9dbc79f4c6659150b1e283f279ddbabb",
+    "paper1_original50_source_20261121/source/simulation_revised_detection_metrics_complete_v2.py": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a",
+    "paper1_sscd_commonrandom_20261122/watson_crn.py": "e3c3af17fed3a6afb2c71aa8a33ede942ba80796b7b34862ec6768bc59068f7a"
+  }
+}

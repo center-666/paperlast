@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "claims": "SYNTHETIC_MARGINAL_AND_SAMPLING_CHECKS_ONLY",
+  "m2": {
+    "-1.3152370": {
+      "empirical_zeta": -0.312594596038135,
+      "theory_zeta": -0.3122270913389127,
+      "theory_MI": 0.09999999999981524,
+      "KS_vs_original_sampler": 0.0028958333333334307,
+      "Gaussian_beta_covariance": [
+        [
+          0.4980992169954229,
+          -0.001303718490111564
+        ],
+        [
+          -0.001303718490111564,
+          0.49828773812670657
+        ]
+      ]
+    },
+    "+0.0000000": {
+      "empirical_zeta": 0.0005605693450785321,
+      "theory_zeta": 0.0,
+      "theory_MI": 0.0,
+      "KS_vs_original_sampler": 0.0045520833333333455,
+      "Gaussian_beta_covariance": [
+        [
+          0.49738196947348545,
+          -0.0005339835836111531
+        ],
+        [
+          -0.0005339835836111531,
+          0.49900188064429407
+        ]
+      ]
+    },
+    "+1.3152370": {
+      "empirical_zeta": 0.3133986209121207,
+      "theory_zeta": 0.3122270913389127,
+      "theory_MI": 0.09999999999981524,
+      "KS_vs_original_sampler": 0.005604166666666688,
+      "Gaussian_beta_covariance": [
+        [
+          0.49715702836825715,
+          -0.0005652284893723297
+        ],
+        [
+          -0.0005652284893723297,
+          0.4992164342709915
+        ]
+      ]
+    }
+  },
+  "higher_dimensional": {
+    "m3_theta-1.3152": {
+      "predicted_E_cos2": 0.23265094696639013,
+      "observed_E_cos2": 0.2346278736988443,
+      "MI_nats": 0.06254163949543617,
+      "max_beta_cov_error": 0.002779625772519334
+    },
+    "m3_theta+0.0000": {
+      "predicted_E_cos2": 0.3333333333333333,
+      "observed_E_cos2": 0.335303939030093,
+      "MI_nats": 0.0,
+      "max_beta_cov_error": 0.002695360500772792
+    },
+    "m3_theta+1.3152": {
+      "predicted_E_cos2": 0.4613640232608615,
+      "observed_E_cos2": 0.4632148866221129,
+      "MI_nats": 0.0861889272817079,
+      "max_beta_cov_error": 0.0027741334995820483
+    },
+    "m4_theta-1.3152": {
+      "predicted_E_cos2": 0.18090791710653928,
+      "observed_E_cos2": 0.18072236212498338,
+      "MI_nats": 0.04262963513113127,
+      "max_beta_cov_error": 0.0029376516998076527
+    },
+    "m4_theta+0.0000": {
+      "predicted_E_cos2": 0.25,
+      "observed_E_cos2": 0.24972421376731177,
+      "MI_nats": 0.0,
+      "max_beta_cov_error": 0.0027734026533632952
+    },
+    "m4_theta+1.3152": {
+      "predicted_E_cos2": 0.34516083270426484,
+      "observed_E_cos2": 0.34480157367739034,
+      "MI_nats": 0.06532006401962814,
+      "max_beta_cov_error": 0.003807224696878553
+    },
+    "m6_theta-1.3152": {
+      "predicted_E_cos2": 0.12826895089031554,
+      "observed_E_cos2": 0.12726038562925776,
+      "MI_nats": 0.023739045592682084,
+      "max_beta_cov_error": 0.004396295234173508
+    },
+    "m6_theta+0.0000": {
+      "predicted_E_cos2": 0.16666666666666666,
+      "observed_E_cos2": 0.1655041330879164,
+      "MI_nats": 0.0,
+      "max_beta_cov_error": 0.0049056044320588965
+    },
+    "m6_theta+1.3152": {
+      "predicted_E_cos2": 0.22097827117981517,
+      "observed_E_cos2": 0.2196365568749503,
+      "MI_nats": 0.03767411438559892,
+      "max_beta_cov_error": 0.005546303728469204
+    }
+  }
+}

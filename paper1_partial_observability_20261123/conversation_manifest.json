@@ -1,0 +1,9 @@
+{
+  "status": "ARCHIVED_VISIBLE_TEXT_ONLY",
+  "user_proposal_utf8_sha256": "2c124ce2a4e528958a882e7a20d10a198282b44b8db62ca11b40af19cfbf56aa",
+  "proposal_file_sha256": "febf7bbfc3fc46ccc4bcfc08c6f9cc4de04c13d0ddb4a1ac5b70954e291b9fc3",
+  "v2_attachment_sha256": "87a3cb2f6fee0dda636d7d26efca0dea3983e8b791e1b9a773160ba8cf2e172a",
+  "v2_attachment_original_bytes_preserved": true,
+  "visible_message_count": 2,
+  "scope": "Textual user proposal canonicalized to LF plus final newline; attachment preserves original bytes; no hidden/tool text archived."
+}
