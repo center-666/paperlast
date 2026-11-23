@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "scope": "Replay of registered C2 calibration streams only. No new sample.",
+  "models": {
+    "unstable": {
+      "calibration_seed": 2026222401,
+      "prequential_threshold": 21489.236217227528,
+      "path_max_quantiles": [
+        9713.066280360874,
+        17067.355176459376,
+        21458.656398320025,
+        30787.057283428105,
+        83596.29360005313
+      ],
+      "minimum_predictive_covariance_eigenvalue_quantiles": [
+        0.00011191422560824344,
+        0.00022493920134176586,
+        0.0005209209362717874,
+        0.0012493912513165555,
+        0.3971030209297786
+      ],
+      "single_score_quantiles": [
+        236.78833366912954,
+        1054.1312905625514,
+        3555.6647032593582,
+        8680.217499193235,
+        83596.29360005313
+      ],
+      "EWMA_effective_sample_size_at_lambda_0_5": 3,
+      "residual_dimension": 8,
+      "ridge": 1e-06
+    },
+    "stable": {
+      "calibration_seed": 2026232401,
+      "prequential_threshold": 21637.25118680594,
+      "path_max_quantiles": [
+        9615.1302364732,
+        17787.72441991498,
+        21536.93977307759,
+        36336.19110871391,
+        104113.21768207382
+      ],
+      "minimum_predictive_covariance_eigenvalue_quantiles": [
+        0.00011718964996132957,
+        0.00023508179206945345,
+        0.0005499965955009119,
+        0.0013269102306884355,
+        0.4092318693481913
+      ],
+      "single_score_quantiles": [
+        236.5011697955961,
+        1054.9624641263774,
+        3567.0779047653664,
+        8731.503252173257,
+        104113.21768207382
+      ],
+      "EWMA_effective_sample_size_at_lambda_0_5": 3,
+      "residual_dimension": 8,
+      "ridge": 1e-06
+    }
+  }
+}

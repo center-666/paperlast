@@ -1,0 +1,33 @@
+{
+  "phase": "C2",
+  "registration_commit": "eadc22a",
+  "runner_sha256": "8d623cf0674e2ed8a77f7772a368611f95956d3a23be238a58832e46428228a8",
+  "base_registration_sha256": "e90a870fac332e9456dd1700993aa916f8636344399c9ae8a5e8684a38db9b2b",
+  "startup_registration_sha256": "a123d9fdec0e9b3cd362de4eb603e1a1067ea7a5a4fc1ddb30fee206c96b934a",
+  "results_sha256": "6748a8989755ad7f82bb87478a3b2b61be652cb8a1b45a41e6e50f5397c4608f",
+  "path_archive_sha256": "6bf916583bf8660b532ff8e2cea78370fff80dd3552d5ffb57e00c156aba76a5",
+  "seed_root": 2026122401,
+  "independent_calibration_paths_per_model": 2048,
+  "independent_health_holdout_paths_per_model": 2048,
+  "attack_paths_per_model_and_fixture": 1024,
+  "no_reselection": true,
+  "execution_source_commit": "eadc22a",
+  "storage_shards": {
+    "paths_core.npz": {
+      "bytes": 28566184,
+      "sha256": "58aecb3747fa9f81e0fa10c35dd70805563f9cbc3850b27d73e8d56b170645fa",
+      "member_count": 446
+    },
+    "ewma_mean.npz": {
+      "bytes": 59187809,
+      "sha256": "66656fbc02696483c7f880df4e75cb3fd0a5763b3b9fb0f67f75a38453b58014",
+      "member_count": 8
+    },
+    "ewma_covariance_diagonal.npz": {
+      "bytes": 58817881,
+      "sha256": "349f9f347e8bdaeb5c8a8111acaf151bfb10149e406bcba2237eb9539c4a0aed",
+      "member_count": 8
+    }
+  },
+  "storage_manifest_sha256": "ba6accbc5b1c0347e3411c1aa1b4c565c864ac87a53b384c0e153f588d95b697"
+}

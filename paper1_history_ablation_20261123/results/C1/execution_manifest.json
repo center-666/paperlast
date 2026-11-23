@@ -1,0 +1,12 @@
+{
+  "phase": "C1",
+  "execution_source_commit": "bb2cc79",
+  "runner_sha256": "b9f8e4c576b87a34101b40d599739a766f1a3004402c30cba2babf61f529eb00",
+  "registration_sha256": "7eb93a0a0ffa32f843e01dd0039bc7657d939dd943541f069736e4930690402b",
+  "results_sha256": "33935005187c8f2dae4501b9bee08b36a3843dd48935245f258d8d2abf713d56",
+  "root_seed": 2026122301,
+  "calibration_paths_per_model": 2048,
+  "independent_holdout_paths_per_model": 2048,
+  "attack_paths_per_model_and_fixture": 1024,
+  "executed_source_snapshot": "experiment_c_c1_executed.py"
+}
