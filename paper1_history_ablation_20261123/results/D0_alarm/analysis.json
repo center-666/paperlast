@@ -1,0 +1,412 @@
+{
+  "design": "exploratory same-path intervention",
+  "weights": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "d0_paths_sha256": "5cf45a5a73c026c1ef013db962be7cbeafbf4244ba145cf50317bcf97b548b9b",
+  "source_sha256": {
+    "D0_alarm_registration.md": "63cf32b86834c7bf07b7b8d107e5a3d14b990d2cbd5574249bdef3a53783355a",
+    "alarm_weight_replay.py": "672cc1dabbb9517c02bdde4250d64a255935f3a57a78509fe3b93a8579db4fea",
+    "sweep_link_weight.py": "64749de7ff62f3994b545bc11a58260d69cdc43ef4d9c2862fd32368d3e60219"
+  },
+  "models": {
+    "unstable": {
+      "seven_step_suprema": [
+        1.9318292197278155,
+        0.6178380230131321,
+        0.38513272497646756,
+        0.24358685225630183,
+        0.15645010265246476,
+        0.10207147077114842,
+        0.06775000385726879,
+        0.045818877831181735,
+        0.03160628933025102,
+        0.022250636320343922,
+        0.015988159589283873
+      ]
+    },
+    "stable": {
+      "seven_step_suprema": [
+        0.8828700752559174,
+        0.5902710653909771,
+        0.37027122933553336,
+        0.23252098850152284,
+        0.14730940509686422,
+        0.09462100071349433,
+        0.06182162677697333,
+        0.041174520351205855,
+        0.027992222754593895,
+        0.019438606523339234,
+        0.013790402434066078
+      ]
+    }
+  },
+  "primary": {
+    "H4": [
+      {
+        "q": 0.1,
+        "ucb_vs_hard_all": [
+          -25.669879389358186,
+          16.789881858861783
+        ],
+        "health_ratio": 0.9999999997124991,
+        "tail_ratio": 1.2643363621423735,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": false,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.2,
+        "ucb_vs_hard_all": [
+          -33.726730651014506,
+          7.7204369450378865
+        ],
+        "health_ratio": 0.9999999999583067,
+        "tail_ratio": 1.1092100044216149,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": false,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.3,
+        "ucb_vs_hard_all": [
+          -36.706461628411134,
+          4.346523814376181
+        ],
+        "health_ratio": 1.0000000000126266,
+        "tail_ratio": 1.056292010580461,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": false,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.4,
+        "ucb_vs_hard_all": [
+          -38.27227872936954,
+          2.57171459117005
+        ],
+        "health_ratio": 1.0000000000239844,
+        "tail_ratio": 1.0319576434587403,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.5,
+        "ucb_vs_hard_all": [
+          -39.17977588078061,
+          1.538061439927833
+        ],
+        "health_ratio": 1.0000000000212932,
+        "tail_ratio": 1.0192202597553695,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.6,
+        "ucb_vs_hard_all": [
+          -39.728501098627234,
+          0.9060114452450292
+        ],
+        "health_ratio": 1.000000000013678,
+        "tail_ratio": 1.011828740065212,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.7,
+        "ucb_vs_hard_all": [
+          -40.06600206240709,
+          0.509467180620722
+        ],
+        "health_ratio": 1.000000000004715,
+        "tail_ratio": 1.0071510755173938,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.8,
+        "ucb_vs_hard_all": [
+          -40.27324564785072,
+          0.2580027924571705
+        ],
+        "health_ratio": 0.9999999999959432,
+        "tail_ratio": 1.0039762651175552,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.9,
+        "ucb_vs_hard_all": [
+          -40.39775909187317,
+          0.09892078376078593
+        ],
+        "health_ratio": 0.9999999999880262,
+        "tail_ratio": 1.0017007029980116,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      }
+    ],
+    "H1": [
+      {
+        "q": 0.1,
+        "ucb_vs_hard_all": [
+          3.8870613197333075,
+          13.289042211317426
+        ],
+        "health_ratio": 1.0000284998962465,
+        "tail_ratio": 1.0544151216236406,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": false,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.2,
+        "ucb_vs_hard_all": [
+          -4.020682030044421,
+          4.700958653999934
+        ],
+        "health_ratio": 1.0000214518621588,
+        "tail_ratio": 1.0246492727709842,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.3,
+        "ucb_vs_hard_all": [
+          -6.260806643722296,
+          2.2185156945116464
+        ],
+        "health_ratio": 1.0000183159051854,
+        "tail_ratio": 1.0141736777107553,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.4,
+        "ucb_vs_hard_all": [
+          -7.2794834900140035,
+          1.0680184501633325
+        ],
+        "health_ratio": 1.0000162500754266,
+        "tail_ratio": 1.0087285526299368,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.5,
+        "ucb_vs_hard_all": [
+          -7.794644942517813,
+          0.4686744422127455
+        ],
+        "health_ratio": 1.0000147478435586,
+        "tail_ratio": 1.0055294531350396,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.6,
+        "ucb_vs_hard_all": [
+          -8.048903276095398,
+          0.1551491448399867
+        ],
+        "health_ratio": 1.0000136155023,
+        "tail_ratio": 1.003508618454826,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.7,
+        "ucb_vs_hard_all": [
+          -8.154385503420096,
+          0.004951557595028577
+        ],
+        "health_ratio": 1.0000127464888473,
+        "tail_ratio": 1.0021578620978964,
+        "checks": {
+          "both_mse_bounds": false,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": false
+      },
+      {
+        "q": 0.8,
+        "ucb_vs_hard_all": [
+          -8.171652128899632,
+          -0.04778461057603337
+        ],
+        "health_ratio": 1.0000120715918304,
+        "tail_ratio": 1.0012112102376942,
+        "checks": {
+          "both_mse_bounds": true,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": true
+      },
+      {
+        "q": 0.9,
+        "ucb_vs_hard_all": [
+          -8.136272138902774,
+          -0.041561860304123184
+        ],
+        "health_ratio": 1.0000115423946312,
+        "tail_ratio": 1.000520742622048,
+        "checks": {
+          "both_mse_bounds": true,
+          "healthy_mse": true,
+          "tail": true,
+          "forcing": true,
+          "gap_weight": true,
+          "fwer": true,
+          "contraction": true
+        },
+        "pass": true
+      }
+    ]
+  },
+  "region": {
+    "H4": [],
+    "H1": [
+      [
+        0.8,
+        0.9
+      ]
+    ]
+  },
+  "path_sha256": "5857789db0b303a220011d703c770471dd0ada19a5e079350cfeb786eb8a148d"
+}

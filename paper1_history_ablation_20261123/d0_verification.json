@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "physical_configuration_sha256": "c25437077cb73ac2332160e55f6183550bb8fc5318d93bb32c183a11d661b50d",
+  "models": {
+    "unstable": {
+      "weight_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "maximum_literal_aggregate_update_difference": 8.881784197001252e-16,
+      "minimum_weighted_observation_singular_value_over_positive_grid": 0.053880733340132235,
+      "zero_weight_uses_binary_drop_fallback": true,
+      "unit_weight_matches_registered_critical_model": true
+    },
+    "stable": {
+      "weight_grid": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "maximum_literal_aggregate_update_difference": 8.881784197001252e-16,
+      "minimum_weighted_observation_singular_value_over_positive_grid": 0.053880733340132235,
+      "zero_weight_uses_binary_drop_fallback": true,
+      "unit_weight_matches_registered_critical_model": true
+    }
+  }
+}

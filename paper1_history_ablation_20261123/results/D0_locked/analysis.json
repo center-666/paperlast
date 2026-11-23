@@ -1,0 +1,81 @@
+{
+  "root_seed": 3917285401,
+  "source_sha256": {
+    "locked_weight_check.py": "4ac01416dd57dd7519cf8ec2aec0236a9db1a193ab7aa540c0777316e2e1f7e3",
+    "alarm_weight_replay.py": "672cc1dabbb9517c02bdde4250d64a255935f3a57a78509fe3b93a8579db4fea",
+    "sweep_link_weight.py": "64749de7ff62f3994b545bc11a58260d69cdc43ef4d9c2862fd32368d3e60219",
+    "D0_locked_registration.md": "b15fb4a73af2fd9d3695d5ddf7e35492f954e46f7f6106b8a3add7117434ec82"
+  },
+  "models": {
+    "unstable": {
+      "threshold": 16.211592786177345,
+      "healthy_alarms": 116,
+      "healthy_n": 2048,
+      "fwer_ci": [
+        0.047026003591846645,
+        0.0675474412312334
+      ]
+    },
+    "stable": {
+      "threshold": 16.27116537643116,
+      "healthy_alarms": 87,
+      "healthy_n": 2048,
+      "fwer_ci": [
+        0.03416253624430139,
+        0.05213777236092193
+      ]
+    }
+  },
+  "independent_primary": {
+    "hard": {
+      "mean": -18.01803709878397,
+      "path_se": 1.2286625793122599,
+      "n": 1024,
+      "conditional_unadjusted_ci95": [
+        -20.42902400956714,
+        -15.607050188000802
+      ],
+      "upper_one_sided_975": -15.607050188000802
+    },
+    "accept": {
+      "mean": -0.08486732475498526,
+      "path_se": 0.012009922071377988,
+      "n": 1024,
+      "conditional_unadjusted_ci95": [
+        -0.10843422212873462,
+        -0.06130042738123591
+      ],
+      "upper_one_sided_975": -0.06130042738123591
+    },
+    "fixed08": {
+      "mean": -0.06008541538299149,
+      "path_se": 0.006343855528870904,
+      "n": 1024,
+      "conditional_unadjusted_ci95": [
+        -0.07253387186041468,
+        -0.047636958905568294
+      ],
+      "upper_one_sided_975": -0.047636958905568294
+    },
+    "fixed09": {
+      "mean": -0.044587775343809505,
+      "path_se": 0.00702606840481418,
+      "n": 1024,
+      "conditional_unadjusted_ci95": [
+        -0.05837492833723439,
+        -0.030800622350384617
+      ],
+      "upper_one_sided_975": -0.030800622350384617
+    },
+    "checks": {
+      "dual_upper": true,
+      "healthy_mse": true,
+      "tail": true,
+      "forcing": true,
+      "gap_weight": true,
+      "fwer": true,
+      "contraction": true
+    }
+  },
+  "path_sha256": "94737acac7e161561447b07640d7c0aa2758f8214419a68cf566378b5c8b4a2c"
+}

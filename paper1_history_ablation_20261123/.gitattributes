@@ -3,5 +3,6 @@
 *.json text eol=lf
 *.npz binary
 user_review.txt binary
+user_review_D0.txt binary
 .gitattributes text eol=lf
 .gitignore text eol=lf
