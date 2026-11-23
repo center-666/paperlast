@@ -1,0 +1,61 @@
+{
+  "scope": "B1 healthy common-G only, implementation lock before calibration or holdout",
+  "b0_commit": "acbd7efb48243aa038dccd8c9b18152543a7405d",
+  "d1a_commit": "f17de565cc178d9c7c157ecaadf61e84b12e4ef6",
+  "dynamics_order": [
+    "unstable",
+    "stable"
+  ],
+  "link_order": [
+    [
+      "U",
+      35
+    ],
+    [
+      "R",
+      35
+    ],
+    [
+      "R",
+      1
+    ]
+  ],
+  "label_order": [
+    "negative",
+    "iid"
+  ],
+  "path_count_each_split_per_scenario": 2048,
+  "batch_size": 64,
+  "seed_namespace": [
+    20261124,
+    1103
+  ],
+  "physical_seed": "SeedSequence([*namespace, scenario_index, stage, batch_index]); stage 0 calibration, 1 holdout, 2 separate smoke only; stage 3 whole-path bootstrap",
+  "calibration": "separate per scenario, strict score > order statistic ceil((n+1)*0.95) of path maxima over all seven directions and k>=4; first H1 score at k=5",
+  "monitoring": "original six in frozen order, plus current target at bit 6; in each R scan the alternate complementary link remains fully accepted; reference q=1 retains all six other H1 gates",
+  "healthy_watermark": "decoded healthy additive perturbation is identically zero for both labels, no watermark draws needed; independent physical samples and calibrations per label",
+  "scores": "frozen single residual H1, independent of estimator weights; no H4/plugin-KL",
+  "statistics": "follow B0, 84 path-paired comparisons per budget rule, report B and D families separately. No joint 95% claim across both families",
+  "time_interval": [
+    20,
+    150
+  ],
+  "bootstrap": {
+    "replicates": 4096,
+    "unit": "whole path candidate vector within scenario; independent resampling across the twelve scenarios",
+    "type": "joint max of centered studentized lower deviations; report one-sided bounds and conditional empirical-distribution coverage diagnostic for primary t critical value, separately for B and D"
+  },
+  "safety": "maximum spectral norm across every mask and receiver for each {1,q} table; strict <1",
+  "preflight": "validate optimized scores against frozen ablation.scores_all and estimator against per-neighbor innovation on a separate smoke seed with target and simultaneous gate bits; frozen physical() for all splits",
+  "reporting": "unconditional mean over health paths conditional on calibrated threshold. Exact binomial two-sided 95% Clopper-Pearson per-scenario FWER. Report alarms per edge, run counts and lengths, bitmask frequencies, duration and co-occurrences. All mode descriptives, no mode-level tests.",
+  "frozen_files_sha256": {
+    "b1_health.py": "b62f2e4008a756d29ea15a87d61fb47312c174a845a467ec5c5dc3b216972251",
+    "B1_1_SHA256.txt": "b91571f3801dbd530b4a873d9ed7c23ec0100d093b9574684e4723d74cf099aa",
+    "B0_REGISTRATION.json": "ad008110622b9afe98d32234e9211dc4fb6b87546a5f8811803f0d931338c624",
+    "b1_mode_results/mode_tables.npz": "0cd8da9a05b06df1539ce1f9e7fff40408ce5e8bf4fd3e11ce3051f89b842c27",
+    "results/D1A_link_value.json": "9b008e209071bc1c86c8cf5de8754100078c1be86e54f3bcb9dfd965c97f3634",
+    "../paper1_history_ablation_20261123/ablation.py": "e440f2ca5c775161ff12e03b7b0cc0ca1de66b5753c0e30ad2f54d0e32697895",
+    "../paper1_partial_observability_20261123/run_partial50.py": "94b53739598ea46b2dc40595b338a6d368d3d5e398d1e2797e785582e17b026e",
+    "../paper1_original50_source_20261121/source/simulation_revised_detection_metrics_complete_v2.py": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a"
+  }
+}

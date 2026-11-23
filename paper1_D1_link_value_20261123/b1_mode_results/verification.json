@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "tables_checked": 42,
+  "mode_receiver_combinations_checked": 268800,
+  "maximum_finite_matrix_difference": 0.0,
+  "healthy_paths_generated": false,
+  "attack_paths_generated": false,
+  "mode_steady_state_and_switching_separated": true
+}
