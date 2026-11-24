@@ -1,0 +1,7 @@
+{
+  "conditions": 44,
+  "path_condition_checks": 104,
+  "max_abs_literal_MSE_difference": 2.2862423065816984e-10,
+  "max_abs_same_state_H_sum_difference": 3.552713678800501e-15,
+  "historical_four_policy_path_arrays": "bitwise identical for all 44 conditions"
+}
