@@ -1,0 +1,292 @@
+{
+  "status": "complete_posthoc_fixed_attack_alarm_decomposition",
+  "B2_commit": "1f4871bb50db2e02897a7fc00760248e4cb5682a",
+  "terms": [
+    "clean_measurement_shadow_loss",
+    "twice_shadow_attack_cross_term",
+    "attack_response_squared"
+  ],
+  "schedule": "The attacked B2 alarm mask is held fixed for both worlds. Clean shadow uses the same q, gain modes, physical noise, and local measurement, with target attack perturbation set to zero.",
+  "interpretation": "Conditional on an attack-generated schedule. The clean shadow is generally selection-dependent and is not an independent healthy risk. Terms sum pathwise to the observed attacked MSE.",
+  "paths_per_condition": 2048,
+  "conditions": 24,
+  "input_sha256": {
+    "paper1_D1_link_value_20261123\\b2_shadow_decomposition.py": "98ad33adf49409d470e034bdf676dfd8834aa22f2f134c1dc99b99fadd6c8e14",
+    "paper1_D1_link_value_20261123\\b2_attack.py": "1faa83b1ab583a0639221083673fc917ad7ad52f06c4a9acdca0eab933f29b98",
+    "paper1_D1_link_value_20261123\\b1_health.py": "b62f2e4008a756d29ea15a87d61fb47312c174a845a467ec5c5dc3b216972251",
+    "paper1_D1_link_value_20261123\\b1_mode_models.py": "54ae73f0bfe9c65b2dd812ecfb27dcce27002aeffc97cd98780991c317e02654",
+    "paper1_D1_link_value_20261123\\b2_weight_response_results\\response_manifest.json": "9975641125b5778bcfeb9b059002f84cc987bf830003a6b019736742117a556a",
+    "paper1_D1_link_value_20261123\\b1_mode_results\\mode_tables.npz": "0cd8da9a05b06df1539ce1f9e7fff40408ce5e8bf4fd3e11ce3051f89b842c27"
+  },
+  "curve_input_sha256": {
+    "scene_00_burst_negative.npz": "3af126e843de51485d48f95af63c1ce11a948982801d2e43e5d5586a5954f340",
+    "scene_00_continuous_negative.npz": "2be97d2ab83b22ffdeb0a020463f5be53b225cd1de61d558633c82a89f18d6e9",
+    "scene_01_burst_iid.npz": "bfa138047c9039ae4674f7907ac9ed687750fb05c57f137d8257ef3ae07ccc58",
+    "scene_01_continuous_iid.npz": "76700bfc74db2ba905ad743772f3730d12444bfbabd2ec6364599b9b8aa289af",
+    "scene_02_burst_negative.npz": "a5e039b7c6e8724a21b99c4d70143220e25c40101718bde866ff485c27a3190c",
+    "scene_02_continuous_negative.npz": "089e658ac86cb31c1f5acf088d2a28b5b475845534690787a708716eb47f90ef",
+    "scene_03_burst_iid.npz": "c9ccda516bccf11be49e4b3428d857eda689b019614238f1365a912cf750c37d",
+    "scene_03_continuous_iid.npz": "6832d61dd9e2e4e77cafb5a96aa9a18d115f158370cf7dd6aa3a514843192e29",
+    "scene_04_burst_negative.npz": "029c8876ec8b447d8446453434250827c1dd0e291d9e66a73d3e45a913cacc07",
+    "scene_04_continuous_negative.npz": "c17b89c3b7e9a444f2702e799b8c7164550cd0ea490f089b56edb0de5a79fbf8",
+    "scene_05_burst_iid.npz": "f5edb8ad7b7f8266172f382995903591a165494ba3d94a26ae035e14e140cc0d",
+    "scene_05_continuous_iid.npz": "b246348926b5f3d5418d9cf8b75e008043763fa4c6b41ad1739ddb89e402954c",
+    "scene_06_burst_negative.npz": "ace5de0c993957fd06076bb78b64f393791a0ecf07ad03a067d3fcf9600ffe86",
+    "scene_06_continuous_negative.npz": "9ccaaa87465097e7998130e74aac527eba4f6a8763c965467bf1fd9c7c916c24",
+    "scene_07_burst_iid.npz": "9d66962176bba6fa0ea930b919f41692a4c747ba27a3350aeec5d0de35eda061",
+    "scene_07_continuous_iid.npz": "c9272ee3952155f1144ce784a8b32ff97487ccdf5b595c6ebfe77a63f12df77b",
+    "scene_08_burst_negative.npz": "77b88438478323b92ca50d35a0d94062c3009ed5ddda85016668bdf319637f9b",
+    "scene_08_continuous_negative.npz": "80a6f75e6a294f816eda0fec1e8ddb166378d0a9aa3319cfc44ffe8a6efc9c9a",
+    "scene_09_burst_iid.npz": "ad485f7365d2c95d32fda632194271d72ea160694f929f0853bac52ceea9fb2e",
+    "scene_09_continuous_iid.npz": "3b689fbd3b0a7442c71a7cff65dd5a87e39cbb7e5cced7da59b95d4483d44fbf",
+    "scene_10_burst_negative.npz": "2b7943cb5bebdfd68be9b3d9fa5896afe0fa8f2df01a73844237cc2c12593933",
+    "scene_10_continuous_negative.npz": "31f0fa816bd244179c8094caeb4c1b04517244d824a94ab7eb65aabec2d3b55e",
+    "scene_11_burst_iid.npz": "a3bf3be99615cf44dba4bbdd7898068684e87f4332511765dcc3abff15274d60",
+    "scene_11_continuous_iid.npz": "5271051123c4eacdccc9c2fee736b7f0810e270fd14f69ed2af270bdae1d48f9"
+  },
+  "output_sha256": {
+    "scene_00_burst_negative.npz": "d0f39e6c5367320537a7480569c9d09c2487bdea32586f236f24909b603365b9",
+    "scene_00_continuous_negative.npz": "d75a59071b18847926d0a75c8f185eca87c1ce119d7f8e35dcadf503f6a59bb7",
+    "scene_01_burst_iid.npz": "0721cfefd18f997abf8e1458e7789f45b592fc4edd8c97c2c4b190f2ba601394",
+    "scene_01_continuous_iid.npz": "1df2a12d1a0d62d5496935cf10500c657af82cd47432860fe74cc5a99ae02e96",
+    "scene_02_burst_negative.npz": "7f9ada4daac4acfa3d1604eb3e67d1e3a0bc019b1841081e43dbbcd89bb274a5",
+    "scene_02_continuous_negative.npz": "2c31f62009fa21a879934acfd4d4339e7fe2ca25088d5a29860393c82abf59c4",
+    "scene_03_burst_iid.npz": "c2a046f4e6e8646c9a707c24538ac8d36b5bf7e6774bf10ad97e19ac67bd6c5e",
+    "scene_03_continuous_iid.npz": "7691bfe83edefb2436c59dac0197c24e99a13b74a9dbf01b738eeb715d23373d",
+    "scene_04_burst_negative.npz": "1c76624f1e57ac56d534791dfa7bc694949d0a97473168ea2628140a26bd9e53",
+    "scene_04_continuous_negative.npz": "a412422d13debc948b35cbf3664655a5a5a7e91a87a9f68b552e04767b67dfdb",
+    "scene_05_burst_iid.npz": "ed00101d691720771c458501c4dce11901beb8bcd155e9a33e62a31fa797c3d6",
+    "scene_05_continuous_iid.npz": "4943b84b8e866a2c6cdb1ef8b99bdbb5b73d796b5d6e7edeca42012217b08126",
+    "scene_06_burst_negative.npz": "568885757105529dcb9e51a127ae7bf2d2f92908a6ef6cd48a5163a5ac80ec7f",
+    "scene_06_continuous_negative.npz": "72d492716e759871f7bfa7415688c76ecbc5f6374186fdbe531ab496389f45a5",
+    "scene_07_burst_iid.npz": "9314fdab6aef6b61df0f5bc15096bb9e37639f2205434aa3838da78f5031241a",
+    "scene_07_continuous_iid.npz": "170bad1d479abaa75326cb4ca57fdaa4a05570bad7f4a20c5ee1f936f34d2668",
+    "scene_08_burst_negative.npz": "87cd3112a9051847c086500ed29179e3b386ed62dcbd41768785bd4f999607db",
+    "scene_08_continuous_negative.npz": "1955c90b72bf5b3f056bcdb65f643755ab59c86d9167ce859bf4395fc6b658af",
+    "scene_09_burst_iid.npz": "07221ab42559970b16bcceb466b35bff971b4a17564f5c5c98113c226904c158",
+    "scene_09_continuous_iid.npz": "0add61b8130cf3b02d82985f98e80c53729d91d0c959b1790ece8831d96841a5",
+    "scene_10_burst_negative.npz": "451c24d18604f69d301a30b454bce0e513a73ff8b1ef986ee1172cab25e1ef82",
+    "scene_10_continuous_negative.npz": "e14d61c9c53f622d4394ff53154b522766dc31b9a6523a53085109d75bb70462",
+    "scene_11_burst_iid.npz": "9e974b4ded812942825952ef892c598e2bdce628b13b0f0b4cb678d47076c983",
+    "scene_11_continuous_iid.npz": "12571c2c42b45fbdcc308300dc837fdae53d707e0643b4e6d324c592dffc5102"
+  },
+  "pathwise_reconstruction_checks": [
+    {
+      "file": "scene_00_continuous_negative.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 1.7062120605260134e-09,
+        "active": 1.7062120605260134e-09,
+        "gap": null,
+        "post": 4.564753908198327e-09
+      }
+    },
+    {
+      "file": "scene_00_burst_negative.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 3.142588411719771e-10,
+        "active": 2.4090240913210437e-10,
+        "gap": 4.5781689550494775e-10,
+        "post": 2.2429169632687262e-10
+      }
+    },
+    {
+      "file": "scene_01_continuous_iid.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 2.093656803481281e-09,
+        "active": 2.093656803481281e-09,
+        "gap": null,
+        "post": 9.044924809131771e-10
+      }
+    },
+    {
+      "file": "scene_01_burst_iid.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 2.6547297693468863e-10,
+        "active": 2.2500046270579332e-10,
+        "gap": 3.261675374233164e-10,
+        "post": 1.669886451338698e-10
+      }
+    },
+    {
+      "file": "scene_02_continuous_negative.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 1.355182632778451e-11,
+        "active": 1.355182632778451e-11,
+        "gap": null,
+        "post": 5.878797448843898e-12
+      }
+    },
+    {
+      "file": "scene_02_burst_negative.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 6.7061911579457956e-12,
+        "active": 1.0796696869874722e-11,
+        "gap": 3.2454039455842576e-12,
+        "post": 6.601275082118718e-12
+      }
+    },
+    {
+      "file": "scene_03_continuous_iid.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 1.1871392757711874e-11,
+        "active": 1.1871392757711874e-11,
+        "gap": null,
+        "post": 8.208433932566095e-12
+      }
+    },
+    {
+      "file": "scene_03_burst_iid.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 7.2732930789243255e-12,
+        "active": 1.2182255204606918e-11,
+        "gap": 3.65196761720199e-12,
+        "post": 5.736522368238184e-12
+      }
+    },
+    {
+      "file": "scene_04_continuous_negative.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 9.86055681551079e-12,
+        "active": 9.86055681551079e-12,
+        "gap": null,
+        "post": 8.888778602056391e-12
+      }
+    },
+    {
+      "file": "scene_04_burst_negative.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 6.4641625385775114e-12,
+        "active": 1.077538058780192e-11,
+        "gap": 4.92961227394062e-12,
+        "post": 4.814981746648073e-12
+      }
+    },
+    {
+      "file": "scene_05_continuous_iid.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 1.0986767051690549e-11,
+        "active": 1.0986767051690549e-11,
+        "gap": null,
+        "post": 7.524425527094536e-12
+      }
+    },
+    {
+      "file": "scene_05_burst_iid.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 7.31059657255173e-12,
+        "active": 1.2320811038080137e-11,
+        "gap": 3.3848479574771773e-12,
+        "post": 5.227318577993856e-12
+      }
+    },
+    {
+      "file": "scene_06_continuous_negative.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 4.263256414560601e-14,
+        "active": 4.263256414560601e-14,
+        "gap": null,
+        "post": 1.2434497875801753e-14
+      }
+    },
+    {
+      "file": "scene_06_burst_negative.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 2.842170943040401e-14,
+        "active": 3.552713678800501e-14,
+        "gap": 1.7763568394002505e-14,
+        "post": 2.6645352591003757e-15
+      }
+    },
+    {
+      "file": "scene_07_continuous_iid.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 6.394884621840902e-14,
+        "active": 6.394884621840902e-14,
+        "gap": null,
+        "post": 1.2434497875801753e-14
+      }
+    },
+    {
+      "file": "scene_07_burst_iid.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 7.815970093361102e-14,
+        "active": 5.684341886080802e-14,
+        "gap": 5.684341886080802e-14,
+        "post": 3.1086244689504383e-15
+      }
+    },
+    {
+      "file": "scene_08_continuous_negative.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 1.2434497875801753e-14,
+        "active": 1.2434497875801753e-14,
+        "gap": null,
+        "post": 5.551115123125783e-16
+      }
+    },
+    {
+      "file": "scene_08_burst_negative.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 7.993605777301127e-15,
+        "active": 1.0658141036401503e-14,
+        "gap": 8.881784197001252e-16,
+        "post": 4.440892098500626e-16
+      }
+    },
+    {
+      "file": "scene_09_continuous_iid.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 1.0658141036401503e-14,
+        "active": 1.0658141036401503e-14,
+        "gap": null,
+        "post": 5.551115123125783e-16
+      }
+    },
+    {
+      "file": "scene_09_burst_iid.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 7.993605777301127e-15,
+        "active": 1.0658141036401503e-14,
+        "gap": 8.881784197001252e-16,
+        "post": 4.440892098500626e-16
+      }
+    },
+    {
+      "file": "scene_10_continuous_negative.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 1.2434497875801753e-14,
+        "active": 1.2434497875801753e-14,
+        "gap": null,
+        "post": 5.551115123125783e-16
+      }
+    },
+    {
+      "file": "scene_10_burst_negative.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 8.881784197001252e-15,
+        "active": 1.2434497875801753e-14,
+        "gap": 1.2212453270876722e-15,
+        "post": 4.996003610813204e-16
+      }
+    },
+    {
+      "file": "scene_11_continuous_iid.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 1.2434497875801753e-14,
+        "active": 1.2434497875801753e-14,
+        "gap": null,
+        "post": 4.996003610813204e-16
+      }
+    },
+    {
+      "file": "scene_11_burst_iid.npz",
+      "max_abs_reconstructed_mse_error": {
+        "window": 1.0658141036401503e-14,
+        "active": 1.0658141036401503e-14,
+        "gap": 8.881784197001252e-16,
+        "post": 4.440892098500626e-16
+      }
+    }
+  ],
+  "metadata_correction": "The linked response manifest gained unchanged B2 dependency hashes after execution. No simulation arrays were changed."
+}

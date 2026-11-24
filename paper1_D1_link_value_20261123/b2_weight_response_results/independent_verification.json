@@ -1,0 +1,323 @@
+{
+  "status": "PASS",
+  "conditions": 24,
+  "independently_reconstructed_paths_per_condition": 4,
+  "independent_method": "per-neighbor innovations with independently expanded observation update",
+  "max_absolute_path_metric_difference": 1.1036718206014484e-09,
+  "max_scaled_path_metric_difference": 2.0205851171161715e-10,
+  "max_window_decomposition_residual": 4.547473508864641e-13,
+  "checks": [
+    {
+      "file": "scene_00_continuous_negative.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_00_burst_negative.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_01_continuous_iid.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_01_burst_iid.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_02_continuous_negative.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_02_burst_negative.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_03_continuous_iid.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_03_burst_iid.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_04_continuous_negative.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_04_burst_negative.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_05_continuous_iid.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_05_burst_iid.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_06_continuous_negative.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_06_burst_negative.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_07_continuous_iid.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_07_burst_iid.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_08_continuous_negative.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_08_burst_negative.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_09_continuous_iid.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_09_burst_iid.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_10_continuous_negative.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_10_burst_negative.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_11_continuous_iid.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    {
+      "file": "scene_11_burst_iid.npz",
+      "paths": 4,
+      "weights": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        0.9,
+        1.0
+      ]
+    }
+  ]
+}
