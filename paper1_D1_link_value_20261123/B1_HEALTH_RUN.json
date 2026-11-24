@@ -57,5 +57,8 @@
     "../paper1_history_ablation_20261123/ablation.py": "e440f2ca5c775161ff12e03b7b0cc0ca1de66b5753c0e30ad2f54d0e32697895",
     "../paper1_partial_observability_20261123/run_partial50.py": "94b53739598ea46b2dc40595b338a6d368d3d5e398d1e2797e785582e17b026e",
     "../paper1_original50_source_20261121/source/simulation_revised_detection_metrics_complete_v2.py": "2f4694e6180680ccd83ecc4ae60cb587b76276625c9d34c5946cfeca2d3e8a4a"
-  }
+  },
+  "authorization_status": "posthoc_execution_under_B0_definitions_pending_manual_confirmation",
+  "confirmatory_claims_allowed": false,
+  "reason": "B0 status was draft_pending_manual_review at execution time"
 }

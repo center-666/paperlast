@@ -1,0 +1,225 @@
+{
+  "status": "PASS",
+  "archive_count": 24,
+  "independent_prefix_paths_per_archive": 4,
+  "checks": [
+    {
+      "file": "scene_00_continuous_negative.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_00_burst_negative.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_01_continuous_iid.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_01_burst_iid.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_02_continuous_negative.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_02_burst_negative.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_03_continuous_iid.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_03_burst_iid.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_04_continuous_negative.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_04_burst_negative.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_05_continuous_iid.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_05_burst_iid.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_06_continuous_negative.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_06_burst_negative.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_07_continuous_iid.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_07_burst_iid.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_08_continuous_negative.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_08_burst_negative.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_09_continuous_iid.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_09_burst_iid.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_10_continuous_negative.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_10_burst_negative.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_11_continuous_iid.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    },
+    {
+      "file": "scene_11_burst_iid.npz",
+      "paths_checked": 4,
+      "strategies": [
+        "A",
+        "BD",
+        "C"
+      ]
+    }
+  ],
+  "registration_sha256": "4f0ff82a959ebeb53d2c3ec4cac0c9ca2dfaaaadb571123723d0543fd9da1bd9",
+  "policy_sha256": "8856bcd499a3eda6f5e8f38429dc14dcdaedc5de1c716029b144e165ae64dcf5"
+}

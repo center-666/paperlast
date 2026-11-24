@@ -1,0 +1,81 @@
+{
+  "stage": "B2_attack_performance",
+  "status": "execution_locked_after_B1_posthoc_review",
+  "B1_commit": "023b6dbe7fff2b29fae7b297171cc69187393a42",
+  "B1_authorization_status": "posthoc_execution_under_B0_definitions_pending_manual_confirmation",
+  "scope": "fresh_attack_paths_only, no B1 path reuse",
+  "dynamics": [
+    "unstable",
+    "stable"
+  ],
+  "topologies": [
+    "U",
+    "R"
+  ],
+  "targets": {
+    "U": [
+      35
+    ],
+    "R": [
+      35,
+      1
+    ]
+  },
+  "watermarks": [
+    "negative",
+    "iid"
+  ],
+  "fixtures": [
+    "continuous",
+    "burst"
+  ],
+  "path_count_per_scenario_fixture_watermark": 2048,
+  "batch_size": 64,
+  "health_thresholds": "frozen per-scene B1 thresholds, no recalibration",
+  "attack_packet": "coded-coordinate additive perturbation [6,0] on the registered target packet, decoded by frozen signed Watson map",
+  "attack_window": [
+    50,
+    110
+  ],
+  "time_length": 150,
+  "strategies": {
+    "A": {
+      "q": "0.8 on target alarm, 1 otherwise"
+    },
+    "BD": {
+      "q": "B/D locked target policy from B1 policy_lock.json"
+    },
+    "C": {
+      "q": "C locked target policy from B1 policy_lock.json"
+    }
+  },
+  "deduplication": "B and D are executed once as BD because B1 policy_lock proves identical target weights per scene",
+  "metrics": [
+    "target_missing_window_mse",
+    "target_missing_post20_mse",
+    "target_missing_tail_mse",
+    "target_full_window_mse",
+    "network_window_mse",
+    "network_post20_mse",
+    "target_alarm_delay",
+    "target_alarm_run_max",
+    "target_attack_accept_fraction",
+    "accepted_target_forcing"
+  ],
+  "seeds": {
+    "namespace": [
+      20261124,
+      2207
+    ],
+    "formula": "SeedSequence([*namespace, scene_index, fixture_index, watermark_index, stage, batch_index])",
+    "stage": 2
+  },
+  "analysis": "paired within identical fresh attack paths across A, BD, C; report BD minus A, C minus A, and BD minus C. B2 does not claim D minus B.",
+  "statistical_status": "descriptive paired intervals conditional on frozen B1 thresholds and B1 policy lock",
+  "prohibited": [
+    "reuse B1 health paths",
+    "recalibrate thresholds",
+    "retune q",
+    "start D1-C"
+  ]
+}

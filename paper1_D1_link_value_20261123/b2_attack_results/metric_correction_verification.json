@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "archives_compared": 24,
+  "correction_scope": "Only the burst target_attack_accept_fraction denominator changed. The new target_window_accept_fraction equals the original full-window rate. All masks, thresholds, and remaining strategy metrics are bitwise identical.",
+  "checks": [
+    {
+      "file": "scene_00_continuous_negative.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_00_burst_negative.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_01_continuous_iid.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_01_burst_iid.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_02_continuous_negative.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_02_burst_negative.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_03_continuous_iid.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_03_burst_iid.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_04_continuous_negative.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_04_burst_negative.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_05_continuous_iid.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_05_burst_iid.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_06_continuous_negative.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_06_burst_negative.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_07_continuous_iid.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_07_burst_iid.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_08_continuous_negative.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_08_burst_negative.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_09_continuous_iid.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_09_burst_iid.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_10_continuous_negative.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_10_burst_negative.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_11_continuous_iid.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    },
+    {
+      "file": "scene_11_burst_iid.npz",
+      "status": "all_nonacceptance_arrays_unchanged"
+    }
+  ]
+}
