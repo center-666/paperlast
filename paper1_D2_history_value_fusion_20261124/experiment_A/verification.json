@@ -1,0 +1,8 @@
+{
+  "verified_paths": 176,
+  "policies_per_path": 6,
+  "periods": 4,
+  "max_abs_path_MSE_error": 1.2320189313186347e-10,
+  "graph_norm_or_sigma_max_sample_difference": 0.0,
+  "scope": "Independent innovation update, scoring and tie break using frozen fitted UCB and original D1 path generator; sampled graph SVD cross-check; no new physical paths."
+}
