@@ -1,48 +1,52 @@
-# D2-B 独立开发筛查协议
+# D2-B Independent Development Screening Protocol
 
-## 状态
+## Status
 
-本协议在 A′ 完成后形成。B1/B2/A/A′ 均为既有或事后探索结果。D2-B 使用新的物理路径和新的健康校准路径，结果仍属于开发筛查，不授权 C 或在线部署。
+This protocol is frozen after D2-A?. B1, B2, A and A? are existing or posthoc exploratory results. D2-B uses new physical paths and new health calibration paths. It is a development screen and does not authorize D2-C or deployment.
 
-## 目标
+## Objective
 
-验证动态健康代价是否相对静态代价和仅风险策略具有独立闭环价值。主模型为四维局部 common-G 估计器，目标接收节点为 26。二维 common-G 仅保留原始基准回归身份，本轮不把它与四维策略结果混合。
+Test whether a dynamic history-dependent health cost has independent closed-loop value relative to an attack-risk-only policy and simpler health-cost controls. The primary model is the four-dimensional local common-G estimator at receiver 26. The two-dimensional common-G model remains a historical regression baseline and is not pooled with the four-dimensional results.
 
-## 策略
+## Policies
 
-所有策略共享同一 H1 阈值、同一报警掩码、同一 M7 稳定性可行图、同一风险上界表和同一并列规则。目标链路无报警时取 q=1。
+All four policies share one H1 threshold, one alarm mask, one M7 numerical feasibility graph, one conditional risk table and one tie rule. The target link uses q=1 when it is not alarming.
 
-- R1 使用 U1(q)。
-- RH-static 使用 U1(q)+H*(q)。
-- RH-scalar 使用 U1(q)+a_k H*(q)，其中 a_k 是当前动态健康代价对固定代价的非负最小二乘标量拟合。
-- RH-dynamic 使用 U1(q)+H_k(q)。
+- R1 uses U1(q).
+- RH-static uses U1(q) + H*(q).
+- RH-scalar uses U1(q) + a_k H*(q), where a_k is the nonnegative least-squares scalar fit of the current dynamic health vector to H*.
+- RH-dynamic uses U1(q) + H_k(q).
 
-本轮不把静态 phi(kappa) 放入主策略。A′ 已显示其效果属于可选拓扑惩罚修正，之后单独评价。
+The risk table is a frozen A-reference-prior action-ranking proxy. It is not a closed-loop MSE upper bound for any of the four policies. Every policy stores its own action history, dynamic H vector, risk-table fallback and support counts.
 
-## 数据划分
+The static phi(kappa) term is excluded from the primary B policies. It remains a secondary posthoc correction because A? showed a topology-dependent numerical increment.
 
-每个四维场景使用新的 512 条攻击路径，前 256 条拟合条件风险上界，后 256 条评价闭环策略。连续和突发路径分开生成，风险表拟合时仅合并同一水印标签下的两个攻击时序。
+## Data splits
 
-每个四维场景另使用 512 条健康路径，前 256 条校准 H1 阈值，后 256 条评价健康 MSE 和条件 FWER。健康和攻击路径互不重叠。
+Each four-dimensional scenario uses 512 new attack paths. The first 256 paths fit the conditional risk table and the last 256 paths evaluate the closed-loop policies. Continuous and burst fixtures are generated separately and are combined only within the same watermark label during risk fitting.
 
-场景为 12 个动力学—拓扑—目标链路—水印组合，加连续/突发两种故障，共 24 个攻击条件。随机命名空间为 [20261124, 4401, 1]，与 B2/A 路径和 B1 路径分离。
+Each scenario also uses 512 new healthy paths. The first 256 calibrate H1 and the last 256 evaluate health MSE and conditional FWER. Health and attack paths are disjoint.
 
-## 条件风险表
+The attack design contains 12 dynamics-topology-target-watermark scenes and two fixtures, giving 24 attack conditions. The seed namespace is [20261124, 4401, 1]. The runner must reject any seed tuple reused by B1, B2 or D2-A/A?.
 
-输入是冻结 H1 分数、连续报警长度、当前报警位以及 A′ 同先验单拍损害标签 Y1(q)。分数标准化为 s/h。拟合边界使用拟合路径报警拍的三分位点。连续报警分为 1、2–3、4+。
+## Conditional risk table
 
-每个单元至少需要 30 条不同拟合路径。缺少支持时按分数×连报、仅分数、合并报警三级回退。候选 q=0 的当前攻击扰动项取零。其他候选使用路径级均值和单侧 95% 近似上界。风险表只作动作排序代理，不声称闭环 MSE 上界。
+Inputs are frozen H1 score, consecutive alarm length, current alarm bit and the A-reference-prior single-step label Y1(q). Scores are normalized by the scene threshold. Fitting boundaries use training alarm-packet tertiles. Consecutive alarms are grouped as 1, 2?3 and 4+.
 
-## 健康代价
+Each cell requires at least 30 distinct training paths. Fallback order is score-by-run, score-only and pooled-alarm. q=0 has zero current attack input by algebra. Other candidates use path-level means and approximate one-sided 95% upper bounds. The table is an action-ranking proxy and its support, source fixture and fallback level must be saved.
 
-H* 从完整接纳初始后验 P+(1) 计算。H_k 从每条策略自身已执行动作推进的参考协方差计算，当前候选只改变一拍，未来 59 拍采用完整接纳延续。RH-scalar 的 a_k 由当前候选向量对 H* 的非负最小二乘拟合得到。
+## Health cost
 
-## 稳定性
+H* starts from the no-alarm full-acceptance P+ mode. H_k starts from the policy's own executed-action covariance reference. The current candidate action is applied once, and the next 59 steps use the no-alarm full-acceptance F1/Omega1 continuation. RH-scalar fits a_k to the current feasible candidate set. A zero denominator sets a_k=0 and increments a counter.
 
-M7 可行图来自冻结 D1 模式矩阵和七拍字枚举。策略只能从当前六拍动作历史对应的可延续候选中选择。图是数值验证的窗口筛查，不作为舍入误差外包后的严格证明。
+The H1 score must not read estimator state. All four policies must receive bitwise-identical H1 masks on the same path.
 
-## 输出
+## Stability
 
-每个攻击条件保存四策略路径级攻击窗 MSE、恢复窗 MSE、全网 MSE、有效权重、动作计数、动作分歧和污染拍接纳率。每个健康场景保存四策略健康 MSE、目标 FWER、报警次数和阈值。
+The M7 graph comes from the frozen D1 mode matrices and seven-action enumeration. A policy can select only actions that extend the current six-action history in the numerical feasibility graph. The graph is a numerical screening certificate. It is not a strict roundoff-certified proof.
 
-主比较为 RH-dynamic 减 R1，次比较为 RH-dynamic 减 RH-static 和 RH-dynamic 减 RH-scalar。所有结果按路径配对并按 12 个物理场景等权汇总。B 结果只用于判断是否值得注册 C，不进入论文确认性主结论。
+## Outputs
+
+Each attack condition stores four policy path-level attack-window MSE, recovery-window MSE, network MSE, effective weight, action counts, action disagreement, polluted-packet non-alarm fraction, risk support and risk fallback counts. Each health scene stores four policy health MSE, target FWER, alarm counts and threshold.
+
+The primary comparison is RH-dynamic minus R1. Secondary comparisons are RH-dynamic minus RH-static and RH-dynamic minus RH-scalar. Results are paired by path and aggregated equally across the 12 physical scenes. B is only a development decision gate for C and does not enter a confirmatory paper claim.
