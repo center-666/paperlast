@@ -1,7 +1,7 @@
 {
   "status": "posthoc_D2_B2_budget_margin_mechanism_audit",
   "B2_RUN_sha256": "43ae9bf8b12099ed7bc34c2f0e3103e0fa62b1ee62b57bc7a473abce56afd294",
-  "B2_INDEPENDENT_AUDIT_sha256": "61f068e870297f184e950e3a2172bfc01694fcebd1b1f1a3dfda8a3173580208",
+  "B2_INDEPENDENT_AUDIT_sha256": "a7fe33104263c9f758108142246639c1c3f4880fa2eca59c1d6a504016cd4bb3",
   "audit_source_sha256": "c2b799faa60b5f6eda96b9c2ebc45ccde58af57e14a4e28e068be444caf0d856",
   "claim_scope": "descriptive_development_screening_only",
   "constraint_tolerance": 1e-10,

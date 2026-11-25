@@ -14,7 +14,6 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 RUN_DIR = HERE / "b2_results"
 RUN_MANIFEST = RUN_DIR / "B2_RUN.json"
-ANALYSIS_FILE = RUN_DIR / "B2_ANALYSIS.json"
 OUTPUT = RUN_DIR / "B2_INDEPENDENT_AUDIT.json"
 Q = np.asarray([0., .2, .4, .6, .8, .9, 1.])
 EDGE_BITS = 1 << np.arange(7)
@@ -178,7 +177,6 @@ def replay_scene_fixture(scene, fixture, result, archive, graph):
 
 def main():
     manifest = json.loads(RUN_MANIFEST.read_text(encoding="utf-8"))
-    analysis = json.loads(ANALYSIS_FILE.read_text(encoding="utf-8"))
     if manifest.get("status") != "complete_D2_B2_development_screening":
         raise ValueError("Independent audit requires a complete D2-B2 run.")
     if manifest.get("execution_commit") != "d1cfa56095f7e57d9b95356f930c4eb4123c445b":
@@ -210,6 +208,10 @@ def main():
             if sha256(archive_path) != expected_hash:
                 raise ValueError(f"Scene archive hash mismatch: {archive_path.name}")
             scene_policy_loss = np.zeros((len(policy_names), 5))
+            scene_record_loss = np.mean([
+                np.asarray(record["attacks"][fixture]["loss_mean"])
+                for fixture in ("continuous", "burst")
+            ], axis=0)
             scene_q1_loss = np.zeros(5)
             fixture_audits = {}
             with np.load(archive_path, allow_pickle=False) as archive:
@@ -253,6 +255,9 @@ def main():
                 np.testing.assert_allclose(health_q1, record["health_q1_reference_mean"],
                                            rtol=1e-12, atol=1e-12)
             policy_attack_difference += scene_policy_loss / 12.
+            np.testing.assert_allclose(
+                scene_policy_loss, scene_record_loss, rtol=1e-12, atol=1e-12
+            )
             policy_health_difference += health_loss / 12.
             q1_health_difference += health_q1 / 12.
             scene_reports[str(scene)] = {
@@ -264,33 +269,23 @@ def main():
                 "q1_health_mean": health_q1.tolist(),
             }
 
-    analysis_attack = np.asarray([
-        analysis["attack"]["policy_mean_mse"][policy]
-        for policy in policy_names
-    ])
-    np.testing.assert_allclose(policy_attack_difference, analysis_attack,
-                               rtol=1e-11, atol=1e-11)
-    analysis_health = np.asarray([
-        [analysis["health"]["mean_mse"][policy]["missing_post20"],
-         analysis["health"]["mean_mse"][policy]["network_post20"]]
-        for policy in policy_names
-    ])
-    np.testing.assert_allclose(
-        policy_health_difference[:, [2, 4]], analysis_health,
-        rtol=1e-11, atol=1e-11,
-    )
-    np.testing.assert_allclose(
-        q1_health_difference[[2, 4]],
-        [analysis["health"]["mean_mse"]["full_accept"]["missing_post20"],
-         analysis["health"]["mean_mse"]["full_accept"]["network_post20"]],
-        rtol=1e-11, atol=1e-11,
-    )
+    manifest_health = np.mean([
+        np.asarray(manifest["results"][str(scene)]["health_loss_mean"])
+        for scene in range(12)
+    ], axis=0)
+    manifest_q1_health = np.mean([
+        np.asarray(manifest["results"][str(scene)]["health_q1_reference_mean"])
+        for scene in range(12)
+    ], axis=0)
+    np.testing.assert_allclose(policy_health_difference, manifest_health,
+                               rtol=1e-12, atol=1e-12)
+    np.testing.assert_allclose(q1_health_difference, manifest_q1_health,
+                               rtol=1e-12, atol=1e-12)
     report = {
         "status": "PASS_independent_D2_B2_action_and_output_replay",
         "execution_commit": manifest["execution_commit"],
         "protocol_commit": manifest["protocol_commit"],
         "B2_RUN_sha256": sha256(RUN_MANIFEST),
-        "B2_ANALYSIS_sha256": sha256(ANALYSIS_FILE),
         "audit_source_sha256": sha256(Path(__file__)),
         "independent_method": "reimplement alarm runs, M7 history, static/scalar/dynamic budget sets, and larger-q risk argmin without importing the B2 runner",
         "target_alarm_decisions_replayed": total_alarm,
@@ -304,7 +299,7 @@ def main():
         "independent_M7_feasible_action_counts_on_alarm_by_policy": independent_feasible_counts.tolist(),
         "independent_q0_feasible_counts_on_alarm_by_policy": independent_q0_counts.tolist(),
         "path_loss_weighted_summary": policy_attack_difference.tolist(),
-        "analysis_policy_summary": analysis_attack.tolist(),
+        "D2B_RUN_replayed_policy_summary": policy_attack_difference.tolist(),
         "path_weighted_healthy_summary": policy_health_difference.tolist(),
         "full_accept_healthy_summary": q1_health_difference.tolist(),
         "scenes": scene_reports,
