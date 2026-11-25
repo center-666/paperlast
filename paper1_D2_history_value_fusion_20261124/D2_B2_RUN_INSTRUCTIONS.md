@@ -30,3 +30,5 @@ The registered namespace is `[20261125, 7319, 1]`. Health calibration uses stage
 The runner writes `b2_results/scene_XX.npz` atomically after each scene and updates `B2_RUN_PROGRESS.json`. It preserves all evaluated actions, H1 scores and masks, per-policy nominal health-cost curves and feasible sets, path-level losses, reference losses, and calibration maxima. `B2_RUN.json` records the execution identity, environment, input hashes, value budgets, and output hashes.
 
 The analyzer verifies the scene archive hashes and computes path-paired descriptive bootstrap intervals. The output is a development screen, not confirmatory evidence. It is not a formal statistical guarantee for the nominal health constraint.
+
+After analysis, run `python -B audit_b2.py`. This independently reconstructs the M7 history, all three nominal-health feasible sets, and the risk argmin without importing the B2 runner. It checks every alarm action, budget constraint, and archive hash, and compares paired loss summaries against `B2_ANALYSIS.json`. Commit `D2_B2_SCREENING_DECISION.md`, both result reports, and the complete machine-readable outputs only after this audit passes.

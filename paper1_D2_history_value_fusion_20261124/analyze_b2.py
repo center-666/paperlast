@@ -14,6 +14,7 @@ RUN_DIR = HERE / "b2_results"
 RUN_FILE = RUN_DIR / "B2_RUN.json"
 OUTPUT_JSON = RUN_DIR / "B2_ANALYSIS.json"
 OUTPUT_MD = RUN_DIR / "B2_ANALYSIS.md"
+AUDIT_FILE = RUN_DIR / "B2_INDEPENDENT_AUDIT.json"
 POLICIES = ("R1", "HC_static", "HC_scalar", "HC_dynamic")
 COMPARISONS = {
     "HC_dynamic_minus_R1": (0, 3),
@@ -105,10 +106,6 @@ def summarize_attacks(records):
             sum(record["stored"]["health_status"]["risk_fallback_counts"])
             for record in records
         )),
-        "risk_table_fallback_level_counts": np.sum([
-            record["stored"]["health_status"]["risk_fallback_level_counts"]
-            for record in records
-        ], axis=0).tolist(),
         "health_forced_out_candidate_counts": np.sum([
             record["stored"]["health_status"]["health_forced_out_candidate_counts"]
             for record in records
@@ -180,6 +177,7 @@ def health_constraint_activity(records):
 
 def render_markdown(manifest, attack, healthy, action):
     constraint = attack["health_constraint_activity"]
+    audit = attack["independent_replay_audit"]
     names = POLICIES
     metrics = (0, 1, 3, 4)
     lines = [
@@ -230,6 +228,21 @@ def render_markdown(manifest, attack, healthy, action):
         lines.append(f"| {scene} | {values[0]:.6g} | {values[1]:.6g} |")
     lines.extend([
         "",
+        "## Attack-window contrast by fixture",
+        "",
+        "| Fixture | HC-dynamic minus R1 | HC-dynamic minus HC-scalar |",
+        "|---|---:|---:|",
+    ])
+    for fixture, row in attack["by_fixture"].items():
+        risk = row["paired_comparisons"]["HC_dynamic_minus_R1"][
+            "mean_paired_difference_candidate_minus_reference"
+        ][0]
+        scalar_diff = row["paired_comparisons"]["HC_dynamic_minus_HC_scalar"][
+            "mean_paired_difference_candidate_minus_reference"
+        ][0]
+        lines.append(f"| {fixture} | {risk:.6g} | {scalar_diff:.6g} |")
+    lines.extend([
+        "",
         "## Healthy evaluation",
         "",
         "| Policy | Missing-block post-20 MSE | Paired difference vs full acceptance |",
@@ -260,6 +273,20 @@ def render_markdown(manifest, attack, healthy, action):
         lines.append(f"- {name}: {value:.3%} alarm-decision disagreement.")
     lines.extend([
         "",
+        "## Independent replay audit",
+        "",
+        f"Replayed {audit['target_alarm_decisions_replayed']:,} target-alarm decisions. The independent controller replay found {audit['risk_argmin_or_off_alarm_action_mismatches']} decision mismatches, {audit['M7_violations']} M7 violations, and {audit['health_budget_violations']} nominal-budget violations.",
+        f"HC-static and HC-dynamic feasible action sets differed on {audit['HC_static_HC_dynamic_feasible_set_mismatches']} target-alarm decisions.",
+        "",
+        "Independently replayed alarm action counts.",
+        "",
+        "| Policy | q=0 | q=.2 | q=.4 | q=.6 | q=.8 | q=.9 | q=1 |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|",
+    ])
+    for policy, counts in zip(POLICIES, audit["independent_alarm_action_counts_by_policy_and_q"]):
+        lines.append(f"| {policy} | " + " | ".join(str(value) for value in counts) + " |")
+    lines.extend([
+        "",
         "The risk table is a conditional incremental-damage proxy, not a closed-loop MSE bound. All intervals are descriptive development-screening summaries.",
         "D2-C remains unstarted.",
         "",
@@ -273,11 +300,30 @@ def main():
     attack["health_constraint_activity"] = health_constraint_activity(attack_records)
     healthy = common_analysis.bootstrap_health(healthy_records)
     action = common_analysis.action_metrics(attack_records)
+    independent_audit = json.loads(AUDIT_FILE.read_text(encoding="utf-8"))
+    if independent_audit.get("status") != "PASS_independent_D2_B2_action_and_output_replay":
+        raise ValueError("Independent B2 archive/action audit has not passed.")
+    attack["independent_replay_audit"] = {
+        key: independent_audit[key]
+        for key in (
+            "target_alarm_decisions_replayed",
+            "M7_violations",
+            "health_budget_violations",
+            "saved_feasible_set_mismatches",
+            "risk_argmin_or_off_alarm_action_mismatches",
+            "HC_static_HC_dynamic_feasible_set_mismatches",
+            "HC_static_HC_scalar_feasible_set_mismatches",
+            "independent_alarm_action_counts_by_policy_and_q",
+            "independent_M7_feasible_action_counts_on_alarm_by_policy",
+            "independent_q0_feasible_counts_on_alarm_by_policy",
+        )
+    }
     output = {
         "status": "descriptive_D2_B2_independent_development_screening_analysis",
         "execution_commit": manifest["execution_commit"],
         "protocol_commit": manifest["protocol_commit"],
         "B2_RUN_sha256": sha256(RUN_FILE),
+        "B2_INDEPENDENT_AUDIT_sha256": sha256(AUDIT_FILE),
         "scene_archive_sha256": manifest["output_sha256"],
         "analysis_source_sha256": sha256(Path(__file__)),
         "bootstrap_replicates": common_analysis.BOOTSTRAP_REPLICATES,
