@@ -1,0 +1,131 @@
+{
+  "status": "PASS_FULL_STAGE1_SMOKE",
+  "formal_paths_generated": false,
+  "attack_smoke_paths": 16,
+  "healthy_smoke_paths": 32,
+  "arms": [
+    "A_plugin_iid",
+    "B_plugin_negative",
+    "C_matched_iid",
+    "D_matched_negative",
+    "E_iid_wrong_key",
+    "F_negative_wrong_key"
+  ],
+  "frozen_plugin_score_max_abs_error_from_common_start": 0.0,
+  "frozen_common_g_aggregate_literal_max_abs_error": 9.313225746154785e-10,
+  "onset65_early_window_alignment": true,
+  "thresholds": {
+    "plugin_kl": {
+      "threshold": 46.461171915536966,
+      "calibration_paths": 64,
+      "one_based_rank": 62,
+      "alarm_rule": "fresh_path_max > threshold",
+      "marginal_path_fwer_bound": 0.046153846153846156,
+      "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+    },
+    "matched_iid": {
+      "threshold": 22.90998637225501,
+      "calibration_paths": 64,
+      "one_based_rank": 62,
+      "alarm_rule": "fresh_path_max > threshold",
+      "marginal_path_fwer_bound": 0.046153846153846156,
+      "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+    },
+    "matched_negative": {
+      "threshold": 21.666895916801117,
+      "calibration_paths": 64,
+      "one_based_rank": 62,
+      "alarm_rule": "fresh_path_max > threshold",
+      "marginal_path_fwer_bound": 0.046153846153846156,
+      "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+    },
+    "mismatched_iid_key": {
+      "threshold": 23.731333272141004,
+      "calibration_paths": 64,
+      "one_based_rank": 62,
+      "alarm_rule": "fresh_path_max > threshold",
+      "marginal_path_fwer_bound": 0.046153846153846156,
+      "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+    },
+    "mismatched_negative_key": {
+      "threshold": 23.622962212558768,
+      "calibration_paths": 64,
+      "one_based_rank": 62,
+      "alarm_rule": "fresh_path_max > threshold",
+      "marginal_path_fwer_bound": 0.046153846153846156,
+      "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+    }
+  },
+  "attack_run_seconds_by_arm": {
+    "A_plugin_iid": 0.1144505999982357,
+    "B_plugin_negative": 0.12065160000929609,
+    "C_matched_iid": 0.7057108999870252,
+    "D_matched_negative": 0.6701452999841422,
+    "E_iid_wrong_key": 0.7047385000041686,
+    "F_negative_wrong_key": 0.7172965000208933
+  },
+  "runtime_note": "The frozen common-G wrapper recomputes the plugin score even with externally supplied gates, so its wall time includes this extra diagnostic score pass.",
+  "healthy_seed_words": [
+    1500066653,
+    3074257104
+  ],
+  "scenario_metadata": {
+    "model": "unstable",
+    "angle_degrees": 0.0,
+    "onset": 50,
+    "attack_window_half_open": [
+      50,
+      110
+    ],
+    "early3_window_half_open": [
+      50,
+      53
+    ],
+    "path_count": 16,
+    "path_ids": [
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_0",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_1",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_2",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_3",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_4",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_5",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_6",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_7",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_8",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_9",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_10",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_11",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_12",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_13",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_14",
+      "stage1_20261125_8317_99_smoke_unstable_rot0_onset50_15"
+    ],
+    "seed_words": {
+      "physical": 3631816793,
+      "actual_shared_radial_initial_transition": [
+        1680038009,
+        1122417803,
+        531272408
+      ],
+      "wrong_key_iid": [
+        414438654,
+        3315588253,
+        3422061335
+      ],
+      "wrong_key_negative": [
+        65754713,
+        3880811981,
+        2881035123
+      ]
+    },
+    "raw_attack_energy": 59006840.79300086,
+    "attack_rotation_energy_scale": 1.0,
+    "score_thresholds": {
+      "plugin_kl": 46.461171915536966,
+      "matched_iid": 22.90998637225501,
+      "matched_negative": 21.666895916801117,
+      "mismatched_iid_key": 23.731333272141004,
+      "mismatched_negative_key": 23.622962212558768
+    }
+  }
+}

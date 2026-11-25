@@ -1,0 +1,626 @@
+{
+  "status": "read_only_frozen_v3_and_source_audit",
+  "baseline_commit": "8953e1dd9a5e2535ead2698acb6f345a85d4f532",
+  "source_sha256": {
+    "V3_RESULTS.md": "61e29cf00068148501065c1e472354076ca3cffb877b6842bd42b527567375ce",
+    "watson_crn.py": "e3c3af17fed3a6afb2c71aa8a33ede942ba80796b7b34862ec6768bc59068f7a",
+    "run_crn_development.py": "8acdc7493a5d222f9391263d8e9862868e14bb9d6d175f97e128d4cdb25dec36",
+    "run_crn_final.py": "16f9a5863719d98518fcadda0e426f4f959edc88b2f0d7a630d8d03c5e103e3f",
+    "replay.py": "05e68f702ccea35d4bd5d4c1396c4acd9dbc79f4c6659150b1e283f279ddbabb",
+    "run_common_g_50.py": "22ea30c33321da57aac0bf56b987221b529fc5020ada74b6cc789615f42d096c",
+    "calibration_rule.py": "b8f864cd2f6d35784c2b36bb8f354858388fd988f5e52b843b7907078cf2c422",
+    "final_results.json": "ebd2c8a13ba7e5b09d81adefadc00c7c4daf3f01a736c8da8e26393f398047ff",
+    "final_paths.npz": "f70d499a36ecc01960d7ddcb511cc0aa8edf5d28c0a514a321c0eea0c208b725"
+  },
+  "reusable_interface_inventory": {
+    "run_crn_final.measure": {
+      "actual_input": "saved estimator world, physical state paths, affected receiver IDs, attack onset, frozen threshold",
+      "reusable": "legacy attack/eligible windows, post-20 and per-path MSE, attack-path-any-alarm, censored first alarm delay, drop fraction",
+      "change_location": "new early endpoint is computed separately from raw world.scores on [onset,onset+3); never shift via the legacy eligible column"
+    },
+    "watson_crn.make_common_draws/beta_from_common": {
+      "actual_input": "path count, length, edge count, radial/initial/direction seeds, scalar theta",
+      "reusable": "radial Exp(1), initial uniform direction, CRN quantiles and Watson signed-angle inverse",
+      "change_location": "new schedule generator extends length to 150 and samples 50 sender keys, sharing each sender key across all its outgoing links; radial-bin uses two prevalidated theta masks"
+    },
+    "watson_crn.watermark_attack_from_beta": {
+      "actual_input": "raw six-edge attack waveform and beta process",
+      "reusable": "decoded additive packet perturbation M_k a_k and attack onset placement",
+      "change_location": "new full-horizon packet decoder creates M for every sender/time, then applies only the attack-window raw waveform to the six frozen arcs"
+    },
+    "paper1_50node_tv_gate_theory_20261121.replay.scores": {
+      "actual_input": "physical paths and decoded attack perturbation; it constructs per-edge raw packet history internally",
+      "reusable": "exact frozen four overlapping 8-D parity residual construction, plugin covariance regularization 1e-6 and historical plugin-KL",
+      "change_location": "new scorer takes a read-only sender-packet array; matched GLRT receives the same causal eight-report window and watermark key prefix"
+    },
+    "run_crn_development.load_backend": {
+      "actual_input": "hash-pinned frozen config, source model, gain tables, M7 and calibration modules",
+      "reusable": "true 50-node common-G estimator, physical path generator, original six-link topology, source compatibility checks",
+      "change_location": "none; load in the detached 8953e1 worktree and call the frozen model interfaces"
+    },
+    "run_common_g_50.run_common_g": {
+      "actual_input": "model, physical paths, decoded delta, raw sender packets, detector threshold or explicit gate mask",
+      "reusable": "all-50 node common-G replay and separate estimator gates from detector scores",
+      "change_location": "pass matched-score decisions as an exogenous gate mask; record external online score rather than replacing the frozen plugin scorer"
+    },
+    "calibration_rule.path_fwer_cutoff": {
+      "actual_input": "one maximum score per independent healthy path",
+      "reusable": "exact decimal-alpha order-statistic rank and strict > threshold convention",
+      "change_location": "calibrate each matched score family independently over max of six links and k=7..149; plugin score is also recalibrated over the same decision times"
+    },
+    "crn_final_results.json/crn_final_path_arrays.npz": {
+      "actual_input": "recorded v3 final physical/radial/initial/direction namespaces and calibrated thresholds",
+      "reusable": "read-only exact source regression for unstable/stable theta=0 and theta=-1.3152369768257723 at angle 0 and onset 50",
+      "change_location": "no archived paths enter new uncertainty estimates or method selection"
+    }
+  },
+  "v3_old_summary_recomputed_from_path_arrays": {
+    "status": "PASS",
+    "source": "crn_final_path_arrays.npz and crn_final_results.json",
+    "scenario_count_per_model": 6,
+    "paths_per_scenario": 512,
+    "maximum_equal_weight_summary_difference": 1.1102230246251565e-16,
+    "models": {
+      "unstable": {
+        "iid": {
+          "network_post20": {
+            "equal_weight_scenario_mean": 0.06158746404850881,
+            "scenario_means": [
+              0.06214054657368728,
+              0.06200090852649352,
+              0.062247804575085344,
+              0.062098145732207205,
+              0.06049210315456737,
+              0.06054527572901211
+            ]
+          },
+          "affected_post20": {
+            "equal_weight_scenario_mean": 0.06774433779449142,
+            "scenario_means": [
+              0.07216885586182957,
+              0.07239151762749187,
+              0.0734968884521328,
+              0.07256578013601332,
+              0.05778373566909212,
+              0.05805924902038882
+            ]
+          },
+          "network_attack": {
+            "equal_weight_scenario_mean": 0.06368550449445691,
+            "scenario_means": [
+              0.06468969406504499,
+              0.06466869853465032,
+              0.06497250136588978,
+              0.06468358537232331,
+              0.06147360607463033,
+              0.061624941554202714
+            ]
+          },
+          "network_postattack": {
+            "equal_weight_scenario_mean": 0.05982016366273648,
+            "scenario_means": [
+              0.05995970372310037,
+              0.059934340838273606,
+              0.059822967682554205,
+              0.05982132303926011,
+              0.05984488437197176,
+              0.05953776232125881
+            ]
+          },
+          "eligible_link_time_alarm_fraction": {
+            "equal_weight_scenario_mean": 0.9902998886268345,
+            "scenario_means": [
+              0.9885576356132076,
+              0.9873108294025159,
+              0.9829500786163523,
+              0.9830422071540881,
+              0.9999815742924529,
+              0.99995700668239
+            ]
+          },
+          "attack_path_any_alarm": {
+            "equal_weight_scenario_mean": 1.0,
+            "scenario_means": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "raw_first_alarm_delay_censored60": {
+            "equal_weight_scenario_mean": 0.9436848958333334,
+            "scenario_means": [
+              1.302734375,
+              1.27734375,
+              1.62109375,
+              1.458984375,
+              0.0,
+              0.001953125
+            ]
+          },
+          "eligible_first_alarm_delay_from_onset": {
+            "equal_weight_scenario_mean": 7.0,
+            "scenario_means": [
+              7.0,
+              7.0,
+              7.0,
+              7.0,
+              7.0,
+              7.0
+            ]
+          },
+          "drop_fraction_attack": {
+            "equal_weight_scenario_mean": 0.945042136863426,
+            "scenario_means": [
+              0.9262261284722222,
+              0.9251085069444445,
+              0.9145073784722224,
+              0.9165364583333333,
+              0.9939778645833333,
+              0.993896484375
+            ]
+          }
+        },
+        "neg_boundary": {
+          "network_post20": {
+            "equal_weight_scenario_mean": 0.06142043256326898,
+            "scenario_means": [
+              0.06191381845467876,
+              0.06176727667252996,
+              0.061997911682378344,
+              0.061805261370056944,
+              0.06049185029151177,
+              0.06054647690845807
+            ]
+          },
+          "affected_post20": {
+            "equal_weight_scenario_mean": 0.06607402294209308,
+            "scenario_means": [
+              0.06990157467174438,
+              0.07005519908785612,
+              0.07099795952506277,
+              0.06963693651451072,
+              0.05778120703853615,
+              0.058071260814848376
+            ]
+          },
+          "network_attack": {
+            "equal_weight_scenario_mean": 0.06332360294310393,
+            "scenario_means": [
+              0.06419844980719319,
+              0.0641624961843959,
+              0.0644310667650246,
+              0.06404900258766442,
+              0.06147305820467654,
+              0.06162754410966896
+            ]
+          },
+          "network_postattack": {
+            "equal_weight_scenario_mean": 0.05982016366273648,
+            "scenario_means": [
+              0.05995970372310037,
+              0.059934340838273606,
+              0.059822967682554205,
+              0.05982132303926011,
+              0.05984488437197176,
+              0.05953776232125881
+            ]
+          },
+          "eligible_link_time_alarm_fraction": {
+            "equal_weight_scenario_mean": 0.9926604264937108,
+            "scenario_means": [
+              0.9910758156446542,
+              0.9905844634433962,
+              0.9866229363207548,
+              0.9877469044811322,
+              0.9999631485849056,
+              0.9999692904874214
+            ]
+          },
+          "attack_path_any_alarm": {
+            "equal_weight_scenario_mean": 1.0,
+            "scenario_means": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "raw_first_alarm_delay_censored60": {
+            "equal_weight_scenario_mean": 0.9130859375,
+            "scenario_means": [
+              1.263671875,
+              1.240234375,
+              1.56640625,
+              1.40625,
+              0.0,
+              0.001953125
+            ]
+          },
+          "eligible_first_alarm_delay_from_onset": {
+            "equal_weight_scenario_mean": 7.0,
+            "scenario_means": [
+              7.0,
+              7.0,
+              7.0,
+              7.0,
+              7.0,
+              7.0
+            ]
+          },
+          "drop_fraction_attack": {
+            "equal_weight_scenario_mean": 0.9487937644675926,
+            "scenario_means": [
+              0.9310329861111111,
+              0.9303385416666667,
+              0.9199544270833333,
+              0.9235297309027778,
+              0.9939941406249999,
+              0.9939127604166667
+            ]
+          }
+        },
+        "healthy_fwer": {
+          "count": 20,
+          "paths": 512,
+          "fraction": 0.0390625,
+          "exact_interval": [
+            0.024020809593503667,
+            0.05968598191731193
+          ]
+        }
+      },
+      "stable": {
+        "iid": {
+          "network_post20": {
+            "equal_weight_scenario_mean": 0.0646928994513096,
+            "scenario_means": [
+              0.06480995182540805,
+              0.06474787380759528,
+              0.0646893565797252,
+              0.06453070386411458,
+              0.06478722809717186,
+              0.06459228253384264
+            ]
+          },
+          "affected_post20": {
+            "equal_weight_scenario_mean": 0.09921615362758036,
+            "scenario_means": [
+              0.09995765478018606,
+              0.10012999147273124,
+              0.09864921719271885,
+              0.09842528382372524,
+              0.09952322152925322,
+              0.09861155296686763
+            ]
+          },
+          "network_attack": {
+            "equal_weight_scenario_mean": 0.0705704284773135,
+            "scenario_means": [
+              0.07070538244763262,
+              0.07065624389374783,
+              0.07055996837964609,
+              0.07035514842287091,
+              0.07075624087954296,
+              0.07038958684044061
+            ]
+          },
+          "network_postattack": {
+            "equal_weight_scenario_mean": 0.059594152639873166,
+            "scenario_means": [
+              0.05971048367385153,
+              0.05932011810855655,
+              0.05963046977519783,
+              0.05950900511590545,
+              0.05967478425522351,
+              0.05972005491050414
+            ]
+          },
+          "eligible_link_time_alarm_fraction": {
+            "equal_weight_scenario_mean": 0.6531462919287212,
+            "scenario_means": [
+              0.6890231918238994,
+              0.6858785377358491,
+              0.619828518081761,
+              0.625,
+              0.6493710691823898,
+              0.6497764347484277
+            ]
+          },
+          "attack_path_any_alarm": {
+            "equal_weight_scenario_mean": 1.0,
+            "scenario_means": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "raw_first_alarm_delay_censored60": {
+            "equal_weight_scenario_mean": 0.2529296875,
+            "scenario_means": [
+              0.388671875,
+              0.35546875,
+              0.19140625,
+              0.205078125,
+              0.197265625,
+              0.1796875
+            ]
+          },
+          "eligible_first_alarm_delay_from_onset": {
+            "equal_weight_scenario_mean": 7.0,
+            "scenario_means": [
+              7.0,
+              7.0,
+              7.0,
+              7.0,
+              7.0,
+              7.0
+            ]
+          },
+          "drop_fraction_attack": {
+            "equal_weight_scenario_mean": 0.6631618923611111,
+            "scenario_means": [
+              0.6888346354166667,
+              0.6859320746527777,
+              0.6368272569444444,
+              0.6408637152777777,
+              0.6619574652777778,
+              0.6645562065972221
+            ]
+          }
+        },
+        "neg_boundary": {
+          "network_post20": {
+            "equal_weight_scenario_mean": 0.06410721475681545,
+            "scenario_means": [
+              0.0642140678751954,
+              0.06404204706661676,
+              0.06414079373063583,
+              0.06399976551849128,
+              0.06417671422311641,
+              0.06406990012683697
+            ]
+          },
+          "affected_post20": {
+            "equal_weight_scenario_mean": 0.0933593066826388,
+            "scenario_means": [
+              0.09399881527805953,
+              0.093071724062946,
+              0.09316358870182517,
+              0.0931159003674921,
+              0.09341808278869895,
+              0.09338772889681099
+            ]
+          },
+          "network_attack": {
+            "equal_weight_scenario_mean": 0.06930008403600295,
+            "scenario_means": [
+              0.0694134817605033,
+              0.06912667336288164,
+              0.06936976951846774,
+              0.06920407248570973,
+              0.06943022567056734,
+              0.06925628141788798
+            ]
+          },
+          "network_postattack": {
+            "equal_weight_scenario_mean": 0.05959656389289755,
+            "scenario_means": [
+              0.059711711866354385,
+              0.0593207883295471,
+              0.05963293880742494,
+              0.05951070796785109,
+              0.059679636978006816,
+              0.05972359940820099
+            ]
+          },
+          "eligible_link_time_alarm_fraction": {
+            "equal_weight_scenario_mean": 0.688793894129979,
+            "scenario_means": [
+              0.7240873132861635,
+              0.723141460298742,
+              0.6577179147012578,
+              0.6585593553459119,
+              0.6853871855345912,
+              0.6838701356132075
+            ]
+          },
+          "attack_path_any_alarm": {
+            "equal_weight_scenario_mean": 1.0,
+            "scenario_means": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "raw_first_alarm_delay_censored60": {
+            "equal_weight_scenario_mean": 0.2490234375,
+            "scenario_means": [
+              0.376953125,
+              0.3515625,
+              0.185546875,
+              0.203125,
+              0.197265625,
+              0.1796875
+            ]
+          },
+          "eligible_first_alarm_delay_from_onset": {
+            "equal_weight_scenario_mean": 7.0,
+            "scenario_means": [
+              7.0,
+              7.0,
+              7.0,
+              7.0,
+              7.0,
+              7.0
+            ]
+          },
+          "drop_fraction_attack": {
+            "equal_weight_scenario_mean": 0.6961832682291668,
+            "scenario_means": [
+              0.7215766059027777,
+              0.7206922743055555,
+              0.671701388888889,
+              0.6720377604166667,
+              0.6953070746527779,
+              0.6957845052083333
+            ]
+          }
+        },
+        "healthy_fwer": {
+          "count": 34,
+          "paths": 512,
+          "fraction": 0.06640625,
+          "exact_interval": [
+            0.04642313523921855,
+            0.09156269001226193
+          ]
+        }
+      }
+    }
+  },
+  "legacy_two_scenario_replay": {
+    "status": "PASS",
+    "models": [
+      "unstable",
+      "stable"
+    ],
+    "scenario": "rot0_onset50",
+    "paths_per_model_policy": 512,
+    "no_new_physical_paths": true,
+    "max_plugin_score_independent_of_gate_mode": 0.0,
+    "rows": [
+      {
+        "model": "unstable",
+        "scenario": "unstable__rot+0__onset50",
+        "watermark": "iid",
+        "theta": 0.0,
+        "seed_namespaces": {
+          "physical": 2727120705,
+          "radial": 2746120705,
+          "initial": 2766120705,
+          "quantile_and_sign": 2786120705
+        },
+        "frozen_threshold": 60.59312705920252,
+        "archived_metric_max_abs_differences": {
+          "network_post20": 0.0,
+          "affected_post20": 0.0,
+          "network_attack": 0.0,
+          "affected_attack": 0.0,
+          "network_postattack": 0.0,
+          "affected_postattack": 0.0,
+          "eligible_link_time_alarm_fraction": 0.0,
+          "attack_path_any_alarm": 0.0,
+          "raw_first_alarm_delay_censored60": 0.0,
+          "eligible_first_alarm_delay_from_onset": 0.0,
+          "drop_fraction_attack": 0.0
+        },
+        "score_gate_mode_invariance_max_abs_difference": 0.0,
+        "first_three_reports_any_alarm_per_link_probability": 0.3212890625,
+        "first_three_attacked_report_link_time_alarm_fraction": 0.17154947916666666,
+        "first_three_reports_any_link_per_path_probability": 0.896484375
+      },
+      {
+        "model": "unstable",
+        "scenario": "unstable__rot+0__onset50",
+        "watermark": "neg_boundary",
+        "theta": -1.3152369768257723,
+        "seed_namespaces": {
+          "physical": 2727120705,
+          "radial": 2746120705,
+          "initial": 2766120705,
+          "quantile_and_sign": 2786120705
+        },
+        "frozen_threshold": 60.59312705920252,
+        "archived_metric_max_abs_differences": {
+          "network_post20": 0.0,
+          "affected_post20": 0.0,
+          "network_attack": 0.0,
+          "affected_attack": 0.0,
+          "network_postattack": 0.0,
+          "affected_postattack": 0.0,
+          "eligible_link_time_alarm_fraction": 0.0,
+          "attack_path_any_alarm": 0.0,
+          "raw_first_alarm_delay_censored60": 0.0,
+          "eligible_first_alarm_delay_from_onset": 0.0,
+          "drop_fraction_attack": 0.0
+        },
+        "score_gate_mode_invariance_max_abs_difference": 0.0,
+        "first_three_reports_any_alarm_per_link_probability": 0.3356119791666667,
+        "first_three_attacked_report_link_time_alarm_fraction": 0.1775173611111111,
+        "first_three_reports_any_link_per_path_probability": 0.90625
+      },
+      {
+        "model": "stable",
+        "scenario": "stable__rot+0__onset50",
+        "watermark": "iid",
+        "theta": 0.0,
+        "seed_namespaces": {
+          "physical": 2733120705,
+          "radial": 2752120705,
+          "initial": 2772120705,
+          "quantile_and_sign": 2792120705
+        },
+        "frozen_threshold": 60.08224381704443,
+        "archived_metric_max_abs_differences": {
+          "network_post20": 0.0,
+          "affected_post20": 0.0,
+          "network_attack": 0.0,
+          "affected_attack": 0.0,
+          "network_postattack": 0.0,
+          "affected_postattack": 0.0,
+          "eligible_link_time_alarm_fraction": 0.0,
+          "attack_path_any_alarm": 0.0,
+          "raw_first_alarm_delay_censored60": 0.0,
+          "eligible_first_alarm_delay_from_onset": 0.0,
+          "drop_fraction_attack": 0.0
+        },
+        "score_gate_mode_invariance_max_abs_difference": 0.0,
+        "first_three_reports_any_alarm_per_link_probability": 0.6604817708333334,
+        "first_three_attacked_report_link_time_alarm_fraction": 0.4168836805555556,
+        "first_three_reports_any_link_per_path_probability": 1.0
+      },
+      {
+        "model": "stable",
+        "scenario": "stable__rot+0__onset50",
+        "watermark": "neg_boundary",
+        "theta": -1.3152369768257723,
+        "seed_namespaces": {
+          "physical": 2733120705,
+          "radial": 2752120705,
+          "initial": 2772120705,
+          "quantile_and_sign": 2792120705
+        },
+        "frozen_threshold": 60.08224381704443,
+        "archived_metric_max_abs_differences": {
+          "network_post20": 0.0,
+          "affected_post20": 0.0,
+          "network_attack": 0.0,
+          "affected_attack": 0.0,
+          "network_postattack": 0.0,
+          "affected_postattack": 0.0,
+          "eligible_link_time_alarm_fraction": 0.0,
+          "attack_path_any_alarm": 0.0,
+          "raw_first_alarm_delay_censored60": 0.0,
+          "eligible_first_alarm_delay_from_onset": 0.0,
+          "drop_fraction_attack": 0.0
+        },
+        "score_gate_mode_invariance_max_abs_difference": 0.0,
+        "first_three_reports_any_alarm_per_link_probability": 0.6813151041666666,
+        "first_three_attacked_report_link_time_alarm_fraction": 0.4278428819444444,
+        "first_three_reports_any_link_per_path_probability": 1.0
+      }
+    ]
+  },
+  "scope": "regression only; old V3 paths are excluded from all new inference"
+}

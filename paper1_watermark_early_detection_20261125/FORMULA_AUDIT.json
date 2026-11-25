@@ -1,0 +1,76 @@
+{
+  "status": "PASS_INDEPENDENT_FORMULA_AUDIT",
+  "registration_status": "registered before new paths",
+  "source_reference": "8953e1dd9a5e2535ead2698acb6f345a85d4f532",
+  "watermark_generator_sha256": "e3c3af17fed3a6afb2c71aa8a33ede942ba80796b7b34862ec6768bc59068f7a",
+  "mean_adjacent_information_budget_nats": 0.1,
+  "regular_theta_t": -1.0149016255359247,
+  "strong_theta_2t": -2.0298032510718493,
+  "conditional_information_nats": {
+    "regular": 0.0614099584652779,
+    "strong": 0.21577012460416584,
+    "fixed_negative_baseline": 0.09999999999981524,
+    "radial_rule_mean": 0.09999999999999988,
+    "hidden_random_bin_actual_mi": 0.09049085695547249
+  },
+  "strong_pair_probability": 0.25,
+  "analytic_E_S0S1_indicator_strong": 0.7166868437595231,
+  "analytic_two_packet_expected_squared_distance": {
+    "iid": 1.5,
+    "fixed_negative": 1.656113545669457,
+    "radial_bin_negative": 1.6966766670114892,
+    "relative_candidate_increase_over_fixed_negative": 0.024492959101808154
+  },
+  "monte_carlo": {
+    "iid": {
+      "mean": 1.5009534116225434,
+      "standard_error": 0.006682824894947353
+    },
+    "fixed_negative": {
+      "mean": 1.6575799245535732,
+      "standard_error": 0.007004931498822091
+    },
+    "radial_bin_negative": {
+      "mean": 1.6985109462044043,
+      "standard_error": 0.007092371852245464
+    },
+    "random_bin_hidden_label": {
+      "mean": 1.6502409678727388,
+      "standard_error": 0.007002086295631603
+    },
+    "radial_edge_marginal": {
+      "S_mean": 1.001321765296723,
+      "S_variance": 1.00066932740501,
+      "beta_covariance": [
+        [
+          0.5011439276174632,
+          -0.0004219006541656325
+        ],
+        [
+          -0.0004219006541656325,
+          0.5001792692043071
+        ]
+      ],
+      "direction_mean": [
+        5.03019410904059e-05,
+        0.0008813791413045853
+      ],
+      "M_mean": [
+        [
+          1.0011429612309528,
+          -0.0004217611917863976
+        ],
+        [
+          -0.0004217611917863976,
+          1.0001788040657902
+        ]
+      ]
+    },
+    "strong_pair_frequency": 0.249908,
+    "conditional_angle_moment_regular": -0.24350996408532358,
+    "conditional_angle_moment_strong": -0.4528867865382139
+  },
+  "monte_carlo_count": 250000,
+  "monte_carlo_seed": 345792,
+  "caveat": "The two-packet expectation is a proxy, not a detector-power or closed-loop MSE guarantee."
+}

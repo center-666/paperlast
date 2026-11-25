@@ -1,0 +1,94 @@
+{
+  "title": "Temporal watermark information for early link detection under the frozen 50-node common-G estimator",
+  "status": "registered_before_new_development_paths",
+  "registration_date": "2026-11-25",
+  "frozen_baseline_commit": "8953e1dd9a5e2535ead2698acb6f345a85d4f532",
+  "work_branch": "watermark-early-detection-20261125",
+  "scope": "first paper only; two-dimensional messages, 50-node common-G estimator, original six monitored directed links",
+  "legacy_evidence": {
+    "v3_status": "read-only historical exploratory selection and independent test, not a new confirmation",
+    "historical_locked_theta": -1.3152369768257723,
+    "historical_iid_lock": "untouched",
+    "historical_attack_paths_reused_for_new_inference": false,
+    "historical_paths_purpose": "implementation regression only"
+  },
+  "phase0_replay": {
+    "models": ["unstable", "stable"],
+    "scenarios": ["angle=0,onset=50"],
+    "policies": ["iid", "neg_boundary"],
+    "paths_per_model_policy": 512,
+    "purpose": "independently reconstruct source summary fields from recorded V3 path seeds and compare the paired replay to the archived arrays"
+  },
+  "stage1_attribution_development": {
+    "seed_namespace": [20261125, 8317, 1],
+    "models": ["unstable", "stable"],
+    "attack_angles_degrees": [0, -45, 45],
+    "attack_onsets": [50, 65],
+    "attack_duration": 60,
+    "paths_per_scenario": 256,
+    "healthy_calibration_paths_per_model_score_family": 512,
+    "healthy_holdout_paths_per_model": 512,
+    "score_families": [
+      "plugin_kl",
+      "matched_glrt_iid",
+      "matched_glrt_negative",
+      "mismatched_glrt_iid_key",
+      "mismatched_glrt_negative_key"
+    ],
+    "method_arms": {
+      "A": "iid watermark with frozen plugin-KL score",
+      "B": "fixed negative watermark with frozen plugin-KL score",
+      "C": "iid watermark with causal matched-key subspace GLRT",
+      "D": "fixed negative watermark with causal matched-key subspace GLRT",
+      "E_iid": "iid watermark with an independent same-law GLRT key schedule",
+      "E_negative": "fixed negative watermark with an independent same-law GLRT key schedule"
+    },
+    "common_decision_times": "k>=7, the first time a complete eight-report/four-residual buffer exists",
+    "threshold": "per-model and score-family path-max calibration; max over all six monitored links and k=7..149; strict score>threshold; finite-sample rank ceil((n+1)*0.95)",
+    "primary_endpoint": "For each path and each of the six truly affected links, whether any alarm occurs at onset,onset+1,onset+2. Average six link indicators within path, then equally across paths and the 12 scenarios.",
+    "primary_interaction": "(D-C)-(B-A) in paired early per-link detection probability",
+    "other_registered_contrasts": ["B-A", "D-C", "C-A", "D-B", "D-E_negative", "C-E_iid"],
+    "paired_unit": "whole physical path; keep six links, time, methods, watermark streams, and within-path dependence intact",
+    "windows": {
+      "first_1_attacked_report": "[onset,onset+1)",
+      "first_2_attacked_reports": "[onset,onset+2)",
+      "first_3_attacked_reports_primary": "[onset,onset+3)",
+      "first_5_attacked_reports": "[onset,onset+5)",
+      "first_8_attacked_reports": "[onset,onset+8)",
+      "full_attack": "[onset,onset+60)",
+      "post_attack": "[onset+60,150)"
+    },
+    "report": ["per-link first alarm delay with no-alarm censoring", "any-link first alarm", "pre-onset alarm paths", "eligible TPR", "affected-node MSE", "network MSE", "runtime"]
+  },
+  "stage1_independent_confirmation": {
+    "seed_namespace": [20261125, 8317, 2],
+    "paths_per_scenario": 512,
+    "healthy_calibration_paths_per_model_score_family": 4096,
+    "healthy_holdout_paths_per_model": 4096,
+    "go_rule": "Run only after development. Confirm the registered interaction and component contrasts on fresh path streams using the same configurations, thresholds, and score code. Do not tune on confirmation paths.",
+    "confirmation_statistics": "scenario-stratified whole-path paired bootstrap, 10000 resamples, seed namespace [20261125,8317,2,9001]"
+  },
+  "stage2_radial_bin_design": {
+    "regular_theta_t": -1.014901626,
+    "strong_theta_2t": -2.029803251,
+    "strong_rule": "Use 2t for a direction transition only if both adjacent S values exceed ln(2); otherwise use t.",
+    "radial_law": "S=||beta||^2 ~ Exp(1), independent across time and source",
+    "baseline": "fixed negative theta=-1.3152369768257723",
+    "control": "same radial bins, assign strong theta independently with probability 1/4; score the hidden-label mixture using its actual kernel law",
+    "budget": "mean adjacent mutual information, not conditional worst-case information; verify both conditional values separately",
+    "proxy_gate": "Proceed from the 250000-pair integration/Monte-Carlo audit to development only if the lower 10th percentile of candidate early-window whitened energy does not fall below the fixed-negative baseline in the registered scenario summaries. Regardless of this gate, report the two-tap mean and lower-tail results.",
+    "development_seed_namespace": [20261125, 8317, 3],
+    "development_paths_per_scenario": 256,
+    "confirmation_seed_namespace": [20261125, 8317, 4],
+    "confirmation_paths_per_scenario": 512,
+    "primary_confirmatory_endpoint_if_reached": "radial-bin minus fixed-negative early-three-attacked-report per-path affected-link detection-rate difference; 1 percentage point is the registered practical-value reference",
+    "closed_loop_claim": "requires separate paired affected-node/network MSE and healthy-risk results; detection improvement alone is not an estimation benefit"
+  },
+  "seed_separation": {
+    "smoke_namespace": [20261125, 8317, 99],
+    "old_v3_development_seed": 2026120302,
+    "old_v3_final_seed": 2026120705,
+    "old_v3_replay": "reconstruct only from its recorded namespaces; never used in new estimates"
+  },
+  "claim_scope": "all new path results are development or independent confirmation for the fixed six-link support; no unknown-support or cryptographic-secrecy claim; GLRT is a known-model comparator rather than a claimed novel detector"
+}
