@@ -1,0 +1,2853 @@
+{
+  "status": "posthoc_D2_B_mechanism_audit",
+  "execution_commit": "ac4d58c4ccac69fb101ab40baa7d9a06e3bffdf2",
+  "protocol_commit": "af279ba71b0edbdc10131f9318338ebd2599a119",
+  "B_RUN_sha256": "167bf7d21b56ff3398ed213bb3b247ce516f10d6fce63fa4c3697e643259357e",
+  "mechanism_audit_source_sha256": "ce2d019cf6179a3c077c617c1640266d5fd14dd5f9fb6e8c29bcf1a4300d2620",
+  "claim_scope": "descriptive_development_screening_only",
+  "q1_deterministic_regression": {
+    "status": "PASS",
+    "scene_count": 12,
+    "smoke_paths_per_scene": 2,
+    "seed_namespace": [
+      20261124,
+      4401,
+      99
+    ],
+    "formal_D2B_experiment_paths_generated": false,
+    "max_full_accept_implementation_difference": 0.0,
+    "max_literal_vs_optimized_update_difference": 1.0419221041502169e-10,
+    "max_frozen_B1_regression_difference": 1.3311352020650702e-11
+  },
+  "target_alarm_events_in_attack_windows": 220526,
+  "strategy_action_differences": {
+    "RH_dynamic_minus_R1": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "RH_dynamic_minus_RH_static": {
+      "count": 0,
+      "rate": 0.0
+    },
+    "RH_dynamic_minus_RH_scalar": {
+      "count": 0,
+      "rate": 0.0
+    }
+  },
+  "alarm_action_counts_by_policy_and_q": [
+    [
+      217579,
+      0,
+      0,
+      0,
+      2947,
+      0,
+      0
+    ],
+    [
+      217579,
+      0,
+      0,
+      0,
+      2947,
+      0,
+      0
+    ],
+    [
+      217579,
+      0,
+      0,
+      0,
+      2947,
+      0,
+      0
+    ],
+    [
+      217579,
+      0,
+      0,
+      0,
+      2947,
+      0,
+      0
+    ]
+  ],
+  "M7_legal_action_set_size_counts_on_alarm": [
+    0,
+    0,
+    0,
+    2947,
+    0,
+    0,
+    0,
+    217579
+  ],
+  "dynamic_to_scalar_relative_fit_residual_median_equal_scene": 0.09050716019367461,
+  "dynamic_to_scalar_relative_fit_residual_p95_max_scene": 0.4604019348713339,
+  "dynamic_vs_static_pairwise_rank_discordance_rate_equal_scene": 0.012625810761388993,
+  "dynamic_vs_static_health_only_argmin_disagreement_rate_equal_scene": 0.0,
+  "risk_only_nonzero_minus_q0_UCB_margin_mean_equal_scene": 3.235084322211805,
+  "risk_only_nonzero_minus_q0_UCB_margin_min_scene": 0.44737316401203847,
+  "scenes": {
+    "0": {
+      "scene": 0,
+      "spec": [
+        "unstable",
+        "U",
+        35,
+        "negative"
+      ],
+      "M7_graph_sha256": "366c07efd881e3398c45c05ea8b71914ed60ff8e41fc7622327485369ff70523",
+      "attack_fixture_audit": {
+        "continuous": {
+          "target_alarm_events": 10404,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            913,
+            0,
+            0,
+            0,
+            9491
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              9491,
+              0,
+              0,
+              0,
+              913,
+              0,
+              0
+            ],
+            [
+              9491,
+              0,
+              0,
+              0,
+              913,
+              0,
+              0
+            ],
+            [
+              9491,
+              0,
+              0,
+              0,
+              913,
+              0,
+              0
+            ],
+            [
+              9491,
+              0,
+              0,
+              0,
+              913,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 9491,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 9.84366611306434,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 7358,
+          "dynamic_vs_static_pairwise_rank_comparisons": 202050,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.34388646370728804,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.47065283667687263,
+          "scalar_zero_denominator_events": 0
+        },
+        "burst": {
+          "target_alarm_events": 8417,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            584,
+            0,
+            0,
+            0,
+            7833
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              7833,
+              0,
+              0,
+              0,
+              584,
+              0,
+              0
+            ],
+            [
+              7833,
+              0,
+              0,
+              0,
+              584,
+              0,
+              0
+            ],
+            [
+              7833,
+              0,
+              0,
+              0,
+              584,
+              0,
+              0
+            ],
+            [
+              7833,
+              0,
+              0,
+              0,
+              584,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 7833,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 10.036154033153991,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 5311,
+          "dynamic_vs_static_pairwise_rank_comparisons": 166245,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.30229606791432884,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.43101788234772903,
+          "scalar_zero_denominator_events": 0
+        }
+      },
+      "target_alarm_events": 18821,
+      "strategy_action_differences": {
+        "RH_dynamic_minus_R1": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_static": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_scalar": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "M7_legal_action_set_size_counts_on_alarm": [
+        0,
+        0,
+        0,
+        1497,
+        0,
+        0,
+        0,
+        17324
+      ],
+      "alarm_action_counts_by_policy_and_q": [
+        [
+          17324,
+          0,
+          0,
+          0,
+          1497,
+          0,
+          0
+        ],
+        [
+          17324,
+          0,
+          0,
+          0,
+          1497,
+          0,
+          0
+        ],
+        [
+          17324,
+          0,
+          0,
+          0,
+          1497,
+          0,
+          0
+        ],
+        [
+          17324,
+          0,
+          0,
+          0,
+          1497,
+          0,
+          0
+        ]
+      ],
+      "dynamic_to_scalar_relative_fit_residual_median": 0.33988791798161355,
+      "dynamic_to_scalar_relative_fit_residual_p95": 0.4573629720931313,
+      "dynamic_vs_static_pairwise_rank_discordance_rate": 0.03439905510528245,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreements": 0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreement_rate": 0.0,
+      "dynamic_vs_static_pairwise_rank_comparisons": 368295,
+      "scalar_zero_denominator_events": 0,
+      "risk_only_nonzero_minus_q0_UCB_margin_mean": 9.930699008357706,
+      "risk_only_nonzero_minus_q0_UCB_margin_min": 5.100756152232781
+    },
+    "1": {
+      "scene": 1,
+      "spec": [
+        "unstable",
+        "U",
+        35,
+        "iid"
+      ],
+      "M7_graph_sha256": "366c07efd881e3398c45c05ea8b71914ed60ff8e41fc7622327485369ff70523",
+      "attack_fixture_audit": {
+        "continuous": {
+          "target_alarm_events": 10479,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            896,
+            0,
+            0,
+            0,
+            9583
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              9583,
+              0,
+              0,
+              0,
+              896,
+              0,
+              0
+            ],
+            [
+              9583,
+              0,
+              0,
+              0,
+              896,
+              0,
+              0
+            ],
+            [
+              9583,
+              0,
+              0,
+              0,
+              896,
+              0,
+              0
+            ],
+            [
+              9583,
+              0,
+              0,
+              0,
+              896,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 9583,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 9.978186680345514,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 7371,
+          "dynamic_vs_static_pairwise_rank_comparisons": 203931,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.34369395528143926,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.47067031732125186,
+          "scalar_zero_denominator_events": 0
+        },
+        "burst": {
+          "target_alarm_events": 8329,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            554,
+            0,
+            0,
+            0,
+            7775
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              7775,
+              0,
+              0,
+              0,
+              554,
+              0,
+              0
+            ],
+            [
+              7775,
+              0,
+              0,
+              0,
+              554,
+              0,
+              0
+            ],
+            [
+              7775,
+              0,
+              0,
+              0,
+              554,
+              0,
+              0
+            ],
+            [
+              7775,
+              0,
+              0,
+              0,
+              554,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 7775,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 10.48479679171331,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 5298,
+          "dynamic_vs_static_pairwise_rank_comparisons": 164937,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.30229606791432884,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.4311274917357782,
+          "scalar_zero_denominator_events": 0
+        }
+      },
+      "target_alarm_events": 18808,
+      "strategy_action_differences": {
+        "RH_dynamic_minus_R1": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_static": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_scalar": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "M7_legal_action_set_size_counts_on_alarm": [
+        0,
+        0,
+        0,
+        1450,
+        0,
+        0,
+        0,
+        17358
+      ],
+      "alarm_action_counts_by_policy_and_q": [
+        [
+          17358,
+          0,
+          0,
+          0,
+          1450,
+          0,
+          0
+        ],
+        [
+          17358,
+          0,
+          0,
+          0,
+          1450,
+          0,
+          0
+        ],
+        [
+          17358,
+          0,
+          0,
+          0,
+          1450,
+          0,
+          0
+        ],
+        [
+          17358,
+          0,
+          0,
+          0,
+          1450,
+          0,
+          0
+        ]
+      ],
+      "dynamic_to_scalar_relative_fit_residual_median": 0.3401486183539639,
+      "dynamic_to_scalar_relative_fit_residual_p95": 0.4604019348713339,
+      "dynamic_vs_static_pairwise_rank_discordance_rate": 0.03434561957122873,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreements": 0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreement_rate": 0.0,
+      "dynamic_vs_static_pairwise_rank_comparisons": 368868,
+      "scalar_zero_denominator_events": 0,
+      "risk_only_nonzero_minus_q0_UCB_margin_mean": 10.205107616852292,
+      "risk_only_nonzero_minus_q0_UCB_margin_min": 5.352661055961176
+    },
+    "2": {
+      "scene": 2,
+      "spec": [
+        "unstable",
+        "R",
+        35,
+        "negative"
+      ],
+      "M7_graph_sha256": "00c25907a1c2887e57f57b70bfae3c405418407edcd71aed96fa1f1dd8ed56ca",
+      "attack_fixture_audit": {
+        "continuous": {
+          "target_alarm_events": 11026,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            11026
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              11026,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              11026,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              11026,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              11026,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 11026,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.0991440228648313,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 231546,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.0029687880348370716,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.0029691852309333914,
+          "scalar_zero_denominator_events": 0
+        },
+        "burst": {
+          "target_alarm_events": 8556,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8556
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              8556,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8556,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8556,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8556,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 8556,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1855893946147344,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 179676,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.0029657035031843636,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.0029691852199952885,
+          "scalar_zero_denominator_events": 0
+        }
+      },
+      "target_alarm_events": 19582,
+      "strategy_action_differences": {
+        "RH_dynamic_minus_R1": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_static": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_scalar": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "M7_legal_action_set_size_counts_on_alarm": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        19582
+      ],
+      "alarm_action_counts_by_policy_and_q": [
+        [
+          19582,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          19582,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          19582,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          19582,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dynamic_to_scalar_relative_fit_residual_median": 0.0029658387302137815,
+      "dynamic_to_scalar_relative_fit_residual_p95": 0.0029691852309333914,
+      "dynamic_vs_static_pairwise_rank_discordance_rate": 0.0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreements": 0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreement_rate": 0.0,
+      "dynamic_vs_static_pairwise_rank_comparisons": 411222,
+      "scalar_zero_denominator_events": 0,
+      "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1369147613334334,
+      "risk_only_nonzero_minus_q0_UCB_margin_min": 0.5552723554667957
+    },
+    "3": {
+      "scene": 3,
+      "spec": [
+        "unstable",
+        "R",
+        35,
+        "iid"
+      ],
+      "M7_graph_sha256": "00c25907a1c2887e57f57b70bfae3c405418407edcd71aed96fa1f1dd8ed56ca",
+      "attack_fixture_audit": {
+        "continuous": {
+          "target_alarm_events": 10470,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10470
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              10470,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10470,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10470,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10470,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 10470,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1865558334800888,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 219870,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.002968771568647916,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.0029691852309333914,
+          "scalar_zero_denominator_events": 0
+        },
+        "burst": {
+          "target_alarm_events": 8126,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8126
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              8126,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8126,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8126,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8126,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 8126,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.2803313916195143,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 170646,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.0029657035031843636,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.0029691852199952885,
+          "scalar_zero_denominator_events": 0
+        }
+      },
+      "target_alarm_events": 18596,
+      "strategy_action_differences": {
+        "RH_dynamic_minus_R1": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_static": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_scalar": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "M7_legal_action_set_size_counts_on_alarm": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        18596
+      ],
+      "alarm_action_counts_by_policy_and_q": [
+        [
+          18596,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          18596,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          18596,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          18596,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dynamic_to_scalar_relative_fit_residual_median": 0.002965765596427676,
+      "dynamic_to_scalar_relative_fit_residual_p95": 0.0029691852309333914,
+      "dynamic_vs_static_pairwise_rank_discordance_rate": 0.0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreements": 0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreement_rate": 0.0,
+      "dynamic_vs_static_pairwise_rank_comparisons": 390516,
+      "scalar_zero_denominator_events": 0,
+      "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.227533473049941,
+      "risk_only_nonzero_minus_q0_UCB_margin_min": 0.6145503310286589
+    },
+    "4": {
+      "scene": 4,
+      "spec": [
+        "unstable",
+        "R",
+        1,
+        "negative"
+      ],
+      "M7_graph_sha256": "4398ffca87d5cdab7d4c6d6c7f776d3d077a328981c6ede1d45384c04fbfe398",
+      "attack_fixture_audit": {
+        "continuous": {
+          "target_alarm_events": 10648,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10648
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              10648,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10648,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10648,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10648,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 10648,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1039896606473554,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 223608,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.004229961064557355,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.004231792855844408,
+          "scalar_zero_denominator_events": 0
+        },
+        "burst": {
+          "target_alarm_events": 8149,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8149
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              8149,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8149,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8149,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8149,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 8149,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1853733023390254,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 171129,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.004220385253526479,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.004231792639209846,
+          "scalar_zero_denominator_events": 0
+        }
+      },
+      "target_alarm_events": 18797,
+      "strategy_action_differences": {
+        "RH_dynamic_minus_R1": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_static": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_scalar": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "M7_legal_action_set_size_counts_on_alarm": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        18797
+      ],
+      "alarm_action_counts_by_policy_and_q": [
+        [
+          18797,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          18797,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          18797,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          18797,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dynamic_to_scalar_relative_fit_residual_median": 0.004220411000909911,
+      "dynamic_to_scalar_relative_fit_residual_p95": 0.004231792855817919,
+      "dynamic_vs_static_pairwise_rank_discordance_rate": 0.0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreements": 0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreement_rate": 0.0,
+      "dynamic_vs_static_pairwise_rank_comparisons": 394737,
+      "scalar_zero_denominator_events": 0,
+      "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1392716362895015,
+      "risk_only_nonzero_minus_q0_UCB_margin_min": 0.5169392963527094
+    },
+    "5": {
+      "scene": 5,
+      "spec": [
+        "unstable",
+        "R",
+        1,
+        "iid"
+      ],
+      "M7_graph_sha256": "4398ffca87d5cdab7d4c6d6c7f776d3d077a328981c6ede1d45384c04fbfe398",
+      "attack_fixture_audit": {
+        "continuous": {
+          "target_alarm_events": 9787,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9787
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              9787,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              9787,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              9787,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              9787,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 9787,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1722186769312373,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 205527,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.004229960839878345,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.004231792855844408,
+          "scalar_zero_denominator_events": 0
+        },
+        "burst": {
+          "target_alarm_events": 7672,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            7672
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              7672,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7672,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7672,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7672,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 7672,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.3001053322703966,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 161112,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.004220385253526479,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.004231792628419944,
+          "scalar_zero_denominator_events": 0
+        }
+      },
+      "target_alarm_events": 17459,
+      "strategy_action_differences": {
+        "RH_dynamic_minus_R1": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_static": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_scalar": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "M7_legal_action_set_size_counts_on_alarm": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17459
+      ],
+      "alarm_action_counts_by_policy_and_q": [
+        [
+          17459,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17459,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17459,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17459,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dynamic_to_scalar_relative_fit_residual_median": 0.004220386596663858,
+      "dynamic_to_scalar_relative_fit_residual_p95": 0.0042317928558158,
+      "dynamic_vs_static_pairwise_rank_discordance_rate": 0.0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreements": 0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreement_rate": 0.0,
+      "dynamic_vs_static_pairwise_rank_comparisons": 366639,
+      "scalar_zero_denominator_events": 0,
+      "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.2284158485769232,
+      "risk_only_nonzero_minus_q0_UCB_margin_min": 0.5598035396609519
+    },
+    "6": {
+      "scene": 6,
+      "spec": [
+        "stable",
+        "U",
+        35,
+        "negative"
+      ],
+      "M7_graph_sha256": "bbeb4096986c01c50999cce22af702361b74a1053acec62652824ce54e37bc80",
+      "attack_fixture_audit": {
+        "continuous": {
+          "target_alarm_events": 10672,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10672
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              10672,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10672,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10672,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10672,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 10672,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 4.6293595981001445,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 9567,
+          "dynamic_vs_static_pairwise_rank_comparisons": 224112,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.20519058184224923,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.2523872607289182,
+          "scalar_zero_denominator_events": 0
+        },
+        "burst": {
+          "target_alarm_events": 8398,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8398
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              8398,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8398,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8398,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8398,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 8398,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 4.722553343275326,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 7104,
+          "dynamic_vs_static_pairwise_rank_comparisons": 176358,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.17730368100436095,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.23526697272063277,
+          "scalar_zero_denominator_events": 0
+        }
+      },
+      "target_alarm_events": 19070,
+      "strategy_action_differences": {
+        "RH_dynamic_minus_R1": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_static": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_scalar": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "M7_legal_action_set_size_counts_on_alarm": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        19070
+      ],
+      "alarm_action_counts_by_policy_and_q": [
+        [
+          19070,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          19070,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          19070,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          19070,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dynamic_to_scalar_relative_fit_residual_median": 0.19426721215464776,
+      "dynamic_to_scalar_relative_fit_residual_p95": 0.2485906728425062,
+      "dynamic_vs_static_pairwise_rank_discordance_rate": 0.04162858641096712,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreements": 0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreement_rate": 0.0,
+      "dynamic_vs_static_pairwise_rank_comparisons": 400470,
+      "scalar_zero_denominator_events": 0,
+      "risk_only_nonzero_minus_q0_UCB_margin_mean": 4.670400031869477,
+      "risk_only_nonzero_minus_q0_UCB_margin_min": 2.3627336300388015
+    },
+    "7": {
+      "scene": 7,
+      "spec": [
+        "stable",
+        "U",
+        35,
+        "iid"
+      ],
+      "M7_graph_sha256": "bbeb4096986c01c50999cce22af702361b74a1053acec62652824ce54e37bc80",
+      "attack_fixture_audit": {
+        "continuous": {
+          "target_alarm_events": 10046,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10046
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              10046,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10046,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10046,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10046,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 10046,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 4.772210000384958,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 8883,
+          "dynamic_vs_static_pairwise_rank_comparisons": 210966,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.19434053500349763,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.24859067278979013,
+          "scalar_zero_denominator_events": 0
+        },
+        "burst": {
+          "target_alarm_events": 7782,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            7782
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              7782,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7782,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7782,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7782,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 7782,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 4.9810450655724585,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 6518,
+          "dynamic_vs_static_pairwise_rank_comparisons": 163422,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.17730080725804592,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.23161285131051715,
+          "scalar_zero_denominator_events": 0
+        }
+      },
+      "target_alarm_events": 17828,
+      "strategy_action_differences": {
+        "RH_dynamic_minus_R1": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_static": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_scalar": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "M7_legal_action_set_size_counts_on_alarm": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17828
+      ],
+      "alarm_action_counts_by_policy_and_q": [
+        [
+          17828,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17828,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17828,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17828,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dynamic_to_scalar_relative_fit_residual_median": 0.18088269848873822,
+      "dynamic_to_scalar_relative_fit_residual_p95": 0.24501208719833792,
+      "dynamic_vs_static_pairwise_rank_discordance_rate": 0.04113646804918961,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreements": 0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreement_rate": 0.0,
+      "dynamic_vs_static_pairwise_rank_comparisons": 374388,
+      "scalar_zero_denominator_events": 0,
+      "risk_only_nonzero_minus_q0_UCB_margin_mean": 4.863367420021996,
+      "risk_only_nonzero_minus_q0_UCB_margin_min": 2.565570583454723
+    },
+    "8": {
+      "scene": 8,
+      "spec": [
+        "stable",
+        "R",
+        35,
+        "negative"
+      ],
+      "M7_graph_sha256": "9d02f176b3806564cf824cfdac1f579c2289e3958fca2d6601f79bd29a2b3a92",
+      "attack_fixture_audit": {
+        "continuous": {
+          "target_alarm_events": 10311,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10311
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              10311,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10311,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10311,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10311,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 10311,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.025413410726396,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 216531,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.0033484892643608974,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.003348820933575724,
+          "scalar_zero_denominator_events": 0
+        },
+        "burst": {
+          "target_alarm_events": 8078,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8078
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              8078,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8078,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8078,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8078,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 8078,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1019637408286271,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 169638,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.00334575636148347,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.0033488208852145832,
+          "scalar_zero_denominator_events": 0
+        }
+      },
+      "target_alarm_events": 18389,
+      "strategy_action_differences": {
+        "RH_dynamic_minus_R1": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_static": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_scalar": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "M7_legal_action_set_size_counts_on_alarm": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        18389
+      ],
+      "alarm_action_counts_by_policy_and_q": [
+        [
+          18389,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          18389,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          18389,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          18389,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dynamic_to_scalar_relative_fit_residual_median": 0.00334576059729889,
+      "dynamic_to_scalar_relative_fit_residual_p95": 0.003348820933575724,
+      "dynamic_vs_static_pairwise_rank_discordance_rate": 0.0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreements": 0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreement_rate": 0.0,
+      "dynamic_vs_static_pairwise_rank_comparisons": 386169,
+      "scalar_zero_denominator_events": 0,
+      "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.0590407730933447,
+      "risk_only_nonzero_minus_q0_UCB_margin_min": 0.46424333705951404
+    },
+    "9": {
+      "scene": 9,
+      "spec": [
+        "stable",
+        "R",
+        35,
+        "iid"
+      ],
+      "M7_graph_sha256": "9d02f176b3806564cf824cfdac1f579c2289e3958fca2d6601f79bd29a2b3a92",
+      "attack_fixture_audit": {
+        "continuous": {
+          "target_alarm_events": 10137,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10137
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              10137,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10137,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10137,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              10137,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 10137,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1184616635287719,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 212877,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.0033484892432856855,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.003348820933575724,
+          "scalar_zero_denominator_events": 0
+        },
+        "burst": {
+          "target_alarm_events": 7849,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            7849
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              7849,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7849,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7849,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7849,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 7849,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.2249437330033417,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 164829,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.00334575636148347,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.0033488209279501076,
+          "scalar_zero_denominator_events": 0
+        }
+      },
+      "target_alarm_events": 17986,
+      "strategy_action_differences": {
+        "RH_dynamic_minus_R1": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_static": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_scalar": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "M7_legal_action_set_size_counts_on_alarm": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17986
+      ],
+      "alarm_action_counts_by_policy_and_q": [
+        [
+          17986,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17986,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17986,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17986,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dynamic_to_scalar_relative_fit_residual_median": 0.0033457565431693793,
+      "dynamic_to_scalar_relative_fit_residual_p95": 0.003348820933573898,
+      "dynamic_vs_static_pairwise_rank_discordance_rate": 0.0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreements": 0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreement_rate": 0.0,
+      "dynamic_vs_static_pairwise_rank_comparisons": 377706,
+      "scalar_zero_denominator_events": 0,
+      "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1649299034545977,
+      "risk_only_nonzero_minus_q0_UCB_margin_min": 0.49051587222139786
+    },
+    "10": {
+      "scene": 10,
+      "spec": [
+        "stable",
+        "R",
+        1,
+        "negative"
+      ],
+      "M7_graph_sha256": "3e86d1ade5072fad97c7a0c9512d76e8dcf3a64ddc6e2cd2914be5ae266fdc2e",
+      "attack_fixture_audit": {
+        "continuous": {
+          "target_alarm_events": 9935,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9935
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              9935,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              9935,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              9935,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              9935,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 9935,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.0325650113951081,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 208635,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.004927452893896472,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.004929182489987419,
+          "scalar_zero_denominator_events": 0
+        },
+        "burst": {
+          "target_alarm_events": 7778,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            7778
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              7778,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7778,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7778,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7778,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 7778,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1114094238265333,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 163338,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.004917777605042974,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.004929181515783124,
+          "scalar_zero_denominator_events": 0
+        }
+      },
+      "target_alarm_events": 17713,
+      "strategy_action_differences": {
+        "RH_dynamic_minus_R1": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_static": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_scalar": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "M7_legal_action_set_size_counts_on_alarm": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17713
+      ],
+      "alarm_action_counts_by_policy_and_q": [
+        [
+          17713,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17713,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17713,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17713,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dynamic_to_scalar_relative_fit_residual_median": 0.004917778626503042,
+      "dynamic_to_scalar_relative_fit_residual_p95": 0.004929182489892544,
+      "dynamic_vs_static_pairwise_rank_discordance_rate": 0.0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreements": 0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreement_rate": 0.0,
+      "dynamic_vs_static_pairwise_rank_comparisons": 371973,
+      "scalar_zero_denominator_events": 0,
+      "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.0671865797286273,
+      "risk_only_nonzero_minus_q0_UCB_margin_min": 0.44737316401203847
+    },
+    "11": {
+      "scene": 11,
+      "spec": [
+        "stable",
+        "R",
+        1,
+        "iid"
+      ],
+      "M7_graph_sha256": "3e86d1ade5072fad97c7a0c9512d76e8dcf3a64ddc6e2cd2914be5ae266fdc2e",
+      "attack_fixture_audit": {
+        "continuous": {
+          "target_alarm_events": 9694,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9694
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              9694,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              9694,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              9694,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              9694,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 9694,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1078157305102818,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 203574,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.004918250876956037,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.004929182489986433,
+          "scalar_zero_denominator_events": 0
+        },
+        "burst": {
+          "target_alarm_events": 7783,
+          "strategy_action_differences": {
+            "RH_dynamic_minus_R1": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_static": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "RH_dynamic_minus_RH_scalar": {
+              "count": 0,
+              "rate": 0.0
+            }
+          },
+          "M7_legal_action_set_size_counts_on_alarm": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            7783
+          ],
+          "alarm_action_counts_by_policy_and_q": [
+            [
+              7783,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7783,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7783,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              7783,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "risk_only_q0_legal_and_nonzero_risk_margin_event_count": 7783,
+          "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.1534654016709696,
+          "dynamic_health_only_vs_static_health_only_argmin_disagreement_count": 0,
+          "dynamic_vs_static_pairwise_rank_discordance_count": 0,
+          "dynamic_vs_static_pairwise_rank_comparisons": 163443,
+          "dynamic_to_scalar_relative_fit_residual_median": 0.0049177776050468676,
+          "dynamic_to_scalar_relative_fit_residual_p95": 0.004929182329799586,
+          "scalar_zero_denominator_events": 0
+        }
+      },
+      "target_alarm_events": 17477,
+      "strategy_action_differences": {
+        "RH_dynamic_minus_R1": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_static": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "RH_dynamic_minus_RH_scalar": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "M7_legal_action_set_size_counts_on_alarm": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        17477
+      ],
+      "alarm_action_counts_by_policy_and_q": [
+        [
+          17477,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17477,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17477,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17477,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "dynamic_to_scalar_relative_fit_residual_median": 0.004917777653945201,
+      "dynamic_to_scalar_relative_fit_residual_p95": 0.004929182489892544,
+      "dynamic_vs_static_pairwise_rank_discordance_rate": 0.0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreements": 0,
+      "dynamic_health_only_vs_static_health_only_argmin_disagreement_rate": 0.0,
+      "dynamic_vs_static_pairwise_rank_comparisons": 367017,
+      "scalar_zero_denominator_events": 0,
+      "risk_only_nonzero_minus_q0_UCB_margin_mean": 1.12814481391382,
+      "risk_only_nonzero_minus_q0_UCB_margin_min": 0.49726061069553273
+    }
+  }
+}

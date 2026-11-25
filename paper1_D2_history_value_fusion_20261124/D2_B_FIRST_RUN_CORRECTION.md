@@ -8,6 +8,8 @@ During post-run code review, the RH-scalar fit was found to compare an absolute 
 
 The first-pass archives and reports are therefore retained as an audit record and must not be used for the RH-dynamic versus RH-scalar mechanism comparison. They are preserved outside the Git worktree at `C:\Users\zhongxin\shixidoc\d2b_correction_archive\first_pass_2144a46`.
 
+The archived first-pass `B_RUN.json` SHA-256 is `5150db2bf767c3b9d0f6b9b5bc0483a5a2475aca2c967306c29cb61ab5688876`. Its `B_ANALYSIS.json` SHA-256 is `bdeae608e02323b1638b60d7b73e9858bfec20f419ffe7c526978a8b6b61c9c6`. The archive manifest includes hashes for all 15 first-pass files.
+
 ## Corrected replay
 
 The corrected runner uses `H_k(q)-H_k(1)` for RH-dynamic's health penalty and for the nonnegative least-squares RH-scalar fit. It also archives both the relative curve and the absolute curve. The q=1 relative penalty is checked in the smoke test.

@@ -10,6 +10,7 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 RUN_DIR = HERE / "b_results_corrected"
 RUN_FILE = RUN_DIR / "B_RUN.json"
+MECHANISM_FILE = RUN_DIR / "B_MECHANISM_AUDIT.json"
 OUTPUT_JSON = RUN_DIR / "B_ANALYSIS.json"
 OUTPUT_MD = RUN_DIR / "B_ANALYSIS.md"
 POLICIES = ("R1", "RH_static", "RH_scalar", "RH_dynamic")
@@ -137,6 +138,25 @@ def bootstrap_attack(attacks: list[dict]) -> tuple[dict, dict]:
             ],
         }
 
+    full_accept_comparisons = {}
+    for index, policy in enumerate(POLICIES):
+        difference = policy_means[index] - full_means
+        bootstrap_difference = bootstrap_policy_means[:, index] - bootstrap_full_means
+        relative = 100.0 * difference / full_means
+        bootstrap_relative = 100.0 * bootstrap_difference / bootstrap_full_means
+        full_accept_comparisons[policy] = {
+            "mean_paired_difference_policy_minus_full_accept": difference.tolist(),
+            "descriptive_path_bootstrap_95pct_interval": [
+                percentile_interval(bootstrap_difference[:, metric])
+                for metric in range(len(METRICS))
+            ],
+            "relative_change_percent_policy_vs_full_accept": relative.tolist(),
+            "relative_change_descriptive_path_bootstrap_95pct_interval": [
+                percentile_interval(bootstrap_relative[:, metric])
+                for metric in range(len(METRICS))
+            ],
+        }
+
     summary = {
         "condition_weighting": "equal across twelve scenes and two attack fixtures",
         "policy_mean_mse": {
@@ -145,6 +165,7 @@ def bootstrap_attack(attacks: list[dict]) -> tuple[dict, dict]:
         },
         "full_accept_diagnostic_mean_mse": full_means.tolist(),
         "paired_comparisons": comparison_results,
+        "paired_comparisons_vs_full_accept": full_accept_comparisons,
     }
     return summary, {
         "policy_means": bootstrap_policy_means,
@@ -259,6 +280,11 @@ def markdown_report(manifest: dict, attacks: dict, health: dict, actions: dict) 
             f"| {policy} | {values[metric_indices[0]]:.6g} | {values[metric_indices[1]]:.6g} | "
             f"{values[metric_indices[2]]:.6g} | {values[metric_indices[3]]:.6g} |"
         )
+    full_accept = attacks["full_accept_diagnostic_mean_mse"]
+    lines.append(
+        f"| Full-accept diagnostic | {full_accept[0]:.6g} | {full_accept[1]:.6g} | "
+        f"{full_accept[3]:.6g} | {full_accept[4]:.6g} |"
+    )
     lines.extend([
         "",
         "## Paired policy differences",
@@ -275,6 +301,52 @@ def markdown_report(manifest: dict, attacks: dict, health: dict, actions: dict) 
             f"| {name} | {window:.6g} [{window_ci[0]:.6g}, {window_ci[1]:.6g}] | "
             f"{recovery:.6g} | {relative:.3f}% |"
         )
+    full_comparison = attacks["paired_comparisons_vs_full_accept"]["RH_dynamic"]
+    full_window_difference = full_comparison[
+        "mean_paired_difference_policy_minus_full_accept"
+    ][0]
+    full_window_interval = full_comparison[
+        "descriptive_path_bootstrap_95pct_interval"
+    ][0]
+    full_recovery_difference = full_comparison[
+        "mean_paired_difference_policy_minus_full_accept"
+    ][1]
+    lines.append(
+        f"\nRH-dynamic minus full-accept attack-window difference: {full_window_difference:.6g} "
+        f"[{full_window_interval[0]:.6g}, {full_window_interval[1]:.6g}]. "
+        f"Recovery-window difference: {full_recovery_difference:.6g}."
+    )
+    lines.extend([
+        "",
+        "## Attack-window contrast by fixture",
+        "",
+        "| Fixture | RH-dynamic minus R1 | RH-dynamic minus RH-scalar |",
+        "|---|---:|---:|",
+    ])
+    for fixture, summary in attacks["by_fixture"].items():
+        risk_difference = summary["paired_comparisons"]["RH_dynamic_minus_R1"][
+            "mean_paired_difference_candidate_minus_reference"][0]
+        scalar_difference = summary["paired_comparisons"]["RH_dynamic_minus_RH_scalar"][
+            "mean_paired_difference_candidate_minus_reference"][0]
+        lines.append(f"| {fixture} | {risk_difference:.6g} | {scalar_difference:.6g} |")
+    lines.extend([
+        "",
+        "## Attack detection and action diagnostics",
+        "",
+        f"Equal-condition path-miss fraction: {attacks['detector_activity']['equal_condition_path_miss_fraction']:.3%}.",
+        f"Equal-condition polluted-tick non-alarm fraction: {attacks['detector_activity']['equal_condition_attack_tick_unalarmed_fraction']:.3%}.",
+        f"Risk-table fallback count: {attacks['detector_activity']['risk_table_fallback_count']}.",
+        "",
+        "## RH-dynamic minus RH-scalar by scene",
+        "",
+        "| Scene | Attack-window difference | Recovery-window difference |",
+        "|---:|---:|---:|",
+    ])
+    for scene, summary in attacks["by_scene"].items():
+        comparison = summary["paired_comparisons"]["RH_dynamic_minus_RH_scalar"][
+            "mean_paired_difference_candidate_minus_reference"
+        ]
+        lines.append(f"| {scene} | {comparison[0]:.6g} | {comparison[1]:.6g} |")
     lines.extend([
         "",
         "## Healthy evaluation",
@@ -301,7 +373,17 @@ def markdown_report(manifest: dict, attacks: dict, health: dict, actions: dict) 
     ])
     for name, value in actions["equal_scene_disagreement_rate"].items():
         lines.append(f"- {name}: {value:.3%} alarm-action disagreement rate.")
+    mechanism = json.loads(MECHANISM_FILE.read_text(encoding="utf-8"))
+    q1_regression = mechanism["q1_deterministic_regression"]
     lines.extend([
+        "",
+        "## Health-cost history diagnostic",
+        "",
+        f"Median relative residual from the RH-scalar fit: {mechanism['dynamic_to_scalar_relative_fit_residual_median_equal_scene']:.3%}.",
+        f"Dynamic-versus-static pairwise health-curve rank discordance: {mechanism['dynamic_vs_static_pairwise_rank_discordance_rate_equal_scene']:.3%}.",
+        f"Dynamic-versus-static health-only argmin disagreement: {mechanism['dynamic_vs_static_health_only_argmin_disagreement_rate_equal_scene']:.3%}.",
+        "The health curves sometimes differ in shape, but neither the health-only minimizer nor the risk-plus-health action changed in this development sample.",
+        f"The q=1 regression passed in all {q1_regression['scene_count']} scenes. Maximum literal-update discrepancy was {q1_regression['max_literal_vs_optimized_update_difference']:.3g}.",
         "",
         "The conditional single-step risk table is an action-ranking proxy. Its values are not closed-loop MSE bounds.",
         "The interval calculations are descriptive development-screening summaries, not multiplicity-adjusted confirmatory inference.",
@@ -314,13 +396,50 @@ def markdown_report(manifest: dict, attacks: dict, health: dict, actions: dict) 
 def main() -> None:
     manifest, attack_records, health_records = load_run()
     attack_summary, _ = bootstrap_attack(attack_records)
+    attack_summary["by_fixture"] = {
+        fixture: bootstrap_attack([
+            record for record in attack_records if record["fixture"] == fixture
+        ])[0]
+        for fixture in ("continuous", "burst")
+    }
+    attack_summary["by_scene"] = {
+        str(scene): bootstrap_attack([
+            record for record in attack_records if record["scene"] == scene
+        ])[0]
+        for scene in manifest["scenes"]
+    }
+    attack_summary["detector_activity"] = {
+        "equal_condition_path_miss_fraction": float(np.mean([
+            record["stored"]["path_miss_fraction"] for record in attack_records
+        ])),
+        "equal_condition_attack_tick_unalarmed_fraction": float(np.mean([
+            record["stored"]["attack_tick_unalarmed_fraction"] for record in attack_records
+        ])),
+        "equal_condition_longest_target_alarm_run_mean": float(np.mean([
+            record["stored"]["longest_target_alarm_run_mean"] for record in attack_records
+        ])),
+        "risk_table_fallback_count": int(sum(
+            sum(record["stored"]["policy_status"]["risk_fallback_counts"])
+            for record in attack_records
+        )),
+        "risk_table_fallback_level_counts": np.sum([
+            record["stored"]["policy_status"]["risk_fallback_level_counts"]
+            for record in attack_records
+        ], axis=0).tolist(),
+        "zero_scalar_denominator_counts": np.sum([
+            record["stored"]["policy_status"]["zero_scalar_denominator_counts"]
+            for record in attack_records
+        ], axis=0).tolist(),
+    }
     health_summary = bootstrap_health(health_records)
     actions = action_metrics(attack_records)
+    mechanism = json.loads(MECHANISM_FILE.read_text(encoding="utf-8"))
     result = {
         "status": "descriptive_D2_B_development_screening_analysis",
         "protocol_commit": manifest["protocol_commit"],
         "execution_commit": manifest["execution_commit"],
         "run_manifest_sha256": sha256(RUN_FILE),
+        "mechanism_audit_sha256": sha256(MECHANISM_FILE),
         "scene_archive_sha256": manifest["output_sha256"],
         "analysis_source_sha256": sha256(Path(__file__)),
         "bootstrap_replicates": BOOTSTRAP_REPLICATES,
@@ -330,6 +449,21 @@ def main() -> None:
         "attack": attack_summary,
         "health": health_summary,
         "action_metrics": actions,
+        "health_cost_history_diagnostic": {
+            key: mechanism[key]
+            for key in (
+                "target_alarm_events_in_attack_windows",
+                "mechanism_audit_source_sha256",
+                "dynamic_to_scalar_relative_fit_residual_median_equal_scene",
+                "dynamic_to_scalar_relative_fit_residual_p95_max_scene",
+                "dynamic_vs_static_pairwise_rank_discordance_rate_equal_scene",
+                "dynamic_vs_static_health_only_argmin_disagreement_rate_equal_scene",
+                "strategy_action_differences",
+                "M7_legal_action_set_size_counts_on_alarm",
+                "risk_only_nonzero_minus_q0_UCB_margin_mean_equal_scene",
+                "q1_deterministic_regression",
+            )
+        },
     }
     atomic_text(OUTPUT_JSON, json.dumps(result, indent=2, ensure_ascii=False, allow_nan=False) + "\n")
     atomic_text(OUTPUT_MD, markdown_report(manifest, attack_summary, health_summary, actions))

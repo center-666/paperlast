@@ -27,6 +27,7 @@ After the runner and analysis source are committed, run:
 
 ```powershell
 python -B b_run.py
+python -B audit_b_mechanism.py
 python -B analyze_b.py
 ```
 
@@ -34,7 +35,7 @@ The runner verifies the D2 protocol commit, D1 commit and archived hashes, the p
 
 The runner writes and hashes one scene archive at a time under `b_results_corrected`. `B_RUN_PROGRESS.json` records completed scenes and hashes so an interrupted run can resume only when all frozen inputs and the run identity still match. Scene archives are written atomically. Existing completed outputs are never overwritten. A full run ends with `B_RUN.json` and twelve `scene_XX.npz` files.
 
-`analyze_b.py` reads only the corrected archived results. It does not generate physical paths. It verifies every scene archive hash, reports equal-scene/equal-fixture means, computes paired whole-path bootstrap intervals for descriptive development comparisons, and writes `B_ANALYSIS.json` and `B_ANALYSIS.md`.
+`audit_b_mechanism.py` reconstructs action histories from the saved actions and checks the risk-table action replay, dynamic-versus-static health-curve shape, RH-scalar fit residual, and M7 legal-action distribution. It also runs two disposable smoke paths in each scene namespace to cross-check q=1 against an independent per-neighbor recursion and frozen B1. These are not D2-B formal experiment paths. `analyze_b.py` verifies every scene archive hash, reports equal-scene/equal-fixture means, computes paired whole-path bootstrap intervals for descriptive development comparisons, and writes `B_ANALYSIS.json` and `B_ANALYSIS.md`.
 
 The frozen protocol lists RH-dynamic minus R1 as the primary comparison and RH-dynamic minus RH-static / RH-scalar as secondary comparisons. RH-dynamic versus RH-scalar is the direct diagnostic for whether history changes candidate-relative health costs beyond a scalar penalty. All B comparisons remain developmental.
 
