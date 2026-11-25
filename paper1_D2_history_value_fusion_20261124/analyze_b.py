@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-RUN_DIR = HERE / "b_results"
+RUN_DIR = HERE / "b_results_corrected"
 RUN_FILE = RUN_DIR / "B_RUN.json"
 OUTPUT_JSON = RUN_DIR / "B_ANALYSIS.json"
 OUTPUT_MD = RUN_DIR / "B_ANALYSIS.md"

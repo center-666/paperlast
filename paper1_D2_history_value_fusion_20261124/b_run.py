@@ -41,7 +41,7 @@ SMOKE_NAMESPACE = (20261124, 4401, 99)
 BOOTSTRAP_REPLICATES = 2048
 BOOTSTRAP_SEED_SUFFIX = 991
 STRATEGIES = ("R1", "RH_static", "RH_scalar", "RH_dynamic")
-OUT = HERE / "b_results"
+OUT = HERE / "b_results_corrected"
 PROGRESS = OUT / "B_RUN_PROGRESS.json"
 GRAPH_DIR = HERE / "experiment_A" / "graphs"
 CONFIG = ROOT / "paper1_common_g50_gain_acceptance_20261121" / "physical_configuration.json"
@@ -570,6 +570,7 @@ def simulate_policy(model, graph, paths, scores, masks, delta, table, threshold)
     risk_fallback_mask = np.zeros((n, 4, T), dtype=np.uint8)
     risk_fallback_levels = np.zeros((n, 4, 3), dtype=np.int32)
     dynamic_cost_history = np.zeros((n, 4, T, len(Q)), dtype=float)
+    dynamic_absolute_history = np.zeros_like(dynamic_cost_history)
     target_sender = int(model.links[6, 1])
     raw = (paths.y.swapaxes(-1, -2) @ model.adjacency.T).swapaxes(-1, -2)
     base_f, base_k, base_g = (model.base[name] for name in ("F", "K", "G"))
@@ -603,11 +604,15 @@ def simulate_policy(model, graph, paths, scores, masks, delta, table, threshold)
         valid = graph[history]
 
         dynamic_by_policy = health_cost_vector(state_cov, affine)
-        dynamic_cost_history[:, :, tick] = dynamic_by_policy
+        dynamic_delta_by_policy = dynamic_by_policy - dynamic_by_policy[:, :, -1:]
+        dynamic_absolute_history[:, :, tick] = dynamic_by_policy
+        dynamic_cost_history[:, :, tick] = dynamic_delta_by_policy
         dynamic_scalar = np.zeros((n, 4))
         for policy in range(4):
             projected_h = np.where(valid[:, policy], hstar[None, :], 0.0)
-            projected_dynamic = np.where(valid[:, policy], dynamic_by_policy[:, policy], 0.0)
+            projected_dynamic = np.where(
+                valid[:, policy], dynamic_delta_by_policy[:, policy], 0.0
+            )
             numerator = np.sum(projected_dynamic * projected_h, axis=1)
             denominator = np.sum(projected_h ** 2, axis=1)
             zero_scalar[:, policy] += (denominator <= 1e-24) & target_alarm
@@ -622,7 +627,9 @@ def simulate_policy(model, graph, paths, scores, masks, delta, table, threshold)
             selected[path, 0] = select_q(risk[path], allowed[0])
             selected[path, 1] = select_q(risk[path] + hstar, allowed[1])
             selected[path, 2] = select_q(risk[path] + dynamic_scalar[path, 2] * hstar, allowed[2])
-            selected[path, 3] = select_q(risk[path] + dynamic_by_policy[path, 3], allowed[3])
+            selected[path, 3] = select_q(
+                risk[path] + dynamic_delta_by_policy[path, 3], allowed[3]
+            )
             fallback = np.isin(cell[path], [9, 10, 11, 12])
             risk_fallback[path] += fallback
             risk_fallback_mask[path, :, tick] = fallback
@@ -686,7 +693,7 @@ def simulate_policy(model, graph, paths, scores, masks, delta, table, threshold)
         risk_fallback_level_counts=risk_fallback_levels.sum(axis=0).tolist(),
         target_alarm_events=int(shared_masks[:, :, 6].sum()),
         h1_masks_identical_by_construction=True,
-    ), dynamic_cost_history, risk_fallback_mask
+    ), dynamic_cost_history, dynamic_absolute_history, risk_fallback_mask
 
 
 def action_summary(actions, target_alarm, window):
@@ -947,7 +954,8 @@ def run_scene(scene, spec, gains, path_count=N, fit_count=FIT,
     )
     target_health_path_alarm = health_masks[:, :, 6].any(axis=1)
     all_health_path_alarm = health_masks[:, :, 4:].any(axis=(1, 2))
-    health_loss, health_actions, health_status, health_dynamic, health_fallback = simulate_policy(
+    (health_loss, health_actions, health_status, health_dynamic,
+     health_dynamic_absolute, health_fallback) = simulate_policy(
         model, graph, health_paths, health_scores, health_masks,
         np.zeros((evaluation_count, T, 7, 2)), risk_table, threshold
     )
@@ -989,6 +997,7 @@ def run_scene(scene, spec, gains, path_count=N, fit_count=FIT,
         health_masks=health_masks.astype(np.uint8),
         health_actions=health_actions,
         health_dynamic_health_cost=health_dynamic,
+        health_dynamic_health_cost_absolute=health_dynamic_absolute,
         health_risk_fallback=health_fallback,
         health_effective_weights=Q[health_actions],
         health_loss=health_loss,
@@ -1003,7 +1012,8 @@ def run_scene(scene, spec, gains, path_count=N, fit_count=FIT,
         eval_delta = delta[eval_slice]
         eval_scores = scores[eval_slice]
         eval_masks = masks[eval_slice]
-        loss, actions, status, dynamic_cost, fallback_mask = simulate_policy(
+        (loss, actions, status, dynamic_cost,
+         dynamic_cost_absolute, fallback_mask) = simulate_policy(
             model, graph, eval_paths, eval_scores, eval_masks,
             eval_delta, risk_table, threshold
         )
@@ -1040,6 +1050,7 @@ def run_scene(scene, spec, gains, path_count=N, fit_count=FIT,
         arrays[f"{fixture}_full_accept_loss"] = full_accept_loss
         arrays[f"{fixture}_actions"] = actions
         arrays[f"{fixture}_dynamic_health_cost"] = dynamic_cost
+        arrays[f"{fixture}_dynamic_health_cost_absolute"] = dynamic_cost_absolute
         arrays[f"{fixture}_risk_fallback"] = fallback_mask
         arrays[f"{fixture}_effective_weights"] = Q[actions]
 
@@ -1114,6 +1125,10 @@ def run_smoke():
         assert np.isfinite(arrays[f"{fixture}_loss"]).all()
         assert arrays[f"{fixture}_masks"].shape == (32, T, 7)
         assert np.isfinite(arrays[f"{fixture}_scores"]).all()
+        np.testing.assert_allclose(
+            arrays[f"{fixture}_dynamic_health_cost"][..., 6], 0.0,
+            rtol=0.0, atol=2e-12,
+        )
     for fixture in ("continuous", "burst"):
         physical = health.physical(
             model, 64,
@@ -1178,7 +1193,7 @@ def run_smoke():
         # Exercise the full policy interface under an exogenous mask and verify
         # the independent per-neighbor recursion exactly reproduces its four losses.
         smoke_table = table
-        direct_loss, direct_actions, _, _, _ = simulate_policy(
+        direct_loss, direct_actions, _, _, _, _ = simulate_policy(
             model, graph, direct_paths, direct_scores, direct_masks,
             direct_delta, smoke_table, result["threshold"]
         )
@@ -1203,6 +1218,7 @@ def run_smoke():
                 policy_count=4,
                 direct_health_intervention_max_difference=health_affine_error,
                 full_accept_matches_frozen_B1_update=True,
+                dynamic_cost_is_relative_to_q1=True,
                 source_fixture_support_saved=True,
                 atomic_output_roundtrip=True)
 
