@@ -77,6 +77,8 @@ Health-budget active decisions for HC-static, HC-scalar and HC-dynamic: [0, 0, 0
 
 Replayed 223,735 target-alarm decisions. The independent controller replay found 0 decision mismatches, 0 M7 violations, and 0 nominal-budget violations.
 HC-static and HC-dynamic feasible action sets differed on 0 target-alarm decisions.
+Static-versus-dynamic budget-margin sign flips: 0 across 1,525,356 common M7 candidate checks.
+Static-versus-scalar budget-margin sign flips: 8716 across 1,525,356 common M7 candidate checks.
 
 Independently replayed alarm action counts.
 

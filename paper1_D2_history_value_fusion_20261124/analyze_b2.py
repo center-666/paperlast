@@ -15,6 +15,7 @@ RUN_FILE = RUN_DIR / "B2_RUN.json"
 OUTPUT_JSON = RUN_DIR / "B2_ANALYSIS.json"
 OUTPUT_MD = RUN_DIR / "B2_ANALYSIS.md"
 AUDIT_FILE = RUN_DIR / "B2_INDEPENDENT_AUDIT.json"
+BUDGET_MARGIN_FILE = RUN_DIR / "B2_BUDGET_MARGIN_AUDIT.json"
 POLICIES = ("R1", "HC_static", "HC_scalar", "HC_dynamic")
 COMPARISONS = {
     "HC_dynamic_minus_R1": (0, 3),
@@ -178,6 +179,7 @@ def health_constraint_activity(records):
 def render_markdown(manifest, attack, healthy, action):
     constraint = attack["health_constraint_activity"]
     audit = attack["independent_replay_audit"]
+    margin = attack["budget_margin_audit"]
     names = POLICIES
     metrics = (0, 1, 3, 4)
     lines = [
@@ -277,6 +279,8 @@ def render_markdown(manifest, attack, healthy, action):
         "",
         f"Replayed {audit['target_alarm_decisions_replayed']:,} target-alarm decisions. The independent controller replay found {audit['risk_argmin_or_off_alarm_action_mismatches']} decision mismatches, {audit['M7_violations']} M7 violations, and {audit['health_budget_violations']} nominal-budget violations.",
         f"HC-static and HC-dynamic feasible action sets differed on {audit['HC_static_HC_dynamic_feasible_set_mismatches']} target-alarm decisions.",
+        f"Static-versus-dynamic budget-margin sign flips: {margin['static_vs_dynamic_candidate_margin_sign_flips']} across {margin['static_dynamic_common_M7_candidate_evaluations']:,} common M7 candidate checks.",
+        f"Static-versus-scalar budget-margin sign flips: {margin['static_vs_scalar_candidate_margin_sign_flips']} across {margin['static_scalar_common_M7_candidate_evaluations']:,} common M7 candidate checks.",
         "",
         "Independently replayed alarm action counts.",
         "",
@@ -318,12 +322,17 @@ def main():
             "independent_q0_feasible_counts_on_alarm_by_policy",
         )
     }
+    budget_margin_audit = json.loads(BUDGET_MARGIN_FILE.read_text(encoding="utf-8"))
+    if budget_margin_audit.get("status") != "posthoc_D2_B2_budget_margin_mechanism_audit":
+        raise ValueError("D2-B2 budget-margin mechanism audit has not completed.")
+    attack["budget_margin_audit"] = budget_margin_audit["decision"]
     output = {
         "status": "descriptive_D2_B2_independent_development_screening_analysis",
         "execution_commit": manifest["execution_commit"],
         "protocol_commit": manifest["protocol_commit"],
         "B2_RUN_sha256": sha256(RUN_FILE),
         "B2_INDEPENDENT_AUDIT_sha256": sha256(AUDIT_FILE),
+        "B2_BUDGET_MARGIN_AUDIT_sha256": sha256(BUDGET_MARGIN_FILE),
         "scene_archive_sha256": manifest["output_sha256"],
         "analysis_source_sha256": sha256(Path(__file__)),
         "bootstrap_replicates": common_analysis.BOOTSTRAP_REPLICATES,

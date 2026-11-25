@@ -27,15 +27,19 @@ Equal-weighting over the 12 scenes and two attack fixtures gave the following ta
 | HC-dynamic | 7.8798 | 0.9778 |
 | Full-accept diagnostic | 11.2112 | 0.9484 |
 
+The aggregate result is heterogeneous across the four physical-dynamics groups. In unstable U, HC-dynamic reduced the attack-window error relative to R1 by 15.323 and 13.496 in the two watermark scenes. In stable U, it increased attack-window error by 3.543 and 3.743. In all eight R scenes, it selected the same actions as R1, with no attack-window difference. Continuous-attack average gain over R1 was 2.928, while burst-attack gain was 0.661.
+
 HC-dynamic reduced the attack-window MSE by 18.55% relative to R1. Its path-paired descriptive 95% bootstrap interval for the difference was `[−2.037, −1.568]`. The recovery-window MSE fell by 31.31% relative to R1, with a paired difference of `−0.446` and interval `[−0.504, −0.391]`. Relative to full acceptance, HC-dynamic reduced attack-window error by 29.71% and increased recovery error by 3.09%.
 
 The healthy missing-block MSE was 0.930297 for HC-dynamic and 0.930210 for full acceptance, a 0.0094% increase. The descriptive equal-scene target-link FWER was 0.521%, and all-edge FWER was 1.888%. These path counts do not prove a uniform health-risk guarantee.
 
 ## What caused the gains
 
-The aggregate risk-plus-health constraint altered decisions relative to R1 on 32.07% of target-alarm decisions. It removed `q=0` from the feasible set on 71,831 of 223,735 alarm decisions, about 32.1%, across this run. These decisions account for the large difference between constrained policies and R1.
+The aggregate risk-plus-health constraint altered decisions relative to R1 on 32.07% of target-alarm decisions. It removed `q=0` from the feasible set on 69,966 of 217,908 attack-window alarm decisions, about 32.1%, across this run. These decisions account for the large difference between constrained policies and R1.
 
-The independent audit found **no difference at all between HC-static and HC-dynamic feasible action sets** on all 223,735 decisions. Their selected actions and every estimated trajectory were therefore identical. The observed 18.55% attack-window improvement over R1 comes from the shared health-budget constraint, not from dynamic history.
+The independent audit found **no difference at all between HC-static and HC-dynamic feasible action sets** on all 223,735 target-alarm decisions replayed across the full 150-tick trajectories. Their selected actions and every estimated trajectory were therefore identical. The observed 18.55% attack-window improvement over R1 comes from the shared health-budget constraint, not from dynamic history.
+
+A second margin audit reconstructed each policy's own M7 sequence, then evaluated both health filters only over actions legal for both policies. Static and dynamic budget signs agreed for all 1,525,356 common-M7 candidate checks. Static and scalar budget signs differed in 8,716 checks. Every such difference occurred in stable-U scenes 6 and 7. There the scalar fit excludes the `q=0.6` action allowed by HC-static and HC-dynamic. This explains the small HC-dynamic versus HC-scalar action difference without attributing any difference to the full dynamic curve versus its static curve.
 
 The scalar constraint did differ from the static set on 8,995 alarm decisions, about 4.0%. HC-dynamic and HC-scalar disagreed on 3.98% of alarm decisions. Their aggregate attack-window MSE difference was only `−0.00565`, or `−0.072%`, in favor of HC-dynamic. The descriptive path-bootstrap interval was `[−0.01080, −0.00092]`. Their recovery-window MSE differed by `+0.00274`, or `+0.281%`, with interval `[+0.00224, +0.00322]`. Thus this small attack-window difference came with a small recovery cost.
 

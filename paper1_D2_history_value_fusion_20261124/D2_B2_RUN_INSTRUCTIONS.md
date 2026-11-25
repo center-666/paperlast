@@ -22,6 +22,7 @@ Commit the protocol, runner, analyzer, and smoke-passing changes before formal s
 
 ```powershell
 python -B d2b2_run.py
+python -B audit_b2_budget_margin.py
 python -B analyze_b2.py
 ```
 
@@ -31,4 +32,4 @@ The runner writes `b2_results/scene_XX.npz` atomically after each scene and upda
 
 The analyzer verifies the scene archive hashes and computes path-paired descriptive bootstrap intervals. The output is a development screen, not confirmatory evidence. It is not a formal statistical guarantee for the nominal health constraint.
 
-After analysis, run `python -B audit_b2.py`. This independently reconstructs the M7 history, all three nominal-health feasible sets, and the risk argmin without importing the B2 runner. It checks every alarm action, budget constraint, and archive hash, and compares paired loss summaries against `B2_ANALYSIS.json`. Commit `D2_B2_SCREENING_DECISION.md`, both result reports, and the complete machine-readable outputs only after this audit passes.
+After analysis, run `python -B audit_b2.py`. This independently reconstructs the M7 history, all three nominal-health feasible sets, and the risk argmin without importing the B2 runner. It checks every alarm action, budget constraint, and archive hash, and compares paired loss summaries against `B2_ANALYSIS.json`. Then run `python -B audit_b2_budget_margin.py`. This checks where the dynamic and scalar health curves change the candidate feasibility sets. Commit `D2_B2_SCREENING_DECISION.md`, both result reports, and the complete machine-readable outputs only after these audits pass.
