@@ -364,6 +364,8 @@ def run_scene(scene, spec, gains, budget_map, path_count=N, fit_count=FIT,
               calibration_count=FIT, evaluation_count=EVALUATION,
               namespace=NAMESPACE, bootstrap_replicates=BOOTSTRAP_REPLICATES):
     model, graph, graph_path, budget = configure_scene(spec, gains, budget_map)
+    curves = prepare_health_curves(model)
+    _, static_absolute, static_relative = curves
     threshold, calibration_maxima = common.threshold_calibration(
         model, scene, calibration_count, namespace
     )
@@ -393,7 +395,8 @@ def run_scene(scene, spec, gains, budget_map, path_count=N, fit_count=FIT,
     (health_loss, health_actions, health_status, health_sets, health_delta,
      health_abs, health_scalar, health_utilization) = simulate_constrained(
         model, graph, health_paths, health_scores, health_masks,
-        np.zeros((evaluation_count, T, 7, 2)), risk_table, threshold, budget["epsilon"]
+        np.zeros((evaluation_count, T, 7, 2)), risk_table, threshold,
+        budget["epsilon"], curves
     )
     health_reference = q1_health_reference(model, health_paths, health_masks)
     target_fwer_paths = int(health_masks[:, :, 6].any(axis=1).sum())
@@ -447,7 +450,7 @@ def run_scene(scene, spec, gains, budget_map, path_count=N, fit_count=FIT,
         (losses, actions, status, feasible, relative_cost, absolute_cost,
          scalar, utilization) = simulate_constrained(
             model, graph, eval_paths, eval_scores, eval_masks,
-            eval_delta, risk_table, threshold, budget["epsilon"]
+            eval_delta, risk_table, threshold, budget["epsilon"], curves
         )
         q1_reference = common.simulate_full_accept_reference(
             model, eval_paths, eval_scores, eval_masks, eval_delta
@@ -540,6 +543,29 @@ def deterministic_smoke():
                 "policy_actions": actions.shape[1],
                 "formal_attack_paths_generated": False,
             })
+    with np.load(modes.OUTPUT / "mode_tables.npz", allow_pickle=False) as gains:
+        result, arrays, _ = run_scene(
+            0,
+            health.scenarios()[0],
+            gains,
+            budget_map,
+            path_count=64,
+            fit_count=32,
+            calibration_count=256,
+            evaluation_count=64,
+            namespace=SMOKE_NAMESPACE,
+            bootstrap_replicates=128,
+        )
+    assert set(result["attacks"]) == {"continuous", "burst"}
+    assert arrays["health_actions"].shape == (64, 4, T)
+    for fixture in ("continuous", "burst"):
+        assert arrays[f"{fixture}_actions"].shape == (32, 4, T)
+        assert np.isfinite(arrays[f"{fixture}_loss"]).all()
+        np.testing.assert_allclose(
+            arrays[f"{fixture}_loss"].mean(axis=0),
+            np.asarray(result["attacks"][fixture]["loss_mean"]),
+            rtol=1e-12, atol=1e-12,
+        )
     return {"status": "PASS_DETERMINISTIC_SMOKE", "scenes": summaries}
 
 
