@@ -167,6 +167,29 @@ def template_subspace_score(whitened_records: np.ndarray,
     return np.sum(np.where(keep, coordinates ** 2, 0.0), axis=1)
 
 
+def template_subspace_score_batch(whitened_records: np.ndarray,
+                                  whitened_design: np.ndarray) -> np.ndarray:
+    """Vectorized least-squares projection over candidate onset templates."""
+    if whitened_records.ndim != 2 or whitened_design.ndim != 4:
+        raise ValueError("Expected y[B,r] and X[B,onset,r,2]")
+    if (whitened_design.shape[0] != whitened_records.shape[0]
+            or whitened_design.shape[2] != whitened_records.shape[1]):
+        raise ValueError("Batched template and record dimensions do not agree")
+    gram = np.einsum("bsri,bsrj->bsij", whitened_design,
+                     whitened_design, optimize=True)
+    gram = 0.5 * (gram + gram.swapaxes(-1, -2))
+    cross = np.einsum("bsri,br->bsi", whitened_design,
+                      whitened_records, optimize=True)
+    eigenvalues, eigenvectors = np.linalg.eigh(gram)
+    maximum = np.maximum(eigenvalues[..., -1:], 0.0)
+    keep = eigenvalues > maximum * TEMPLATE_RELATIVE_SINGULAR_TOL ** 2
+    rotated = np.einsum("bsji,bsj->bsi", eigenvectors, cross,
+                         optimize=True)
+    terms = np.divide(rotated ** 2, eigenvalues,
+                      out=np.zeros_like(rotated), where=keep)
+    return np.sum(terms, axis=-1)
+
+
 def template_condition_summary(model, matrices: np.ndarray,
                                geometry: dict[int, SenderGeometry]) -> dict:
     """Summarize effective rank and conditioning of causal onset templates."""
@@ -236,13 +259,8 @@ def matched_scores(model, physical, sender_packets, key_matrices,
             whitened_designs = np.einsum(
                 "ri,bsic->bsrc", geometry.whitening_map, raw_designs
             )
-            best = np.zeros(count, dtype=float)
-            for onset in range(BUFFER_REPORTS):
-                score = template_subspace_score(
-                    whitened, whitened_designs[:, onset]
-                )
-                best = np.maximum(best, score)
-            output[:, tick, edge] = best
+            all_onsets = template_subspace_score_batch(whitened, whitened_designs)
+            output[:, tick, edge] = np.max(all_onsets, axis=1)
     return output
 
 

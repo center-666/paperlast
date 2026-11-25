@@ -24,7 +24,7 @@
       "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
     },
     "matched_iid": {
-      "threshold": 22.90998637225501,
+      "threshold": 22.909986372255016,
       "calibration_paths": 64,
       "one_based_rank": 62,
       "alarm_rule": "fresh_path_max > threshold",
@@ -32,7 +32,7 @@
       "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
     },
     "matched_negative": {
-      "threshold": 21.666895916801117,
+      "threshold": 21.66689591680113,
       "calibration_paths": 64,
       "one_based_rank": 62,
       "alarm_rule": "fresh_path_max > threshold",
@@ -40,7 +40,7 @@
       "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
     },
     "mismatched_iid_key": {
-      "threshold": 23.731333272141004,
+      "threshold": 23.73133327214099,
       "calibration_paths": 64,
       "one_based_rank": 62,
       "alarm_rule": "fresh_path_max > threshold",
@@ -48,7 +48,7 @@
       "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
     },
     "mismatched_negative_key": {
-      "threshold": 23.622962212558768,
+      "threshold": 23.622962212558765,
       "calibration_paths": 64,
       "one_based_rank": 62,
       "alarm_rule": "fresh_path_max > threshold",
@@ -57,12 +57,12 @@
     }
   },
   "attack_run_seconds_by_arm": {
-    "A_plugin_iid": 0.1275671000184957,
-    "B_plugin_negative": 0.1280628000095021,
-    "C_matched_iid": 0.754153599991696,
-    "D_matched_negative": 0.8878130000084639,
-    "E_iid_wrong_key": 0.9718066999921575,
-    "F_negative_wrong_key": 0.9785186999943107
+    "A_plugin_iid": 0.08988869999302551,
+    "B_plugin_negative": 0.08895279999705963,
+    "C_matched_iid": 0.48109180000028573,
+    "D_matched_negative": 0.47842309999396093,
+    "E_iid_wrong_key": 0.4781325999938417,
+    "F_negative_wrong_key": 0.4782178000023123
   },
   "runtime_note": "The frozen common-G wrapper recomputes the plugin score even with externally supplied gates, so its wall time includes this extra diagnostic score pass.",
   "healthy_seed_words": [
@@ -122,10 +122,10 @@
     "attack_rotation_energy_scale": 1.0,
     "score_thresholds": {
       "plugin_kl": 46.461171915536966,
-      "matched_iid": 22.90998637225501,
-      "matched_negative": 21.666895916801117,
-      "mismatched_iid_key": 23.731333272141004,
-      "mismatched_negative_key": 23.622962212558768
+      "matched_iid": 22.909986372255016,
+      "matched_negative": 21.66689591680113,
+      "mismatched_iid_key": 23.73133327214099,
+      "mismatched_negative_key": 23.622962212558765
     }
   }
 }

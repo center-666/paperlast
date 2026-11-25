@@ -20,7 +20,8 @@
         6
       ],
       "matched_first_score_time": 7,
-      "matched_vs_independent_lstsq_max_abs_error": 3.9968028886505635e-15,
+      "matched_vs_independent_lstsq_max_abs_error": 6.217248937900877e-15,
+      "batched_vs_individual_template_score_max_abs_error": 8.43769498715119e-15,
       "future_M_packet_invariance_at_time_7": true,
       "three_direction_and_two_onset_template_checks": [
         {
@@ -626,7 +627,8 @@
         6
       ],
       "matched_first_score_time": 7,
-      "matched_vs_independent_lstsq_max_abs_error": 8.881784197001252e-15,
+      "matched_vs_independent_lstsq_max_abs_error": 9.769962616701378e-15,
+      "batched_vs_individual_template_score_max_abs_error": 1.7763568394002505e-14,
       "future_M_packet_invariance_at_time_7": true,
       "three_direction_and_two_onset_template_checks": [
         {

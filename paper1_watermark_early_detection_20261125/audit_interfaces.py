@@ -33,6 +33,7 @@ from matched_glrt import (
     residual_overlap_map,
     sender_template_maps,
     template_subspace_score,
+    template_subspace_score_batch,
 )
 
 
@@ -141,10 +142,20 @@ def main():
         key_window = matrices[:, tick - 7:tick + 1, sender]
         raw_design = sender_template_maps(model, sender, key_window)[:, 0]
         whitened_design = np.einsum("ri,bic->brc", geometry.whitening_map, raw_design)
-        left, singular, _ = np.linalg.svd(whitened_design, full_matrices=False)
-        coords = np.einsum("bri,br->bi", left, whitened_record)
-        keep = singular > singular[:, :1] * 1e-10
-        projection_score = np.sum(np.where(keep, coords ** 2, 0.0), axis=1)
+        whitened_design_all = np.einsum(
+            "ri,bsic->bsrc", geometry.whitening_map,
+            sender_template_maps(model, sender, key_window),
+        )
+        batch_scores = template_subspace_score_batch(
+            whitened_record, whitened_design_all
+        )
+        individual_scores = np.stack([
+            template_subspace_score(whitened_record, whitened_design_all[:, onset])
+            for onset in range(BUFFER_REPORTS)
+        ], axis=1)
+        np.testing.assert_allclose(batch_scores, individual_scores,
+                                   rtol=2e-10, atol=2e-10)
+        projection_score = batch_scores[:, 0]
         least_squares_score = independent_lstsq_scores(whitened_record, whitened_design)
         np.testing.assert_allclose(projection_score, least_squares_score,
                                    rtol=2e-10, atol=2e-10)
@@ -225,6 +236,9 @@ def main():
             "matched_first_score_time": 7,
             "matched_vs_independent_lstsq_max_abs_error": float(
                 np.max(np.abs(projection_score - least_squares_score))
+            ),
+            "batched_vs_individual_template_score_max_abs_error": float(
+                np.max(np.abs(batch_scores - individual_scores))
             ),
             "future_M_packet_invariance_at_time_7": True,
             "three_direction_and_two_onset_template_checks": direction_checks,
