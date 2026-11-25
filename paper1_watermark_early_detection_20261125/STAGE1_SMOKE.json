@@ -57,12 +57,12 @@
     }
   },
   "attack_run_seconds_by_arm": {
-    "A_plugin_iid": 0.1144505999982357,
-    "B_plugin_negative": 0.12065160000929609,
-    "C_matched_iid": 0.7057108999870252,
-    "D_matched_negative": 0.6701452999841422,
-    "E_iid_wrong_key": 0.7047385000041686,
-    "F_negative_wrong_key": 0.7172965000208933
+    "A_plugin_iid": 0.1275671000184957,
+    "B_plugin_negative": 0.1280628000095021,
+    "C_matched_iid": 0.754153599991696,
+    "D_matched_negative": 0.8878130000084639,
+    "E_iid_wrong_key": 0.9718066999921575,
+    "F_negative_wrong_key": 0.9785186999943107
   },
   "runtime_note": "The frozen common-G wrapper recomputes the plugin score even with externally supplied gates, so its wall time includes this extra diagnostic score pass.",
   "healthy_seed_words": [
