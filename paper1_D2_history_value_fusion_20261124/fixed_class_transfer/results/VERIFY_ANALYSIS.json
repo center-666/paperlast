@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "run_sha256": "25954ce9881dea316f1a35b1f2ca402cc6a6b68afa742e9104a6d68770cb69dc",
+  "source_sha256": "9c2cf26bb98b0dd459654f72d8de5b66052af3f7c90d2f5389209ff430607164",
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": [
+    20261126,
+    88403,
+    9001
+  ],
+  "HC_static_Class_model_action_mismatches": 0,
+  "total_target_alarm_decisions": 447002,
+  "independent_regenerated_paths": 2304,
+  "max_loss_error_vs_literal_per_neighbor_replay": 2.9812774471338344e-10,
+  "all_edge_fwer_family": "All seven monitored edges, all scored times. Parent B2 summary used its masks[:, :, 4:] slice for its named all-edge column. This audit counts all seven explicitly.",
+  "intervals": "Pointwise path-paired 95% bootstrap intervals stratified within fixed scene and fixture, conditional on frozen B2 thresholds and tables.",
+  "outputs": {
+    "absolute.csv": "0fb7531ac4ddc6138525d95b037de82f5e489dfbf6bf5e755d1caaab9bedccd7",
+    "paired.csv": "efbe0a4e47f9031838477be9c0dae73a40d8ee976b26dc1c3cb4df7a1b0aa58f",
+    "scenes.csv": "99d0361ac2582d98fbcf551e11407c2ff7f207605b457d49c8bd4814ebcb6f95",
+    "health_fwer.csv": "79809d04ef18952b3af1429f09fc5e69e82dde6aa70499a89e86f2741756dc3e"
+  }
+}
