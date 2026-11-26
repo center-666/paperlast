@@ -123,7 +123,9 @@ def run(split,workers):
     folder=HERE/("tail_dev" if split==1 else "tail_confirm")
     folder.mkdir(exist_ok=True)
     n=256 if split==1 else 512
-    source_files=("tail_study.py","experiment.py","projection.c","NEXT_PROTOCOL.md")
+    source_files=("tail_study.py","experiment.py","projection.c","NEXT_PROTOCOL.md",
+                  "high_loss_trace.py","high_loss_mechanism.py",
+                  "HIGH_LOSS_REPLAY.json","HIGH_LOSS_COUNTERFACTUAL.json")
     hashes={f:exp.old.base.digest(HERE/f) for f in source_files}
     identity={"parent":"f97748fcba7c45981878352aa03bc1b15f78dc65",
               "physical_baseline":exp.old.BASE_SHA,"split":split,"paths_per_cell":n,

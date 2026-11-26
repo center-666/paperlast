@@ -1,5 +1,6 @@
 """Replay the exact high-loss quarter-turn path archived at W1."""
 import json
+import csv
 from pathlib import Path
 
 import numpy as np
@@ -21,6 +22,8 @@ def main():
     arms = ("quarter_exact", "diagonal_exact", "sign_exact", "iid_exact", "negative_exact",
             "quarter_plugin", "diagonal_plugin", "iid_plugin", "negative_plugin")
     paths = {}
+    raw_arrays = {}
+    trace = []
     for scheme in ("quarter", "diagonal", "sign", "iid", "negative"):
         key = exp.schedule(scheme, draws, bits, 1.)
         delta = np.zeros_like(raw)
@@ -38,15 +41,32 @@ def main():
             per_time_receiver = error[row][:, model.receiver_ids]
             paths[tag] = {
                 "threshold": thresholds[tag][1],
-                "gate": gate[row].astype(int).tolist(),
-                "score": score[row].tolist(),
-                "accepted_delta": accepted.tolist(),
-                "node_error": error[row].tolist(),
-                "receiver_error": per_time_receiver.tolist(),
                 "attack_mse_receivers": float(per_time_receiver[50:110].mean()),
                 "attack_mse_all50": float(error[row, 50:110].mean()),
                 "recovery_mse_receivers": float(per_time_receiver[110:].mean()),
+                "first_alarm_tick_by_edge": [
+                    (int(np.flatnonzero(gate[row, 50:110, e])[0] + 50)
+                     if np.any(gate[row, 50:110, e]) else None)
+                    for e in range(6)
+                ],
             }
+            raw_arrays[tag+"_score"] = score[row]
+            raw_arrays[tag+"_gate"] = gate[row].astype(np.uint8)
+            raw_arrays[tag+"_delta"] = delta[row]
+            raw_arrays[tag+"_node_error"] = error[row]
+            for tick in range(150):
+                for e in range(6):
+                    trace.append({
+                        "arm":tag,"tick":tick,"edge":e,
+                        "receiver":int(model.links[e,0]),"sender":int(model.links[e,1]),
+                        "score":float(score[row,tick,e]),"threshold":float(thresholds[tag][1]),
+                        "score_over_threshold":float(score[row,tick,e]/thresholds[tag][1]),
+                        "alarm":int(gate[row,tick,e]),
+                        "delta_norm":float(np.linalg.norm(delta[row,tick,e])),
+                        "accepted_delta_norm":float(np.linalg.norm(accepted[tick,e])),
+                        **{f"error_node{int(node)}":float(error[row,tick,node])
+                           for node in model.receiver_ids},
+                    })
     # The path identifier deterministically indexes 32-path chunk 5, row 24.
     output = {
         "source_commit": exp.read(exp.HERE / "confirm/RUN.json")["head"],
@@ -60,14 +80,20 @@ def main():
     }
     target = exp.HERE / "HIGH_LOSS_REPLAY.json"
     target.write_text(json.dumps(output, indent=2) + "\n", encoding="utf-8")
+    npz_path=exp.HERE/"HIGH_LOSS_PATH.npz"
+    np.savez_compressed(npz_path,**raw_arrays)
+    csv_path=exp.HERE/"HIGH_LOSS_TRACE.csv"
+    with csv_path.open("w",newline="",encoding="utf-8") as stream:
+        writer=csv.DictWriter(stream,fieldnames=list(trace[0]))
+        writer.writeheader();writer.writerows(trace)
     print(json.dumps({
         "path_id": path_id,
         "mse": {tag: paths[tag]["attack_mse_receivers"] for tag in arms},
         "first_alarm": {
-            tag: [int(x) for x in np.where(np.asarray(paths[tag]["gate"])[50:110].any(axis=1))[0][:1] + 50]
+            tag: min((x for x in paths[tag]["first_alarm_tick_by_edge"] if x is not None),default=None)
             for tag in arms
         },
-        "record": str(target),
+        "record": str(target),"trace":str(csv_path),"arrays":str(npz_path),
     }, indent=2))
 
 
