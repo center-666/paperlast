@@ -1,0 +1,839 @@
+{
+  "status": "posthoc_D2_B2_budget_margin_mechanism_audit",
+  "B2_RUN_sha256": "51b75c31f2c90b8fa9686397da1d9d376c1e771a28ea8e27e0391cb05df350c5",
+  "B2_INDEPENDENT_AUDIT_sha256": "17c0235784f283a87085d677e1d5b96f7f07561914a9827383c76654e2932f13",
+  "audit_source_sha256": "c51bbb726ca7fa8756f357b1af3dc899c381011f7f4bff3be23e507ba8f5225d",
+  "claim_scope": "descriptive_development_screening_only",
+  "constraint_tolerance": 1e-10,
+  "decision": {
+    "alarm_decisions": 217908,
+    "static_dynamic_feasible_set_mismatches": 0,
+    "static_scalar_feasible_set_mismatches": 8716,
+    "dynamic_only_feasible_actions": 0,
+    "static_only_feasible_actions": 0,
+    "scalar_only_vs_static_feasible_actions": 0,
+    "static_only_vs_scalar_feasible_actions": 8716,
+    "static_vs_dynamic_candidate_margin_sign_flips": 0,
+    "static_vs_scalar_candidate_margin_sign_flips": 8716,
+    "static_dynamic_common_M7_candidate_evaluations": 1525356,
+    "static_scalar_common_M7_candidate_evaluations": 1525356
+  },
+  "scenes": {
+    "0": {
+      "spec": [
+        "unstable",
+        "U",
+        35,
+        "negative"
+      ],
+      "epsilon": 0.010002170135226064,
+      "alarm_decisions": 18989,
+      "static_dynamic_feasible_set_mismatch_count": 0,
+      "static_scalar_feasible_set_mismatch_count": 0,
+      "dynamic_only_feasible_actions": 0,
+      "static_only_feasible_actions": 0,
+      "scalar_only_vs_static_feasible_actions": 0,
+      "static_only_vs_scalar_feasible_actions": 0,
+      "static_dynamic_candidate_margin_sign_flips": 0,
+      "static_scalar_candidate_margin_sign_flips": 0,
+      "M7_legal_candidate_margin_summaries": {
+        "static": {
+          "candidate_evaluations": 132923,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.138817147386923,
+            4.422092334832306,
+            4.422092334832306,
+            4.422092334832306
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18989,
+          "absolute_normalized_margin_below_1_percent_count": 18989,
+          "absolute_normalized_margin_below_5_percent_count": 18989
+        },
+        "scalar": {
+          "candidate_evaluations": 132923,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.2562836585507113,
+            4.8411714737799345,
+            4.890411522421202,
+            4.89041216764905
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18989,
+          "absolute_normalized_margin_below_1_percent_count": 18989,
+          "absolute_normalized_margin_below_5_percent_count": 18989
+        },
+        "dynamic": {
+          "candidate_evaluations": 132923,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.2417642359400127,
+            4.699094633376304,
+            4.731932941782057,
+            4.731933373886005
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18989,
+          "absolute_normalized_margin_below_1_percent_count": 18989,
+          "absolute_normalized_margin_below_5_percent_count": 18989
+        }
+      }
+    },
+    "1": {
+      "spec": [
+        "unstable",
+        "U",
+        35,
+        "iid"
+      ],
+      "epsilon": 0.010002170135226064,
+      "alarm_decisions": 17612,
+      "static_dynamic_feasible_set_mismatch_count": 0,
+      "static_scalar_feasible_set_mismatch_count": 0,
+      "dynamic_only_feasible_actions": 0,
+      "static_only_feasible_actions": 0,
+      "scalar_only_vs_static_feasible_actions": 0,
+      "static_only_vs_scalar_feasible_actions": 0,
+      "static_dynamic_candidate_margin_sign_flips": 0,
+      "static_scalar_candidate_margin_sign_flips": 0,
+      "M7_legal_candidate_margin_summaries": {
+        "static": {
+          "candidate_evaluations": 123284,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.138817147386923,
+            4.422092334832306,
+            4.422092334832306,
+            4.422092334832306
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17612,
+          "absolute_normalized_margin_below_1_percent_count": 17612,
+          "absolute_normalized_margin_below_5_percent_count": 17612
+        },
+        "scalar": {
+          "candidate_evaluations": 123284,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.2550698453460813,
+            4.841171466174416,
+            4.890408369261487,
+            4.89041216764905
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17612,
+          "absolute_normalized_margin_below_1_percent_count": 17612,
+          "absolute_normalized_margin_below_5_percent_count": 17612
+        },
+        "dynamic": {
+          "candidate_evaluations": 123284,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            1.2406322995901449,
+            4.699094628283168,
+            4.73193082869658,
+            4.731933373886005
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17612,
+          "absolute_normalized_margin_below_1_percent_count": 17612,
+          "absolute_normalized_margin_below_5_percent_count": 17612
+        }
+      }
+    },
+    "2": {
+      "spec": [
+        "unstable",
+        "R",
+        35,
+        "negative"
+      ],
+      "epsilon": 0.028113023660457613,
+      "alarm_decisions": 19281,
+      "static_dynamic_feasible_set_mismatch_count": 0,
+      "static_scalar_feasible_set_mismatch_count": 0,
+      "dynamic_only_feasible_actions": 0,
+      "static_only_feasible_actions": 0,
+      "scalar_only_vs_static_feasible_actions": 0,
+      "static_only_vs_scalar_feasible_actions": 0,
+      "static_dynamic_candidate_margin_sign_flips": 0,
+      "static_scalar_candidate_margin_sign_flips": 0,
+      "M7_legal_candidate_margin_summaries": {
+        "static": {
+          "candidate_evaluations": 134967,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.12142610300944456,
+            0.6600747404700383,
+            0.6600747404700383,
+            0.6600747404700383
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 19281,
+          "absolute_normalized_margin_below_1_percent_count": 19281,
+          "absolute_normalized_margin_below_5_percent_count": 57843
+        },
+        "scalar": {
+          "candidate_evaluations": 134967,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.13168634330088613,
+            0.7151391369375284,
+            0.7159440357182678,
+            0.7159440357182763
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 19281,
+          "absolute_normalized_margin_below_1_percent_count": 19281,
+          "absolute_normalized_margin_below_5_percent_count": 41246
+        },
+        "dynamic": {
+          "candidate_evaluations": 134967,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.13057967239317425,
+            0.7165442327745525,
+            0.7173651552350574,
+            0.7173651552350663
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 19281,
+          "absolute_normalized_margin_below_1_percent_count": 19281,
+          "absolute_normalized_margin_below_5_percent_count": 41246
+        }
+      }
+    },
+    "3": {
+      "spec": [
+        "unstable",
+        "R",
+        35,
+        "iid"
+      ],
+      "epsilon": 0.028113023660457613,
+      "alarm_decisions": 18100,
+      "static_dynamic_feasible_set_mismatch_count": 0,
+      "static_scalar_feasible_set_mismatch_count": 0,
+      "dynamic_only_feasible_actions": 0,
+      "static_only_feasible_actions": 0,
+      "scalar_only_vs_static_feasible_actions": 0,
+      "static_only_vs_scalar_feasible_actions": 0,
+      "static_dynamic_candidate_margin_sign_flips": 0,
+      "static_scalar_candidate_margin_sign_flips": 0,
+      "M7_legal_candidate_margin_summaries": {
+        "static": {
+          "candidate_evaluations": 126700,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.12142610300944456,
+            0.6600747404700383,
+            0.6600747404700383,
+            0.6600747404700383
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18100,
+          "absolute_normalized_margin_below_1_percent_count": 18100,
+          "absolute_normalized_margin_below_5_percent_count": 54300
+        },
+        "scalar": {
+          "candidate_evaluations": 126700,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.1316855913297802,
+            0.7151391369375284,
+            0.7159440357181874,
+            0.7159440357182763
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18100,
+          "absolute_normalized_margin_below_1_percent_count": 18100,
+          "absolute_normalized_margin_below_5_percent_count": 38869
+        },
+        "dynamic": {
+          "candidate_evaluations": 126700,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.13057897443011474,
+            0.7165442327745525,
+            0.7173651552349771,
+            0.7173651552350663
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18100,
+          "absolute_normalized_margin_below_1_percent_count": 18100,
+          "absolute_normalized_margin_below_5_percent_count": 38869
+        }
+      }
+    },
+    "4": {
+      "spec": [
+        "unstable",
+        "R",
+        1,
+        "negative"
+      ],
+      "epsilon": 0.02590312703381365,
+      "alarm_decisions": 18680,
+      "static_dynamic_feasible_set_mismatch_count": 0,
+      "static_scalar_feasible_set_mismatch_count": 0,
+      "dynamic_only_feasible_actions": 0,
+      "static_only_feasible_actions": 0,
+      "scalar_only_vs_static_feasible_actions": 0,
+      "static_only_vs_scalar_feasible_actions": 0,
+      "static_dynamic_candidate_margin_sign_flips": 0,
+      "static_scalar_candidate_margin_sign_flips": 0,
+      "M7_legal_candidate_margin_summaries": {
+        "static": {
+          "candidate_evaluations": 130760,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.15920191959063967,
+            0.8741538346478537,
+            0.8741538346478537,
+            0.8741538346478537
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18680,
+          "absolute_normalized_margin_below_1_percent_count": 18680,
+          "absolute_normalized_margin_below_5_percent_count": 37360
+        },
+        "scalar": {
+          "candidate_evaluations": 130760,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.17730180178362553,
+            0.9715843254726657,
+            0.9739080034378307,
+            0.9739080034438409
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18680,
+          "absolute_normalized_margin_below_1_percent_count": 18680,
+          "absolute_normalized_margin_below_5_percent_count": 37360
+        },
+        "dynamic": {
+          "candidate_evaluations": 130760,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.17513654159702063,
+            0.9742498288680769,
+            0.9766269896118405,
+            0.976626989617983
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18680,
+          "absolute_normalized_margin_below_1_percent_count": 18680,
+          "absolute_normalized_margin_below_5_percent_count": 37360
+        }
+      }
+    },
+    "5": {
+      "spec": [
+        "unstable",
+        "R",
+        1,
+        "iid"
+      ],
+      "epsilon": 0.02590312703381365,
+      "alarm_decisions": 17777,
+      "static_dynamic_feasible_set_mismatch_count": 0,
+      "static_scalar_feasible_set_mismatch_count": 0,
+      "dynamic_only_feasible_actions": 0,
+      "static_only_feasible_actions": 0,
+      "scalar_only_vs_static_feasible_actions": 0,
+      "static_only_vs_scalar_feasible_actions": 0,
+      "static_dynamic_candidate_margin_sign_flips": 0,
+      "static_scalar_candidate_margin_sign_flips": 0,
+      "M7_legal_candidate_margin_summaries": {
+        "static": {
+          "candidate_evaluations": 124439,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.15920191959063967,
+            0.8741538346478537,
+            0.8741538346478537,
+            0.8741538346478537
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17777,
+          "absolute_normalized_margin_below_1_percent_count": 17777,
+          "absolute_normalized_margin_below_5_percent_count": 35554
+        },
+        "scalar": {
+          "candidate_evaluations": 124439,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.17730165267269282,
+            0.9715843254726657,
+            0.9739080034080402,
+            0.9739080034438409
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17777,
+          "absolute_normalized_margin_below_1_percent_count": 17777,
+          "absolute_normalized_margin_below_5_percent_count": 35554
+        },
+        "dynamic": {
+          "candidate_evaluations": 124439,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.17513640680076759,
+            0.9742498288680769,
+            0.9766269895813936,
+            0.976626989617983
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17777,
+          "absolute_normalized_margin_below_1_percent_count": 17777,
+          "absolute_normalized_margin_below_5_percent_count": 35554
+        }
+      }
+    },
+    "6": {
+      "spec": [
+        "stable",
+        "U",
+        35,
+        "negative"
+      ],
+      "epsilon": 0.01297041560739643,
+      "alarm_decisions": 18439,
+      "static_dynamic_feasible_set_mismatch_count": 0,
+      "static_scalar_feasible_set_mismatch_count": 4497,
+      "dynamic_only_feasible_actions": 0,
+      "static_only_feasible_actions": 0,
+      "scalar_only_vs_static_feasible_actions": 0,
+      "static_only_vs_scalar_feasible_actions": 4497,
+      "static_dynamic_candidate_margin_sign_flips": 0,
+      "static_scalar_candidate_margin_sign_flips": 4497,
+      "M7_legal_candidate_margin_summaries": {
+        "static": {
+          "candidate_evaluations": 129073,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.760541115445309,
+            1.9608193050223957,
+            1.9608193050223957,
+            1.9608193050223957
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18439,
+          "absolute_normalized_margin_below_1_percent_count": 18439,
+          "absolute_normalized_margin_below_5_percent_count": 18439
+        },
+        "scalar": {
+          "candidate_evaluations": 129073,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.9838181549035158,
+            2.3312043336188117,
+            2.615048111519107,
+            2.6268189920132334
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18439,
+          "absolute_normalized_margin_below_1_percent_count": 18439,
+          "absolute_normalized_margin_below_5_percent_count": 18439
+        },
+        "dynamic": {
+          "candidate_evaluations": 129073,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.9423127804022857,
+            2.498804418910046,
+            2.555357784759694,
+            2.5553693554935735
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18439,
+          "absolute_normalized_margin_below_1_percent_count": 18439,
+          "absolute_normalized_margin_below_5_percent_count": 18439
+        }
+      }
+    },
+    "7": {
+      "spec": [
+        "stable",
+        "U",
+        35,
+        "iid"
+      ],
+      "epsilon": 0.01297041560739643,
+      "alarm_decisions": 17743,
+      "static_dynamic_feasible_set_mismatch_count": 0,
+      "static_scalar_feasible_set_mismatch_count": 4219,
+      "dynamic_only_feasible_actions": 0,
+      "static_only_feasible_actions": 0,
+      "scalar_only_vs_static_feasible_actions": 0,
+      "static_only_vs_scalar_feasible_actions": 4219,
+      "static_dynamic_candidate_margin_sign_flips": 0,
+      "static_scalar_candidate_margin_sign_flips": 4219,
+      "M7_legal_candidate_margin_summaries": {
+        "static": {
+          "candidate_evaluations": 124201,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.760541115445309,
+            1.9608193050223957,
+            1.9608193050223957,
+            1.9608193050223957
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17743,
+          "absolute_normalized_margin_below_1_percent_count": 17743,
+          "absolute_normalized_margin_below_5_percent_count": 17743
+        },
+        "scalar": {
+          "candidate_evaluations": 124201,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.9838181425782773,
+            2.3312043001178604,
+            2.615072887069476,
+            2.626819096161652
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17743,
+          "absolute_normalized_margin_below_1_percent_count": 17743,
+          "absolute_normalized_margin_below_5_percent_count": 17743
+        },
+        "dynamic": {
+          "candidate_evaluations": 124201,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.941441375820729,
+            2.4984865601267643,
+            2.555343590359552,
+            2.555369355493564
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17743,
+          "absolute_normalized_margin_below_1_percent_count": 17743,
+          "absolute_normalized_margin_below_5_percent_count": 17743
+        }
+      }
+    },
+    "8": {
+      "spec": [
+        "stable",
+        "R",
+        35,
+        "negative"
+      ],
+      "epsilon": 0.028439034965581454,
+      "alarm_decisions": 18525,
+      "static_dynamic_feasible_set_mismatch_count": 0,
+      "static_scalar_feasible_set_mismatch_count": 0,
+      "dynamic_only_feasible_actions": 0,
+      "static_only_feasible_actions": 0,
+      "scalar_only_vs_static_feasible_actions": 0,
+      "static_only_vs_scalar_feasible_actions": 0,
+      "static_dynamic_candidate_margin_sign_flips": 0,
+      "static_scalar_candidate_margin_sign_flips": 0,
+      "M7_legal_candidate_margin_summaries": {
+        "static": {
+          "candidate_evaluations": 129675,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.11820821447453655,
+            0.6360919775719656,
+            0.6360919775719656,
+            0.6360919775719656
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18525,
+          "absolute_normalized_margin_below_1_percent_count": 18525,
+          "absolute_normalized_margin_below_5_percent_count": 55575
+        },
+        "scalar": {
+          "candidate_evaluations": 129675,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.12720981162284584,
+            0.6840173972613576,
+            0.6845952544120939,
+            0.6845952544123137
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18525,
+          "absolute_normalized_margin_below_1_percent_count": 18525,
+          "absolute_normalized_margin_below_5_percent_count": 39740
+        },
+        "dynamic": {
+          "candidate_evaluations": 129675,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.12604305480202682,
+            0.6855588456154875,
+            0.6861515240875595,
+            0.6861515240877816
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18525,
+          "absolute_normalized_margin_below_1_percent_count": 18525,
+          "absolute_normalized_margin_below_5_percent_count": 42215
+        }
+      }
+    },
+    "9": {
+      "spec": [
+        "stable",
+        "R",
+        35,
+        "iid"
+      ],
+      "epsilon": 0.028439034965581454,
+      "alarm_decisions": 17340,
+      "static_dynamic_feasible_set_mismatch_count": 0,
+      "static_scalar_feasible_set_mismatch_count": 0,
+      "dynamic_only_feasible_actions": 0,
+      "static_only_feasible_actions": 0,
+      "scalar_only_vs_static_feasible_actions": 0,
+      "static_only_vs_scalar_feasible_actions": 0,
+      "static_dynamic_candidate_margin_sign_flips": 0,
+      "static_scalar_candidate_margin_sign_flips": 0,
+      "M7_legal_candidate_margin_summaries": {
+        "static": {
+          "candidate_evaluations": 121380,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.11820821447453655,
+            0.6360919775719656,
+            0.6360919775719656,
+            0.6360919775719656
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17340,
+          "absolute_normalized_margin_below_1_percent_count": 17340,
+          "absolute_normalized_margin_below_5_percent_count": 52020
+        },
+        "scalar": {
+          "candidate_evaluations": 121380,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.12720979131509147,
+            0.67956372871777,
+            0.6845952544120864,
+            0.6845952544123137
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17340,
+          "absolute_normalized_margin_below_1_percent_count": 17340,
+          "absolute_normalized_margin_below_5_percent_count": 37397
+        },
+        "dynamic": {
+          "candidate_evaluations": 121380,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.12604303614632018,
+            0.6809791286002693,
+            0.6861515240875506,
+            0.6861515240877816
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17340,
+          "absolute_normalized_margin_below_1_percent_count": 17340,
+          "absolute_normalized_margin_below_5_percent_count": 39887
+        }
+      }
+    },
+    "10": {
+      "spec": [
+        "stable",
+        "R",
+        1,
+        "negative"
+      ],
+      "epsilon": 0.02625534763577511,
+      "alarm_decisions": 18003,
+      "static_dynamic_feasible_set_mismatch_count": 0,
+      "static_scalar_feasible_set_mismatch_count": 0,
+      "dynamic_only_feasible_actions": 0,
+      "static_only_feasible_actions": 0,
+      "scalar_only_vs_static_feasible_actions": 0,
+      "static_only_vs_scalar_feasible_actions": 0,
+      "static_dynamic_candidate_margin_sign_flips": 0,
+      "static_scalar_candidate_margin_sign_flips": 0,
+      "M7_legal_candidate_margin_summaries": {
+        "static": {
+          "candidate_evaluations": 126021,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.15469989441718535,
+            0.8382499129609643,
+            0.8382499129609643,
+            0.8382499129609643
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18003,
+          "absolute_normalized_margin_below_1_percent_count": 18003,
+          "absolute_normalized_margin_below_5_percent_count": 36006
+        },
+        "scalar": {
+          "candidate_evaluations": 126021,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.17079121434393163,
+            0.923933558069181,
+            0.9257081327757168,
+            0.9257081327900231
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18003,
+          "absolute_normalized_margin_below_1_percent_count": 18003,
+          "absolute_normalized_margin_below_5_percent_count": 36006
+        },
+        "dynamic": {
+          "candidate_evaluations": 126021,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.16845656241497498,
+            0.9269488928120985,
+            0.9287775719812152,
+            0.9287775719959435
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 18003,
+          "absolute_normalized_margin_below_1_percent_count": 18003,
+          "absolute_normalized_margin_below_5_percent_count": 36006
+        }
+      }
+    },
+    "11": {
+      "spec": [
+        "stable",
+        "R",
+        1,
+        "iid"
+      ],
+      "epsilon": 0.02625534763577511,
+      "alarm_decisions": 17419,
+      "static_dynamic_feasible_set_mismatch_count": 0,
+      "static_scalar_feasible_set_mismatch_count": 0,
+      "dynamic_only_feasible_actions": 0,
+      "static_only_feasible_actions": 0,
+      "scalar_only_vs_static_feasible_actions": 0,
+      "static_only_vs_scalar_feasible_actions": 0,
+      "static_dynamic_candidate_margin_sign_flips": 0,
+      "static_scalar_candidate_margin_sign_flips": 0,
+      "M7_legal_candidate_margin_summaries": {
+        "static": {
+          "candidate_evaluations": 121933,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.15469989441718535,
+            0.8382499129609643,
+            0.8382499129609643,
+            0.8382499129609643
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17419,
+          "absolute_normalized_margin_below_1_percent_count": 17419,
+          "absolute_normalized_margin_below_5_percent_count": 34838
+        },
+        "scalar": {
+          "candidate_evaluations": 121933,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.1707912098340335,
+            0.9140354556597252,
+            0.9257081326953265,
+            0.9257081327900231
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17419,
+          "absolute_normalized_margin_below_1_percent_count": 17419,
+          "absolute_normalized_margin_below_5_percent_count": 34838
+        },
+        "dynamic": {
+          "candidate_evaluations": 121933,
+          "feasible_fraction": 1.0,
+          "normalized_margin_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            0.16845655844836305,
+            0.9167329417075711,
+            0.9287775718984523,
+            0.9287775719959435
+          ],
+          "absolute_normalized_margin_below_0_5_percent_count": 17419,
+          "absolute_normalized_margin_below_1_percent_count": 17419,
+          "absolute_normalized_margin_below_5_percent_count": 34838
+        }
+      }
+    }
+  }
+}

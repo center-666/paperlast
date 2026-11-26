@@ -1,0 +1,3839 @@
+{
+  "status": "PASS",
+  "source_sha256": "ac85a35e48a595cc3e74f3648d10f0ccd71877ece9cc879bcc7dce4b15335f21",
+  "frontend_source_sha256": "9322ae21256b841c3a446c60183d474c3642c2e10529c21738c51f1f7b404028",
+  "native_source_sha256": "7e4dda8c4f218873dfb6cc843d16af828d0d6946de119f8aaa57031ca9826f2b",
+  "rows": [
+    {
+      "configuration": "U_unstable_R35x0.5",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.05256546711361282
+        ],
+        [
+          0.009511948194416704,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 8.627819636752447e-19,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08056349768011117,
+      "D2_active_active_constant_template_gamma_min": 0.34581160553716983,
+      "W5_dynamic_hypothesis_gamma_min": 0.3473496756647869,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x0.5",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.0359029506124745
+        ],
+        [
+          0.013926431991533164,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.8219241847084486e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08120311267442161,
+      "D2_active_active_constant_template_gamma_min": 0.3340981602118297,
+      "W5_dynamic_hypothesis_gamma_min": 0.32400583293708424,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x0.5",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0799999999999998,
+          0.03501410222433932
+        ],
+        [
+          0.014279960594061312,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.1633175447209716e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08126448962842202,
+      "D2_active_active_constant_template_gamma_min": 0.3215341676713295,
+      "W5_dynamic_hypothesis_gamma_min": 0.3120401901515304,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x0.5",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.060013440463039705
+        ],
+        [
+          0.008331467020424093,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08043266340680523,
+      "D2_active_active_constant_template_gamma_min": 0.330248031459536,
+      "W5_dynamic_hypothesis_gamma_min": 0.33410698785932574,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x0.5",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.04804372513704733
+        ],
+        [
+          0.01040718634064538,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.4270010826059615e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08067409452562188,
+      "D2_active_active_constant_template_gamma_min": 0.47652366400716906,
+      "W5_dynamic_hypothesis_gamma_min": 0.46165536902342896,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x0.5",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.034727639306643646
+        ],
+        [
+          0.014397753777186533,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.59916043655947e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08128527119859108,
+      "D2_active_active_constant_template_gamma_min": 0.3159732788436851,
+      "W5_dynamic_hypothesis_gamma_min": 0.30671242954637074,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x0.5",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 35,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.06304236588157457
+        ],
+        [
+          0.00793117442545308,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.173798376245392e-16,
+      "trajectory_max_abs_error": 1.7763568394002505e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08039218573821102,
+      "D2_active_active_constant_template_gamma_min": 0.4124882618074205,
+      "W5_dynamic_hypothesis_gamma_min": 0.41784942803352493,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x1",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.05256546711361282
+        ],
+        [
+          0.009511948194416704,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 8.627819636752447e-19,
+      "trajectory_max_abs_error": 1.7763568394002505e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08056349768011117,
+      "D2_active_active_constant_template_gamma_min": 0.34581160553716983,
+      "W5_dynamic_hypothesis_gamma_min": 0.3473496756647869,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x1",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.0359029506124745
+        ],
+        [
+          0.013926431991533164,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.8219241847084486e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08120311267442161,
+      "D2_active_active_constant_template_gamma_min": 0.3340981602118297,
+      "W5_dynamic_hypothesis_gamma_min": 0.32400583293708424,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x1",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0799999999999998,
+          0.03501410222433932
+        ],
+        [
+          0.014279960594061312,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.1633175447209716e-16,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08126448962842202,
+      "D2_active_active_constant_template_gamma_min": 0.3215341676713295,
+      "W5_dynamic_hypothesis_gamma_min": 0.3120401901515304,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x1",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.060013440463039705
+        ],
+        [
+          0.008331467020424093,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08043266340680523,
+      "D2_active_active_constant_template_gamma_min": 0.330248031459536,
+      "W5_dynamic_hypothesis_gamma_min": 0.33410698785932574,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x1",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.04804372513704733
+        ],
+        [
+          0.01040718634064538,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.4270010826059615e-16,
+      "trajectory_max_abs_error": 1.7763568394002505e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08067409452562188,
+      "D2_active_active_constant_template_gamma_min": 0.47652366400716906,
+      "W5_dynamic_hypothesis_gamma_min": 0.46165536902342896,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x1",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.034727639306643646
+        ],
+        [
+          0.014397753777186533,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.59916043655947e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08128527119859108,
+      "D2_active_active_constant_template_gamma_min": 0.3159732788436851,
+      "W5_dynamic_hypothesis_gamma_min": 0.30671242954637074,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x1",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 35,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.06304236588157457
+        ],
+        [
+          0.00793117442545308,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.173798376245392e-16,
+      "trajectory_max_abs_error": 3.552713678800501e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08039218573821102,
+      "D2_active_active_constant_template_gamma_min": 0.33819493209948853,
+      "W5_dynamic_hypothesis_gamma_min": 0.34247961593852205,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x2",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.05256546711361282
+        ],
+        [
+          0.009511948194416704,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 8.627819636752447e-19,
+      "trajectory_max_abs_error": 1.7763568394002505e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08056349768011117,
+      "D2_active_active_constant_template_gamma_min": 0.34581160553716983,
+      "W5_dynamic_hypothesis_gamma_min": 0.3473496756647869,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x2",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.0359029506124745
+        ],
+        [
+          0.013926431991533164,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.8219241847084486e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08120311267442161,
+      "D2_active_active_constant_template_gamma_min": 0.3340981602118297,
+      "W5_dynamic_hypothesis_gamma_min": 0.32400583293708424,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x2",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0799999999999998,
+          0.03501410222433932
+        ],
+        [
+          0.014279960594061312,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.1633175447209716e-16,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08126448962842202,
+      "D2_active_active_constant_template_gamma_min": 0.3215341676713295,
+      "W5_dynamic_hypothesis_gamma_min": 0.3120401901515304,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x2",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.060013440463039705
+        ],
+        [
+          0.008331467020424093,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 1.7763568394002505e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08043266340680523,
+      "D2_active_active_constant_template_gamma_min": 0.330248031459536,
+      "W5_dynamic_hypothesis_gamma_min": 0.33410698785932574,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x2",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.04804372513704733
+        ],
+        [
+          0.01040718634064538,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.4270010826059615e-16,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08067409452562188,
+      "D2_active_active_constant_template_gamma_min": 0.47652366400716906,
+      "W5_dynamic_hypothesis_gamma_min": 0.46165536902342896,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x2",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.034727639306643646
+        ],
+        [
+          0.014397753777186533,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.59916043655947e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08128527119859108,
+      "D2_active_active_constant_template_gamma_min": 0.3159732788436851,
+      "W5_dynamic_hypothesis_gamma_min": 0.30671242954637074,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_unstable_R35x2",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 35,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.06304236588157457
+        ],
+        [
+          0.00793117442545308,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.173798376245392e-16,
+      "trajectory_max_abs_error": 1.7763568394002505e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08039218573821102,
+      "D2_active_active_constant_template_gamma_min": 0.24862602792645414,
+      "W5_dynamic_hypothesis_gamma_min": 0.2516373613965673,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x0.5",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.05256546711361282
+        ],
+        [
+          0.009511948194416704,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 8.627819636752447e-19,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08056349768011117,
+      "D2_active_active_constant_template_gamma_min": 0.34581160553716983,
+      "W5_dynamic_hypothesis_gamma_min": 0.3473496756647869,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x0.5",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.0359029506124745
+        ],
+        [
+          0.013926431991533164,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.8219241847084486e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08120311267442161,
+      "D2_active_active_constant_template_gamma_min": 0.3340981602118297,
+      "W5_dynamic_hypothesis_gamma_min": 0.32400583293708424,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x0.5",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0799999999999998,
+          0.03501410222433932
+        ],
+        [
+          0.014279960594061312,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.1633175447209716e-16,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08126448962842202,
+      "D2_active_active_constant_template_gamma_min": 0.3215341676713295,
+      "W5_dynamic_hypothesis_gamma_min": 0.3120401901515304,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x0.5",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.060013440463039705
+        ],
+        [
+          0.008331467020424093,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08043266340680523,
+      "D2_active_active_constant_template_gamma_min": 0.330248031459536,
+      "W5_dynamic_hypothesis_gamma_min": 0.33410698785932574,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x0.5",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.04804372513704733
+        ],
+        [
+          0.01040718634064538,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.4270010826059615e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08067409452562188,
+      "D2_active_active_constant_template_gamma_min": 0.47652366400716906,
+      "W5_dynamic_hypothesis_gamma_min": 0.46165536902342896,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x0.5",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.034727639306643646
+        ],
+        [
+          0.014397753777186533,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.59916043655947e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08128527119859108,
+      "D2_active_active_constant_template_gamma_min": 0.3159732788436851,
+      "W5_dynamic_hypothesis_gamma_min": 0.30671242954637074,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x0.5",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 35,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.06304236588157457
+        ],
+        [
+          0.00793117442545308,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.173798376245392e-16,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08039218573821102,
+      "D2_active_active_constant_template_gamma_min": 0.4124882618074205,
+      "W5_dynamic_hypothesis_gamma_min": 0.41784942803352493,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x1",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.05256546711361282
+        ],
+        [
+          0.009511948194416704,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 8.627819636752447e-19,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08056349768011117,
+      "D2_active_active_constant_template_gamma_min": 0.34581160553716983,
+      "W5_dynamic_hypothesis_gamma_min": 0.3473496756647869,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x1",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.0359029506124745
+        ],
+        [
+          0.013926431991533164,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.8219241847084486e-18,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08120311267442161,
+      "D2_active_active_constant_template_gamma_min": 0.3340981602118297,
+      "W5_dynamic_hypothesis_gamma_min": 0.32400583293708424,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x1",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0799999999999998,
+          0.03501410222433932
+        ],
+        [
+          0.014279960594061312,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.1633175447209716e-16,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08126448962842202,
+      "D2_active_active_constant_template_gamma_min": 0.3215341676713295,
+      "W5_dynamic_hypothesis_gamma_min": 0.3120401901515304,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x1",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.060013440463039705
+        ],
+        [
+          0.008331467020424093,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08043266340680523,
+      "D2_active_active_constant_template_gamma_min": 0.330248031459536,
+      "W5_dynamic_hypothesis_gamma_min": 0.33410698785932574,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x1",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.04804372513704733
+        ],
+        [
+          0.01040718634064538,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.4270010826059615e-16,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08067409452562188,
+      "D2_active_active_constant_template_gamma_min": 0.47652366400716906,
+      "W5_dynamic_hypothesis_gamma_min": 0.46165536902342896,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x1",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.034727639306643646
+        ],
+        [
+          0.014397753777186533,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.59916043655947e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08128527119859108,
+      "D2_active_active_constant_template_gamma_min": 0.3159732788436851,
+      "W5_dynamic_hypothesis_gamma_min": 0.30671242954637074,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x1",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 35,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.06304236588157457
+        ],
+        [
+          0.00793117442545308,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.173798376245392e-16,
+      "trajectory_max_abs_error": 1.7763568394002505e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08039218573821102,
+      "D2_active_active_constant_template_gamma_min": 0.33819493209948853,
+      "W5_dynamic_hypothesis_gamma_min": 0.34247961593852205,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x2",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.05256546711361282
+        ],
+        [
+          0.009511948194416704,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 8.627819636752447e-19,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08056349768011117,
+      "D2_active_active_constant_template_gamma_min": 0.34581160553716983,
+      "W5_dynamic_hypothesis_gamma_min": 0.3473496756647869,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x2",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.0359029506124745
+        ],
+        [
+          0.013926431991533164,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.8219241847084486e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08120311267442161,
+      "D2_active_active_constant_template_gamma_min": 0.3340981602118297,
+      "W5_dynamic_hypothesis_gamma_min": 0.32400583293708424,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x2",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0799999999999998,
+          0.03501410222433932
+        ],
+        [
+          0.014279960594061312,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.1633175447209716e-16,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08126448962842202,
+      "D2_active_active_constant_template_gamma_min": 0.3215341676713295,
+      "W5_dynamic_hypothesis_gamma_min": 0.3120401901515304,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x2",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.060013440463039705
+        ],
+        [
+          0.008331467020424093,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08043266340680523,
+      "D2_active_active_constant_template_gamma_min": 0.330248031459536,
+      "W5_dynamic_hypothesis_gamma_min": 0.33410698785932574,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x2",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.04804372513704733
+        ],
+        [
+          0.01040718634064538,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.4270010826059615e-16,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08067409452562188,
+      "D2_active_active_constant_template_gamma_min": 0.47652366400716906,
+      "W5_dynamic_hypothesis_gamma_min": 0.46165536902342896,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x2",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.034727639306643646
+        ],
+        [
+          0.014397753777186533,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.59916043655947e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08128527119859108,
+      "D2_active_active_constant_template_gamma_min": 0.3159732788436851,
+      "W5_dynamic_hypothesis_gamma_min": 0.30671242954637074,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_R35x2",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 35,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.06304236588157457
+        ],
+        [
+          0.00793117442545308,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.173798376245392e-16,
+      "trajectory_max_abs_error": 2.220446049250313e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08039218573821102,
+      "D2_active_active_constant_template_gamma_min": 0.24862602792645414,
+      "W5_dynamic_hypothesis_gamma_min": 0.2516373613965673,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x0.5",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.021026186845445126
+        ],
+        [
+          0.01902389638883341,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.9174595825172193e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.053496809566674915,
+      "D2_active_active_constant_template_gamma_min": 0.3302208531554766,
+      "W5_dynamic_hypothesis_gamma_min": 0.32527639496585425,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x0.5",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014361180244989797
+        ],
+        [
+          0.02785286398306633,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.3064642010524999e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05723444794928318,
+      "D2_active_active_constant_template_gamma_min": 0.31121814365826683,
+      "W5_dynamic_hypothesis_gamma_min": 0.3098041525066928,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x0.5",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014005640889735728
+        ],
+        [
+          0.028559921188122624,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05758184695085585,
+      "D2_active_active_constant_template_gamma_min": 0.299115577065874,
+      "W5_dynamic_hypothesis_gamma_min": 0.297900423072561,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x0.5",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.024005376185215883
+        ],
+        [
+          0.016662934040848187,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.9663129620690596e-18,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05270344742850954,
+      "D2_active_active_constant_template_gamma_min": 0.3141912628164578,
+      "W5_dynamic_hypothesis_gamma_min": 0.3110634372726313,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x0.5",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.01921749005481893
+        ],
+        [
+          0.02081437268129076,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.054159376936184146,
+      "D2_active_active_constant_template_gamma_min": 0.4536057081929144,
+      "W5_dynamic_hypothesis_gamma_min": 0.4500024514952576,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x0.5",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.013891055722657456
+        ],
+        [
+          0.028795507554373066,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05769905766400321,
+      "D2_active_active_constant_template_gamma_min": 0.2937789154990446,
+      "W5_dynamic_hypothesis_gamma_min": 0.29263271498750537,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x0.5",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 35,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.9500000000000001,
+          0.02521694635262983
+        ],
+        [
+          0.01586234885090616,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.3102961829714971e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.052455830096070744,
+      "D2_active_active_constant_template_gamma_min": 0.3863989998976147,
+      "W5_dynamic_hypothesis_gamma_min": 0.3830719181824273,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x1",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.021026186845445126
+        ],
+        [
+          0.01902389638883341,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.9174595825172193e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.053496809566674915,
+      "D2_active_active_constant_template_gamma_min": 0.3302208531554766,
+      "W5_dynamic_hypothesis_gamma_min": 0.32527639496585425,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x1",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014361180244989797
+        ],
+        [
+          0.02785286398306633,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.3064642010524999e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05723444794928318,
+      "D2_active_active_constant_template_gamma_min": 0.31121814365826683,
+      "W5_dynamic_hypothesis_gamma_min": 0.3098041525066928,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x1",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014005640889735728
+        ],
+        [
+          0.028559921188122624,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 6.661338147750939e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05758184695085585,
+      "D2_active_active_constant_template_gamma_min": 0.299115577065874,
+      "W5_dynamic_hypothesis_gamma_min": 0.297900423072561,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x1",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.024005376185215883
+        ],
+        [
+          0.016662934040848187,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.9663129620690596e-18,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05270344742850954,
+      "D2_active_active_constant_template_gamma_min": 0.3141912628164578,
+      "W5_dynamic_hypothesis_gamma_min": 0.3110634372726313,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x1",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.01921749005481893
+        ],
+        [
+          0.02081437268129076,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.054159376936184146,
+      "D2_active_active_constant_template_gamma_min": 0.4536057081929144,
+      "W5_dynamic_hypothesis_gamma_min": 0.4500024514952576,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x1",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.013891055722657456
+        ],
+        [
+          0.028795507554373066,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 6.661338147750939e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05769905766400321,
+      "D2_active_active_constant_template_gamma_min": 0.2937789154990446,
+      "W5_dynamic_hypothesis_gamma_min": 0.29263271498750537,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x1",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 35,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.9500000000000001,
+          0.02521694635262983
+        ],
+        [
+          0.01586234885090616,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.3102961829714971e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.052455830096070744,
+      "D2_active_active_constant_template_gamma_min": 0.3224300963170451,
+      "W5_dynamic_hypothesis_gamma_min": 0.31966435712397406,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x2",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.021026186845445126
+        ],
+        [
+          0.01902389638883341,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.9174595825172193e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.053496809566674915,
+      "D2_active_active_constant_template_gamma_min": 0.3302208531554766,
+      "W5_dynamic_hypothesis_gamma_min": 0.32527639496585425,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x2",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014361180244989797
+        ],
+        [
+          0.02785286398306633,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.3064642010524999e-16,
+      "trajectory_max_abs_error": 1.3322676295501878e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05723444794928318,
+      "D2_active_active_constant_template_gamma_min": 0.31121814365826683,
+      "W5_dynamic_hypothesis_gamma_min": 0.3098041525066928,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x2",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014005640889735728
+        ],
+        [
+          0.028559921188122624,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05758184695085585,
+      "D2_active_active_constant_template_gamma_min": 0.299115577065874,
+      "W5_dynamic_hypothesis_gamma_min": 0.297900423072561,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x2",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.024005376185215883
+        ],
+        [
+          0.016662934040848187,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.9663129620690596e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05270344742850954,
+      "D2_active_active_constant_template_gamma_min": 0.3141912628164578,
+      "W5_dynamic_hypothesis_gamma_min": 0.3110634372726313,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x2",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.01921749005481893
+        ],
+        [
+          0.02081437268129076,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 4.440892098500626e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.054159376936184146,
+      "D2_active_active_constant_template_gamma_min": 0.4536057081929144,
+      "W5_dynamic_hypothesis_gamma_min": 0.4500024514952576,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x2",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.013891055722657456
+        ],
+        [
+          0.028795507554373066,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05769905766400321,
+      "D2_active_active_constant_template_gamma_min": 0.2937789154990446,
+      "W5_dynamic_hypothesis_gamma_min": 0.29263271498750537,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "U_stable_R35x2",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 35,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.9500000000000001,
+          0.02521694635262983
+        ],
+        [
+          0.01586234885090616,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.3102961829714971e-16,
+      "trajectory_max_abs_error": 4.440892098500626e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.052455830096070744,
+      "D2_active_active_constant_template_gamma_min": 0.2422167145527298,
+      "W5_dynamic_hypothesis_gamma_min": 0.24015434984826928,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x0.5",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.021026186845445126
+        ],
+        [
+          0.01902389638883341,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.9174595825172193e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.053496809566674915,
+      "D2_active_active_constant_template_gamma_min": 0.3302208531554766,
+      "W5_dynamic_hypothesis_gamma_min": 0.32527639496585425,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x0.5",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014361180244989797
+        ],
+        [
+          0.02785286398306633,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.3064642010524999e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05723444794928318,
+      "D2_active_active_constant_template_gamma_min": 0.31121814365826683,
+      "W5_dynamic_hypothesis_gamma_min": 0.3098041525066928,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x0.5",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014005640889735728
+        ],
+        [
+          0.028559921188122624,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05758184695085585,
+      "D2_active_active_constant_template_gamma_min": 0.299115577065874,
+      "W5_dynamic_hypothesis_gamma_min": 0.297900423072561,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x0.5",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.024005376185215883
+        ],
+        [
+          0.016662934040848187,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.9663129620690596e-18,
+      "trajectory_max_abs_error": 6.661338147750939e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05270344742850954,
+      "D2_active_active_constant_template_gamma_min": 0.3141912628164578,
+      "W5_dynamic_hypothesis_gamma_min": 0.3110634372726313,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x0.5",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.01921749005481893
+        ],
+        [
+          0.02081437268129076,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 4.440892098500626e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.054159376936184146,
+      "D2_active_active_constant_template_gamma_min": 0.4536057081929144,
+      "W5_dynamic_hypothesis_gamma_min": 0.4500024514952576,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x0.5",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.013891055722657456
+        ],
+        [
+          0.028795507554373066,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05769905766400321,
+      "D2_active_active_constant_template_gamma_min": 0.2937789154990446,
+      "W5_dynamic_hypothesis_gamma_min": 0.29263271498750537,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x0.5",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 35,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.9500000000000001,
+          0.02521694635262983
+        ],
+        [
+          0.01586234885090616,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.3102961829714971e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.052455830096070744,
+      "D2_active_active_constant_template_gamma_min": 0.3863989998976147,
+      "W5_dynamic_hypothesis_gamma_min": 0.3830719181824273,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x1",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.021026186845445126
+        ],
+        [
+          0.01902389638883341,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.9174595825172193e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.053496809566674915,
+      "D2_active_active_constant_template_gamma_min": 0.3302208531554766,
+      "W5_dynamic_hypothesis_gamma_min": 0.32527639496585425,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x1",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014361180244989797
+        ],
+        [
+          0.02785286398306633,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.3064642010524999e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05723444794928318,
+      "D2_active_active_constant_template_gamma_min": 0.31121814365826683,
+      "W5_dynamic_hypothesis_gamma_min": 0.3098041525066928,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x1",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014005640889735728
+        ],
+        [
+          0.028559921188122624,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 4.440892098500626e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05758184695085585,
+      "D2_active_active_constant_template_gamma_min": 0.299115577065874,
+      "W5_dynamic_hypothesis_gamma_min": 0.297900423072561,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x1",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.024005376185215883
+        ],
+        [
+          0.016662934040848187,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.9663129620690596e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05270344742850954,
+      "D2_active_active_constant_template_gamma_min": 0.3141912628164578,
+      "W5_dynamic_hypothesis_gamma_min": 0.3110634372726313,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x1",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.01921749005481893
+        ],
+        [
+          0.02081437268129076,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 6.661338147750939e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.054159376936184146,
+      "D2_active_active_constant_template_gamma_min": 0.4536057081929144,
+      "W5_dynamic_hypothesis_gamma_min": 0.4500024514952576,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x1",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.013891055722657456
+        ],
+        [
+          0.028795507554373066,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 6.661338147750939e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05769905766400321,
+      "D2_active_active_constant_template_gamma_min": 0.2937789154990446,
+      "W5_dynamic_hypothesis_gamma_min": 0.29263271498750537,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x1",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 35,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.9500000000000001,
+          0.02521694635262983
+        ],
+        [
+          0.01586234885090616,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.3102961829714971e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.052455830096070744,
+      "D2_active_active_constant_template_gamma_min": 0.3224300963170451,
+      "W5_dynamic_hypothesis_gamma_min": 0.31966435712397406,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x2",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.021026186845445126
+        ],
+        [
+          0.01902389638883341,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.9174595825172193e-18,
+      "trajectory_max_abs_error": 6.661338147750939e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.053496809566674915,
+      "D2_active_active_constant_template_gamma_min": 0.3302208531554766,
+      "W5_dynamic_hypothesis_gamma_min": 0.32527639496585425,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x2",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014361180244989797
+        ],
+        [
+          0.02785286398306633,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.3064642010524999e-16,
+      "trajectory_max_abs_error": 4.440892098500626e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05723444794928318,
+      "D2_active_active_constant_template_gamma_min": 0.31121814365826683,
+      "W5_dynamic_hypothesis_gamma_min": 0.3098041525066928,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x2",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014005640889735728
+        ],
+        [
+          0.028559921188122624,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05758184695085585,
+      "D2_active_active_constant_template_gamma_min": 0.299115577065874,
+      "W5_dynamic_hypothesis_gamma_min": 0.297900423072561,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x2",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.024005376185215883
+        ],
+        [
+          0.016662934040848187,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.9663129620690596e-18,
+      "trajectory_max_abs_error": 6.661338147750939e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05270344742850954,
+      "D2_active_active_constant_template_gamma_min": 0.3141912628164578,
+      "W5_dynamic_hypothesis_gamma_min": 0.3110634372726313,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x2",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.01921749005481893
+        ],
+        [
+          0.02081437268129076,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 6.661338147750939e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.054159376936184146,
+      "D2_active_active_constant_template_gamma_min": 0.4536057081929144,
+      "W5_dynamic_hypothesis_gamma_min": 0.4500024514952576,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x2",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.013891055722657456
+        ],
+        [
+          0.028795507554373066,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05769905766400321,
+      "D2_active_active_constant_template_gamma_min": 0.2937789154990446,
+      "W5_dynamic_hypothesis_gamma_min": 0.29263271498750537,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_R35x2",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 35,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.9500000000000001,
+          0.02521694635262983
+        ],
+        [
+          0.01586234885090616,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.3102961829714971e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.052455830096070744,
+      "D2_active_active_constant_template_gamma_min": 0.2422167145527298,
+      "W5_dynamic_hypothesis_gamma_min": 0.24015434984826928,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_target1",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.05256546711361282
+        ],
+        [
+          0.009511948194416704,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 8.627819636752447e-19,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08056349768011117,
+      "D2_active_active_constant_template_gamma_min": 0.34581160553716983,
+      "W5_dynamic_hypothesis_gamma_min": 0.3473496756647869,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_target1",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.0359029506124745
+        ],
+        [
+          0.013926431991533164,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.8219241847084486e-18,
+      "trajectory_max_abs_error": 4.440892098500626e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08120311267442161,
+      "D2_active_active_constant_template_gamma_min": 0.3340981602118297,
+      "W5_dynamic_hypothesis_gamma_min": 0.32400583293708424,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_target1",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0799999999999998,
+          0.03501410222433932
+        ],
+        [
+          0.014279960594061312,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.1633175447209716e-16,
+      "trajectory_max_abs_error": 1.7763568394002505e-15,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08126448962842202,
+      "D2_active_active_constant_template_gamma_min": 0.3215341676713295,
+      "W5_dynamic_hypothesis_gamma_min": 0.3120401901515304,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_target1",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.060013440463039705
+        ],
+        [
+          0.008331467020424093,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08043266340680523,
+      "D2_active_active_constant_template_gamma_min": 0.330248031459536,
+      "W5_dynamic_hypothesis_gamma_min": 0.33410698785932574,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_target1",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.0800000000000003,
+          0.04804372513704733
+        ],
+        [
+          0.01040718634064538,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 1.4270010826059615e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08067409452562188,
+      "D2_active_active_constant_template_gamma_min": 0.47652366400716906,
+      "W5_dynamic_hypothesis_gamma_min": 0.46165536902342896,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_target1",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.034727639306643646
+        ],
+        [
+          0.014397753777186533,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 3.59916043655947e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08128527119859108,
+      "D2_active_active_constant_template_gamma_min": 0.3159732788436851,
+      "W5_dynamic_hypothesis_gamma_min": 0.30671242954637074,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_unstable_target1",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          1.08,
+          0.05256546711361282
+        ],
+        [
+          0.009511948194416704,
+          1.05
+        ]
+      ],
+      "relative_output_closure_error": 8.627819636752447e-19,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.08056349768011117,
+      "D2_active_active_constant_template_gamma_min": 0.34581160553716983,
+      "W5_dynamic_hypothesis_gamma_min": 0.3473496756647869,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_target1",
+      "edge": 0,
+      "receiver": 0,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.021026186845445126
+        ],
+        [
+          0.01902389638883341,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.9174595825172193e-18,
+      "trajectory_max_abs_error": 6.661338147750939e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.053496809566674915,
+      "D2_active_active_constant_template_gamma_min": 0.3302208531554766,
+      "W5_dynamic_hypothesis_gamma_min": 0.32527639496585425,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_target1",
+      "edge": 1,
+      "receiver": 2,
+      "sender": 3,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014361180244989797
+        ],
+        [
+          0.02785286398306633,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.3064642010524999e-16,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05723444794928318,
+      "D2_active_active_constant_template_gamma_min": 0.31121814365826683,
+      "W5_dynamic_hypothesis_gamma_min": 0.3098041525066928,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_target1",
+      "edge": 2,
+      "receiver": 15,
+      "sender": 16,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.014005640889735728
+        ],
+        [
+          0.028559921188122624,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 4.440892098500626e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05758184695085585,
+      "D2_active_active_constant_template_gamma_min": 0.299115577065874,
+      "W5_dynamic_hypothesis_gamma_min": 0.297900423072561,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_target1",
+      "edge": 3,
+      "receiver": 17,
+      "sender": 31,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.024005376185215883
+        ],
+        [
+          0.016662934040848187,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 1.9663129620690596e-18,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05270344742850954,
+      "D2_active_active_constant_template_gamma_min": 0.3141912628164578,
+      "W5_dynamic_hypothesis_gamma_min": 0.3110634372726313,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_target1",
+      "edge": 4,
+      "receiver": 14,
+      "sender": 49,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.01921749005481893
+        ],
+        [
+          0.02081437268129076,
+          0.97
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 4.440892098500626e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.054159376936184146,
+      "D2_active_active_constant_template_gamma_min": 0.4536057081929144,
+      "W5_dynamic_hypothesis_gamma_min": 0.4500024514952576,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_target1",
+      "edge": 5,
+      "receiver": 17,
+      "sender": 34,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.013891055722657456
+        ],
+        [
+          0.028795507554373066,
+          0.9699999999999999
+        ]
+      ],
+      "relative_output_closure_error": 0.0,
+      "trajectory_max_abs_error": 8.881784197001252e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.05769905766400321,
+      "D2_active_active_constant_template_gamma_min": 0.2937789154990446,
+      "W5_dynamic_hypothesis_gamma_min": 0.29263271498750537,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    },
+    {
+      "configuration": "R_stable_target1",
+      "edge": 6,
+      "receiver": 26,
+      "sender": 1,
+      "H_shape": [
+        2,
+        4
+      ],
+      "H_rank": 2,
+      "D": [
+        [
+          0.95,
+          0.021026186845445126
+        ],
+        [
+          0.01902389638883341,
+          0.9700000000000001
+        ]
+      ],
+      "relative_output_closure_error": 1.9174595825172193e-18,
+      "trajectory_max_abs_error": 6.661338147750939e-16,
+      "old_W5_dynamic_template_relative_error_for_D2_constant_input": 0.053496809566674915,
+      "D2_active_active_constant_template_gamma_min": 0.3302208531554766,
+      "W5_dynamic_hypothesis_gamma_min": 0.32527639496585425,
+      "projection_state_ranks": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "whitened_support_ranks": [
+        8,
+        10,
+        12,
+        14
+      ],
+      "burst_off_off_signal": "zero, both reports carry zero registered input"
+    }
+  ],
+  "independent_LS_score_cases": 1008,
+  "maximum_absolute_native_vs_LS_score_difference": 1.0024336916103493e-10,
+  "true_constant_and_burst_mean_subspace_cases": 280,
+  "maximum_relative_projection_energy_difference": 1.1868240379866306e-15,
+  "future_packet_and_key_invariance": true,
+  "codec_roundtrip": true,
+  "same_sender_key_shared_across_outgoing_edges": true,
+  "time": "first legitimate report k=1, scoring k=5, width=min(8,k)",
+  "template": "D2 constant plus registered 6-on/4-off burst phases, unknown 2D amplitude and causal suffix start"
+}

@@ -1,0 +1,26 @@
+{
+  "numerical_only": true,
+  "words": 823543,
+  "full_unstable_subspace": false,
+  "viable_states": 117649,
+  "reachable_states": 117649,
+  "admitted": 823543,
+  "single_choice_states": 0,
+  "rho_hat": 0.8828700752559174,
+  "witness": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "other_single_upper": 0.6331403738744952,
+  "network_window_upper_hat": 0.8828700752559174,
+  "all_zero_norm": 0.8828700752559174,
+  "all_zero_rank": 2,
+  "rank_deficient_admitted": 1,
+  "min_admitted_sigma": 0.0,
+  "max_finite_admitted_condition": 44.88285208254109
+}

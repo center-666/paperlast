@@ -1,0 +1,134 @@
+{
+  "configuration": 5,
+  "name": "R_unstable_R35x2",
+  "dynamics": "unstable",
+  "topology": "R",
+  "R35_factor": 2.0,
+  "target_sender": 35,
+  "affected_gain_receivers": [
+    26,
+    28,
+    35
+  ],
+  "unique_local_designs": 63,
+  "health_cost": [
+    0.5489449435263538,
+    0.5458049538902766,
+    0.5440031067527632,
+    0.5430198061569411,
+    0.5425273167124179,
+    0.5423993155116228,
+    0.542326447680125
+  ],
+  "relative_health_cost": [
+    0.006618495846228867,
+    0.003478506210151666,
+    0.0016766590726382535,
+    0.0006933584768161749,
+    0.00020086903229299402,
+    7.286783149784704e-05,
+    0.0
+  ],
+  "kappa_L60": 0.7841798197754455,
+  "epsilon_original": 0.028113023660457613,
+  "epsilon_updated": 0.032419264895078986,
+  "budget_margin_H": [
+    0.008627940409094413,
+    0.011767930045171614,
+    0.013569777182685027,
+    0.014553077778507105,
+    0.015045567223030286,
+    0.015173568423825433,
+    0.01524643625532328
+  ],
+  "budget_margin_V": [
+    0.0109633289207203,
+    0.0141033185567975,
+    0.015905165694310913,
+    0.016888466290132992,
+    0.017380955734656173,
+    0.01750895693545132,
+    0.017581824766949167
+  ],
+  "health_feasible_H": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "health_feasible_V": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "fixed_T_q": 0.0,
+  "policy_reachable_states_T_H_V": [
+    64,
+    64,
+    64
+  ],
+  "reachable_selected_q_T_H_V": [
+    [
+      0.0
+    ],
+    [
+      0.0
+    ],
+    [
+      0.0
+    ]
+  ],
+  "first_divergence": {
+    "T_H": {
+      "first_divergence": null,
+      "paired_states_checked": 64,
+      "strictly_equal": true
+    },
+    "T_V": {
+      "first_divergence": null,
+      "paired_states_checked": 64,
+      "strictly_equal": true
+    },
+    "H_V": {
+      "first_divergence": null,
+      "paired_states_checked": 64,
+      "strictly_equal": true
+    }
+  },
+  "regression_factor1": {},
+  "archive_sha256": "a22d3ebf768a51d0ce52cf488120329d22e58ac178d9eed3a3ec5bae4af48961",
+  "M7_archive_sha256": "58fb445b66c650bbe7b15f5f0877519567287a40b27eca61dd7c5a619ebbb2d3",
+  "M7_report": {
+    "numerical_only": true,
+    "words": 823543,
+    "full_unstable_subspace": true,
+    "viable_states": 117649,
+    "reachable_states": 117649,
+    "admitted": 823543,
+    "single_choice_states": 0,
+    "rho_hat": 0.0007712020659578472,
+    "witness": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "other_single_upper": 0.6428352045882496,
+    "network_window_upper_hat": 0.045362561377368306,
+    "all_zero_norm": 0.0007712020659578472,
+    "all_zero_rank": 4,
+    "rank_deficient_admitted": 0,
+    "min_admitted_sigma": 2.735559405979498,
+    "max_finite_admitted_condition": 2.8462983210631903
+  }
+}
