@@ -16,6 +16,8 @@
 
 各运行RUN.json记录执行提交、Python/NumPy/SciPy版本、源文件SHA-256、全部NPZ哈希、阈值与路径命名空间。W4确认之前的锁提交为7f65ea1，修正后W5确认之前的锁提交为b29145d。随机种子中的20261127是固定命名空间整数。
 
+W3清单还绑定了两个案例JSON的原始Windows CRLF字节。交付时对HIGH_LOSS_REPLAY.json与HIGH_LOSS_COUNTERFACTUAL.json设置精确字节保留，Git归档中的SHA-256与原运行输入一致。新补充表及读数清单明确以LF写出。全包核验同时检查工作副本和Git索引中的冻结输入。
+
 需要Python 3.11、NumPy、SciPy及C编译器。Windows使用MSVC Build Tools，POSIX使用cc。原投影内核在系统临时目录编译。固定版本运行记录采用Python 3.11.18、NumPy 2.4.6、SciPy 1.17.1。Git对象库需包含冻结物理提交。
 
 PowerShell环境设置为

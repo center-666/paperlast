@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "source_sha256": "a4bc537d72a6021558d4ded72b47bf69fa046ffcf1f186151fd471908aa804f5",
+  "source_sha256": "16b2c678393c2cc0ca0fb23050028a1e2cc7e4375eaa1c20a976a098544af43d",
   "run_identities": {
     "tail_dev": {
       "run_sha256": "fbc2642b12031bae5dd38c8e7d8f400124e731780e5710a9ac3377fb35fef9a8",
@@ -59,6 +59,7 @@
   },
   "archive_files_verified": 80,
   "frozen_source_hash_checks": 44,
+  "git_index_frozen_source_hash_checks": 44,
   "locks_verified": [
     {
       "lock": "PARTIAL_LOCK.json",
@@ -98,7 +99,7 @@
       "local_links_resolve": true
     },
     "FOLLOWUP_REPRODUCE.md": {
-      "sha256": "87936dac37e97482e88ea1c6a6c04bdb42130228aabd4b7421fbffc8b5255492",
+      "sha256": "59c6356853037c37caa6d798a8bd7c427a95757aa043e215337a59927e59ffed",
       "control_characters": 0,
       "balanced_math_delimiters": true,
       "local_links_resolve": true

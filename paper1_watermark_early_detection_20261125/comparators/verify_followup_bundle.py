@@ -39,6 +39,9 @@ def main():
             if not path.exists():
                 path = HERE.parent / name
             assert sha(path) == digest, (label, "source", name)
+            git_bytes = subprocess.check_output(
+                ["git", "show", ":" + path.relative_to(ROOT).as_posix()], cwd=ROOT)
+            assert hashlib.sha256(git_bytes).hexdigest() == digest, (label, "git_source", name)
             source_checks += 1
         runs[label] = {
             "run_sha256": sha(folder / "RUN.json"),
@@ -167,6 +170,7 @@ def main():
         "run_identities": runs,
         "archive_files_verified": archives_checked,
         "frozen_source_hash_checks": source_checks,
+        "git_index_frozen_source_hash_checks": source_checks,
         "locks_verified": lock_checks,
         "superseded_files_preserved_and_verified": preserved,
         "calibration_holdout_attack_probes_distinct": True,

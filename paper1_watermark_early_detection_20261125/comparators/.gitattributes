@@ -4,3 +4,6 @@
 *.json text eol=lf
 *.csv text eol=lf
 *.npz binary
+# Preserve the exact Windows input bytes bound by the W3 frozen manifests.
+HIGH_LOSS_REPLAY.json -text
+HIGH_LOSS_COUNTERFACTUAL.json -text
