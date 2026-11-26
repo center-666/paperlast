@@ -1,0 +1,10 @@
+{
+  "development_sha256": {
+    "1": "ac5cf27e592731879992cae29498f125d3b3109aa5c0588da97256dd46615f61",
+    "3": "a63de103b1f68c7f0af875ef36dd8346ec3a28ff21ce987a0e65eed7eef1b517"
+  },
+  "registration_sha256": "0537f979b985302e14168b61775e0fc150cf15890c8d28910f07841015c15217",
+  "2_n": 512,
+  "4_n": null,
+  "stage2_receiver": null
+}
