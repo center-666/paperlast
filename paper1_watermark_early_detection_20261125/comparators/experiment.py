@@ -70,6 +70,8 @@ def schedule(s,draws,bits,c):
     first=1.-2*(bits%2)
     if s=="sign":
         return first[...,None,None]*eye
+    if s=="sign":
+        return first[...,None,None]*eye
     out=np.zeros((*bits.shape,2,2))
     out[...,0,0]=first
     out[...,1,1]=1.-2*(bits//2)
