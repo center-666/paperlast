@@ -1,0 +1,16 @@
+{
+  "dev": {
+    "archives_verified": 16,
+    "paths_per_scene": 256,
+    "primary_direct": -0.1665581597222222,
+    "parametric_reference_se": 0.003934013860178462,
+    "actual_bootstrap_halfwidth": 0.007731119791666685
+  },
+  "confirm": {
+    "archives_verified": 16,
+    "paths_per_scene": 512,
+    "primary_direct": -0.15736219618055555,
+    "parametric_reference_se": 0.002707005314607696,
+    "actual_bootstrap_halfwidth": 0.005276150173611105
+  }
+}
