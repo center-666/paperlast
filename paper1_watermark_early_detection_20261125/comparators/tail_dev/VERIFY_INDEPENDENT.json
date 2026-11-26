@@ -1,6 +1,8 @@
 {
   "split": "dev",
   "run_sha256": "fbc2642b12031bae5dd38c8e7d8f400124e731780e5710a9ac3377fb35fef9a8",
+  "verification_source_sha256": "eb38f2b0ee9b2dba620caaf4978834e2784dd5c308e5efcaca44fcf357969fa6",
+  "metadata_correction": "Each scene digest now refers to its own archive. The previous report displayed the final archive digest in every scene row. The archive validation loop and event calculations were already correct.",
   "event_definition": "quarter matched attack MSE >1 and >=10x fixed-negative matched attack MSE",
   "scenes": {
     "unstable_0": {
@@ -17,7 +19,7 @@
       "quarter_latch_mse_mean": 0.058510385726367437,
       "quarter_max": 0.07528503677842838,
       "negative_max": 0.0885469131259228,
-      "archive_sha256": "31a7548d7ebac532703ff8cd19e81989a15f1d2b33d8b69663cb672902442e20"
+      "archive_sha256": "62de834c734f96ecbf242798310231e864001c514804046d0f2b700b083af4d5"
     },
     "unstable_1": {
       "tail_event": 1,
@@ -33,7 +35,7 @@
       "quarter_latch_mse_mean": 0.058187622919086926,
       "quarter_max": 11.770628533734286,
       "negative_max": 0.08408547551028961,
-      "archive_sha256": "31a7548d7ebac532703ff8cd19e81989a15f1d2b33d8b69663cb672902442e20"
+      "archive_sha256": "42c413587e33788eba1bb38c658356c385d48c87145bf99697f571865f5299d2"
     },
     "unstable_2": {
       "tail_event": 0,
@@ -49,7 +51,7 @@
       "quarter_latch_mse_mean": 0.05479561576872809,
       "quarter_max": 0.6866652999652568,
       "negative_max": 0.06690687997713524,
-      "archive_sha256": "31a7548d7ebac532703ff8cd19e81989a15f1d2b33d8b69663cb672902442e20"
+      "archive_sha256": "3f2a2aae1f5e5a962bef8362bb1e49d260cee65385e299ae9ff81d3c5f62728c"
     },
     "unstable_3": {
       "tail_event": 1,
@@ -65,7 +67,7 @@
       "quarter_latch_mse_mean": 0.055562402822193185,
       "quarter_max": 5.14524811133736,
       "negative_max": 0.0693184440032937,
-      "archive_sha256": "31a7548d7ebac532703ff8cd19e81989a15f1d2b33d8b69663cb672902442e20"
+      "archive_sha256": "cf3e50c9251f6c24d61d1e3bf299a33e860d972059657c0fa908fb8550476945"
     },
     "unstable_4": {
       "tail_event": 2,
@@ -81,7 +83,7 @@
       "quarter_latch_mse_mean": 0.05852828655386568,
       "quarter_max": 29.267729977075376,
       "negative_max": 0.08155535387142795,
-      "archive_sha256": "31a7548d7ebac532703ff8cd19e81989a15f1d2b33d8b69663cb672902442e20"
+      "archive_sha256": "5f8727dea723d4f4921f434f51280d7bee184d9389c3cf8d520fbc29f8cc1841"
     },
     "unstable_5": {
       "tail_event": 0,
@@ -97,7 +99,7 @@
       "quarter_latch_mse_mean": 0.05914628193558408,
       "quarter_max": 0.16162428248908944,
       "negative_max": 0.10650099933722193,
-      "archive_sha256": "31a7548d7ebac532703ff8cd19e81989a15f1d2b33d8b69663cb672902442e20"
+      "archive_sha256": "e7608a2fa3cf71c4650f3c432387d3758eb6ab147c65a9f3057c582be0ab568f"
     },
     "stable_0": {
       "tail_event": 0,
@@ -113,7 +115,7 @@
       "quarter_latch_mse_mean": 0.05522141364768109,
       "quarter_max": 0.07249412652087796,
       "negative_max": 0.08722739185178933,
-      "archive_sha256": "31a7548d7ebac532703ff8cd19e81989a15f1d2b33d8b69663cb672902442e20"
+      "archive_sha256": "4c0176230ed5371aa8d0f0735ffeedb71e7659f967c7004d8bb1e73c315cb753"
     },
     "stable_1": {
       "tail_event": 0,
@@ -129,7 +131,7 @@
       "quarter_latch_mse_mean": 0.055688901034985194,
       "quarter_max": 0.0670527145036596,
       "negative_max": 0.10067719735585656,
-      "archive_sha256": "31a7548d7ebac532703ff8cd19e81989a15f1d2b33d8b69663cb672902442e20"
+      "archive_sha256": "11998814096ea37cbcdab1134874df8eec56df67c9dd7ce272dceee5e8a4009a"
     },
     "stable_2": {
       "tail_event": 0,
@@ -145,7 +147,7 @@
       "quarter_latch_mse_mean": 0.05551353823964994,
       "quarter_max": 0.07230251508637452,
       "negative_max": 0.07869242636388867,
-      "archive_sha256": "31a7548d7ebac532703ff8cd19e81989a15f1d2b33d8b69663cb672902442e20"
+      "archive_sha256": "4d403931c7caa07bbcc309ca7981d54e7598b2b529c67df9d38e354ad5f6c546"
     },
     "stable_3": {
       "tail_event": 0,
@@ -161,7 +163,7 @@
       "quarter_latch_mse_mean": 0.05501953285759689,
       "quarter_max": 0.06713287622453017,
       "negative_max": 0.08035049282168125,
-      "archive_sha256": "31a7548d7ebac532703ff8cd19e81989a15f1d2b33d8b69663cb672902442e20"
+      "archive_sha256": "2ba4eeb8d620099bf5b1436418e3379f082b17d69a3d06e1cdd8d3a889c790be"
     },
     "stable_4": {
       "tail_event": 0,
@@ -177,7 +179,7 @@
       "quarter_latch_mse_mean": 0.05521781311808362,
       "quarter_max": 0.0688158656220874,
       "negative_max": 0.0824032670069624,
-      "archive_sha256": "31a7548d7ebac532703ff8cd19e81989a15f1d2b33d8b69663cb672902442e20"
+      "archive_sha256": "3a777674880adc0290d231eb8c4f861eda8fceacaec718d8453f2235df1d13c4"
     },
     "stable_5": {
       "tail_event": 0,

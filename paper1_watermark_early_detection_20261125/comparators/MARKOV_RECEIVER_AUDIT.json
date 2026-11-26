@@ -1,0 +1,72 @@
+{
+  "cases": 288,
+  "max_abs_score_vs_independent_svd": 5.587935447692871e-09,
+  "future_observation_and_key_invariance": true,
+  "population_seed_independence": [
+    {
+      "model": "unstable",
+      "population_roots": [
+        [
+          20261127,
+          52387,
+          0,
+          0,
+          0,
+          0,
+          72
+        ],
+        [
+          20261127,
+          52387,
+          0,
+          0,
+          0,
+          1,
+          72
+        ],
+        [
+          20261127,
+          52387,
+          0,
+          0,
+          0,
+          2,
+          72
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "population_roots": [
+        [
+          20261127,
+          52387,
+          0,
+          1,
+          0,
+          0,
+          72
+        ],
+        [
+          20261127,
+          52387,
+          0,
+          1,
+          0,
+          1,
+          72
+        ],
+        [
+          20261127,
+          52387,
+          0,
+          1,
+          0,
+          2,
+          72
+        ]
+      ]
+    }
+  ],
+  "source_sha256": "403b11db7e0004f6dad49c4985b01989eb545144b733d86e3fdb5b1969e04990"
+}

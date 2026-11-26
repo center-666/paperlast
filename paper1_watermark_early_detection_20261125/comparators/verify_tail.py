@@ -25,7 +25,8 @@ def audit(split):
         assert exp.old.base.digest(folder/f)==digest
     for model in exp.MODEL:
         for scene in range(6):
-            with np.load(folder/f"{model}_{scene}.npz") as a:
+            filename = f"{model}_{scene}.npz"
+            with np.load(folder/filename) as a:
                 q=a["quarter_exact_attack_mse"];n=a["negative_exact_attack_mse"]
                 e=(q>1)&(q>=10*n)
                 compatible=a["quarter_state_compatible_window_count"].sum(axis=1)>0
@@ -39,7 +40,7 @@ def audit(split):
                      "quarter_mse_mean":float(q.mean()),"negative_mse_mean":float(n.mean()),
                      "quarter_latch_mse_mean":float(a["quarter_exact_latch_attack_mse"].mean()),
                      "quarter_max":float(q.max()),"negative_max":float(n.max()),
-                     "archive_sha256":manifest["archives"][f]}
+                     "archive_sha256":manifest["archives"][filename]}
                 scenes[f"{model}_{scene}"]=row
                 for group in ("all",model):
                     for key,val in (("event",int(e.sum())),("n",len(e)),
@@ -47,6 +48,8 @@ def audit(split):
                                     ("large_after_alarm",int(large.sum()))):
                         totals[group][key]+=val
     out={"split":split,"run_sha256":exp.old.base.digest(folder/"RUN.json"),
+         "verification_source_sha256":exp.old.base.digest(HERE/"verify_tail.py"),
+         "metadata_correction":"Each scene digest now refers to its own archive. The previous report displayed the final archive digest in every scene row. The archive validation loop and event calculations were already correct.",
          "event_definition":"quarter matched attack MSE >1 and >=10x fixed-negative matched attack MSE",
          "scenes":scenes,"totals":totals}
     exp.old.base._atomic_json(folder/"VERIFY_INDEPENDENT.json",out)

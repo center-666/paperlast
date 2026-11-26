@@ -1,0 +1,16 @@
+{
+  "run_sha256": "4a42468ff7f1e9d1fa7fed4d70e9262f6b2314c834e9e80295f333295c9820a1",
+  "analysis_source_sha256": "a32bc16393cac10255e988c75f3f7d96b89622e2a0b88cf2dcd532f1161f7c70",
+  "bootstrap_replicates": 10000,
+  "seed": [
+    20261127,
+    52387,
+    3,
+    9907
+  ],
+  "correction": "The original analyzer resampled each arm independently before subtracting bootstrap means. This audit uses one common resampling weight per physical path and fixed scene across all methods, supports and outcomes.",
+  "physical_units": 3072,
+  "paired_support_worlds_per_unit": 8,
+  "paired_absolute_sha256": "ee7fa9f5f45e70f7af6eea304cb9d5de38f307ced46e078a2fdc5fe7fb63e779",
+  "paired_contrasts_sha256": "29ee6fc29060fa1b2412fe5996d7f053c3a83089ca8209cd7caf546f16992584"
+}

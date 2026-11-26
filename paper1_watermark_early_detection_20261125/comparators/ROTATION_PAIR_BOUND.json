@@ -1,0 +1,1641 @@
+{
+  "scope": "fixed two-dimensional disturbance dynamics and frozen sensor models",
+  "bound": "psi_eight >= psi_last_pair >= gamma * (||v_t||^2+||D v_t||^2) on every no-repeat transition",
+  "all_144_transition_checks": [
+    {
+      "model": "unstable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 0,
+      "next_rotation": 1,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.36354764171236814
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 0,
+      "next_rotation": 2,
+      "det_mismatch": 4.534000000000002,
+      "gamma_relative_pair_energy": 0.7264750709396578
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 0,
+      "next_rotation": 3,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3503431844429533
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 1,
+      "next_rotation": 0,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3473496756647869
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 1,
+      "next_rotation": 2,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3595456136671451
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 1,
+      "next_rotation": 3,
+      "det_mismatch": 4.538753605491325,
+      "gamma_relative_pair_energy": 0.7266869335699064
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 2,
+      "next_rotation": 0,
+      "det_mismatch": 4.534000000000002,
+      "gamma_relative_pair_energy": 0.7264750709396578
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 2,
+      "next_rotation": 1,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3503431844429533
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 2,
+      "next_rotation": 3,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.36354764171236814
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 3,
+      "next_rotation": 0,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3595456136671451
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 3,
+      "next_rotation": 1,
+      "det_mismatch": 4.538753605491325,
+      "gamma_relative_pair_energy": 0.7266869335699064
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 3,
+      "next_rotation": 2,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3473496756647869
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 0,
+      "next_rotation": 1,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.33426718481136847
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 0,
+      "next_rotation": 2,
+      "det_mismatch": 4.534000000000002,
+      "gamma_relative_pair_energy": 0.6748174170454325
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 0,
+      "next_rotation": 3,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.34961782614242054
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 1,
+      "next_rotation": 0,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.33835864628872014
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 1,
+      "next_rotation": 2,
+      "det_mismatch": 2.2670000000000003,
+      "gamma_relative_pair_energy": 0.32400583293708424
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 1,
+      "next_rotation": 3,
+      "det_mismatch": 4.537382967370696,
+      "gamma_relative_pair_energy": 0.673983174435978
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 2,
+      "next_rotation": 0,
+      "det_mismatch": 4.534000000000002,
+      "gamma_relative_pair_energy": 0.6748174170454325
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 2,
+      "next_rotation": 1,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.34961782614242054
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 2,
+      "next_rotation": 3,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.33426718481136847
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 3,
+      "next_rotation": 0,
+      "det_mismatch": 2.2670000000000003,
+      "gamma_relative_pair_energy": 0.32400583293708424
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 3,
+      "next_rotation": 1,
+      "det_mismatch": 4.537382967370696,
+      "gamma_relative_pair_energy": 0.673983174435978
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 3,
+      "next_rotation": 2,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.33835864628872014
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 0,
+      "next_rotation": 1,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3219231279820739
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 0,
+      "next_rotation": 2,
+      "det_mismatch": 4.534,
+      "gamma_relative_pair_energy": 0.6496842787118997
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 0,
+      "next_rotation": 3,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.33650668366527114
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 1,
+      "next_rotation": 0,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3258671907817417
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 1,
+      "next_rotation": 2,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3120401901515304
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 1,
+      "next_rotation": 3,
+      "det_mismatch": 4.537329904629144,
+      "gamma_relative_pair_energy": 0.648884564331923
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 2,
+      "next_rotation": 0,
+      "det_mismatch": 4.534,
+      "gamma_relative_pair_energy": 0.6496842787118997
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 2,
+      "next_rotation": 1,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.33650668366527114
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 2,
+      "next_rotation": 3,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3219231279820739
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 3,
+      "next_rotation": 0,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3120401901515304
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 3,
+      "next_rotation": 1,
+      "det_mismatch": 4.537329904629144,
+      "gamma_relative_pair_energy": 0.648884564331923
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 3,
+      "next_rotation": 2,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3258671907817417
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 0,
+      "next_rotation": 1,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3531513236834451
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 0,
+      "next_rotation": 2,
+      "det_mismatch": 4.534000000000002,
+      "gamma_relative_pair_energy": 0.6971148435165507
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 0,
+      "next_rotation": 3,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.33410698785932574
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 1,
+      "next_rotation": 0,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.3370649481481084
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 1,
+      "next_rotation": 2,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3630109934509302
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 1,
+      "next_rotation": 3,
+      "det_mismatch": 4.539571026378923,
+      "gamma_relative_pair_energy": 0.6987487453178336
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 2,
+      "next_rotation": 0,
+      "det_mismatch": 4.534000000000002,
+      "gamma_relative_pair_energy": 0.6971148435165507
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 2,
+      "next_rotation": 1,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.33410698785932574
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 2,
+      "next_rotation": 3,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3531513236834451
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 3,
+      "next_rotation": 0,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.3630109934509302
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 3,
+      "next_rotation": 1,
+      "det_mismatch": 4.539571026378923,
+      "gamma_relative_pair_energy": 0.6987487453178336
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 3,
+      "next_rotation": 2,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.3370649481481084
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 0,
+      "next_rotation": 1,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.47446362288280164
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 0,
+      "next_rotation": 2,
+      "det_mismatch": 4.534000000000002,
+      "gamma_relative_pair_energy": 0.9670226737706069
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 0,
+      "next_rotation": 3,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.4907365516581268
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 1,
+      "next_rotation": 0,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.46983556368374574
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 1,
+      "next_rotation": 2,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.46165536902342896
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 1,
+      "next_rotation": 3,
+      "det_mismatch": 4.538316509052574,
+      "gamma_relative_pair_energy": 0.9649414275833889
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 2,
+      "next_rotation": 0,
+      "det_mismatch": 4.534000000000002,
+      "gamma_relative_pair_energy": 0.9670226737706069
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 2,
+      "next_rotation": 1,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.4907365516581268
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 2,
+      "next_rotation": 3,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.47446362288280164
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 3,
+      "next_rotation": 0,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.46165536902342896
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 3,
+      "next_rotation": 1,
+      "det_mismatch": 4.538316509052574,
+      "gamma_relative_pair_energy": 0.9649414275833889
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 3,
+      "next_rotation": 2,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.46983556368374574
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 0,
+      "next_rotation": 1,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.3164289784012182
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 0,
+      "next_rotation": 2,
+      "det_mismatch": 4.534000000000002,
+      "gamma_relative_pair_energy": 0.6385265012500269
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 0,
+      "next_rotation": 3,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.33069998650666854
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 1,
+      "next_rotation": 0,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.32030407819365314
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 1,
+      "next_rotation": 2,
+      "det_mismatch": 2.2670000000000003,
+      "gamma_relative_pair_energy": 0.30671242954637074
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 1,
+      "next_rotation": 3,
+      "det_mismatch": 4.5373133042456395,
+      "gamma_relative_pair_energy": 0.6377413997403654
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 2,
+      "next_rotation": 0,
+      "det_mismatch": 4.534000000000002,
+      "gamma_relative_pair_energy": 0.6385265012500269
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 2,
+      "next_rotation": 1,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.33069998650666854
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 2,
+      "next_rotation": 3,
+      "det_mismatch": 2.267000000000001,
+      "gamma_relative_pair_energy": 0.3164289784012182
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 3,
+      "next_rotation": 0,
+      "det_mismatch": 2.2670000000000003,
+      "gamma_relative_pair_energy": 0.30671242954637074
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 3,
+      "next_rotation": 1,
+      "det_mismatch": 4.5373133042456395,
+      "gamma_relative_pair_energy": 0.6377413997403654
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 3,
+      "next_rotation": 2,
+      "det_mismatch": 2.267,
+      "gamma_relative_pair_energy": 0.32030407819365314
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 0,
+      "next_rotation": 1,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.34742305694628406
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 0,
+      "next_rotation": 2,
+      "det_mismatch": 3.6843999999999992,
+      "gamma_relative_pair_energy": 0.6714504914358922
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 0,
+      "next_rotation": 3,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.3319442472475899
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 1,
+      "next_rotation": 0,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.32527639496585425
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 1,
+      "next_rotation": 2,
+      "det_mismatch": 1.8422,
+      "gamma_relative_pair_energy": 0.33195918907493754
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 1,
+      "next_rotation": 3,
+      "det_mismatch": 3.6864040091670724,
+      "gamma_relative_pair_energy": 0.6727397585092914
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 2,
+      "next_rotation": 0,
+      "det_mismatch": 3.6843999999999992,
+      "gamma_relative_pair_energy": 0.6714504914358922
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 2,
+      "next_rotation": 1,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.3319442472475899
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 2,
+      "next_rotation": 3,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.34742305694628406
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 3,
+      "next_rotation": 0,
+      "det_mismatch": 1.8422,
+      "gamma_relative_pair_energy": 0.33195918907493754
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 3,
+      "next_rotation": 1,
+      "det_mismatch": 3.6864040091670724,
+      "gamma_relative_pair_energy": 0.6727397585092914
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "sender": 1,
+      "previous_rotation": 3,
+      "next_rotation": 2,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.32527639496585425
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 0,
+      "next_rotation": 1,
+      "det_mismatch": 1.8422,
+      "gamma_relative_pair_energy": 0.3098041525066928
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 0,
+      "next_rotation": 2,
+      "det_mismatch": 3.6843999999999992,
+      "gamma_relative_pair_energy": 0.6405700146439838
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 0,
+      "next_rotation": 3,
+      "det_mismatch": 1.8422,
+      "gamma_relative_pair_energy": 0.32394817923399516
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 1,
+      "next_rotation": 0,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.3299326789531749
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 1,
+      "next_rotation": 2,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.31536769797342107
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 1,
+      "next_rotation": 3,
+      "det_mismatch": 3.686582025530088,
+      "gamma_relative_pair_energy": 0.6404781099372375
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 2,
+      "next_rotation": 0,
+      "det_mismatch": 3.6843999999999992,
+      "gamma_relative_pair_energy": 0.6405700146439838
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 2,
+      "next_rotation": 1,
+      "det_mismatch": 1.8422,
+      "gamma_relative_pair_energy": 0.32394817923399516
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 2,
+      "next_rotation": 3,
+      "det_mismatch": 1.8422,
+      "gamma_relative_pair_energy": 0.3098041525066928
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 3,
+      "next_rotation": 0,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.31536769797342107
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 3,
+      "next_rotation": 1,
+      "det_mismatch": 3.686582025530088,
+      "gamma_relative_pair_energy": 0.6404781099372375
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "sender": 3,
+      "previous_rotation": 3,
+      "next_rotation": 2,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.3299326789531749
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 0,
+      "next_rotation": 1,
+      "det_mismatch": 1.8421999999999996,
+      "gamma_relative_pair_energy": 0.297900423072561
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 0,
+      "next_rotation": 2,
+      "det_mismatch": 3.6843999999999992,
+      "gamma_relative_pair_energy": 0.6160943688691919
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 0,
+      "next_rotation": 3,
+      "det_mismatch": 1.8421999999999996,
+      "gamma_relative_pair_energy": 0.3116465970934325
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 1,
+      "next_rotation": 0,
+      "det_mismatch": 1.8421999999999994,
+      "gamma_relative_pair_energy": 0.3174160569911758
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 1,
+      "next_rotation": 2,
+      "det_mismatch": 1.8421999999999996,
+      "gamma_relative_pair_energy": 0.30335153019678157
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 1,
+      "next_rotation": 3,
+      "det_mismatch": 3.6866118270750032,
+      "gamma_relative_pair_energy": 0.616005849016874
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 2,
+      "next_rotation": 0,
+      "det_mismatch": 3.6843999999999992,
+      "gamma_relative_pair_energy": 0.6160943688691919
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 2,
+      "next_rotation": 1,
+      "det_mismatch": 1.8421999999999996,
+      "gamma_relative_pair_energy": 0.3116465970934325
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 2,
+      "next_rotation": 3,
+      "det_mismatch": 1.8421999999999996,
+      "gamma_relative_pair_energy": 0.297900423072561
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 3,
+      "next_rotation": 0,
+      "det_mismatch": 1.8421999999999996,
+      "gamma_relative_pair_energy": 0.30335153019678157
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 3,
+      "next_rotation": 1,
+      "det_mismatch": 3.6866118270750032,
+      "gamma_relative_pair_energy": 0.616005849016874
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "sender": 16,
+      "previous_rotation": 3,
+      "next_rotation": 2,
+      "det_mismatch": 1.8421999999999994,
+      "gamma_relative_pair_energy": 0.3174160569911758
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 0,
+      "next_rotation": 1,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.3319954975090404
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 0,
+      "next_rotation": 2,
+      "det_mismatch": 3.6843999999999992,
+      "gamma_relative_pair_energy": 0.6420010509998635
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 0,
+      "next_rotation": 3,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.31727509433145973
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 1,
+      "next_rotation": 0,
+      "det_mismatch": 1.8422,
+      "gamma_relative_pair_energy": 0.3110634372726313
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 1,
+      "next_rotation": 2,
+      "det_mismatch": 1.8422,
+      "gamma_relative_pair_energy": 0.32183816583305375
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 1,
+      "next_rotation": 3,
+      "det_mismatch": 3.6864539114566437,
+      "gamma_relative_pair_energy": 0.6430276663735673
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 2,
+      "next_rotation": 0,
+      "det_mismatch": 3.6843999999999992,
+      "gamma_relative_pair_energy": 0.6420010509998635
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 2,
+      "next_rotation": 1,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.31727509433145973
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 2,
+      "next_rotation": 3,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.3319954975090404
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 3,
+      "next_rotation": 0,
+      "det_mismatch": 1.8422,
+      "gamma_relative_pair_energy": 0.32183816583305375
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 3,
+      "next_rotation": 1,
+      "det_mismatch": 3.6864539114566437,
+      "gamma_relative_pair_energy": 0.6430276663735673
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "sender": 31,
+      "previous_rotation": 3,
+      "next_rotation": 2,
+      "det_mismatch": 1.8422,
+      "gamma_relative_pair_energy": 0.3110634372726313
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 0,
+      "next_rotation": 1,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.4506967923761652
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 0,
+      "next_rotation": 2,
+      "det_mismatch": 3.6843999999999992,
+      "gamma_relative_pair_energy": 0.927176165681467
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 0,
+      "next_rotation": 3,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.4629081462531164
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 1,
+      "next_rotation": 0,
+      "det_mismatch": 1.8421999999999996,
+      "gamma_relative_pair_energy": 0.46007147931562425
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 1,
+      "next_rotation": 2,
+      "det_mismatch": 1.8421999999999996,
+      "gamma_relative_pair_energy": 0.4500024514952576
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 1,
+      "next_rotation": 3,
+      "det_mismatch": 3.6864025500341224,
+      "gamma_relative_pair_energy": 0.9279892442019756
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 2,
+      "next_rotation": 0,
+      "det_mismatch": 3.6843999999999992,
+      "gamma_relative_pair_energy": 0.927176165681467
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 2,
+      "next_rotation": 1,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.4629081462531164
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 2,
+      "next_rotation": 3,
+      "det_mismatch": 1.8421999999999998,
+      "gamma_relative_pair_energy": 0.4506967923761652
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 3,
+      "next_rotation": 0,
+      "det_mismatch": 1.8421999999999996,
+      "gamma_relative_pair_energy": 0.4500024514952576
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 3,
+      "next_rotation": 1,
+      "det_mismatch": 3.6864025500341224,
+      "gamma_relative_pair_energy": 0.9279892442019756
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "sender": 49,
+      "previous_rotation": 3,
+      "next_rotation": 2,
+      "det_mismatch": 1.8421999999999996,
+      "gamma_relative_pair_energy": 0.46007147931562425
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 0,
+      "next_rotation": 1,
+      "det_mismatch": 1.8421999999999994,
+      "gamma_relative_pair_energy": 0.29263271498750537
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 0,
+      "next_rotation": 2,
+      "det_mismatch": 3.6843999999999992,
+      "gamma_relative_pair_energy": 0.6052452275487301
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 0,
+      "next_rotation": 3,
+      "det_mismatch": 1.8421999999999994,
+      "gamma_relative_pair_energy": 0.3061854250923219
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 1,
+      "next_rotation": 0,
+      "det_mismatch": 1.8421999999999994,
+      "gamma_relative_pair_energy": 0.3118554942536715
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 1,
+      "next_rotation": 2,
+      "det_mismatch": 1.8421999999999996,
+      "gamma_relative_pair_energy": 0.2980186965361392
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 1,
+      "next_rotation": 3,
+      "det_mismatch": 3.6866221426844037,
+      "gamma_relative_pair_energy": 0.6051584651222619
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 2,
+      "next_rotation": 0,
+      "det_mismatch": 3.6843999999999992,
+      "gamma_relative_pair_energy": 0.6052452275487301
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 2,
+      "next_rotation": 1,
+      "det_mismatch": 1.8421999999999994,
+      "gamma_relative_pair_energy": 0.3061854250923219
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 2,
+      "next_rotation": 3,
+      "det_mismatch": 1.8421999999999994,
+      "gamma_relative_pair_energy": 0.29263271498750537
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 3,
+      "next_rotation": 0,
+      "det_mismatch": 1.8421999999999996,
+      "gamma_relative_pair_energy": 0.2980186965361392
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 3,
+      "next_rotation": 1,
+      "det_mismatch": 3.6866221426844037,
+      "gamma_relative_pair_energy": 0.6051584651222619
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "sender": 34,
+      "previous_rotation": 3,
+      "next_rotation": 2,
+      "det_mismatch": 1.8421999999999994,
+      "gamma_relative_pair_energy": 0.3118554942536715
+    }
+  ],
+  "sender_minima": [
+    {
+      "model": "unstable",
+      "edge": 0,
+      "D": [
+        [
+          1.08,
+          0.05256546711361282
+        ],
+        [
+          0.009511948194416704,
+          1.05
+        ]
+      ],
+      "trace_D": 2.13,
+      "det_D": 1.1335000000000002,
+      "pair_covariance": [
+        [
+          2.9505292886899905,
+          0.03273332225963175
+        ],
+        [
+          0.03273332225963175,
+          2.7395517179515365
+        ]
+      ],
+      "gamma": 0.3473496756647869
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "D": [
+        [
+          1.08,
+          0.0359029506124745
+        ],
+        [
+          0.013926431991533164,
+          1.05
+        ]
+      ],
+      "trace_D": 2.13,
+      "det_D": 1.1335000000000002,
+      "pair_covariance": [
+        [
+          2.142771549600167,
+          0.02636932234697702
+        ],
+        [
+          0.02636932234697702,
+          3.1050883974063233
+        ]
+      ],
+      "gamma": 0.32400583293708424
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "D": [
+        [
+          1.0799999999999998,
+          0.03501410222433932
+        ],
+        [
+          0.014279960594061312,
+          1.05
+        ]
+      ],
+      "trace_D": 2.13,
+      "det_D": 1.1335,
+      "pair_covariance": [
+        [
+          2.1499225141000484,
+          0.026093582388571252
+        ],
+        [
+          0.026093582388571252,
+          3.225333436592754
+        ]
+      ],
+      "gamma": 0.3120401901515304
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "D": [
+        [
+          1.08,
+          0.060013440463039705
+        ],
+        [
+          0.008331467020424093,
+          1.05
+        ]
+      ],
+      "trace_D": 2.13,
+      "det_D": 1.1335000000000002,
+      "pair_covariance": [
+        [
+          3.085439780438871,
+          0.03600604843412486
+        ],
+        [
+          0.03600604843412486,
+          2.439856267391681
+        ]
+      ],
+      "gamma": 0.33410698785932574
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "D": [
+        [
+          1.0800000000000003,
+          0.04804372513704733
+        ],
+        [
+          0.01040718634064538,
+          1.05
+        ]
+      ],
+      "trace_D": 2.1300000000000003,
+      "det_D": 1.1335000000000004,
+      "pair_covariance": [
+        [
+          2.1099347595077256,
+          0.030842836320898355
+        ],
+        [
+          0.030842836320898355,
+          2.1621057217617317
+        ]
+      ],
+      "gamma": 0.46165536902342896
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "D": [
+        [
+          1.08,
+          0.034727639306643646
+        ],
+        [
+          0.014397753777186533,
+          1.05
+        ]
+      ],
+      "trace_D": 2.13,
+      "det_D": 1.1335000000000002,
+      "pair_covariance": [
+        [
+          2.159743097763944,
+          0.026006797675668644
+        ],
+        [
+          0.026006797675668644,
+          3.2817270406656203
+        ]
+      ],
+      "gamma": 0.30671242954637074
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "D": [
+        [
+          0.95,
+          0.021026186845445126
+        ],
+        [
+          0.01902389638883341,
+          0.9700000000000001
+        ]
+      ],
+      "trace_D": 1.92,
+      "det_D": 0.9211,
+      "pair_covariance": [
+        [
+          2.817418774790184,
+          0.019234051404736757
+        ],
+        [
+          0.019234051404736757,
+          2.6588874336892165
+        ]
+      ],
+      "gamma": 0.32527639496585425
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "D": [
+        [
+          0.95,
+          0.014361180244989797
+        ],
+        [
+          0.02785286398306633,
+          0.9700000000000001
+        ]
+      ],
+      "trace_D": 1.92,
+      "det_D": 0.9211,
+      "pair_covariance": [
+        [
+          2.0102801604178406,
+          0.02019528281077656
+        ],
+        [
+          0.02019528281077656,
+          3.0245793156683454
+        ]
+      ],
+      "gamma": 0.3098041525066928
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "D": [
+        [
+          0.95,
+          0.014005640889735728
+        ],
+        [
+          0.028559921188122624,
+          0.9699999999999999
+        ]
+      ],
+      "trace_D": 1.92,
+      "det_D": 0.9210999999999998,
+      "pair_covariance": [
+        [
+          2.0174575994111263,
+          0.020358698395880073
+        ],
+        [
+          0.020358698395880073,
+          3.1448393125046055
+        ]
+      ],
+      "gamma": 0.297900423072561
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "D": [
+        [
+          0.95,
+          0.024005376185215883
+        ],
+        [
+          0.016662934040848187,
+          0.97
+        ]
+      ],
+      "trace_D": 1.92,
+      "det_D": 0.9210999999999999,
+      "pair_covariance": [
+        [
+          2.9519771029636623,
+          0.01955750111923259
+        ],
+        [
+          0.01955750111923259,
+          2.35916038740575
+        ]
+      ],
+      "gamma": 0.3110634372726313
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "D": [
+        [
+          0.95,
+          0.01921749005481893
+        ],
+        [
+          0.02081437268129076,
+          0.97
+        ]
+      ],
+      "trace_D": 1.92,
+      "det_D": 0.9210999999999999,
+      "pair_covariance": [
+        [
+          1.9770153157072066,
+          0.019207309700200292
+        ],
+        [
+          0.019207309700200292,
+          2.081468186053025
+        ]
+      ],
+      "gamma": 0.4500024514952576
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "D": [
+        [
+          0.95,
+          0.013891055722657456
+        ],
+        [
+          0.028795507554373066,
+          0.9699999999999999
+        ]
+      ],
+      "trace_D": 1.92,
+      "det_D": 0.9210999999999998,
+      "pair_covariance": [
+        [
+          2.0272865740125825,
+          0.02041502811381607
+        ],
+        [
+          0.02041502811381607,
+          3.2012379836363625
+        ]
+      ],
+      "gamma": 0.29263271498750537
+    }
+  ],
+  "minimum_gamma": 0.29263271498750537,
+  "constant_plus_minus_identity_run_probabilities": {
+    "one_bit_scalar_sign": {
+      "per_sender_60_reports": 0.19503527546050514,
+      "any_of_six_senders": 0.7279422551102623
+    },
+    "quarter_turn_sufficient_plus_minus_identity_run": {
+      "per_sender_60_reports": 0.0012201610855590572,
+      "any_of_six_senders": 0.007298670915350081
+    }
+  },
+  "run_probability_meaning": "sufficient blind windows due to >=8 consecutive +I or >=8 consecutive -I, among 60 reports per independent sender",
+  "numerical_bounds_status": "double precision eigenvalue evaluations accompany the algebraic full-rank proof"
+}
