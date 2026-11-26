@@ -36,7 +36,7 @@ def summarize(split):
     run=json.loads((folder/"RUN.json").read_text())
     for f,h in run["archives"].items():
         if exp.old.base.digest(folder/f)!=h:raise ValueError(f"Markov archive SHA mismatch: {f}")
-    rng=np.random.default_rng([*SEED,5 if split=="dev" else 6])
+    rng=np.random.default_rng([*SEED,15 if split=="dev" else 16])
     scenarios=[]
     for mi,model in enumerate(exp.MODEL):
         thresholds=run["thresholds"][model]
@@ -79,8 +79,8 @@ def summarize(split):
                         "min_psi_relative":data[scheme+"_min_relative_psi"].min(axis=1),
                     }
                 row["transition_count"]=data["transition_count"].reshape(-1,4,4).sum(axis=0)
-                row["state_count_iid"]=data["iid_state_count"].sum(axis=0)
-                row["state_count_no_repeat"]=data["no_repeat_state_count"].sum(axis=0)
+                row["state_count_iid"]=data["iid_state_count"].reshape(-1,4).sum(axis=0)
+                row["state_count_no_repeat"]=data["no_repeat_state_count"].reshape(-1,4).sum(axis=0)
                 scenarios.append(row)
     metrics=("early3","attack_mse","tail_probability","state_compatible_path_probability",
              "late_large_accepted_path_probability","min_relative_psi")
@@ -147,7 +147,9 @@ def summarize(split):
     state_iid=np.sum([s["state_count_iid"] for s in scenarios],axis=0)
     state_nr=np.sum([s["state_count_no_repeat"] for s in scenarios],axis=0)
     report={"split":split,"run_sha256":exp.old.base.digest(folder/"RUN.json"),
-            "bootstrap_replicates":BOOT,"seed":SEED,"groups":means,"paired_contrasts":contrasts,
+            "bootstrap_replicates":BOOT,"seed":[*SEED,15 if split=="dev" else 16],
+            "groups":means,"paired_contrasts":contrasts,
+            "analysis_source_sha256":exp.old.base.digest(HERE/"analyze_markov.py"),
             "health_by_model":{m:scenarios[6*i]["health"] for i,m in enumerate(exp.MODEL)},
             "candidate":{"conditional_entropy_bits":math.log2(3),
                          "iid_entropy_bits":2.,

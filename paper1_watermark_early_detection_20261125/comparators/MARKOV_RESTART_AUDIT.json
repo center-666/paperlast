@@ -1,0 +1,62 @@
+{
+  "status": "superseded_health_calibration_test_stream_reuse",
+  "reason": "The population index was absent from streams(). Health calibration and health holdout used the identical physical/key paths. Attack scene zero also shared this stream. The original holdout FWER equaled the calibration rank count. State frequency summaries also reduced a concatenated vector to a scalar and broadcast it.",
+  "scope": "Original outcomes are retained as invalid preliminary data. They do not count as independent confirmation.",
+  "replacement_namespaces": {
+    "development": [
+      20261127,
+      52387,
+      15
+    ],
+    "confirmation": [
+      20261127,
+      52387,
+      16
+    ]
+  },
+  "records": {
+    "markov_dev": {
+      "ANALYSIS.json": "394fccd4ae3d3c0feec11d436c7df5c579259a13a23966e0579594881f8ba50c",
+      "RUN.json": "80accce04d8708a2e3ac9fa0660abc71f3f89bd7921f1c00003086edf1af29e2",
+      "stable_attack_0.npz": "65fe29a4835986aa42bc911682ec89bbbd53115997495f81c6c320cd4a5d5253",
+      "stable_attack_1.npz": "9d47ac401565f2c2155831f77183bda91b6ed8ccb74fb5012fd727cf4834a0c8",
+      "stable_attack_2.npz": "363d10e25a2ad852db1724f1bfbc591b8d4899a9b15a7fcb0b3caca648383f60",
+      "stable_attack_3.npz": "2bfb77830e25022afda4a8a7269fbbcf751c7bd5e2d4aeab7985f41df8142ad7",
+      "stable_attack_4.npz": "5248e4132c1ea5fdf2e74495411f71ee0bd1546618ad2c12e37fad8cc63b8714",
+      "stable_attack_5.npz": "59f4bede4e99c2e452e87c1bd3ea853ecdaddcf61c21b2c223a28426e1fea2a5",
+      "stable_calibration.npz": "39cfd3d53f6327f105a38380a4997ea30efd9d793008b53bde3f9fa338f7aa34",
+      "stable_health_0.npz": "40f4ea0ee8ef10c36fd9b44134e5050d7cb7aefa3504b7165327ec43670ffaac",
+      "unstable_attack_0.npz": "a19387e7943c69d519d05dfd91f11064d4233a504c3bf531e22a32e5e2eb29ac",
+      "unstable_attack_1.npz": "b41c6c725aa4be9e24df1c02ffd63ea6846204eb0cd09c527f5f68d979d165d8",
+      "unstable_attack_2.npz": "038d315b476cef0c80f8730b8ccf3ec27d292e64279d374b88a048f1050ff248",
+      "unstable_attack_3.npz": "058198faa18d35fc9c8bd5db12d444d217a0a6cb8aaa5af0f6bdb2dcb03db4c1",
+      "unstable_attack_4.npz": "9a0ccfabb40e6d2c377c0dbeb87df2c2df2a2ddee1d68a25d2bbecf60ffa785d",
+      "unstable_attack_5.npz": "0357b16630381c3339e8c5527750f69d3702ae5a396a46a59a1c85f5bc6894a5",
+      "unstable_calibration.npz": "a01135b18b161d07eeb37ccc3f52ee5f743685676e82374b45f31404805b1039",
+      "unstable_health_0.npz": "28c67e2fe9d9e6f2932962ec649d3178a0965a3964eaad7b7abe9fa9fbe98609",
+      "VERIFY_INDEPENDENT.json": "f486894630e71955820b7277c98f2645ab6086a7faf2de935aa904775602f661"
+    },
+    "markov_confirm": {
+      "ANALYSIS.json": "9234bea7582f269a7d48e70e0d9a62480056db886799c4941f61511b91b8c09f",
+      "RUN.json": "755608e1a645135cedbba317b6acae8faa113b7ae5869a128e8d48f9544aeab9",
+      "stable_attack_0.npz": "abb3a7113d31a9aeb50026366da8b1122d810b08336e911e299168c1122d3817",
+      "stable_attack_1.npz": "3c3dd5ed3568bc90985489dcce0c92255575ebcf0e1d0415f35a63d514a3509f",
+      "stable_attack_2.npz": "1815b281962a32b7caff9b54b3d46b494d9df18983f3f006748e4f98877cdc37",
+      "stable_attack_3.npz": "9375d29f3664371d213e3bfc2e06708ad6ecf9f29585df8bf248f140b12b138a",
+      "stable_attack_4.npz": "bf93ab9753f8bad46c78058d0aec4889c5138c3c4c2a27d712aa029b673fcc72",
+      "stable_attack_5.npz": "b5de8925cd214996cc2010dc4bde6151356cabfa5cecd48c9b2dd175c8fee848",
+      "stable_calibration.npz": "7d191113f68ba8744136ca3538802844ce853e47be2405f75faaa25671a978e8",
+      "stable_health_0.npz": "f63c6568bee59b836c1fdeead80afabfdd40b604a97c0e259543a6f3df6a0699",
+      "unstable_attack_0.npz": "429838411da16e56ac937c69ebb20ead728b9b1b0f7ff2af6e077e1ed6f52a5a",
+      "unstable_attack_1.npz": "00503135ade4207906f8366dea423d2f4b9cd348739f2b19ec79ab9ede3fe26c",
+      "unstable_attack_2.npz": "751627e0223c0f6d3ab9bc421633894e12d39b98bf2f902bb4facb83e6d3038d",
+      "unstable_attack_3.npz": "cbeebd4f33ded9d3ea74d4048c3906ae85b38acd5b6b0cebfea3a6da7f3b6ecf",
+      "unstable_attack_4.npz": "ef3b2919fd33b1de76cfb5f3e331bc72a69424cce7e5bccf519cd743f5d73ea5",
+      "unstable_attack_5.npz": "f1bd693d19a82b66175d467dc14c786286415bab44b33f358f89098e6b9bf0b7",
+      "unstable_calibration.npz": "526751bf60358de75b4a4421525930ee631f6213eeb6f4d20fac0a94e5ee90c5",
+      "unstable_health_0.npz": "c5187a3b1da83d38d823ca0a4d2a38aa14dc47415cedf18f647bc1590744b9e8",
+      "VERIFY_INDEPENDENT.json": "867936ec35a7978081a499bc942573f5c8114da6c68d5486069aaa9902b8d468"
+    },
+    "MARKOV_LOCK.json": "90f20916789121136db12da2e8a915a6ae9a271ac2b15f33f388332cd1090a11"
+  }
+}

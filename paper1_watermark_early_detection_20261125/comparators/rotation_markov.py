@@ -27,8 +27,12 @@ BASE="f97748fcba7c45981878352aa03bc1b15f78dc65"
 ALPHA=.05
 
 
-def streams(n,split,mi,scene,batch):
-    root=(20261127,52387,split,mi,scene,batch)
+def stream_root(split,mi,scene,batch,population):
+    return (20261127,52387,split,mi,scene,population,batch)
+
+
+def streams(n,split,mi,scene,batch,population):
+    root=stream_root(split,mi,scene,batch,population)
     source,model,physical_fn,_,ops=exp.old.backend(exp.MODEL[mi])
     physical=physical_fn(model,n,np.random.SeedSequence([*root,0]))
     uniforms=np.random.default_rng(np.random.SeedSequence([*root,1])).random((n,150,50))
@@ -60,7 +64,8 @@ def scores(scheme,scorer,model,physical,raw,delta,key,ops):
 
 
 def path_outputs(split,mi,scene,batch,n,thresholds=None,kind="attack"):
-    source,model,physical,ops,uniforms,negative=streams(n,split,mi,scene,batch)
+    population={"cal":0,"health":1,"attack":2}[kind]
+    source,model,physical,ops,uniforms,negative=streams(n,split,mi,scene,batch,population)
     raw=physical.y[:,:,model.links[:,1]]
     onset=ONSETS[scene%2] if kind=="attack" else 0
     stop=onset+60 if kind=="attack" else 150
@@ -75,6 +80,8 @@ def path_outputs(split,mi,scene,batch,n,thresholds=None,kind="attack"):
     fixture=source.rotated_raw_attack(model,ANGLES[scene//2])[0][50:110] if kind=="attack" else None
     codes_iid=quarter_keys(uniforms,False)[1]
     output={"path_id":np.arange(batch*CHUNK,batch*CHUNK+n),
+            "physical_probe":physical.y[:,1,0],
+            "key_probe":uniforms[:,1,0],
             "transition_count":transitions,
             "no_repeat_state_count":np.bincount(codes_nr.ravel(),minlength=4),
             "iid_state_count":np.bincount(codes_iid.ravel(),minlength=4)}
@@ -114,6 +121,7 @@ def path_outputs(split,mi,scene,batch,n,thresholds=None,kind="attack"):
                 hit=attack_gate.any(axis=1)
                 if hit.any():delay[hit]=np.argmax(attack_gate.transpose(0,2,1)[hit],axis=1)
                 output[tag+"_early_link"]=attack_gate[:,:3].any(axis=1).astype(np.uint8)
+                output[tag+"_early_max"]=score[:,onset:onset+3].max(axis=1)
                 output[tag+"_delay60"]=delay
                 output[tag+"_prior"]=gate[:,:onset].any(axis=(1,2)).astype(np.uint8)
                 world=exp.old.backend(exp.MODEL[mi])[3](model,physical,delta,sender_packets=physical.y,gate_override=gate)
@@ -143,13 +151,14 @@ def worker(task):
 
 
 def run(split,workers):
-    label="markov_dev" if split==5 else "markov_confirm"
+    label="markov_dev" if split==15 else "markov_confirm"
     folder=HERE/label;folder.mkdir(exist_ok=True)
-    n=256 if split==5 else 512
-    calibration=512 if split==5 else 4096
-    holdout=512 if split==5 else 4096
+    n=256 if split==15 else 512
+    calibration=512 if split==15 else 4096
+    holdout=512 if split==15 else 4096
     hashes={"W5_MARKOV_PROTOCOL.md":exp.old.base.digest(HERE/"W5_MARKOV_PROTOCOL.md"),
             "MARKOV_DESIGN_AUDIT.json":exp.old.base.digest(HERE/"MARKOV_DESIGN_AUDIT.json"),
+            "W5_CORRECTION.md":exp.old.base.digest(HERE/"W5_CORRECTION.md"),
             "rotation_markov.py":exp.old.base.digest(HERE/"rotation_markov.py"),
             "analyze_markov.py":exp.old.base.digest(HERE/"analyze_markov.py"),
             "experiment.py":exp.old.base.digest(HERE/"experiment.py"),
@@ -162,10 +171,12 @@ def run(split,workers):
               "W1_threshold_sha256":exp.old.base.digest(HERE/"confirm/RUN.json"),
               "source_sha256":hashes,"conditional_entropy_bits":{"quarter_iid":2.,"quarter_no_repeat":float(np.log2(3))},
               "transition_matrix_no_repeat":[[0.,1/3,1/3,1/3],[1/3,0.,1/3,1/3],[1/3,1/3,0.,1/3],[1/3,1/3,1/3,0.]]}
-    if split==6:
+    identity=json.loads(json.dumps(identity))
+    if split==16:
         lock_path=HERE/"MARKOV_LOCK.json"
         if not lock_path.exists():raise ValueError("W5 development has not passed its locked gate.")
         lock=json.loads(lock_path.read_text())
+        if not lock["proceed"]:raise ValueError("W5 development gate failed.")
         if lock["source_sha256"]!=hashes or lock["development_manifest_sha256"]!=exp.old.base.digest(HERE/"markov_dev/RUN.json"):
             raise ValueError("W5 confirmation differs from its development lock.")
     progress=folder/"progress.json";complete=folder/"RUN.json"
@@ -194,6 +205,8 @@ def run(split,workers):
                 maxima={arm:np.concatenate([r[arm+"_max"] for r in rows]) for arm in ARMS}
                 state["thresholds"][model]={arm:exp.old.path_fwer_cutoff(vals,.05) for arm,vals in maxima.items()}
                 calibration_arrays={"path_id":np.arange(calibration)}
+                calibration_arrays["physical_probe"]=np.concatenate([r["physical_probe"] for r in rows])
+                calibration_arrays["key_probe"]=np.concatenate([r["key_probe"] for r in rows])
                 calibration_arrays.update({"max_"+arm:vals for arm,vals in maxima.items()})
                 cal_file=f"{model}_calibration.npz"
                 exp.old.base._atomic_npz(folder/cal_file,calibration_arrays)
@@ -220,4 +233,4 @@ def run(split,workers):
 
 if __name__=="__main__":
     p=argparse.ArgumentParser();p.add_argument("split",choices=("dev","confirm"));p.add_argument("--workers",type=int,default=8)
-    a=p.parse_args();run(5 if a.split=="dev" else 6,a.workers)
+    a=p.parse_args();run(15 if a.split=="dev" else 16,a.workers)

@@ -1,0 +1,47 @@
+{
+  "split": "confirm",
+  "run_sha256": "755608e1a645135cedbba317b6acae8faa113b7ae5869a128e8d48f9544aeab9",
+  "archives_verified": 16,
+  "tail_event_counts": {
+    "quarter_iid": 8,
+    "quarter_no_repeat": 0,
+    "negative": 0
+  },
+  "no_repeat_empirical_transition": [
+    [
+      0.0,
+      0.33315887924963067,
+      0.3333529987485804,
+      0.33348812200178896
+    ],
+    [
+      0.3333113353026087,
+      0.0,
+      0.33335442813365734,
+      0.33333423656373395
+    ],
+    [
+      0.33317954709428327,
+      0.33324193537535246,
+      0.0,
+      0.33357851753036427
+    ],
+    [
+      0.3333188893496791,
+      0.3332495232830173,
+      0.33343158736730355,
+      0.0
+    ]
+  ],
+  "no_repeat_diagonal_transitions": 0,
+  "no_repeat_state_frequency": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "conditional_entropy_bits": {
+    "quarter_iid": 2.0,
+    "quarter_no_repeat": 1.584962500721156
+  }
+}

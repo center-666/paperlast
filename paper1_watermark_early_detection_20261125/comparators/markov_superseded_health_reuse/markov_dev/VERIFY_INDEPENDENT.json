@@ -1,0 +1,47 @@
+{
+  "split": "dev",
+  "run_sha256": "80accce04d8708a2e3ac9fa0660abc71f3f89bd7921f1c00003086edf1af29e2",
+  "archives_verified": 16,
+  "tail_event_counts": {
+    "quarter_iid": 5,
+    "quarter_no_repeat": 0,
+    "negative": 0
+  },
+  "no_repeat_empirical_transition": [
+    [
+      0.0,
+      0.3337971981099346,
+      0.3328423777351898,
+      0.3333604241548756
+    ],
+    [
+      0.3333293156422166,
+      0.0,
+      0.333378750711175,
+      0.3332919336466084
+    ],
+    [
+      0.3333459227443797,
+      0.3334289778866995,
+      0.0,
+      0.3332250993689208
+    ],
+    [
+      0.3333135819974089,
+      0.33352315590690795,
+      0.33316326209568314,
+      0.0
+    ]
+  ],
+  "no_repeat_diagonal_transitions": 0,
+  "no_repeat_state_frequency": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "conditional_entropy_bits": {
+    "quarter_iid": 2.0,
+    "quarter_no_repeat": 1.584962500721156
+  }
+}

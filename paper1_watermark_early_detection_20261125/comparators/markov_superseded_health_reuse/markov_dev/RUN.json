@@ -1,0 +1,273 @@
+{
+  "identity": {
+    "parent": "f97748fcba7c45981878352aa03bc1b15f78dc65",
+    "frozen_physics": "da7a6c7d92b4bbf3514e86dbe51cca15e84660a5",
+    "split": 5,
+    "paths_per_cell": 256,
+    "calibration_per_model": 512,
+    "holdout_per_model": 512,
+    "scenarios": [
+      [
+        "unstable",
+        0.0,
+        50
+      ],
+      [
+        "unstable",
+        0.0,
+        65
+      ],
+      [
+        "unstable",
+        -45.0,
+        50
+      ],
+      [
+        "unstable",
+        -45.0,
+        65
+      ],
+      [
+        "unstable",
+        45.0,
+        50
+      ],
+      [
+        "unstable",
+        45.0,
+        65
+      ],
+      [
+        "stable",
+        0.0,
+        50
+      ],
+      [
+        "stable",
+        0.0,
+        65
+      ],
+      [
+        "stable",
+        -45.0,
+        50
+      ],
+      [
+        "stable",
+        -45.0,
+        65
+      ],
+      [
+        "stable",
+        45.0,
+        50
+      ],
+      [
+        "stable",
+        45.0,
+        65
+      ]
+    ],
+    "namespace": [
+      20261127,
+      52387,
+      5
+    ],
+    "arms": [
+      "quarter_iid_plugin",
+      "quarter_iid_exact",
+      "quarter_no_repeat_plugin",
+      "quarter_no_repeat_exact",
+      "negative_plugin",
+      "negative_exact"
+    ],
+    "W1_threshold_sha256": "8288e866ed12f2ff7e25c40e82b6f33f114d29f2b50f3569ea805e6c15f15a0c",
+    "source_sha256": {
+      "W5_MARKOV_PROTOCOL.md": "52b875a32ea3e72ccc61f070c6a6777b23f626814009334f7857c4cd1c224934",
+      "MARKOV_DESIGN_AUDIT.json": "0e11fc449b4c35db698b2a7a6adf90813bf753f9d6156318b4ddb528c9dbc154",
+      "rotation_markov.py": "1d34839af375256b70e9de3b0f0d45aa5d5bdffe47e47faf924f61b6ccec5561",
+      "analyze_markov.py": "a303514fdec47a0b6c98c7fc6fb1496619a851aa6615918acd6047ae655ab6d7",
+      "experiment.py": "5f0caf980da2a49b1bb5a979d54b5e7018f2b51eb4b2e412bd42c01efca5003b",
+      "projection.c": "7e4dda8c4f218873dfb6cc843d16af828d0d6946de119f8aaa57031ca9826f2b",
+      "online_scores.py": "5bb2d3d4fe9756c31163199af928af4d0281a58da9d5045851fb4226efb7974b"
+    },
+    "conditional_entropy_bits": {
+      "quarter_iid": 2.0,
+      "quarter_no_repeat": 1.584962500721156
+    },
+    "transition_matrix_no_repeat": [
+      [
+        0.0,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      [
+        0.3333333333333333,
+        0.0,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.0,
+        0.3333333333333333
+      ],
+      [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.0
+      ]
+    ]
+  },
+  "execution_commit": "902e84f47011f5a9e4917c8d6b99d3a96bad620e",
+  "python": "3.11.18 (main, Oct 26 2026, 14:08:50) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "host": "Windows-10-10.0.26200-SP0",
+  "workers": 8,
+  "archives": {
+    "unstable_calibration.npz": "a01135b18b161d07eeb37ccc3f52ee5f743685676e82374b45f31404805b1039",
+    "unstable_health_0.npz": "28c67e2fe9d9e6f2932962ec649d3178a0965a3964eaad7b7abe9fa9fbe98609",
+    "unstable_attack_0.npz": "a19387e7943c69d519d05dfd91f11064d4233a504c3bf531e22a32e5e2eb29ac",
+    "unstable_attack_1.npz": "b41c6c725aa4be9e24df1c02ffd63ea6846204eb0cd09c527f5f68d979d165d8",
+    "unstable_attack_2.npz": "038d315b476cef0c80f8730b8ccf3ec27d292e64279d374b88a048f1050ff248",
+    "unstable_attack_3.npz": "058198faa18d35fc9c8bd5db12d444d217a0a6cb8aaa5af0f6bdb2dcb03db4c1",
+    "unstable_attack_4.npz": "9a0ccfabb40e6d2c377c0dbeb87df2c2df2a2ddee1d68a25d2bbecf60ffa785d",
+    "unstable_attack_5.npz": "0357b16630381c3339e8c5527750f69d3702ae5a396a46a59a1c85f5bc6894a5",
+    "stable_calibration.npz": "39cfd3d53f6327f105a38380a4997ea30efd9d793008b53bde3f9fa338f7aa34",
+    "stable_health_0.npz": "40f4ea0ee8ef10c36fd9b44134e5050d7cb7aefa3504b7165327ec43670ffaac",
+    "stable_attack_0.npz": "65fe29a4835986aa42bc911682ec89bbbd53115997495f81c6c320cd4a5d5253",
+    "stable_attack_1.npz": "9d47ac401565f2c2155831f77183bda91b6ed8ccb74fb5012fd727cf4834a0c8",
+    "stable_attack_2.npz": "363d10e25a2ad852db1724f1bfbc591b8d4899a9b15a7fcb0b3caca648383f60",
+    "stable_attack_3.npz": "2bfb77830e25022afda4a8a7269fbbcf751c7bd5e2d4aeab7985f41df8142ad7",
+    "stable_attack_4.npz": "5248e4132c1ea5fdf2e74495411f71ee0bd1546618ad2c12e37fad8cc63b8714",
+    "stable_attack_5.npz": "59f4bede4e99c2e452e87c1bd3ea853ecdaddcf61c21b2c223a28426e1fea2a5"
+  },
+  "thresholds": {
+    "unstable": {
+      "quarter_iid_plugin": {
+        "threshold": 60.976066072602364,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "quarter_iid_exact": {
+        "threshold": 23.487705414007074,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "quarter_no_repeat_plugin": {
+        "threshold": 60.976066072602364,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "quarter_no_repeat_exact": {
+        "threshold": 22.331868163884465,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "negative_plugin": {
+        "threshold": 60.976066072602364,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "negative_exact": {
+        "threshold": 22.882991698025346,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      }
+    },
+    "stable": {
+      "quarter_iid_plugin": {
+        "threshold": 60.68841579309424,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "quarter_iid_exact": {
+        "threshold": 22.137339405445193,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "quarter_no_repeat_plugin": {
+        "threshold": 60.68841579309424,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "quarter_no_repeat_exact": {
+        "threshold": 21.896083561502174,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "negative_plugin": {
+        "threshold": 60.68841579309424,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      },
+      "negative_exact": {
+        "threshold": 22.32561400148521,
+        "calibration_paths": 512,
+        "one_based_rank": 488,
+        "alarm_rule": "fresh_path_max > threshold",
+        "marginal_path_fwer_bound": 0.04873294346978557,
+        "warning": "Marginal over calibration plus fresh path; not a guarantee conditional on a fixed realized calibration set."
+      }
+    }
+  },
+  "wall_seconds": 45.33505519999744,
+  "archive_sha256": {
+    "unstable_calibration.npz": "a01135b18b161d07eeb37ccc3f52ee5f743685676e82374b45f31404805b1039",
+    "unstable_health_0.npz": "28c67e2fe9d9e6f2932962ec649d3178a0965a3964eaad7b7abe9fa9fbe98609",
+    "unstable_attack_0.npz": "a19387e7943c69d519d05dfd91f11064d4233a504c3bf531e22a32e5e2eb29ac",
+    "unstable_attack_1.npz": "b41c6c725aa4be9e24df1c02ffd63ea6846204eb0cd09c527f5f68d979d165d8",
+    "unstable_attack_2.npz": "038d315b476cef0c80f8730b8ccf3ec27d292e64279d374b88a048f1050ff248",
+    "unstable_attack_3.npz": "058198faa18d35fc9c8bd5db12d444d217a0a6cb8aaa5af0f6bdb2dcb03db4c1",
+    "unstable_attack_4.npz": "9a0ccfabb40e6d2c377c0dbeb87df2c2df2a2ddee1d68a25d2bbecf60ffa785d",
+    "unstable_attack_5.npz": "0357b16630381c3339e8c5527750f69d3702ae5a396a46a59a1c85f5bc6894a5",
+    "stable_calibration.npz": "39cfd3d53f6327f105a38380a4997ea30efd9d793008b53bde3f9fa338f7aa34",
+    "stable_health_0.npz": "40f4ea0ee8ef10c36fd9b44134e5050d7cb7aefa3504b7165327ec43670ffaac",
+    "stable_attack_0.npz": "65fe29a4835986aa42bc911682ec89bbbd53115997495f81c6c320cd4a5d5253",
+    "stable_attack_1.npz": "9d47ac401565f2c2155831f77183bda91b6ed8ccb74fb5012fd727cf4834a0c8",
+    "stable_attack_2.npz": "363d10e25a2ad852db1724f1bfbc591b8d4899a9b15a7fcb0b3caca648383f60",
+    "stable_attack_3.npz": "2bfb77830e25022afda4a8a7269fbbcf751c7bd5e2d4aeab7985f41df8142ad7",
+    "stable_attack_4.npz": "5248e4132c1ea5fdf2e74495411f71ee0bd1546618ad2c12e37fad8cc63b8714",
+    "stable_attack_5.npz": "59f4bede4e99c2e452e87c1bd3ea853ecdaddcf61c21b2c223a28426e1fea2a5"
+  },
+  "analysis_source_update": {
+    "reason": "corrected calibration, health file and transition-count aggregation before interpreting development results"
+  }
+}
