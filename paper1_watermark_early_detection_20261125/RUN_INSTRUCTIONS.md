@@ -15,9 +15,10 @@ python -B analyze_stage1.py 3
 python -B analyze_stage1.py lock
 python -B study.py 2
 python -B analyze_stage1.py 2
+python -B verify_archives.py
 ```
 
-Run study.py 4 and analyze_stage1.py 4 only when CONFIRM_LOCK.json names a stage-two receiver. To reproduce from scratch, use a fresh checkout at the study code commit; completed archives are hash-checked on rerun. study.py is the formal runner. run_stage1.py provides the Phase-0-compatible smoke interfaces and legacy helpers.
+The recorded lock ends the radial screen after development. For a fresh calculation, use a separate checkout at code commit 101321a and generate a new lock using the commands above. The post-run verify_archives.py auditor is in the final results commit. To check the delivered numerical evidence directly from the final checkout, run verify_archives.py against the included archives. It verifies the binary path hashes, scores, ranks and endpoints. Wall times and raw text hashes (including line endings) may vary in a fresh run. study.py is the formal runner. run_stage1.py provides the Phase-0-compatible smoke interfaces and legacy helpers.
 
 Within each split, the file names identify the dynamics, calibration/healthy/evaluation population and scene. Scene index equals twice the angle index (0°, −45°, +45°) plus the onset index (50,65). Within an archive, path_id indexes the shared physical path and all receiver arms. The random arrays are reproducible from the namespace, stage and chunk. Delays are per physical path and directed edge, zero-based from the first affected report, censored at 60. The NPZ files retain all path-level endpoints, including early maximum scores for threshold sensitivity, paired MSE, and radial geometry at 2/3/5 ticks. The early scores are per-link maxima for exactly the first three affected reports.
 

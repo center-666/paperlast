@@ -1,4 +1,6 @@
-# D1: frozen-source research audit and pre-run decision
+# Historical pre-run note at 8824465
+
+The formal scoring schedule, stage-two stopping rule and completed results are recorded in PROTOCOL_CORRECTION.md and RESULTS_ZH.md.
 
 ## Frozen baseline and existing evidence
 
@@ -32,7 +34,7 @@ Eight two-dimensional reports create four overlapping residuals in 32 coordinate
 
 Independent 8,192-path white-noise checks found empirical whitened covariance errors from about 0.026 to 0.051. These are finite-sample Monte Carlo deviations around the exact identity. The detector is a known-model matched subspace GLRT comparator. This classical comparator is not claimed as a new detector contribution.
 
-All three registered physical perturbation directions are included by one common two-state amplitude template, rather than choosing a template using the test direction. The onset scan has eight choices inside the current buffer, including the pre-active buffer-start nuisance-state case. Checks cover attack angles 0 and ±45 degrees, and onset 50 and 65, for all six links. For onset 65 the first complete eight-report score is at k=72, four reports after onset, as implied by the common first-valid score time k=7.
+All three registered physical perturbation directions are included by one common two-state amplitude template, rather than choosing a template using the test direction. The onset scan has eight choices inside the current buffer, including the pre-active buffer-start nuisance-state case. Checks cover attack angles 0 and ±45 degrees, and onset 50 and 65, for all six links. For onset 65 the third affected report is at k=67. The first buffer entirely inside the disturbance contains reports 65 through 72.
 
 ## Independent radial-bin formula audit
 
