@@ -1,0 +1,49 @@
+{
+  "split": "confirm",
+  "run_sha256": "4a03e8e6aadbf3457a99dec17c0904a5042581d60332a37ebdbbf19c42a153df",
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": [
+    20261127,
+    52387,
+    4,
+    9001
+  ],
+  "weighting": "12 fixed model-angle-onset cells equally; whole paths resampled inside cells",
+  "support_masks": {
+    "single_0": [
+      0
+    ],
+    "single_1": [
+      1
+    ],
+    "single_2": [
+      2
+    ],
+    "single_3": [
+      3
+    ],
+    "single_4": [
+      4
+    ],
+    "single_5": [
+      5
+    ],
+    "same_receiver_17": [
+      3,
+      5
+    ],
+    "different_receivers_0_2": [
+      0,
+      1
+    ]
+  },
+  "threshold_source": "W1 full six-edge healthy calibration, frozen unchanged",
+  "exact_support_event": "all attacked links alarm within first three attack reports and no healthy link alarms in the same window",
+  "tables": {
+    "absolute": "absolute.csv",
+    "contrasts": "contrasts.csv",
+    "per_link": "per_link.csv",
+    "scenes": "scenes.csv",
+    "healthy_FWER": "healthy_fwer.csv"
+  }
+}
