@@ -78,7 +78,7 @@ def summarize(split):
                         "late_large_accept":data[arm+"_large_late_accept_count"]>0,
                         "min_psi_relative":data[scheme+"_min_relative_psi"].min(axis=1),
                     }
-                row["transition_count"]=data["transition_count"].sum(axis=0)
+                row["transition_count"]=data["transition_count"].reshape(-1,4,4).sum(axis=0)
                 row["state_count_iid"]=data["iid_state_count"].sum(axis=0)
                 row["state_count_no_repeat"]=data["no_repeat_state_count"].sum(axis=0)
                 scenarios.append(row)
