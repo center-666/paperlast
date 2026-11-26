@@ -65,6 +65,7 @@ def summarize(split):
                     mse=data[arm+"_attack_mse"]
                     negative=data["negative_exact_attack_mse"]
                     event=(mse>1.)&(mse>=10*negative)
+                    scheme=arm.rsplit("_",1)[0]
                     row["arms"][arm]={
                         "path_early3_per_link":hit,
                         "mean_early3":float(hit.mean()),
@@ -73,9 +74,9 @@ def summarize(split):
                         "recovery_mse_mean":float(data[arm+"_recovery_mse"].mean()),
                         "tail_event":event,
                         "tail_count":int(event.sum()),
-                        "compatible_path":data[arm+"_state_compatible_windows"].sum(axis=1)>0,
+                        "compatible_path":data[scheme+"_state_compatible_windows"].sum(axis=1)>0,
                         "late_large_accept":data[arm+"_large_late_accept_count"]>0,
-                        "min_psi_relative":data[arm+"_min_relative_psi"].min(axis=1),
+                        "min_psi_relative":data[scheme+"_min_relative_psi"].min(axis=1),
                     }
                 row["transition_count"]=data["transition_count"].sum(axis=0)
                 row["state_count_iid"]=data["iid_state_count"].sum(axis=0)
