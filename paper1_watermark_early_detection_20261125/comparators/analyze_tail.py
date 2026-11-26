@@ -57,6 +57,7 @@ def summarize(split):
     report={"status":"independent_path_tail_event_"+split,"split":split,
             "seed_namespace":manifest["identity"]["namespace"],"paths_per_cell":manifest["identity"]["paths_per_cell"],
             "run_sha256":exp.old.base.digest(folder/"RUN.json"),"event_definition":"quarter exact-key MSE>1 and >=10*negative exact-key MSE",
+            "analysis_source_sha256":exp.old.base.digest(HERE/"analyze_tail.py"),
             "threshold_manifest_sha256":manifest["identity"]["threshold_manifest_sha256"],
             "overall":{},"models":{},"scenes":{},"paired":{},"bootstrap_seed":SEED,"bootstrap_replicates":BOOT}
     rng=np.random.default_rng(SEED)
@@ -92,9 +93,25 @@ def summarize(split):
         chosen=[c for c in cells if c["model"]==model]
         q=np.concatenate([c["quarter"] for c in chosen]);n=np.concatenate([c["negative"] for c in chosen])
         event=(q>1)&(q>=10*n);k=int(event.sum());N=len(event)
+        local_boot=[]
+        for c in chosen:
+            difference=c["mse"]["quarter"]-c["mse"]["negative"]
+            indices=rng.integers(0,len(difference),size=(BOOT,len(difference)))
+            local_boot.append(difference[indices].mean(axis=1))
+        pair_boot=np.mean(local_boot,axis=0)
+        compatible=sum(int(c["blind"]["quarter"].sum()) for c in chosen)
+        large_accept=sum(int(c["large_accept"]["quarter"].sum()) for c in chosen)
+        event_large=sum(int(np.count_nonzero(c["event"]&c["large_accept"]["quarter"])) for c in chosen)
         report["models"][model]={"tail_event_count":k,"n":N,"probability":k/N,"exact95":cp(k,N),
             "quarter_mse_mean":float(q.mean()),"negative_mse_mean":float(n.mean()),
-            "quarter_latch_mse_mean":float(np.concatenate([c["quarter_latch"] for c in chosen]).mean())}
+            "quarter_latch_mse_mean":float(np.concatenate([c["quarter_latch"] for c in chosen]).mean()),
+            "quarter_minus_negative_mse":float(np.mean(q-n)),
+            "quarter_minus_negative_mse_bootstrap95":np.quantile(pair_boot,[.025,.975]).tolist(),
+            "quarter_state_compatible_path_count":compatible,
+            "quarter_large_post_alarm_accept_path_count":large_accept,
+            "tail_event_with_large_post_alarm_accept_count":event_large,
+            "tail_event_with_state_compatible_window_count":int(sum(
+                np.count_nonzero(c["event"]&c["blind"]["quarter"]) for c in chosen))}
         for c in chosen:
             q=c["quarter"];n=c["negative"];e=(q>1)&(q>=10*n)
             report["scenes"][f"{model}_{c['scene']}"]={"event_count":int(e.sum()),"n":len(e),

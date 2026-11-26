@@ -88,7 +88,8 @@ def run(split,workers):
     label="partial_dev" if split==3 else "partial_confirm"
     folder=HERE/label;folder.mkdir(exist_ok=True)
     n=256 if split==3 else 512
-    sources=("NEXT_PROTOCOL.md","partial_study.py","experiment.py","projection.c","online_scores.py")
+    sources=("NEXT_PROTOCOL.md","partial_study.py","analyze_partial.py",
+             "experiment.py","projection.c","online_scores.py")
     source_hashes={f:exp.old.base.digest(HERE/f) for f in sources}
     identity={"parent":PARENT,"physical_baseline":exp.BASE_SHA,"split":split,
               "paths_per_scene":n,"support_masks":{k:list(map(int,v)) for k,v in MASKS.items()},

@@ -1,0 +1,548 @@
+{
+  "status": "independent_path_tail_event_confirm",
+  "split": "confirm",
+  "seed_namespace": [
+    20261127,
+    52387,
+    2
+  ],
+  "paths_per_cell": 512,
+  "run_sha256": "22fdf9b6612fd0e0b0bb510a2cfa4cbad106c8378b5f8589e4f8ee35fc5b9cba",
+  "event_definition": "quarter exact-key MSE>1 and >=10*negative exact-key MSE",
+  "analysis_source_sha256": "8f7bf60cfdc3e72e08f711221c042add4df8c52db1501f096bf89f6966001eba",
+  "threshold_manifest_sha256": "8288e866ed12f2ff7e25c40e82b6f33f114d29f2b50f3569ea805e6c15f15a0c",
+  "overall": {
+    "all": {
+      "event_count": 12,
+      "n": 6144,
+      "probability": 0.001953125,
+      "pooled_binomial_reference95": [
+        0.0010096026668684707,
+        0.003409228251242091
+      ],
+      "stratified_path_bootstrap95": [
+        0.0009765625,
+        0.0030924479166666665
+      ],
+      "quarter_mse": {
+        "mean": 0.07127187495020869,
+        "median": 0.056227420942771354,
+        "p95": 0.06475641135531282,
+        "p99": 0.07004977382260955,
+        "max": 28.587190881433592
+      },
+      "negative_mse": {
+        "mean": 0.06033678696106195,
+        "median": 0.059852596662293714,
+        "p95": 0.07123373676522513,
+        "p99": 0.07679394769508023,
+        "max": 0.08955248499867344
+      },
+      "quarter_gt1_count": 12,
+      "quarter_paths_with_large_post_alarm_accept": 19,
+      "quarter_paths_with_last_attack_report_reaccept": 43,
+      "scheme_tail": {
+        "quarter": {
+          "mean": 0.07127187495020869,
+          "median": 0.056227420942771354,
+          "p95": 0.06475641135531282,
+          "p99": 0.07004977382260955,
+          "max": 28.587190881433592,
+          "mse_gt1": 12,
+          "state_compatible_path_count": 49,
+          "post_alarm_large_accept_path_count": 19
+        },
+        "diagonal": {
+          "mean": 0.06378849715496453,
+          "median": 0.05664846020483925,
+          "p95": 0.06587107787608273,
+          "p99": 0.07179848328888898,
+          "max": 11.427139567291693,
+          "mse_gt1": 10,
+          "state_compatible_path_count": 52,
+          "post_alarm_large_accept_path_count": 15
+        },
+        "sign": {
+          "mean": 4.008846888371481,
+          "median": 0.061642454993271985,
+          "p95": 21.107203686423517,
+          "p99": 76.07010150513635,
+          "max": 310.2439007032577,
+          "mse_gt1": 1276,
+          "state_compatible_path_count": 4529,
+          "post_alarm_large_accept_path_count": 1648
+        },
+        "iid": {
+          "mean": 0.06136214963028048,
+          "median": 0.060721990019542454,
+          "p95": 0.0733180159543516,
+          "p99": 0.07918564155679819,
+          "max": 0.11572702992596064,
+          "mse_gt1": 0,
+          "state_compatible_path_count": 0,
+          "post_alarm_large_accept_path_count": 0
+        },
+        "negative": {
+          "mean": 0.06033678696106195,
+          "median": 0.059852596662293714,
+          "p95": 0.07123373676522513,
+          "p99": 0.07679394769508023,
+          "max": 0.08955248499867344,
+          "mse_gt1": 0,
+          "state_compatible_path_count": 0,
+          "post_alarm_large_accept_path_count": 0
+        }
+      }
+    },
+    "unstable": {
+      "event_count": 12,
+      "n": 3072,
+      "probability": 0.00390625,
+      "pooled_binomial_reference95": [
+        0.002019995508972258,
+        0.006813480706982576
+      ],
+      "stratified_path_bootstrap95": [
+        0.001953125,
+        0.006184895833333333
+      ],
+      "quarter_mse": {
+        "mean": 0.08706711376306607,
+        "median": 0.057298344909066566,
+        "p95": 0.06656759127019317,
+        "p99": 0.07479838557549066,
+        "max": 28.587190881433592
+      },
+      "negative_mse": {
+        "mean": 0.05867353993293458,
+        "median": 0.05816501220431917,
+        "p95": 0.06921699266263838,
+        "p99": 0.07572161851912661,
+        "max": 0.08955248499867344
+      },
+      "quarter_gt1_count": 12,
+      "quarter_paths_with_large_post_alarm_accept": 19,
+      "quarter_paths_with_last_attack_report_reaccept": 0,
+      "scheme_tail": {
+        "quarter": {
+          "mean": 0.08706711376306607,
+          "median": 0.057298344909066566,
+          "p95": 0.06656759127019317,
+          "p99": 0.07479838557549066,
+          "max": 28.587190881433592,
+          "mse_gt1": 12,
+          "state_compatible_path_count": 30,
+          "post_alarm_large_accept_path_count": 19
+        },
+        "diagonal": {
+          "mean": 0.0715896679223494,
+          "median": 0.0576223217297389,
+          "p95": 0.0678474819560771,
+          "p99": 0.07819814151583276,
+          "max": 11.427139567291693,
+          "mse_gt1": 10,
+          "state_compatible_path_count": 25,
+          "post_alarm_large_accept_path_count": 15
+        },
+        "sign": {
+          "mean": 7.960050380322713,
+          "median": 0.44235983239704,
+          "p95": 41.985849689058746,
+          "p99": 115.61327911181917,
+          "max": 310.2439007032577,
+          "mse_gt1": 1276,
+          "state_compatible_path_count": 2269,
+          "post_alarm_large_accept_path_count": 1648
+        },
+        "iid": {
+          "mean": 0.059135330981998004,
+          "median": 0.058491912122325546,
+          "p95": 0.0707352639808632,
+          "p99": 0.0763712409422469,
+          "max": 0.11572702992596064,
+          "mse_gt1": 0,
+          "state_compatible_path_count": 0,
+          "post_alarm_large_accept_path_count": 0
+        },
+        "negative": {
+          "mean": 0.05867353993293458,
+          "median": 0.05816501220431917,
+          "p95": 0.06921699266263838,
+          "p99": 0.07572161851912661,
+          "max": 0.08955248499867344,
+          "mse_gt1": 0,
+          "state_compatible_path_count": 0,
+          "post_alarm_large_accept_path_count": 0
+        }
+      }
+    },
+    "stable": {
+      "event_count": 0,
+      "n": 3072,
+      "probability": 0.0,
+      "pooled_binomial_reference95": [
+        0.0,
+        0.0012000864336018013
+      ],
+      "stratified_path_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "quarter_mse": {
+        "mean": 0.0554766361373513,
+        "median": 0.055378583549770974,
+        "p95": 0.06266557373177736,
+        "p99": 0.06553372326032782,
+        "max": 0.06964690719863864
+      },
+      "negative_mse": {
+        "mean": 0.06200003398918932,
+        "median": 0.0615372971949707,
+        "p95": 0.07256459247895171,
+        "p99": 0.07780818112234157,
+        "max": 0.08829600915936749
+      },
+      "quarter_gt1_count": 0,
+      "quarter_paths_with_large_post_alarm_accept": 0,
+      "quarter_paths_with_last_attack_report_reaccept": 43,
+      "scheme_tail": {
+        "quarter": {
+          "mean": 0.0554766361373513,
+          "median": 0.055378583549770974,
+          "p95": 0.06266557373177736,
+          "p99": 0.06553372326032782,
+          "max": 0.06964690719863864,
+          "mse_gt1": 0,
+          "state_compatible_path_count": 19,
+          "post_alarm_large_accept_path_count": 0
+        },
+        "diagonal": {
+          "mean": 0.055987326387579646,
+          "median": 0.05579156212777717,
+          "p95": 0.06359144761893862,
+          "p99": 0.0672927000120141,
+          "max": 0.07921859132355095,
+          "mse_gt1": 0,
+          "state_compatible_path_count": 27,
+          "post_alarm_large_accept_path_count": 0
+        },
+        "sign": {
+          "mean": 0.057643396420250015,
+          "median": 0.05711639247002461,
+          "p95": 0.06680908990946453,
+          "p99": 0.07336486204142126,
+          "max": 0.08966493787641089,
+          "mse_gt1": 0,
+          "state_compatible_path_count": 2260,
+          "post_alarm_large_accept_path_count": 0
+        },
+        "iid": {
+          "mean": 0.06358896827856296,
+          "median": 0.06303307809346835,
+          "p95": 0.07478333672071284,
+          "p99": 0.08066331985950619,
+          "max": 0.09548035135671415,
+          "mse_gt1": 0,
+          "state_compatible_path_count": 0,
+          "post_alarm_large_accept_path_count": 0
+        },
+        "negative": {
+          "mean": 0.06200003398918932,
+          "median": 0.0615372971949707,
+          "p95": 0.07256459247895171,
+          "p99": 0.07780818112234157,
+          "max": 0.08829600915936749,
+          "mse_gt1": 0,
+          "state_compatible_path_count": 0,
+          "post_alarm_large_accept_path_count": 0
+        }
+      }
+    }
+  },
+  "models": {
+    "unstable": {
+      "tail_event_count": 12,
+      "n": 3072,
+      "probability": 0.00390625,
+      "exact95": [
+        0.002019995508972258,
+        0.006813480706982576
+      ],
+      "quarter_mse_mean": 0.08706711376306607,
+      "negative_mse_mean": 0.05867353993293458,
+      "quarter_latch_mse_mean": 0.05742670026030877,
+      "quarter_minus_negative_mse": 0.028393573830131497,
+      "quarter_minus_negative_mse_bootstrap95": [
+        0.007091018722668563,
+        0.05711030151022226
+      ],
+      "quarter_state_compatible_path_count": 30,
+      "quarter_large_post_alarm_accept_path_count": 19,
+      "tail_event_with_large_post_alarm_accept_count": 12,
+      "tail_event_with_state_compatible_window_count": 12
+    },
+    "stable": {
+      "tail_event_count": 0,
+      "n": 3072,
+      "probability": 0.0,
+      "exact95": [
+        0.0,
+        0.0012000864336018013
+      ],
+      "quarter_mse_mean": 0.0554766361373513,
+      "negative_mse_mean": 0.06200003398918932,
+      "quarter_latch_mse_mean": 0.055424514352867514,
+      "quarter_minus_negative_mse": -0.0065233978518380075,
+      "quarter_minus_negative_mse_bootstrap95": [
+        -0.006676182453172025,
+        -0.006374299949532792
+      ],
+      "quarter_state_compatible_path_count": 19,
+      "quarter_large_post_alarm_accept_path_count": 0,
+      "tail_event_with_large_post_alarm_accept_count": 0,
+      "tail_event_with_state_compatible_window_count": 0
+    }
+  },
+  "scenes": {
+    "unstable_0": {
+      "event_count": 1,
+      "n": 512,
+      "probability": 0.001953125,
+      "exact95": [
+        4.944762114539529e-05,
+        0.010833656944754506
+      ],
+      "quarter_mean": 0.06401573912257924,
+      "negative_mean": 0.05982094981642655,
+      "max_quarter": 3.088466195625437,
+      "max_negative": 0.07988141532740439,
+      "last_report_accepted_after_alarm": 0,
+      "latch_mean": 0.05776760174470345
+    },
+    "unstable_1": {
+      "event_count": 5,
+      "n": 512,
+      "probability": 0.009765625,
+      "exact95": [
+        0.003178260799806263,
+        0.02264162068722703
+      ],
+      "quarter_mean": 0.12864066460803059,
+      "negative_mean": 0.060470274262655554,
+      "max_quarter": 28.587190881433592,
+      "max_negative": 0.08955248499867344,
+      "last_report_accepted_after_alarm": 0,
+      "latch_mean": 0.05847521704461966
+    },
+    "unstable_2": {
+      "event_count": 3,
+      "n": 512,
+      "probability": 0.005859375,
+      "exact95": [
+        0.0012099778257548665,
+        0.017027375116838862
+      ],
+      "quarter_mean": 0.09288702456193378,
+      "negative_mean": 0.055269208916583615,
+      "max_quarter": 11.427139567291693,
+      "max_negative": 0.07307012049485095,
+      "last_report_accepted_after_alarm": 0,
+      "latch_mean": 0.055269195198109536
+    },
+    "unstable_3": {
+      "event_count": 0,
+      "n": 512,
+      "probability": 0.0,
+      "exact95": [
+        0.0,
+        0.007178950026259454
+      ],
+      "quarter_mean": 0.05655631809222218,
+      "negative_mean": 0.055184947770416264,
+      "max_quarter": 0.5650170493058438,
+      "max_negative": 0.07588748205464219,
+      "last_report_accepted_after_alarm": 0,
+      "latch_mean": 0.055184948072693994
+    },
+    "unstable_4": {
+      "event_count": 2,
+      "n": 512,
+      "probability": 0.00390625,
+      "exact95": [
+        0.0004734155742531005,
+        0.014038905114244602
+      ],
+      "quarter_mean": 0.07677788039775899,
+      "negative_mean": 0.06072810602348393,
+      "max_quarter": 7.519968224013948,
+      "max_negative": 0.08695337040833785,
+      "last_report_accepted_after_alarm": 0,
+      "latch_mean": 0.05911474781104641
+    },
+    "unstable_5": {
+      "event_count": 1,
+      "n": 512,
+      "probability": 0.001953125,
+      "exact95": [
+        4.944762114539529e-05,
+        0.010833656944754506
+      ],
+      "quarter_mean": 0.10352505579587161,
+      "negative_mean": 0.060567752808041525,
+      "max_quarter": 22.67614334225276,
+      "max_negative": 0.08445231199825856,
+      "last_report_accepted_after_alarm": 0,
+      "latch_mean": 0.05874849169067955
+    },
+    "stable_0": {
+      "event_count": 0,
+      "n": 512,
+      "probability": 0.0,
+      "exact95": [
+        0.0,
+        0.007178950026259454
+      ],
+      "quarter_mean": 0.05554290693772794,
+      "negative_mean": 0.062361946283923345,
+      "max_quarter": 0.06964690719863864,
+      "max_negative": 0.0857152819561574,
+      "last_report_accepted_after_alarm": 3,
+      "latch_mean": 0.05547033432055111
+    },
+    "stable_1": {
+      "event_count": 0,
+      "n": 512,
+      "probability": 0.0,
+      "exact95": [
+        0.0,
+        0.007178950026259454
+      ],
+      "quarter_mean": 0.05545134438657971,
+      "negative_mean": 0.0620717520987899,
+      "max_quarter": 0.06696146257703887,
+      "max_negative": 0.08146206954567267,
+      "last_report_accepted_after_alarm": 2,
+      "latch_mean": 0.05543081679118578
+    },
+    "stable_2": {
+      "event_count": 0,
+      "n": 512,
+      "probability": 0.0,
+      "exact95": [
+        0.0,
+        0.007178950026259454
+      ],
+      "quarter_mean": 0.055649637151173464,
+      "negative_mean": 0.06168968857260306,
+      "max_quarter": 0.06875946720091226,
+      "max_negative": 0.08054883008892222,
+      "last_report_accepted_after_alarm": 4,
+      "latch_mean": 0.05561590520142132
+    },
+    "stable_3": {
+      "event_count": 0,
+      "n": 512,
+      "probability": 0.0,
+      "exact95": [
+        0.0,
+        0.007178950026259454
+      ],
+      "quarter_mean": 0.05530991410437288,
+      "negative_mean": 0.061316322196234146,
+      "max_quarter": 0.06933866968654705,
+      "max_negative": 0.08167254055875252,
+      "last_report_accepted_after_alarm": 11,
+      "latch_mean": 0.05526124719904467
+    },
+    "stable_4": {
+      "event_count": 0,
+      "n": 512,
+      "probability": 0.0,
+      "exact95": [
+        0.0,
+        0.007178950026259454
+      ],
+      "quarter_mean": 0.055064466069131825,
+      "negative_mean": 0.061988770947396535,
+      "max_quarter": 0.06770757181296128,
+      "max_negative": 0.08829600915936749,
+      "last_report_accepted_after_alarm": 17,
+      "latch_mean": 0.05499652196962046
+    },
+    "stable_5": {
+      "event_count": 0,
+      "n": 512,
+      "probability": 0.0,
+      "exact95": [
+        0.0,
+        0.007178950026259454
+      ],
+      "quarter_mean": 0.05584154817512201,
+      "negative_mean": 0.06257172383618889,
+      "max_quarter": 0.06691010804041471,
+      "max_negative": 0.08468672458015541,
+      "last_report_accepted_after_alarm": 6,
+      "latch_mean": 0.055772260635381696
+    }
+  },
+  "paired": {
+    "quarter_minus_negative_mse": {
+      "difference": 0.010935087989146745,
+      "stratified_path_bootstrap95": [
+        0.0003450503349334368,
+        0.025259949399729146
+      ]
+    },
+    "quarter_minus_negative_blind_window_path_probability": {
+      "difference": 0.007975260416666666
+    },
+    "quarter_minus_negative_large_accept_path_probability": {
+      "difference": 0.0030924479166666665
+    },
+    "diagonal_minus_negative_mse": {
+      "difference": 0.0034517101939025804,
+      "stratified_path_bootstrap95": [
+        -0.0009994762640979605,
+        0.009274106283196474
+      ]
+    },
+    "diagonal_minus_negative_blind_window_path_probability": {
+      "difference": 0.008463541666666666
+    },
+    "diagonal_minus_negative_large_accept_path_probability": {
+      "difference": 0.00244140625
+    },
+    "sign_minus_negative_mse": {
+      "difference": 3.948510101410419,
+      "stratified_path_bootstrap95": [
+        3.5677992361925797,
+        4.352319666676366
+      ]
+    },
+    "sign_minus_negative_blind_window_path_probability": {
+      "difference": 0.7371419270833334
+    },
+    "sign_minus_negative_large_accept_path_probability": {
+      "difference": 0.2682291666666667
+    },
+    "iid_minus_negative_mse": {
+      "difference": 0.0010253626692185408,
+      "stratified_path_bootstrap95": [
+        0.0009209919759976693,
+        0.0011319392170656994
+      ]
+    },
+    "iid_minus_negative_blind_window_path_probability": {
+      "difference": 0.0
+    },
+    "iid_minus_negative_large_accept_path_probability": {
+      "difference": 0.0
+    }
+  },
+  "bootstrap_seed": [
+    20261127,
+    52387,
+    2001
+  ],
+  "bootstrap_replicates": 10000
+}
