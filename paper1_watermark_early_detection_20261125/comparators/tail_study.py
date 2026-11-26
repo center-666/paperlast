@@ -128,7 +128,7 @@ def run(split,workers):
                   "HIGH_LOSS_REPLAY.json","HIGH_LOSS_COUNTERFACTUAL.json")
     hashes={f:exp.old.base.digest(HERE/f) for f in source_files}
     identity={"parent":"f97748fcba7c45981878352aa03bc1b15f78dc65",
-              "physical_baseline":exp.old.BASE_SHA,"split":split,"paths_per_cell":n,
+              "physical_baseline":exp.BASE_SHA,"split":split,"paths_per_cell":n,
               "namespace":[20261127,52387,split],"scenario_order":SCENES,
               "threshold_manifest_sha256":exp.old.base.digest(HERE/"confirm/RUN.json"),
               "source_sha256":hashes,"arms":[s+"_"+x for s in SCHEMES for x in ("plugin","exact")],
