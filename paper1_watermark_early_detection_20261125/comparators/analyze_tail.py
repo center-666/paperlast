@@ -134,5 +134,3 @@ if __name__=="__main__":
     import argparse
     p=argparse.ArgumentParser();p.add_argument("split",choices=("dev","confirm"));a=p.parse_args()
     print(json.dumps(summarize(a.split)["overall"],indent=2))
-
-\n

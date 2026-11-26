@@ -180,5 +180,3 @@ def run(split,workers):
 if __name__=="__main__":
     p=argparse.ArgumentParser();p.add_argument("split",choices=("dev","confirm"));p.add_argument("--workers",type=int,default=8)
     a=p.parse_args();run(1 if a.split=="dev" else 2,a.workers)
-
-\n

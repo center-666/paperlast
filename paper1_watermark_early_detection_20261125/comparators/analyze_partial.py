@@ -135,5 +135,3 @@ def summarize(split):
 if __name__=="__main__":
     p=argparse.ArgumentParser();p.add_argument("split",choices=("dev","confirm"));a=p.parse_args()
     print(json.dumps(summarize(a.split),indent=2))
-
-\n
