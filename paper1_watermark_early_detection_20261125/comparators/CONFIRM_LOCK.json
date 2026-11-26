@@ -1,0 +1,40 @@
+{
+  "n": 512,
+  "calculated_n": 152.2032336487836,
+  "variances": [
+    0.07662717864923747,
+    0.09290534790305012,
+    0.0,
+    0.0,
+    0.08137254901960785,
+    0.08433372480936821,
+    0.055783207380174296,
+    0.06466333061002179,
+    0.028144999319172113,
+    0.022955814270152506,
+    0.03141297317538127,
+    0.03232528254357299
+  ],
+  "primary": "negative_plugin-sign_plugin",
+  "dev_hash": "274cd502a8f9e5a2051a910e3d291ffb21f73dfe5b4f529d11d8c873b7d217c7",
+  "frozen_sources": {
+    "PROTOCOL.md": "049793d87d6fc4e356fe572c29df2c64f731e79d96a7c83caec5fb4dafb12c10",
+    "experiment.py": "c11d7be76c832adabfed183a17ed9fbd29c3c32ea22fefbb386b05f85fa7a01b",
+    "projection.c": "7e4dda8c4f218873dfb6cc843d16af828d0d6946de119f8aaa57031ca9826f2b",
+    "analyze.py": "3ca687ab92221e70f14cfd666a5d9af66a51200a5f12d46f85da44ae294e8f72",
+    "ENERGY_LOCK.json": "528a35a9516c9515321c2fa63ed17154b81ec1d348f8a6136baae960126e0c2b"
+  },
+  "development_code": "c3ac9c3652490d82b7ca0a065b0950d389777dee",
+  "energy_scale": {
+    "unstable": {
+      "paths": 1024,
+      "ratio": 2.5521814661646,
+      "encode_multiplier": 0.6259566026077306
+    },
+    "stable": {
+      "paths": 1024,
+      "ratio": 2.538332826774214,
+      "encode_multiplier": 0.6276618273347955
+    }
+  }
+}
