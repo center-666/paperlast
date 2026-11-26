@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "source_sha256": "00ead5cf78f8a6d2e787b297fe8353d3a1011e21c6ef7407e88190a3fb0b0a66",
+  "exact_frozen_source_and_archive_checks": 58,
+  "D1_dependency_HEAD": "7e32a41b9802438f6645d9048ee46386caa53418",
+  "D2_parent": "d6d958348ec3bbc73fe42df0a9e9cf8a337a8d78",
+  "calibration_execution_commit": "e951e8aa7a5dd2fd7fe8af75722b8a2eee1e0be9",
+  "task_original_sha256": "66ef3547efe24a8afdd7ed4811f4d5637569d716d15388ae4110e5b478811965",
+  "report_sha256": {
+    "PREEXEC_REGISTRATION.md": "c6d518e6c314ed1cf366dfa3ce1be4d0e0cea7880e2cf727541a01ab20bb6d7f",
+    "INTERFACE_CONTRACT.md": "b19d609e203a150f85f7c6f6e6fcd6b70829e8d459107de940b4511ef86f1969",
+    "RESULTS_ZH.md": "0ba580efacabcd34b1a20057f2358ffe3935d6635ca0a63901efd67011c70c89",
+    "REPRODUCE.md": "abc69ea1afae28993b7f64052b138365141e0b6e59e89c832848db2d4bd12687"
+  },
+  "scope": "Stage-one legacy replay, deterministic quality models, front-end numerical audit and independent healthy calibration."
+}

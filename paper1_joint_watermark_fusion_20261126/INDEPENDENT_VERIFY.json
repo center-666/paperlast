@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "source_sha256": "a2a6e6c47837c2c682be051f8e86e8b34a068f67d644d28f02dc00988dc5a607",
+  "healthy_run_sha256": "01fd81185703e58872bf22dee03f705e8dcd0642ddce97f3406e9daf8ffd218d",
+  "quality_model_index_sha256": "f04df6003d4d525eb026c9a6dbd0ab7a56e8b51ea0ae528ad794b1aec574e9d4",
+  "independently_redesigned_local_gains": 768,
+  "maximum_gain_abs_error": 0.0,
+  "maximum_cost_abs_error": 0.0,
+  "maximum_H1_reference_noise_covariance_abs_error": 1.7763568394002505e-15,
+  "H1_frozen_reference_regularization": "symmetrize and add 1e-8 I, as in frozen build_parity_space",
+  "maximum_healthy_q0_q1_literal_loss_abs_error": 9.264411460208066e-11,
+  "independent_M7_product_checks": 24576,
+  "healthy_archives_verified": 28,
+  "calibration_families_recomputed": 42,
+  "outputs_sha256": {
+    "QUALITY_BUDGET_TABLE.csv": "46b2183f53ba28142bc24a2c0884fcde1719c53fe1d0904d38eeb2219bca46df",
+    "FRONTEND_CALIBRATION_TABLE.csv": "26823efe96c35a4601a500dbe46a34a0392fa17bd0e57fb8796b3d5ce6ece023"
+  }
+}

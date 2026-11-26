@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "source_sha256": "2fc6f66dd6af5836b9614f36b6a29297ab24a6956221faa40dce801b04e4b5ad",
+  "rows": [
+    {
+      "dynamics": "unstable",
+      "topology": "U",
+      "same_stream_nominal_x_exact": true,
+      "same_stream_nominal_y_exact": true,
+      "nominal_base_gain_max_abs_error": 0.0,
+      "quality_scaling_common_normal_check": true,
+      "max_abs_noise_recovery_subtraction_roundoff": 4.332673109175289e-10
+    },
+    {
+      "dynamics": "unstable",
+      "topology": "R",
+      "same_stream_nominal_x_exact": true,
+      "same_stream_nominal_y_exact": true,
+      "nominal_base_gain_max_abs_error": 0.0,
+      "quality_scaling_common_normal_check": true,
+      "max_abs_noise_recovery_subtraction_roundoff": 4.4512005192842707e-10
+    },
+    {
+      "dynamics": "stable",
+      "topology": "U",
+      "same_stream_nominal_x_exact": true,
+      "same_stream_nominal_y_exact": true,
+      "nominal_base_gain_max_abs_error": 0.0,
+      "quality_scaling_common_normal_check": true,
+      "max_abs_noise_recovery_subtraction_roundoff": 2.55351295663786e-15
+    },
+    {
+      "dynamics": "stable",
+      "topology": "R",
+      "same_stream_nominal_x_exact": true,
+      "same_stream_nominal_y_exact": true,
+      "nominal_base_gain_max_abs_error": 0.0,
+      "quality_scaling_common_normal_check": true,
+      "max_abs_noise_recovery_subtraction_roundoff": 3.6637359812630166e-15
+    }
+  ],
+  "formal_sampling": "Formal calibration uses independent process, measurement and key components. This diagnostic additionally couples quality configurations to verify the intended sensor-only noise scaling."
+}
