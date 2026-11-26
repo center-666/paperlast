@@ -1,0 +1,547 @@
+{
+  "status": "PASS",
+  "source_sha256": "7413066adc8c734bd34325d2e2142f3e9520364cd4dbd1d029e18a1177ed4ea7",
+  "mixed_support_score_checks": 72,
+  "maximum_local_score_assembly_difference": 0.0,
+  "future_packet_and_key_invariance": true,
+  "codec_roundtrip": true,
+  "population_seed_probe_checks": true,
+  "smoke_shape": [
+    2,
+    9,
+    8,
+    17
+  ],
+  "transition_laws": {
+    "iid": {
+      "transition": [
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      ],
+      "conditional_entropy_bits": 2.0,
+      "adjacent_mutual_information_nat": 0.0,
+      "per_sender_60_report_identity_blind_run_probability": 0.0012201610855591127,
+      "six_senders_identity_blind_run_probability": 0.007298670915350081
+    },
+    "no_repeat": {
+      "transition": [
+        [
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        [
+          0.3333333333333333,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.0,
+          0.3333333333333333
+        ],
+        [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.0
+        ]
+      ],
+      "conditional_entropy_bits": 1.5849625007211559,
+      "adjacent_mutual_information_nat": 0.2876820724517811,
+      "per_sender_60_report_identity_blind_run_probability": 0.0,
+      "six_senders_identity_blind_run_probability": 0.0
+    },
+    "no_opposite": {
+      "transition": [
+        [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.0,
+          0.3333333333333333
+        ],
+        [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.0
+        ],
+        [
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        [
+          0.3333333333333333,
+          0.0,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      ],
+      "conditional_entropy_bits": 1.5849625007211559,
+      "adjacent_mutual_information_nat": 0.2876820724517811,
+      "per_sender_60_report_identity_blind_run_probability": 0.008130505329251858,
+      "six_senders_identity_blind_run_probability": 0.04780213924657284
+    }
+  },
+  "allowed_pair_rank_checks": [
+    {
+      "model": "unstable",
+      "edge": 0,
+      "rule": "iid",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "rule": "no_repeat",
+      "rank_deficient_allowed_pairs": []
+    },
+    {
+      "model": "unstable",
+      "edge": 0,
+      "rule": "no_opposite",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "rule": "iid",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "rule": "no_repeat",
+      "rank_deficient_allowed_pairs": []
+    },
+    {
+      "model": "unstable",
+      "edge": 1,
+      "rule": "no_opposite",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "rule": "iid",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "rule": "no_repeat",
+      "rank_deficient_allowed_pairs": []
+    },
+    {
+      "model": "unstable",
+      "edge": 2,
+      "rule": "no_opposite",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "rule": "iid",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "rule": "no_repeat",
+      "rank_deficient_allowed_pairs": []
+    },
+    {
+      "model": "unstable",
+      "edge": 3,
+      "rule": "no_opposite",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "rule": "iid",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "rule": "no_repeat",
+      "rank_deficient_allowed_pairs": []
+    },
+    {
+      "model": "unstable",
+      "edge": 4,
+      "rule": "no_opposite",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "rule": "iid",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "rule": "no_repeat",
+      "rank_deficient_allowed_pairs": []
+    },
+    {
+      "model": "unstable",
+      "edge": 5,
+      "rule": "no_opposite",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "rule": "iid",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "rule": "no_repeat",
+      "rank_deficient_allowed_pairs": []
+    },
+    {
+      "model": "stable",
+      "edge": 0,
+      "rule": "no_opposite",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "rule": "iid",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "rule": "no_repeat",
+      "rank_deficient_allowed_pairs": []
+    },
+    {
+      "model": "stable",
+      "edge": 1,
+      "rule": "no_opposite",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "rule": "iid",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "rule": "no_repeat",
+      "rank_deficient_allowed_pairs": []
+    },
+    {
+      "model": "stable",
+      "edge": 2,
+      "rule": "no_opposite",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "rule": "iid",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "rule": "no_repeat",
+      "rank_deficient_allowed_pairs": []
+    },
+    {
+      "model": "stable",
+      "edge": 3,
+      "rule": "no_opposite",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "rule": "iid",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "rule": "no_repeat",
+      "rank_deficient_allowed_pairs": []
+    },
+    {
+      "model": "stable",
+      "edge": 4,
+      "rule": "no_opposite",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "rule": "iid",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "rule": "no_repeat",
+      "rank_deficient_allowed_pairs": []
+    },
+    {
+      "model": "stable",
+      "edge": 5,
+      "rule": "no_opposite",
+      "rank_deficient_allowed_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    }
+  ]
+}
