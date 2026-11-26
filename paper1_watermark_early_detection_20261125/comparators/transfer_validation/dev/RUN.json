@@ -1,0 +1,337 @@
+{
+  "identity": {
+    "parent": "46535058416adea9150a73ba84d81af3bfc75036",
+    "frozen_physics": "8953e1dd9a5e2535ead2698acb6f345a85d4f532",
+    "split": 21,
+    "namespace": [
+      20261126,
+      61783,
+      21
+    ],
+    "paths_per_scene": 256,
+    "calibration_per_model": 512,
+    "health_holdout_per_model": 512,
+    "chunk": 32,
+    "population": {
+      "calibration": 0,
+      "health": 1,
+      "attack": 2
+    },
+    "arms": [
+      "iid_plugin",
+      "iid_exact",
+      "no_repeat_plugin",
+      "no_repeat_exact",
+      "no_opposite_plugin",
+      "no_opposite_exact",
+      "negative_plugin",
+      "negative_exact"
+    ],
+    "supports": [
+      [
+        "single_0",
+        [
+          0
+        ]
+      ],
+      [
+        "single_1",
+        [
+          1
+        ]
+      ],
+      [
+        "single_2",
+        [
+          2
+        ]
+      ],
+      [
+        "single_3",
+        [
+          3
+        ]
+      ],
+      [
+        "single_4",
+        [
+          4
+        ]
+      ],
+      [
+        "single_5",
+        [
+          5
+        ]
+      ],
+      [
+        "same_receiver",
+        [
+          3,
+          5
+        ]
+      ],
+      [
+        "different_receivers",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "all_six",
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ]
+    ],
+    "metrics": [
+      "attacked_early",
+      "clean_edge_early",
+      "clean_any_early",
+      "exact_early",
+      "attacked_full",
+      "clean_edge_full",
+      "exact_full",
+      "attack_target_mse",
+      "attack_five_mse",
+      "attack_network_mse",
+      "recovery_target_mse",
+      "recovery_five_mse",
+      "recovery_network_mse",
+      "compatible_path",
+      "large_late_accept_path",
+      "tail_event",
+      "mse_gt1"
+    ],
+    "scenes": [
+      [
+        "unstable",
+        0,
+        50
+      ],
+      [
+        "unstable",
+        0,
+        65
+      ],
+      [
+        "unstable",
+        -45,
+        50
+      ],
+      [
+        "unstable",
+        -45,
+        65
+      ],
+      [
+        "unstable",
+        45,
+        50
+      ],
+      [
+        "unstable",
+        45,
+        65
+      ],
+      [
+        "stable",
+        0,
+        50
+      ],
+      [
+        "stable",
+        0,
+        65
+      ],
+      [
+        "stable",
+        -45,
+        50
+      ],
+      [
+        "stable",
+        -45,
+        65
+      ],
+      [
+        "stable",
+        45,
+        50
+      ],
+      [
+        "stable",
+        45,
+        65
+      ]
+    ],
+    "sources": {
+      "PROTOCOL.md": "49f024d39ec0925c426a8aa74befb9561851811ec955fa3a099cc261f46013ee",
+      "study_transfer.py": "7e07f5d11dd634bb37a523f7942e48237765af84b7f8e81035248141dfadeb49",
+      "analyze_transfer.py": "f03646e9469e5e567b3d0d33d0ec87964dcb2daed97277c4ef5cebaaf1cd6936",
+      "verify_transfer.py": "8e97d8c76e501e9615465dd54aa1a2dfed8b540e5a76dbeedb00a040635a7559",
+      "../experiment.py": "5f0caf980da2a49b1bb5a979d54b5e7018f2b51eb4b2e412bd42c01efca5003b",
+      "../projection.c": "7e4dda8c4f218873dfb6cc843d16af828d0d6946de119f8aaa57031ca9826f2b",
+      "../../study.py": "36b29705cc276fbdf39e9cd8de09fd933dd424912496895560d488652f86f9e1",
+      "../../run_stage1.py": "7f608285177dc14a6252a2dd6cc5da5a1648378415a9760179a49bd90040d425",
+      "../../online_scores.py": "5bb2d3d4fe9756c31163199af928af4d0281a58da9d5045851fb4226efb7974b",
+      "../../matched_glrt.py": "c581a4147d9e0284ff4f14596e6921b012e4d51717572e34f7ea1a16837ff2e3",
+      "../../watermark_keys.py": "e64d52bce435fdf4bc331d19b56eb7453ee646ccee937191a55063d880b9f677"
+    },
+    "physical_fixture_hashes": {
+      "gain_table.json": "57108c5f23138d5621138e4060e118144d34088b70bce1d9d3fc4a2914cd224e",
+      "physical_configuration.json": "c25437077cb73ac2332160e55f6183550bb8fc5318d93bb32c183a11d661b50d",
+      "run_common_g_50.py": "22ea30c33321da57aac0bf56b987221b529fc5020ada74b6cc789615f42d096c",
+      "replay.py": "05e68f702ccea35d4bd5d4c1396c4acd9dbc79f4c6659150b1e283f279ddbabb"
+    }
+  },
+  "archives": {
+    "unstable_p0_s0.npz": "f2f34633f421548936a6d6cc1880624c76935c014c4cf7ac86206ae0ef7bce9d",
+    "unstable_p1_s0.npz": "d56fa2bb601f692ae61b1ec033baa2170caf6dd4695929bc0a960b0c34cb53d1",
+    "unstable_p2_s0.npz": "d0b194084495c9c14b5851fb62460f10d1ef9e4a6e3d55578eaa282be2e0e5f4",
+    "unstable_p2_s1.npz": "dc592a9c9e931d6e0435e713c296572dc3191b93e8e47551d680dafcf2f09409",
+    "unstable_p2_s2.npz": "05cdcc197132e503b13face8af4c368227ba0980e8718467e642a386347178a6",
+    "unstable_p2_s3.npz": "c02c4aa18280af6a617fe926d0e61aebabddeb1bdf995f296cc5207eb63b638a",
+    "unstable_p2_s4.npz": "93e0aa630cdf2cd515bb76177e424d949dbac01d1ea0e4264433e30130a24c92",
+    "unstable_p2_s5.npz": "eb302ee9375e5c588590eb2e1c6ea6076a915b6ed238e359d2d2d9123ac893b2",
+    "stable_p0_s0.npz": "19d7158941bba6ab53d70677ccd82482e7df084f45976410e7ecc60c885f8d21",
+    "stable_p1_s0.npz": "3632a88b19079d307cfbe52ff9778d13f19042fef5d7ad47113ceff76a145317",
+    "stable_p2_s0.npz": "92e953cbfaa43bc670cd7ad3c6b80b8ff31f2a1c4437797efa9283437dbcd033",
+    "stable_p2_s1.npz": "705829bf3077df2ddfa5aa41131f87b2164173839c062ad7a304f4f04ee39928",
+    "stable_p2_s2.npz": "394c91193147d2b5cafbcc8ec3353e7f3a0c56f522df8564540fa7e9ec281cc7",
+    "stable_p2_s3.npz": "7c8aa5e7ad145331678edc5f837905e3a3902c81b71540388a368d3f8449ad14",
+    "stable_p2_s4.npz": "31349bfbb55556d2f4d4d6744c54367386bfcc7a1ca76bfc6b2122ff9026bab6",
+    "stable_p2_s5.npz": "427250cb43907f173e75c40da05bab761c8e103f944d21ac4b66e2917404e0c5"
+  },
+  "thresholds": {
+    "unstable": {
+      "iid_plugin": {
+        "threshold": 60.64179635855564,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "iid_exact": {
+        "threshold": 22.064530148201456,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "no_repeat_plugin": {
+        "threshold": 60.64179635855564,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "no_repeat_exact": {
+        "threshold": 23.201655008940996,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "no_opposite_plugin": {
+        "threshold": 60.64179635855564,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "no_opposite_exact": {
+        "threshold": 21.855067526720322,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "negative_plugin": {
+        "threshold": 60.64179635855564,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "negative_exact": {
+        "threshold": 22.314955909525633,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      }
+    },
+    "stable": {
+      "iid_plugin": {
+        "threshold": 60.537049095009266,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "iid_exact": {
+        "threshold": 22.88845461576243,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "no_repeat_plugin": {
+        "threshold": 60.537049095009266,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "no_repeat_exact": {
+        "threshold": 22.533144960404215,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "no_opposite_plugin": {
+        "threshold": 60.537049095009266,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "no_opposite_exact": {
+        "threshold": 22.985332112492955,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "negative_plugin": {
+        "threshold": 60.537049095009266,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      },
+      "negative_exact": {
+        "threshold": 22.545641042623497,
+        "one_based_rank": 488,
+        "paths": 512,
+        "target_fwer": 0.05,
+        "alarm": "score > threshold"
+      }
+    }
+  },
+  "execution_commit": "669745e27cb14b1ff65cf8ffd99132b680c6b06b",
+  "python": "3.11.18 (main, Oct 26 2026, 14:08:50) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "host": "Windows-10-10.0.26200-SP0",
+  "workers": 8,
+  "wall_seconds": 253.5120999000028
+}

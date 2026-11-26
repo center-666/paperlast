@@ -1,0 +1,20 @@
+{
+  "development_run_sha256": "5339b981c8e6632952ecfb32ea0c5312b083b0b695997036a7c13c4241d37736",
+  "development_analysis_sha256": "c7af0cd646e09f123b0bf2f38ad04583ac6d60a305f0294c0885a327dd43359d",
+  "sources": {
+    "PROTOCOL.md": "49f024d39ec0925c426a8aa74befb9561851811ec955fa3a099cc261f46013ee",
+    "study_transfer.py": "7e07f5d11dd634bb37a523f7942e48237765af84b7f8e81035248141dfadeb49",
+    "analyze_transfer.py": "f03646e9469e5e567b3d0d33d0ec87964dcb2daed97277c4ef5cebaaf1cd6936",
+    "verify_transfer.py": "8e97d8c76e501e9615465dd54aa1a2dfed8b540e5a76dbeedb00a040635a7559",
+    "../experiment.py": "5f0caf980da2a49b1bb5a979d54b5e7018f2b51eb4b2e412bd42c01efca5003b",
+    "../projection.c": "7e4dda8c4f218873dfb6cc843d16af828d0d6946de119f8aaa57031ca9826f2b",
+    "../../study.py": "36b29705cc276fbdf39e9cd8de09fd933dd424912496895560d488652f86f9e1",
+    "../../run_stage1.py": "7f608285177dc14a6252a2dd6cc5da5a1648378415a9760179a49bd90040d425",
+    "../../online_scores.py": "5bb2d3d4fe9756c31163199af928af4d0281a58da9d5045851fb4226efb7974b",
+    "../../matched_glrt.py": "c581a4147d9e0284ff4f14596e6921b012e4d51717572e34f7ea1a16837ff2e3",
+    "../../watermark_keys.py": "e64d52bce435fdf4bc331d19b56eb7453ee646ccee937191a55063d880b9f677"
+  },
+  "paths_per_scene": 1024,
+  "health_calibration_and_holdout_each": 4096,
+  "selection": "Both preregistered transition rules retained, all supports retained, no parameter selection."
+}
