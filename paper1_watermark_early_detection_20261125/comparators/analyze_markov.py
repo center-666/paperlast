@@ -48,7 +48,7 @@ def summarize(split):
             if rec["one_based_rank"]!=rank or rec["threshold"]!=maxima[rank-1]:
                 raise AssertionError(f"Order-statistic mismatch {model} {arm}")
         cal.close()
-        health=np.load(folder/f"{model}_health.npz")
+        health=np.load(folder/f"{model}_health_0.npz")
         health_rows={}
         for arm in ARMS:
             k=int(health[arm+"_fwer"].sum());n=len(health[arm+"_fwer"])
