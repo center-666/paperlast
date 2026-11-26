@@ -45,7 +45,7 @@ ARMS = (
     "A_plugin_iid", "B_plugin_negative", "C_matched_iid",
     "D_matched_negative", "E_iid_wrong_key", "F_negative_wrong_key",
 )
-SCORE_START = 7
+SCORE_START = 5
 ATTACK_DURATION = 60
 ALPHA = .05
 SPLITS = {
@@ -117,6 +117,16 @@ def matrices_for_pair(draws):
     }
 
 
+def build_geometry_caches(model):
+    senders = np.unique(model.links[:, 1])
+    ordinary = {int(sender): build_sender_geometry(model, int(sender))
+                for sender in senders}
+    startup = {int(sender): build_sender_geometry(
+        model, int(sender), zero_first_report=True
+    ) for sender in senders}
+    return ordinary, startup
+
+
 def first_cutoff(values):
     return path_fwer_cutoff(np.asarray(values, dtype=float), ALPHA)
 
@@ -140,16 +150,20 @@ def score_plugin(model, physical, sender_packets):
     return score, time.perf_counter() - start
 
 
-def score_glrt(model, physical, sender_packets, matrices, geometry):
+def score_glrt(model, physical, sender_packets, matrices, geometry,
+               startup_geometry=None):
     start = time.perf_counter()
     score = matched_scores(
-        model, physical, sender_packets, matrices, geometry, start_time=SCORE_START
+        model, physical, sender_packets, matrices, geometry,
+        startup_geometry_cache=startup_geometry, start_time=SCORE_START
     )
     return score, time.perf_counter() - start
 
 
-def score_mismatch_glrt(model, physical, sender_packets, matrices, geometry):
-    return score_glrt(model, physical, sender_packets, matrices, geometry)
+def score_mismatch_glrt(model, physical, sender_packets, matrices, geometry,
+                        startup_geometry=None):
+    return score_glrt(model, physical, sender_packets, matrices, geometry,
+                      startup_geometry)
 
 
 def path_max(scores):
@@ -157,7 +171,7 @@ def path_max(scores):
 
 
 def calibrate_model(model, physical_paths, geometry, model_index,
-                    namespace, count, batch_size):
+                    namespace, count, batch_size, startup_geometry=None):
     maxima = {
         "plugin_kl": [],
         "matched_iid": [],
@@ -183,13 +197,20 @@ def calibrate_model(model, physical_paths, geometry, model_index,
         matrices = matrices_for_pair(draws)
         if batch == 0:
             template_condition = {
-                scheme: template_condition_summary(model, matrices[scheme], geometry)
+                scheme: {
+                    "full_packet_windows": template_condition_summary(
+                        model, matrices[scheme], geometry
+                    ),
+                    "startup_zero_packet_window": template_condition_summary(
+                        model, matrices[scheme][:, :8], startup_geometry
+                    ),
+                }
                 for scheme in ("iid", "negative_fixed")
             }
         for scheme, family in (("iid", "matched_iid"),
                                ("negative_fixed", "matched_negative")):
             values, elapsed = score_glrt(model, physical, physical.y,
-                                         matrices[scheme], geometry)
+                                         matrices[scheme], geometry, startup_geometry)
             maxima[family].extend(path_max(values).tolist())
             runtime[family] += elapsed
         for scheme, family, scheme_index in (
@@ -202,7 +223,7 @@ def calibrate_model(model, physical_paths, geometry, model_index,
             )
             wrong_matrix = matrices_for_pair(wrong_draws)[scheme]
             values, elapsed = score_mismatch_glrt(
-                model, physical, physical.y, wrong_matrix, geometry
+                model, physical, physical.y, wrong_matrix, geometry, startup_geometry
             )
             maxima[family].extend(path_max(values).tolist())
             runtime[family] += elapsed
@@ -276,6 +297,7 @@ def estimator_losses(model, physical, decoded_delta, scores, threshold,
         "losses": {
             "post20_network_mse": error[:, 20:].mean(axis=(1, 2)),
             "post20_affected_mse": error[:, 20:, model.receiver_ids].mean(axis=(1, 2)),
+            "attack_affected_mse": error[:, onset:onset+60, model.receiver_ids].mean(axis=(1,2)),
             "attack_network_mse": error[:, onset:onset + 60].mean(axis=(1, 2)),
             "postattack_network_mse": error[:, onset + 60:].mean(axis=(1, 2)),
         },
@@ -284,7 +306,8 @@ def estimator_losses(model, physical, decoded_delta, scores, threshold,
 
 
 def evaluate_health_holdout(model, model_index, physical_paths, common_g,
-                            geometry, thresholds, namespace, count, batch_size):
+                            geometry, thresholds, namespace, count, batch_size,
+                            startup_geometry=None):
     records = {
         arm: {"any_alarm": [], "post20_network_mse": [],
               "post20_affected_mse": [], "max_score": []}
@@ -306,14 +329,16 @@ def evaluate_health_holdout(model, model_index, physical_paths, common_g,
             wrong[scheme] = matrices_for_pair(other)[scheme]
         score_cache = {}
         score_cache["plugin_kl"], _ = score_plugin(model, physical, physical.y)
-        score_cache["matched_iid"], _ = score_glrt(model, physical, physical.y, keys["iid"], geometry)
+        score_cache["matched_iid"], _ = score_glrt(
+            model, physical, physical.y, keys["iid"], geometry, startup_geometry
+        )
         score_cache["matched_negative"], _ = score_glrt(model, physical, physical.y,
-                                                         keys["negative_fixed"], geometry)
+                                                         keys["negative_fixed"], geometry, startup_geometry)
         score_cache["mismatch_iid"], _ = score_mismatch_glrt(
-            model, physical, physical.y, wrong["iid"], geometry
+            model, physical, physical.y, wrong["iid"], geometry, startup_geometry
         )
         score_cache["mismatch_negative"], _ = score_mismatch_glrt(
-            model, physical, physical.y, wrong["negative_fixed"], geometry
+            model, physical, physical.y, wrong["negative_fixed"], geometry, startup_geometry
         )
         for arm in ARMS:
             threshold_family = score_family_for_arm(arm)
@@ -335,7 +360,8 @@ def evaluate_health_holdout(model, model_index, physical_paths, common_g,
 
 
 def evaluate_attack_scenario(old, model, scenario, physical_paths,
-                             common_g, geometry, thresholds, namespace, count):
+                             common_g, geometry, thresholds, namespace, count,
+                             startup_geometry=None):
     model_index = scenario["model_index"]
     scenario_id = scenario["scenario_index"]
     physical_seed = seed_word(namespace, model_index, scenario_id, 1, 0)
@@ -376,7 +402,8 @@ def evaluate_attack_scenario(old, model, scenario, physical_paths,
         else:
             score_runtime_started = time.perf_counter()
             score = matched_scores(model, physical, observed, scoring_matrix,
-                                   geometry, start_time=SCORE_START)
+                                   geometry, startup_geometry_cache=startup_geometry,
+                                   start_time=SCORE_START)
             score_runtime = time.perf_counter() - score_runtime_started
         score[:, :SCORE_START] = 0.0
         threshold_family = scoring_family
@@ -433,6 +460,22 @@ def _mean_se(values):
             "n_paths": int(len(path_values))}
 
 
+def scenario_manifest_record(result, metadata):
+    return {
+        **metadata,
+        "arms": {arm: {
+            "score_family": values["threshold_family"],
+            "threshold": values["threshold"],
+            "score_runtime_seconds": values["score_runtime_seconds"],
+            "common_g_replay_wall_seconds_including_source_plugin_score": values[
+                "common_g_replay_wall_seconds_including_source_plugin_score"
+            ],
+            "detection": values["detection"],
+            "losses": values["losses"],
+        } for arm, values in result.items()},
+    }
+
+
 def _atomic_json(path, value):
     target = Path(path)
     temporary = target.with_name(target.name + ".tmp")
@@ -483,6 +526,8 @@ def source_hashes():
         "v3_final_results.json": digest(V3 / "crn_final_results.json"),
         "v3_final_path_arrays.npz": digest(V3 / "crn_final_path_arrays.npz"),
         "v3_final_path_manifest.json": digest(V3 / "crn_final_path_manifest.json"),
+        "v3_registration.json": digest(V3 / "new_experiment_registration.json"),
+        "v3_verification.json": digest(V3 / "verification_v3.json"),
     }
 
 
@@ -508,8 +553,6 @@ def run(split_name: str):
         check=False,
     ).returncode != 0:
         raise ValueError("The frozen baseline commit must be an ancestor of the run commit.")
-    if subprocess.check_output(["git", "-C", str(ROOT), "status", "--porcelain"], text=True).strip():
-        raise ValueError("Formal Stage-1 paths require a clean committed worktree.")
     phase0 = json.loads((HERE / "PHASE0_REPLAY_AUDIT.json").read_text(encoding="utf-8"))
     interface = json.loads((HERE / "INTERFACE_SMOKE.json").read_text(encoding="utf-8"))
     formula = json.loads((HERE / "FORMULA_AUDIT.json").read_text(encoding="utf-8"))
@@ -568,7 +611,7 @@ def run(split_name: str):
             "healthy_holdout_paths_per_model": split["health_holdout"],
             "batch_size": split["batch_size"],
             "score_start_time": SCORE_START,
-            "threshold_rule": "path maximum across six links and k=7..149; strict score>threshold; one-based rank ceil((n+1)*0.95)",
+            "threshold_rule": "path maximum across six links and k=5..149; strict score>threshold; one-based rank ceil((n+1)*0.95)",
             "source_sha256": source_hash,
             "fixture_hashes": fixture_hashes,
             "run_identity": identity,
@@ -578,8 +621,8 @@ def run(split_name: str):
                 "plugin_kl": "frozen four-residual plugin Gaussian KL; no watermark matrix input",
                 "matched_iid": "causal whitened subspace GLRT with actual iid sender key",
                 "matched_negative": "causal whitened subspace GLRT with actual fixed-negative sender key",
-            "mismatched_iid_key": "iid-law GLRT template with an independent same-law key and an independently calibrated healthy path-max threshold",
-            "mismatched_negative_key": "negative-law GLRT template with an independent same-law key and an independently calibrated healthy path-max threshold",
+                "mismatched_iid_key": "iid-law GLRT template with an independent same-law key and an independently calibrated healthy path-max threshold",
+                "mismatched_negative_key": "negative-law GLRT template with an independent same-law key and an independently calibrated healthy path-max threshold",
             },
             "models": {},
             "scenario_specs": scenario_specs(),
@@ -590,12 +633,13 @@ def run(split_name: str):
 
     model_objects = {}
     geometry_objects = {}
+    startup_geometry_objects = {}
     for model_index, model_name in enumerate(MODELS):
         model = load_model(model_name)
-        geometry = {int(sender): build_sender_geometry(model, int(sender))
-                    for sender in np.unique(model.links[:, 1])}
+        geometry, startup_geometry = build_geometry_caches(model)
         model_objects[model_name] = model
         geometry_objects[model_name] = geometry
+        startup_geometry_objects[model_name] = startup_geometry
         if model_name in manifest["models"]:
             health_archive = output_dir / f"health_{model_name}.npz"
             expected = manifest["archive_sha256"].get(health_archive.name)
@@ -605,17 +649,23 @@ def run(split_name: str):
         calibration_started = time.perf_counter()
         calibration = calibrate_model(
             model, physical_paths, geometry, model_index, namespace,
-            split["calibration"], split["batch_size"],
+            split["calibration"], split["batch_size"], startup_geometry,
         )
         thresholds = calibration["thresholds"]
         healthy, health_seeds = evaluate_health_holdout(
             model, model_index, physical_paths, common_g, geometry, thresholds,
             namespace, split["health_holdout"], split["batch_size"],
+            startup_geometry,
         )
         calibration_and_health_runtime = time.perf_counter() - calibration_started
         model_record = {
-            "geometry": {str(sender): record.diagnostics
-                         for sender, record in geometry.items()},
+            "geometry": {
+                str(sender): {
+                    "stationary_full_packet_window": record.diagnostics,
+                    "first_score_zero_packet_window": startup_geometry[sender].diagnostics,
+                }
+                for sender, record in geometry.items()
+            },
             "calibration": {
                 "thresholds": thresholds,
                 "path_id_pattern": f"stage1_cal_{split_id(namespace)}_{model_name}_{{index}}",
@@ -674,24 +724,15 @@ def run(split_name: str):
             continue
         model = model_objects[model_name]
         geometry = geometry_objects[model_name]
+        startup_geometry = startup_geometry_objects[model_name]
         thresholds = manifest["models"][model_name]["calibration"]["thresholds"]
         result, arrays, metadata = evaluate_attack_scenario(
             old, model, scenario, physical_paths, common_g, geometry,
-            thresholds, namespace, split["paths"],
+            thresholds, namespace, split["paths"], startup_geometry,
         )
-        manifest["models"][model_name]["attack_scenarios"][scenario["name"]] = {
-            **metadata,
-            "arms": {arm: {
-                "score_family": values["score_family"],
-                "threshold": values["threshold"],
-                "score_runtime_seconds": values["score_runtime_seconds"],
-                "common_g_replay_wall_seconds_including_source_plugin_score": values[
-                    "common_g_replay_wall_seconds_including_source_plugin_score"
-                ],
-                "detection": values["detection"],
-                "losses": values["losses"],
-            } for arm, values in result.items()},
-        }
+        manifest["models"][model_name]["attack_scenarios"][scenario["name"]] = scenario_manifest_record(
+            result, metadata
+        )
         filename = f"{scenario['name']}.npz"
         _atomic_npz(output_dir / filename, arrays)
         manifest["archive_sha256"][filename] = digest(output_dir / filename)

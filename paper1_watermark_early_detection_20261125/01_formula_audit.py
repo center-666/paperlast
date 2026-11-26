@@ -16,7 +16,7 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 BASELINE = ROOT / "paper1_sscd_commonrandom_20261122"
 sys.path.insert(0, str(BASELINE))
-from watson_crn import von_mises_icdf_signed, theoretical_zeta_mi
+from watson_crn import von_mises_icdf_signed, von_mises_cdf_signed, theoretical_zeta_mi
 
 REGULAR_PROBABILITY = 0.75
 STRONG_PROBABILITY = 0.25
@@ -135,6 +135,8 @@ def sample_two_packet_matrix_energy(regular_theta: float, count: int, seed: int)
             "standard_error": float(squared_distance.std(ddof=1) / math.sqrt(count)),
         }
 
+    candidate_beta = np.concatenate((beta0, beta1))
+    candidate_matrices = np.concatenate((matrix0, matrix1))
     random_bin = rng.random(count) < STRONG_PROBABILITY
     random_phase = np.where(random_bin, strong_phase, regular_phase)
     next_angle = (initial_angle + 0.5 * random_phase + math.pi * branch) % (2.0 * math.pi)
@@ -150,8 +152,8 @@ def sample_two_packet_matrix_energy(regular_theta: float, count: int, seed: int)
         "standard_error": float(distance.std(ddof=1) / math.sqrt(count)),
     }
 
-    beta_all = np.concatenate((beta0, beta1), axis=0)
-    coordinates = np.concatenate((matrix0, matrix1), axis=0)
+    beta_all = candidate_beta
+    coordinates = candidate_matrices
     direction = beta_all / np.linalg.norm(beta_all, axis=1, keepdims=True)
     results["radial_edge_marginal"] = {
         "S_mean": float(np.mean(np.sum(beta_all**2, axis=1))),
@@ -162,11 +164,20 @@ def sample_two_packet_matrix_energy(regular_theta: float, count: int, seed: int)
     }
     results["strong_pair_frequency"] = float(strong.mean())
     results["conditional_angle_moment_regular"] = float(
-        np.mean(np.cos(2.0 * regular_phase / 2.0))
+        np.mean(np.cos(regular_phase[~strong]))
     )
     results["conditional_angle_moment_strong"] = float(
         np.mean(np.cos(2.0 * strong_phase / 2.0)[strong])
     ) if strong.any() else None
+    for theta, phase in ((regular_theta, regular_phase), (2*regular_theta, strong_phase)):
+        residual = np.max(np.abs(von_mises_cdf_signed(phase, theta/2) - quantile))
+        norm = quad(lambda x: projective_angle_density(x, theta), 0, np.pi)[0]
+        assert residual < 5e-13 and abs(norm-1) < 1e-12
+        results[str(theta)] = {"max_inverse_cdf_error": float(residual), "density_integral": norm}
+    assert abs(results["strong_pair_frequency"]-.25) < .006
+    assert abs(results["conditional_angle_moment_regular"]-zeta(regular_theta)) < .012
+    assert abs(results["conditional_angle_moment_strong"]-zeta(2*regular_theta)) < .018
+    np.testing.assert_allclose(np.cov(beta_all.T), .5*np.eye(2), atol=.01)
     return results
 
 
@@ -208,6 +219,10 @@ def main():
         "monte_carlo_seed": MONTE_CARLO_SEED,
         "caveat": "The two-packet expectation is a proxy, not a detector-power or closed-loop MSE guarantee.",
     }
+    assert abs(weighted_mi-budget) < 1e-12
+    for scheme in ("iid","fixed_negative","radial_bin_negative"):
+        mc=result["monte_carlo"][scheme]
+        assert abs(result["analytic_two_packet_expected_squared_distance"][scheme]-mc["mean"]) < 5*mc["standard_error"]
     output = HERE / "FORMULA_AUDIT.json"
     output.write_text(json.dumps(result, indent=2, ensure_ascii=False, allow_nan=False) + "\n",
                       encoding="utf-8", newline="\n")

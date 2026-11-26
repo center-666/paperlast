@@ -46,7 +46,8 @@ def explicit_history_map(model, sender):
     return output
 
 
-def covariance_monte_carlo(model, sender, geometry, count=8192, seed=831799):
+def covariance_monte_carlo(model, sender, geometry, count=8192, seed=831799,
+                           zero_first_report=False):
     rng = np.random.default_rng(seed)
     x = np.empty((count, BUFFER_REPORTS, 2))
     x[:, 0] = rng.normal(size=(count, 2))
@@ -54,6 +55,8 @@ def covariance_monte_carlo(model, sender, geometry, count=8192, seed=831799):
         x[:, tick] = x[:, tick - 1] @ model.A.T + rng.normal(size=(count, 2))
     y = np.einsum("ij,btj->bti", model.H[sender], x)
     y += rng.normal(size=y.shape) @ np.linalg.cholesky(model.R[sender]).T
+    if zero_first_report:
+        y[:, 0] = 0.0
     raw = y.reshape(count, -1)
     white = raw @ geometry.whitening_map.T
     covariance = np.cov(white, rowvar=False)
@@ -104,6 +107,10 @@ def main():
             int(sender): build_sender_geometry(model, int(sender))
             for sender in np.unique(model.links[:, 1])
         }
+        startup_geometries = {
+            int(sender): build_sender_geometry(model, int(sender), zero_first_report=True)
+            for sender in np.unique(model.links[:, 1])
+        }
         geometry_reports = {}
         for sender, geometry in geometries.items():
             independently_built = explicit_history_map(model, sender)
@@ -118,6 +125,14 @@ def main():
                     model, sender, geometry, seed=20261125_8320 + sender
                     + 100 * int(model_name == "stable")
                 ),
+                "startup_zero_packet_geometry": {
+                    **startup_geometries[sender].diagnostics,
+                    "empirical_noise_whitening": covariance_monte_carlo(
+                        model, sender, startup_geometries[sender],
+                        seed=20261125_8325 + sender + 100 * int(model_name == "stable"),
+                        zero_first_report=True,
+                    ),
+                },
             }
 
         raw_attack, scale = old.rotated_raw_attack(model, 0.)
@@ -125,12 +140,17 @@ def main():
         observed_packets = physical.y.copy()
         for edge, sender_id in enumerate(model.links[:, 1].astype(int)):
             observed_packets[:, :, sender_id] += delta[:, :, edge]
-        match = matched_scores(model, physical, observed_packets, matrices, geometries)
-        plugin = plugin_scores(model, physical, delta, sender_packets=observed_packets)
+        detector_packets = observed_packets.copy()
+        detector_packets[:, 0] = 0.0
+        match = matched_scores(
+            model, physical, detector_packets, matrices, geometries,
+            startup_geometry_cache=startup_geometries,
+        )
+        plugin = plugin_scores(model, physical, np.zeros_like(delta), sender_packets=observed_packets)
         if match.shape != plugin.shape or not np.isfinite(match).all():
             raise AssertionError("Detector interface shape or finite-value check failed")
-        if np.any(match[:, :7] != 0.0):
-            raise AssertionError("Matched GLRT emitted a score before its 8-report buffer existed")
+        if np.any(match[:, :5] != 0.0):
+            raise AssertionError("Matched GLRT emitted a score before the first two parity residuals")
 
         sender = int(model.links[0, 1])
         edge = 0
@@ -138,13 +158,19 @@ def main():
         tick = 7
         raw_reports = (physical.y[:, tick - 7:tick + 1, sender]
                        + delta[:, tick - 7:tick + 1, edge])
-        whitened_record = raw_reports.reshape(16, -1) @ geometry.whitening_map.T
+        raw_reports[:, 0] = 0.0
+        startup_geometry = startup_geometries[sender]
+        whitened_record = raw_reports.reshape(16, -1) @ startup_geometry.whitening_map.T
         key_window = matrices[:, tick - 7:tick + 1, sender]
-        raw_design = sender_template_maps(model, sender, key_window)[:, 0]
-        whitened_design = np.einsum("ri,bic->brc", geometry.whitening_map, raw_design)
+        raw_design_all = sender_template_maps(
+            model, sender, key_window, startup_geometry.attack_state_maps
+        )
+        raw_design_all[:, :, :2] = 0.0
+        raw_design = raw_design_all[:, 0]
+        whitened_design = np.einsum("ri,bic->brc", startup_geometry.whitening_map, raw_design)
         whitened_design_all = np.einsum(
-            "ri,bsic->bsrc", geometry.whitening_map,
-            sender_template_maps(model, sender, key_window),
+            "ri,bsic->bsrc", startup_geometry.whitening_map,
+            raw_design_all,
         )
         batch_scores = template_subspace_score_batch(
             whitened_record, whitened_design_all
@@ -161,13 +187,13 @@ def main():
                                    rtol=2e-10, atol=2e-10)
 
         changed_future_m = matrices.copy()
-        changed_future_packets = physical.y.copy()
-        changed_future_packets = observed_packets.copy()
+        changed_future_packets = detector_packets.copy()
         changed_future_m[:, tick + 1:] = 20.0 * np.eye(2)
         changed_future_packets[:, tick + 1:] += 100.0
         future_match = matched_scores(
             model, SimpleNamespace(x=physical.x, y=changed_future_packets),
             changed_future_packets, changed_future_m, geometries,
+            startup_geometry_cache=startup_geometries,
         )
         np.testing.assert_array_equal(match[:, tick], future_match[:, tick])
 
@@ -233,7 +259,7 @@ def main():
             "rotated_zero_degree_attack_scale": float(scale),
             "matched_score_shape": list(match.shape),
             "plugin_score_shape": list(plugin.shape),
-            "matched_first_score_time": 7,
+            "matched_first_score_time": 5,
             "matched_vs_independent_lstsq_max_abs_error": float(
                 np.max(np.abs(projection_score - least_squares_score))
             ),

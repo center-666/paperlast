@@ -1,0 +1,16 @@
+{
+  "startup_k": [
+    5,
+    6,
+    7
+  ],
+  "direct_lstsq_max_abs_error": 4.674305387197819e-10,
+  "inverse_cdf_residual": {
+    "-1.3152369768257723": 2.5091040356528538e-14,
+    "-1.0149016255359247": 1.970645868709653e-14,
+    "-2.0298032510718493": 2.0489165919457264e-13
+  },
+  "matched_cases": 192,
+  "future_invariance_through_65": true,
+  "smoke_archive_analysis": "pass"
+}

@@ -20,11 +20,11 @@ import run_stage1 as runner
 def main():
     old, load_model, physical_paths, common_g, _ = runner.load_backend()
     model = load_model("unstable")
-    geometry = {int(sender): runner.build_sender_geometry(model, int(sender))
-                for sender in np.unique(model.links[:, 1])}
+    geometry, startup_geometry = runner.build_geometry_caches(model)
     namespace = runner.SMOKE_NAMESPACE
     calibration = runner.calibrate_model(
-        model, physical_paths, geometry, 0, namespace, 64, 16
+        model, physical_paths, geometry, 0, namespace, 64, 16,
+        startup_geometry,
     )
     thresholds = calibration["thresholds"]
     scenario = {
@@ -34,9 +34,12 @@ def main():
     }
     result, arrays, meta = runner.evaluate_attack_scenario(
         old, model, scenario, physical_paths, common_g, geometry, thresholds,
-        namespace, 16,
+        namespace, 16, startup_geometry,
     )
+    packed_manifest = runner.scenario_manifest_record(result, meta)
     assert set(result) == set(runner.ARMS)
+    assert set(packed_manifest["arms"]) == set(runner.ARMS)
+    assert all("score_family" in packed_manifest["arms"][arm] for arm in runner.ARMS)
     assert set(arrays) >= {"A_plugin_iid_scores", "D_matched_negative_gates",
                            "E_iid_wrong_key_early3_per_link"}
     for arm, record in result.items():
@@ -72,7 +75,7 @@ def main():
                           np.zeros(2, dtype=np.int16))
     healthy, health_seeds = runner.evaluate_health_holdout(
         model, 0, physical_paths, common_g, geometry, thresholds,
-        namespace, 32, 16,
+        namespace, 32, 16, startup_geometry,
     )
     assert set(healthy) == set(runner.ARMS)
     assert all(len(healthy[arm]["any_alarm"]) == 32 for arm in runner.ARMS)

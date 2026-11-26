@@ -2,6 +2,9 @@
 from __future__ import annotations
 
 import math
+from functools import lru_cache
+from scipy.interpolate import CubicHermiteSpline
+from scipy.special import i0
 
 import numpy as np
 
@@ -13,32 +16,43 @@ THETA_IID = 0.0
 THETA_NEGATIVE = -1.3152369768257723
 
 
+@lru_cache(None)
+def inverse_table(theta):
+    u = np.linspace(0., 1., 4097)
+    phase = np.r_[von_mises_icdf_signed(u[:-1], theta), 2*np.pi]
+    slope = 2*np.pi*i0(theta/2)*np.exp(-theta/2*np.cos(phase))
+    return CubicHermiteSpline(u, phase, slope)
+
+
+def phase_for(u, theta):
+    return inverse_table(theta)(u) if theta else (2*np.pi)*u
+
+
+def beta_chain(draws, phase):
+    r = draws.radial_chi2_half
+    angle = np.empty_like(r)
+    angle[:, 0] = draws.initial_angle
+    for t in range(1, r.shape[1]):
+        angle[:, t] = (angle[:, t-1] + .5*phase[:, t-1] + np.pi*draws.branch[:, t-1]) % (2*np.pi)
+    return np.sqrt(r)[..., None]*np.stack((np.cos(angle),np.sin(angle)), axis=-1)
+
+
 def beta_radial_binned(draws: CommonDraws, regular_theta: float) -> np.ndarray:
     """Use 2t iff both neighboring exponential radii exceed ln(2)."""
     radii = draws.radial_chi2_half
     if radii.ndim != 3 or radii.shape[1] != T:
         raise ValueError("Expected complete [path,150,sender] radial keys")
     strong = (radii[:, :-1] > math.log(2.0)) & (radii[:, 1:] > math.log(2.0))
-    phase_regular = von_mises_icdf_signed(draws.quantile_u, regular_theta)
-    phase_strong = von_mises_icdf_signed(draws.quantile_u, 2.0 * regular_theta)
-    phase = np.where(strong, phase_strong, phase_regular)
-    angle = np.empty_like(radii)
-    angle[:, 0] = draws.initial_angle
-    for tick in range(1, T):
-        angle[:, tick] = (
-            angle[:, tick - 1] + 0.5 * phase[:, tick - 1]
-            + np.pi * draws.branch[:, tick - 1]
-        ) % (2.0 * np.pi)
-    direction = np.stack((np.cos(angle), np.sin(angle)), axis=-1)
-    return np.sqrt(radii)[..., None] * direction
+    return beta_chain(draws, np.where(strong, phase_for(draws.quantile_u, 2*regular_theta),
+                                      phase_for(draws.quantile_u, regular_theta)))
 
 
 def beta_for_scheme(draws: CommonDraws, scheme: str) -> np.ndarray:
     if scheme == "iid":
         theta = THETA_IID
-        return beta_from_common(draws, theta)
+        return beta_chain(draws, phase_for(draws.quantile_u, theta))
     if scheme == "negative_fixed":
-        return beta_from_common(draws, THETA_NEGATIVE)
+        return beta_chain(draws, phase_for(draws.quantile_u, THETA_NEGATIVE))
     if scheme == "negative_radial_bin":
         return beta_radial_binned(draws, -1.0149016255359247)
     if scheme == "negative_random_bin":
@@ -47,24 +61,10 @@ def beta_for_scheme(draws: CommonDraws, scheme: str) -> np.ndarray:
 
 
 def beta_random_binned(draws: CommonDraws, regular_theta: float) -> np.ndarray:
-    """Independent Bernoulli bin assignment, coupled through the key quantile."""
-    phase_regular = von_mises_icdf_signed(draws.quantile_u, regular_theta)
-    phase_strong = von_mises_icdf_signed(draws.quantile_u, 2.0 * regular_theta)
-    # A separately seeded label stream is supplied in draws.lift only for the
-    # original branch bit, so the caller constructs random-bin labels below.
-    if not hasattr(draws, "radial_bin_labels"):
-        raise ValueError("Random-bin control requires an attached independent bin-label array")
-    phase = np.where(draws.radial_bin_labels, phase_strong, phase_regular)
-    angle = np.empty_like(draws.radial_chi2_half)
-    angle[:, 0] = draws.initial_angle
-    for tick in range(1, T):
-        angle[:, tick] = (
-            angle[:, tick - 1] + 0.5 * phase[:, tick - 1]
-            + np.pi * draws.branch[:, tick - 1]
-        ) % (2.0 * np.pi)
-    return np.sqrt(draws.radial_chi2_half)[..., None] * np.stack(
-        (np.cos(angle), np.sin(angle)), axis=-1
-    )
+    """Independent, sender-shared Bernoulli labels supplied by their own RNG."""
+    return beta_chain(draws, np.where(draws.radial_bin_labels,
+                      phase_for(draws.quantile_u, 2*regular_theta),
+                      phase_for(draws.quantile_u, regular_theta)))
 
 
 def make_key_draws(count: int, radial_seed: int, initial_seed: int,
