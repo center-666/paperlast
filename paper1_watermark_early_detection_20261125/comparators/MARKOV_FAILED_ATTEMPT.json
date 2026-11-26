@@ -1,0 +1,21 @@
+{
+  "status": "incomplete_development_scene_index_error",
+  "seed_namespace": [
+    20261127,
+    52387,
+    5
+  ],
+  "paths_per_scene": 256,
+  "generated_archives": {
+    "unstable_attack_0.npz": "a19387e7943c69d519d05dfd91f11064d4233a504c3bf531e22a32e5e2eb29ac",
+    "unstable_attack_1.npz": "b41c6c725aa4be9e24df1c02ffd63ea6846204eb0cd09c527f5f68d979d165d8",
+    "unstable_attack_2.npz": "038d315b476cef0c80f8730b8ccf3ec27d292e64279d374b88a048f1050ff248",
+    "unstable_attack_3.npz": "058198faa18d35fc9c8bd5db12d444d217a0a6cb8aaa5af0f6bdb2dcb03db4c1",
+    "unstable_attack_4.npz": "9a0ccfabb40e6d2c377c0dbeb87df2c2df2a2ddee1d68a25d2bbecf60ffa785d",
+    "unstable_attack_5.npz": "0357b16630381c3339e8c5527750f69d3702ae5a396a46a59a1c85f5bc6894a5",
+    "unstable_calibration.npz": "a01135b18b161d07eeb37ccc3f52ee5f743685676e82374b45f31404805b1039",
+    "unstable_health_0.npz": "28c67e2fe9d9e6f2932962ec649d3178a0965a3964eaad7b7abe9fa9fbe98609"
+  },
+  "failure": "The per-model attack loop iterated global scene IDs 0..11 instead of local IDs 0..5. All unstable scenes 0..5 completed. Stable health/calibration had not been run when stable scene 6 raised IndexError.",
+  "scope": "Preserved only. Not included in analysis and not an independent replication."
+}

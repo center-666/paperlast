@@ -200,7 +200,7 @@ def run(split,workers):
                 state["archives"][cal_file]=exp.old.base.digest(folder/cal_file)
                 exp.old.base._atomic_json(progress,state)
             thresholds=state["thresholds"][model]
-            for pop,count,scenes in (("health",holdout,[0]),("attack",n,list(SCENES))):
+            for pop,count,scenes in (("health",holdout,[0]),("attack",n,list(range(6)))):
                 for scene in scenes:
                     filename=f"{model}_{pop}_{scene}.npz"
                     if filename in state["archives"]:continue
