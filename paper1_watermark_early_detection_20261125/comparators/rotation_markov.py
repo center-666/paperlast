@@ -157,7 +157,7 @@ def run(split,workers):
             "online_scores.py":exp.old.base.digest(exp.BASE/"online_scores.py")}
     identity={"parent":BASE,"frozen_physics":exp.BASE_SHA,"split":split,
               "paths_per_cell":n,"calibration_per_model":calibration,"holdout_per_model":holdout,
-              "scenarios":[[exp.MODEL[mi],ANGLES[s//2],ONSETS[s%2]] for mi in range(2) for s in SCENES],
+              "scenarios":[[exp.MODEL[mi],ANGLES[s//2],ONSETS[s%2]] for mi in range(2) for s in range(6)],
               "namespace":[20261127,52387,split],"arms":ARMS,
               "W1_threshold_sha256":exp.old.base.digest(HERE/"confirm/RUN.json"),
               "source_sha256":hashes,"conditional_entropy_bits":{"quarter_iid":2.,"quarter_no_repeat":float(np.log2(3))},
