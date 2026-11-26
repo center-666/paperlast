@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "run_sha256": "a6d8616097f881efd63e3442b60510a5435e530890a92b12f91d144d1167af34",
+  "source_sha256": "8e97d8c76e501e9615465dd54aa1a2dfed8b540e5a76dbeedb00a040635a7559",
+  "archives_verified": 16,
+  "endpoint_cells_recomputed": 864,
+  "absolute_rows_recomputed": 6120,
+  "paired_rows_recomputed": 4590,
+  "independently_replayed_path_arm_support_worlds": 2048,
+  "calibration_holdout_attack_probe_checks": true,
+  "all_six_event_totals": {
+    "iid_plugin": {
+      "tail": 19,
+      "compatible": 85,
+      "large_late": 26
+    },
+    "iid_exact": {
+      "tail": 19,
+      "compatible": 85,
+      "large_late": 26
+    },
+    "no_repeat_plugin": {
+      "tail": 0,
+      "compatible": 0,
+      "large_late": 0
+    },
+    "no_repeat_exact": {
+      "tail": 0,
+      "compatible": 0,
+      "large_late": 0
+    },
+    "no_opposite_plugin": {
+      "tail": 116,
+      "compatible": 580,
+      "large_late": 192
+    },
+    "no_opposite_exact": {
+      "tail": 116,
+      "compatible": 580,
+      "large_late": 186
+    },
+    "negative_plugin": {
+      "tail": 0,
+      "compatible": 0,
+      "large_late": 0
+    },
+    "negative_exact": {
+      "tail": 0,
+      "compatible": 0,
+      "large_late": 0
+    }
+  }
+}

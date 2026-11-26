@@ -1,0 +1,17 @@
+{
+  "definition": "No-repeat exact, all-six support, any individual edge missed in first three reports",
+  "paths": 12288,
+  "path_edge_opportunities": 73728,
+  "misses": [
+    {
+      "model": "unstable",
+      "scene": 4,
+      "path_id": 499,
+      "edge": 4,
+      "onset": 50,
+      "delay": 3,
+      "early_max": 20.549123182650934,
+      "threshold": 22.40282852857648
+    }
+  ]
+}
