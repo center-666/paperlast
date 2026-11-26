@@ -1,0 +1,12 @@
+{
+  "unstable": {
+    "paths": 1024,
+    "ratio": 2.5521814661646,
+    "encode_multiplier": 0.6259566026077306
+  },
+  "stable": {
+    "paths": 1024,
+    "ratio": 2.538332826774214,
+    "encode_multiplier": 0.6276618273347955
+  }
+}

@@ -1,0 +1,1082 @@
+{
+  "readback": {
+    "arm_order": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "columns": [
+      "early3",
+      "attack5_mse",
+      "recovery5_mse"
+    ],
+    "means": [
+      [
+        0.640625,
+        0.12327395798082608,
+        0.04975200594613185
+      ],
+      [
+        0.6539171006944444,
+        0.11520453627399525,
+        0.04975872529306055
+      ],
+      [
+        0.9018825954861112,
+        0.06145510368283147,
+        0.04991655631615824
+      ],
+      [
+        0.910915798611111,
+        0.06035866102776424,
+        0.049932886561896817
+      ],
+      [
+        0.8615722656249999,
+        0.08695786948804425,
+        0.04978147288972226
+      ],
+      [
+        0.8734537760416666,
+        0.08154606817888974,
+        0.049783841925203104
+      ]
+    ],
+    "B-A": [
+      0.01329210069444442,
+      -0.008069421706830823,
+      6.719346928703296e-06
+    ],
+    "D-C": [
+      0.009033203124999889,
+      -0.0010964426550672257,
+      1.633024573857722e-05
+    ],
+    "D-B": [
+      0.25699869791666663,
+      -0.05484587524623101,
+      0.00017416126883626482
+    ],
+    "C-E": [
+      0.04031032986111127,
+      -0.025502765805212782,
+      0.00013508342643597793
+    ],
+    "D-F": [
+      0.03746202256944442,
+      -0.021187407151125492,
+      0.0001490446366937126
+    ],
+    "old_thresholds": {
+      "unstable": {
+        "A": [
+          62.128558873413525,
+          60.109921203238,
+          59.208440861067984
+        ],
+        "B": [
+          62.128558873413525,
+          60.109921203238,
+          59.208440861067984
+        ],
+        "C": [
+          23.390031850978016,
+          22.14886761945762,
+          21.253366916661825
+        ],
+        "D": [
+          23.707181564401044,
+          22.141810134358533,
+          21.084818364738986
+        ],
+        "E": [
+          23.455418201401116,
+          22.29426722617012,
+          21.353801502452285
+        ],
+        "F": [
+          23.77849065080896,
+          22.294267226170113,
+          21.380365916577784
+        ]
+      },
+      "stable": {
+        "A": [
+          61.89228394045669,
+          60.4913391573869,
+          59.407691324361
+        ],
+        "B": [
+          61.89228394045669,
+          60.4913391573869,
+          59.407691324361
+        ],
+        "C": [
+          23.57862465514168,
+          22.111606998226183,
+          21.17410288651916
+        ],
+        "D": [
+          23.458448737824774,
+          22.035803955190254,
+          21.08142869796686
+        ],
+        "E": [
+          23.479943203818433,
+          22.154507227342066,
+          21.272515845712498
+        ],
+        "F": [
+          23.729416008299264,
+          22.012498416800824,
+          21.173935699708476
+        ]
+      }
+    }
+  },
+  "replay": {
+    "unstable": {
+      "scene": 0,
+      "paths": 512,
+      "four_arms_full_gate_disagreements": 0,
+      "errors_full_crosscode_early_archived_pathmax_archived_loss_archived": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "stable": {
+      "scene": 1,
+      "paths": 512,
+      "four_arms_full_gate_disagreements": 0,
+      "errors_full_crosscode_early_archived_pathmax_archived_loss_archived": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "geometry": {
+    "unstable": {
+      "none": {
+        "roundtrip_scaled_error": 0.0,
+        "scalar_template_null_max_error": 1.4210854715202004e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 7.993605777301127e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.047080970425014856,
+            1.0000000000000002,
+            1.0000000000000004
+          ],
+          "max_score_change": 3.6007651762140593
+        },
+        "1.0": {
+          "svd_max_score_error": 1.0658141036401503e-14,
+          "rank_counts": [
+            30,
+            0,
+            318
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 6.217248937900877e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.04845080419451137,
+            0.9999999999999999,
+            1.0000000000000009
+          ],
+          "max_score_change": 3.6784278992794386
+        }
+      },
+      "sign": {
+        "roundtrip_scaled_error": 0.0,
+        "scalar_template_null_max_error": 1.2434497875801753e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 7.993605777301127e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.021343905547886316,
+            0.045548533620786605,
+            0.07077765689114862
+          ],
+          "max_score_change": 2.0637967595524316
+        },
+        "1.0": {
+          "svd_max_score_error": 6.217248937900877e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 5.329070518200751e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.021080098439513945,
+            0.04425793495569272,
+            0.0762553348582513
+          ],
+          "max_score_change": 2.055878043605417
+        }
+      },
+      "diagonal": {
+        "roundtrip_scaled_error": 0.0,
+        "scalar_template_null_max_error": 1.2434497875801753e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 7.993605777301127e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.025074034699170786,
+            0.0459199860555749,
+            0.06698615937654472
+          ],
+          "max_score_change": 1.6815991139379163
+        },
+        "1.0": {
+          "svd_max_score_error": 4.440892098500626e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 7.105427357601002e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.024619354929338762,
+            0.04694967942708444,
+            0.07200700470074747
+          ],
+          "max_score_change": 2.7720158267921367
+        }
+      },
+      "quarter": {
+        "roundtrip_scaled_error": 0.0,
+        "scalar_template_null_max_error": 1.7763568394002505e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 6.217248937900877e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.021315053884008114,
+            0.04303613675080082,
+            0.05110691849916229
+          ],
+          "max_score_change": 0.6014438506401385
+        },
+        "1.0": {
+          "svd_max_score_error": 3.552713678800501e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 8.881784197001252e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.021239859878881426,
+            0.041492045857819695,
+            0.04921170786231035
+          ],
+          "max_score_change": 0.5162068431706182
+        }
+      },
+      "iid": {
+        "roundtrip_scaled_error": 1.9317880628477724e-14,
+        "scalar_template_null_max_error": 1.7763568394002505e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 1.0658141036401503e-14,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.028750493975990707,
+            0.05556398285443439,
+            0.08252886457381388
+          ],
+          "max_score_change": 1.3348091620856426
+        },
+        "1.0": {
+          "svd_max_score_error": 9.769962616701378e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 7.993605777301127e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.02864658724133228,
+            0.05408956262758225,
+            0.08455242778882158
+          ],
+          "max_score_change": 0.696932950856124
+        }
+      },
+      "negative": {
+        "roundtrip_scaled_error": 1.5654144647214707e-14,
+        "scalar_template_null_max_error": 1.7763568394002505e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 5.329070518200751e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.027408898339099777,
+            0.05359277453438442,
+            0.07561221383144975
+          ],
+          "max_score_change": 1.3636346533604424
+        },
+        "1.0": {
+          "svd_max_score_error": 5.329070518200751e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 1.0658141036401503e-14,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.027336377046517597,
+            0.052103976898849345,
+            0.07428120949575628
+          ],
+          "max_score_change": 0.9581934455740715
+        }
+      },
+      "iid_eq": {
+        "roundtrip_scaled_error": 2.3203661214665772e-14,
+        "scalar_template_null_max_error": 1.4210854715202004e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 5.329070518200751e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0287504939759907,
+            0.055563982854434237,
+            0.08252886457381352
+          ],
+          "max_score_change": 1.3348091620856373
+        },
+        "1.0": {
+          "svd_max_score_error": 1.4210854715202004e-14,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 8.881784197001252e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.028646587241332573,
+            0.05408956262758249,
+            0.08455242778882197
+          ],
+          "max_score_change": 0.6969329508561257
+        }
+      },
+      "negative_eq": {
+        "roundtrip_scaled_error": 1.164346397075633e-14,
+        "scalar_template_null_max_error": 2.4868995751603507e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 1.2434497875801753e-14,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.027408898339099735,
+            0.05359277453438416,
+            0.07561221383145014
+          ],
+          "max_score_change": 1.3636346533604602
+        },
+        "1.0": {
+          "svd_max_score_error": 7.993605777301127e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 6.217248937900877e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.02733637704651766,
+            0.052103976898849505,
+            0.07428120949575612
+          ],
+          "max_score_change": 0.958193445574075
+        }
+      }
+    },
+    "stable": {
+      "none": {
+        "roundtrip_scaled_error": 0.0,
+        "scalar_template_null_max_error": 1.5987211554602254e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 7.105427357601002e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.036936338334147424,
+            0.9999999999999999,
+            1.0000000000000004
+          ],
+          "max_score_change": 6.265024023152236
+        },
+        "1.0": {
+          "svd_max_score_error": 7.993605777301127e-15,
+          "rank_counts": [
+            30,
+            0,
+            318
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 2.1316282072803006e-14,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.03802355989456675,
+            1.0,
+            1.0
+          ],
+          "max_score_change": 6.345665575577726
+        }
+      },
+      "sign": {
+        "roundtrip_scaled_error": 0.0,
+        "scalar_template_null_max_error": 2.4868995751603507e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 4.440892098500626e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.020196187494489197,
+            0.04225912138460157,
+            0.05971317973733899
+          ],
+          "max_score_change": 0.9390774668851218
+        },
+        "1.0": {
+          "svd_max_score_error": 9.769962616701378e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 7.105427357601002e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.019800028465218056,
+            0.04186413496393915,
+            0.05923428470358717
+          ],
+          "max_score_change": 0.9553001225542399
+        }
+      },
+      "diagonal": {
+        "roundtrip_scaled_error": 0.0,
+        "scalar_template_null_max_error": 2.1316282072803006e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 8.881784197001252e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.024176453710422364,
+            0.043307970003539725,
+            0.056581989985560376
+          ],
+          "max_score_change": 0.7820078974109528
+        },
+        "1.0": {
+          "svd_max_score_error": 4.440892098500626e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 7.105427357601002e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.023411889405828987,
+            0.0425543832352197,
+            0.05736099176309676
+          ],
+          "max_score_change": 1.8502654551581514
+        }
+      },
+      "quarter": {
+        "roundtrip_scaled_error": 0.0,
+        "scalar_template_null_max_error": 1.4210854715202004e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 1.2434497875801753e-14,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.02188066642534131,
+            0.042752106169724434,
+            0.054866393269735705
+          ],
+          "max_score_change": 1.0371838108673224
+        },
+        "1.0": {
+          "svd_max_score_error": 7.105427357601002e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 8.881784197001252e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.02165187008243216,
+            0.04207418948527593,
+            0.05311622933612079
+          ],
+          "max_score_change": 0.9971880283061871
+        }
+      },
+      "iid": {
+        "roundtrip_scaled_error": 4.9960036108132044e-15,
+        "scalar_template_null_max_error": 2.1316282072803006e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 7.105427357601002e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.030325407065423103,
+            0.057544482348834386,
+            0.08610060570401255
+          ],
+          "max_score_change": 0.5632001830158302
+        },
+        "1.0": {
+          "svd_max_score_error": 1.0658141036401503e-14,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 7.993605777301127e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.02980223976230381,
+            0.057587356939069884,
+            0.08310608017057267
+          ],
+          "max_score_change": 0.5492804187670188
+        }
+      },
+      "negative": {
+        "roundtrip_scaled_error": 2.9976021664879227e-15,
+        "scalar_template_null_max_error": 1.509903313490213e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 1.1546319456101628e-14,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.029447778975351703,
+            0.054943655963605044,
+            0.07259182098129753
+          ],
+          "max_score_change": 0.9144722765015061
+        },
+        "1.0": {
+          "svd_max_score_error": 7.105427357601002e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 8.881784197001252e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.029057705212263987,
+            0.054256310996209985,
+            0.07009746021792486
+          ],
+          "max_score_change": 0.7913739933179578
+        }
+      },
+      "iid_eq": {
+        "roundtrip_scaled_error": 3.219646771412954e-15,
+        "scalar_template_null_max_error": 2.5757174171303632e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 5.773159728050814e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.03032540706542311,
+            0.05754448234883422,
+            0.08610060570401297
+          ],
+          "max_score_change": 0.5632001830158391
+        },
+        "1.0": {
+          "svd_max_score_error": 8.881784197001252e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 6.217248937900877e-15,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.029802239762303832,
+            0.057587356939069904,
+            0.08310608017057271
+          ],
+          "max_score_change": 0.5492804187670259
+        }
+      },
+      "negative_eq": {
+        "roundtrip_scaled_error": 4.773959005888173e-15,
+        "scalar_template_null_max_error": 2.1316282072803006e-14,
+        "time_alignment": [
+          5,
+          149
+        ],
+        "key_shape": [
+          3,
+          150,
+          6,
+          2,
+          2
+        ],
+        "0.98": {
+          "svd_max_score_error": 1.4210854715202004e-14,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.029447778975351502,
+            0.05494365596360502,
+            0.07259182098129777
+          ],
+          "max_score_change": 0.914472276501499
+        },
+        "1.0": {
+          "svd_max_score_error": 1.4210854715202004e-14,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_score_change": 0.0
+        },
+        "1.02": {
+          "svd_max_score_error": 1.0658141036401503e-14,
+          "rank_counts": [
+            0,
+            0,
+            348
+          ],
+          "projector_distance_p50_p95_max": [
+            0.029057705212264043,
+            0.05425631099621001,
+            0.07009746021792479
+          ],
+          "max_score_change": 0.7913739933179595
+        }
+      }
+    }
+  }
+}
