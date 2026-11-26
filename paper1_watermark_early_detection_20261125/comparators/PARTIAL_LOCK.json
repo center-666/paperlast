@@ -1,0 +1,51 @@
+{
+  "development_manifest_sha256": "4a42468ff7f1e9d1fa7fed4d70e9262f6b2314c834e9e80295f333295c9820a1",
+  "development_analysis_sha256": "421ab06aae62e2d5f3eeabaa4a654e09cdf070a4122edf29f35d8c86b680456a",
+  "source_sha256": {
+    "NEXT_PROTOCOL.md": "4a8e9fbeba8b3af9c80958357e26280b2cc9bcda769c8843eacfb2b59ac0fd8f",
+    "partial_study.py": "24ded54c1bdf6128f10cfc096b03fc5cf861e3eb95ee3d74e2a4f2d9b7b6839b",
+    "analyze_partial.py": "ff530fe9d7ec12e18f087d32d66d39df98577e4d7b8617d0c5bda6333106ac60",
+    "experiment.py": "5f0caf980da2a49b1bb5a979d54b5e7018f2b51eb4b2e412bd42c01efca5003b",
+    "projection.c": "7e4dda8c4f218873dfb6cc843d16af828d0d6946de119f8aaa57031ca9826f2b",
+    "online_scores.py": "5bb2d3d4fe9756c31163199af928af4d0281a58da9d5045851fb4226efb7974b"
+  },
+  "threshold_manifest_sha256": "8288e866ed12f2ff7e25c40e82b6f33f114d29f2b50f3569ea805e6c15f15a0c",
+  "paths_per_scene": 256,
+  "confirmation_paths_per_scene": 512,
+  "prespecified_method_set": [
+    "quarter_plugin",
+    "quarter_exact",
+    "negative_plugin",
+    "negative_exact",
+    "iid_plugin",
+    "iid_exact"
+  ],
+  "prespecified_support_masks": {
+    "single_0": [
+      0
+    ],
+    "single_1": [
+      1
+    ],
+    "single_2": [
+      2
+    ],
+    "single_3": [
+      3
+    ],
+    "single_4": [
+      4
+    ],
+    "single_5": [
+      5
+    ],
+    "same_receiver_17": [
+      3,
+      5
+    ],
+    "different_receivers_0_2": [
+      0,
+      1
+    ]
+  }
+}

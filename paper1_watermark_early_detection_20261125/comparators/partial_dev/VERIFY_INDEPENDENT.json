@@ -1,0 +1,8 @@
+{
+  "split": "dev",
+  "checked_cells": 576,
+  "paths_per_scene": 256,
+  "W1_threshold_manifest_sha256": "8288e866ed12f2ff7e25c40e82b6f33f114d29f2b50f3569ea805e6c15f15a0c",
+  "run_manifest_sha256": "4a42468ff7f1e9d1fa7fed4d70e9262f6b2314c834e9e80295f333295c9820a1",
+  "archive_hashes_verified": 12
+}
