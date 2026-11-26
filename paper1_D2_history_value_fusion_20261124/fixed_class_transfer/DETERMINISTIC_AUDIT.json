@@ -1,0 +1,176 @@
+{
+  "status": "PASS",
+  "source_sha256": "c2379c5e1a7fb6c751f50efe20f8f9d052dc790d431f75dd82c9f3fd1c8285e0",
+  "frozen_B2_run_sha256": "51b75c31f2c90b8fa9686397da1d9d376c1e771a28ea8e27e0391cb05df350c5",
+  "rows": [
+    {
+      "scene": 0,
+      "spec": [
+        "unstable",
+        "U",
+        35,
+        "negative"
+      ],
+      "class_model_q": 0.8,
+      "histories": 64,
+      "risk_cells": 13,
+      "m7_failures": 0,
+      "risk_decision_mismatches": 0
+    },
+    {
+      "scene": 1,
+      "spec": [
+        "unstable",
+        "U",
+        35,
+        "iid"
+      ],
+      "class_model_q": 0.8,
+      "histories": 64,
+      "risk_cells": 13,
+      "m7_failures": 0,
+      "risk_decision_mismatches": 0
+    },
+    {
+      "scene": 2,
+      "spec": [
+        "unstable",
+        "R",
+        35,
+        "negative"
+      ],
+      "class_model_q": 0.0,
+      "histories": 64,
+      "risk_cells": 13,
+      "m7_failures": 0,
+      "risk_decision_mismatches": 0
+    },
+    {
+      "scene": 3,
+      "spec": [
+        "unstable",
+        "R",
+        35,
+        "iid"
+      ],
+      "class_model_q": 0.0,
+      "histories": 64,
+      "risk_cells": 13,
+      "m7_failures": 0,
+      "risk_decision_mismatches": 0
+    },
+    {
+      "scene": 4,
+      "spec": [
+        "unstable",
+        "R",
+        1,
+        "negative"
+      ],
+      "class_model_q": 0.0,
+      "histories": 64,
+      "risk_cells": 13,
+      "m7_failures": 0,
+      "risk_decision_mismatches": 0
+    },
+    {
+      "scene": 5,
+      "spec": [
+        "unstable",
+        "R",
+        1,
+        "iid"
+      ],
+      "class_model_q": 0.0,
+      "histories": 64,
+      "risk_cells": 13,
+      "m7_failures": 0,
+      "risk_decision_mismatches": 0
+    },
+    {
+      "scene": 6,
+      "spec": [
+        "stable",
+        "U",
+        35,
+        "negative"
+      ],
+      "class_model_q": 0.6,
+      "histories": 64,
+      "risk_cells": 13,
+      "m7_failures": 0,
+      "risk_decision_mismatches": 0
+    },
+    {
+      "scene": 7,
+      "spec": [
+        "stable",
+        "U",
+        35,
+        "iid"
+      ],
+      "class_model_q": 0.6,
+      "histories": 64,
+      "risk_cells": 13,
+      "m7_failures": 0,
+      "risk_decision_mismatches": 0
+    },
+    {
+      "scene": 8,
+      "spec": [
+        "stable",
+        "R",
+        35,
+        "negative"
+      ],
+      "class_model_q": 0.0,
+      "histories": 64,
+      "risk_cells": 13,
+      "m7_failures": 0,
+      "risk_decision_mismatches": 0
+    },
+    {
+      "scene": 9,
+      "spec": [
+        "stable",
+        "R",
+        35,
+        "iid"
+      ],
+      "class_model_q": 0.0,
+      "histories": 64,
+      "risk_cells": 13,
+      "m7_failures": 0,
+      "risk_decision_mismatches": 0
+    },
+    {
+      "scene": 10,
+      "spec": [
+        "stable",
+        "R",
+        1,
+        "negative"
+      ],
+      "class_model_q": 0.0,
+      "histories": 64,
+      "risk_cells": 13,
+      "m7_failures": 0,
+      "risk_decision_mismatches": 0
+    },
+    {
+      "scene": 11,
+      "spec": [
+        "stable",
+        "R",
+        1,
+        "iid"
+      ],
+      "class_model_q": 0.0,
+      "histories": 64,
+      "risk_cells": 13,
+      "m7_failures": 0,
+      "risk_decision_mismatches": 0
+    }
+  ],
+  "universal_action_equivalence_with_frozen_tables": true
+}
