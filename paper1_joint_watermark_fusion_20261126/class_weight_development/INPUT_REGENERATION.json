@@ -1,0 +1,31 @@
+{
+  "status": "PASS_all_evaluation_path_inputs_regenerated_bitwise",
+  "configurations": [
+    "U_unstable_R35x0.5",
+    "U_unstable_R35x1",
+    "U_unstable_R35x2",
+    "R_unstable_R35x0.5",
+    "R_unstable_R35x1",
+    "R_unstable_R35x2",
+    "U_stable_R35x0.5",
+    "U_stable_R35x1",
+    "U_stable_R35x2",
+    "R_stable_R35x0.5",
+    "R_stable_R35x1",
+    "R_stable_R35x2"
+  ],
+  "attack_physical_paths": 6144,
+  "health_physical_paths": 3072,
+  "maximum_absolute_difference": {
+    "x": 0.0,
+    "y": 0.0,
+    "delta": 0.0,
+    "scores": 0.0,
+    "matched": 0.0,
+    "keys": 0.0
+  },
+  "gate_masks_identical": true,
+  "task3_RUN_sha256": "11256a8a7f90618be0fa8a8315179902d1caad5a9272ea7daaf801b8384f19d6",
+  "fusion_evaluation_receipt_sha256": "5233c4cbc55777d8e2114172fd3cbaef991914e63db570c2afbca49e4a51adc4",
+  "information_boundary": "Purpose-5/6 inputs are disjoint from purpose-4 fitting streams. This is a reproducibility check of archived development paths, not a new random seed or independent confirmation."
+}

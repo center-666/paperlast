@@ -1,0 +1,19 @@
+{
+  "status": "PASS_pathwise_action_archive",
+  "methods": [
+    "unified",
+    "topology_two",
+    "three_class",
+    "frozen_T",
+    "saturation"
+  ],
+  "configurations": 12,
+  "evaluation_paths": 6144,
+  "healthy_paths": 3072,
+  "target_alert_decisions": 363095,
+  "M7_violations": 0,
+  "M7_projection_decisions": 0,
+  "action_archive_sha256": "57d4c25614407b37874cf0d91a764a6e11325fc828b50c375167f5c3fff78668",
+  "fit_sha256": "ed9369a1bdc587704126fe11a127d3e7736db78723df67d83072f4c0d6e320f0",
+  "evaluation_sha256": "5233c4cbc55777d8e2114172fd3cbaef991914e63db570c2afbca49e4a51adc4"
+}

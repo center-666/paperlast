@@ -1,0 +1,13 @@
+{
+  "status": "PASS_public_task3_development_assets",
+  "tag": "joint-task3-development-ns83-data",
+  "release_id": 460415994,
+  "release_url": "https://github.com/center-666/paperlast/releases/tag/joint-task3-development-ns83-data",
+  "asset_count": 12,
+  "total_bytes": 1258282218,
+  "all_remote_size_sha256_match": true,
+  "anonymous_download_test": {
+    "config02.npz": "8526abb6f9574a700c653a24987b7e0c6293a0f9674a6174277bd6e0f7f2b982"
+  },
+  "source_RUN_sha256": "11256a8a7f90618be0fa8a8315179902d1caad5a9272ea7daaf801b8384f19d6"
+}

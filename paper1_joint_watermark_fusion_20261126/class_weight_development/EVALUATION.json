@@ -1,0 +1,66 @@
+{
+  "status": "complete_development_evaluation",
+  "fit_parameters_sha256": "ed9369a1bdc587704126fe11a127d3e7736db78723df67d83072f4c0d6e320f0",
+  "frozen_fit_source_commit": "8290378967737d6d05a7410ac317c07985412347",
+  "evaluation_runner_sha256": "eacd222ec2abbca3d6027c712088807aa51a91cbe0d7263133971fcb4f473c75",
+  "fit_protocol_sha256": "ed6c0cbbf7e7f5fd738a17ac3856cbf89e263ebbd249faf2ab5f8b2ae6c0c91a",
+  "evaluation_archive_sha256": {
+    "config00.npz": "94897aabe836fc16b58db614df365bb85bca0521f114d08499d88e4c22b18b3d",
+    "config01.npz": "9169b4db20b4223c83b5fecc083337edc7f15343ccf8e825d5fa47b44ca3f6a6",
+    "config02.npz": "8526abb6f9574a700c653a24987b7e0c6293a0f9674a6174277bd6e0f7f2b982",
+    "config03.npz": "ea48abedafe3649cb8bf23d6be8b636238ee41f042f779274a9b56aaa4a4726f",
+    "config04.npz": "c9cdf538b73efa4b56303a25902f988b635cb0f1fe5cef420bfaac87dafa42a4",
+    "config05.npz": "5d264781fdeb3dd6c42bd7aa27c1ff38dfcef4b088f7068d8e4f570a68c4f121",
+    "config06.npz": "c3226ce6d7e4fa39b3c380edf21391f07c41855209081d4573b0c734a1347c93",
+    "config07.npz": "c56fad7cb3cdfcfef5922df43479416ee8f35a2325c238dceb8535f69c9c49f6",
+    "config08.npz": "49806884c7e885e9ba0c30aa7e1ee71bd949485089edb7138a1555daaab65a95",
+    "config09.npz": "2cc82963003a11949204920960deb25a9f2e17aa5ee4a0c309fecb4d776e34b4",
+    "config10.npz": "38f3c2c480fda7aea6bd1d947b2501c226dc99fa4541ad79e5491f219f450aa3",
+    "config11.npz": "1ed34d90fb0f5fead185493687bb1e0a29f300829529d85c48d698d2c79026c2"
+  },
+  "evaluation_namespace": [
+    20261126,
+    94017,
+    83,
+    5
+  ],
+  "health_namespace": [
+    20261126,
+    94017,
+    83,
+    6
+  ],
+  "attack_paths": 6144,
+  "healthy_paths": 3072,
+  "methods": [
+    "unified",
+    "topology_two",
+    "three_class",
+    "frozen_T",
+    "saturation"
+  ],
+  "groups": [
+    "all",
+    "U",
+    "R",
+    "U_unstable",
+    "U_stable",
+    "primary"
+  ],
+  "bootstrap_seed": [
+    20261127,
+    94017,
+    271,
+    1
+  ],
+  "bootstrap_replicates": 20000,
+  "intervals": "Paired complete-path percentile bootstrap within configuration x fixture strata. Strata are equally weighted. Health uses the independent purpose-6 path within each configuration.",
+  "outputs_sha256": {
+    "evaluation.csv": "68e9066d68cea525825b50ecd7715467d1a753bb5fae2553231887efb83dc3e7",
+    "paired.csv": "b9bf9bbf4eb7cc10d644ea895e3f4b1c3b55a3dd9de96b81a7aee981a098e47e",
+    "summary.csv": "4d17ba6ac1ca3853a6f19d89290ed9cb1965ab8bee069ecb219285e6f0b69554",
+    "pathwise_actions.npz": "57d4c25614407b37874cf0d91a764a6e11325fc828b50c375167f5c3fff78668"
+  },
+  "pathwise_actions_sha256": "57d4c25614407b37874cf0d91a764a6e11325fc828b50c375167f5c3fff78668",
+  "refitted_after_evaluation": false
+}

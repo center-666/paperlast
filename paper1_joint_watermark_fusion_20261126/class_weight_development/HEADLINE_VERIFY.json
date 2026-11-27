@@ -1,0 +1,23 @@
+{
+  "status": "PASS_headline_tables",
+  "fit_sha256": "ed9369a1bdc587704126fe11a127d3e7736db78723df67d83072f4c0d6e320f0",
+  "summary_sha256": "e2f8564b7650f7037447eaf28e62890441edc872db598c664d4c5479658e2e89",
+  "paired_sha256": "b9bf9bbf4eb7cc10d644ea895e3f4b1c3b55a3dd9de96b81a7aee981a098e47e",
+  "full_paths": 6144,
+  "healthy_paths": 3072,
+  "groups": [
+    "all",
+    "U",
+    "R",
+    "U_unstable",
+    "U_stable",
+    "primary"
+  ],
+  "methods": [
+    "unified",
+    "topology_two",
+    "three_class",
+    "frozen_T",
+    "saturation"
+  ]
+}

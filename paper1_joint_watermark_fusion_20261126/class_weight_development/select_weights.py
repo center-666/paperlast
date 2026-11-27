@@ -40,6 +40,13 @@ def write_csv(path, rows):
         writer.writerows(rows)
 
 
+def atomic_json(path, value):
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(json.dumps(value, indent=2, allow_nan=False)+"\n",
+                   encoding="utf-8", newline="\n")
+    tmp.replace(path)
+
+
 def config_group(record):
     if record["topology"] == "R":
         return "R"
@@ -301,7 +308,7 @@ def evaluate():
     assert hashlib.sha256(fitted_source).hexdigest() == params["source_sha256"]
     assert params["protocol_sha256"] == sha(HERE/"class_weight_development/PROTOCOL.md")
     all_rows, stored = [], []
-    indices = []
+    policy_arrays = {}
     for index, config in enumerate(task3.QUALITY_ORDER):
         model, graph = make_model(index)
         record = task3.read_quality_model(index)
@@ -331,7 +338,11 @@ def evaluate():
                                                    archive[fixture+"_losses"][:,2,endpoint],
                                                    atol=2e-6,rtol=0)
                     item={"config":config,"topology":record["topology"],"dynamics":record["dynamics"],
-                          "factor":record["R35_factor"],"fixture":fixture,"method":method,**result}
+                          "factor":record["R35_factor"],"fixture":fixture,"method":method,
+                          "gates":data["gates"],**result}
+                    policy_arrays[f"actions_{index:02}_{fixture}_{method}"]=result["actions"]
+                    policy_arrays[f"requested_{index:02}_{fixture}_{method}"]=result["requests"]
+                    policy_arrays[f"gates_{index:02}_{fixture}"]=data["gates"]
                     stored.append(item)
                     all_rows.append({k:item[k] for k in ("config","topology","dynamics","factor","fixture","method","M7_violations","M7_projections")}|{
                         "full":float(result["losses"][:,0].mean()),
@@ -342,7 +353,11 @@ def evaluate():
                 result = replay(model, graph, data, 1., mode="saturation",
                                 c=params["saturation_c"])
                 item={"config":config,"topology":record["topology"],"dynamics":record["dynamics"],
-                      "factor":record["R35_factor"],"fixture":fixture,"method":"saturation",**result}
+                      "factor":record["R35_factor"],"fixture":fixture,"method":"saturation",
+                      "gates":data["gates"],**result}
+                policy_arrays[f"actions_{index:02}_{fixture}_saturation"]=result["actions"]
+                policy_arrays[f"requested_{index:02}_{fixture}_saturation"]=result["requests"]
+                policy_arrays[f"raw_weight_{index:02}_{fixture}_saturation"]=result["raw_weights"]
                 stored.append(item)
                 all_rows.append({k:item[k] for k in ("config","topology","dynamics","factor","fixture","method","M7_violations","M7_projections")}|{
                     "full":float(result["losses"][:,0].mean()),
@@ -358,7 +373,11 @@ def evaluate():
             for method,q in methods.items():
                 result=replay(model,graph,health,q)
                 item={"config":config,"topology":record["topology"],"dynamics":record["dynamics"],
-                      "factor":record["R35_factor"],"fixture":"health","method":method,**result}
+                      "factor":record["R35_factor"],"fixture":"health","method":method,
+                      "gates":health["gates"],**result}
+                policy_arrays[f"actions_{index:02}_health_{method}"]=result["actions"]
+                policy_arrays[f"requested_{index:02}_health_{method}"]=result["requests"]
+                policy_arrays[f"gates_{index:02}_health"]=health["gates"]
                 stored.append(item)
                 all_rows.append({k:item[k] for k in ("config","topology","dynamics","factor","fixture","method","M7_violations","M7_projections")}|{
                     "full":float(result["losses"][:,0].mean()),"burst_on":0.,"burst_off":0.,
@@ -366,25 +385,28 @@ def evaluate():
                     **action_summary(health,result)})
             result=replay(model,graph,health,1.,mode="saturation",c=params["saturation_c"])
             item={"config":config,"topology":record["topology"],"dynamics":record["dynamics"],
-                  "factor":record["R35_factor"],"fixture":"health","method":"saturation",**result}
+                  "factor":record["R35_factor"],"fixture":"health","method":"saturation",
+                  "gates":health["gates"],**result}
+            policy_arrays[f"actions_{index:02}_health_saturation"]=result["actions"]
+            policy_arrays[f"requested_{index:02}_health_saturation"]=result["requests"]
+            policy_arrays[f"raw_weight_{index:02}_health_saturation"]=result["raw_weights"]
             stored.append(item)
             all_rows.append({k:item[k] for k in ("config","topology","dynamics","factor","fixture","method","M7_violations","M7_projections")}|{
                 "full":float(result["losses"][:,0].mean()),"burst_on":0.,"burst_off":0.,
                 "recovery":float(result["losses"][:,4].mean()),"health":float(result["losses"][:,5].mean()),
                 **action_summary(health,result)})
-        indices.append(index)
         print("EVALUATE",config,flush=True)
     write_csv(OUT/"evaluation.csv",all_rows)
-    matrices={}
+    action_path=OUT/"pathwise_actions.npz"
+    with action_path.open("wb") as stream:
+        np.savez_compressed(stream,**policy_arrays)
     methods_order=("unified","topology_two","three_class","frozen_T","saturation")
-    for item in stored:
-        matrices[item["config"],item["fixture"],item["method"]]=item["losses"]
     groups={"all":set(task3.QUALITY_ORDER),
             "U":{x for x in task3.QUALITY_ORDER if x.startswith("U_")},
             "R":{x for x in task3.QUALITY_ORDER if x.startswith("R_")},
             "U_unstable":{x for x in task3.QUALITY_ORDER if x.startswith("U_unstable")},
             "U_stable":{x for x in task3.QUALITY_ORDER if x.startswith("U_stable")},
-            "primary":{ "U_unstable_R35x2"}}
+            "primary":{"U_unstable_R35x2"}}
     comparisons=(("topology_two","unified","two_minus_unified"),
                  ("three_class","topology_two","three_minus_two"),
                  ("three_class","unified","three_minus_unified"),
@@ -392,31 +414,89 @@ def evaluate():
                  ("frozen_T","three_class","T_minus_three"),
                  ("saturation","frozen_T","saturation_minus_T"),
                  ("saturation","topology_two","saturation_minus_two"))
-    metrics={"full":0,"burst_on":1,"burst_off":2,"recovery":4,"health":5}
+    method_index={name:i for i,name in enumerate(methods_order)}
+    result_map={(item["config"],item["fixture"],item["method"]):item for item in stored}
+    loss_metrics={"full":0,"burst_on":1,"burst_off":2,"recovery":4}
     rng=np.random.default_rng(np.random.SeedSequence(SEED))
     paired=[]
-    for group,configs in groups.items():
-        for left,right,label in comparisons:
-            for metric,col in metrics.items():
-                strata=[]
-                fixture_names=("continuous","burst") if metric!="health" else ("health",)
-                for config in sorted(configs):
-                    for fixture in fixture_names:
-                        a=matrices[config,fixture,left][:,col]
-                        b=matrices[config,fixture,right][:,col]
-                        strata.append(a-b)
-                point=float(np.mean([v.mean() for v in strata]))
-                draws=np.zeros(BOOT_REPS)
-                for values in strata:
-                    n=len(values)
-                    for start in range(0,BOOT_REPS,500):
-                        count=min(500,BOOT_REPS-start)
-                        weights=rng.multinomial(n,np.full(n,1/n),size=count)/n
-                        draws[start:start+count]+=weights@values/len(strata)
+    for group,config_set in groups.items():
+        configs=sorted(config_set)
+        attack_strata=[(config,fixture) for config in configs for fixture in ("continuous","burst")]
+        health_strata=[(config,"health") for config in configs]
+        attack_draws=np.zeros((BOOT_REPS,len(methods_order),len(loss_metrics)))
+        health_draws=np.zeros((BOOT_REPS,len(methods_order)))
+        action_draws=np.zeros((BOOT_REPS,len(comparisons),2))
+        attack_means=[]
+        for config,fixture in attack_strata:
+            records=[result_map[config,fixture,m] for m in methods_order]
+            values=np.stack([r["losses"][:,[0,1,2,4]] for r in records],axis=1)
+            actions=np.stack([r["actions"][:,50:110] for r in records],axis=1)
+            alarm=records[0]["gates"][:,50:110,6].astype(bool)
+            alarm_count=alarm.sum(axis=1)
+            action_values=[]
+            for left,right,_ in comparisons:
+                different=(actions[:,method_index[left]]!=actions[:,method_index[right]])
+                changed=different.sum(axis=1)
+                per_tick=changed/60.
+                given_alarm=np.divide(changed,alarm_count,out=np.zeros_like(changed,dtype=float),
+                                      where=alarm_count>0)
+                action_values.append(np.stack((per_tick,given_alarm),axis=1))
+            action_values=np.stack(action_values,axis=1)
+            attack_means.append(values.mean(axis=0))
+            n=len(values)
+            flat=values.reshape(n,-1)
+            for start in range(0,BOOT_REPS,500):
+                count=min(500,BOOT_REPS-start)
+                weights=rng.multinomial(n,np.full(n,1/n),size=count)/n
+                attack_draws[start:start+count]+=(
+                    weights@flat).reshape(count,len(methods_order),len(loss_metrics))/len(attack_strata)
+                action_draws[start:start+count]+=(
+                    weights@action_values.reshape(n,-1)).reshape(count,len(comparisons),2)/len(attack_strata)
+        health_means=[]
+        for config,fixture in health_strata:
+            records=[result_map[config,fixture,m] for m in methods_order]
+            values=np.stack([r["losses"][:,5] for r in records],axis=1)
+            health_means.append(values.mean(axis=0))
+            n=len(values)
+            for start in range(0,BOOT_REPS,500):
+                count=min(500,BOOT_REPS-start)
+                weights=rng.multinomial(n,np.full(n,1/n),size=count)/n
+                health_draws[start:start+count]+=weights@values/len(health_strata)
+        attack_point=np.mean(attack_means,axis=0)
+        health_point=np.mean(health_means,axis=0)
+        for pair_index,(left,right,label) in enumerate(comparisons):
+            li,ri=method_index[left],method_index[right]
+            for metric_index,metric in enumerate(loss_metrics):
+                draws=attack_draws[:,li,metric_index]-attack_draws[:,ri,metric_index]
+                point=attack_point[li,metric_index]-attack_point[ri,metric_index]
+                paired.append({"group":group,"comparison":label,"metric":metric,
+                               "difference":float(point),"lower95":float(np.quantile(draws,.025)),
+                               "upper95":float(np.quantile(draws,.975)),
+                               "independent_paths":256*len(attack_strata)})
+            draws=health_draws[:,li]-health_draws[:,ri]
+            paired.append({"group":group,"comparison":label,"metric":"health",
+                           "difference":float(health_point[li]-health_point[ri]),
+                           "lower95":float(np.quantile(draws,.025)),
+                           "upper95":float(np.quantile(draws,.975)),
+                           "independent_paths":256*len(health_strata)})
+            for metric_index,metric in enumerate(("action_disagreement_per_tick",
+                                                   "action_disagreement_given_alarm")):
+                draws=action_draws[:,pair_index,metric_index]
+                # The bootstrap draws are already the paired path-level contrast.
+                point=float(np.mean([
+                    np.mean((result_map[c,f,left]["actions"][:,50:110]
+                             !=result_map[c,f,right]["actions"][:,50:110]).mean(axis=1))
+                    for c,f in attack_strata])) if metric_index==0 else float(np.mean([
+                    np.mean(np.divide(
+                        (result_map[c,f,left]["actions"][:,50:110]
+                         !=result_map[c,f,right]["actions"][:,50:110]).sum(axis=1),
+                        result_map[c,f,left]["gates"][:,50:110,6].sum(axis=1),
+                        out=np.zeros(256),where=result_map[c,f,left]["gates"][:,50:110,6].sum(axis=1)>0))
+                    for c,f in attack_strata]))
                 paired.append({"group":group,"comparison":label,"metric":metric,
                                "difference":point,"lower95":float(np.quantile(draws,.025)),
                                "upper95":float(np.quantile(draws,.975)),
-                               "independent_paths":sum(len(v) for v in strata)})
+                               "independent_paths":256*len(attack_strata)})
     write_csv(OUT/"paired.csv",paired)
     receipt={"status":"complete_development_evaluation","fit_parameters_sha256":sha(lock),
              "evaluation_archive_sha256":{f"config{i:02}.npz":sha(DEV/f"config{i:02}.npz") for i in range(12)},
@@ -428,14 +508,88 @@ def evaluate():
     atomic_json(OUT/"EVALUATION.json",receipt)
 
 
+def finalize():
+    parameter_path = OUT/"FIT_PARAMETERS.json"
+    parameters = json.loads(parameter_path.read_text(encoding="utf-8"))
+    evaluation_rows = list(csv.DictReader((OUT/"evaluation.csv").open(encoding="utf-8")))
+    paired_rows = list(csv.DictReader((OUT/"paired.csv").open(encoding="utf-8")))
+    assert len(evaluation_rows) == 12*15
+    assert len(paired_rows) == 6*7*7
+    assert {row["method"] for row in evaluation_rows} == set(METHODS)
+    group_configs={"all":set(task3.QUALITY_ORDER),
+                   "U":{x for x in task3.QUALITY_ORDER if x.startswith("U_")},
+                   "R":{x for x in task3.QUALITY_ORDER if x.startswith("R_")},
+                   "U_unstable":{x for x in task3.QUALITY_ORDER if x.startswith("U_unstable")},
+                   "U_stable":{x for x in task3.QUALITY_ORDER if x.startswith("U_stable")},
+                   "primary":{"U_unstable_R35x2"}}
+    summary=[]
+    for group,configs in group_configs.items():
+        for method in METHODS:
+            rows=[r for r in evaluation_rows if r["config"] in configs and r["method"]==method]
+            attack=[r for r in rows if r["fixture"] in ("continuous","burst")]
+            health=[r for r in rows if r["fixture"]=="health"]
+            requested={str(float(q)):0 for q in Q}
+            executed={str(float(q)):0 for q in Q}
+            alerts=projections=0
+            weighted_raw=0.
+            for row in attack:
+                n=int(row["alarm_decisions"])
+                alerts+=n
+                projections+=int(row["M7_projections"])
+                weighted_raw+=float(row["raw_requested_weight_mean"])*n
+                for q,count in json.loads(row["requested_q_counts"]).items():
+                    requested[q]+=int(count)
+                for q,count in json.loads(row["executed_q_counts"]).items():
+                    executed[q]+=int(count)
+            burst=[r for r in attack if r["fixture"]=="burst"]
+            summary.append({"group":group,"method":method,
+                            "attack_full":float(np.mean([float(r["full"]) for r in attack])),
+                            "burst_active":float(np.mean([float(r["burst_on"]) for r in burst])),
+                            "burst_inactive":float(np.mean([float(r["burst_off"]) for r in burst])),
+                            "recovery":float(np.mean([float(r["recovery"]) for r in attack])),
+                            "health":float(np.mean([float(r["health"]) for r in health])),
+                            "alert_decisions":alerts,"requested_q_counts":json.dumps(requested),
+                            "executed_q_counts":json.dumps(executed),
+                            "mean_raw_requested_weight":weighted_raw/max(alerts,1),
+                            "M7_projection_count":projections,
+                            "M7_projection_fraction":projections/max(alerts,1)})
+    write_csv(OUT/"summary.csv",summary)
+    evaluation_hashes = {f"config{i:02}.npz": sha(DEV/f"config{i:02}.npz") for i in range(12)}
+    assert evaluation_hashes == parameters["evaluation_archive_sha256"]
+    receipt = {
+        "status": "complete_development_evaluation",
+        "fit_parameters_sha256": sha(parameter_path),
+        "frozen_fit_source_commit": "8290378967737d6d05a7410ac317c07985412347",
+        "evaluation_runner_sha256": sha(Path(__file__)),
+        "fit_protocol_sha256": sha(HERE/"class_weight_development/PROTOCOL.md"),
+        "evaluation_archive_sha256": evaluation_hashes,
+        "evaluation_namespace": [20261126, 94017, 83, 5],
+        "health_namespace": [20261126, 94017, 83, 6],
+        "attack_paths": 12*2*256,
+        "healthy_paths": 12*256,
+        "methods": list(METHODS),
+        "groups": ["all", "U", "R", "U_unstable", "U_stable", "primary"],
+        "bootstrap_seed": SEED,
+        "bootstrap_replicates": BOOT_REPS,
+        "intervals": "Paired complete-path percentile bootstrap within configuration x fixture strata. Strata are equally weighted. Health uses the independent purpose-6 path within each configuration.",
+        "outputs_sha256": {name: sha(OUT/name) for name in
+                           ("evaluation.csv", "paired.csv", "summary.csv","pathwise_actions.npz")},
+        "pathwise_actions_sha256": sha(OUT/"pathwise_actions.npz"),
+        "refitted_after_evaluation": False,
+    }
+    atomic_json(OUT/"EVALUATION.json", receipt)
+    print(json.dumps(receipt, indent=2))
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("mode",choices=("smoke","fit","evaluate"))
+    parser.add_argument("mode",choices=("smoke","fit","evaluate","finalize"))
     args=parser.parse_args()
     OUT.mkdir(exist_ok=True)
     if args.mode=="smoke": smoke()
     elif args.mode=="fit": fit()
-    else: evaluate()
+    elif args.mode=="evaluate": evaluate()
+    else: finalize()
 
 
 if __name__=="__main__":
