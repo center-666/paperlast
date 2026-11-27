@@ -4,6 +4,7 @@ import csv
 import hashlib
 import json
 import os
+import subprocess
 from pathlib import Path
 from types import SimpleNamespace
 import sys
@@ -275,10 +276,29 @@ def smoke():
     print("PASS target-local M7 and endpoint smoke replay", flush=True)
 
 
+def action_summary(data, result):
+    alarm = data["gates"][:, :, 6]
+    return {
+        "alarm_decisions": int(alarm.sum()),
+        "requested_q_counts": json.dumps({
+            str(float(q)): int(np.count_nonzero(alarm & (result["requests"] == j)))
+            for j, q in enumerate(Q)}),
+        "executed_q_counts": json.dumps({
+            str(float(q)): int(np.count_nonzero(alarm & (result["actions"] == j)))
+            for j, q in enumerate(Q)}),
+        "raw_requested_weight_mean": float(result["raw_weights"][alarm].mean()) if alarm.any() else 1.,
+        "M7_projection_fraction": result["M7_projections"]/max(int(alarm.sum()), 1),
+    }
+
+
 def evaluate():
     lock = OUT/"FIT_PARAMETERS.json"
     params = json.loads(lock.read_text(encoding="utf-8"))
-    assert params["source_sha256"] == sha(Path(__file__))
+    fitted_source = subprocess.check_output(
+        ["git", "show", "8290378967737d6d05a7410ac317c07985412347:"
+         "paper1_joint_watermark_fusion_20261126/class_weight_development/select_weights.py"],
+        cwd=HERE)
+    assert hashlib.sha256(fitted_source).hexdigest() == params["source_sha256"]
     assert params["protocol_sha256"] == sha(HERE/"class_weight_development/PROTOCOL.md")
     all_rows, stored = [], []
     indices = []
@@ -317,7 +337,19 @@ def evaluate():
                         "full":float(result["losses"][:,0].mean()),
                         "burst_on":float(result["losses"][:,1].mean()),
                         "burst_off":float(result["losses"][:,2].mean()),
-                        "recovery":float(result["losses"][:,4].mean())})
+                        "recovery":float(result["losses"][:,4].mean()),
+                        **action_summary(data,result)})
+                result = replay(model, graph, data, 1., mode="saturation",
+                                c=params["saturation_c"])
+                item={"config":config,"topology":record["topology"],"dynamics":record["dynamics"],
+                      "factor":record["R35_factor"],"fixture":fixture,"method":"saturation",**result}
+                stored.append(item)
+                all_rows.append({k:item[k] for k in ("config","topology","dynamics","factor","fixture","method","M7_violations","M7_projections")}|{
+                    "full":float(result["losses"][:,0].mean()),
+                    "burst_on":float(result["losses"][:,1].mean()),
+                    "burst_off":float(result["losses"][:,2].mean()),
+                    "recovery":float(result["losses"][:,4].mean()),
+                    **action_summary(data,result)})
             health={
                 "paths":SimpleNamespace(x=archive["health_x"],y=archive["health_y"]),
                 "delta":archive["health_delta"],"matched":archive["health_matched"],
@@ -330,7 +362,16 @@ def evaluate():
                 stored.append(item)
                 all_rows.append({k:item[k] for k in ("config","topology","dynamics","factor","fixture","method","M7_violations","M7_projections")}|{
                     "full":float(result["losses"][:,0].mean()),"burst_on":0.,"burst_off":0.,
-                    "recovery":float(result["losses"][:,4].mean()),"health":float(result["losses"][:,5].mean())})
+                    "recovery":float(result["losses"][:,4].mean()),"health":float(result["losses"][:,5].mean()),
+                    **action_summary(health,result)})
+            result=replay(model,graph,health,1.,mode="saturation",c=params["saturation_c"])
+            item={"config":config,"topology":record["topology"],"dynamics":record["dynamics"],
+                  "factor":record["R35_factor"],"fixture":"health","method":"saturation",**result}
+            stored.append(item)
+            all_rows.append({k:item[k] for k in ("config","topology","dynamics","factor","fixture","method","M7_violations","M7_projections")}|{
+                "full":float(result["losses"][:,0].mean()),"burst_on":0.,"burst_off":0.,
+                "recovery":float(result["losses"][:,4].mean()),"health":float(result["losses"][:,5].mean()),
+                **action_summary(health,result)})
         indices.append(index)
         print("EVALUATE",config,flush=True)
     write_csv(OUT/"evaluation.csv",all_rows)
