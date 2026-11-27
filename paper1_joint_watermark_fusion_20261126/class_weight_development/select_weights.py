@@ -50,6 +50,16 @@ def t_request(record):
     return .8 if record["dynamics"] == "unstable" else .6
 
 
+def quantize_weight(weight):
+    lower = np.searchsorted(Q, weight, side="left").clip(0, len(Q)-1)
+    upper = np.maximum(lower-1, 0)
+    # lower is the grid point at or above the raw weight. Midpoint ties select it.
+    lower_distance = abs(Q[lower]-weight)
+    upper_distance = abs(Q[upper]-weight)
+    index = np.where(lower_distance <= upper_distance+1e-12, lower, upper)
+    return index.astype(int)
+
+
 def make_model(index):
     return task3.audit_frontend.load_model(index), task3.configure(index)[1]
 
@@ -82,11 +92,7 @@ def saturated_request(model, data, state, covariance, tick, c):
         weight = np.zeros(len(state))
     else:
         weight = np.minimum(1., np.divide(c, distance, out=np.ones_like(distance), where=distance > 0))
-    lower = np.searchsorted(Q, weight, side="left").clip(0, len(Q)-1)
-    upper = np.maximum(lower-1, 0)
-    # Midpoint ties select the larger q.
-    index = np.where(abs(Q[lower]-weight) < abs(Q[upper]-weight), lower, upper)
-    return index.astype(int), weight
+    return quantize_weight(weight), weight
 
 
 def replay(model, graph, data, request, mode="constant", c=None):
@@ -217,7 +223,8 @@ def fit():
         "paths_per_configuration_fixture": 256,
         "evaluation_paths_per_configuration_fixture": 256,
         "healthy_paths_per_configuration": 256,
-        "grid": Q.tolist(), "saturation_c_grid": [float(c) for c in C_GRID],
+        "grid": Q.tolist(), "saturation_c_grid": [
+            float(c) if np.isfinite(c) else "inf" for c in C_GRID],
         "unified_q": choose(pooled),
         "topology_two_q": {g: choose(classes[g]) for g in ("U", "R")},
         "three_class_q": {g: choose(classes[g]) for g in ("U_unstable", "U_stable", "R")},
@@ -226,7 +233,7 @@ def fit():
         "training_losses": {"pooled": pooled, "classes": classes, "saturation": sat},
         "evaluation_archive_sha256": {
             f"config{i:02}.npz": sha(DEV/f"config{i:02}.npz") for i in range(12)},
-        "evaluation_archive_dir": str(DEV),
+        "evaluation_archive_namespace": "task3_dev purpose-5 evaluation and purpose-6 healthy paths",
         "task3_RUN_sha256": sha(dev/"RUN.json"),
         "task3_protocol_sha256": sha(HERE/"TASK3_DEVELOPMENT_PROTOCOL.md"),
         "source_sha256": sha(Path(__file__)),
@@ -240,6 +247,8 @@ def fit():
 
 
 def smoke():
+    midpoint = quantize_weight(np.asarray([.5, .85]))
+    np.testing.assert_array_equal(Q[midpoint], [.6, .9])
     model, graph = make_model(2)
     threshold = task3.frontend_thresholds(2)["no_repeat_matched"]
     with np.load(DEV/"config02.npz") as archive:
