@@ -6,7 +6,9 @@
 
 48个NPZ共3,574,447,997字节，另存于研究工作站的 `D:\paperlast_task4_archive_20261127\task4_confirm`。副本SHA-256核验结果在 `D:\paperlast_task4_archive_20261127\ARCHIVE_BACKUP_VERIFY.json`，逐文件清单在 `task4_confirm/ARCHIVE_SHA256SUMS.csv`。`RUN.json` 中的原归档哈希与副本清单一致。
 
-本次没有创建GitHub Release。当前归档保存在经过SHA核验的第二卷，由归档保管者通过受控渠道向复核者传递。取回后将48个NPZ放入 `task4_confirm`，并依照 `ARCHIVE_MANIFEST.json` 逐项校验路径、字节数和SHA-256。校验成功后才能运行分析。
+原始归档已按授权公开为 48 个 GitHub Release 资产，共 3,574,447,997 字节。C: 与 D: 位于同一块物理磁盘，Release 提供独立的异机副本。每个文件均可用清单中的字节数和 SHA-256 验收。本地固定标签 `preserve-task4-local-68c6d4f` 指向原始结果提交。[公开下载](https://github.com/center-666/paperlast/releases/tag/joint-task4-namespace85-data) · [匿名回读记录](fusion_attribution/PUBLIC_RELEASE_VERIFY.json)
+
+可使用 `gh release download joint-task4-namespace85-data --repo center-666/paperlast --pattern '*.npz' --dir task4_confirm` 批量下载。运行 `python -B verify_public_archives.py` 可核对 GitHub 报告的全部摘要。加 `--download 文件名` 会额外下载该资产并逐字节计算 SHA-256。
 
 ## 干净检出复核
 
@@ -36,6 +38,7 @@ $env:PYTHONDONTWRITEBYTECODE = '1'
 python -B analyze_task4_postrun.py
 python -B correct_task4_contrast_directions.py
 python -B build_task4_main_table.py
+python -B analyze_task4_m7_interaction.py
 python -B verify_task4_postrun.py
 ~~~
 
@@ -46,4 +49,5 @@ python -B verify_task4_postrun.py
 - `TASK4_CONFIRM_PROTOCOL.md`、`TASK4_CONFIRM_LOCK.json`及其原始SHA-256。
 - `task4_confirm/RUN.json`、小型统计表、路径级配对表、方向校正表和独立核验结果。
 - 任务3、任务4实际运行代码及确认所需的小型模型、健康校准和分析归档。
-- `task4_confirm/ARCHIVE_SHA256SUMS.csv`与`task4_confirm/ARCHIVE_MANIFEST.json`，记录48个独立确认归档的校验值和受控取回位置。
+- 48 个归档的大小、SHA-256 与公开下载位置。[归档清单](task4_confirm/ARCHIVE_MANIFEST.json)
+- 主格中位与尾部路径的逐拍归因、两项消融、全健康留出结果及复算命令。[研究报告](FUSION_ATTRIBUTION_ZH.md)

@@ -46,6 +46,9 @@ def main():
     backup = json.loads(backup_verify.read_text(encoding="utf-8-sig"))
     if backup["status"] != "PASS_backup_copy_sha256" or backup["archives_verified"] != 48:
         raise ValueError("The second storage copy has no complete SHA-256 verification.")
+    public = json.loads((HERE / "fusion_attribution/PUBLIC_RELEASE_VERIFY.json").read_text(encoding="utf-8"))
+    assert public["all_server_digests_match"] and public["archive_count"] == len(files)
+    assert public["bytes"] == sum(row["bytes"] for row in files)
     development_files = (
         "analyze_task3.py", "audit_task3.py",
         "task3_dev/absolute.csv", "task3_dev/paired.csv",
@@ -64,6 +67,7 @@ def main():
             "published_branch": "joint-watermark-fusion-results-20261127",
             "original_local_branch": "joint-watermark-fusion-audit-20261126",
             "original_results_commit": LOCAL_RESULTS_COMMIT,
+            "fixed_local_tag": "preserve-task4-local-68c6d4f",
             "protocol_and_lock_commit": LOCK_SOURCE_COMMIT,
             "relationship": "The original run and lock remain byte-identical. Their originating commits are recorded here because this light branch starts from the remote 599a250 ancestor and does not import the oversized local history.",
         },
@@ -85,10 +89,13 @@ def main():
             "archive_directory": f"{BACKUP_ROOT}\\task4_confirm",
             "verification_record": f"{BACKUP_ROOT}\\ARCHIVE_BACKUP_VERIFY.json",
             "sha256_inventory": "task4_confirm/ARCHIVE_SHA256SUMS.csv",
-            "retrieval": "On the research workstation, copy the 48 files listed here from the verified D: copy into the checkout's task4_confirm directory. For external collaborators, the archive owner transfers the folder through an authorized channel. Recheck every digest against this manifest before running analysis.",
+            "retrieval": "Download the 48 named NPZ assets from the public release, or use the D: partition copy on the research workstation. Verify the byte counts and SHA-256 digests against this inventory.",
+            "local_volumes": "C: and D: are separate partitions of Windows disk 0. The public release is the off-machine copy.",
             "github_release_assets": {
-                "status": "not_uploaded",
-                "reason": "A GitHub Release upload client was unavailable in the current environment. The verified second copy and file-level retrieval manifest are retained.",
+                "status": "public_verified",
+                "url": public["public_release"],
+                "release_id": public["release_id"],
+                "verification": "fusion_attribution/PUBLIC_RELEASE_VERIFY.json",
             },
         },
     }

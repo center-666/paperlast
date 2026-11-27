@@ -1,0 +1,11 @@
+{
+  "public_release": "https://github.com/center-666/paperlast/releases/tag/joint-task4-namespace85-data",
+  "release_id": 460265720,
+  "archive_count": 48,
+  "bytes": 3574447997,
+  "all_server_digests_match": true,
+  "anonymous_downloads": {
+    "U_unstable_R35x2_continuous_attack.npz": "7e0fee0a98ab6fa3240c3e462347093ab85315356d19a87b4b18e38c357b7f06",
+    "U_unstable_R35x2_burst_attack.npz": "2882da33ff4836ba5bccec651797dd3c0e361585f4df92bc4bda0b9ad61853d3"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "fetched_worktree": {
+    "tested_commit": "d06b68cbc0df7051a469a4032a5aa14eb724ad21",
+    "regenerated_files": {
+      "task4_confirm/VERIFY.json": "bec19bffc4b600de66fb6be5222c634267a3e9b9405421db86e54e5dd601a481",
+      "task4_confirm/ANALYSIS.json": "9fac8c9673fab97c53250435cb6857ffe78bcf2a0e534b33c5ace7f1ffa45655",
+      "task4_confirm/absolute.csv": "6eef5b7e57166ef537441a0a69273614552f7a519d0bda2f671b165c455252b0",
+      "task4_confirm/paired.csv": "df99e6edf32e303d8695885ffcb0f38967f0f0e0be729bf6372f3502af9c279d",
+      "task4_confirm/scenes.csv": "53f1a99c2a080d2cad8951125ca785cfc32b3e765767df65c7b335e0978b8b2b",
+      "task4_confirm/health_fwer.csv": "c5f643e4838d60f29d909d166059b094789dc10557aa36103f2a1b7a959e62f3",
+      "task4_confirm/large_events.csv": "8d286980ebed9abbeee5ce6acc836e7a42089bec9f3cbd39a3e4e8ef8af9cd69",
+      "task4_confirm/event_summary.csv": "d8a5af3c22d6ced86d8854d963aeb176d413b10e89937549a2524bdec28b8a54",
+      "task4_confirm/paired_direction_corrected.csv": "c70cb3b69a9b39a42c9735400db5456f34fef90221bd14131d096a3c7b37b178",
+      "task4_confirm/main_2x2.csv": "2ec54b2c0ef79a24d7048244d31e37e49b5e5242dcd5cc053481d337f8ea86e1"
+    }
+  },
+  "remote_partial_clone": {
+    "tested_commit": "92956fc21239f6b5894d828ccc28f699bcd5e5d3",
+    "regenerated_files": {
+      "fusion_attribution/READBACK.json": "2f52f160bff70eb8923cdbeef0154599a090c89e32c18b84becbd10699987379",
+      "fusion_attribution/primary_cells.csv": "c0048cc3cd71f6d499562dd145c5d02362186298ef3ae015c72ab4a0cda89859",
+      "fusion_attribution/REPLAY.json": "e023623c4cc7ede87f8106e63d72055308a0eb77ca00bd282f3efcb48e7da0b1",
+      "fusion_attribution/paired.csv": "825438cb526bf6948ef25588f66cd8fbad4365d4dfec6a904adedec05b314703",
+      "fusion_attribution/action_counts.csv": "6ffee9c5c7e5a11918cb0a658130a5b5f93ff1ecd05f52851e58539ae1a7b4d9",
+      "fusion_attribution/alarm_weights.csv": "0fb21618b264d11b964ad3e5976765fcd4e152379a840047d75cf3c42f70f067",
+      "fusion_attribution/paired_paths.csv": "010e75e1614fd90745db012281842c0af5700030ffa39ff6f538284a41a08300"
+    }
+  },
+  "inputs": "48 SHA-256-verified NPZs mounted from D:; frozen D1 commit 7e32a41b9802438f6645d9048ee46386caa53418."
+}
