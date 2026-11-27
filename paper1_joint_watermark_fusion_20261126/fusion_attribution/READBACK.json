@@ -1,0 +1,16 @@
+{
+  "verified_archives": 48,
+  "archive_path_rows": 24576,
+  "attack_violations": {
+    "iid_A_q0_raw": 168298,
+    "iid_A_M7_min": 0,
+    "iid_S_fixed_table_T": 0,
+    "iid_q1_full": 0,
+    "no_repeat_A_q0_raw": 174269,
+    "no_repeat_A_M7_min": 0,
+    "no_repeat_S_fixed_table_T": 0,
+    "no_repeat_q1_full": 0
+  },
+  "published_scene_rows_checked": 192,
+  "graph_and_batch_counts_agree": true
+}

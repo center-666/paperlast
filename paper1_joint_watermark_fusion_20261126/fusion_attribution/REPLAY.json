@@ -1,0 +1,24 @@
+{
+  "max_abs_archive_endpoint_error": 0.0,
+  "archive_policies_checked": [
+    "A_M7_min",
+    "S_fixed_table_T"
+  ],
+  "attack_paths": 12288,
+  "health_paths": 6144,
+  "refitted_models": 0,
+  "output_sha256": {
+    "paired.csv": "825438cb526bf6948ef25588f66cd8fbad4365d4dfec6a904adedec05b314703",
+    "action_counts.csv": "6ffee9c5c7e5a11918cb0a658130a5b5f93ff1ecd05f52851e58539ae1a7b4d9",
+    "paired_paths.csv": "010e75e1614fd90745db012281842c0af5700030ffa39ff6f538284a41a08300",
+    "alarm_weights.csv": "0fb21618b264d11b964ad3e5976765fcd4e152379a840047d75cf3c42f70f067"
+  },
+  "bootstrap_seed": [
+    20261127,
+    94017,
+    1,
+    2203
+  ],
+  "source_sha256": "17cd2bf076b57af43c880cc85b1f323196da0df5e76cec3085ee9b948d686557",
+  "protocol_sha256": "535a32f8e1c658767578cc805272ac600efd2ab5b2017930e4280da5505b49a4"
+}
