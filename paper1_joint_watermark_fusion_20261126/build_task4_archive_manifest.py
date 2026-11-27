@@ -61,6 +61,7 @@ def main():
         "confirm_lock_sha256": sha(lock),
         "source_history": {
             "light_branch_base": BASE_COMMIT,
+            "published_branch": "joint-watermark-fusion-results-20261127",
             "original_local_branch": "joint-watermark-fusion-audit-20261126",
             "original_results_commit": LOCAL_RESULTS_COMMIT,
             "protocol_and_lock_commit": LOCK_SOURCE_COMMIT,

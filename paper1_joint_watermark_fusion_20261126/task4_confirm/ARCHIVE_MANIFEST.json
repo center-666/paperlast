@@ -12,6 +12,7 @@
   "confirm_lock_sha256": "fa3688d2c3b6bda381dcaeb80008f932b2239a46fffc3b1a0cfa1bc7f995a7c7",
   "source_history": {
     "light_branch_base": "599a2501c5a882d67497d76954c408be222ed1b3",
+    "published_branch": "joint-watermark-fusion-results-20261127",
     "original_local_branch": "joint-watermark-fusion-audit-20261126",
     "original_results_commit": "68c6d4f5cc1abc6c4ded5374cd7b9e6e18e4a26f",
     "protocol_and_lock_commit": "2f5a631d4a2343e76b13c8e70d34f47bed71ba89",
@@ -21,7 +22,7 @@
     "original_local_history_copy": "verify_task4_postrun_local_history.py",
     "original_local_history_sha256": "cd8e8abe0e4c58f26a1f0eebbe6f450786628c4a62843a02582554805922a815",
     "published_clean_checkout_verifier": "verify_task4_postrun.py",
-    "published_clean_checkout_sha256": "60aea44cb7a13db02d725344f5110b779a157a3c2b4075a3e3cc1fa42bc47051",
+    "published_clean_checkout_sha256": "cc4a66b8ed916d111368fc24b030d937b512d04bdc40b083ecf7df0e7709b933",
     "adaptation": "Independent numerical replay is unchanged. The clean-checkout copy accepts the preserved source-history references in this manifest when the original local commits are not ancestors of the light branch."
   },
   "task3_development_support": [

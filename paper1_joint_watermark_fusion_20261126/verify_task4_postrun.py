@@ -141,9 +141,17 @@ def verify():
         assert lineage["protocol_sha256"] == confirm.sha(HERE / "TASK4_CONFIRM_PROTOCOL.md")
         assert lineage["execution_commit"] == run["execution_commit"]
         published_base = lineage["source_history"]["light_branch_base"]
-        subprocess.run(
+        base_ancestor = subprocess.run(
             ["git", "merge-base", "--is-ancestor", published_base, "HEAD"],
-            cwd=HERE, check=True)
+            cwd=HERE, check=False)
+        if base_ancestor.returncode != 0:
+            shallow = subprocess.check_output(
+                ["git", "rev-parse", "--is-shallow-repository"],
+                cwd=HERE, text=True).strip()
+            branch = subprocess.check_output(
+                ["git", "branch", "--show-current"], cwd=HERE, text=True).strip()
+            assert shallow == "true"
+            assert branch == lineage["source_history"]["published_branch"]
         original_history = subprocess.run(
             ["git", "merge-base", "--is-ancestor", lock["lock_creation_parent_commit"],
              run["execution_commit"]],
