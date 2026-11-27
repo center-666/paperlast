@@ -1,0 +1,308 @@
+{
+  "status": "PASS_manifest_matches_RUN_and_backup",
+  "archive_set": "task4_confirm_namespace85",
+  "namespace": [
+    20261126,
+    94017,
+    85
+  ],
+  "execution_commit": "2f5a631d4a2343e76b13c8e70d34f47bed71ba89",
+  "run_sha256": "95e852ded7d99fc8b08797ca0f086c7fb27b0300c7a6611e52a2f69a5db78f2c",
+  "protocol_sha256": "eeb19e3180c8a36dbf29b71f0e79122c96dabf8c6913d237c5560e8e4756ca74",
+  "confirm_lock_sha256": "fa3688d2c3b6bda381dcaeb80008f932b2239a46fffc3b1a0cfa1bc7f995a7c7",
+  "source_history": {
+    "light_branch_base": "599a2501c5a882d67497d76954c408be222ed1b3",
+    "original_local_branch": "joint-watermark-fusion-audit-20261126",
+    "original_results_commit": "68c6d4f5cc1abc6c4ded5374cd7b9e6e18e4a26f",
+    "protocol_and_lock_commit": "2f5a631d4a2343e76b13c8e70d34f47bed71ba89",
+    "relationship": "The original run and lock remain byte-identical. Their originating commits are recorded here because this light branch starts from the remote 599a250 ancestor and does not import the oversized local history."
+  },
+  "verification_code": {
+    "original_local_history_copy": "verify_task4_postrun_local_history.py",
+    "original_local_history_sha256": "cd8e8abe0e4c58f26a1f0eebbe6f450786628c4a62843a02582554805922a815",
+    "published_clean_checkout_verifier": "verify_task4_postrun.py",
+    "published_clean_checkout_sha256": "60aea44cb7a13db02d725344f5110b779a157a3c2b4075a3e3cc1fa42bc47051",
+    "adaptation": "Independent numerical replay is unchanged. The clean-checkout copy accepts the preserved source-history references in this manifest when the original local commits are not ancestors of the light branch."
+  },
+  "task3_development_support": [
+    {
+      "path": "analyze_task3.py",
+      "sha256": "52b9bcbed4f40673f1765d02aa93f85a0ec2823e4ac24a33541d1bd3b270791c"
+    },
+    {
+      "path": "audit_task3.py",
+      "sha256": "0699d5922dfd745b6a2a8ca6611377542d43a85ba0b23f635264e4dfbc05444e"
+    },
+    {
+      "path": "task3_dev/absolute.csv",
+      "sha256": "1c0074b7248f6f42453538c51f40a011df64ee03d40f66227a46f355f6b6a929"
+    },
+    {
+      "path": "task3_dev/paired.csv",
+      "sha256": "380a613e83cdee7d64d613954b79fb138966ca745314c6f9bedf3edb8ca9ca64"
+    },
+    {
+      "path": "task3_dev/scenes.csv",
+      "sha256": "1d40289349ca6a328b9f7d86201b2173392b1fdc63fa171efa9237738e79b3b6"
+    },
+    {
+      "path": "task3_dev/health.csv",
+      "sha256": "37cc6ac35e92ce4cb8cdfe5a7ea1ed147aadbf8c75f984361aa4d349238a7be9"
+    }
+  ],
+  "archive_count": 48,
+  "total_bytes": 3574447997,
+  "files": [
+    {
+      "path": "task4_confirm/U_unstable_R35x0.5_continuous_attack.npz",
+      "bytes": 74270079,
+      "sha256": "a5c3ee53743408704600b7933b43eedcc15de7c7eead886e969ad9403b47a566"
+    },
+    {
+      "path": "task4_confirm/U_unstable_R35x0.5_continuous_health.npz",
+      "bytes": 74129849,
+      "sha256": "c36cffc48160d3db6688e6217c6710a811ac80d4ee30668c1e1f641a11ec1b06"
+    },
+    {
+      "path": "task4_confirm/U_unstable_R35x0.5_burst_attack.npz",
+      "bytes": 74242652,
+      "sha256": "9d4a9c7686b874885125ff96ae1faeda9c6fea3ecf2971f1623e1fc1ea3b2b98"
+    },
+    {
+      "path": "task4_confirm/U_unstable_R35x0.5_burst_health.npz",
+      "bytes": 74173372,
+      "sha256": "c7d07c139302a4f3928fa8305ac8f3d93348acbaee3ee1c9d82922a20fcb6bcd"
+    },
+    {
+      "path": "task4_confirm/U_unstable_R35x1_continuous_attack.npz",
+      "bytes": 74264973,
+      "sha256": "8155f78851dce98a13d47d34d0eff4d30037d6a5fd777eb97ad7f20a0829b618"
+    },
+    {
+      "path": "task4_confirm/U_unstable_R35x1_continuous_health.npz",
+      "bytes": 74150391,
+      "sha256": "029d6222ee810655c2552b7986bed359f013653a145c101976a9f34f10d535b4"
+    },
+    {
+      "path": "task4_confirm/U_unstable_R35x1_burst_attack.npz",
+      "bytes": 74272008,
+      "sha256": "5b8abbf4c249e5195a526678d8ff1db06a409d792112d9357a4ffc498a45e625"
+    },
+    {
+      "path": "task4_confirm/U_unstable_R35x1_burst_health.npz",
+      "bytes": 74182534,
+      "sha256": "5167002f2f2c72b7f1a77d095ee6d1e8bebe94e880369478dd58ea67334cadce"
+    },
+    {
+      "path": "task4_confirm/U_unstable_R35x2_continuous_attack.npz",
+      "bytes": 74277096,
+      "sha256": "7e0fee0a98ab6fa3240c3e462347093ab85315356d19a87b4b18e38c357b7f06"
+    },
+    {
+      "path": "task4_confirm/U_unstable_R35x2_continuous_health.npz",
+      "bytes": 74133421,
+      "sha256": "361458f5b8e04e4107cf72f69899da3f9af276c5ba8e34a299ee3ab98c414989"
+    },
+    {
+      "path": "task4_confirm/U_unstable_R35x2_burst_attack.npz",
+      "bytes": 74231698,
+      "sha256": "2882da33ff4836ba5bccec651797dd3c0e361585f4df92bc4bda0b9ad61853d3"
+    },
+    {
+      "path": "task4_confirm/U_unstable_R35x2_burst_health.npz",
+      "bytes": 74192632,
+      "sha256": "71a8bcd60f491c7b99afedce9ac622ac69262ab0340d38c73dfdb6bd5e22f3db"
+    },
+    {
+      "path": "task4_confirm/R_unstable_R35x0.5_continuous_attack.npz",
+      "bytes": 74258393,
+      "sha256": "6109c69b7fcf1a4c608125531c2364aa627aded5f33f3b0b88d368ed651dc520"
+    },
+    {
+      "path": "task4_confirm/R_unstable_R35x0.5_continuous_health.npz",
+      "bytes": 74137623,
+      "sha256": "10c51718d07a311db45ddb2d733c9c6d8fb8262dee0eb1764f83d259bb974519"
+    },
+    {
+      "path": "task4_confirm/R_unstable_R35x0.5_burst_attack.npz",
+      "bytes": 74246368,
+      "sha256": "8f103b9211052213a2c69e9cef0f7e76773183d6740f4ff9945980e0ead9c86a"
+    },
+    {
+      "path": "task4_confirm/R_unstable_R35x0.5_burst_health.npz",
+      "bytes": 74191579,
+      "sha256": "c84064b4814aa541c6a197f3e40477b00ab4bf4e841835c65e766177580b9896"
+    },
+    {
+      "path": "task4_confirm/R_unstable_R35x1_continuous_attack.npz",
+      "bytes": 74234329,
+      "sha256": "59f353052a4ccaaa44b9efac65aac6e0406ef22c1ca0c91113a502d66f4f77e0"
+    },
+    {
+      "path": "task4_confirm/R_unstable_R35x1_continuous_health.npz",
+      "bytes": 74126556,
+      "sha256": "812e8398baab84925d23b29fd240b9a2ef1913df54c7b8c3d4a86d02600ea2b0"
+    },
+    {
+      "path": "task4_confirm/R_unstable_R35x1_burst_attack.npz",
+      "bytes": 74270018,
+      "sha256": "29b6f5e0a1771e0def964cf89ea8b5eb07c364ce97bea7ee6c667dd209e040ec"
+    },
+    {
+      "path": "task4_confirm/R_unstable_R35x1_burst_health.npz",
+      "bytes": 74157764,
+      "sha256": "8916f541a73caa03af524752d873ce53d7e484257ef84f0c95f3612d1d7e5053"
+    },
+    {
+      "path": "task4_confirm/R_unstable_R35x2_continuous_attack.npz",
+      "bytes": 74258779,
+      "sha256": "8bf98720f1720b3d14850ead647b9cb7af66da2103bdf4e98b62cdac19e8191f"
+    },
+    {
+      "path": "task4_confirm/R_unstable_R35x2_continuous_health.npz",
+      "bytes": 74118546,
+      "sha256": "74d3be9aaba0d8b2b2133907dc2d65baf01f6741303de82f3da0a70a684d4a4b"
+    },
+    {
+      "path": "task4_confirm/R_unstable_R35x2_burst_attack.npz",
+      "bytes": 74239145,
+      "sha256": "ef9b3eb7c6e3f735b49b400732b886a8c03fa6d6457f265e26787ed837a0fa43"
+    },
+    {
+      "path": "task4_confirm/R_unstable_R35x2_burst_health.npz",
+      "bytes": 74184204,
+      "sha256": "5b3f2bab64c888ebcadbb31167f4ad36482c512a9f0cc90045d86a0f78036225"
+    },
+    {
+      "path": "task4_confirm/U_stable_R35x0.5_continuous_attack.npz",
+      "bytes": 74787222,
+      "sha256": "20b3409ba36301f1c62bbd0117b87fe587a812e0d10a836e7a0cfe3c2a4810e0"
+    },
+    {
+      "path": "task4_confirm/U_stable_R35x0.5_continuous_health.npz",
+      "bytes": 74648660,
+      "sha256": "20c4673e4462586e8527483e7b97fb1b8af7f1380d6b13c2841558724996f23b"
+    },
+    {
+      "path": "task4_confirm/U_stable_R35x0.5_burst_attack.npz",
+      "bytes": 74793545,
+      "sha256": "61a5e0cef056013f26e0b5a3cae0858de54c0e19116adedb54c070d2a058b6d1"
+    },
+    {
+      "path": "task4_confirm/U_stable_R35x0.5_burst_health.npz",
+      "bytes": 74708944,
+      "sha256": "8475596be00fe4cb184d0e3bcc9b24be72947d3eccc4c39f755274cbaf971d8b"
+    },
+    {
+      "path": "task4_confirm/U_stable_R35x1_continuous_attack.npz",
+      "bytes": 74781118,
+      "sha256": "120a321d8097e300fc83b3d6939d0b3bdeeae94e5f3bf28d9db9cf67e1555465"
+    },
+    {
+      "path": "task4_confirm/U_stable_R35x1_continuous_health.npz",
+      "bytes": 74650955,
+      "sha256": "b0abe8e947407ffbd5c665d0cb7f9da4800a69117893af2768bba039129b0503"
+    },
+    {
+      "path": "task4_confirm/U_stable_R35x1_burst_attack.npz",
+      "bytes": 74771335,
+      "sha256": "ae8d7df4a98f843789773cfb2e08562724c4b4a5d6cbe8239cc4fdaa408907c3"
+    },
+    {
+      "path": "task4_confirm/U_stable_R35x1_burst_health.npz",
+      "bytes": 74698655,
+      "sha256": "64a4ba8b31721de450448ab34b18df3be88bd432879d1ea0d0fe97c07dbc7a6b"
+    },
+    {
+      "path": "task4_confirm/U_stable_R35x2_continuous_attack.npz",
+      "bytes": 74775929,
+      "sha256": "e6d0175239ecccf03c4e63101a9ad4158688545568dc4b241807be03db11643a"
+    },
+    {
+      "path": "task4_confirm/U_stable_R35x2_continuous_health.npz",
+      "bytes": 74648935,
+      "sha256": "ce2f0137dc2b5d39b8653edf55ed12b43531e34c17bdb4025f439eedcae56a2b"
+    },
+    {
+      "path": "task4_confirm/U_stable_R35x2_burst_attack.npz",
+      "bytes": 74788318,
+      "sha256": "6377f3ad45a98a4ecab8415524a9782946bc7e5400acca1815739ca2ed9d0329"
+    },
+    {
+      "path": "task4_confirm/U_stable_R35x2_burst_health.npz",
+      "bytes": 74701772,
+      "sha256": "157551613935a95731da00a9e4f46b77baf0efa8b75ea240d255f8b5473a400c"
+    },
+    {
+      "path": "task4_confirm/R_stable_R35x0.5_continuous_attack.npz",
+      "bytes": 74772396,
+      "sha256": "218d90c647c6462289430231e89a58ac81f74a375578b703c66f31037d88cc81"
+    },
+    {
+      "path": "task4_confirm/R_stable_R35x0.5_continuous_health.npz",
+      "bytes": 74637940,
+      "sha256": "a8b8ca471337edfeace5186e0609a537ef38b01e7c65fa3f172a7138a4a4aca5"
+    },
+    {
+      "path": "task4_confirm/R_stable_R35x0.5_burst_attack.npz",
+      "bytes": 74789659,
+      "sha256": "b96ff1aa2a9521a4354bb22f9e0ebe1df1f66394af334fd9919a8de6697902a1"
+    },
+    {
+      "path": "task4_confirm/R_stable_R35x0.5_burst_health.npz",
+      "bytes": 74695194,
+      "sha256": "a297cfa2f9ea7fc39dc7fd14ca4c865bbe62043e05f22b7b4b22178d7df184a0"
+    },
+    {
+      "path": "task4_confirm/R_stable_R35x1_continuous_attack.npz",
+      "bytes": 74784035,
+      "sha256": "5887bfe89b32688d5398e2d6606c13ecb1a587db071810c46045d676198a2c87"
+    },
+    {
+      "path": "task4_confirm/R_stable_R35x1_continuous_health.npz",
+      "bytes": 74651218,
+      "sha256": "ac7345479ae9ab047b24e6ac8a25a85fc09f1192dadcd6d69ef96605399b8ac8"
+    },
+    {
+      "path": "task4_confirm/R_stable_R35x1_burst_attack.npz",
+      "bytes": 74787134,
+      "sha256": "e8a68e5ea1e6d500daf43b2f133d8395229ba2eef968dbe80b892288eb49e686"
+    },
+    {
+      "path": "task4_confirm/R_stable_R35x1_burst_health.npz",
+      "bytes": 74707901,
+      "sha256": "cbc47e6e0983c2d1a0a07d891e1ad97486f3fb56fa1831ee604520fbeb7d0869"
+    },
+    {
+      "path": "task4_confirm/R_stable_R35x2_continuous_attack.npz",
+      "bytes": 74778098,
+      "sha256": "249f8ac47825a9e4191b917859bb3cf5f785099c7353d7a4e462741d734bd3fa"
+    },
+    {
+      "path": "task4_confirm/R_stable_R35x2_continuous_health.npz",
+      "bytes": 74652247,
+      "sha256": "4aff09e948f9c1d487c5c6ab7417f64b6c835077e8cfde83ee99efa3edda78d0"
+    },
+    {
+      "path": "task4_confirm/R_stable_R35x2_burst_attack.npz",
+      "bytes": 74796868,
+      "sha256": "e4d5b99e86793357fa62581c09b13e6522adfd5738eda7f59e9b0bebc538ab1e"
+    },
+    {
+      "path": "task4_confirm/R_stable_R35x2_burst_health.npz",
+      "bytes": 74695910,
+      "sha256": "9bc3dbd7d867c73d04dddb34da0137219360248fd44287324ef9dee3461968d1"
+    }
+  ],
+  "controlled_storage": {
+    "verified_copy_root": "D:\\paperlast_task4_archive_20261127",
+    "archive_directory": "D:\\paperlast_task4_archive_20261127\\task4_confirm",
+    "verification_record": "D:\\paperlast_task4_archive_20261127\\ARCHIVE_BACKUP_VERIFY.json",
+    "sha256_inventory": "task4_confirm/ARCHIVE_SHA256SUMS.csv",
+    "retrieval": "On the research workstation, copy the 48 files listed here from the verified D: copy into the checkout's task4_confirm directory. For external collaborators, the archive owner transfers the folder through an authorized channel. Recheck every digest against this manifest before running analysis.",
+    "github_release_assets": {
+      "status": "not_uploaded",
+      "reason": "A GitHub Release upload client was unavailable in the current environment. The verified second copy and file-level retrieval manifest are retained."
+    }
+  }
+}

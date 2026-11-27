@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source_sha256": "67ddef454af9917b44c78b5d21754a28f810b755de41886d63264922667509fd",
+  "confirm_run_sha256": "95e852ded7d99fc8b08797ca0f086c7fb27b0300c7a6611e52a2f69a5db78f2c",
+  "locked_original_analyzer_sha256": "f93940c5c131063d98d4393e15d412efaba962a974d41af0865bef1790bd9398",
+  "locked_original_paired_sha256": "df99e6edf32e303d8695885ffcb0f38967f0f0e0be729bf6372f3502af9c279d",
+  "corrected_paired_sha256": "c70cb3b69a9b39a42c9735400db5456f34fef90221bd14131d096a3c7b37b178",
+  "rows": 336,
+  "contrasts_recomputed_from_absolute_means": 336,
+  "maximum_point_mean_consistency_error": 0.0,
+  "correction": "Only six sign labels were reversed to match the declared estimand. The original paired.csv and ANAYSIS.json remain unchanged. A_M7 comparisons and interaction are preserved.",
+  "confirmatory_paths_modified": false,
+  "source_lock_modified": false
+}

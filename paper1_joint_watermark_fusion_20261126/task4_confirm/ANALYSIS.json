@@ -1,0 +1,99 @@
+{
+  "status": "complete_task4_confirmatory_analysis",
+  "run_sha256": "95e852ded7d99fc8b08797ca0f086c7fb27b0300c7a6611e52a2f69a5db78f2c",
+  "lock_sha256": "fa3688d2c3b6bda381dcaeb80008f932b2239a46fffc3b1a0cfa1bc7f995a7c7",
+  "source_sha256": "f93940c5c131063d98d4393e15d412efaba962a974d41af0865bef1790bd9398",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": [
+    20261126,
+    94017,
+    84,
+    9911
+  ],
+  "unit": "Independent physical path within fixed configuration and fixture, paired over all four 2x2 cells.",
+  "groups": {
+    "all_12_configurations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "U_all_dynamics_quality": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "U_unstable_all_quality": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "U_stable_all_quality": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "R_all_dynamics_quality": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "U_unstable_R35x2_primary": [
+      4,
+      5
+    ]
+  },
+  "intervals": "Pointwise, paired, path-level percentile bootstrap. Group means weight the configured scenario-fixture strata equally.",
+  "outputs_sha256": {
+    "absolute.csv": "6eef5b7e57166ef537441a0a69273614552f7a519d0bda2f671b165c455252b0",
+    "paired.csv": "df99e6edf32e303d8695885ffcb0f38967f0f0e0be729bf6372f3502af9c279d",
+    "scenes.csv": "53f1a99c2a080d2cad8951125ca785cfc32b3e765767df65c7b335e0978b8b2b",
+    "health_fwer.csv": "c5f643e4838d60f29d909d166059b094789dc10557aa36103f2a1b7a959e62f3",
+    "large_events.csv": "8d286980ebed9abbeee5ce6acc836e7a42089bec9f3cbd39a3e4e8ef8af9cd69",
+    "event_summary.csv": "d8a5af3c22d6ced86d8854d963aeb176d413b10e89937549a2524bdec28b8a54"
+  }
+}

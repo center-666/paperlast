@@ -1,0 +1,27 @@
+{
+  "status": "PASS_four_cell_main_table",
+  "group": "U_unstable_R35x2_primary",
+  "cells": [
+    [
+      "iid",
+      "A_q0_raw"
+    ],
+    [
+      "iid",
+      "S_fixed_table_T"
+    ],
+    [
+      "no_repeat",
+      "A_q0_raw"
+    ],
+    [
+      "no_repeat",
+      "S_fixed_table_T"
+    ]
+  ],
+  "rows": 32,
+  "source_sha256": "6eef5b7e57166ef537441a0a69273614552f7a519d0bda2f671b165c455252b0",
+  "table_sha256": "2ec54b2c0ef79a24d7048244d31e37e49b5e5242dcd5cc053481d337f8ea86e1",
+  "source_analysis_sha256": "9fac8c9673fab97c53250435cb6857ffe78bcf2a0e534b33c5ace7f1ffa45655",
+  "interpretation": "Point estimates and path-bootstrap intervals are read from the locked analysis output. This extraction does not rerun or select a strategy."
+}

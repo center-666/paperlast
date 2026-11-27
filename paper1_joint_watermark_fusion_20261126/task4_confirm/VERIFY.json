@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "run_sha256": "95e852ded7d99fc8b08797ca0f086c7fb27b0300c7a6611e52a2f69a5db78f2c",
+  "lock_sha256": "fa3688d2c3b6bda381dcaeb80008f932b2239a46fffc3b1a0cfa1bc7f995a7c7",
+  "archives_verified": 48,
+  "source_hashes_verified": 18,
+  "no_repeat_transitions_verified": 0,
+  "independent_LS_score_cases": 2304,
+  "maximum_score_error": 2.6420821086503565e-10,
+  "independent_literal_replay_cases": 768,
+  "maximum_literal_endpoint_error": 8.731149137020111e-11,
+  "M7_violations": {
+    "A_q0_raw": 1355,
+    "A_M7_min": 0,
+    "S_fixed_table_T": 0,
+    "q1_full": 0
+  },
+  "same_physical_path_and_uniform_probe_paired": true
+}

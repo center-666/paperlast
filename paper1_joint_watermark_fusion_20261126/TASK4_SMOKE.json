@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "source_sha256": "82f5005d100899e87ed8997a7d2b59ca871826d7806b45fa7efd3f071e5f636e",
+  "namespace": [
+    20261126,
+    94017,
+    85,
+    99
+  ],
+  "configurations": [
+    {
+      "configuration_index": 0,
+      "name": "U_unstable_R35x0.5",
+      "paths": 16,
+      "policies": 8,
+      "finite_outputs": true,
+      "formal_paths_generated": false
+    },
+    {
+      "configuration_index": 2,
+      "name": "U_unstable_R35x2",
+      "paths": 16,
+      "policies": 8,
+      "finite_outputs": true,
+      "formal_paths_generated": false
+    },
+    {
+      "configuration_index": 3,
+      "name": "R_unstable_R35x0.5",
+      "paths": 16,
+      "policies": 8,
+      "finite_outputs": true,
+      "formal_paths_generated": false
+    },
+    {
+      "configuration_index": 11,
+      "name": "R_stable_R35x2",
+      "paths": 16,
+      "policies": 8,
+      "finite_outputs": true,
+      "formal_paths_generated": false
+    }
+  ],
+  "formal_confirmation_paths_generated": false
+}

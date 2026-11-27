@@ -1,0 +1,11 @@
+﻿{
+    "status":  "PASS_backup_copy_sha256",
+    "source_run_sha256":  "95e852ded7d99fc8b08797ca0f086c7fb27b0300c7a6611e52a2f69a5db78f2c",
+    "backup_run_sha256":  "95e852ded7d99fc8b08797ca0f086c7fb27b0300c7a6611e52a2f69a5db78f2c",
+    "archives_verified":  48,
+    "bytes_verified":  3574447997,
+    "source_commit":  "2f5a631d4a2343e76b13c8e70d34f47bed71ba89",
+    "namespace":  "20261126,94017,85",
+    "verified_at":  "2026-11-27 14:02:16 +08:00",
+    "backup_root":  "D:\\paperlast_task4_archive_20261127"
+}

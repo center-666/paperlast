@@ -5,3 +5,5 @@
 *.csv text eol=lf
 *.npz binary
 TASK_ORIGINAL.txt -text
+task3.py -text
+analyze_task3.py -text

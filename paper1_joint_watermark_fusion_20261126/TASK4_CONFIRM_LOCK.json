@@ -1,0 +1,171 @@
+{
+  "status": "locked_before_confirmatory_sampling",
+  "lock_creation_parent_commit": "0b29dac7a6eee63c63cc5ea72449052537c867d7",
+  "selection": "S_fixed_table_T",
+  "selection_reason": {
+    "primary_configuration": "U_unstable_R35x2",
+    "H_fixed_epsilon_minus_T_difference": 0.2305482874021228,
+    "H_fixed_epsilon_minus_T_CI95": [
+      0.19945693686712362,
+      0.2624611609100299
+    ],
+    "D1_minus_D0_primary_action_disagreement": 0.0,
+    "decision": "S is the source-condition fixed table T. H increased primary attack and recovery loss. D1 and D0 selected identical primary actions and trajectories."
+  },
+  "task3_run_sha256": "11256a8a7f90618be0fa8a8315179902d1caad5a9272ea7daaf801b8384f19d6",
+  "task3_analysis_sha256": "4a938dee0981426d746dc0d125a898c8be7dc5183de31df85b4e7cbb96ae2398",
+  "task3_archive_sha256": {
+    "config00.npz": "94897aabe836fc16b58db614df365bb85bca0521f114d08499d88e4c22b18b3d",
+    "config01.npz": "9169b4db20b4223c83b5fecc083337edc7f15343ccf8e825d5fa47b44ca3f6a6",
+    "config02.npz": "8526abb6f9574a700c653a24987b7e0c6293a0f9674a6174277bd6e0f7f2b982",
+    "config03.npz": "ea48abedafe3649cb8bf23d6be8b636238ee41f042f779274a9b56aaa4a4726f",
+    "config04.npz": "c9cdf538b73efa4b56303a25902f988b635cb0f1fe5cef420bfaac87dafa42a4",
+    "config05.npz": "5d264781fdeb3dd6c42bd7aa27c1ff38dfcef4b088f7068d8e4f570a68c4f121",
+    "config06.npz": "c3226ce6d7e4fa39b3c380edf21391f07c41855209081d4573b0c734a1347c93",
+    "config07.npz": "c56fad7cb3cdfcfef5922df43479416ee8f35a2325c238dceb8535f69c9c49f6",
+    "config08.npz": "49806884c7e885e9ba0c30aa7e1ee71bd949485089edb7138a1555daaab65a95",
+    "config09.npz": "2cc82963003a11949204920960deb25a9f2e17aa5ee4a0c309fecb4d776e34b4",
+    "config10.npz": "38f3c2c480fda7aea6bd1d947b2501c226dc99fa4541ad79e5491f219f450aa3",
+    "config11.npz": "1ed34d90fb0f5fead185493687bb1e0a29f300829529d85c48d698d2c79026c2"
+  },
+  "seed_namespace": [
+    20261126,
+    94017,
+    85
+  ],
+  "attack_paths_per_configuration_fixture": 512,
+  "healthy_paths_per_configuration": 512,
+  "source_hashes": {
+    "TASK4_CONFIRM_PROTOCOL.md": "eeb19e3180c8a36dbf29b71f0e79122c96dabf8c6913d237c5560e8e4756ca74",
+    "TASK4_SMOKE.json": "93039620c877bc8e0e7a71687de6436a324a5c13345cc495693dc7dc4731ae2a",
+    "task4_confirm.py": "82f5005d100899e87ed8997a7d2b59ca871826d7806b45fa7efd3f071e5f636e",
+    "verify_task4.py": "735fd2d6e565bdd0c211c459d8756d121a8cb9bd75d2ad2001afe08d6b21d8a5",
+    "analyze_task4.py": "5d3e8932ab7f5c138db1f09309dbcb6506f35ea44c0fc6282f798331ebe2322e",
+    "prepare_task4_lock.py": "6bd9c52ab052fd9cc1b16728c73cffa0fc24162698900a3721e377957de90465",
+    "task3.py": "c50667fd2b65346c538fb329b3b6720d84931daf0921bd78aeb5da2ca9929423",
+    "task3_dev/RUN.json": "11256a8a7f90618be0fa8a8315179902d1caad5a9272ea7daaf801b8384f19d6",
+    "task3_dev/ANALYSIS.json": "4a938dee0981426d746dc0d125a898c8be7dc5183de31df85b4e7cbb96ae2398",
+    "task3_dev/VERIFY.json": "21911a04652553abae85105aaf40f8e97100a61fac3a2861fcfffdd6d0167651",
+    "TASK3_RESULTS_ZH.md": "8cb0593d230d3bdd1e3000f7414b8a50ecc051c19cc0a0c91690bac56a0b932d",
+    "models_quality.py": "741adfe289fa5e4738a15c45c90532a6628814b798fd7f0001fa7b49853c6f15",
+    "quality_models/MODELS.json": "f04df6003d4d525eb026c9a6dbd0ab7a56e8b51ea0ae528ad794b1aec574e9d4",
+    "frontend.py": "9322ae21256b841c3a446c60183d474c3642c2e10529c21738c51f1f7b404028",
+    "projection.c": "7e4dda8c4f218873dfb6cc843d16af828d0d6946de119f8aaa57031ca9826f2b",
+    "frontend_health/RUN.json": "01fd81185703e58872bf22dee03f705e8dcd0642ddce97f3406e9daf8ffd218d",
+    "FRONTEND_AUDIT.json": "94e562cf6ff3f0671526788f7d12170e59c6336f5a7e00e51549c3772a75790a",
+    "TASK3_DEVELOPMENT_PROTOCOL.md": "ffbc2f82a5ed116e7178b30359b3eaf04d6e2238d989e9418d0596ccfc20a5e8"
+  },
+  "large_event_threshold_definition": "For each configuration and fixture, task3 development q1-full-accept node-26 missing-block attack MSE 99th percentile; confirmation event is strict exceedance.",
+  "large_event_thresholds": {
+    "U_unstable_R35x0.5": {
+      "continuous": 11.122081494049018,
+      "burst": 8.195876806869109
+    },
+    "U_unstable_R35x1": {
+      "continuous": 11.07615698000748,
+      "burst": 7.931377993362211
+    },
+    "U_unstable_R35x2": {
+      "continuous": 10.685664827800428,
+      "burst": 8.271838221823524
+    },
+    "R_unstable_R35x0.5": {
+      "continuous": 4.589105283687165,
+      "burst": 2.9887967998645144
+    },
+    "R_unstable_R35x1": {
+      "continuous": 4.51704974038586,
+      "burst": 2.996290531657887
+    },
+    "R_unstable_R35x2": {
+      "continuous": 4.250302585158138,
+      "burst": 2.8715378940689784
+    },
+    "U_stable_R35x0.5": {
+      "continuous": 10.1142822576075,
+      "burst": 7.135410119083554
+    },
+    "U_stable_R35x1": {
+      "continuous": 10.163901578797564,
+      "burst": 7.39246659732337
+    },
+    "U_stable_R35x2": {
+      "continuous": 9.419647348483954,
+      "burst": 7.441904475870486
+    },
+    "R_stable_R35x0.5": {
+      "continuous": 4.501462359931944,
+      "burst": 2.9297137520162164
+    },
+    "R_stable_R35x1": {
+      "continuous": 4.4657318450272365,
+      "burst": 2.9381210458529523
+    },
+    "R_stable_R35x2": {
+      "continuous": 4.268682518768384,
+      "burst": 2.943592286148065
+    }
+  },
+  "acceptance_threshold": null,
+  "acceptance_status": "Engineering MSE tolerances were not provided; report paired effects and intervals without binary acceptance.",
+  "windows": {
+    "attack": [
+      50,
+      110
+    ],
+    "recovery": [
+      110,
+      150
+    ],
+    "health": [
+      20,
+      150
+    ]
+  },
+  "watermarks": [
+    "iid",
+    "no_repeat"
+  ],
+  "policies": [
+    "A_q0_raw",
+    "A_M7_min",
+    "S_fixed_table_T",
+    "q1_full"
+  ],
+  "configuration_order": [
+    "U_unstable_R35x0.5",
+    "U_unstable_R35x1",
+    "U_unstable_R35x2",
+    "R_unstable_R35x0.5",
+    "R_unstable_R35x1",
+    "R_unstable_R35x2",
+    "U_stable_R35x0.5",
+    "U_stable_R35x1",
+    "U_stable_R35x2",
+    "R_stable_R35x0.5",
+    "R_stable_R35x1",
+    "R_stable_R35x2"
+  ],
+  "independent_units": "Complete physical trajectories. Four 2x2 cells share same path strata.",
+  "task3_RUN_sha256": "11256a8a7f90618be0fa8a8315179902d1caad5a9272ea7daaf801b8384f19d6",
+  "task3_ANALYSIS_sha256": "4a938dee0981426d746dc0d125a898c8be7dc5183de31df85b4e7cbb96ae2398",
+  "superseded_namespace_84_reason": "First attempt generated paths but failed before archive write, and is excluded.",
+  "superseded_prepath_revisions": [
+    {
+      "old_seed_root": [
+        20261126,
+        94017,
+        84
+      ],
+      "reason": "runner failed before writing any confirmation archive due to scalar NPZ packing"
+    },
+    {
+      "old_seed_root": [
+        20261126,
+        94017,
+        85
+      ],
+      "reason": "lock/source-list corrections were still underway before formal path generation"
+    }
+  ]
+}
