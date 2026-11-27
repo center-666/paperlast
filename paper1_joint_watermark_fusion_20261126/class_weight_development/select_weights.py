@@ -343,6 +343,7 @@ def evaluate():
                     policy_arrays[f"actions_{index:02}_{fixture}_{method}"]=result["actions"]
                     policy_arrays[f"requested_{index:02}_{fixture}_{method}"]=result["requests"]
                     policy_arrays[f"gates_{index:02}_{fixture}"]=data["gates"]
+                    policy_arrays[f"losses_{index:02}_{fixture}_{method}"]=result["losses"]
                     stored.append(item)
                     all_rows.append({k:item[k] for k in ("config","topology","dynamics","factor","fixture","method","M7_violations","M7_projections")}|{
                         "full":float(result["losses"][:,0].mean()),
@@ -358,6 +359,7 @@ def evaluate():
                 policy_arrays[f"actions_{index:02}_{fixture}_saturation"]=result["actions"]
                 policy_arrays[f"requested_{index:02}_{fixture}_saturation"]=result["requests"]
                 policy_arrays[f"raw_weight_{index:02}_{fixture}_saturation"]=result["raw_weights"]
+                policy_arrays[f"losses_{index:02}_{fixture}_saturation"]=result["losses"]
                 stored.append(item)
                 all_rows.append({k:item[k] for k in ("config","topology","dynamics","factor","fixture","method","M7_violations","M7_projections")}|{
                     "full":float(result["losses"][:,0].mean()),
@@ -378,6 +380,7 @@ def evaluate():
                 policy_arrays[f"actions_{index:02}_health_{method}"]=result["actions"]
                 policy_arrays[f"requested_{index:02}_health_{method}"]=result["requests"]
                 policy_arrays[f"gates_{index:02}_health"]=health["gates"]
+                policy_arrays[f"losses_{index:02}_health_{method}"]=result["losses"]
                 stored.append(item)
                 all_rows.append({k:item[k] for k in ("config","topology","dynamics","factor","fixture","method","M7_violations","M7_projections")}|{
                     "full":float(result["losses"][:,0].mean()),"burst_on":0.,"burst_off":0.,
@@ -390,6 +393,7 @@ def evaluate():
             policy_arrays[f"actions_{index:02}_health_saturation"]=result["actions"]
             policy_arrays[f"requested_{index:02}_health_saturation"]=result["requests"]
             policy_arrays[f"raw_weight_{index:02}_health_saturation"]=result["raw_weights"]
+            policy_arrays[f"losses_{index:02}_health_saturation"]=result["losses"]
             stored.append(item)
             all_rows.append({k:item[k] for k in ("config","topology","dynamics","factor","fixture","method","M7_violations","M7_projections")}|{
                 "full":float(result["losses"][:,0].mean()),"burst_on":0.,"burst_off":0.,
