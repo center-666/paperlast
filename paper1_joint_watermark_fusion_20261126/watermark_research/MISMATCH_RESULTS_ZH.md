@@ -14,8 +14,8 @@ mu₂ = N_ab v_t + R_b e_t。
 
 | 模型 | 六个sender的相对 ||E||/||D|| 正裕量范围 | 六sender最小 gamma |
 |---|---:|---:|
-| 不稳定 | 1.090–1.305 | 0.30671 |
-| 稳定 | 1.074–1.317 | 0.29263 |
+| 不稳定 | 1.08966–1.30535 | 0.30671 |
+| 稳定 | 1.07380–1.31699 | 0.29263 |
 
 逐sender协方差特征值、m_j、b_j、gamma及界内分档见[MISMATCH_SENDER_SUMMARY.json](MISMATCH_SENDER_SUMMARY.json)与[MISMATCH_SENDER_MARGIN.csv](MISMATCH_SENDER_MARGIN.csv)。例如失配界0.9倍时，六sender中完整白化信号的统一下界仍为正，数值约0.074–0.099（白化向量/单位||v||）。该界是方向最坏的保守三角界。
 

@@ -1,0 +1,86 @@
+{
+  "status": "PASS_readonly_W5_A_B_endpoint_reduction",
+  "stage": "post-hoc regression on already-viewed W5 split-16 archives; not a replayed physical simulation or new confirmation",
+  "W5_RUN_sha256": "6ade9eb2c7c664f2d77844c1d8036776714ef9fcb954f9126038fd05ba7f2c80",
+  "archives_sha256": {
+    "unstable_attack_0.npz": "7437ce3fcd4a3ffdfa311abb6aec8a3ea94d705aa33432cc488ca8ad8341d2c2",
+    "unstable_attack_1.npz": "12edd872072ecc6a377540cc9cbc20cdf61c677459ec4dfd98286193a0b86e69",
+    "unstable_attack_2.npz": "4e9c10bb7ce859fbde33f830a9cdfc66854d6be8086ca4458514737a764be181",
+    "unstable_attack_3.npz": "b46bef7787eb29f788bc6cb20c80f9b8715b266afa175a26b3526739c5faddf7",
+    "unstable_attack_4.npz": "7d38bbcb24cf2204e1800766eba3a9fae72d450e8a8e57ff4ecda004b4dc3c02",
+    "unstable_attack_5.npz": "8a16028adb6ebd8c53535858cda35a10b35c5b0019e882b3cbb593a0bd5fe696",
+    "stable_attack_0.npz": "bacb4af197a06494af9ffe08b75176fda0d8bff1a0dab58d0c7ee17920d9602b",
+    "stable_attack_1.npz": "e56cbbbb8ffe3f2c01c215f15621e805301ed16c3d79aaa8c257e918976f95dc",
+    "stable_attack_2.npz": "5f72f704e78af576b7e55721adc2485dea3a4c14fa7943d39930714602be240a",
+    "stable_attack_3.npz": "9d8dd688abde7b3bbd12cb11a3087f0061bea41ca01adeefe93de5d46a26823f",
+    "stable_attack_4.npz": "82acb24d98ecc53de3313fa1fb8a2596c1ee4ed8d3e4af3fa713da23d9a0dca3",
+    "stable_attack_5.npz": "2d1b75f0c019d8536b95381562a4a90fc403a024e05776298659d0cb420edf24"
+  },
+  "scenario_count": 12,
+  "paths_per_scenario": 512,
+  "stored_endpoints": [
+    "per-edge first-three-packet at-least-once mask",
+    "five-node attack MSE",
+    "five-node recovery MSE",
+    "first-alarm-following large-message accept count",
+    "registered tail event mask"
+  ],
+  "not_stored": "Per-tick score/gate time series are not present in the W5 NPZ endpoint archives and are not reconstructed here.",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": [
+    20261128,
+    45201,
+    16
+  ],
+  "summary": [
+    {
+      "endpoint": "early_path",
+      "no_repeat": 1.0,
+      "iid": 0.9887966579861114,
+      "difference_no_repeat_minus_iid": 0.011203342013888618,
+      "lower95": 0.010199652777777568,
+      "upper95": 0.012261284722222099,
+      "unit": "12 scenes equally weighted; path-paired bootstrap within scene"
+    },
+    {
+      "endpoint": "attack_mse",
+      "no_repeat": 0.056102094297815534,
+      "iid": 0.06269152102719389,
+      "difference_no_repeat_minus_iid": -0.006589426729378352,
+      "lower95": -0.013658866281514078,
+      "upper95": -0.0018362882230938652,
+      "unit": "12 scenes equally weighted; path-paired bootstrap within scene"
+    },
+    {
+      "endpoint": "recovery_mse",
+      "no_repeat": 0.0501855031250857,
+      "iid": 0.05014438222259619,
+      "difference_no_repeat_minus_iid": 4.1120902489505395e-05,
+      "lower95": 3.2997960666872674e-05,
+      "upper95": 4.93279237766788e-05,
+      "unit": "12 scenes equally weighted; path-paired bootstrap within scene"
+    },
+    {
+      "endpoint": "late_large_path",
+      "no_repeat": 0.0,
+      "iid": 0.0017903645833333333,
+      "difference_no_repeat_minus_iid": -0.0017903645833333333,
+      "lower95": -0.0029296875,
+      "upper95": -0.0008138020833333333,
+      "unit": "12 scenes equally weighted; path-paired bootstrap within scene"
+    },
+    {
+      "endpoint": "tail",
+      "no_repeat": 0.0,
+      "iid": 0.0013020833333333333,
+      "difference_no_repeat_minus_iid": -0.0013020833333333333,
+      "lower95": -0.0022786458333333335,
+      "upper95": -0.00048828125,
+      "unit": "12 scenes equally weighted; path-paired bootstrap within scene"
+    }
+  ],
+  "outputs_sha256": {
+    "W5_AB_REGRESSION_SCENES.csv": "fbf6847cf2101957a5acfbca098e7aa4d4af02cc004782cdfcac1e3216bf3bf9",
+    "W5_AB_REGRESSION_OVERALL.csv": "abf2f8f567556424f7cfe8852feba397ab7050b31232a23993aec1aaf71fbd0f"
+  }
+}
