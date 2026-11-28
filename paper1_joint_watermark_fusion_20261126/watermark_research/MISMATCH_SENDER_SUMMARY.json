@@ -1,0 +1,1326 @@
+{
+  "status": "PASS_deterministic_mismatch_margin",
+  "formula": "For v+=Dv+e, mu=(RbD-DRa)v+Rb e. ||Wmu|| >= sigma_min(WN)||v|| - ||WRb|| ||e||.",
+  "covariance": "V2=HQH.T+R+DRD.T; W is its symmetric inverse square root.",
+  "direction_count": 512,
+  "legal_transition_count_per_sender": 12,
+  "relative_operator_condition": "||E||2/||D||2 < min_sigma(WN)/(max_norm(WRb)*||D||2).",
+  "error_bins": [
+    0.0,
+    0.5,
+    0.9,
+    1.0,
+    1.1,
+    2.0
+  ],
+  "sender_results": [
+    {
+      "model": "unstable",
+      "sender": 1,
+      "D": [
+        [
+          1.08,
+          0.05256546711361282
+        ],
+        [
+          0.009511948194416704,
+          1.05
+        ]
+      ],
+      "V2": [
+        [
+          2.9505292886899905,
+          0.03273332225963175
+        ],
+        [
+          0.03273332225963175,
+          2.7395517179515365
+        ]
+      ],
+      "D_spectral_norm": 1.0996907350038712,
+      "m_min_sigma_WN": 0.8509318564677998,
+      "b_max_norm_WRb": 0.6047194034636295,
+      "rho_relative_D_operator_bound": 1.2795884539959979,
+      "gamma_generalized": 0.3473496756647869,
+      "worst_transition": [
+        0,
+        3
+      ],
+      "transition_count": 12,
+      "V2_eigenvalues": [
+        2.734589816474426,
+        2.9554911901671015
+      ],
+      "bins": [
+        {
+          "fraction_of_triangle_margin": 0.0,
+          "error_over_v_bound": 0.0,
+          "relative_operator_error_bound": 0.0,
+          "positive_uniform_lower_bound": 0.8509318564677998,
+          "direction_mesh_min_whitened_signal": 0.8509318982804038,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.5,
+          "error_over_v_bound": 0.703575783738663,
+          "relative_operator_error_bound": 0.6397942269979989,
+          "positive_uniform_lower_bound": 0.4254659282338999,
+          "direction_mesh_min_whitened_signal": 0.4405255710801659,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.9,
+          "error_over_v_bound": 1.2664364107295936,
+          "relative_operator_error_bound": 1.1516296085963982,
+          "positive_uniform_lower_bound": 0.08509318564677992,
+          "direction_mesh_min_whitened_signal": 0.11182596205876212,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.0,
+          "error_over_v_bound": 1.407151567477326,
+          "relative_operator_error_bound": 1.2795884539959979,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.029649342446674287,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.1,
+          "error_over_v_bound": 1.5478667242250588,
+          "relative_operator_error_bound": 1.4075472993955978,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.00017828381661582818,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 2.0,
+          "error_over_v_bound": 2.814303134954652,
+          "relative_operator_error_bound": 2.5591769079919957,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.35946590987033245,
+          "mesh_worst_transition": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "model": "unstable",
+      "sender": 3,
+      "D": [
+        [
+          1.08,
+          0.0359029506124745
+        ],
+        [
+          0.013926431991533164,
+          1.05
+        ]
+      ],
+      "V2": [
+        [
+          2.142771549600167,
+          0.02636932234697702
+        ],
+        [
+          0.02636932234697702,
+          3.1050883974063233
+        ]
+      ],
+      "D_spectral_norm": 1.0941383257926354,
+      "m_min_sigma_WN": 0.8334823837729096,
+      "b_max_norm_WRb": 0.6832588199001076,
+      "rho_relative_D_operator_bound": 1.1149077843239996,
+      "gamma_generalized": 0.32400583293708424,
+      "worst_transition": [
+        0,
+        1
+      ],
+      "transition_count": 12,
+      "V2_eigenvalues": [
+        2.14204952146775,
+        3.10581042553874
+      ],
+      "bins": [
+        {
+          "fraction_of_triangle_margin": 0.0,
+          "error_over_v_bound": 0.0,
+          "relative_operator_error_bound": 0.0,
+          "positive_uniform_lower_bound": 0.8334823837729096,
+          "direction_mesh_min_whitened_signal": 0.8334824106564431,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.5,
+          "error_over_v_bound": 0.6099316682767189,
+          "relative_operator_error_bound": 0.5574538921619999,
+          "positive_uniform_lower_bound": 0.4167411918864548,
+          "direction_mesh_min_whitened_signal": 0.4870587689158069,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.9,
+          "error_over_v_bound": 1.0978770028980938,
+          "relative_operator_error_bound": 1.0034170058915997,
+          "positive_uniform_lower_bound": 0.083348238377291,
+          "direction_mesh_min_whitened_signal": 0.2095805249336089,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.0,
+          "error_over_v_bound": 1.2198633365534377,
+          "relative_operator_error_bound": 1.1149077843239998,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.14008325502452088,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.1,
+          "error_over_v_bound": 1.3418496702087814,
+          "relative_operator_error_bound": 1.2263985627563998,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.07048151119973672,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 2.0,
+          "error_over_v_bound": 2.4397266731068754,
+          "relative_operator_error_bound": 2.2298155686479997,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.15941099783150908,
+          "mesh_worst_transition": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "model": "unstable",
+      "sender": 16,
+      "D": [
+        [
+          1.0799999999999998,
+          0.03501410222433932
+        ],
+        [
+          0.014279960594061312,
+          1.05
+        ]
+      ],
+      "V2": [
+        [
+          2.1499225141000484,
+          0.026093582388571252
+        ],
+        [
+          0.026093582388571252,
+          3.225333436592754
+        ]
+      ],
+      "D_spectral_norm": 1.09390312000953,
+      "m_min_sigma_WN": 0.8181050147221075,
+      "b_max_norm_WRb": 0.6821070144083026,
+      "rho_relative_D_operator_bound": 1.096421840820761,
+      "gamma_generalized": 0.3120401901515304,
+      "worst_transition": [
+        0,
+        1
+      ],
+      "transition_count": 12,
+      "V2_eigenvalues": [
+        2.149289756290739,
+        3.225966194402063
+      ],
+      "bins": [
+        {
+          "fraction_of_triangle_margin": 0.0,
+          "error_over_v_bound": 0.0,
+          "relative_operator_error_bound": 0.0,
+          "positive_uniform_lower_bound": 0.8181050147221075,
+          "direction_mesh_min_whitened_signal": 0.8181142690760728,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.5,
+          "error_over_v_bound": 0.5996896362602114,
+          "relative_operator_error_bound": 0.5482109204103806,
+          "positive_uniform_lower_bound": 0.40905250736105375,
+          "direction_mesh_min_whitened_signal": 0.4839054504206126,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.9,
+          "error_over_v_bound": 1.0794413452683806,
+          "relative_operator_error_bound": 0.9867796567386852,
+          "positive_uniform_lower_bound": 0.0818105014722107,
+          "direction_mesh_min_whitened_signal": 0.21621134362202968,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.0,
+          "error_over_v_bound": 1.1993792725204229,
+          "relative_operator_error_bound": 1.096421840820761,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.14916470707588922,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.1,
+          "error_over_v_bound": 1.319317199772465,
+          "relative_operator_error_bound": 1.2060640249028372,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.08201570465950046,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 2.0,
+          "error_over_v_bound": 2.3987585450408457,
+          "relative_operator_error_bound": 2.192843681641522,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.13282825026523395,
+          "mesh_worst_transition": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "model": "unstable",
+      "sender": 31,
+      "D": [
+        [
+          1.08,
+          0.060013440463039705
+        ],
+        [
+          0.008331467020424093,
+          1.05
+        ]
+      ],
+      "V2": [
+        [
+          3.085439780438871,
+          0.03600604843412486
+        ],
+        [
+          0.03600604843412486,
+          2.439856267391681
+        ]
+      ],
+      "D_spectral_norm": 1.102633108888796,
+      "m_min_sigma_WN": 0.8301009428905576,
+      "b_max_norm_WRb": 0.6404660678890662,
+      "rho_relative_D_operator_bound": 1.1754488964861793,
+      "gamma_generalized": 0.33410698785932574,
+      "worst_transition": [
+        0,
+        3
+      ],
+      "transition_count": 12,
+      "V2_eigenvalues": [
+        2.4378543146113114,
+        3.0874417332192405
+      ],
+      "bins": [
+        {
+          "fraction_of_triangle_margin": 0.0,
+          "error_over_v_bound": 0.0,
+          "relative_operator_error_bound": 0.0,
+          "positive_uniform_lower_bound": 0.8301009428905576,
+          "direction_mesh_min_whitened_signal": 0.8301019712138555,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.5,
+          "error_over_v_bound": 0.6480444355362301,
+          "relative_operator_error_bound": 0.5877244482430896,
+          "positive_uniform_lower_bound": 0.4150504714452788,
+          "direction_mesh_min_whitened_signal": 0.4606190948387832,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.9,
+          "error_over_v_bound": 1.1664799839652145,
+          "relative_operator_error_bound": 1.0579040068375616,
+          "positive_uniform_lower_bound": 0.08301009428905559,
+          "direction_mesh_min_whitened_signal": 0.16455340608464789,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.0,
+          "error_over_v_bound": 1.2960888710724603,
+          "relative_operator_error_bound": 1.1754488964861791,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.09038458658412912,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.1,
+          "error_over_v_bound": 1.4256977581797063,
+          "relative_operator_error_bound": 1.292993786134797,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.01611756637457,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 2.0,
+          "error_over_v_bound": 2.5921777421449206,
+          "relative_operator_error_bound": 2.3508977929723582,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.22492600109074248,
+          "mesh_worst_transition": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "model": "unstable",
+      "sender": 49,
+      "D": [
+        [
+          1.0800000000000003,
+          0.04804372513704733
+        ],
+        [
+          0.01040718634064538,
+          1.05
+        ]
+      ],
+      "V2": [
+        [
+          2.1099347595077256,
+          0.030842836320898355
+        ],
+        [
+          0.030842836320898355,
+          2.1621057217617317
+        ]
+      ],
+      "D_spectral_norm": 1.0980163164542067,
+      "m_min_sigma_WN": 0.9900995271197872,
+      "b_max_norm_WRb": 0.6907854158584831,
+      "rho_relative_D_operator_bound": 1.3053497771043632,
+      "gamma_generalized": 0.46165536902342896,
+      "worst_transition": [
+        0,
+        1
+      ],
+      "transition_count": 12,
+      "V2_eigenvalues": [
+        2.0956255271446573,
+        2.1764149541248
+      ],
+      "bins": [
+        {
+          "fraction_of_triangle_margin": 0.0,
+          "error_over_v_bound": 0.0,
+          "relative_operator_error_bound": 0.0,
+          "positive_uniform_lower_bound": 0.9900995271197872,
+          "direction_mesh_min_whitened_signal": 0.99009987709129,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.5,
+          "error_over_v_bound": 0.7166476769702262,
+          "relative_operator_error_bound": 0.6526748885521815,
+          "positive_uniform_lower_bound": 0.4950497635598936,
+          "direction_mesh_min_whitened_signal": 0.5041168128636045,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.9,
+          "error_over_v_bound": 1.2899658185464074,
+          "relative_operator_error_bound": 1.1748147993939269,
+          "positive_uniform_lower_bound": 0.09900995271197865,
+          "direction_mesh_min_whitened_signal": 0.11534953574740046,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.0,
+          "error_over_v_bound": 1.4332953539404525,
+          "relative_operator_error_bound": 1.305349777104363,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.01834556356556887,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.1,
+          "error_over_v_bound": 1.5766248893344978,
+          "relative_operator_error_bound": 1.4358847548147995,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.016483616357941808,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 2.0,
+          "error_over_v_bound": 2.866590707880905,
+          "relative_operator_error_bound": 2.610699554208726,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.4570693810139167,
+          "mesh_worst_transition": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "model": "unstable",
+      "sender": 34,
+      "D": [
+        [
+          1.08,
+          0.034727639306643646
+        ],
+        [
+          0.014397753777186533,
+          1.05
+        ]
+      ],
+      "V2": [
+        [
+          2.159743097763944,
+          0.026006797675668644
+        ],
+        [
+          0.026006797675668644,
+          3.2817270406656203
+        ]
+      ],
+      "D_spectral_norm": 1.093829163074107,
+      "m_min_sigma_WN": 0.8111447163668767,
+      "b_max_norm_WRb": 0.6805492157712051,
+      "rho_relative_D_operator_bound": 1.0896557317369242,
+      "gamma_generalized": 0.30671242954637074,
+      "worst_transition": [
+        0,
+        1
+      ],
+      "transition_count": 12,
+      "V2_eigenvalues": [
+        2.159140602043282,
+        3.282329536386282
+      ],
+      "bins": [
+        {
+          "fraction_of_triangle_margin": 0.0,
+          "error_over_v_bound": 0.0,
+          "relative_operator_error_bound": 0.0,
+          "positive_uniform_lower_bound": 0.8111447163668767,
+          "direction_mesh_min_whitened_signal": 0.8111501922059098,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.5,
+          "error_over_v_bound": 0.5959486085423517,
+          "relative_operator_error_bound": 0.544827865868462,
+          "positive_uniform_lower_bound": 0.4055723581834384,
+          "direction_mesh_min_whitened_signal": 0.4818935683271475,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.9,
+          "error_over_v_bound": 1.0727074953762332,
+          "relative_operator_error_bound": 0.9806901585632318,
+          "positive_uniform_lower_bound": 0.08111447163668761,
+          "direction_mesh_min_whitened_signal": 0.21816883880026733,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.0,
+          "error_over_v_bound": 1.1918972170847033,
+          "relative_operator_error_bound": 1.089655731736924,
+          "positive_uniform_lower_bound": 1.1102230246251565e-16,
+          "direction_mesh_min_whitened_signal": 0.15211566750751132,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.1,
+          "error_over_v_bound": 1.3110869387931738,
+          "relative_operator_error_bound": 1.1986213049106167,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.08596106688864119,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 2.0,
+          "error_over_v_bound": 2.3837944341694066,
+          "relative_operator_error_bound": 2.179311463473848,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.12301094904169024,
+          "mesh_worst_transition": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "model": "stable",
+      "sender": 1,
+      "D": [
+        [
+          0.95,
+          0.021026186845445126
+        ],
+        [
+          0.01902389638883341,
+          0.9700000000000001
+        ]
+      ],
+      "V2": [
+        [
+          2.817418774790184,
+          0.019234051404736757
+        ],
+        [
+          0.019234051404736757,
+          2.6588874336892165
+        ]
+      ],
+      "D_spectral_norm": 0.9823836025066865,
+      "m_min_sigma_WN": 0.789835576203339,
+      "b_max_norm_WRb": 0.6135330485237568,
+      "rho_relative_D_operator_bound": 1.3104414613940667,
+      "gamma_generalized": 0.32527639496585425,
+      "worst_transition": [
+        0,
+        3
+      ],
+      "transition_count": 12,
+      "V2_eigenvalues": [
+        2.656587209030625,
+        2.8197189994487757
+      ],
+      "bins": [
+        {
+          "fraction_of_triangle_margin": 0.0,
+          "error_over_v_bound": 0.0,
+          "relative_operator_error_bound": 0.0,
+          "positive_uniform_lower_bound": 0.789835576203339,
+          "direction_mesh_min_whitened_signal": 0.7898368489339505,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.5,
+          "error_over_v_bound": 0.6436781018592151,
+          "relative_operator_error_bound": 0.6552207306970333,
+          "positive_uniform_lower_bound": 0.3949177881016695,
+          "direction_mesh_min_whitened_signal": 0.40644559561864757,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.9,
+          "error_over_v_bound": 1.1586205833465872,
+          "relative_operator_error_bound": 1.17939731525466,
+          "positive_uniform_lower_bound": 0.07898355762033393,
+          "direction_mesh_min_whitened_signal": 0.0997088015892175,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.0,
+          "error_over_v_bound": 1.2873562037184303,
+          "relative_operator_error_bound": 1.3104414613940667,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.023025519930687754,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.1,
+          "error_over_v_bound": 1.4160918240902733,
+          "relative_operator_error_bound": 1.4414856075334734,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.015973953213650482,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 2.0,
+          "error_over_v_bound": 2.5747124074368606,
+          "relative_operator_error_bound": 2.6208829227881334,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.3693404201898163,
+          "mesh_worst_transition": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "model": "stable",
+      "sender": 3,
+      "D": [
+        [
+          0.95,
+          0.014361180244989797
+        ],
+        [
+          0.02785286398306633,
+          0.9700000000000001
+        ]
+      ],
+      "V2": [
+        [
+          2.0102801604178406,
+          0.02019528281077656
+        ],
+        [
+          0.02019528281077656,
+          3.0245793156683454
+        ]
+      ],
+      "D_spectral_norm": 0.9833797790121214,
+      "m_min_sigma_WN": 0.7633905095617759,
+      "b_max_norm_WRb": 0.7053669842511231,
+      "rho_relative_D_operator_bound": 1.100551461212766,
+      "gamma_generalized": 0.3098041525066928,
+      "worst_transition": [
+        0,
+        1
+      ],
+      "transition_count": 12,
+      "V2_eigenvalues": [
+        2.0098782199355423,
+        3.0249812561506437
+      ],
+      "bins": [
+        {
+          "fraction_of_triangle_margin": 0.0,
+          "error_over_v_bound": 0.0,
+          "relative_operator_error_bound": 0.0,
+          "positive_uniform_lower_bound": 0.7633905095617759,
+          "direction_mesh_min_whitened_signal": 0.7633958551344421,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.5,
+          "error_over_v_bound": 0.5411300263594386,
+          "relative_operator_error_bound": 0.5502757306063831,
+          "positive_uniform_lower_bound": 0.38169525478088795,
+          "direction_mesh_min_whitened_signal": 0.45202555552811663,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.9,
+          "error_over_v_bound": 0.9740340474469895,
+          "relative_operator_error_bound": 0.9904963150914895,
+          "positive_uniform_lower_bound": 0.07633905095617755,
+          "direction_mesh_min_whitened_signal": 0.2026712197067991,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.0,
+          "error_over_v_bound": 1.0822600527188773,
+          "relative_operator_error_bound": 1.1005514612127663,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.14023805579373802,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.1,
+          "error_over_v_bound": 1.190486057990765,
+          "relative_operator_error_bound": 1.210606607334043,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.07773514717110795,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 2.0,
+          "error_over_v_bound": 2.1645201054377545,
+          "relative_operator_error_bound": 2.2011029224255325,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.11778390488058076,
+          "mesh_worst_transition": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "model": "stable",
+      "sender": 16,
+      "D": [
+        [
+          0.95,
+          0.014005640889735728
+        ],
+        [
+          0.028559921188122624,
+          0.9699999999999999
+        ]
+      ],
+      "V2": [
+        [
+          2.0174575994111263,
+          0.020358698395880073
+        ],
+        [
+          0.020358698395880073,
+          3.1448393125046055
+        ]
+      ],
+      "D_spectral_norm": 0.9835426140789709,
+      "m_min_sigma_WN": 0.7485244792304295,
+      "b_max_norm_WRb": 0.7041048792785735,
+      "rho_relative_D_operator_bound": 1.0808750012787454,
+      "gamma_generalized": 0.297900423072561,
+      "worst_transition": [
+        0,
+        1
+      ],
+      "transition_count": 12,
+      "V2_eigenvalues": [
+        2.0170900739132662,
+        3.1452068380024656
+      ],
+      "bins": [
+        {
+          "fraction_of_triangle_margin": 0.0,
+          "error_over_v_bound": 0.0,
+          "relative_operator_error_bound": 0.0,
+          "positive_uniform_lower_bound": 0.7485244792304295,
+          "direction_mesh_min_whitened_signal": 0.7485327678563243,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.5,
+          "error_over_v_bound": 0.5315433121251542,
+          "relative_operator_error_bound": 0.5404375006393727,
+          "positive_uniform_lower_bound": 0.37426223961521476,
+          "direction_mesh_min_whitened_signal": 0.4485937276622384,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.9,
+          "error_over_v_bound": 0.9567779618252775,
+          "relative_operator_error_bound": 0.9727875011508709,
+          "positive_uniform_lower_bound": 0.07485244792304291,
+          "direction_mesh_min_whitened_signal": 0.20840784794809883,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.0,
+          "error_over_v_bound": 1.0630866242503083,
+          "relative_operator_error_bound": 1.0808750012787454,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.14827451408430536,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.1,
+          "error_over_v_bound": 1.1693952866753392,
+          "relative_operator_error_bound": 1.18896250140662,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.08807066980807998,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 2.0,
+          "error_over_v_bound": 2.1261732485006166,
+          "relative_operator_error_bound": 2.1617500025574907,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.0933301779757632,
+          "mesh_worst_transition": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "model": "stable",
+      "sender": 31,
+      "D": [
+        [
+          0.95,
+          0.024005376185215883
+        ],
+        [
+          0.016662934040848187,
+          0.97
+        ]
+      ],
+      "V2": [
+        [
+          2.9519771029636623,
+          0.01955750111923259
+        ],
+        [
+          0.01955750111923259,
+          2.35916038740575
+        ]
+      ],
+      "D_spectral_norm": 0.9826670696546159,
+      "m_min_sigma_WN": 0.7724129373087201,
+      "b_max_norm_WRb": 0.6511493307450882,
+      "rho_relative_D_operator_bound": 1.2071536119039954,
+      "gamma_generalized": 0.3110634372726313,
+      "worst_transition": [
+        0,
+        3
+      ],
+      "transition_count": 12,
+      "V2_eigenvalues": [
+        2.3585158704111286,
+        2.952621619958283
+      ],
+      "bins": [
+        {
+          "fraction_of_triangle_margin": 0.0,
+          "error_over_v_bound": 0.0,
+          "relative_operator_error_bound": 0.0,
+          "positive_uniform_lower_bound": 0.7724129373087201,
+          "direction_mesh_min_whitened_signal": 0.772415479943897,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.5,
+          "error_over_v_bound": 0.5931150512163423,
+          "relative_operator_error_bound": 0.6035768059519977,
+          "positive_uniform_lower_bound": 0.38620646865436004,
+          "direction_mesh_min_whitened_signal": 0.42704149647659695,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.9,
+          "error_over_v_bound": 1.0676070921894163,
+          "relative_operator_error_bound": 1.086438250713596,
+          "positive_uniform_lower_bound": 0.07724129373087196,
+          "direction_mesh_min_whitened_signal": 0.1505561806921748,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.0,
+          "error_over_v_bound": 1.1862301024326847,
+          "relative_operator_error_bound": 1.2071536119039954,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.0813795564174802,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.1,
+          "error_over_v_bound": 1.3048531126759533,
+          "relative_operator_error_bound": 1.327868973094395,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.012247477630294242,
+          "mesh_worst_transition": [
+            0,
+            3
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 2.0,
+          "error_over_v_bound": 2.3724602048653693,
+          "relative_operator_error_bound": 2.414307223807991,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.25160789879233786,
+          "mesh_worst_transition": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "model": "stable",
+      "sender": 49,
+      "D": [
+        [
+          0.95,
+          0.01921749005481893
+        ],
+        [
+          0.02081437268129076,
+          0.97
+        ]
+      ],
+      "V2": [
+        [
+          1.9770153157072066,
+          0.019207309700200292
+        ],
+        [
+          0.019207309700200292,
+          2.081468186053025
+        ]
+      ],
+      "D_spectral_norm": 0.9823752623937547,
+      "m_min_sigma_WN": 0.9209409949314479,
+      "b_max_norm_WRb": 0.7118212399677616,
+      "rho_relative_D_operator_bound": 1.316992934842334,
+      "gamma_generalized": 0.4500024514952576,
+      "worst_transition": [
+        0,
+        1
+      ],
+      "transition_count": 12,
+      "V2_eigenvalues": [
+        1.9735953558774788,
+        2.084888145882753
+      ],
+      "bins": [
+        {
+          "fraction_of_triangle_margin": 0.0,
+          "error_over_v_bound": 0.0,
+          "relative_operator_error_bound": 0.0,
+          "positive_uniform_lower_bound": 0.9209409949314479,
+          "direction_mesh_min_whitened_signal": 0.9209415485888846,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.5,
+          "error_over_v_bound": 0.6468906399682295,
+          "relative_operator_error_bound": 0.658496467421167,
+          "positive_uniform_lower_bound": 0.46047049746572394,
+          "direction_mesh_min_whitened_signal": 0.4719347465307005,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.9,
+          "error_over_v_bound": 1.164403151942813,
+          "relative_operator_error_bound": 1.1852936413581006,
+          "positive_uniform_lower_bound": 0.09209409949314473,
+          "direction_mesh_min_whitened_signal": 0.11237760015469596,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.0,
+          "error_over_v_bound": 1.293781279936459,
+          "relative_operator_error_bound": 1.316992934842334,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.022422375672844812,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.1,
+          "error_over_v_bound": 1.4231594079301049,
+          "relative_operator_error_bound": 1.4486922283265673,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.02355404264318442,
+          "mesh_worst_transition": [
+            1,
+            2
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 2.0,
+          "error_over_v_bound": 2.587562559872918,
+          "relative_operator_error_bound": 2.633985869684668,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.4327083900671806,
+          "mesh_worst_transition": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "model": "stable",
+      "sender": 34,
+      "D": [
+        [
+          0.95,
+          0.013891055722657456
+        ],
+        [
+          0.028795507554373066,
+          0.9699999999999999
+        ]
+      ],
+      "V2": [
+        [
+          2.0272865740125825,
+          0.02041502811381607
+        ],
+        [
+          0.02041502811381607,
+          3.2012379836363625
+        ]
+      ],
+      "D_spectral_norm": 0.9835987286157556,
+      "m_min_sigma_WN": 0.7418572453624387,
+      "b_max_norm_WRb": 0.7023934394123438,
+      "rho_relative_D_operator_bound": 1.0737963846795477,
+      "gamma_generalized": 0.29263271498750537,
+      "worst_transition": [
+        0,
+        1
+      ],
+      "transition_count": 12,
+      "V2_eigenvalues": [
+        2.026931663742726,
+        3.201592893906219
+      ],
+      "bins": [
+        {
+          "fraction_of_triangle_margin": 0.0,
+          "error_over_v_bound": 0.0,
+          "relative_operator_error_bound": 0.0,
+          "positive_uniform_lower_bound": 0.7418572453624387,
+          "direction_mesh_min_whitened_signal": 0.7418639885964324,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.5,
+          "error_over_v_bound": 0.528092379381499,
+          "relative_operator_error_bound": 0.5368981923397739,
+          "positive_uniform_lower_bound": 0.3709286226812193,
+          "direction_mesh_min_whitened_signal": 0.44651208664302344,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 0.9,
+          "error_over_v_bound": 0.9505662828866982,
+          "relative_operator_error_bound": 0.966416746211593,
+          "positive_uniform_lower_bound": 0.07418572453624384,
+          "direction_mesh_min_whitened_signal": 0.21000646511736096,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.0,
+          "error_over_v_bound": 1.056184758762998,
+          "relative_operator_error_bound": 1.0737963846795477,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.15079727629926984,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 1.1,
+          "error_over_v_bound": 1.1618032346392977,
+          "relative_operator_error_bound": 1.1811760231475024,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.09151988717251676,
+          "mesh_worst_transition": [
+            0,
+            1
+          ]
+        },
+        {
+          "fraction_of_triangle_margin": 2.0,
+          "error_over_v_bound": 2.112369517525996,
+          "relative_operator_error_bound": 2.1475927693590955,
+          "positive_uniform_lower_bound": 0.0,
+          "direction_mesh_min_whitened_signal": 0.08456060171425715,
+          "mesh_worst_transition": [
+            0,
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "model_summary": [
+    {
+      "model": "unstable",
+      "min_rho_relative_D_operator_bound": 1.0896557317369242,
+      "max_rho_relative_D_operator_bound": 1.3053497771043632,
+      "min_gamma_over_senders": 0.30671242954637074,
+      "monitored_senders": [
+        1,
+        3,
+        16,
+        31,
+        49,
+        34
+      ]
+    },
+    {
+      "model": "stable",
+      "min_rho_relative_D_operator_bound": 1.0737963846795477,
+      "max_rho_relative_D_operator_bound": 1.316992934842334,
+      "min_gamma_over_senders": 0.29263271498750537,
+      "monitored_senders": [
+        1,
+        3,
+        16,
+        31,
+        49,
+        34
+      ]
+    }
+  ],
+  "source_hashes": {
+    "source_model.py": "21c2b1e58a4b88db1f44e9ba41660168c577e001873a522e3dc17d70dd83b336",
+    "MECHANISM_AND_THEORY_ZH.md": "f051cdb1c7c73b923eb2d886a9f07b5cad3121a0ac615f9656f4d8318b5ae5c9",
+    "script": "82246570eb48f35efbd466363ee99805bc5e34fc049eb7691f68ae6f82eeb09c"
+  },
+  "scope": "This is a sufficient full-whitened-signal margin. It is not a lower bound on the receiver's fixed matched-template projection outside the correctly modeled attack family."
+}

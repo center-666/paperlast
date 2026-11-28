@@ -1,0 +1,32 @@
+{
+  "usage": "post-hoc namespace 85; fold by path ID; predictions on frozen T histories",
+  "paths_per_fixture": 512,
+  "bootstrap": 20000,
+  "causality_checks": "passed on three paths per base fixture",
+  "ridge_alpha_by_fold": [
+    {
+      "history": 100.0,
+      "key_history": 100.0
+    },
+    {
+      "history": 0.001,
+      "key_history": 100.0
+    }
+  ],
+  "sha256": {
+    "PREDICTION_REPLAY_DESIGN.md": "6a157ecd64307ffd14b51e5d80819b99d79345808f00b75bb11fcadc0e2b45d6",
+    "prediction_histories.py": "32535290777d9555460ce364e968451e45bef196546aa31e65cfba70124c2dc7",
+    "causal_prediction.py": "9fddc468f80a0a42878fbad01bbaa9b725e82e9e18a4dd056c6ca6f31fc6d95f",
+    "PREDICTION_PATHS.csv": "c2316ca9e7e317dfaf5481a7fc8b6a5ef6c5085751ed93842ae3fb33afc38a82",
+    "PREDICTION_SUMMARY.csv": "44eaea0a189037698de10b929c3b3d755ef9d1777e872c8652953f4356f7c82a"
+  },
+  "source_archives": {
+    "U_unstable_R35x2_continuous_attack.npz": "7e0fee0a98ab6fa3240c3e462347093ab85315356d19a87b4b18e38c357b7f06",
+    "U_unstable_R35x2_burst_attack.npz": "2882da33ff4836ba5bccec651797dd3c0e361585f4df92bc4bda0b9ad61853d3",
+    "U_unstable_R35x2_continuous_health.npz": "361458f5b8e04e4107cf72f69899da3f9af276c5ba8e34a299ee3ab98c414989"
+  },
+  "task4_RUN_sha256": "95e852ded7d99fc8b08797ca0f086c7fb27b0300c7a6611e52a2f69a5db78f2c",
+  "protocol_sha256": "6a157ecd64307ffd14b51e5d80819b99d79345808f00b75bb11fcadc0e2b45d6",
+  "status": "PASS_posthoc_pathwise_one_step_prediction_replay",
+  "superseded_early_tables": "b00fc802355b4195d93d130d5de5f38c0574d04953603ceca54eef24bdd3d890"
+}

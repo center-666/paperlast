@@ -1,0 +1,122 @@
+{
+  "status": "complete_heldout_direction_amplitude_development",
+  "fit_input_direction_and_scale": "[6,0], original Task-4 attack template",
+  "heldout_variants": [
+    {
+      "name": "fit_direction_1x",
+      "vector": [
+        6.0,
+        0.0
+      ]
+    },
+    {
+      "name": "heldout_direction_minus45",
+      "vector": [
+        4.242640687119285,
+        -4.242640687119285
+      ]
+    },
+    {
+      "name": "heldout_direction_plus45",
+      "vector": [
+        4.242640687119285,
+        4.242640687119285
+      ]
+    },
+    {
+      "name": "heldout_amplitude_half",
+      "vector": [
+        3.0,
+        0.0
+      ]
+    },
+    {
+      "name": "heldout_amplitude_1p5",
+      "vector": [
+        9.0,
+        0.0
+      ]
+    }
+  ],
+  "physical_world": "Existing Task-4 CRN paths reused for paired counterfactual waveform directions. This is a new input replay on already exposed physical paths, not an independent sample.",
+  "detector_threshold": "Frozen Task-4 no-repeat matched threshold; never recalibrated by variant.",
+  "predictor_feature_timing": "The forecast input only uses T-derived report residuals through k-1 and, for key models, past/current legal matrices after the new report arrives. The score itself still uses frozen full matched GLRT.",
+  "ridge_fit": "Fit on base-direction paths from opposite path-ID parity. Ridge selection uses path-group internal validation within the training half.",
+  "base_attack_sha256": {
+    "continuous": "7e0fee0a98ab6fa3240c3e462347093ab85315356d19a87b4b18e38c357b7f06",
+    "burst": "2882da33ff4836ba5bccec651797dd3c0e361585f4df92bc4bda0b9ad61853d3"
+  },
+  "fit_source": "watermark_research/key_prediction_dev.py",
+  "fit_source_sha256": "aa1a29cf14a9f920e1767af51a6f13cf35d0be47ee442031777a8f1981981db1",
+  "crossfit_metadata": [
+    {
+      "fixture": "continuous",
+      "fold": 0,
+      "method": "history_only",
+      "alpha": 100.0,
+      "train_alarm_ticks": 13312,
+      "inner_validation_path_count": 128
+    },
+    {
+      "fixture": "continuous",
+      "fold": 0,
+      "method": "key_history",
+      "alpha": 0.001,
+      "train_alarm_ticks": 13312,
+      "inner_validation_path_count": 128
+    },
+    {
+      "fixture": "continuous",
+      "fold": 1,
+      "method": "history_only",
+      "alpha": 0.001,
+      "train_alarm_ticks": 13312,
+      "inner_validation_path_count": 128
+    },
+    {
+      "fixture": "continuous",
+      "fold": 1,
+      "method": "key_history",
+      "alpha": 100.0,
+      "train_alarm_ticks": 13312,
+      "inner_validation_path_count": 128
+    },
+    {
+      "fixture": "burst",
+      "fold": 0,
+      "method": "history_only",
+      "alpha": 100.0,
+      "train_alarm_ticks": 13296,
+      "inner_validation_path_count": 128
+    },
+    {
+      "fixture": "burst",
+      "fold": 0,
+      "method": "key_history",
+      "alpha": 1.0,
+      "train_alarm_ticks": 13296,
+      "inner_validation_path_count": 128
+    },
+    {
+      "fixture": "burst",
+      "fold": 1,
+      "method": "history_only",
+      "alpha": 100.0,
+      "train_alarm_ticks": 13297,
+      "inner_validation_path_count": 128
+    },
+    {
+      "fixture": "burst",
+      "fold": 1,
+      "method": "key_history",
+      "alpha": 10.0,
+      "train_alarm_ticks": 13297,
+      "inner_validation_path_count": 128
+    }
+  ],
+  "outputs_sha256": {
+    "paths": "4450cb5c45b6a7efc70ee3e3bbc9a8deee33193a4859933655bf0b74dc0538f5",
+    "summary": "76db15dfd7304782f38c0e7e4ad3fb1a5207102d72c04becb297e720b1e554c9"
+  },
+  "code_sha256": "8c896daab1e61b86dafe3752f8ba62bb8134dfe7d4329b3cf5180d72d1f79671"
+}

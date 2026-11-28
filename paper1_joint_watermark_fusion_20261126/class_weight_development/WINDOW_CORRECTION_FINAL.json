@@ -1,0 +1,21 @@
+{
+  "status": "PASS_corrected_fusion_window_reanalysis",
+  "pathwise_archive_sha256": "a1d8b6e419a1af84cab7fa7f0bcb563a9c866ff714b5b2c25e0724c4f04bb549",
+  "fit_sha256": "ed9369a1bdc587704126fe11a127d3e7736db78723df67d83072f4c0d6e320f0",
+  "evaluation_receipt_sha256": "d78ee465b625d29ade7a09385ed551fd9307b79339671f8f79628a8bdee04c2e",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": [
+    20261127,
+    94017,
+    271,
+    991
+  ],
+  "unit": "Whole path within configuration x fixture; one shared bootstrap draw across all methods, windows and action outcomes.",
+  "burst_pathwise_identity_max_abs_error": 8.881784197001252e-15,
+  "mixed_equals_half_each_conditional_mean_max_error": 1.7763568394002505e-15,
+  "activity_closed_only_from_burst_fixture": true,
+  "health_only_from_independent_purpose6_paths": true,
+  "output_sha256": "03097d6077a376ede5c5593702e111f3126d230c18c845e8da020ecbe60a083f",
+  "source_sha256": "845089ea97d917853f534c17d0a310c5bf0112eda6b7c0f6bc24e40b088cb021",
+  "conditional_rescale_source_sha256": "a4ec06e221cc88020d7ec7e7ab79dcd4e2264d2ef850f4413b26581378960e98"
+}

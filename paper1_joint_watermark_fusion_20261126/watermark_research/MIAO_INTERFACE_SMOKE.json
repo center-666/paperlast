@@ -1,0 +1,12 @@
+{
+  "unstable": {
+    "roundtrip_max_abs": 8.881784197001252e-16,
+    "norm_ratio": 1.0,
+    "sigma_orthogonality_max_abs": 1.1102230246251565e-16
+  },
+  "stable": {
+    "roundtrip_max_abs": 8.881784197001252e-16,
+    "norm_ratio": 1.0,
+    "sigma_orthogonality_max_abs": 2.220446049250313e-16
+  }
+}

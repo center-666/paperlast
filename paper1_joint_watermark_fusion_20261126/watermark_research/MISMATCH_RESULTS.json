@@ -1,0 +1,32 @@
+{
+  "status": "PASS_zero_mismatch_W5_regression_and_summary",
+  "path_rows": 110592,
+  "scenarios": 12,
+  "paths_per_scenario": 512,
+  "methods": [
+    "quarter_no_repeat",
+    "quarter_iid",
+    "negative"
+  ],
+  "mismatch_fractions": [
+    0.0,
+    0.5,
+    0.9,
+    1.0,
+    1.1,
+    2.0
+  ],
+  "zero_mismatch_max_abs_endpoint_error": 2.822186928597148e-13,
+  "bootstrap_replicates": 20000,
+  "seed": [
+    20261128,
+    9521,
+    78,
+    9901
+  ],
+  "direction_lock_sha256": "fccd79219ba57310d9fed6dd6c0cfd233567f4279e970b636ce1003d611718f1",
+  "path_file_sha256": "e799193753b06847533244fafb4f80aa4ee3cde6fc0122db9df184e7eec81deb",
+  "summary_sha256": "70ceca98f75eeb328ff983c12dc76ead0d206b5687a5fb356c9ebd1cd4f208ad",
+  "paired_zero_contrast_sha256": "a8213b8828cb904646a00f28c05dd7d08682b5edeff63662a4e6045a6774115f",
+  "scope": "Post-hoc stress replay on existing W5 split-16 paths. Whole-path pairing within each fixed scene. Not independent confirmation."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_corrected_burst_only_windows",
+  "pathwise_archive_sha256": "a1d8b6e419a1af84cab7fa7f0bcb563a9c866ff714b5b2c25e0724c4f04bb549",
+  "fit_sha256": "ed9369a1bdc587704126fe11a127d3e7736db78723df67d83072f4c0d6e320f0",
+  "evaluation_sha256": "d78ee465b625d29ade7a09385ed551fd9307b79339671f8f79628a8bdee04c2e",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": [
+    20261127,
+    94017,
+    271,
+    991
+  ],
+  "burst_partition_identity": "full = 0.6 * activity + 0.4 * closed",
+  "burst_partition_max_abs_error": 8.881784197001252e-15,
+  "burst_paths_checked": 3072,
+  "health": "Purpose-6 paths, independently stratified by configuration",
+  "source_sha256": "da8c067bef344d019df008f24173eefb3ca179d21bf2ccab52c3001f95e93036",
+  "output_sha256": "edcf124235dadd3f334504b255a83d6bd8920a9594080d951d9832379df6641a"
+}

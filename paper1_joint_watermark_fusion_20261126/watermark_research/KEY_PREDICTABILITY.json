@@ -1,0 +1,166 @@
+{
+  "status": "complete_cross_fitted_one_step_predictability_development",
+  "configuration": "U_unstable_R35x2",
+  "folding": "Path-ID parity within fixture; train paths and test paths are disjoint per fold.",
+  "history_reports": 8,
+  "ridge_alpha_grid": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "fit": [
+    {
+      "fold": 0,
+      "fixture": "continuous",
+      "method": "history_only",
+      "evaluation_phase": "active",
+      "ridge_alpha": 100.0,
+      "outer_train_alarm_samples": 13312,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 0,
+      "fixture": "continuous",
+      "method": "key_history",
+      "evaluation_phase": "active",
+      "ridge_alpha": 0.001,
+      "outer_train_alarm_samples": 13312,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 0,
+      "fixture": "burst",
+      "method": "history_only",
+      "evaluation_phase": "active",
+      "ridge_alpha": 100.0,
+      "outer_train_alarm_samples": 13296,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 0,
+      "fixture": "burst",
+      "method": "history_only",
+      "evaluation_phase": "inactive",
+      "ridge_alpha": 100.0,
+      "outer_train_alarm_samples": 13296,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 0,
+      "fixture": "burst",
+      "method": "key_history",
+      "evaluation_phase": "active",
+      "ridge_alpha": 1.0,
+      "outer_train_alarm_samples": 13296,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 0,
+      "fixture": "burst",
+      "method": "key_history",
+      "evaluation_phase": "inactive",
+      "ridge_alpha": 1.0,
+      "outer_train_alarm_samples": 13296,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 0,
+      "fixture": "attack_to_health",
+      "method": "history_only",
+      "ridge_alpha": 100.0,
+      "outer_train_alarm_samples": 26608,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 0,
+      "fixture": "attack_to_health",
+      "method": "key_history",
+      "ridge_alpha": 100.0,
+      "outer_train_alarm_samples": 26608,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 1,
+      "fixture": "continuous",
+      "method": "history_only",
+      "evaluation_phase": "active",
+      "ridge_alpha": 0.001,
+      "outer_train_alarm_samples": 13312,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 1,
+      "fixture": "continuous",
+      "method": "key_history",
+      "evaluation_phase": "active",
+      "ridge_alpha": 100.0,
+      "outer_train_alarm_samples": 13312,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 1,
+      "fixture": "burst",
+      "method": "history_only",
+      "evaluation_phase": "active",
+      "ridge_alpha": 100.0,
+      "outer_train_alarm_samples": 13297,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 1,
+      "fixture": "burst",
+      "method": "history_only",
+      "evaluation_phase": "inactive",
+      "ridge_alpha": 100.0,
+      "outer_train_alarm_samples": 13297,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 1,
+      "fixture": "burst",
+      "method": "key_history",
+      "evaluation_phase": "active",
+      "ridge_alpha": 10.0,
+      "outer_train_alarm_samples": 13297,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 1,
+      "fixture": "burst",
+      "method": "key_history",
+      "evaluation_phase": "inactive",
+      "ridge_alpha": 10.0,
+      "outer_train_alarm_samples": 13297,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 1,
+      "fixture": "attack_to_health",
+      "method": "history_only",
+      "ridge_alpha": 100.0,
+      "outer_train_alarm_samples": 26609,
+      "inner_validation_paths": 128
+    },
+    {
+      "fold": 1,
+      "fixture": "attack_to_health",
+      "method": "key_history",
+      "ridge_alpha": 100.0,
+      "outer_train_alarm_samples": 26609,
+      "inner_validation_paths": 128
+    }
+  ],
+  "alarm_only_coverage_in_denominator": true,
+  "health_true_disturbance_is_zero": true,
+  "current_report_excluded_from_forecast_features": true,
+  "current_key_used_only_after_report_arrival_for_key_inverse-transform": true,
+  "closed_loop_compensation_run": false,
+  "task4_RUN_sha256": "95e852ded7d99fc8b08797ca0f086c7fb27b0300c7a6611e52a2f69a5db78f2c",
+  "protocol_sha256": "0c629b29cedd07d38618a3212314d95259d706f4f5e7304a5fe3017479ff53b3",
+  "interpretation": "Post-hoc development on already viewed Task-4 namespace-85 paths; one-step residual prediction only, no compensation closed loop, no new independent confirmation.",
+  "pathwise_sha256": "c66c803755e4571dc8d4efb21482754472b92dfe712cf2ea31c6cb7ecefe0b2d",
+  "summary_sha256": "a12b515785117d3486bb42d367f425670b4b0b9068cae2c9f82e9228c142a9c9"
+}
